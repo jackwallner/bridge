@@ -102,6 +102,11 @@ struct SettingsView: View {
 
     private var supportSection: some View {
         Section("Support") {
+            NavigationLink {
+                HowToPlayView()
+            } label: {
+                Label("How to Play", systemImage: "book.fill")
+            }
             Button {
                 requestReview()
             } label: {

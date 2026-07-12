@@ -5,6 +5,7 @@ struct HomeView: View {
     @EnvironmentObject private var subscriptions: SubscriptionService
     @State private var showPaywall = false
     @State private var showSettings = false
+    @AppStorage("mahj.skillLevel") private var skillLevel = ""
 
     var body: some View {
         NavigationStack {
@@ -12,6 +13,9 @@ struct HomeView: View {
                 VStack(spacing: 20) {
                     header
                     getStartedCard
+                    if skillLevel == "new" {
+                        howToPlayCard
+                    }
                     statsHeader
                     ForEach(DrillLibrary.rooms) { room in
                         section(for: room)
@@ -86,6 +90,36 @@ struct HomeView: View {
                 in: RoundedRectangle(cornerRadius: Theme.cardCorner, style: .continuous)
             )
             .shadow(color: Theme.jade.opacity(0.3), radius: 10, y: 5)
+        }
+        .buttonStyle(PressableCardStyle())
+    }
+
+    /// Brand-new players keep a door back to the primer until it sticks.
+    private var howToPlayCard: some View {
+        NavigationLink {
+            HowToPlayView()
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "book.fill")
+                    .font(.body.weight(.semibold))
+                    .foregroundStyle(Theme.gold)
+                    .frame(width: 38, height: 38)
+                    .background(Theme.gold.opacity(0.13), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("How to Play")
+                        .font(.headline)
+                        .foregroundStyle(Theme.ink)
+                    Text("The five-minute primer, any time you want it")
+                        .font(.caption)
+                        .foregroundStyle(Theme.inkSecondary)
+                }
+                Spacer(minLength: 4)
+                Image(systemName: "chevron.right")
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(Theme.inkTertiary)
+            }
+            .padding(12)
+            .themedCard(corner: 16)
         }
         .buttonStyle(PressableCardStyle())
     }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// Flashcards as a swipeable deck. The grammar: tap flips the card to reveal
-/// the answer; only a flipped card can be swiped — right = "got it" (card
+/// the answer; only a flipped card can be swiped. Right = "got it" (card
 /// leaves the deck), left = "again" (card returns at the back). Before the
 /// flip a horizontal drag rubber-bands, so the reveal always comes first.
 /// Cards with a `CardChoice` add a self-test: pick Keep/Throw on the front,
@@ -66,7 +66,7 @@ struct FlashcardDrillView: View {
                     } label: {
                         Image(systemName: "arrow.uturn.backward")
                     }
-                    .accessibilityLabel("Undo last swipe")
+                    .accessibilityLabel("Undo last answer")
                 }
             }
         }
@@ -103,7 +103,10 @@ struct FlashcardDrillView: View {
                     isFlipped: slot == 0 && isFlipped,
                     accent: accent,
                     choicePick: slot == 0 ? choicePick : nil,
-                    onChoose: slot == 0 ? { choose($0, card: card) } : nil
+                    onChoose: slot == 0 ? { choose($0, card: card) } : nil,
+                    onAdvance: slot == 0 && choicePick != nil
+                        ? { fling(direction: 1, size: size) }
+                        : nil
                 )
                 .scaleEffect(scale(forSlot: slot))
                 .offset(y: yOffset(forSlot: slot))
@@ -114,7 +117,7 @@ struct FlashcardDrillView: View {
                 .allowsHitTesting(slot == 0)
                 .gesture(dragGesture(size: size))
                 .accessibilityAddTraits(.isButton)
-                .accessibilityHint(isFlipped ? "Swipe right if you knew it, left to review again" : "Tap to reveal the answer")
+                .accessibilityHint(swipeAccessibilityHint)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -129,16 +132,32 @@ struct FlashcardDrillView: View {
         return CGSize(width: drag.width * 0.16, height: drag.height * 0.10)
     }
 
-    /// GOT IT / AGAIN stamps fade in with the drag so the swipe directions
-    /// carry their meaning on the card itself.
+    /// Once a choice card is answered, the pick is the grade. The card holds
+    /// on that result until the player taps Next.
+    private var choiceAnswered: Bool {
+        queue.first?.choice != nil && choicePick != nil
+    }
+
+    private var swipeAccessibilityHint: String {
+        guard isFlipped else { return "Tap to reveal the answer" }
+        return choiceAnswered
+            ? "Tap Next to continue"
+            : "Swipe right if you knew it, left to see it again"
+    }
+
+    /// KNEW IT / AGAIN stamps fade in with the drag so the swipe directions
+    /// carry their meaning on the card itself, using the same words as the hint and
+    /// the quick session buttons, one grading vocabulary everywhere.
     private var verdictStamps: some View {
         ZStack {
-            stamp("GOT IT", color: Theme.jade, angle: -12)
-                .opacity(isFlipped ? stampOpacity(forDirection: 1) : 0)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-            stamp("AGAIN", color: Theme.coral, angle: 12)
-                .opacity(isFlipped ? stampOpacity(forDirection: -1) : 0)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+            if !choiceAnswered {
+                stamp("KNEW IT", color: Theme.jade, angle: -12)
+                    .opacity(isFlipped ? stampOpacity(forDirection: 1) : 0)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                stamp("AGAIN", color: Theme.coral, angle: 12)
+                    .opacity(isFlipped ? stampOpacity(forDirection: -1) : 0)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+            }
         }
         .padding(22)
         .allowsHitTesting(false)
@@ -211,7 +230,7 @@ struct FlashcardDrillView: View {
     // MARK: - Gestures
 
     private func flip() {
-        guard !isFlinging else { return }
+        guard !isFlinging, !choiceAnswered else { return }
         Haptics.impact(.soft, intensity: 0.5)
         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
             isFlipped.toggle()
@@ -250,6 +269,12 @@ struct FlashcardDrillView: View {
                     }
                     return
                 }
+                guard !choiceAnswered else {
+                    withAnimation(.spring(response: 0.32, dampingFraction: 0.78)) {
+                        drag = .zero
+                    }
+                    return
+                }
                 let dx = value.translation.width
                 let flung = abs(dx) > dismissDistance(size)
                     || abs(value.predictedEndTranslation.width) > size.width * 0.75
@@ -263,7 +288,7 @@ struct FlashcardDrillView: View {
             }
     }
 
-    /// Throw the card off, then commit the grade with animation suppressed —
+    /// Throw the card off, then commit the grade with animation suppressed.
     /// the risen card behind is already in place, so nothing jumps.
     private func fling(direction: CGFloat, size: CGSize) {
         isFlinging = true
@@ -286,14 +311,20 @@ struct FlashcardDrillView: View {
 
     private func commit(gotIt: Bool) {
         guard let card = queue.first else { return }
-        lastSwipe = SwipeRecord(card: card, gotIt: gotIt)
-        // Choice cards were graded at pick time; plain cards grade by swipe.
-        if card.choice == nil || choicePick == nil {
+        // Choice cards were graded at pick time; the swipe only advances, and
+        // the graded answer (not the swipe direction) decides whether the
+        // card comes back. Plain cards grade by swipe.
+        let knewIt: Bool
+        if let choice = card.choice, let pick = choicePick {
+            knewIt = pick == choice.answerIndex
+        } else {
+            knewIt = gotIt
             progress.recordItem(id: card.id, correct: gotIt)
         }
+        lastSwipe = SwipeRecord(card: card, gotIt: knewIt)
         choicePick = nil
         queue.removeFirst()
-        if !gotIt {
+        if !knewIt {
             queue.append(card)
         }
         if queue.isEmpty {
@@ -348,8 +379,11 @@ struct FlipCardFace: View {
     var accent: Color = Theme.jade
     var choicePick: Int?
     var onChoose: ((Int) -> Void)?
+    var onAdvance: (() -> Void)? = nil
     /// The deck grades by swipe; the mixed session grades with buttons.
     var showsSwipeHints = true
+
+    @State private var shineTrigger = 0
 
     var body: some View {
         FlipRotation(angle: isFlipped ? 180 : 0) {
@@ -357,8 +391,15 @@ struct FlipCardFace: View {
         } back: {
             back
         }
-        .accessibilityElement(children: isFlipped ? .combine : .contain)
+        .shine(trigger: shineTrigger, corner: Theme.deckCorner)
+        .accessibilityElement(children: isFlipped && onAdvance == nil ? .combine : .contain)
         .accessibilityLabel(isFlipped ? "\(card.backTitle). \(card.backBody)" : card.frontTitle)
+        .task(id: isFlipped) {
+            // A correct call earns the slot-machine gleam once the flip lands.
+            guard isFlipped, verdict?.correct == true else { return }
+            try? await Task.sleep(nanoseconds: 450_000_000)
+            shineTrigger += 1
+        }
     }
 
     private var front: some View {
@@ -411,9 +452,15 @@ struct FlipCardFace: View {
                     .fixedSize(horizontal: false, vertical: true)
                 Spacer(minLength: 0)
                 if showsSwipeHints {
-                    Label("Knew it? Swipe right · Again? Swipe left", systemImage: "hand.draw.fill")
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(Theme.inkTertiary)
+                    if let onAdvance {
+                        Button(action: onAdvance) {
+                            Text("Next").primaryCTA(color: accent)
+                        }
+                    } else {
+                        Label("Knew it? Swipe right · Again? Swipe left", systemImage: "hand.draw.fill")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Theme.inkTertiary)
+                    }
                 }
             }
         }

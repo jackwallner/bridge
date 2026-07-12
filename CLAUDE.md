@@ -48,6 +48,7 @@ in-app/Settings paywall.
   defines the 5 rooms (ids: `tile-room`, `card-room`, `charleston-room`,
   `table-room`, `pro-tables`). `SessionBuilder.dailyMix` builds the Get Started
   mixed session (missed items first, then unseen; excludes Pro for free users).
+  `HowToPlayContent` holds the original six-page beginner primer.
 - `Shared/Services` — `ProgressStore` (UserDefaults streaks/completions/review
   gate + item-level `seenItems`/`missedItems`, `resetAll()` keeps onboarding),
   `AppSettings` (theme Light-default/Dark/System, haptics, sound, daily
@@ -58,7 +59,10 @@ in-app/Settings paywall.
   cover flashed Home behind onboarding on first launch). Navigation is FLAT:
   `HomeView` shows Get Started (mixed session) + every drill grouped by room
   section; there is no intermediate room screen. Onboarding stores skill level
-  at defaults key `mahj.skillLevel`.
+  at defaults key `mahj.skillLevel`. After the trial decision, every player
+  sees `FeatureTourView`; players who selected `new` then see `HowToPlayView`
+  before Home. The primer remains available from Home for new players and from
+  Settings for everyone.
 - `MahjTrainer/Utilities/Theme.swift` — the warm-modern design system: cream
   surfaces, jade primary, coral energy, per-room accents (`Room.accent`), serif
   display type (`Theme.display`), `themedCard()`/`primaryCTA()` styles,
@@ -74,7 +78,9 @@ in-app/Settings paywall.
 only a flipped card can be swiped — right = "got it" (leaves the deck), left =
 "again" (returns at the back). Pre-flip drags rubber-band. Undo lives in the
 toolbar. Cards with a `CardChoice` show two answer buttons on the front
-(choose → graded flip + confetti). Gesture gotcha: the deck uses ONE
+(choose, graded flip, held result, explicit Next). Their answer determines the
+grade and whether the card returns; swipe direction never overrides it. Gesture
+gotcha: the deck uses ONE
 `DragGesture(minimumDistance: 0)` that treats a <10pt release as the flip
 tap — a separate `.onTapGesture` loses arbitration against the drag and
 silently never fires. Don't "simplify" it back to `onTapGesture`.

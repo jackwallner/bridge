@@ -172,8 +172,29 @@ final class ContentValidityTests: XCTestCase {
                 }
             }
         }
+        copy += HowToPlayContent.pages.flatMap { page in
+            [page.title, page.body, page.tip ?? ""]
+        }
         for text in copy {
             XCTAssertFalse(text.contains("\u{2014}"), "Em dash found in copy: \(text)")
+        }
+    }
+
+    // MARK: - How to Play
+
+    func testHowToPlayPagesHaveUniqueIDsAndValidTileCounts() {
+        let pages = HowToPlayContent.pages
+        XCTAssertFalse(pages.isEmpty)
+        XCTAssertEqual(Set(pages.map(\.id)).count, pages.count, "Duplicate How to Play page IDs found")
+
+        for page in pages {
+            var counts: [Tile: Int] = [:]
+            for tile in page.tiles where tile != .flower && tile != .joker {
+                counts[tile, default: 0] += 1
+            }
+            for (tile, count) in counts {
+                XCTAssertLessThanOrEqual(count, 4, "\(page.id) has \(count)× \(tile.shortLabel); only 4 exist")
+            }
         }
     }
 

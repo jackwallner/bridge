@@ -27,21 +27,28 @@ struct HandMatchDrillView: View {
         VStack(spacing: 16) {
             ProgressView(value: Double(index), total: Double(questions.count))
                 .tint(Theme.jade)
-            QuestionPager(
-                prompt: "Which section is this rack chasing?",
-                tiles: question.tiles.racked,
-                explanation: question.explanation,
-                answered: answered
-            ) {
-                ChoiceList(
-                    labels: question.choices.map(\.displayName),
-                    selection: question.choices.firstIndex(where: { $0 == selection }),
-                    answerIndex: question.choices.firstIndex(of: question.answer) ?? 0
-                ) { pick in
-                    select(question.choices[pick])
+            VStack(spacing: 16) {
+                QuestionPager(
+                    prompt: "Which section is this rack chasing?",
+                    tiles: question.tiles.racked,
+                    explanation: question.explanation,
+                    answered: answered
+                ) {
+                    ChoiceList(
+                        labels: question.choices.map(\.displayName),
+                        selection: question.choices.firstIndex(where: { $0 == selection }),
+                        answerIndex: question.choices.firstIndex(of: question.answer) ?? 0
+                    ) { pick in
+                        select(question.choices[pick])
+                    }
                 }
+                footer
             }
-            footer
+            .id(index)
+            .transition(.asymmetric(
+                insertion: .move(edge: .trailing).combined(with: .opacity),
+                removal: .move(edge: .leading).combined(with: .opacity)
+            ))
         }
         .padding()
         .background(Theme.background)
@@ -85,10 +92,12 @@ struct HandMatchDrillView: View {
 
     private func advance() {
         if index + 1 < questions.count {
-            selection = nil
-            index += 1
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.85)) {
+                selection = nil
+                index += 1
+            }
         } else {
-            finished = true
+            withAnimation(.easeInOut(duration: 0.3)) { finished = true }
         }
     }
 }

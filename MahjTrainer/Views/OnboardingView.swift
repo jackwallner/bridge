@@ -3,9 +3,13 @@ import SwiftUI
 /// Onboarding: three value pages, a skill-level question, then the OT710-style
 /// trial step. The primary button keeps IDENTICAL geometry on every page (the
 /// zero-shift rule): the thumb rides Continue the whole way, and on the last
-/// page the same button becomes "Start 7-day free trial" — one tap, straight
+/// page the same button becomes "Start 7-day free trial", one tap straight
 /// to Apple's confirm. No plan cards here; the full paywall is only a fallback
 /// when products failed to load.
+///
+/// After the trial decision (either way) everyone gets the feature tour, and
+/// brand-new players follow it with the How to Play quick start. Only then
+/// does `hasOnboarded` flip and Home appear.
 struct OnboardingView: View {
     @EnvironmentObject private var progress: ProgressStore
     @EnvironmentObject private var subscriptions: SubscriptionService
@@ -14,10 +18,29 @@ struct OnboardingView: View {
     @State private var showPaywallFallback = false
     @AppStorage("mahj.skillLevel") private var skillLevel = ""
 
+    private enum Stage: Equatable { case pages, tour, howToPlay }
+    @State private var stage: Stage = .pages
+
     private let lastPage = 4
     private let skillPage = 3
 
     var body: some View {
+        Group {
+            switch stage {
+            case .pages:
+                pagesBody
+            case .tour:
+                FeatureTourView { tourDone() }
+                    .transition(.move(edge: .trailing).combined(with: .opacity))
+            case .howToPlay:
+                HowToPlayView { finish() }
+                    .transition(.move(edge: .trailing).combined(with: .opacity))
+            }
+        }
+        .animation(.spring(response: 0.45, dampingFraction: 0.85), value: stage)
+    }
+
+    private var pagesBody: some View {
         VStack(spacing: 0) {
             TabView(selection: $page) {
                 infoPage(
@@ -46,7 +69,9 @@ struct OnboardingView: View {
             footer
         }
         .background(Theme.background)
-        .sheet(isPresented: $showPaywallFallback) { PaywallView() }
+        .sheet(isPresented: $showPaywallFallback, onDismiss: paywallDismissed) {
+            PaywallView()
+        }
     }
 
     private func infoPage(icon: String, title: String, body bodyText: String, tiles: [Tile]) -> some View {
@@ -192,7 +217,7 @@ struct OnboardingView: View {
             // Soft free exit sits ABOVE the primary so the trial CTA owns the
             // Continue slot. Height reserved on every page.
             Button {
-                finish()
+                startTour()
             } label: {
                 Text("Get Started")
                     .font(.subheadline.weight(.medium))
@@ -261,13 +286,34 @@ struct OnboardingView: View {
             defer { purchasing = false }
             do {
                 try await subscriptions.purchase(subscriptions.package(for: .yearly))
-                finish()
+                startTour()
             } catch {
                 // Products didn't load: fall back to the full paywall rather
                 // than a dead button (OT710 fallback rule).
                 showPaywallFallback = true
             }
         }
+    }
+
+    /// Both exits from the trial page land here: the tour shows subscribers
+    /// what they now own and free players what the gold door hides.
+    private func startTour() {
+        stage = .tour
+    }
+
+    private func tourDone() {
+        if skillLevel == "new" {
+            stage = .howToPlay
+        } else {
+            finish()
+        }
+    }
+
+    /// A successful purchase in the products-failed fallback must rejoin the
+    /// onboarding path instead of dropping the player back on the trial page.
+    private func paywallDismissed() {
+        guard subscriptions.isPro else { return }
+        startTour()
     }
 
     private func finish() {

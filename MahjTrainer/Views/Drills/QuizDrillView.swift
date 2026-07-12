@@ -27,17 +27,24 @@ struct QuizDrillView: View {
         VStack(spacing: 16) {
             ProgressView(value: Double(index), total: Double(questions.count))
                 .tint(Theme.jade)
-            QuestionPager(
-                prompt: question.prompt,
-                tiles: question.tiles,
-                explanation: question.explanation,
-                answered: answered
-            ) {
-                ChoiceList(labels: question.choices, selection: selection, answerIndex: question.answerIndex) { pick in
-                    select(pick)
+            VStack(spacing: 16) {
+                QuestionPager(
+                    prompt: question.prompt,
+                    tiles: question.tiles,
+                    explanation: question.explanation,
+                    answered: answered
+                ) {
+                    ChoiceList(labels: question.choices, selection: selection, answerIndex: question.answerIndex) { pick in
+                        select(pick)
+                    }
                 }
+                footer
             }
-            footer
+            .id(index)
+            .transition(.asymmetric(
+                insertion: .move(edge: .trailing).combined(with: .opacity),
+                removal: .move(edge: .leading).combined(with: .opacity)
+            ))
         }
         .padding()
         .background(Theme.background)
@@ -81,10 +88,12 @@ struct QuizDrillView: View {
 
     private func advance() {
         if index + 1 < questions.count {
-            selection = nil
-            index += 1
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.85)) {
+                selection = nil
+                index += 1
+            }
         } else {
-            finished = true
+            withAnimation(.easeInOut(duration: 0.3)) { finished = true }
         }
     }
 }

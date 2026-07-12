@@ -24,12 +24,23 @@ struct TileView: View {
     @ViewBuilder
     private var face: some View {
         switch tile {
-        case .suited(let rank, let suit):
+        case .suited(let rank, .crak):
+            // Real crak tiles read numeral-over-萬; no pips to count.
             VStack(spacing: width * 0.02) {
                 Text("\(rank)")
                     .font(.system(size: width * 0.5, weight: .bold, design: .serif))
+                    .foregroundStyle(Theme.crakRed)
+                Text("萬")
+                    .font(.system(size: width * 0.3, weight: .semibold))
+                    .foregroundStyle(Theme.crakRed)
+            }
+        case .suited(let rank, let suit):
+            // Dots and bams carry rank-accurate pips: a 9 shows 9 marks.
+            VStack(spacing: width * 0.06) {
+                Text("\(rank)")
+                    .font(.system(size: width * 0.3, weight: .bold, design: .serif))
                     .foregroundStyle(suitColor(suit))
-                suitGlyph(suit)
+                pipBlock(rank: rank, suit: suit)
             }
         case .wind(let wind):
             VStack(spacing: width * 0.02) {
@@ -90,29 +101,49 @@ struct TileView: View {
         }
     }
 
+    /// Classic pip arrangements, top row first (5 is the quincunx, 9 the 3x3).
+    private func pipRows(for rank: Int) -> [Int] {
+        switch rank {
+        case 1: return [1]
+        case 2: return [2]
+        case 3: return [3]
+        case 4: return [2, 2]
+        case 5: return [2, 1, 2]
+        case 6: return [3, 3]
+        case 7: return [2, 3, 2]
+        case 8: return [3, 2, 3]
+        default: return [3, 3, 3]
+        }
+    }
+
     @ViewBuilder
-    private func suitGlyph(_ suit: Suit) -> some View {
+    private func pipBlock(rank: Int, suit: Suit) -> some View {
+        let rows = pipRows(for: rank)
+        let pip = width * (rows.count == 1 ? 0.24 : rows.count == 2 ? 0.19 : 0.145)
+        VStack(spacing: pip * 0.28) {
+            ForEach(0..<rows.count, id: \.self) { row in
+                HStack(spacing: pip * 0.32) {
+                    ForEach(0..<rows[row], id: \.self) { _ in
+                        pipMark(suit: suit, size: pip)
+                    }
+                }
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func pipMark(suit: Suit, size: CGFloat) -> some View {
         switch suit {
-        case .crak:
-            Text("萬")
-                .font(.system(size: width * 0.3, weight: .semibold))
-                .foregroundStyle(Theme.crakRed)
-        case .bam:
-            HStack(spacing: width * 0.07) {
-                ForEach(0..<3, id: \.self) { _ in
-                    Capsule()
-                        .fill(Theme.bamGreen)
-                        .frame(width: width * 0.09, height: width * 0.3)
-                }
-            }
         case .dot:
-            HStack(spacing: width * 0.06) {
-                ForEach(0..<3, id: \.self) { _ in
-                    Circle()
-                        .strokeBorder(Theme.dotBlue, lineWidth: width * 0.05)
-                        .frame(width: width * 0.16, height: width * 0.16)
-                }
-            }
+            Circle()
+                .strokeBorder(Theme.dotBlue, lineWidth: size * 0.28)
+                .frame(width: size, height: size)
+        case .bam:
+            Capsule()
+                .fill(Theme.bamGreen)
+                .frame(width: size * 0.45, height: size * 1.3)
+        case .crak:
+            EmptyView() // craks never render pips
         }
     }
 }

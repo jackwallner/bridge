@@ -12,6 +12,7 @@ struct CharlestonDrillView: View {
     @State private var score = 0
     @State private var finished = false
     @State private var confettiTrigger = 0
+    @State private var shineTrigger = 0
 
     var body: some View {
         if finished {
@@ -22,7 +23,7 @@ struct CharlestonDrillView: View {
     }
 
     private var scenario: CharlestonScenario { scenarios[index] }
-    /// Deal is shown racked; map display order back to nothing — we grade by tile multiset.
+    /// The deal is shown racked. We grade by tile multiset.
     private var rackedDeal: [Tile] { scenario.deal.racked }
 
     private var drillBody: some View {
@@ -45,6 +46,9 @@ struct CharlestonDrillView: View {
                     .padding(.vertical, 6)
                     if submitted {
                         coachCard
+                            .shine(trigger: shineTrigger, corner: 16)
+                            .winGlow(Theme.gold, active: matchCount == 3)
+                            .transition(.scale(scale: 0.94).combined(with: .opacity))
                     } else {
                         Text("Selected \(selected.count) of 3")
                             .font(.subheadline)
@@ -144,7 +148,7 @@ struct CharlestonDrillView: View {
         if selected.contains(tileIndex) {
             selected.remove(tileIndex)
         } else if selected.count < 3 {
-            // Jokers may never be passed — enforce the real rule in the drill.
+            // Jokers may never be passed. Enforce the real rule in the drill.
             if case .joker = rackedDeal[tileIndex] { return }
             selected.insert(tileIndex)
         }
@@ -152,11 +156,15 @@ struct CharlestonDrillView: View {
 
     private func submit() {
         guard selected.count == 3 else { return }
-        submitted = true
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) { submitted = true }
         score += matchCount
         progress.recordItem(id: scenario.id, correct: matchCount >= 2)
         if matchCount == 3 {
             confettiTrigger += 1
+            Task { @MainActor in
+                try? await Task.sleep(nanoseconds: 350_000_000)
+                shineTrigger += 1
+            }
             Haptics.success()
             SoundPlayer.play(.success)
         } else if matchCount == 2 {
