@@ -226,7 +226,15 @@ struct PaywallView: View {
             do {
                 await subscriptions.ensureOfferings()
                 let outcome = try await subscriptions.purchase(subscriptions.package(for: selectedPlan))
-                if outcome == .purchased { Haptics.success() }
+                guard outcome == .purchased else { return }
+                Haptics.success()
+                // The sheet dismisses itself the moment `isPro` flips. If the
+                // entitlement hasn't landed after a few seconds, say so and
+                // point at Restore, rather than leaving someone who just paid
+                // looking at the paywall that charged them.
+                if await !subscriptions.confirmEntitlement() {
+                    message = "Your purchase went through, but \(Membership.name) hasn't unlocked yet. Give it a moment, then tap Restore. You will not be charged twice."
+                }
             } catch {
                 // A cancel never lands here (it's an outcome, not a throw), so
                 // anything that does is worth telling the player about.

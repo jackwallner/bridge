@@ -19,8 +19,8 @@ Del, ki straši vsakega novega igralca, brez panike. Spoznaj pravila in strategi
 PROSTOR MIZE
 Odločitve obdrži-ali-vrzi: kdaj obdržati cvet, kdaj ga zamenjati za odkritega džokerja, kaj ti pove nasprotnikovo razkritje in kateri odmeti so varni.
 
-PRO TABLES (dodatna nadgradnja)
-Pripravljen na več? Pro Tables doda napredno strategijo Charlestona, šolo obrambe in strokovne vaje branja stojala za igralce, ki presegajo osnove.
+MAHJ+ (dodatna nadgradnja)
+Pripravljen na več? Mahj+ doda napredno strategijo Charlestona, šolo obrambe in strokovne vaje branja stojala za igralce, ki presegajo osnove.
 
 ZASNOVANO ZA NOVE IGRALCE
 Kartice z razlago "zakaj" na hrbtni strani. Nizi, ki te ohranjajo pri vadbi med igrami. Izvirna vadbena deljenja, ki učijo sistem kategorij, tako da se tvoje znanje prenese na karto katerega koli leta.
@@ -28,4 +28,4 @@ Kartice z razlago "zakaj" na hrbtni strani. Nizi, ki te ohranjajo pri vadbi med 
 Mahj Trainer je neodvisna vadbena aplikacija. Ni povezana z National Mah Jongg League niti od nje odobrena. Za uradna deljenja in vrednosti si priskrbi trenutno NMJL karto.
 
 NAROČNINE
-Pro Tables je na voljo prek samodejno obnavljajoče naročnine ali enkratnega nakupa: Mesečna $1.99/mesec, Letna $9.99/leto (obe vključujeta 1-tedensko brezplačno preizkusno obdobje), ali Dosmrtna $29.99 kot enkraten nakup. Plačilo se obremeni na tvoj račun Apple ID ob potrditvi nakupa. Naročnina se samodejno obnovi, razen če jo prekličeš vsaj 24 ur pred koncem trenutnega obdobja. Upravljaj ali prekliči kadar koli v Nastavitvah računa na svoji napravi. Pogoji uporabe (Applov standardni EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Politika zasebnosti: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ je na voljo prek samodejno obnavljajoče naročnine ali enkratnega nakupa: Mesečna $1.99/mesec, Letna $9.99/leto (obe vključujeta 1-tedensko brezplačno preizkusno obdobje), ali Dosmrtna $29.99 kot enkraten nakup. Plačilo se obremeni na tvoj račun Apple ID ob potrditvi nakupa. Naročnina se samodejno obnovi, razen če jo prekličeš vsaj 24 ur pred koncem trenutnega obdobja. Upravljaj ali prekliči kadar koli v Nastavitvah računa na svoji napravi. Pogoji uporabe (Applov standardni EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Politika zasebnosti: https://jackwallner.github.io/mahj/privacy-policy.

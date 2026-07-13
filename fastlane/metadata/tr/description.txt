@@ -19,8 +19,8 @@ Yeni oyuncuları en çok korkutan kısım, artık paniksiz. Önce taş değiş t
 MASA ODASI
 Tut ya da at kararları: bir çiçeği ne zaman elinde tutmalısın, açık bir jokerle ne zaman takas yapmalısın, rakibin açtığı taşlar sana ne anlatır ve hangi taşları atmak güvenlidir.
 
-PRO TABLES (isteğe bağlı yükseltme)
-Daha fazlasına hazır mısın? Pro Tables, ileri Charleston stratejisi, bir savunma okulu ve temelleri geride bırakan oyuncular için uzman seviyesinde raf okuma alıştırmaları ekler.
+MAHJ+ (isteğe bağlı yükseltme)
+Daha fazlasına hazır mısın? Mahj+, ileri Charleston stratejisi, bir savunma okulu ve temelleri geride bırakan oyuncular için uzman seviyesinde raf okuma alıştırmaları ekler.
 
 YENİ OYUNCULAR İÇİN TASARLANDI
 Arka yüzünde "neden" açıklaması olan bilgi kartları. Antrenmanlar arasında pratik yapmanı sağlayan seri takibi. Kategori sistemini öğreten özgün alıştırma elleri, böylece kazandığın beceriler hangi yılın kartı olursa olsun işine yarar.
@@ -28,5 +28,5 @@ Arka yüzünde "neden" açıklaması olan bilgi kartları. Antrenmanlar arasınd
 Mahj Trainer bağımsız bir antrenman uygulamasıdır. National Mah Jongg League ile herhangi bir bağlantısı veya onayı yoktur. Resmi eller ve puanlar için güncel NMJL kartını kullan.
 
 ABONELİKLER HAKKINDA
-Pro Tables, otomatik yenilenen abonelik veya tek seferlik satın alma ile açılabilir: Monthly 1,99 $/ay, Yearly 9,99 $/yıl (ikisi de 1 haftalık ücretsiz deneme içerir) veya tek seferlik Lifetime 29,99 $. Ödeme, satın alma onaylandığında Apple ID hesabından tahsil edilir. Abonelikler, mevcut dönem bitmeden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir. Cihazının Hesap Ayarları'ndan istediğin zaman yönetebilir veya iptal edebilirsin. Kullanım Koşulları (Apple'ın standart EULA'sı): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Mahj+, otomatik yenilenen abonelik veya tek seferlik satın alma ile açılabilir: Monthly 1,99 $/ay, Yearly 9,99 $/yıl (ikisi de 1 haftalık ücretsiz deneme içerir) veya tek seferlik Lifetime 29,99 $. Ödeme, satın alma onaylandığında Apple ID hesabından tahsil edilir. Abonelikler, mevcut dönem bitmeden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir. Cihazının Hesap Ayarları'ndan istediğin zaman yönetebilir veya iptal edebilirsin. Kullanım Koşulları (Apple'ın standart EULA'sı): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 Gizlilik Politikası: https://jackwallner.github.io/mahj/privacy-policy

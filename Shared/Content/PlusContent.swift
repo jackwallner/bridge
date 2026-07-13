@@ -116,7 +116,7 @@ enum PlusContent {
             tiles: [.c(2), .c(2), .dragon(.soap), .dragon(.soap), .b(2), .b(6), .b(6), .d(2), .flower, .flower, .flower, .joker, .c(9)],
             choices: [.year, .evens2468, .likeNumbers, .threeSixNine],
             answer: .year,
-            explanation: "The soaps are the tell. Soap stands in for zero, so 2s, Soaps, and 6s spell out the year, and three flowers is exactly the flower load a year hand wants. 2468 is the decoy."
+            explanation: "The soaps are the tell. Soap stands in for zero, so 2s, Soaps, and 6s spell out the year, and three flowers is exactly the flower load a year hand wants. 2468 is the decoy, but with no 4s and no 8s anywhere it never really had a shot."
         ),
         HandMatchQuestion(
             id: "plus-hm-quints",
@@ -147,11 +147,11 @@ enum PlusContent {
         ),
         CharlestonScenario(
             id: "plus-ch-blind-pass",
-            situation: "Second Charleston, pass LEFT. You are all-in on evens. Pick 3.",
+            situation: "Second Charleston, the LAST pass, going RIGHT. You are all-in on evens. Pick 3.",
             deal: [.b(2), .b(4), .b(6), .b(8), .c(2), .c(4), .c(6), .d(8), .d(3), .wind(.west), .wind(.south), .flower, .joker],
             recommendedPass: [.wind(.west), .wind(.south), .d(3)],
             reasoning: "Seven evens across two suits is a real 2468 spine. The two lonely winds do nothing outside Winds and Dragons, and the 3 Dot is your only odd number tile. Those three leave without a second thought.",
-            tip: "In the second Charleston you may pass 1 to 3 tiles you have not looked at (the blind pass) to avoid breaking a hand you like. Only blind-pass tiles you can afford to lose."
+            tip: "This is the pass where a blind pass is legal: on the LAST pass of a Charleston you may send 1 to 3 tiles straight from the ones handed to you, without looking. Blind passing saves a hand you like, but you are shipping unknowns."
         ),
         CharlestonScenario(
             id: "plus-ch-courtesy",
@@ -166,7 +166,7 @@ enum PlusContent {
             situation: "First Charleston, pass ACROSS. You hold two flowers and they look like spares. Pick 3.",
             deal: [.c(5), .c(5), .c(7), .c(9), .b(5), .b(7), .b(9), .d(1), .d(6), .d(2), .d(4), .flower, .flower],
             recommendedPass: [.d(2), .d(4), .d(6)],
-            reasoning: "Seven odd tiles and a pair of 5 Craks: this is a 13579 hand. The even Dots (2, 4, 6) are the passes. Do NOT ship the flowers to make the choice easier. Most sections on the card want flowers, and you cannot get them back once they are gone.",
+            reasoning: "Eight odd tiles and a pair of 5 Craks: this is a 13579 hand. The even Dots (2, 4, 6) are the passes. Do NOT ship the flowers to make the choice easier. Most sections on the card want flowers, and you cannot get them back once they are gone.",
             tip: "Flowers are the last thing you pass. They fit almost every section, so passing one is passing a tile your own hand probably needs later."
         ),
     ]

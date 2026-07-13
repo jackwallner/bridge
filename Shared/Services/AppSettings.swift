@@ -63,6 +63,11 @@ final class AppSettings: ObservableObject {
         }
     }
 
+    /// True when the player asked for a reminder but iOS notifications are off
+    /// for the app. Without this the toggle just silently flips back, which
+    /// looks like the app is broken.
+    @Published var reminderPermissionDenied = false
+
     @Published var reminderTime: Date {
         didSet {
             let parts = Calendar.current.dateComponents([.hour, .minute], from: reminderTime)
@@ -94,6 +99,7 @@ final class AppSettings: ObservableObject {
                     self.scheduleReminder()
                 } else {
                     self.reminderEnabled = false
+                    self.reminderPermissionDenied = true
                 }
             }
         }

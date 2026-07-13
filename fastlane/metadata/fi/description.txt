@@ -19,8 +19,8 @@ Osa, joka pelottaa jokaista uutta pelaajaa, ilman paniikkia. Opi siirron säänn
 PÖYTÄHUONE
 Pidä-vai-heitä-päätökset: milloin kannattaa pitää kukka, milloin vaihtaa esillä olevaan jokeriin, mitä vastustajan esillä oleva käsi kertoo, ja mitkä heitot ovat turvallisia.
 
-PRO TABLES (valinnainen päivitys)
-Valmis lisään? Pro Tables tuo edistyneen Charleston-strategian, puolustuskoulun ja asiantuntijatason telineen lukuharjoituksia pelaajille, jotka etenevät perusteiden yli.
+MAHJ+ (valinnainen päivitys)
+Valmis lisään? Mahj+ tuo edistyneen Charleston-strategian, puolustuskoulun ja asiantuntijatason telineen lukuharjoituksia pelaajille, jotka etenevät perusteiden yli.
 
 SUUNNITELTU UUSILLE PELAAJILLE
 Muistikortit, joiden takana on "miksi". Putket, jotka pitävät sinut harjoittelemassa pelikertojen välillä. Alkuperäisiä harjoituskäsiä, jotka opettavat kategoriajärjestelmän, jotta taitosi siirtyvät minkä tahansa vuoden korttiin.
@@ -28,4 +28,4 @@ Muistikortit, joiden takana on "miksi". Putket, jotka pitävät sinut harjoittel
 Mahj Trainer on riippumaton harjoitussovellus. Se ei ole sidoksissa National Mah Jongg Leagueen eikä sen hyväksymä. Virallisia käsiä ja arvoja varten hanki voimassa oleva NMJL-kortti.
 
 TILAUKSET
-Pro Tables on saatavana automaattisesti uusiutuvana tilauksena tai kertaostona: Kuukausittainen $1.99/kk, Vuosittainen $9.99/vuosi (molemmissa 1 viikon ilmainen kokeilu), tai Elinikäinen $29.99 kertaostona. Maksu veloitetaan Apple ID -tililtäsi oston vahvistuessa. Tilaus uusiutuu automaattisesti, ellei sitä peruuteta vähintään 24 tuntia ennen kuluvan jakson päättymistä. Hallitse tai peruuta milloin tahansa laitteesi Tilin asetuksista. Käyttöehdot (Applen vakio-EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Tietosuojakäytäntö: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ on saatavana automaattisesti uusiutuvana tilauksena tai kertaostona: Kuukausittainen $1.99/kk, Vuosittainen $9.99/vuosi (molemmissa 1 viikon ilmainen kokeilu), tai Elinikäinen $29.99 kertaostona. Maksu veloitetaan Apple ID -tililtäsi oston vahvistuessa. Tilaus uusiutuu automaattisesti, ellei sitä peruuteta vähintään 24 tuntia ennen kuluvan jakson päättymistä. Hallitse tai peruuta milloin tahansa laitteesi Tilin asetuksista. Käyttöehdot (Applen vakio-EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Tietosuojakäytäntö: https://jackwallner.github.io/mahj/privacy-policy.
