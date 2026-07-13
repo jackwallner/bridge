@@ -9,14 +9,14 @@ CORE FLOW
 4. Settings has Rate + Send Feedback, theme, haptics, sound, daily reminder, and Restore Purchases.
 
 PRO (in-app purchase via RevenueCat)
-All four beginner rooms above are free; nothing in them is gated. Pro unlocks one additional room, Pro Tables, with advanced Charleston strategy, a defense-school drill, and expert rack-reading practice.
+All four beginner rooms above are free; nothing in them is gated. Mahj+ unlocks extra practice sets in every room plus one additional room, The Master Tables, with advanced Charleston strategy, a defense-school drill, and expert rack-reading practice.
 
 Products:
 - Monthly: $1.99/month, auto-renewing subscription, 1-week free trial
 - Yearly: $9.99/year, auto-renewing subscription, 1-week free trial
 - Lifetime: $29.99 one-time purchase (non-consumable), no trial
 
-To test Pro: sign a Sandbox Apple ID into the test device (App Store Connect > Users and Access > Sandbox), then start a trial from the in-app paywall (Settings > Upgrade to Pro, or the trial screen shown during onboarding). Sandbox purchases do not charge real money and Apple compresses trial/renewal periods in the sandbox environment for faster testing.
+To test Mahj+: sign a Sandbox Apple ID into the test device (App Store Connect > Users and Access > Sandbox), then start a trial from the in-app paywall (Settings > Get Mahj+, or the trial screen shown during onboarding). Sandbox purchases do not charge real money and Apple compresses trial/renewal periods in the sandbox environment for faster testing.
 
 TRIAL TERMS
 Both subscriptions include a 1-week free trial. Payment is charged to the user's Apple ID account at confirmation of purchase (end of the trial, unless canceled first). Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Users can manage or cancel anytime in their device's Account Settings. Terms of Use is Apple's standard EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/); Privacy Policy is at https://jackwallner.github.io/mahj/privacy-policy.

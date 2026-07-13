@@ -1,1 +1,1 @@
-tile,dot,bam,crak,wind,dragon,flower,joker,rack,hand,rule,quiz,beginner,tutorial,tip,strategy,pung
+majong,joker,mahjongg,tile,nmjl,charleston,flashcard,tutor,beginner,lesson,drill,rule,hand,strategy
