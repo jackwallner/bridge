@@ -69,7 +69,7 @@ def create_version_loc(client: ASCClient, version_id: str, locale: str, source: 
             "attributes": {
                 "locale": locale,
                 "description": desc,
-                "keywords": (read_meta(locale, "keywords") or "headache,tracker")[:100],
+                "keywords": (read_meta(locale, "keywords") or "mahjongg,practice,learn")[:100],
             },
             "relationships": {
                 "appStoreVersion": {"data": {"type": "appStoreVersions", "id": version_id}}
