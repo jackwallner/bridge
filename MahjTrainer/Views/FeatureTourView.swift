@@ -64,10 +64,23 @@ struct FeatureTourView: View {
                 removal: .move(edge: .leading).combined(with: .opacity)
             ))
             Spacer(minLength: 0)
-            Button {
-                advance(pageCount: pages.count)
-            } label: {
-                Text(isLast ? "Start my first session" : "Show me").primaryCTA()
+            // The escape hatch is offered on EVERY page, not just at the
+            // session prompt: by the time someone has tapped through a trial
+            // page and a tour, "let me just use the app" is a fair ask.
+            VStack(spacing: 10) {
+                Button {
+                    advance(pageCount: pages.count)
+                } label: {
+                    Text(isLast ? "Start my first session" : "Show me").primaryCTA()
+                }
+                Button {
+                    Haptics.impact(.light, intensity: 0.6)
+                    onDone()
+                } label: {
+                    Text(isLast ? "Skip it, take me to the app" : "Skip the tour")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(Theme.inkSecondary)
+                }
             }
         }
         .padding()
@@ -91,8 +104,8 @@ struct FeatureTourView: View {
         [
             TourPage(
                 eyebrow: "THE ROOMS",
-                title: "Every drill, one tap from Home",
-                body: "Drills are grouped by room: meet the tiles, read the card, run the Charleston, play the table. All four beginner rooms are free, forever.",
+                title: "Four rooms, four skills",
+                body: "Home is the lobby. Each room holds its own drills: meet the tiles, read the card, run the Charleston, play the table. All four beginner rooms are free, forever.",
                 hero: AnyView(roomsHero)
             ),
             TourPage(
@@ -104,15 +117,15 @@ struct FeatureTourView: View {
             subscriptions.isPro
                 ? TourPage(
                     eyebrow: "YOURS NOW",
-                    title: "Your Pro Tables are open",
-                    body: "Your trial already includes everything behind the gold door: Advanced Charleston, Defense School, and expert rack reading, with new advanced drills all year.",
+                    title: "\(Membership.name) is open",
+                    body: "Your trial already includes the extra practice sets in every room, plus the Master Tables: advanced Charleston, Defense School, and expert rack reading.",
                     hero: AnyView(proHero(locked: false)),
                     accentGold: true
                 )
                 : TourPage(
                     eyebrow: "BEHIND THE GOLD DOOR",
-                    title: "The Pro Tables wait for you",
-                    body: "Advanced Charleston, Defense School, and expert rack reading live behind the lock. Unlock them any time from Home or Settings.",
+                    title: "\(Membership.name) adds more of it",
+                    body: "Every room keeps a set of extra drills behind the lock, and the Master Tables hold the advanced ones. Nothing you have now goes away. Unlock any time from Home or Settings.",
                     hero: AnyView(proHero(locked: true)),
                     accentGold: true
                 ),
@@ -195,9 +208,9 @@ struct FeatureTourView: View {
     private func proHero(locked: Bool) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Image(systemName: locked ? "lock.fill" : "crown.fill")
+                Image(systemName: locked ? "lock.fill" : "sparkles")
                     .foregroundStyle(Theme.gold)
-                Text("PRO TABLES")
+                Text(Membership.name.uppercased())
                     .font(.caption.weight(.heavy))
                     .kerning(1.6)
                     .foregroundStyle(Theme.gold)
@@ -207,7 +220,7 @@ struct FeatureTourView: View {
                         .foregroundStyle(Theme.jade)
                 }
             }
-            ForEach(["Advanced Charleston", "Defense School", "Expert rack reading"], id: \.self) { line in
+            ForEach(["Extra sets in every room", "Advanced Charleston and defense", "Expert rack reading"], id: \.self) { line in
                 HStack(spacing: 8) {
                     Image(systemName: locked ? "sparkles" : "checkmark.circle.fill")
                         .font(.footnote)

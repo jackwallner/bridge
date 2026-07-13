@@ -22,6 +22,10 @@ struct FlashcardDrillView: View {
     @State private var finished = false
     @State private var choicePick: Int?
     @State private var confettiTrigger = 0
+    /// Fades the departing card (and the KNEW IT / AGAIN stamp riding on it)
+    /// out with the throw. Without it the card is simply yanked from the queue
+    /// at commit and the verdict stamp blinks out of existence mid-flight.
+    @State private var flingOpacity: Double = 1
 
     /// One-time teaching nudge after the first-ever flip.
     @AppStorage("mahj.hasSwipedDeck") private var hasSwipedDeck = false
@@ -113,6 +117,7 @@ struct FlashcardDrillView: View {
                 .offset(slot == 0 ? effectiveDrag : .zero)
                 .rotationEffect(slot == 0 ? topRotation : .zero, anchor: .bottom)
                 .overlay { if slot == 0 { verdictStamps } }
+                .opacity(slot == 0 ? flingOpacity : 1)
                 .zIndex(Double(3 - slot))
                 .allowsHitTesting(slot == 0)
                 .gesture(dragGesture(size: size))
@@ -289,20 +294,24 @@ struct FlashcardDrillView: View {
     }
 
     /// Throw the card off, then commit the grade with animation suppressed.
-    /// the risen card behind is already in place, so nothing jumps.
+    /// the risen card behind is already in place, so nothing jumps. The card
+    /// fades as it goes, so the verdict stamp leaves with it instead of being
+    /// cut off the instant the queue drops the card.
     private func fling(direction: CGFloat, size: CGSize) {
         isFlinging = true
         hasSwipedDeck = true
         Haptics.impact(.rigid, intensity: 0.7)
         let exit = CGSize(width: direction * size.width * 1.5, height: drag.height * 1.1)
-        withAnimation(.easeIn(duration: 0.26)) {
+        withAnimation(.easeIn(duration: 0.34)) {
             drag = exit
+            flingOpacity = 0
         } completion: {
             var t = Transaction()
             t.disablesAnimations = true
             withTransaction(t) {
                 commit(gotIt: direction > 0)
                 drag = .zero
+                flingOpacity = 1
                 isFlinging = false
                 isFlipped = false
             }

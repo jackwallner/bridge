@@ -1,5 +1,9 @@
 import SwiftUI
 
+/// Home is the lobby: Get Started, then the rooms as doors. The drills
+/// themselves live one level down in `RoomView`. (Home used to list every
+/// drill flat; once each room grew a Mahj+ extra set that list ran to a dozen
+/// rows and the rooms stopped reading as places.)
 struct HomeView: View {
     @EnvironmentObject private var progress: ProgressStore
     @EnvironmentObject private var subscriptions: SubscriptionService
@@ -15,15 +19,19 @@ struct HomeView: View {
         NavigationStack {
             ScrollViewReader { proxy in
                 ScrollView {
-                    VStack(spacing: 20) {
+                    VStack(spacing: 18) {
                         header
                         getStartedCard
                         if skillLevel == "new" {
                             howToPlayCard
                         }
                         statsHeader
+                        roomsHeading
                         ForEach(DrillLibrary.rooms) { room in
-                            section(for: room)
+                            roomCard(room)
+                        }
+                        if !subscriptions.isPro {
+                            upgradeCard
                         }
                         disclaimerFooter
                     }
@@ -55,7 +63,7 @@ struct HomeView: View {
     }
 
     /// Consumes the one-shot recommendation hint: scrolls to and briefly
-    /// highlights the recommended room's section, then clears the hint so it
+    /// highlights the recommended room's card, then clears the hint so it
     /// only ever fires once per recommendation.
     private func consumeRecommendedRoomHint(proxy: ScrollViewProxy) {
         guard !recommendedRoomHint.isEmpty else { return }
@@ -65,7 +73,7 @@ struct HomeView: View {
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 400_000_000)
             withAnimation(.spring(response: 0.5, dampingFraction: 0.85)) {
-                proxy.scrollTo(roomID, anchor: .top)
+                proxy.scrollTo(roomID, anchor: .center)
                 highlightedRoomID = roomID
             }
             try? await Task.sleep(nanoseconds: 2_200_000_000)
@@ -182,118 +190,123 @@ struct HomeView: View {
         .themedCard(corner: 16)
     }
 
-    // MARK: - Drill sections (flat: every drill is one tap from here)
+    // MARK: - Rooms
 
-    private func section(for room: Room) -> some View {
+    private var roomsHeading: some View {
+        HStack {
+            Text("THE ROOMS")
+                .font(.caption.weight(.heavy))
+                .kerning(1.4)
+                .foregroundStyle(Theme.inkSecondary)
+            Spacer()
+        }
+        .padding(.top, 4)
+        .padding(.horizontal, 4)
+    }
+
+    private func roomCard(_ room: Room) -> some View {
         let locked = !room.isFree && !subscriptions.isPro
         let highlighted = highlightedRoomID == room.id
-        return VStack(spacing: 10) {
-            HStack(spacing: 8) {
-                Image(systemName: room.icon)
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(room.accent)
-                Text(room.name.uppercased())
-                    .font(.caption.weight(.heavy))
-                    .kerning(1.4)
-                    .foregroundStyle(Theme.inkSecondary)
-                Spacer()
-                if locked {
-                    Text("PRO")
-                        .font(.caption2.weight(.heavy))
-                        .foregroundStyle(Theme.gold)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 3)
-                        .background(Theme.gold.opacity(0.15), in: Capsule())
+        let done = room.drills.filter { progress.completions(for: $0.id) > 0 }.count
+        return NavigationLink {
+            RoomView(room: room)
+        } label: {
+            VStack(spacing: 0) {
+                RoomArt(room: room, height: 96, dimmed: locked)
+                HStack(spacing: 12) {
+                    Image(systemName: room.icon)
+                        .font(.body.weight(.semibold))
+                        .foregroundStyle(room.accent)
+                        .frame(width: 42, height: 42)
+                        .background(room.accent.opacity(0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    VStack(alignment: .leading, spacing: 3) {
+                        HStack(spacing: 6) {
+                            Text(room.name)
+                                .font(.headline)
+                                .foregroundStyle(Theme.ink)
+                            if locked {
+                                PlusBadge()
+                            }
+                        }
+                        Text(room.tagline)
+                            .font(.subheadline)
+                            .foregroundStyle(Theme.inkSecondary)
+                            .lineLimit(2)
+                            .multilineTextAlignment(.leading)
+                        Text(subtitle(for: room, done: done, locked: locked))
+                            .font(.caption)
+                            .foregroundStyle(Theme.inkTertiary)
+                    }
+                    Spacer(minLength: 4)
+                    Image(systemName: locked ? "lock.fill" : "chevron.right")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(locked ? Theme.gold : Theme.inkTertiary)
                 }
+                .padding(14)
             }
-            .padding(.horizontal, 4)
-            ForEach(room.drills) { drill in
-                drillRow(drill, room: room, locked: locked)
-            }
+            .themedCard()
+            .clipShape(RoundedRectangle(cornerRadius: Theme.cardCorner, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: Theme.cardCorner, style: .continuous)
+                    .strokeBorder(highlighted ? room.accent : Color.clear, lineWidth: 2.5)
+            )
+            .contentShape(RoundedRectangle(cornerRadius: Theme.cardCorner, style: .continuous))
         }
-        .padding(.top, 6)
-        .padding(10)
-        .background(
-            highlighted ? room.accent.opacity(0.10) : Color.clear,
-            in: RoundedRectangle(cornerRadius: 20, style: .continuous)
-        )
-        .overlay(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .strokeBorder(highlighted ? room.accent : Color.clear, lineWidth: 2)
-        )
+        .buttonStyle(PressableCardStyle())
         .id(room.id)
     }
 
-    @ViewBuilder
-    private func drillRow(_ drill: Drill, room: Room, locked: Bool) -> some View {
+    /// The room's one-line status. For free rooms this is where the extra sets
+    /// announce themselves, so the upgrade reads as "more of what you like".
+    private func subtitle(for room: Room, done: Int, locked: Bool) -> String {
         if locked {
-            Button {
-                showPaywall = true
-            } label: {
-                drillRowBody(drill, room: room, locked: true)
-            }
-            .buttonStyle(PressableCardStyle())
-        } else {
-            NavigationLink {
-                drillDestination(drill, room: room)
-            } label: {
-                drillRowBody(drill, room: room, locked: false)
-            }
-            .buttonStyle(PressableCardStyle())
+            return "\(room.drills.count) advanced drills"
         }
+        let extras = room.drills.filter(\.isPlus).count
+        let free = room.drills.count - extras
+        var parts = ["\(done) of \(room.drills.count) done"]
+        if extras > 0, !subscriptions.isPro {
+            parts.append("\(free) free, \(extras) with \(Membership.name)")
+        }
+        return parts.joined(separator: " · ")
     }
 
-    private func drillRowBody(_ drill: Drill, room: Room, locked: Bool) -> some View {
-        let done = progress.completions(for: drill.id) > 0
-        return HStack(spacing: 14) {
-            Image(systemName: drill.kind.symbol)
-                .font(.body.weight(.semibold))
-                .foregroundStyle(locked ? room.accent.opacity(0.55) : room.accent)
-                .frame(width: 42, height: 42)
-                .background(room.accent.opacity(locked ? 0.08 : 0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
-            VStack(alignment: .leading, spacing: 3) {
-                Text(drill.title)
-                    .font(.headline)
-                    .foregroundStyle(Theme.ink)
-                Text(drill.subtitle)
-                    .font(.subheadline)
-                    .foregroundStyle(Theme.inkSecondary)
-                    .lineLimit(2)
-                Text("\(drill.kind.itemCount) \(drill.kind.unitName)")
-                    .font(.caption)
-                    .foregroundStyle(Theme.inkTertiary)
-            }
-            Spacer(minLength: 4)
-            if locked {
-                Image(systemName: "lock.fill")
-                    .font(.footnote)
+    private var upgradeCard: some View {
+        Button {
+            showPaywall = true
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "sparkles")
+                    .font(.body.weight(.semibold))
                     .foregroundStyle(Theme.gold)
-            } else if done {
-                Image(systemName: "checkmark.circle.fill")
-                    .foregroundStyle(room.accent)
-            } else {
+                    .frame(width: 38, height: 38)
+                    .background(Theme.gold.opacity(0.14), in: Circle())
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Get \(Membership.name)")
+                        .font(.headline)
+                        .foregroundStyle(Theme.ink)
+                    Text("\(lockedDrillCount) more drills across every room, plus the Master Tables")
+                        .font(.caption)
+                        .foregroundStyle(Theme.inkSecondary)
+                        .multilineTextAlignment(.leading)
+                }
+                Spacer(minLength: 4)
                 Image(systemName: "chevron.right")
                     .font(.footnote.weight(.semibold))
                     .foregroundStyle(Theme.inkTertiary)
             }
+            .padding(12)
+            .themedCard(corner: 16)
+            .overlay(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .strokeBorder(Theme.gold.opacity(0.35), lineWidth: 1)
+            )
         }
-        .padding(14)
-        .themedCard(corner: 16)
-        .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .buttonStyle(PressableCardStyle())
     }
 
-    @ViewBuilder
-    private func drillDestination(_ drill: Drill, room: Room) -> some View {
-        switch drill.kind {
-        case .flashcards(let cards):
-            FlashcardDrillView(drill: drill, cards: cards, accent: room.accent)
-        case .quiz(let questions):
-            QuizDrillView(drill: drill, questions: questions)
-        case .handMatch(let questions):
-            HandMatchDrillView(drill: drill, questions: questions)
-        case .charleston(let scenarios):
-            CharlestonDrillView(drill: drill, scenarios: scenarios)
-        }
+    private var lockedDrillCount: Int {
+        DrillLibrary.rooms.reduce(0) { $0 + $1.plusDrillCount }
     }
 
     private var disclaimerFooter: some View {
@@ -302,6 +315,41 @@ struct HomeView: View {
             .foregroundStyle(Theme.inkTertiary)
             .multilineTextAlignment(.center)
             .padding(.top, 8)
+    }
+}
+
+/// The room's illustration banner. Decorative only: if the asset is missing
+/// (or was never generated) the card falls back to a tinted wash, so nothing
+/// here is load-bearing.
+struct RoomArt: View {
+    let room: Room
+    var height: CGFloat
+    var dimmed: Bool = false
+
+    var body: some View {
+        ZStack {
+            LinearGradient(
+                colors: [room.accent.opacity(0.22), room.accent.opacity(0.08)],
+                startPoint: .topLeading, endPoint: .bottomTrailing
+            )
+            if let image = UIImage(named: room.artName) {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            }
+        }
+        .frame(height: height)
+        .frame(maxWidth: .infinity)
+        .clipped()
+        .saturation(dimmed ? 0.35 : 1)
+        .overlay(alignment: .bottom) {
+            LinearGradient(
+                colors: [Theme.card.opacity(0), Theme.card],
+                startPoint: .top, endPoint: .bottom
+            )
+            .frame(height: 22)
+        }
+        .allowsHitTesting(false)
     }
 }
 

@@ -55,7 +55,7 @@ final class ProgressStoreTests: XCTestCase {
         guard let room = DrillLibrary.rooms.first else { return XCTFail("no rooms") }
         XCTAssertEqual(store.roomProgress(room), 0)
         store.recordSession(drillID: room.drills[0].id)
-        XCTAssertEqual(store.roomProgress(room), 0.5, accuracy: 0.001)
+        XCTAssertEqual(store.roomProgress(room), 1 / Double(room.drills.count), accuracy: 0.001)
     }
 
     func testRecordItemTracksSeenAndMissed() {
@@ -87,12 +87,6 @@ final class ProgressStoreTests: XCTestCase {
         XCTAssertTrue(store.hasOnboarded, "Reset must not re-trigger onboarding")
     }
 
-    func testEnjoymentGateFiresOnceAfterThreeSessions() {
-        store.recordSession(drillID: "a")
-        XCTAssertFalse(store.shouldShowEnjoymentGate())
-        store.recordSession(drillID: "a")
-        store.recordSession(drillID: "a")
-        XCTAssertTrue(store.shouldShowEnjoymentGate())
-        XCTAssertFalse(store.shouldShowEnjoymentGate(), "Gate must fire only once")
-    }
+    // The review gate moved to ReviewPromptTracker (enjoyment -> rate / feedback
+    // funnel); see ReviewPromptTrackerTests.
 }

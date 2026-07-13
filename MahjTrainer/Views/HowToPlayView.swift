@@ -1,10 +1,16 @@
 import SwiftUI
 
-/// The How to Play quick start: a short, held-until-tap primer on American
-/// Mah Jongg for brand-new players. Runs inside onboarding (pass `onDone`)
-/// and re-opens from Home and Settings (dismisses itself).
+/// The How to Play quick start: a short primer on American Mah Jongg for
+/// brand-new players. Runs inside onboarding (pass `onDone`, and `onSkip` for
+/// the escape hatch) and re-opens from Home and Settings (dismisses itself).
+///
+/// Navigation is both swipe and button: drag the card left/right to page, and
+/// Back sits NEXT to Continue where the thumb already is. (A back chevron in
+/// the top-left corner is a mile from the thumb on the same screen where the
+/// forward action is a full-width button at the bottom.)
 struct HowToPlayView: View {
     var onDone: (() -> Void)?
+    var onSkip: (() -> Void)?
 
     @Environment(\.dismiss) private var dismiss
     @AppStorage("mahj.skillLevel") private var skillLevel = ""
@@ -13,6 +19,7 @@ struct HowToPlayView: View {
     @State private var goingForward = true
     @State private var shineTrigger = 0
     @State private var confettiTrigger = 0
+    @State private var drag: CGFloat = 0
 
     private let pages = HowToPlayContent.pages
     private var page: HowToPlayPage { pages[index] }
@@ -22,10 +29,12 @@ struct HowToPlayView: View {
 
     var body: some View {
         VStack(spacing: 18) {
-            header
+            progressDots
             Spacer(minLength: 0)
             pageCard
                 .id(page.id)
+                .offset(x: drag)
+                .rotationEffect(.degrees(Double(drag / 40)), anchor: .bottom)
                 .transition(goingForward
                     ? .asymmetric(
                         insertion: .move(edge: .trailing).combined(with: .opacity),
@@ -36,12 +45,9 @@ struct HowToPlayView: View {
                         removal: .move(edge: .trailing).combined(with: .opacity)
                     )
                 )
+                .gesture(pageSwipe)
             Spacer(minLength: 0)
-            Button {
-                advance()
-            } label: {
-                Text(isLast ? "Take your seat" : "Continue").primaryCTA()
-            }
+            footer
         }
         .padding()
         .background(Theme.background)
@@ -51,25 +57,25 @@ struct HowToPlayView: View {
         .onAppear { fireShine() }
     }
 
-    private var header: some View {
-        HStack {
-            Button {
-                goBack()
-            } label: {
-                Image(systemName: "chevron.left")
-                    .font(.body.weight(.semibold))
-                    .foregroundStyle(Theme.inkSecondary)
-                    .frame(width: 32, height: 32)
+    /// Swipe left for the next page, right for the previous one. The card
+    /// tracks the finger and rubber-bands at both ends of the primer.
+    private var pageSwipe: some Gesture {
+        DragGesture(minimumDistance: 12)
+            .onChanged { value in
+                let atEdge = (value.translation.width > 0 && isFirst) || (value.translation.width < 0 && isLast)
+                drag = atEdge ? value.translation.width * 0.25 : value.translation.width
             }
-            .disabled(isFirst)
-            .opacity(isFirst ? 0.3 : 1)
-            .accessibilityLabel("Back")
-            Spacer(minLength: 0)
-            progressDots
-            Spacer(minLength: 0)
-            Color.clear.frame(width: 32, height: 32)
-        }
-        .padding(.top, 6)
+            .onEnded { value in
+                let travel = value.translation.width
+                let flung = abs(travel) > 60 || abs(value.predictedEndTranslation.width) > 160
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) { drag = 0 }
+                guard flung else { return }
+                if travel < 0, !isLast {
+                    advance()
+                } else if travel > 0, !isFirst {
+                    goBack()
+                }
+            }
     }
 
     private var progressDots: some View {
@@ -79,6 +85,47 @@ struct HowToPlayView: View {
                     .fill(dot == index ? Theme.jade : Theme.jade.opacity(0.22))
                     .frame(width: dot == index ? 20 : 7, height: 7)
                     .animation(.snappy(duration: 0.22), value: index)
+            }
+        }
+        .padding(.top, 6)
+    }
+
+    /// Back rides beside Continue, so paging in either direction is one thumb,
+    /// one place. Skip only exists during onboarding, where it's a real exit.
+    private var footer: some View {
+        VStack(spacing: 10) {
+            HStack(spacing: 10) {
+                Button {
+                    goBack()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.headline)
+                        .foregroundStyle(isFirst ? Theme.inkTertiary : Theme.jade)
+                        .frame(width: 56, height: 56)
+                        .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                                .strokeBorder(Theme.rule, lineWidth: 1)
+                        )
+                }
+                .disabled(isFirst)
+                .opacity(isFirst ? 0.45 : 1)
+                .accessibilityLabel("Previous page")
+                Button {
+                    advance()
+                } label: {
+                    Text(isLast ? "Take your seat" : "Continue").primaryCTA()
+                }
+            }
+            if let onSkip {
+                Button {
+                    recommendedRoomHint = recommendedRoom.id
+                    onSkip()
+                } label: {
+                    Text("Skip for now")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(Theme.inkSecondary)
+                }
             }
         }
     }

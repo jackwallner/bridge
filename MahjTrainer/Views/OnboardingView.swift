@@ -18,6 +18,7 @@ struct OnboardingView: View {
     @State private var page = 0
     @State private var purchasing = false
     @State private var showPaywallFallback = false
+    @State private var purchaseError: String?
     @AppStorage("mahj.skillLevel") private var skillLevel = ""
 
     private enum Stage: Equatable { case pages, tour, howToPlay }
@@ -32,7 +33,9 @@ struct OnboardingView: View {
             case .pages:
                 pagesBody
             case .howToPlay:
-                HowToPlayView { stage = .tour }
+                // Skip lands on Home, not on the next onboarding step: the
+                // whole point of an escape hatch is that it escapes.
+                HowToPlayView(onDone: { stage = .tour }, onSkip: { finish() })
                     .transition(.move(edge: .trailing).combined(with: .opacity))
             case .tour:
                 FeatureTourView { finish() }
@@ -73,6 +76,14 @@ struct OnboardingView: View {
         .background(Theme.background)
         .sheet(isPresented: $showPaywallFallback, onDismiss: paywallDismissed) {
             PaywallView()
+        }
+        .alert("Purchase Issue", isPresented: .init(
+            get: { purchaseError != nil },
+            set: { if !$0 { purchaseError = nil } }
+        )) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(purchaseError ?? "")
         }
     }
 
@@ -174,20 +185,20 @@ struct OnboardingView: View {
     private var trialPage: some View {
         VStack(spacing: 22) {
             Spacer()
-            Image(systemName: "crown.fill")
+            Image(systemName: "sparkles")
                 .font(.system(size: 40, weight: .semibold))
                 .foregroundStyle(Theme.gold)
                 .frame(width: 92, height: 92)
                 .background(Theme.gold.opacity(0.14), in: Circle())
-            Text("Try the Pro Tables free")
+            Text("Try \(Membership.name) free")
                 .font(Theme.display(30))
                 .foregroundStyle(Theme.ink)
                 .multilineTextAlignment(.center)
             VStack(alignment: .leading, spacing: 12) {
-                trialBenefit("Every beginner drill is free, forever")
-                trialBenefit("Pro adds Advanced Charleston and Defense School")
-                trialBenefit("Expert rack reading with deliberately tricky deals")
-                trialBenefit("New advanced drills all year")
+                trialBenefit("Every beginner room is free, forever")
+                trialBenefit("\(Membership.name) adds extra practice sets in all four rooms")
+                trialBenefit("Plus the Master Tables: advanced Charleston and defense")
+                trialBenefit("New drills added all year")
             }
             Spacer()
             Spacer()
@@ -205,9 +216,12 @@ struct OnboardingView: View {
         }
     }
 
+    /// The 3.1.2 disclosure has to sit next to the button that charges money,
+    /// even though this page has no plan picker: price, period, auto-renewal,
+    /// how to cancel.
     private var yearlyDisclosure: String {
-        let price = subscriptions.package(for: .yearly)?.storeProduct.localizedPriceString ?? "$9.99"
-        return "7 days free, then \(price)/year. Auto-renews until canceled."
+        let price = PaywallPricing.price(subscriptions, .yearly)
+        return "7 days free, then \(price). Renews automatically unless canceled at least 24 hours before the trial ends. Cancel any time in App Store settings."
     }
 
     // MARK: - Footer (identical geometry on every page: zero-shift CTA)
@@ -232,7 +246,9 @@ struct OnboardingView: View {
             Text(yearlyDisclosure)
                 .font(.caption2)
                 .foregroundStyle(Theme.inkTertiary)
-                .frame(height: 14)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+                .frame(height: 42)
                 .opacity(onTrialPage ? 1 : 0)
             Button {
                 primaryAction()
@@ -250,8 +266,8 @@ struct OnboardingView: View {
             .opacity(page == skillPage && skillLevel.isEmpty ? 0.5 : 1)
             // Legal footer slot, reserved on every page.
             HStack(spacing: 14) {
-                Link("Terms", destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
-                Link("Privacy", destination: URL(string: "https://jackwallner.github.io/mahj/privacy-policy")!)
+                Link("Terms of Use", destination: PaywallLinks.terms)
+                Link("Privacy Policy", destination: PaywallLinks.privacy)
                 Button("Restore") {
                     Task { try? await subscriptions.restore() }
                 }
@@ -278,6 +294,14 @@ struct OnboardingView: View {
         .padding(.bottom, 2)
     }
 
+    /// The trial CTA is the Apple purchase trigger, nothing else. One tap goes
+    /// straight to StoreKit's confirm sheet.
+    ///
+    /// It must NOT open a second paywall. Backing out of Apple's sheet leaves
+    /// the player exactly where they were (they can still tap Get Started, or
+    /// the CTA again); the full plan-picker fallback is reserved for the one
+    /// case it was designed for, products that genuinely failed to load, so
+    /// the button is never dead.
     private func primaryAction() {
         if page < lastPage {
             page += 1
@@ -286,13 +310,21 @@ struct OnboardingView: View {
         purchasing = true
         Task {
             defer { purchasing = false }
-            do {
-                try await subscriptions.purchase(subscriptions.package(for: .yearly))
-                startTour()
-            } catch {
-                // Products didn't load: fall back to the full paywall rather
-                // than a dead button (OT710 fallback rule).
+            await subscriptions.ensureOfferings()
+            guard let yearly = subscriptions.package(for: .yearly) else {
                 showPaywallFallback = true
+                return
+            }
+            do {
+                let outcome = try await subscriptions.purchase(yearly)
+                switch outcome {
+                case .purchased:
+                    startTour()
+                case .cancelled:
+                    break // They said no to Apple, not to the app. Stay put.
+                }
+            } catch {
+                purchaseError = error.localizedDescription
             }
         }
     }

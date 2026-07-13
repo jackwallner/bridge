@@ -104,11 +104,4 @@ final class ProgressStore: ObservableObject {
         defaults.removeObject(forKey: Keys.missedItems)
         defaults.removeObject(forKey: Keys.reviewGateShown)
     }
-
-    /// Review funnel: fire the enjoyment gate once, after the third finished session.
-    func shouldShowEnjoymentGate() -> Bool {
-        guard totalSessions >= 3, !defaults.bool(forKey: Keys.reviewGateShown) else { return false }
-        defaults.set(true, forKey: Keys.reviewGateShown)
-        return true
-    }
 }

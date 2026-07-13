@@ -30,6 +30,9 @@ struct QuickSessionView: View {
     @State private var confettiTrigger = 0
     @State private var confettiParticleCount = 30
     @State private var flashOpacity: Double = 0
+    /// The correct answer row, published by `ChoiceList`. The celebration
+    /// launches from there, not from the middle of the screen.
+    @State private var answerRect: CGRect?
 
     @State private var streak = 0
     @State private var streakBannerText: String?
@@ -77,8 +80,16 @@ struct QuickSessionView: View {
         }
         .padding()
         .background(Theme.background)
+        .drillStage(answerRect: $answerRect)
         .overlay { Theme.bamGreen.opacity(flashOpacity).allowsHitTesting(false).ignoresSafeArea() }
-        .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.35), particleCount: confettiParticleCount) }
+        .overlay {
+            ConfettiBurst(
+                trigger: confettiTrigger,
+                origin: .init(x: 0.5, y: 0.35),
+                particleCount: confettiParticleCount,
+                sourceRect: answerRect
+            )
+        }
         .overlay(alignment: .top) {
             if let streakBannerText {
                 StreakBanner(text: streakBannerText)

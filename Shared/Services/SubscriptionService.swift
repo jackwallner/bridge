@@ -6,6 +6,20 @@ enum RevenueCatConfig {
     static let apiKey = "appl_BPcKRTMgnvYJJaNPXdfGReCkHgO"
 }
 
+/// What actually happened at Apple's sheet. A cancel is an outcome, not an error.
+enum PurchaseOutcome: Sendable {
+    case purchased
+    case cancelled
+}
+
+enum PurchaseError: LocalizedError {
+    case productsUnavailable
+
+    var errorDescription: String? {
+        "The App Store isn't reachable right now. Check your connection and try again."
+    }
+}
+
 @MainActor
 final class SubscriptionService: NSObject, ObservableObject {
     static let shared = SubscriptionService()
@@ -74,18 +88,30 @@ final class SubscriptionService: NSObject, ObservableObject {
         }
     }
 
-    func purchase(_ package: Package?) async throws {
+    /// Offerings can still be in flight when a player reaches the trial CTA on
+    /// a cold, slow network. Give them one more chance to land before we call
+    /// the products missing, so the button isn't dead on a fast tapper.
+    @discardableResult
+    func ensureOfferings() async -> Bool {
+        guard isConfigured else { return false }
+        if offerings?.current != nil { return true }
+        await loadOfferings()
+        return offerings?.current != nil
+    }
+
+    func purchase(_ package: Package?) async throws -> PurchaseOutcome {
         guard isConfigured else {
             setLocalOverride(isPro: true) // sim: pretend the purchase succeeded
-            return
+            return .purchased
         }
-        guard let package else {
-            throw NSError(domain: "MahjTrainer", code: 1, userInfo: [
-                NSLocalizedDescriptionKey: "Plans are still loading. Try again in a moment.",
-            ])
-        }
+        guard let package else { throw PurchaseError.productsUnavailable }
         let result = try await Purchases.shared.purchase(package: package)
+        // RevenueCat reports a user backing out of Apple's sheet as a normal
+        // result, not an error. Treating it as a failure is what used to shove
+        // a second paywall in front of someone who just said "not now".
+        if result.userCancelled { return .cancelled }
         apply(result.customerInfo)
+        return .purchased
     }
 
     func restore() async throws {

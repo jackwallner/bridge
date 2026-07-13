@@ -13,7 +13,10 @@ struct MahjTrainerApp: App {
                 .environmentObject(progress)
                 .environmentObject(settings)
                 .preferredColorScheme(settings.appearance.colorScheme)
-                .onAppear { subscriptions.start() }
+                .onAppear {
+                    subscriptions.start()
+                    ReviewPromptTracker.recordAppLaunch()
+                }
         }
     }
 }

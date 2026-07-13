@@ -73,6 +73,30 @@ extension Room {
         default: return Theme.gold
         }
     }
+
+    /// Bundled room illustration (see `scripts/generate_room_art.py`). Purely
+    /// decorative: never carries information a player has to read.
+    var artName: String { "room-\(id)" }
+}
+
+/// The membership brand. The RevenueCat entitlement is still `pro`; this is
+/// only what players read.
+enum Membership {
+    static let name = "Mahj+"
+}
+
+/// The gold pill that marks anything behind the membership.
+struct PlusBadge: View {
+    var text: String = Membership.name
+
+    var body: some View {
+        Text(text)
+            .font(.caption2.weight(.heavy))
+            .foregroundStyle(Theme.gold)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 3)
+            .background(Theme.gold.opacity(0.15), in: Capsule())
+    }
 }
 
 extension Color {

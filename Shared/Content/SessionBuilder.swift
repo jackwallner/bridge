@@ -64,11 +64,12 @@ enum SessionBuilder {
         }
     }
 
-    /// Every choice-gradeable item across the free (and, if unlocked, Pro) rooms.
+    /// Every choice-gradeable item a player is entitled to: the free rooms'
+    /// free drills, plus (for members) the locked extra sets and the paid room.
     private static func choicePool(includePro: Bool) -> [QuickItem] {
         var pool: [QuickItem] = []
         for room in DrillLibrary.rooms where room.isFree || includePro {
-            for drill in room.drills {
+            for drill in room.drills where !room.isLocked(drill, isMember: includePro) {
                 switch drill.kind {
                 case .quiz(let questions):
                     pool += questions.map { question in

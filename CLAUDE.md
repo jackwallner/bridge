@@ -15,13 +15,17 @@ hands from the actual card. Keep the "not affiliated with NMJL" disclaimer
 (Home footer, Settings, App Store description). `ContentValidityTests` enforces
 content rules across ALL drills in `DrillLibrary` (13-tile deals/racks, 3-tile
 passes, no passing jokers, max 4 copies of a tile, no em dashes, unique ids,
-free/Pro split).
+free/Mahj+ split).
 
-**App Store reviews:** enjoyment gate fires once after the 3rd completed drill
-(`DrillCompleteView` → `ProgressStore.shouldShowEnjoymentGate()`). Settings has
-Rate + Send Feedback (`jackwallner+m@gmail.com`).
+**App Store reviews:** the fleet funnel. `ReviewPromptTracker` (launches,
+positive moments, cooldowns, terminal outcome) gates `ReviewPromptSheet`:
+enjoying it? → yes routes to the App Store write-review page, no routes to a
+feedback mail draft (`jackwallner+m@gmail.com`). Unhappy players never see a
+rating ask. Fires after the 3rd finished drill (`DrillCompleteView`, 1.4s after
+the celebration lands); Settings' Rate / Send Feedback open the same sheet at
+their step. App Store ID `6790052126`.
 
-## Products & free/Pro model
+## Products & the Mahj+ model
 
 `com.jackwallner.mahj.monthly` $1.99 · `.yearly` $9.99 · `.lifetime` $29.99
 (StatScout-style cheapo tier, chosen 2026-07-12). Both subscriptions carry a
@@ -29,14 +33,30 @@ Rate + Send Feedback (`jackwallner+m@gmail.com`).
 `pro`; public SDK key in `SubscriptionService.swift`, RC secret API key in
 `~/.mahj_credentials` (never commit).
 
-**Free-beginner model (2026-07-12):** all four beginner rooms are FREE; only
-the `pro-tables` room (advanced Charleston / Defense School / expert rack
-reading, `Shared/Content/ProContent.swift`) is Pro. The onboarding trial page
+Membership is branded **Mahj+** in-app (`Membership.name`; the RevenueCat
+entitlement id stays `pro`). "Pro" as a player-facing word is retired: it reads
+as a skill tier, and the free rooms are explicitly the beginner ones.
+
+**Free-beginner + extra-sets model (2026-07-13):** all four beginner rooms are
+FREE and everything that was ever free stays free. Mahj+ ADDS: one extra
+practice set per beginner room (`Shared/Content/PlusContent.swift`, drills
+flagged `isPlus`, ids `plus-*`, same mechanics as the room's free drills, just
+more original questions) plus the whole `pro-tables` room, now shown as **The
+Master Tables** (`Shared/Content/ProContent.swift`). Locking is per-drill:
+`Room.isLocked(_:isMember:)` is the single source of truth, and `SessionBuilder`
+filters the Quick Session pool through it. The onboarding trial page
 follows the OT710 zero-shift pattern (`~/OT710.md`, StatScout reference): no
 plan cards, soft "Get Started" exit ABOVE the primary, primary CTA in the exact
 Continue slot, one tap → yearly trial purchase → Apple confirm; full
 `PaywallView` (plan picker) is only the products-failed fallback and the
-in-app/Settings paywall.
+in-app/Settings paywall. A user backing out of Apple's sheet is a
+`PurchaseOutcome.cancelled`, NOT an error: never answer it by shoving up
+another paywall.
+
+**Paywall compliance (App Review 3.1.2):** `PaywallView` must always show, on
+the purchase screen itself: membership name, per-plan price, billing period, an
+explicit auto-renew + cancellation sentence (`PaywallPricing.terms`), Restore,
+Terms of Use, and Privacy Policy. Don't trim any of them for layout.
 
 ## Architecture
 
@@ -56,13 +76,20 @@ in-app/Settings paywall.
   early-return preserved — never configure the prod `appl_` key on sim).
 - `MahjTrainer/Views` — `RootView` branches onboarding vs `HomeView` on the
   `progress.hasOnboarded` defaults key (branch, NOT a fullScreenCover — the
-  cover flashed Home behind onboarding on first launch). Navigation is FLAT:
-  `HomeView` shows Get Started (mixed session) + every drill grouped by room
-  section; there is no intermediate room screen. Onboarding stores skill level
-  at defaults key `mahj.skillLevel`. After the trial decision, every player
-  sees `FeatureTourView`; players who selected `new` then see `HowToPlayView`
-  before Home. The primer remains available from Home for new players and from
-  Settings for everyone.
+  cover flashed Home behind onboarding on first launch). Navigation is a LOBBY:
+  `HomeView` shows Get Started (mixed session) + one card per room; `RoomView`
+  lists that room's drills, with the locked Mahj+ set and an in-room upsell.
+  (Home was flat until 2026-07-13; once every room grew an extra set, a dozen
+  drill rows on one screen stopped reading as rooms.) Onboarding stores skill level
+  at defaults key `mahj.skillLevel`. After the trial decision, players who
+  selected `new` see `HowToPlayView` first, then everyone gets
+  `FeatureTourView`, whose finale runs a real Quick Session. Both of those
+  screens carry an ESCAPE HATCH straight to Home ("Skip for now" / "Skip the
+  tour" / "Skip it, take me to the app"): onboarding is long, and a player who
+  wants to just use the app must always be one tap from doing so. The primer
+  stays available from Home for new players and from Settings for everyone.
+  `HowToPlayView` pages by swipe as well as by buttons, and its Back button
+  sits NEXT to Continue, not in the top-left corner a thumb can't reach.
 - `MahjTrainer/Utilities/Theme.swift` — the warm-modern design system: cream
   surfaces, jade primary, coral energy, per-room accents (`Room.accent`), serif
   display type (`Theme.display`), `themedCard()`/`primaryCTA()` styles,
@@ -74,22 +101,18 @@ in-app/Settings paywall.
 
 ## Flashcard deck (signature interaction)
 
-`FlashcardDrillView` is a Sideline-style swipe deck: tap flips the card, and
-only a flipped card can be swiped — right = "got it" (leaves the deck), left =
-"again" (returns at the back). Pre-flip drags rubber-band. Undo lives in the
-toolbar. Cards with a `CardChoice` show two answer buttons on the front
-(choose, graded flip, held result, explicit Next). Their answer determines the
-grade and whether the card returns; swipe direction never overrides it. Gesture
-gotcha: the deck uses ONE
-`DragGesture(minimumDistance: 0)` that treats a <10pt release as the flip
-tap — a separate `.onTapGesture` loses arbitration against the drag and
-silently never fires. Don't "simplify" it back to `onTapGesture`.
+See `MahjTrainer/Views/Drills/CLAUDE.md` for the swipe-deck gesture/flip
+mechanics and gotchas.
 
-**Flip gotcha (fixed 2026-07-12):** the whole card must rotate as ONE unit —
-`FlipRotation` is `Animatable` and swaps faces exactly at 90° while the card is
-edge-on. Never rotate the text faces inside a static card background; that's
-what made text detach from the card. `MahjCardFace` carries the mahjong-card
-chrome (ivory surface, double frame, eyebrow, watermark) — both faces use it.
+## Room art
+
+`scripts/generate_room_art.py` generates the five room banners once via
+Pollinations and bakes them into `Assets.xcassets/RoomArt`. The app NEVER calls
+Pollinations at runtime. The art is DECORATIVE ONLY: it may never carry
+information a learner reads (no tile faces, no card sections, no text). A
+diffusion model cannot draw a trustworthy 2 Crak, and a wrong tile teaches the
+wrong thing. Real tiles are always `TileView`/`TileRackView` drawing real data.
+Rerun with `--force`, or `--only <name> --seed-offset N` to reroll one.
 
 ## Design research
 

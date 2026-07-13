@@ -142,12 +142,37 @@ final class ContentValidityTests: XCTestCase {
         XCTAssertTrue(DrillLibrary.rooms.first?.isFree == true, "First room must be free")
     }
 
-    func testBeginnerRoomsAreFreeAndProTablesArePaid() {
+    func testBeginnerRoomsAreFreeAndMasterTablesArePaid() {
         for room in DrillLibrary.rooms {
             if room.id == "pro-tables" {
-                XCTAssertFalse(room.isFree, "Pro Tables must be the paid tier")
+                XCTAssertFalse(room.isFree, "The Master Tables must be the paid room")
             } else {
                 XCTAssertTrue(room.isFree, "\(room.id) must be free (free-beginner model)")
+            }
+        }
+    }
+
+    /// The free-beginner promise: every beginner room still opens, and the
+    /// drills that were free before Mahj+ existed are still free. Extra sets
+    /// are ADDITIONS, so each one must be a `plus-` drill inside a free room.
+    func testEveryFreeRoomKeepsItsFreeDrillsAndAddsAPlusSet() {
+        for room in DrillLibrary.rooms where room.isFree {
+            let free = room.drills.filter { !$0.isPlus }
+            let plus = room.drills.filter(\.isPlus)
+            XCTAssertFalse(free.isEmpty, "\(room.id) must keep free drills")
+            XCTAssertEqual(plus.count, 1, "\(room.id) should offer exactly one Mahj+ extra set")
+            for drill in plus {
+                XCTAssertTrue(drill.id.hasPrefix("plus-"), "\(drill.id) is a Mahj+ set and must be named plus-*")
+            }
+        }
+    }
+
+    func testLockedDrillsResolveByMembership() {
+        for room in DrillLibrary.rooms {
+            for drill in room.drills {
+                XCTAssertFalse(room.isLocked(drill, isMember: true), "\(drill.id) must open for members")
+                let expected = !room.isFree || drill.isPlus
+                XCTAssertEqual(room.isLocked(drill, isMember: false), expected, "\(drill.id) lock state is wrong for free players")
             }
         }
     }
@@ -210,9 +235,37 @@ final class ContentValidityTests: XCTestCase {
         XCTAssertTrue(biased.contains { $0.id == missedID }, "A missed item must come back in the next session")
     }
 
-    func testQuickSessionExcludesProContentForFreeUsers() {
-        let mix = SessionBuilder.quickSession(seen: [], missed: [], includePro: false)
-        XCTAssertFalse(mix.contains { $0.id.hasPrefix("pro-") }, "Free session must not leak Pro items")
+    /// Every item id that sits behind the membership, derived from the library
+    /// rather than from a name prefix, so a new locked drill can't quietly leak
+    /// into free sessions just by being named something else.
+    private var lockedItemIDs: Set<String> {
+        var ids: Set<String> = []
+        for room in DrillLibrary.rooms {
+            for drill in room.drills where room.isLocked(drill, isMember: false) {
+                switch drill.kind {
+                case .flashcards(let cards): ids.formUnion(cards.map(\.id))
+                case .quiz(let questions): ids.formUnion(questions.map(\.id))
+                case .handMatch(let questions): ids.formUnion(questions.map(\.id))
+                case .charleston(let scenarios): ids.formUnion(scenarios.map(\.id))
+                }
+            }
+        }
+        return ids
+    }
+
+    func testQuickSessionExcludesLockedContentForFreeUsers() {
+        let mix = SessionBuilder.quickSession(count: 200, seen: [], missed: [], includePro: false)
+        let locked = lockedItemIDs
+        XCTAssertFalse(locked.isEmpty, "Nothing is locked; the membership has no content")
+        for item in mix {
+            XCTAssertFalse(locked.contains(item.id), "\(item.id) is behind Mahj+ and leaked into a free session")
+        }
+    }
+
+    func testQuickSessionIncludesLockedContentForMembers() {
+        let mix = SessionBuilder.quickSession(count: 500, seen: [], missed: [], includePro: true)
+        let ids = Set(mix.map(\.id))
+        XCTAssertFalse(ids.isDisjoint(with: lockedItemIDs), "Members' sessions should draw on the Mahj+ sets")
     }
 
     func testQuickSessionItemsAreChoiceOnlyWithValidAnswers() {

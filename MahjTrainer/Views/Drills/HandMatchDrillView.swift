@@ -11,6 +11,8 @@ struct HandMatchDrillView: View {
     @State private var score = 0
     @State private var finished = false
     @State private var confettiTrigger = 0
+    /// The correct answer row, so the burst launches from what was right.
+    @State private var answerRect: CGRect?
 
     var body: some View {
         if finished {
@@ -62,7 +64,14 @@ struct HandMatchDrillView: View {
         }
         .padding()
         .background(Theme.background)
-        .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.35)) }
+        .drillStage(answerRect: $answerRect)
+        .overlay {
+            ConfettiBurst(
+                trigger: confettiTrigger,
+                origin: .init(x: 0.5, y: 0.35),
+                sourceRect: answerRect
+            )
+        }
         .navigationTitle(drill.title)
         .navigationBarTitleDisplayMode(.inline)
     }

@@ -90,6 +90,18 @@ struct Drill: Identifiable, Sendable {
     let title: String
     let subtitle: String
     let kind: DrillKind
+    /// Extra practice sets inside an otherwise-free room: same mechanics, more
+    /// original questions, locked behind Mahj+. Nothing that was free became
+    /// paid; these are additions.
+    let isPlus: Bool
+
+    init(id: String, title: String, subtitle: String, kind: DrillKind, isPlus: Bool = false) {
+        self.id = id
+        self.title = title
+        self.subtitle = subtitle
+        self.kind = kind
+        self.isPlus = isPlus
+    }
 }
 
 struct Room: Identifiable, Sendable {
@@ -97,6 +109,19 @@ struct Room: Identifiable, Sendable {
     let name: String
     let tagline: String
     let icon: String
+    /// A free room still opens for everyone; individual `isPlus` drills inside
+    /// it are the locked extras. A non-free room is locked whole.
     let isFree: Bool
     let drills: [Drill]
+
+    /// Drills a member unlocks here: the whole room if it's paid, otherwise
+    /// just the extra sets.
+    var plusDrillCount: Int {
+        isFree ? drills.filter(\.isPlus).count : drills.count
+    }
+
+    func isLocked(_ drill: Drill, isMember: Bool) -> Bool {
+        guard !isMember else { return false }
+        return !isFree || drill.isPlus
+    }
 }

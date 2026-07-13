@@ -22,6 +22,13 @@ enum DrillLibrary {
                     subtitle: "Quick quiz: dragons, jokers, and the rules everyone gets wrong",
                     kind: .quiz(TileBasicsContent.tileQuiz)
                 ),
+                Drill(
+                    id: "plus-tile-extras",
+                    title: "Tile Check: Extra Reps",
+                    subtitle: "Eight more: set counts, calling rules, and how hands go dead",
+                    kind: .quiz(PlusContent.tileExtras),
+                    isPlus: true
+                ),
             ]
         ),
         Room(
@@ -42,6 +49,13 @@ enum DrillLibrary {
                     title: "Read the Rack",
                     subtitle: "See 13 tiles, name the section they're chasing",
                     kind: .handMatch(CategoryContent.handMatch)
+                ),
+                Drill(
+                    id: "plus-rack-extras",
+                    title: "Read the Rack: Extra Reps",
+                    subtitle: "Six more racks, including the ones with a convincing decoy",
+                    kind: .handMatch(PlusContent.extraRackReading),
+                    isPlus: true
                 ),
             ]
         ),
@@ -64,6 +78,13 @@ enum DrillLibrary {
                     subtitle: "Real deals: choose 3 tiles to pass, then compare with the coach",
                     kind: .charleston(CharlestonContent.scenarios)
                 ),
+                Drill(
+                    id: "plus-charleston-extras",
+                    title: "Pick Your Pass: Extra Reps",
+                    subtitle: "Four more deals: the blind pass, the courtesy pass, and flower discipline",
+                    kind: .charleston(PlusContent.extraPasses),
+                    isPlus: true
+                ),
             ]
         ),
         Room(
@@ -79,11 +100,18 @@ enum DrillLibrary {
                     subtitle: "Make the call, then flip to see the coach's answer",
                     kind: .flashcards(KeepDiscardContent.judgmentCards)
                 ),
+                Drill(
+                    id: "plus-judgment-extras",
+                    title: "Keep or Throw: Extra Reps",
+                    subtitle: "Six more calls: safe discards, dead tiles, and when NOT to call",
+                    kind: .flashcards(PlusContent.extraJudgment),
+                    isPlus: true
+                ),
             ]
         ),
         Room(
             id: "pro-tables",
-            name: "The Pro Tables",
+            name: "The Master Tables",
             tagline: "Advanced play for when the basics feel easy",
             icon: "crown.fill",
             isFree: false,

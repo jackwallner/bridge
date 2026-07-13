@@ -9,7 +9,7 @@ struct DrillCompleteView: View {
     @EnvironmentObject private var progress: ProgressStore
     @Environment(\.dismiss) private var dismiss
     @Environment(\.requestReview) private var requestReview
-    @State private var showEnjoymentGate = false
+    @State private var showReviewPrompt = false
     @State private var recorded = false
     @State private var celebrate = false
     @State private var confettiTrigger = 0
@@ -77,16 +77,30 @@ struct DrillCompleteView: View {
             Haptics.success()
             SoundPlayer.play(.complete)
             progress.recordSession(drillID: drill.id)
-            if progress.shouldShowEnjoymentGate() {
-                showEnjoymentGate = true
-            }
+            recordPositiveMoment()
         }
-        .alert("Enjoying Mahj Trainer?", isPresented: $showEnjoymentGate) {
-            Button("Yes!") { requestReview() }
-            Button("Not really", role: .cancel) {}
-        } message: {
-            Text("You've finished 3 drills. Nice streak!")
+        .sheet(isPresented: $showReviewPrompt) {
+            ReviewPromptSheet(onFinish: handleReviewOutcome)
         }
+    }
+
+    /// A finished drill is the positive moment the funnel waits for. Let the
+    /// celebration land first: a sheet that lands on top of the confetti reads
+    /// as an interruption, not a thank-you.
+    private func recordPositiveMoment() {
+        ReviewPromptTracker.recordPositiveMoment()
+        guard ReviewPromptTracker.shouldShowAfterPositiveMoment() else { return }
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 1_400_000_000)
+            showReviewPrompt = true
+        }
+    }
+
+    private func handleReviewOutcome(_ outcome: ReviewPromptDismissOutcome) {
+        // "Yes" then "Maybe later" is the one case worth spending Apple's
+        // native prompt on: they're warm, and the system sheet is one tap.
+        guard outcome == .enjoyedMaybeLater else { return }
+        requestReview()
     }
 
     private var headline: String {
