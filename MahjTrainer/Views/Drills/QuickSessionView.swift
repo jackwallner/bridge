@@ -20,9 +20,14 @@ struct QuickSessionView: View {
     /// player's FIRST question flow has no exit but finishing it, which is a
     /// trap, and a bad one right after the money page.
     private let onClose: (() -> Void)?
+    /// Home's daily session spends the day's Get Started; the onboarding tour's
+    /// demo run does not, so a brand-new player still finds a fresh Get Started
+    /// waiting the first time they reach Home.
+    private let isDaily: Bool
 
-    init(items: [QuickItem], onClose: (() -> Void)? = nil) {
+    init(items: [QuickItem], isDaily: Bool = true, onClose: (() -> Void)? = nil) {
         _items = State(initialValue: items)
+        self.isDaily = isDaily
         self.onClose = onClose
     }
 
@@ -189,6 +194,11 @@ struct QuickSessionView: View {
         }
     }
 
+    private func finishSession() {
+        if isDaily { progress.markQuickSessionCompleted() }
+        withAnimation(.easeInOut(duration: 0.3)) { finished = true }
+    }
+
     private func advance() {
         if index + 1 < items.count {
             withAnimation(.spring(response: 0.4, dampingFraction: 0.85)) {
@@ -196,7 +206,7 @@ struct QuickSessionView: View {
                 index += 1
             }
         } else {
-            withAnimation(.easeInOut(duration: 0.3)) { finished = true }
+            finishSession()
         }
     }
 }

@@ -21,6 +21,7 @@ final class ProgressStore: ObservableObject {
         static let reviewGateShown = "progress.reviewGateShown"
         static let seenItems = "progress.seenItems"
         static let missedItems = "progress.missedItems"
+        static let lastQuickSessionDay = "progress.lastQuickSessionDay"
     }
 
     init(defaults: UserDefaults = .standard) {
@@ -89,6 +90,21 @@ final class ProgressStore: ObservableObject {
         defaults.set(Array(missedItems), forKey: Keys.missedItems)
     }
 
+    // MARK: - Daily Quick Session
+
+    /// Get Started is a once-a-day ritual: a fresh mix each day, and once
+    /// today's is done the Home card rests until tomorrow rather than handing
+    /// back the same questions (repeating a question you just answered teaches
+    /// nothing). Missed items still return on later days as spaced repetition.
+    func quickSessionCompletedToday(now: Date = Date()) -> Bool {
+        guard let last = defaults.object(forKey: Keys.lastQuickSessionDay) as? Date else { return false }
+        return Calendar.current.isDate(last, inSameDayAs: now)
+    }
+
+    func markQuickSessionCompleted(now: Date = Date()) {
+        defaults.set(Calendar.current.startOfDay(for: now), forKey: Keys.lastQuickSessionDay)
+    }
+
     /// Clears every practice stat. Leaves onboarding and purchases alone.
     func resetAll() {
         streakCount = 0
@@ -103,5 +119,6 @@ final class ProgressStore: ObservableObject {
         defaults.removeObject(forKey: Keys.seenItems)
         defaults.removeObject(forKey: Keys.missedItems)
         defaults.removeObject(forKey: Keys.reviewGateShown)
+        defaults.removeObject(forKey: Keys.lastQuickSessionDay)
     }
 }

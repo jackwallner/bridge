@@ -219,12 +219,12 @@ struct OnboardingView: View {
         }
     }
 
-    /// The 3.1.2 disclosure has to sit next to the button that charges money,
-    /// even though this page has no plan picker: price, period, auto-renewal,
-    /// how to cancel.
+    /// One concise line, matching the approved fleet pattern (StatScout): trial
+    /// length, price, that it renews, how to cancel. The EULA behind the Terms
+    /// link carries the full legalese; this is the point-of-purchase micro copy.
     private var yearlyDisclosure: String {
         let price = PaywallPricing.price(subscriptions, .yearly)
-        return "7 days free, then \(price). Renews automatically unless canceled at least 24 hours before the trial ends. Cancel any time in App Store settings."
+        return "7 days free, then \(price). Auto-renews until canceled."
     }
 
     // MARK: - Footer (identical geometry on every page: zero-shift CTA)
@@ -234,25 +234,28 @@ struct OnboardingView: View {
         return VStack(spacing: 8) {
             pageDots
             // Soft free exit sits ABOVE the primary so the trial CTA owns the
-            // Continue slot. Height reserved on every page.
+            // Continue slot. "Get Started" (not "Skip"/"No trial") on purpose,
+            // matching the approved fleet apps: it's the free way in, worded so
+            // it doesn't read as a loud "escape the offer" button. Height
+            // reserved on every page.
             Button {
                 startTour()
             } label: {
-                Text("Continue without a trial")
-                    .font(.subheadline.weight(.semibold))
+                Text("Get Started")
+                    .font(.subheadline.weight(.medium))
                     .foregroundStyle(Theme.inkSecondary)
-                    .underline()
             }
             .frame(height: 30)
             .opacity(onTrialPage ? 1 : 0)
             .disabled(!onTrialPage)
-            // Disclosure slot, also reserved.
+            // Disclosure slot, also reserved. Small and tertiary: present at the
+            // point of purchase (3.1.2) without shouting.
             Text(yearlyDisclosure)
-                .font(.caption)
-                .foregroundStyle(Theme.inkSecondary)
+                .font(.caption2)
+                .foregroundStyle(Theme.inkTertiary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
-                .frame(height: 42)
+                .frame(height: 30)
                 .opacity(onTrialPage ? 1 : 0)
             Button {
                 primaryAction()
@@ -270,14 +273,14 @@ struct OnboardingView: View {
             .opacity(page == skillPage && skillLevel.isEmpty ? 0.5 : 1)
             // Legal footer slot, reserved on every page.
             HStack(spacing: 14) {
-                Link("Terms of Use", destination: PaywallLinks.terms)
-                Link("Privacy Policy", destination: PaywallLinks.privacy)
+                Link("Terms", destination: PaywallLinks.terms)
+                Link("Privacy", destination: PaywallLinks.privacy)
                 Button("Restore") {
                     Task { try? await subscriptions.restore() }
                 }
             }
-            .font(.caption)
-            .foregroundStyle(Theme.inkSecondary)
+            .font(.caption2)
+            .foregroundStyle(Theme.inkTertiary)
             .frame(height: 20)
             .opacity(onTrialPage ? 1 : 0)
             .disabled(!onTrialPage)

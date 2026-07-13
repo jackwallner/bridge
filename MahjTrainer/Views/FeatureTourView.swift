@@ -94,6 +94,7 @@ struct FeatureTourView: View {
                         missed: progress.missedItems,
                         includePro: subscriptions.isPro
                     ),
+                    isDaily: false,
                     onClose: { showQuickSession = false }
                 )
             }

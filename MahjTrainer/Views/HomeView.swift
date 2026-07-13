@@ -31,7 +31,11 @@ struct HomeView: View {
                 ScrollView {
                     VStack(spacing: 14) {
                         header
-                        getStartedCard
+                        if progress.quickSessionCompletedToday() {
+                            getStartedDoneCard
+                        } else {
+                            getStartedCard
+                        }
                         if showsPrimerCard {
                             howToPlayCard
                         }
@@ -166,6 +170,32 @@ struct HomeView: View {
             .shadow(color: Theme.jade.opacity(0.3), radius: 10, y: 5)
         }
         .buttonStyle(PressableCardStyle())
+    }
+
+    /// Today's Get Started is spent. Rather than hand back the same questions
+    /// (a repeat teaches nothing), the card rests and points at the rooms for
+    /// more practice, and comes back fresh tomorrow.
+    private var getStartedDoneCard: some View {
+        HStack(spacing: 14) {
+            Image(systemName: "checkmark.circle.fill")
+                .font(.system(size: 30))
+                .foregroundStyle(Theme.jade)
+                .frame(width: 44, height: 44)
+                .background(Theme.jade.opacity(0.12), in: Circle())
+            VStack(alignment: .leading, spacing: 3) {
+                Text("Today's session is done")
+                    .font(.headline)
+                    .foregroundStyle(Theme.ink)
+                Text("A fresh mix lands tomorrow. Keep going in any room below.")
+                    .font(.subheadline)
+                    .foregroundStyle(Theme.inkSecondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .themedCard()
     }
 
     /// Shown only until the primer has actually been read; after that it's a

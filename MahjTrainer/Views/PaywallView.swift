@@ -28,26 +28,20 @@ struct PaywallContent: View {
     @Binding var selectedPlan: PaywallPlan
 
     var body: some View {
-        VStack(spacing: 20) {
-            VStack(spacing: 8) {
-                Image(systemName: "sparkles")
-                    .font(.system(size: 30, weight: .semibold))
-                    .foregroundStyle(Theme.gold)
-                    .frame(width: 74, height: 74)
-                    .background(Theme.gold.opacity(0.14), in: Circle())
+        VStack(spacing: 16) {
+            VStack(spacing: 6) {
                 Text("Get \(Membership.name)")
-                    .font(Theme.display(30))
+                    .font(Theme.display(28))
                     .foregroundStyle(Theme.ink)
-                Text("Every drill you have today stays free. \(Membership.name) adds more of them, everywhere.")
+                Text("Everything you have stays free. \(Membership.name) adds more.")
                     .font(.subheadline)
                     .foregroundStyle(Theme.inkSecondary)
                     .multilineTextAlignment(.center)
             }
-            VStack(alignment: .leading, spacing: 10) {
-                benefit("Extra practice sets in all four beginner rooms")
-                benefit("The Master Tables: Advanced Charleston and Defense School")
-                benefit("Expert rack reading with deliberately tricky deals")
-                benefit("New drills added all year")
+            VStack(alignment: .leading, spacing: 9) {
+                benefit("Extra practice sets in every room")
+                benefit("The Master Tables: advanced play")
+                benefit("New drills all year")
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             planCards
@@ -134,15 +128,15 @@ enum PaywallPricing {
         }
     }
 
-    /// The legally load-bearing sentence: price, period, renewal, cancellation.
+    /// One concise point-of-purchase line: price, trial, auto-renew, cancel.
+    /// The full legalese lives in the EULA behind the Terms link.
     static func terms(_ subscriptions: SubscriptionService, _ plan: PaywallPlan) -> String {
         let amount = price(subscriptions, plan)
         switch plan {
         case .lifetime:
-            return "One-time purchase of \(amount). Not a subscription: nothing renews and there is nothing to cancel."
+            return "\(amount) one-time. Not a subscription, nothing renews."
         case .yearly, .monthly:
-            let period = plan == .yearly ? "year" : "month"
-            return "7 days free, then \(amount). Your subscription renews automatically each \(period) unless you cancel at least 24 hours before the trial or period ends. Manage or cancel any time in your App Store account settings."
+            return "7 days free, then \(amount). Auto-renews until canceled."
         }
     }
 }
