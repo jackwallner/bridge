@@ -93,10 +93,10 @@ struct QuizDrillView: View {
         if correct {
             score += 1
             confettiTrigger += 1
-            Haptics.success()
+            Haptics.correctAnswer()
             SoundPlayer.play(.success)
         } else {
-            Haptics.error()
+            Haptics.wrongAnswer()
             SoundPlayer.play(.miss)
         }
     }

@@ -131,7 +131,7 @@ struct QuickSessionView: View {
             landCorrect()
         } else {
             streak = 0
-            Haptics.error()
+            Haptics.wrongAnswer()
             SoundPlayer.play(.miss)
         }
     }
@@ -142,7 +142,7 @@ struct QuickSessionView: View {
     private func landCorrect() {
         confettiParticleCount = particleCount(forStreak: streak)
         confettiTrigger += 1
-        Haptics.success()
+        Haptics.correctAnswer()
         SoundPlayer.play(.success)
 
         flashOpacity = 0.14

@@ -79,6 +79,11 @@ Terms of Use, and Privacy Policy. Don't trim any of them for layout.
   cover flashed Home behind onboarding on first launch). Navigation is a LOBBY:
   `HomeView` shows Get Started (mixed session) + one card per room; `RoomView`
   lists that room's drills, with the locked Mahj+ set and an in-room upsell.
+  Home's job is the ROOMS, so everything else earns its space: stats are chips
+  beside the title (not a row of their own), room cards carry a progress RING
+  rather than a status sentence, that ring counts only drills the player can
+  actually open, and the How to Play card disappears once the primer has been
+  read (`mahj.hasReadPrimer`), living in Settings after that.
   (Home was flat until 2026-07-13; once every room grew an extra set, a dozen
   drill rows on one screen stopped reading as rooms.) Onboarding stores skill level
   at defaults key `mahj.skillLevel`. After the trial decision, players who
@@ -93,7 +98,10 @@ Terms of Use, and Privacy Policy. Don't trim any of them for layout.
 - `MahjTrainer/Utilities/Theme.swift` — the warm-modern design system: cream
   surfaces, jade primary, coral energy, per-room accents (`Room.accent`), serif
   display type (`Theme.display`), `themedCard()`/`primaryCTA()` styles,
-  `Haptics` (gated on `settings.haptics`). `SoundPlayer` plays the synthesized
+  `Haptics` (gated on `settings.haptics`; grading uses `correctAnswer()` /
+  `wrongAnswer()`, which must feel like OPPOSITES in the hand: a crisp rising
+  tap vs a dull double thud. Apple's `.success`/`.error` notification patterns
+  are both stutters and read as the same buzz mid-drill). `SoundPlayer` plays the synthesized
   wavs in `MahjTrainer/Resources/Sounds` (gated on `settings.sound`;
   regenerate via a make_sounds.py-style script if changed). All colors are
   light/dark adaptive; launch screen color is the `LaunchBackground` asset
@@ -104,15 +112,13 @@ Terms of Use, and Privacy Policy. Don't trim any of them for layout.
 See `MahjTrainer/Views/Drills/CLAUDE.md` for the swipe-deck gesture/flip
 mechanics and gotchas.
 
-## Room art
+## Illustration: don't
 
-`scripts/generate_room_art.py` generates the five room banners once via
-Pollinations and bakes them into `Assets.xcassets/RoomArt`. The app NEVER calls
-Pollinations at runtime. The art is DECORATIVE ONLY: it may never carry
-information a learner reads (no tile faces, no card sections, no text). A
-diffusion model cannot draw a trustworthy 2 Crak, and a wrong tile teaches the
-wrong thing. Real tiles are always `TileView`/`TileRackView` drawing real data.
-Rerun with `--force`, or `--only <name> --seed-offset N` to reroll one.
+Generated room art was tried and removed (2026-07-13): it looked cheap and
+fought the type-and-tile aesthetic. Tiles are drawn from real data by
+`TileView`/`TileRackView`; a generated tile face is a WRONG tile, and a wrong
+tile teaches the wrong thing. Keep the visual language to type, tiles, SF
+Symbols and the room accents.
 
 ## Design research
 

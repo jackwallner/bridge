@@ -150,7 +150,7 @@ struct PressableCardStyle: ButtonStyle {
 // MARK: - Haptics
 
 enum Haptics {
-    enum Impact { case soft, light, rigid }
+    enum Impact { case soft, light, rigid, heavy }
 
     /// Settings gate: reads the same key AppSettings writes, defaulting on.
     private static var enabled: Bool {
@@ -165,6 +165,7 @@ enum Haptics {
         case .soft: uiStyle = .soft
         case .light: uiStyle = .light
         case .rigid: uiStyle = .rigid
+        case .heavy: uiStyle = .heavy
         }
         UIImpactFeedbackGenerator(style: uiStyle).impactOccurred(intensity: intensity)
         #endif
@@ -181,6 +182,33 @@ enum Haptics {
         #if canImport(UIKit)
         guard enabled else { return }
         UINotificationFeedbackGenerator().notificationOccurred(.error)
+        #endif
+    }
+
+    /// Grading haptics have to feel like OPPOSITES in the hand, not like two
+    /// versions of the same buzz. Apple's `.success` and `.error` notification
+    /// patterns are both stutters and are easy to confuse mid-drill, so:
+    /// right = a crisp light tap rising into the success chime; wrong = a
+    /// single dull heavy thud, no chime, nothing bright about it.
+    static func correctAnswer() {
+        #if canImport(UIKit)
+        guard enabled else { return }
+        impact(.light, intensity: 0.75)
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 70_000_000)
+            success()
+        }
+        #endif
+    }
+
+    static func wrongAnswer() {
+        #if canImport(UIKit)
+        guard enabled else { return }
+        impact(.heavy, intensity: 0.85)
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 110_000_000)
+            impact(.heavy, intensity: 0.45)
+        }
         #endif
     }
 }

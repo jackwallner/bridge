@@ -15,6 +15,9 @@ struct HowToPlayView: View {
     @Environment(\.dismiss) private var dismiss
     @AppStorage("mahj.skillLevel") private var skillLevel = ""
     @AppStorage("mahj.recommendedRoomHint") private var recommendedRoomHint = ""
+    /// Read to the end once: Home stops showing the primer card, and the
+    /// primer becomes a Settings row like any other reference.
+    @AppStorage("mahj.hasReadPrimer") private var hasReadPrimer = false
     @State private var index = 0
     @State private var goingForward = true
     @State private var shineTrigger = 0
@@ -224,6 +227,7 @@ struct HowToPlayView: View {
     private func advance() {
         if isLast {
             Haptics.success()
+            hasReadPrimer = true
             recommendedRoomHint = recommendedRoom.id
             if let onDone {
                 onDone()

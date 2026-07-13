@@ -220,10 +220,10 @@ struct FlashcardDrillView: View {
         progress.recordItem(id: card.id, correct: correct)
         if correct {
             confettiTrigger += 1
-            Haptics.success()
+            Haptics.correctAnswer()
             SoundPlayer.play(.success)
         } else {
-            Haptics.error()
+            Haptics.wrongAnswer()
             SoundPlayer.play(.miss)
         }
         withAnimation(.spring(response: 0.55, dampingFraction: 0.8)) {
