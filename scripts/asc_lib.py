@@ -1,6 +1,7 @@
 """Shared App Store Connect API helpers for ASO scripts."""
 from __future__ import annotations
 
+import http.client
 import json
 import os
 import re
@@ -80,13 +81,24 @@ class ASCClient:
                 "Content-Type": "application/json",
             },
         )
-        try:
-            with urllib.request.urlopen(req, timeout=120) as resp:
-                raw = resp.read().decode()
-                return json.loads(raw) if raw else {}
-        except urllib.error.HTTPError as e:
-            err = e.read().decode()
-            raise RuntimeError(f"{method} {path} -> {e.code}: {err}") from e
+        # ASC drops connections and 429s under a long localization sweep; retry transients.
+        last: Exception | None = None
+        for attempt in range(6):
+            try:
+                with urllib.request.urlopen(req, timeout=120) as resp:
+                    raw = resp.read().decode()
+                    return json.loads(raw) if raw else {}
+            except urllib.error.HTTPError as e:
+                if e.code in (429, 500, 502, 503, 504):
+                    last = e
+                    time.sleep(2 ** attempt)
+                    continue
+                err = e.read().decode()
+                raise RuntimeError(f"{method} {path} -> {e.code}: {err}") from e
+            except (http.client.RemoteDisconnected, urllib.error.URLError, ConnectionError) as e:
+                last = e
+                time.sleep(2 ** attempt)
+        raise RuntimeError(f"{method} {path} -> giving up after retries: {last}")
 
     def get(self, path: str) -> dict:
         return self.request("GET", path)

@@ -33,6 +33,9 @@ from asc_lib import (
 )
 
 
+SKIP_WHATS_NEW = False
+
+
 def patch_version_loc(client: ASCClient, loc: dict, locale: str) -> None:
     attrs: dict = {}
     desc = read_meta(locale, "description")
@@ -42,7 +45,8 @@ def patch_version_loc(client: ASCClient, loc: dict, locale: str) -> None:
         attrs["description"] = desc[:4000]
     if kw:
         attrs["keywords"] = kw[:100]
-    if rn:
+    # Apple rejects whatsNew on a first-ever version (nothing is "new" yet).
+    if rn and not SKIP_WHATS_NEW:
         attrs["whatsNew"] = rn[:4000]
     for src, dst in (
         ("support_url", "supportUrl"),
@@ -77,7 +81,7 @@ def create_version_loc(client: ASCClient, version_id: str, locale: str, source: 
         }
     }
     rn = read_meta(locale, "release_notes")
-    if rn:
+    if rn and not SKIP_WHATS_NEW:
         body["data"]["attributes"]["whatsNew"] = rn[:4000]
     for src, dst in (("support_url", "supportUrl"), ("marketing_url", "marketingUrl")):
         v = read_meta(locale, src)
@@ -112,6 +116,9 @@ def main() -> None:
         if not draft:
             draft = ensure_draft_version(client, app_id, version_string)
             version_string = draft["attributes"]["versionString"]
+
+    global SKIP_WHATS_NEW
+    SKIP_WHATS_NEW = live is None
 
     version_id = draft["id"]
     live_vs = live["attributes"]["versionString"] if live else None
