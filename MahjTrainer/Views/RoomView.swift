@@ -17,8 +17,6 @@ struct RoomView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 14) {
-                RoomArt(room: room, height: 150, dimmed: roomLocked)
-                    .clipShape(RoundedRectangle(cornerRadius: Theme.cardCorner, style: .continuous))
                 header
                 ForEach(room.drills) { drill in
                     drillRow(drill)
@@ -37,7 +35,12 @@ struct RoomView: View {
     }
 
     private var header: some View {
-        VStack(spacing: 6) {
+        VStack(spacing: 10) {
+            Image(systemName: room.icon)
+                .font(.system(size: 26, weight: .semibold))
+                .foregroundStyle(room.accent)
+                .frame(width: 66, height: 66)
+                .background(room.accent.opacity(0.12), in: Circle())
             Text(room.name)
                 .font(Theme.display(28))
                 .foregroundStyle(Theme.ink)
@@ -48,6 +51,7 @@ struct RoomView: View {
                 .multilineTextAlignment(.center)
         }
         .frame(maxWidth: .infinity)
+        .padding(.top, 8)
         .padding(.bottom, 2)
     }
 

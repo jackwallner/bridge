@@ -4,6 +4,10 @@ import SwiftUI
 /// themselves live one level down in `RoomView`. (Home used to list every
 /// drill flat; once each room grew a Mahj+ extra set that list ran to a dozen
 /// rows and the rooms stopped reading as places.)
+///
+/// The rooms are what Home is FOR, so everything else earns its space or
+/// leaves: the stats ride beside the title instead of eating a row of their
+/// own, and the primer card disappears the moment it has been read.
 struct HomeView: View {
     @EnvironmentObject private var progress: ProgressStore
     @EnvironmentObject private var subscriptions: SubscriptionService
@@ -11,21 +15,26 @@ struct HomeView: View {
     @State private var showSettings = false
     @State private var highlightedRoomID: String?
     @AppStorage("mahj.skillLevel") private var skillLevel = ""
+    /// Set once the primer has been read all the way through. After that it
+    /// lives in Settings only; a permanent "How to Play" card on Home is a
+    /// standing tax on the rooms below it.
+    @AppStorage("mahj.hasReadPrimer") private var hasReadPrimer = false
     /// One-shot hint set by `HowToPlayView`'s end-of-primer recommendation:
     /// the room id to highlight/scroll to the next time Home appears.
     @AppStorage("mahj.recommendedRoomHint") private var recommendedRoomHint = ""
+
+    private var showsPrimerCard: Bool { skillLevel == "new" && !hasReadPrimer }
 
     var body: some View {
         NavigationStack {
             ScrollViewReader { proxy in
                 ScrollView {
-                    VStack(spacing: 18) {
+                    VStack(spacing: 14) {
                         header
                         getStartedCard
-                        if skillLevel == "new" {
+                        if showsPrimerCard {
                             howToPlayCard
                         }
-                        statsHeader
                         roomsHeading
                         ForEach(DrillLibrary.rooms) { room in
                             roomCard(room)
@@ -81,17 +90,45 @@ struct HomeView: View {
         }
     }
 
+    // MARK: - Header (title left, stats right, one row total)
+
     private var header: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text("Mahj Trainer")
-                .font(Theme.display(34))
-                .foregroundStyle(Theme.ink)
-            Text("Your seat at the table.")
-                .font(.subheadline)
-                .foregroundStyle(Theme.inkSecondary)
+        HStack(alignment: .top) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Mahj Trainer")
+                    .font(Theme.display(32))
+                    .foregroundStyle(Theme.ink)
+                Text("Your seat at the table.")
+                    .font(.subheadline)
+                    .foregroundStyle(Theme.inkSecondary)
+            }
+            Spacer(minLength: 8)
+            HStack(spacing: 8) {
+                statChip(value: progress.streakCount, icon: "flame.fill", color: Theme.coral,
+                         label: "\(progress.streakCount) day streak")
+                statChip(value: progress.totalSessions, icon: "checkmark.seal.fill", color: Theme.jade,
+                         label: "\(progress.totalSessions) drills done")
+            }
+            .padding(.top, 4)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.top, 2)
+    }
+
+    private func statChip(value: Int, icon: String, color: Color, label: String) -> some View {
+        HStack(spacing: 5) {
+            Image(systemName: icon)
+                .font(.caption)
+                .foregroundStyle(color)
+            Text("\(value)")
+                .font(.subheadline.weight(.bold))
+                .foregroundStyle(Theme.ink)
+                .monospacedDigit()
+        }
+        .padding(.horizontal, 9)
+        .padding(.vertical, 6)
+        .background(color.opacity(0.12), in: Capsule())
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(label)
     }
 
     /// The one-tap way in: builds a short mixed session, no browsing needed.
@@ -131,7 +168,8 @@ struct HomeView: View {
         .buttonStyle(PressableCardStyle())
     }
 
-    /// Brand-new players keep a door back to the primer until it sticks.
+    /// Shown only until the primer has actually been read; after that it's a
+    /// Settings row like every other reference material.
     private var howToPlayCard: some View {
         NavigationLink {
             HowToPlayView()
@@ -146,7 +184,7 @@ struct HomeView: View {
                     Text("How to Play")
                         .font(.headline)
                         .foregroundStyle(Theme.ink)
-                    Text("The five-minute primer, any time you want it")
+                    Text("New here? Start with the five-minute primer")
                         .font(.caption)
                         .foregroundStyle(Theme.inkSecondary)
                 }
@@ -161,35 +199,6 @@ struct HomeView: View {
         .buttonStyle(PressableCardStyle())
     }
 
-    private var statsHeader: some View {
-        HStack(spacing: 12) {
-            statTile(value: "\(progress.streakCount)", label: "Day streak", icon: "flame.fill", color: Theme.coral)
-            statTile(value: "\(progress.totalSessions)", label: "Drills done", icon: "checkmark.seal.fill", color: Theme.jade)
-        }
-    }
-
-    private func statTile(value: String, label: String, icon: String, color: Color) -> some View {
-        HStack(spacing: 10) {
-            Image(systemName: icon)
-                .font(.title3)
-                .foregroundStyle(color)
-                .frame(width: 34, height: 34)
-                .background(color.opacity(0.13), in: Circle())
-            VStack(alignment: .leading, spacing: 2) {
-                Text(value)
-                    .font(.title3.bold())
-                    .foregroundStyle(Theme.ink)
-                    .monospacedDigit()
-                Text(label)
-                    .font(.caption)
-                    .foregroundStyle(Theme.inkSecondary)
-            }
-            Spacer(minLength: 0)
-        }
-        .padding(12)
-        .themedCard(corner: 16)
-    }
-
     // MARK: - Rooms
 
     private var roomsHeading: some View {
@@ -200,52 +209,56 @@ struct HomeView: View {
                 .foregroundStyle(Theme.inkSecondary)
             Spacer()
         }
-        .padding(.top, 4)
+        .padding(.top, 6)
         .padding(.horizontal, 4)
     }
 
+    /// Progress is a ring, not a sentence. "2 of 3 done · 2 free, 1 with Mahj+"
+    /// was three facts nobody asked for on a card whose job is to be a door.
     private func roomCard(_ room: Room) -> some View {
         let locked = !room.isFree && !subscriptions.isPro
         let highlighted = highlightedRoomID == room.id
-        let done = room.drills.filter { progress.completions(for: $0.id) > 0 }.count
+        // Count only the drills this player can actually open. Putting the
+        // locked Mahj+ set in the denominator would mean a free player's ring
+        // can never close, which is a nag dressed up as progress.
+        let open = room.drills.filter { !room.isLocked($0, isMember: subscriptions.isPro) }
+        let total = open.count
+        let done = open.filter { progress.completions(for: $0.id) > 0 }.count
         return NavigationLink {
             RoomView(room: room)
         } label: {
-            VStack(spacing: 0) {
-                RoomArt(room: room, height: 96, dimmed: locked)
-                HStack(spacing: 12) {
-                    Image(systemName: room.icon)
-                        .font(.body.weight(.semibold))
-                        .foregroundStyle(room.accent)
-                        .frame(width: 42, height: 42)
-                        .background(room.accent.opacity(0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
-                    VStack(alignment: .leading, spacing: 3) {
-                        HStack(spacing: 6) {
-                            Text(room.name)
-                                .font(.headline)
-                                .foregroundStyle(Theme.ink)
-                            if locked {
-                                PlusBadge()
-                            }
+            HStack(spacing: 14) {
+                Image(systemName: room.icon)
+                    .font(.title3.weight(.semibold))
+                    .foregroundStyle(room.accent)
+                    .frame(width: 48, height: 48)
+                    .background(room.accent.opacity(0.12), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                VStack(alignment: .leading, spacing: 3) {
+                    HStack(spacing: 6) {
+                        Text(room.name)
+                            .font(.headline)
+                            .foregroundStyle(Theme.ink)
+                        if locked {
+                            PlusBadge()
                         }
-                        Text(room.tagline)
-                            .font(.subheadline)
-                            .foregroundStyle(Theme.inkSecondary)
-                            .lineLimit(2)
-                            .multilineTextAlignment(.leading)
-                        Text(subtitle(for: room, done: done, locked: locked))
-                            .font(.caption)
-                            .foregroundStyle(Theme.inkTertiary)
                     }
-                    Spacer(minLength: 4)
-                    Image(systemName: locked ? "lock.fill" : "chevron.right")
-                        .font(.footnote.weight(.semibold))
-                        .foregroundStyle(locked ? Theme.gold : Theme.inkTertiary)
+                    Text(room.tagline)
+                        .font(.subheadline)
+                        .foregroundStyle(Theme.inkSecondary)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
                 }
-                .padding(14)
+                Spacer(minLength: 4)
+                if locked {
+                    Image(systemName: "lock.fill")
+                        .font(.footnote)
+                        .foregroundStyle(Theme.gold)
+                } else {
+                    ProgressRing(done: done, total: total, color: room.accent)
+                }
             }
+            .padding(14)
             .themedCard()
-            .clipShape(RoundedRectangle(cornerRadius: Theme.cardCorner, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: Theme.cardCorner, style: .continuous)
                     .strokeBorder(highlighted ? room.accent : Color.clear, lineWidth: 2.5)
@@ -253,22 +266,10 @@ struct HomeView: View {
             .contentShape(RoundedRectangle(cornerRadius: Theme.cardCorner, style: .continuous))
         }
         .buttonStyle(PressableCardStyle())
+        .accessibilityHint(locked
+            ? "Locked. \(total) drills, included with \(Membership.name)"
+            : "\(done) of \(total) drills done")
         .id(room.id)
-    }
-
-    /// The room's one-line status. For free rooms this is where the extra sets
-    /// announce themselves, so the upgrade reads as "more of what you like".
-    private func subtitle(for room: Room, done: Int, locked: Bool) -> String {
-        if locked {
-            return "\(room.drills.count) advanced drills"
-        }
-        let extras = room.drills.filter(\.isPlus).count
-        let free = room.drills.count - extras
-        var parts = ["\(done) of \(room.drills.count) done"]
-        if extras > 0, !subscriptions.isPro {
-            parts.append("\(free) free, \(extras) with \(Membership.name)")
-        }
-        return parts.joined(separator: " · ")
     }
 
     private var upgradeCard: some View {
@@ -303,6 +304,7 @@ struct HomeView: View {
             )
         }
         .buttonStyle(PressableCardStyle())
+        .padding(.top, 2)
     }
 
     private var lockedDrillCount: Int {
@@ -318,38 +320,40 @@ struct HomeView: View {
     }
 }
 
-/// The room's illustration banner. Decorative only: if the asset is missing
-/// (or was never generated) the card falls back to a tinted wash, so nothing
-/// here is load-bearing.
-struct RoomArt: View {
-    let room: Room
-    var height: CGFloat
-    var dimmed: Bool = false
+/// Room completion at a glance: a ring that fills as the room's drills get
+/// done, and becomes a seal once they all are.
+struct ProgressRing: View {
+    let done: Int
+    let total: Int
+    var color: Color
+
+    private var fraction: Double {
+        guard total > 0 else { return 0 }
+        return Double(done) / Double(total)
+    }
 
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [room.accent.opacity(0.22), room.accent.opacity(0.08)],
-                startPoint: .topLeading, endPoint: .bottomTrailing
-            )
-            if let image = UIImage(named: room.artName) {
-                Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
+            Circle()
+                .stroke(color.opacity(0.18), lineWidth: 3)
+            Circle()
+                .trim(from: 0, to: fraction)
+                .stroke(color, style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                .rotationEffect(.degrees(-90))
+                .animation(.spring(response: 0.5, dampingFraction: 0.8), value: fraction)
+            if done == total, total > 0 {
+                Image(systemName: "checkmark")
+                    .font(.caption2.weight(.black))
+                    .foregroundStyle(color)
+            } else {
+                Text("\(done)/\(total)")
+                    .font(.system(size: 10, weight: .bold, design: .rounded))
+                    .foregroundStyle(Theme.inkSecondary)
+                    .monospacedDigit()
             }
         }
-        .frame(height: height)
-        .frame(maxWidth: .infinity)
-        .clipped()
-        .saturation(dimmed ? 0.35 : 1)
-        .overlay(alignment: .bottom) {
-            LinearGradient(
-                colors: [Theme.card.opacity(0), Theme.card],
-                startPoint: .top, endPoint: .bottom
-            )
-            .frame(height: 22)
-        }
-        .allowsHitTesting(false)
+        .frame(width: 32, height: 32)
+        .accessibilityHidden(true)
     }
 }
 

@@ -165,13 +165,15 @@ struct CharlestonDrillView: View {
                 try? await Task.sleep(nanoseconds: 350_000_000)
                 shineTrigger += 1
             }
-            Haptics.success()
+            Haptics.correctAnswer()
             SoundPlayer.play(.success)
         } else if matchCount == 2 {
+            // Two of three is partial credit: the bright chime, without the
+            // full "you nailed it" landing.
             Haptics.success()
             SoundPlayer.play(.success)
         } else {
-            Haptics.impact(.soft, intensity: 0.7)
+            Haptics.wrongAnswer()
             SoundPlayer.play(.miss)
         }
     }
