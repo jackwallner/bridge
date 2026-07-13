@@ -129,27 +129,36 @@ struct FeatureTourView: View {
 
     // MARK: - Heroes
 
+    /// A live replica of Home's Get Started card, not a picture of one: it
+    /// looks like a button because it IS one, and tapping it opens the same
+    /// real Quick Session as the CTA below.
     private var getStartedHero: some View {
-        HStack(spacing: 14) {
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Get Started")
-                    .font(Theme.display(20))
+        Button {
+            startQuickSession()
+        } label: {
+            HStack(spacing: 14) {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Get Started")
+                        .font(Theme.display(20))
+                        .foregroundStyle(.white)
+                    Text("A five-minute mix of what you need next")
+                        .font(.caption)
+                        .foregroundStyle(.white.opacity(0.85))
+                }
+                Spacer(minLength: 4)
+                Image(systemName: "play.circle.fill")
+                    .font(.system(size: 34))
                     .foregroundStyle(.white)
-                Text("A five-minute mix of what you need next")
-                    .font(.caption)
-                    .foregroundStyle(.white.opacity(0.85))
             }
-            Spacer(minLength: 4)
-            Image(systemName: "play.circle.fill")
-                .font(.system(size: 34))
-                .foregroundStyle(.white)
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                LinearGradient(colors: [Theme.jade, Theme.jade.opacity(0.82)], startPoint: .topLeading, endPoint: .bottomTrailing),
+                in: RoundedRectangle(cornerRadius: 16, style: .continuous)
+            )
+            .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }
-        .padding(16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            LinearGradient(colors: [Theme.jade, Theme.jade.opacity(0.82)], startPoint: .topLeading, endPoint: .bottomTrailing),
-            in: RoundedRectangle(cornerRadius: 16, style: .continuous)
-        )
+        .buttonStyle(PressableCardStyle())
     }
 
     private var roomsHero: some View {
@@ -220,14 +229,17 @@ struct FeatureTourView: View {
 
     // MARK: - Flow
 
+    /// The finale is genuinely actionable: it opens a real Quick Session
+    /// rather than just advancing a tour page. The tour only finishes
+    /// (`onDone`) once that session's `fullScreenCover` is dismissed.
+    private func startQuickSession() {
+        Haptics.success()
+        showQuickSession = true
+    }
+
     private func advance(pageCount: Int) {
         if index == pageCount - 1 {
-            // The finale CTA is genuinely actionable: it opens a real Quick
-            // Session rather than just advancing a tour page. The tour only
-            // finishes (`onDone`) once that session's `fullScreenCover` is
-            // dismissed, so nothing shadows the actionable moment.
-            Haptics.success()
-            showQuickSession = true
+            startQuickSession()
             return
         }
         Haptics.impact(.soft, intensity: 0.6)
