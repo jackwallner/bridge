@@ -200,18 +200,36 @@ final class ContentValidityTests: XCTestCase {
 
     // MARK: - Session builder
 
-    func testDailyMixPullsTenItemsAndPrioritizesMisses() {
-        let mix = SessionBuilder.dailyMix(seen: [], missed: [], includePro: false)
+    func testQuickSessionPullsTenItemsAndPrioritizesMisses() {
+        let mix = SessionBuilder.quickSession(seen: [], missed: [], includePro: false)
         XCTAssertEqual(mix.count, 10)
-        XCTAssertEqual(Set(mix.map(\.id)).count, 10, "Mix must not repeat items")
+        XCTAssertEqual(Set(mix.map(\.id)).count, 10, "Session must not repeat items")
 
         let missedID = mix[0].id
-        let biased = SessionBuilder.dailyMix(seen: [missedID], missed: [missedID], includePro: false)
-        XCTAssertTrue(biased.contains { $0.id == missedID }, "A missed item must come back in the next mix")
+        let biased = SessionBuilder.quickSession(seen: [missedID], missed: [missedID], includePro: false)
+        XCTAssertTrue(biased.contains { $0.id == missedID }, "A missed item must come back in the next session")
     }
 
-    func testDailyMixExcludesProContentForFreeUsers() {
-        let mix = SessionBuilder.dailyMix(seen: [], missed: [], includePro: false)
-        XCTAssertFalse(mix.contains { $0.id.hasPrefix("pro-") }, "Free mix must not leak Pro items")
+    func testQuickSessionExcludesProContentForFreeUsers() {
+        let mix = SessionBuilder.quickSession(seen: [], missed: [], includePro: false)
+        XCTAssertFalse(mix.contains { $0.id.hasPrefix("pro-") }, "Free session must not leak Pro items")
+    }
+
+    func testQuickSessionItemsAreChoiceOnlyWithValidAnswers() {
+        let mix = SessionBuilder.quickSession(count: 50, seen: [], missed: [], includePro: true)
+        for item in mix {
+            XCTAssertGreaterThanOrEqual(item.choices.count, 2, "\(item.id) needs at least 2 choices")
+            XCTAssertTrue(item.choices.indices.contains(item.answerIndex), "\(item.id) has out-of-range answer")
+        }
+    }
+
+    func testQuickSessionExcludesPlainFlashcardsAndCharleston() {
+        let plainFlashcardIDs = Set(allFlashcards.filter { $0.choice == nil }.map(\.id))
+        let charlestonIDs = Set(allCharleston.map(\.id))
+        let mix = SessionBuilder.quickSession(count: 200, seen: [], missed: [], includePro: true)
+        for item in mix {
+            XCTAssertFalse(plainFlashcardIDs.contains(item.id), "\(item.id) is a plain flip flashcard and must not appear in Quick Session")
+            XCTAssertFalse(charlestonIDs.contains(item.id), "\(item.id) is a Charleston scenario and must not appear in Quick Session")
+        }
     }
 }
