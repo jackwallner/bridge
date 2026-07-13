@@ -1,1 +1,1 @@
-mahjongg,american mahjong,charleston,tiles,nmjl,maj,learn,practice,drills,beginner,jokers,card
+tile,dot,bam,crak,wind,dragon,flower,joker,rack,hand,rule,quiz,beginner,tutorial,tip,strategy,pung

@@ -1,13 +1,13 @@
-Learned mah jongg on Thursday? Keep it.
+Practice American Mah Jongg in five-minute drills: tiles, Charleston strategy, rack reading, and keep-or-throw judgment, built for new players.
 
-Mahj Trainer is a practice app for American Mah Jongg. No opponents, no timers, no pressure: just five-minute drills that build the skills new players need before sitting down at a real table. Think of it like practicing your serve without playing a match.
+Learned mah jongg on Thursday? Keep it. Mahj Trainer has no opponents, no timers, and no pressure: just quick, interactive reps that build the skills you need before sitting down at a real table. Think of it like practicing your serve without playing a match.
 
 WHY IT WORKS
-Most new players learn at a weekly game, then have no way to practice until the next one. Lessons fade. Mahj Trainer gives you quick, interactive reps you can run anywhere, even standing in line.
+Most new players learn at a weekly game, then have no way to practice until the next one. Lessons fade. Mahj Trainer gives you quick reps you can run anywhere, even standing in line.
 
-FOUR PRACTICE ROOMS
+FOUR FREE PRACTICE ROOMS
 
-THE TILE ROOM (free)
+THE TILE ROOM
 Meet every tile family: craks, bams, dots, winds, dragons, flowers, and jokers. Then quiz yourself on the rules everyone gets wrong: which dragon goes with which suit, what jokers can and cannot do, what a soap really means.
 
 THE CARD ROOM
@@ -19,7 +19,13 @@ The part that scares every new player, minus the panic. Learn the rules and stra
 THE TABLE ROOM
 Keep-or-throw judgment calls: when to hold a flower, when to swap for an exposed joker, what an opponent's exposure tells you, and which discards are safe.
 
+PRO TABLES (optional upgrade)
+Ready for more? Pro Tables adds advanced Charleston strategy, a defense school, and expert rack-reading drills for players moving past the basics.
+
 BUILT FOR NEW PLAYERS
 Flashcards with the "why" on the back. Streaks to keep you practicing between games. Original practice hands that teach the category system, so your skills transfer to any year's card.
 
 Mahj Trainer is an independent training app. It is not affiliated with or endorsed by the National Mah Jongg League. For official hands and values, get the current NMJL card.
+
+SUBSCRIPTIONS
+Pro Tables is available by auto-renewing subscription or a one-time purchase: Monthly $1.99/month, Yearly $9.99/year (both include a 1-week free trial), or Lifetime $29.99 one-time. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in Account Settings on your device. Terms of Use (Apple's standard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Privacy Policy: https://jackwallner.github.io/mahj/privacy-policy.
