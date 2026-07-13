@@ -1,0 +1,31 @@
+Practica el Mah Jongg americano en sesiones de cinco minutos: fichas, estrategia del Charleston, lectura del rack y decisiones de quedarte o descartar, pensado para jugadoras y jugadores nuevos.
+
+¿Aprendiste mahjong el jueves? No lo olvides. Mahj Trainer no tiene rivales, ni cronómetros, ni presión: solo repeticiones rápidas e interactivas que construyen las habilidades que necesitas antes de sentarte en una mesa real. Piensa en ello como practicar tu saque sin jugar un partido.
+
+POR QUÉ FUNCIONA
+La mayoría de los jugadores nuevos aprenden en una partida semanal y luego no tienen forma de practicar hasta la siguiente. Lo aprendido se olvida. Mahj Trainer te da repeticiones rápidas que puedes hacer en cualquier lugar, incluso haciendo cola.
+
+CUATRO SALAS DE PRÁCTICA GRATUITAS
+
+LA SALA DE FICHAS
+Conoce cada familia de fichas: caracteres, bambús, puntos, vientos, dragones, flores y comodines. Luego ponte a prueba con las reglas que todo el mundo confunde: qué dragón va con cada palo, qué puede y no puede hacer un comodín, qué significa realmente un "soap".
+
+LA SALA DE LA CARTA
+Aprende las secciones de la carta (2468, Consecutive Run, 13579, Winds and Dragons, 369, Singles and Pairs y más) y cómo reconocerlas. Después practica la lectura de racks: observa 13 fichas y nombra la sección que persiguen.
+
+LA SALA DEL CHARLESTON
+La parte que asusta a todo jugador nuevo, sin el pánico. Aprende las reglas y la estrategia del intercambio, luego trabaja repartos reales: elige 3 fichas para pasar y compara tu elección con la del entrenador, con la razón explicada.
+
+LA SALA DE MESA
+Decisiones de quedarte o descartar: cuándo guardar una flor, cuándo cambiarla por un comodín expuesto, qué te dice la exposición de un rival y qué descartes son seguros.
+
+PRO TABLES (mejora opcional)
+¿Lista para más? Pro Tables añade estrategia avanzada del Charleston, una escuela de defensa y ejercicios expertos de lectura de racks para jugadores que superan lo básico.
+
+PENSADO PARA JUGADORES NUEVOS
+Tarjetas con el "por qué" al dorso. Rachas que te mantienen practicando entre partidas. Manos de práctica originales que enseñan el sistema de categorías, para que tus habilidades funcionen con la carta de cualquier año.
+
+Mahj Trainer es una aplicación de práctica independiente. No está afiliada ni respaldada por la National Mah Jongg League. Para manos y valores oficiales, consigue la carta NMJL vigente.
+
+SUSCRIPCIONES
+Pro Tables está disponible mediante suscripción de renovación automática o compra única: Mensual $1.99/mes, Anual $9.99/año (ambas incluyen 1 semana de prueba gratuita), o Lifetime $29.99 pago único. El cobro se realiza a tu cuenta de Apple ID al confirmar la compra. Las suscripciones se renuevan automáticamente salvo que se cancelen al menos 24 horas antes de que finalice el periodo actual. Gestiona o cancela cuando quieras en los Ajustes de cuenta de tu dispositivo. Condiciones de uso (EULA estándar de Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Política de privacidad: https://jackwallner.github.io/mahj/privacy-policy.
