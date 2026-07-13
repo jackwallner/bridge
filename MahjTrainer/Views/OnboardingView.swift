@@ -7,9 +7,11 @@ import SwiftUI
 /// to Apple's confirm. No plan cards here; the full paywall is only a fallback
 /// when products failed to load.
 ///
-/// After the trial decision (either way) everyone gets the feature tour, and
-/// brand-new players follow it with the How to Play quick start. Only then
-/// does `hasOnboarded` flip and Home appear.
+/// After the trial decision (either way), brand-new players get the How to
+/// Play quick start FIRST, then everyone gets the feature tour, whose finale
+/// runs a real Quick Session. The primer has to come before that session:
+/// answering questions about tiles you haven't met yet is not an onboarding.
+/// Only once the tour is done does `hasOnboarded` flip and Home appear.
 struct OnboardingView: View {
     @EnvironmentObject private var progress: ProgressStore
     @EnvironmentObject private var subscriptions: SubscriptionService
@@ -29,11 +31,11 @@ struct OnboardingView: View {
             switch stage {
             case .pages:
                 pagesBody
-            case .tour:
-                FeatureTourView { tourDone() }
-                    .transition(.move(edge: .trailing).combined(with: .opacity))
             case .howToPlay:
-                HowToPlayView { finish() }
+                HowToPlayView { stage = .tour }
+                    .transition(.move(edge: .trailing).combined(with: .opacity))
+            case .tour:
+                FeatureTourView { finish() }
                     .transition(.move(edge: .trailing).combined(with: .opacity))
             }
         }
@@ -45,8 +47,8 @@ struct OnboardingView: View {
             TabView(selection: $page) {
                 infoPage(
                     icon: "square.grid.3x3.fill",
-                    title: "New to the table?",
-                    body: "Lessons fade fast between games. Mahj Trainer gives you five-minute drills you can run anywhere, so what you learned actually sticks.",
+                    title: "Make it stick between games",
+                    body: "Mah Jongg fades fast between games. Mahj Trainer gives you five-minute drills you can run anywhere, whether you are still meeting the tiles or sharpening instincts you already have.",
                     tiles: [.c(2), .dragon(.soap), .c(2), .b(6)]
                 ).tag(0)
                 infoPage(
@@ -58,7 +60,7 @@ struct OnboardingView: View {
                 infoPage(
                     icon: "figure.walk",
                     title: "Walk in confident",
-                    body: "Know which dragon matches which suit, spot your section fast, and stop dreading the Charleston. Built for new players; no timers, no opponents.",
+                    body: "Know which dragon matches which suit, spot your section fast, and stop dreading the Charleston. Practice at your own pace: no timers, no opponents.",
                     tiles: [.dragon(.red), .dragon(.green), .flower]
                 ).tag(2)
                 skillLevelPage.tag(3)
@@ -295,18 +297,11 @@ struct OnboardingView: View {
         }
     }
 
-    /// Both exits from the trial page land here: the tour shows subscribers
-    /// what they now own and free players what the gold door hides.
+    /// Both exits from the trial page land here. Brand-new players take the
+    /// primer first so the tour's closing Quick Session isn't the first time
+    /// they see a tile; everyone else goes straight to the tour.
     private func startTour() {
-        stage = .tour
-    }
-
-    private func tourDone() {
-        if skillLevel == "new" {
-            stage = .howToPlay
-        } else {
-            finish()
-        }
+        stage = skillLevel == "new" ? .howToPlay : .tour
     }
 
     /// A successful purchase in the products-failed fallback must rejoin the

@@ -8,7 +8,17 @@ import SwiftUI
 /// and hand-match into one screen with a per-switch interstitial; that mix
 /// of grading paths is what made it look like it skipped the right answer.)
 struct QuickSessionView: View {
-    let items: [QuickItem]
+    /// Snapshotted at first construction, never re-read from the parent.
+    /// `SessionBuilder.quickSession` shuffles and re-tiers on every call, and
+    /// grading publishes `ProgressStore.seenItems`, which re-renders whichever
+    /// parent (Home, the tour) built us. Holding the list as a plain `let`
+    /// meant that re-render swapped a DIFFERENT question under the live index
+    /// mid-answer, which read as "it changed the answer on me".
+    @State private var items: [QuickItem]
+
+    init(items: [QuickItem]) {
+        _items = State(initialValue: items)
+    }
 
     @EnvironmentObject private var progress: ProgressStore
 
