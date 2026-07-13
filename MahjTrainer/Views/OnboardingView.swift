@@ -140,6 +140,9 @@ struct OnboardingView: View {
                     skillCard(option)
                 }
             }
+            Text(skillLevel.isEmpty ? "Pick one to continue." : " ")
+                .font(.footnote)
+                .foregroundStyle(Theme.inkSecondary)
             Spacer()
             Spacer()
         }
@@ -235,17 +238,18 @@ struct OnboardingView: View {
             Button {
                 startTour()
             } label: {
-                Text("Get Started")
-                    .font(.subheadline.weight(.medium))
+                Text("Continue without a trial")
+                    .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Theme.inkSecondary)
+                    .underline()
             }
             .frame(height: 30)
             .opacity(onTrialPage ? 1 : 0)
             .disabled(!onTrialPage)
             // Disclosure slot, also reserved.
             Text(yearlyDisclosure)
-                .font(.caption2)
-                .foregroundStyle(Theme.inkTertiary)
+                .font(.caption)
+                .foregroundStyle(Theme.inkSecondary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
                 .frame(height: 42)
@@ -272,8 +276,8 @@ struct OnboardingView: View {
                     Task { try? await subscriptions.restore() }
                 }
             }
-            .font(.caption2)
-            .foregroundStyle(Theme.inkTertiary)
+            .font(.caption)
+            .foregroundStyle(Theme.inkSecondary)
             .frame(height: 20)
             .opacity(onTrialPage ? 1 : 0)
             .disabled(!onTrialPage)

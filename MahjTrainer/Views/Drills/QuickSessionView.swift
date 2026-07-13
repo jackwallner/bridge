@@ -15,9 +15,15 @@ struct QuickSessionView: View {
     /// meant that re-render swapped a DIFFERENT question under the live index
     /// mid-answer, which read as "it changed the answer on me".
     @State private var items: [QuickItem]
+    /// Set when the session is presented with no navigation stack of its own to
+    /// escape through (the onboarding tour's fullScreenCover). Without it the
+    /// player's FIRST question flow has no exit but finishing it, which is a
+    /// trap, and a bad one right after the money page.
+    private let onClose: (() -> Void)?
 
-    init(items: [QuickItem]) {
+    init(items: [QuickItem], onClose: (() -> Void)? = nil) {
         _items = State(initialValue: items)
+        self.onClose = onClose
     }
 
     @EnvironmentObject private var progress: ProgressStore
@@ -42,7 +48,7 @@ struct QuickSessionView: View {
 
     var body: some View {
         if finished || items.isEmpty {
-            DrillCompleteView(drill: SessionBuilder.sessionDrill, score: score, total: items.count)
+            DrillCompleteView(drill: SessionBuilder.sessionDrill, score: score, total: items.count, onDone: onClose)
         } else {
             drillBody
         }
@@ -99,6 +105,14 @@ struct QuickSessionView: View {
         }
         .navigationTitle("Quick Session")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            if let onClose {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Close") { onClose() }
+                        .foregroundStyle(Theme.inkSecondary)
+                }
+            }
+        }
     }
 
     private var footer: some View {

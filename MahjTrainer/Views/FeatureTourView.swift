@@ -88,11 +88,14 @@ struct FeatureTourView: View {
         .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.35)) }
         .fullScreenCover(isPresented: $showQuickSession, onDismiss: onDone) {
             NavigationStack {
-                QuickSessionView(items: SessionBuilder.quickSession(
-                    seen: progress.seenItems,
-                    missed: progress.missedItems,
-                    includePro: subscriptions.isPro
-                ))
+                QuickSessionView(
+                    items: SessionBuilder.quickSession(
+                        seen: progress.seenItems,
+                        missed: progress.missedItems,
+                        includePro: subscriptions.isPro
+                    ),
+                    onClose: { showQuickSession = false }
+                )
             }
         }
         .onAppear { fireShine() }

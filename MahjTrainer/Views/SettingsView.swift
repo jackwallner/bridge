@@ -20,6 +20,7 @@ struct SettingsView: View {
                 appearanceSection
                 practiceSection
                 proSection
+                dataSection
                 supportSection
                 aboutSection
                 #if DEBUG
@@ -87,6 +88,14 @@ struct SettingsView: View {
             if settings.reminderEnabled {
                 DatePicker("Reminder Time", selection: $settings.reminderTime, displayedComponents: .hourAndMinute)
             }
+        }
+    }
+
+    /// Reset gets its own section. A destructive red button sitting between
+    /// Haptics and Sound Effects is a trap for anyone who taps to see what
+    /// something does.
+    private var dataSection: some View {
+        Section("Your Practice History") {
             Button("Reset Progress", role: .destructive) {
                 showResetConfirm = true
             }

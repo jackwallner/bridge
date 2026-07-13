@@ -5,6 +5,9 @@ struct DrillCompleteView: View {
     let drill: Drill
     let score: Int?
     let total: Int
+    /// Supplied when there is no navigation stack to pop (the onboarding
+    /// tour's cover); otherwise Done just dismisses.
+    var onDone: (() -> Void)?
 
     @EnvironmentObject private var progress: ProgressStore
     @Environment(\.dismiss) private var dismiss
@@ -60,7 +63,7 @@ struct DrillCompleteView: View {
             .themedCard(corner: 22)
             Spacer()
             Button {
-                dismiss()
+                if let onDone { onDone() } else { dismiss() }
             } label: {
                 Text("Done").primaryCTA()
             }

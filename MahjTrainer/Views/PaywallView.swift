@@ -166,8 +166,8 @@ struct PaywallView: View {
             .safeAreaInset(edge: .bottom) {
                 VStack(spacing: 8) {
                     Text(PaywallPricing.terms(subscriptions, selectedPlan))
-                        .font(.caption2)
-                        .foregroundStyle(Theme.inkTertiary)
+                        .font(.caption)
+                        .foregroundStyle(Theme.inkSecondary)
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                     Button {

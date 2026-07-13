@@ -87,9 +87,14 @@ struct TileView: View {
         }
     }
 
+    /// The tile's word (WIND, SOAP, JOKER...) is how a beginner learns which
+    /// dragon goes with which suit, so it has a legibility FLOOR. A pure
+    /// fraction of the tile width put it at ~7pt on the 44pt tiles the drills
+    /// actually use, which is unreadable for the players this app is for.
     private func caption(_ text: String, color: Color) -> some View {
         Text(text)
-            .font(.system(size: width * 0.16, weight: .heavy))
+            .font(.system(size: max(9.5, width * 0.16), weight: .heavy))
+            .minimumScaleFactor(0.9)
             .foregroundStyle(color)
     }
 

@@ -27,6 +27,7 @@ struct ReviewPromptSheet: View {
     @Environment(\.dismiss) private var dismiss
     @State private var step: Step
     @State private var feedbackText = ""
+    @State private var mailFailed = false
     @FocusState private var feedbackFocused: Bool
 
     init(initialStep: Step = .enjoyment, onFinish: @escaping (ReviewPromptDismissOutcome) -> Void) {
@@ -143,9 +144,27 @@ struct ReviewPromptSheet: View {
                 .padding(10)
                 .themedCard(corner: 14)
                 .focused($feedbackFocused)
-            Text("Opens your mail app with a draft to the developer. It goes to a real person.")
-                .font(.caption)
-                .foregroundStyle(Theme.inkSecondary)
+            if mailFailed {
+                // Plenty of people never set up Apple Mail. Telling them it
+                // "sent" when nothing opened is worse than saying nothing.
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Your mail app didn't open. You can email us directly:")
+                        .font(.caption)
+                        .foregroundStyle(Theme.ink)
+                    Button {
+                        UIPasteboard.general.string = AppStoreLinks.feedbackEmail
+                        Haptics.success()
+                    } label: {
+                        Label("Copy \(AppStoreLinks.feedbackEmail)", systemImage: "doc.on.doc")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Theme.jade)
+                    }
+                }
+            } else {
+                Text("Opens your mail app with a draft to the developer. It goes to a real person.")
+                    .font(.caption)
+                    .foregroundStyle(Theme.inkSecondary)
+            }
             Button {
                 sendFeedback()
             } label: {
@@ -172,11 +191,19 @@ struct ReviewPromptSheet: View {
         feedbackText.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
+    /// Only claim the feedback was sent if a mail app actually opened.
     private func sendFeedback() {
         guard !trimmedFeedback.isEmpty, let url = Self.feedbackMailURL(body: trimmedFeedback) else { return }
-        ReviewPromptTracker.markFeedbackSubmitted()
-        UIApplication.shared.open(url)
-        finish(.feedbackSubmitted)
+        UIApplication.shared.open(url, options: [:]) { opened in
+            Task { @MainActor in
+                guard opened else {
+                    mailFailed = true
+                    return
+                }
+                ReviewPromptTracker.markFeedbackSubmitted()
+                finish(.feedbackSubmitted)
+            }
+        }
     }
 
     private func finish(_ outcome: ReviewPromptDismissOutcome) {

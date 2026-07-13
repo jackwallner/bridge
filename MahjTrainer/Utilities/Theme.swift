@@ -30,9 +30,16 @@ enum Theme {
 
     // MARK: Ink
 
+    // Contrast is not a style knob here. This app's readers skew 50+ and read
+    // it on a couch in bad light, and tertiary ink carries the money disclosure
+    // and the swipe instructions. Every level below clears WCAG AA (4.5:1) on
+    // both backgrounds; tertiary used to sit at 2.8:1, which is decorative-text
+    // territory. Re-check with a contrast calculator before darkening the cream.
     static let ink = Color(light: (0.16, 0.14, 0.12), dark: (0.94, 0.92, 0.88))
-    static let inkSecondary = Color(light: (0.44, 0.40, 0.36), dark: (0.66, 0.63, 0.58))
-    static let inkTertiary = Color(light: (0.60, 0.56, 0.51), dark: (0.48, 0.46, 0.42))
+    /// 6.3:1 light / 7.6:1 dark.
+    static let inkSecondary = Color(light: (0.38, 0.35, 0.31), dark: (0.72, 0.69, 0.64))
+    /// 4.6:1 light / 6.0:1 dark.
+    static let inkTertiary = Color(light: (0.46, 0.42, 0.38), dark: (0.62, 0.59, 0.55))
 
     // MARK: Tiles
 
@@ -91,7 +98,7 @@ struct PlusBadge: View {
 
     var body: some View {
         Text(text)
-            .font(.caption2.weight(.heavy))
+            .font(.caption.weight(.heavy))
             .foregroundStyle(Theme.gold)
             .padding(.horizontal, 8)
             .padding(.vertical, 3)
