@@ -83,7 +83,7 @@ enum CharlestonContent {
             situation: "First Charleston, pass RIGHT. Pick 3 tiles to pass.",
             deal: [.c(2), .c(2), .c(4), .c(4), .b(6), .b(6), .b(8), .d(8), .flower, .joker, .c(5), .b(7), .wind(.north)],
             recommendedPass: [.c(5), .b(7), .wind(.north)],
-            reasoning: "This deal leans hard into 2468: four even pairs-in-progress plus a flower and a joker that fit anywhere. The 5 Crak, 7 Bam and lone North help none of that. The joker can never be passed, and the flower should stay early.",
+            reasoning: "This deal leans hard into 2468: three even pairs plus two more evens working on it, and a flower and a joker that fit anywhere. The 5 Crak, 7 Bam and lone North help none of that. The joker can never be passed, and the flower should stay early.",
             tip: "First pass: dump the tiles that fit NONE of your 2-3 candidate sections."
         ),
         CharlestonScenario(

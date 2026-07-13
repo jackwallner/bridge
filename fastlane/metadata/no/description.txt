@@ -19,8 +19,8 @@ Delen som skremmer alle nye spillere, minus panikken. Lær reglene og strategien
 BORDROMMET
 Hold-eller-kast-vurderinger: når du skal holde på en blomst, når du skal bytte for en eksponert joker, hva en motstanders eksponering forteller deg, og hvilke kast som er trygge.
 
-PRO TABLES (valgfri oppgradering)
-Klar for mer? Pro Tables legger til avansert Charleston-strategi, en forsvarsskole og øvelser i ekspertnivå brettlesing for spillere som går forbi det grunnleggende.
+MAHJ+ (valgfri oppgradering)
+Klar for mer? Mahj+ legger til avansert Charleston-strategi, en forsvarsskole og øvelser i ekspertnivå brettlesing for spillere som går forbi det grunnleggende.
 
 LAGET FOR NYE SPILLERE
 Flashkort med "hvorfor" på baksiden. Streaker som holder deg i gang mellom spillekvelder. Originale øvingshender som lærer bort kategorisystemet, slik at ferdighetene dine overføres til hvilket som helst års kort.
@@ -28,4 +28,4 @@ Flashkort med "hvorfor" på baksiden. Streaker som holder deg i gang mellom spil
 Mahj Trainer er en uavhengig treningsapp. Den er ikke tilknyttet eller godkjent av National Mah Jongg League. For offisielle hender og verdier, skaff deg det gjeldende NMJL-kortet.
 
 ABONNEMENT
-Pro Tables er tilgjengelig som automatisk fornyende abonnement eller et engangskjøp: Månedlig $1.99/måned, Årlig $9.99/år (begge inkluderer en 1-ukes gratis prøveperiode), eller Livstid $29.99 som engangskjøp. Betaling belastes din Apple ID-konto ved bekreftelse av kjøpet. Abonnementet fornyes automatisk med mindre det kanselleres minst 24 timer før slutten av gjeldende periode. Administrer eller kanseller når som helst i Kontoinnstillinger på enheten din. Brukervilkår (Apples standard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Personvernerklæring: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ er tilgjengelig som automatisk fornyende abonnement eller et engangskjøp: Månedlig $1.99/måned, Årlig $9.99/år (begge inkluderer en 1-ukes gratis prøveperiode), eller Livstid $29.99 som engangskjøp. Betaling belastes din Apple ID-konto ved bekreftelse av kjøpet. Abonnementet fornyes automatisk med mindre det kanselleres minst 24 timer før slutten av gjeldende periode. Administrer eller kanseller når som helst i Kontoinnstillinger på enheten din. Brukervilkår (Apples standard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Personvernerklæring: https://jackwallner.github.io/mahj/privacy-policy.

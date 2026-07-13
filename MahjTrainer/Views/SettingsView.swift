@@ -1,5 +1,6 @@
 import SwiftUI
 import StoreKit
+import UIKit
 
 struct SettingsView: View {
     @EnvironmentObject private var subscriptions: SubscriptionService
@@ -48,6 +49,16 @@ struct SettingsView: View {
                 Button("OK", role: .cancel) {}
             } message: {
                 Text(restoreMessage ?? "")
+            }
+            .alert("Notifications are off", isPresented: $settings.reminderPermissionDenied) {
+                Button("Open Settings") {
+                    if let url = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(url)
+                    }
+                }
+                Button("Not now", role: .cancel) {}
+            } message: {
+                Text("Mahj Trainer can't send your daily reminder until notifications are turned on for it in iOS Settings.")
             }
             .alert("Reset all progress?", isPresented: $showResetConfirm) {
                 Button("Reset", role: .destructive) { progress.resetAll() }

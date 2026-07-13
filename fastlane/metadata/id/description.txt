@@ -19,8 +19,8 @@ Bagian yang paling menakutkan bagi pemain baru, tanpa rasa panik. Pelajari atura
 RUANG MEJA
 Keputusan simpan atau buang: kapan menahan bunga, kapan menukar joker yang terbuka, apa yang bisa dibaca dari ubin terbuka lawan, dan ubin mana yang aman dibuang.
 
-PRO TABLES (upgrade opsional)
-Siap naik level? Pro Tables menambahkan strategi Charleston tingkat lanjut, kelas bertahan, dan latihan membaca rak tingkat ahli untuk pemain yang sudah lewat dasar-dasar.
+MAHJ+ (upgrade opsional)
+Siap naik level? Mahj+ menambahkan strategi Charleston tingkat lanjut, kelas bertahan, dan latihan membaca rak tingkat ahli untuk pemain yang sudah lewat dasar-dasar.
 
 DIRANCANG UNTUK PEMAIN BARU
 Kartu flash dengan penjelasan "kenapa" di baliknya. Streak yang membuatmu terus berlatih di antara sesi main. Tangan latihan orisinal yang mengajarkan sistem kategori, jadi kemampuanmu berlaku untuk kartu tahun berapa pun.
@@ -28,5 +28,5 @@ Kartu flash dengan penjelasan "kenapa" di baliknya. Streak yang membuatmu terus 
 Mahj Trainer adalah aplikasi latihan independen. Aplikasi ini tidak berafiliasi dengan atau didukung oleh National Mah Jongg League. Untuk tangan dan nilai resmi, gunakan kartu NMJL terbaru.
 
 TENTANG LANGGANAN
-Pro Tables tersedia lewat langganan otomatis atau pembelian sekali bayar: Monthly $1,99/bulan, Yearly $9,99/tahun (keduanya termasuk uji coba gratis 1 minggu), atau Lifetime $29,99 sekali bayar. Pembayaran dibebankan ke akun Apple ID kamu saat pembelian dikonfirmasi. Langganan diperpanjang otomatis kecuali dibatalkan setidaknya 24 jam sebelum periode berjalan berakhir. Kelola atau batalkan kapan saja di Pengaturan Akun perangkatmu. Ketentuan Penggunaan (EULA standar Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Mahj+ tersedia lewat langganan otomatis atau pembelian sekali bayar: Monthly $1,99/bulan, Yearly $9,99/tahun (keduanya termasuk uji coba gratis 1 minggu), atau Lifetime $29,99 sekali bayar. Pembayaran dibebankan ke akun Apple ID kamu saat pembelian dikonfirmasi. Langganan diperpanjang otomatis kecuali dibatalkan setidaknya 24 jam sebelum periode berjalan berakhir. Kelola atau batalkan kapan saja di Pengaturan Akun perangkatmu. Ketentuan Penggunaan (EULA standar Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 Kebijakan Privasi: https://jackwallner.github.io/mahj/privacy-policy

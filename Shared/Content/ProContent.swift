@@ -204,7 +204,7 @@ enum ProContent {
             tiles: [.dragon(.soap), .dragon(.soap), .dragon(.red), .dragon(.red), .dragon(.green), .dragon(.green), .wind(.north), .wind(.north), .wind(.east), .c(2), .d(2), .flower, .joker],
             choices: [.windsDragons, .year, .singlesAndPairs],
             answer: .windsDragons,
-            explanation: "Year is the decoy: the soaps and 2s hint at 2, 0, 2, 6. But year hands use no winds, and you are holding a pung's worth of them alongside all three dragons. Three dragon pairs plus winds is Winds and Dragons."
+            explanation: "Year is the decoy: the soaps and 2s hint at 2, 0, 2, 6. But year hands use no winds, and you are holding three of them alongside all three dragons. Three dragon pairs plus winds is Winds and Dragons."
         ),
     ]
 }

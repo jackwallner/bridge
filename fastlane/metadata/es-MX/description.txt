@@ -19,8 +19,8 @@ La parte que le da miedo a todo jugador nuevo, sin el pánico. Aprende las regla
 LA SALA DE MESA
 Decisiones de quedarte o tirar: cuándo guardar una flor, cuándo cambiarla por un comodín expuesto, qué te dice la exposición de un rival y qué tiros son seguros.
 
-PRO TABLES (mejora opcional)
-¿Listo para más? Pro Tables agrega estrategia avanzada del Charleston, una escuela de defensa y ejercicios expertos de lectura de racks para jugadores que van más allá de lo básico.
+MAHJ+ (mejora opcional)
+¿Listo para más? Mahj+ agrega estrategia avanzada del Charleston, una escuela de defensa y ejercicios expertos de lectura de racks para jugadores que van más allá de lo básico.
 
 DISEÑADO PARA JUGADORES PRINCIPIANTES
 Tarjetas con el "por qué" al reverso. Rachas que te mantienen practicando entre partidas. Manos de práctica originales que enseñan el sistema de categorías, para que tus habilidades sirvan con la tarjeta de cualquier año.
@@ -28,4 +28,4 @@ Tarjetas con el "por qué" al reverso. Rachas que te mantienen practicando entre
 Mahj Trainer es una aplicación de práctica independiente. No está afiliada ni respaldada por la National Mah Jongg League. Para manos y valores oficiales, consigue la tarjeta NMJL vigente.
 
 SUSCRIPCIONES
-Pro Tables está disponible por suscripción de renovación automática o compra única: Mensual $1.99/mes, Anual $9.99/año (ambas con 1 semana de prueba gratis), o Lifetime $29.99 pago único. El cargo se hace a tu cuenta de Apple ID al confirmar la compra. Las suscripciones se renuevan automáticamente a menos que se cancelen al menos 24 horas antes de que termine el periodo actual. Administra o cancela cuando quieras en Configuración de la cuenta de tu dispositivo. Términos de uso (EULA estándar de Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Aviso de privacidad: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ está disponible por suscripción de renovación automática o compra única: Mensual $1.99/mes, Anual $9.99/año (ambas con 1 semana de prueba gratis), o Lifetime $29.99 pago único. El cargo se hace a tu cuenta de Apple ID al confirmar la compra. Las suscripciones se renuevan automáticamente a menos que se cancelen al menos 24 horas antes de que termine el periodo actual. Administra o cancela cuando quieras en Configuración de la cuenta de tu dispositivo. Términos de uso (EULA estándar de Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Aviso de privacidad: https://jackwallner.github.io/mahj/privacy-policy.

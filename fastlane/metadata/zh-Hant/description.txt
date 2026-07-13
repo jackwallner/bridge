@@ -19,8 +19,8 @@
 牌桌房
 練習留牌還是出牌的判斷力：花牌什麼時候該留著、什麼時候該換走別人亮出來的鬼牌、對手亮出的牌透露了什麼訊息、出哪張牌才安全。
 
-Pro Tables（進階升級，選配）
-想練得更深入嗎？Pro Tables新增進階查爾斯頓策略、專門的防守課程，以及給進階玩家的高階讀牌訓練。
+Mahj+（進階升級，選配）
+想練得更深入嗎？Mahj+新增進階查爾斯頓策略、專門的防守課程，以及給進階玩家的高階讀牌訓練。
 
 專為新手設計
 背面附「為什麼」解說的字卡。連續練習天數紀錄，幫你保持練習節奏。原創練習牌局教你掌握分類系統的邏輯，練成的功力不管哪一年的牌譜都用得上。
@@ -28,5 +28,5 @@ Pro Tables（進階升級，選配）
 Mahj Trainer是一款獨立的訓練應用程式，與National Mah Jongg League（全美麻將總會）沒有任何隸屬或認可關係。正式牌型與台數請以最新的NMJL牌譜為準。
 
 訂閱說明
-Pro Tables可透過自動續訂訂閱或一次性購買解鎖：月繳方案Monthly $1.99/月、年繳方案Yearly $9.99/年（皆含1週免費試用），或一次買斷Lifetime $29.99（永久使用）。購買確認後將從您的Apple ID帳戶扣款。訂閱會自動續訂，除非在目前訂閱週期結束前至少24小時取消。您可以隨時在裝置的「帳戶設定」中管理或取消訂閱。使用條款（Apple標準EULA）：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Mahj+可透過自動續訂訂閱或一次性購買解鎖：月繳方案Monthly $1.99/月、年繳方案Yearly $9.99/年（皆含1週免費試用），或一次買斷Lifetime $29.99（永久使用）。購買確認後將從您的Apple ID帳戶扣款。訂閱會自動續訂，除非在目前訂閱週期結束前至少24小時取消。您可以隨時在裝置的「帳戶設定」中管理或取消訂閱。使用條款（Apple標準EULA）：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 隱私權政策：https://jackwallner.github.io/mahj/privacy-policy

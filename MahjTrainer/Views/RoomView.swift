@@ -49,6 +49,14 @@ struct RoomView: View {
                 .font(.subheadline)
                 .foregroundStyle(Theme.inkSecondary)
                 .multilineTextAlignment(.center)
+            if roomLocked {
+                // A locked room still shows its drills below, so this is a
+                // preview, not a dead end. Say so, or the lock reads as a wall.
+                Text("Look around. Every drill here opens with \(Membership.name).")
+                    .font(.caption.weight(.medium))
+                    .foregroundStyle(Theme.gold)
+                    .multilineTextAlignment(.center)
+            }
         }
         .frame(maxWidth: .infinity)
         .padding(.top, 8)

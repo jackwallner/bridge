@@ -19,8 +19,8 @@ Het onderdeel dat elke nieuwe speler bang maakt, zonder de paniek. Leer de regel
 DE SPELTAFEL
 Houden-of-weggooien beslissingen: wanneer je een bloem bewaart, wanneer je ruilt voor een blootgelegde joker, wat de blootlegging van een tegenstander verraadt, en welke worpen veilig zijn.
 
-PRO TABLES (optionele upgrade)
-Klaar voor meer? Pro Tables voegt geavanceerde Charleston-strategie toe, een verdedigingsschool en expertoefeningen voor rack lezen, voor spelers die verder gaan dan de basis.
+MAHJ+ (optionele upgrade)
+Klaar voor meer? Mahj+ voegt geavanceerde Charleston-strategie toe, een verdedigingsschool en expertoefeningen voor rack lezen, voor spelers die verder gaan dan de basis.
 
 GEMAAKT VOOR NIEUWE SPELERS
 Flashcards met het "waarom" op de achterkant. Reeksen die je tussen potjes door aan het oefenen houden. Originele oefenhanden die het categoriesysteem aanleren, zodat je vaardigheden werken bij de kaart van elk jaar.
@@ -28,4 +28,4 @@ Flashcards met het "waarom" op de achterkant. Reeksen die je tussen potjes door 
 Mahj Trainer is een onafhankelijke oefenapp. De app is niet gelieerd aan en wordt niet onderschreven door de National Mah Jongg League. Voor officiële hands en waarden, gebruik de actuele NMJL-kaart.
 
 ABONNEMENTEN
-Pro Tables is beschikbaar via een automatisch verlengend abonnement of een eenmalige aankoop: Maandelijks $1.99/maand, Jaarlijks $9.99/jaar (beide met 1 week gratis proefperiode), of Lifetime $29.99 eenmalig. Betaling wordt bij bevestiging van de aankoop in rekening gebracht op je Apple ID-account. Abonnementen worden automatisch verlengd, tenzij minstens 24 uur voor het einde van de huidige periode wordt opgezegd. Beheer of zeg op elk moment op via Accountinstellingen op je apparaat. Gebruiksvoorwaarden (Apple's standaard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Privacybeleid: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ is beschikbaar via een automatisch verlengend abonnement of een eenmalige aankoop: Maandelijks $1.99/maand, Jaarlijks $9.99/jaar (beide met 1 week gratis proefperiode), of Lifetime $29.99 eenmalig. Betaling wordt bij bevestiging van de aankoop in rekening gebracht op je Apple ID-account. Abonnementen worden automatisch verlengd, tenzij minstens 24 uur voor het einde van de huidige periode wordt opgezegd. Beheer of zeg op elk moment op via Accountinstellingen op je apparaat. Gebruiksvoorwaarden (Apple's standaard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Privacybeleid: https://jackwallner.github.io/mahj/privacy-policy.

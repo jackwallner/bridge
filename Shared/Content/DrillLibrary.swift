@@ -112,7 +112,7 @@ enum DrillLibrary {
         Room(
             id: "pro-tables",
             name: "The Master Tables",
-            tagline: "Advanced play for when the basics feel easy",
+            tagline: "Advanced Charleston, defense, and expert rack reading",
             icon: "crown.fill",
             isFree: false,
             drills: [

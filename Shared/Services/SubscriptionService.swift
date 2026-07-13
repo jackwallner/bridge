@@ -114,6 +114,22 @@ final class SubscriptionService: NSObject, ObservableObject {
         return .purchased
     }
 
+    /// StoreKit says the money moved; RevenueCat's entitlement can take a beat
+    /// to catch up. Poll briefly rather than leave someone who just paid
+    /// staring at the paywall that took their money.
+    @discardableResult
+    func confirmEntitlement(attempts: Int = 3) async -> Bool {
+        guard isConfigured else { return isPro }
+        for attempt in 0..<attempts {
+            await refreshCustomerInfo()
+            if isPro { return true }
+            if attempt < attempts - 1 {
+                try? await Task.sleep(nanoseconds: 1_200_000_000)
+            }
+        }
+        return isPro
+    }
+
     func restore() async throws {
         guard isConfigured else { return }
         let info = try await Purchases.shared.restorePurchases()

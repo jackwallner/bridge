@@ -19,8 +19,8 @@ MIESTNOSŤ CHARLESTONU
 MIESTNOSŤ STOLA
 Rozhodovanie držať-alebo-zahodiť: kedy si nechať kvet, kedy ho vymeniť za odhaleného žolíka, čo vám prezradí súperovo odhalenie a ktoré odhody sú bezpečné.
 
-PRO TABLES (voliteľné rozšírenie)
-Chcete viac? Pro Tables pridáva pokročilú stratégiu Charlestonu, obrannú školu a expertné cvičenia čítania stojanu pre hráčov, ktorí idú nad rámec základov.
+MAHJ+ (voliteľné rozšírenie)
+Chcete viac? Mahj+ pridáva pokročilú stratégiu Charlestonu, obrannú školu a expertné cvičenia čítania stojanu pre hráčov, ktorí idú nad rámec základov.
 
 VYTVORENÉ PRE NOVÝCH HRÁČOV
 Kartičky s "prečo" na zadnej strane. Série, ktoré vás udržia v tréningu medzi hrami. Pôvodné tréningové rozdania učiace systém kategórií, takže vaše zručnosti fungujú na karte z akéhokoľvek roku.
@@ -28,4 +28,4 @@ Kartičky s "prečo" na zadnej strane. Série, ktoré vás udržia v tréningu m
 Mahj Trainer je nezávislá tréningová aplikácia. Nie je prepojená s National Mah Jongg League ani ňou schválená. Pre oficiálne rozdania a hodnoty si zaobstarajte aktuálnu kartu NMJL.
 
 PREDPLATNÉ
-Pro Tables je k dispozícii formou automaticky sa obnovujúceho predplatného alebo jednorazového nákupu: Mesačné $1.99/mesiac, Ročné $9.99/rok (obe zahŕňajú 1 týždeň zadarmo na skúšku), alebo Doživotné $29.99 ako jednorazový nákup. Platba je strhnutá z vášho účtu Apple ID pri potvrdení nákupu. Predplatné sa automaticky obnovuje, pokiaľ nie je zrušené aspoň 24 hodín pred koncom aktuálneho obdobia. Spravujte alebo zrušte kedykoľvek v Nastaveniach účtu na svojom zariadení. Podmienky používania (štandardná EULA Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Zásady ochrany osobných údajov: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ je k dispozícii formou automaticky sa obnovujúceho predplatného alebo jednorazového nákupu: Mesačné $1.99/mesiac, Ročné $9.99/rok (obe zahŕňajú 1 týždeň zadarmo na skúšku), alebo Doživotné $29.99 ako jednorazový nákup. Platba je strhnutá z vášho účtu Apple ID pri potvrdení nákupu. Predplatné sa automaticky obnovuje, pokiaľ nie je zrušené aspoň 24 hodín pred koncom aktuálneho obdobia. Spravujte alebo zrušte kedykoľvek v Nastaveniach účtu na svojom zariadení. Podmienky používania (štandardná EULA Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Zásady ochrany osobných údajov: https://jackwallner.github.io/mahj/privacy-policy.

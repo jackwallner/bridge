@@ -19,8 +19,8 @@ Dio koji plaši svakog novog igrača, minus panika. Nauči pravila i strategiju 
 PROSTORIJA STOLA
 Odluke zadrži-ili-baci: kada zadržati cvijet, kada ga zamijeniti za otkrivenog džokera, što ti otkrivanje protivnika govori, i koja su bacanja sigurna.
 
-PRO TABLES (opcionalna nadogradnja)
-Spreman za više? Pro Tables dodaje naprednu Charleston strategiju, školu obrane i stručne vježbe čitanja stalka za igrače koji prelaze osnove.
+MAHJ+ (opcionalna nadogradnja)
+Spreman za više? Mahj+ dodaje naprednu Charleston strategiju, školu obrane i stručne vježbe čitanja stalka za igrače koji prelaze osnove.
 
 IZRAĐENO ZA NOVE IGRAČE
 Kartice sa "zašto" na poleđini. Nizovi koji te drže u vježbanju između igara. Originalna vježbovna dijeljenja koja uče sustav kategorija, tako da se tvoje vještine prenose na kartu bilo koje godine.
@@ -28,4 +28,4 @@ Kartice sa "zašto" na poleđini. Nizovi koji te drže u vježbanju između igar
 Mahj Trainer je nezavisna aplikacija za vježbu. Nije povezana s National Mah Jongg League niti od nje odobrena. Za službena dijeljenja i vrijednosti nabavi trenutnu NMJL kartu.
 
 PRETPLATE
-Pro Tables je dostupan putem automatski obnavljajuće pretplate ili jednokratne kupnje: Mjesečna $1.99/mjesec, Godišnja $9.99/godina (obje uključuju besplatno probno razdoblje od 1 tjedna), ili Doživotna $29.99 kao jednokratna kupnja. Plaćanje se naplaćuje na tvoj Apple ID račun po potvrdi kupnje. Pretplata se automatski obnavlja osim ako se ne otkaže najmanje 24 sata prije kraja trenutnog razdoblja. Upravljaj ili otkaži bilo kada u Postavkama računa na svom uređaju. Uvjeti korištenja (Appleov standardni EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Pravila privatnosti: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ je dostupan putem automatski obnavljajuće pretplate ili jednokratne kupnje: Mjesečna $1.99/mjesec, Godišnja $9.99/godina (obje uključuju besplatno probno razdoblje od 1 tjedna), ili Doživotna $29.99 kao jednokratna kupnja. Plaćanje se naplaćuje na tvoj Apple ID račun po potvrdi kupnje. Pretplata se automatski obnavlja osim ako se ne otkaže najmanje 24 sata prije kraja trenutnog razdoblja. Upravljaj ili otkaži bilo kada u Postavkama računa na svom uređaju. Uvjeti korištenja (Appleov standardni EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Pravila privatnosti: https://jackwallner.github.io/mahj/privacy-policy.

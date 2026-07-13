@@ -19,8 +19,8 @@ Delen som skrämmer alla nya spelare, minus paniken. Lär dig reglerna och strat
 SPELBORDET
 Behåll-eller-kasta-beslut: när du ska hålla kvar en blomma, när du ska byta mot en exponerad joker, vad en motståndares exponering avslöjar och vilka kast som är säkra.
 
-PRO TABLES (valfri uppgradering)
-Redo för mer? Pro Tables lägger till avancerad Charleston-strategi, en försvarsskola och expertövningar i rackläsning för spelare som går bortom grunderna.
+MAHJ+ (valfri uppgradering)
+Redo för mer? Mahj+ lägger till avancerad Charleston-strategi, en försvarsskola och expertövningar i rackläsning för spelare som går bortom grunderna.
 
 BYGGT FÖR NYA SPELARE
 Flashcards med "varför" på baksidan. Streaks som håller dig i träning mellan spelomgångar. Original-övningshänder som lär ut kategorisystemet, så att dina färdigheter fungerar med vilket års kort som helst.
@@ -28,4 +28,4 @@ Flashcards med "varför" på baksidan. Streaks som håller dig i träning mellan
 Mahj Trainer är en oberoende träningsapp. Appen är varken ansluten till eller godkänd av National Mah Jongg League. För officiella händer och värden, skaffa det aktuella NMJL-kortet.
 
 PRENUMERATIONER
-Pro Tables finns som automatiskt förnyad prenumeration eller engångsköp: Månadsvis $1.99/månad, Årsvis $9.99/år (båda med 1 veckas kostnadsfri provperiod), eller Lifetime $29.99 som engångsköp. Betalningen dras från ditt Apple-ID-konto vid köpbekräftelse. Prenumerationer förnyas automatiskt om de inte sägs upp minst 24 timmar innan den aktuella perioden slutar. Hantera eller säg upp när som helst i Kontoinställningar på din enhet. Användarvillkor (Apples standard-EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Integritetspolicy: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ finns som automatiskt förnyad prenumeration eller engångsköp: Månadsvis $1.99/månad, Årsvis $9.99/år (båda med 1 veckas kostnadsfri provperiod), eller Lifetime $29.99 som engångsköp. Betalningen dras från ditt Apple-ID-konto vid köpbekräftelse. Prenumerationer förnyas automatiskt om de inte sägs upp minst 24 timmar innan den aktuella perioden slutar. Hantera eller säg upp när som helst i Kontoinställningar på din enhet. Användarvillkor (Apples standard-EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Integritetspolicy: https://jackwallner.github.io/mahj/privacy-policy.

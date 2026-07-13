@@ -19,8 +19,8 @@ La part que espanta tots els jugadors nous, sense el pànic. Aprèn les regles i
 LA SALA DE JOC
 Decisions de guardar o descartar: quan guardar una flor, quan canviar-la per un comodí exposat, què revela l'exposició d'un rival i quins descarts són segurs.
 
-PRO TABLES (millora opcional)
-Preparat per a més? Pro Tables afegeix estratègia avançada de Charleston, una escola de defensa i exercicis experts de lectura de racks per a jugadors que van més enllà de les bases.
+MAHJ+ (millora opcional)
+Preparat per a més? Mahj+ afegeix estratègia avançada de Charleston, una escola de defensa i exercicis experts de lectura de racks per a jugadors que van més enllà de les bases.
 
 PENSAT PER A JUGADORS NOUS
 Targetes amb el "per què" al dors. Ratxes que et mantenen practicant entre partides. Mans de pràctica originals que ensenyen el sistema de categories, perquè les teves habilitats funcionin amb la carta de qualsevol any.
@@ -28,4 +28,4 @@ Targetes amb el "per què" al dors. Ratxes que et mantenen practicant entre part
 Mahj Trainer és una aplicació de pràctica independent. No està afiliada ni recolzada per la National Mah Jongg League. Per a mans i valors oficials, aconsegueix la carta NMJL vigent.
 
 SUBSCRIPCIONS
-Pro Tables està disponible mitjançant subscripció de renovació automàtica o compra única: Mensual $1.99/mes, Anual $9.99/any (totes dues amb 1 setmana de prova gratuïta), o Lifetime $29.99 pagament únic. El pagament es carrega al teu compte d'Apple ID en confirmar la compra. Les subscripcions es renoven automàticament llevat que es cancel·lin almenys 24 hores abans que acabi el període actual. Gestiona-la o cancel·la-la quan vulguis a la Configuració del compte del teu dispositiu. Condicions d'ús (CLUF estàndard d'Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Política de privacitat: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ està disponible mitjançant subscripció de renovació automàtica o compra única: Mensual $1.99/mes, Anual $9.99/any (totes dues amb 1 setmana de prova gratuïta), o Lifetime $29.99 pagament únic. El pagament es carrega al teu compte d'Apple ID en confirmar la compra. Les subscripcions es renoven automàticament llevat que es cancel·lin almenys 24 hores abans que acabi el període actual. Gestiona-la o cancel·la-la quan vulguis a la Configuració del compte del teu dispositiu. Condicions d'ús (CLUF estàndard d'Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Política de privacitat: https://jackwallner.github.io/mahj/privacy-policy.

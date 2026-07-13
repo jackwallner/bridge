@@ -135,7 +135,7 @@ enum CategoryContent {
             tiles: [.joker, .joker, .joker, .b(7), .b(7), .b(7), .d(7), .d(7), .d(7), .flower, .flower, .wind(.north), .c(5)],
             choices: [.quints, .likeNumbers, .odds13579, .consecutiveRun],
             answer: .quints,
-            explanation: "Three jokers turn two pungs of 7s into live quints. Without the jokers you'd read this as Like Numbers; WITH them, Quints pays far more. Jokers decide."
+            explanation: "Two pungs of 7s and three jokers. Two jokers finish one pung into a quint, and the third leaves the other pung one real 7 short of a second. Without jokers you would read this as Like Numbers; with them, Quints is live and pays far more. Jokers decide."
         ),
         HandMatchQuestion(
             id: "hm-sp",

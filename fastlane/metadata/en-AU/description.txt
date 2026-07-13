@@ -19,8 +19,8 @@ The part that scares every new player, minus the panic. Learn the rules and stra
 THE TABLE ROOM
 Keep-or-throw judgment calls: when to hold a flower, when to swap for an exposed joker, what an opponent's exposure tells you, and which discards are safe.
 
-PRO TABLES (optional upgrade)
-Ready for more? Pro Tables adds advanced Charleston strategy, a defense school, and expert rack-reading drills for players moving past the basics.
+MAHJ+ (optional upgrade)
+Everything above stays free, forever. Mahj+ simply adds more of it: an extra practice set in every one of the four rooms, with fresh questions, racks and deals in the same drills you already use. It also opens The Master Tables, where advanced Charleston strategy, a defense school, and expert rack-reading drills wait for players moving past the basics. New drills are added all year.
 
 BUILT FOR NEW PLAYERS
 Flashcards with the "why" on the back. Streaks to keep you practising between games. Original practice hands that teach the category system, so your skills transfer to any year's card.
@@ -28,4 +28,4 @@ Flashcards with the "why" on the back. Streaks to keep you practising between ga
 Mahj Trainer is an independent training app. It is not affiliated with or endorsed by the National Mah Jongg League. For official hands and values, get the current NMJL card.
 
 SUBSCRIPTIONS
-Pro Tables is available by auto-renewing subscription or a one-time purchase: Monthly $1.99/month, Yearly $9.99/year (both include a 1-week free trial), or Lifetime $29.99 one-time. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in Account Settings on your device. Terms of Use (Apple's standard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Privacy Policy: https://jackwallner.github.io/mahj/privacy-policy.
+Mahj+ is available by auto-renewing subscription or a one-time purchase: Monthly $1.99/month, Yearly $9.99/year (both include a 1-week free trial), or Lifetime $29.99 one-time. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in Account Settings on your device. Terms of Use (Apple's standard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Privacy Policy: https://jackwallner.github.io/mahj/privacy-policy.
