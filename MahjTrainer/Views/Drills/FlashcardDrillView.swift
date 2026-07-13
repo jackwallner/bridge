@@ -484,13 +484,18 @@ struct FlipCardFace: View {
         .background((verdict.correct ? Theme.jade : Theme.coral).opacity(0.13), in: Capsule())
     }
 
+    /// Displays the two options in a deterministic, per-card shuffled order
+    /// (seeded by the card id) so the answer isn't always the left/first
+    /// button, but reports the ORIGINAL option index back to `onChoose` so
+    /// grading stays against the authored `answerIndex` unchanged.
     private func choiceButtons(_ choice: CardChoice, onChoose: @escaping (Int) -> Void) -> some View {
-        VStack(spacing: 8) {
+        let order = ChoiceShuffle.permutation(count: choice.options.count, seed: card.id)
+        return VStack(spacing: 8) {
             Text("Make the call")
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(Theme.inkTertiary)
             HStack(spacing: 10) {
-                ForEach(choice.options.indices, id: \.self) { index in
+                ForEach(order, id: \.self) { index in
                     Button {
                         onChoose(index)
                     } label: {

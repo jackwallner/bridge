@@ -23,6 +23,12 @@ struct QuizDrillView: View {
     private var question: QuizQuestion { questions[index] }
     private var answered: Bool { selection != nil }
 
+    /// Deterministic per-question shuffle so the correct answer isn't always
+    /// in the authored slot; stable across re-render since it's seeded by id.
+    private var shuffled: (labels: [String], answerIndex: Int) {
+        ChoiceShuffle.shuffledChoices(labels: question.choices, answerIndex: question.answerIndex, seed: question.id)
+    }
+
     private var drillBody: some View {
         VStack(spacing: 16) {
             ProgressView(value: Double(index), total: Double(questions.count))
@@ -34,7 +40,7 @@ struct QuizDrillView: View {
                     explanation: question.explanation,
                     answered: answered
                 ) {
-                    ChoiceList(labels: question.choices, selection: selection, answerIndex: question.answerIndex) { pick in
+                    ChoiceList(labels: shuffled.labels, selection: selection, answerIndex: shuffled.answerIndex) { pick in
                         select(pick)
                     }
                 }
@@ -73,7 +79,7 @@ struct QuizDrillView: View {
     private func select(_ choiceIndex: Int) {
         guard !answered else { return }
         selection = choiceIndex
-        let correct = choiceIndex == question.answerIndex
+        let correct = choiceIndex == shuffled.answerIndex
         progress.recordItem(id: question.id, correct: correct)
         if correct {
             score += 1

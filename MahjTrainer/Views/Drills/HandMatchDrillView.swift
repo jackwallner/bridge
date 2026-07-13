@@ -23,6 +23,16 @@ struct HandMatchDrillView: View {
     private var question: HandMatchQuestion { questions[index] }
     private var answered: Bool { selection != nil }
 
+    /// Deterministic per-question shuffle so the correct section isn't always
+    /// in the authored slot; stable across re-render since it's seeded by id.
+    private var shuffled: (categories: [HandCategory], answerIndex: Int) {
+        let perm = ChoiceShuffle.permutation(count: question.choices.count, seed: question.id)
+        let categories = perm.map { question.choices[$0] }
+        let originalAnswerIndex = question.choices.firstIndex(of: question.answer) ?? 0
+        let answerIndex = perm.firstIndex(of: originalAnswerIndex) ?? 0
+        return (categories, answerIndex)
+    }
+
     private var drillBody: some View {
         VStack(spacing: 16) {
             ProgressView(value: Double(index), total: Double(questions.count))
@@ -35,11 +45,11 @@ struct HandMatchDrillView: View {
                     answered: answered
                 ) {
                     ChoiceList(
-                        labels: question.choices.map(\.displayName),
-                        selection: question.choices.firstIndex(where: { $0 == selection }),
-                        answerIndex: question.choices.firstIndex(of: question.answer) ?? 0
+                        labels: shuffled.categories.map(\.displayName),
+                        selection: shuffled.categories.firstIndex(where: { $0 == selection }),
+                        answerIndex: shuffled.answerIndex
                     ) { pick in
-                        select(question.choices[pick])
+                        select(shuffled.categories[pick])
                     }
                 }
                 footer
