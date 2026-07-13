@@ -1,1 +1,25 @@
+Mahj Trainer is a practice app for American Mah Jongg (flashcards, quizzes, hand-matching, and Charleston passing drills). It is not a game: there is no live gameplay, no opponents, no chips, and no wagering of any kind.
 
+CONTENT NOTE (important for review): every example hand and practice deal in the app is an ORIGINAL teaching hand written by the developer to illustrate the National Mah Jongg League's stable category families (for example 2468, Consecutive Run, 13579, Winds and Dragons, 369, Singles and Pairs). No hand is copied from the copyrighted NMJL card. Mahj Trainer is an independent, unofficial training app and is not affiliated with, endorsed by, or licensed by the National Mah Jongg League (NMJL). This non-affiliation disclaimer appears in-app (Home screen footer and Settings) and in the App Store description.
+
+CORE FLOW
+1. Launch app: first-time users complete a short onboarding (choose skill level: new to mah jongg / know the basics / played before) and see a brief feature tour.
+2. Home screen shows a Get Started quick session (mixed multiple-choice practice) plus four FREE practice rooms: Tile Room, Card Room, Charleston Room, Table Room.
+3. Each room contains flashcards, self-test choice cards, quiz questions, hand-match exercises, or Charleston pass scenarios.
+4. Settings has Rate + Send Feedback, theme, haptics, sound, daily reminder, and Restore Purchases.
+
+PRO (in-app purchase via RevenueCat)
+All four beginner rooms above are free; nothing in them is gated. Pro unlocks one additional room, Pro Tables, with advanced Charleston strategy, a defense-school drill, and expert rack-reading practice.
+
+Products:
+- Monthly: $1.99/month, auto-renewing subscription, 1-week free trial
+- Yearly: $9.99/year, auto-renewing subscription, 1-week free trial
+- Lifetime: $29.99 one-time purchase (non-consumable), no trial
+
+To test Pro: sign a Sandbox Apple ID into the test device (App Store Connect > Users and Access > Sandbox), then start a trial from the in-app paywall (Settings > Upgrade to Pro, or the trial screen shown during onboarding). Sandbox purchases do not charge real money and Apple compresses trial/renewal periods in the sandbox environment for faster testing.
+
+TRIAL TERMS
+Both subscriptions include a 1-week free trial. Payment is charged to the user's Apple ID account at confirmation of purchase (end of the trial, unless canceled first). Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Users can manage or cancel anytime in their device's Account Settings. Terms of Use is Apple's standard EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/); Privacy Policy is at https://jackwallner.github.io/mahj/privacy-policy.
+
+OTHER NOTES
+No user accounts or login of any kind. No server backend besides RevenueCat's purchase-status sync. No ads, no analytics SDKs, no tracking. The only network-adjacent SDK is RevenueCat (purchase/entitlement status only). Local notifications (daily practice reminder) are opt-in and configured in Settings.
