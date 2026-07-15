@@ -1,0 +1,1 @@
+Exercices de bridge de cinq minutes pour les enchères, le jeu du déclarant et la défense. Comprenez le pourquoi.

@@ -1,6 +1,6 @@
 Bridge Trainer is a contract bridge practice app. It contains flashcards, quizzes, opening-bid hand evaluation, and card-play scenarios. There is no live multiplayer, wagering, or user-generated content.
 
-All four beginner rooms are free. Bridge+ adds one extra practice set in each room and unlocks the Master Tables. The RevenueCat entitlement is “pro.”
+All four beginner rooms are free. Bridge+ adds one extra practice set in each room and unlocks the Master Tables. The RevenueCat entitlement is “Bridge+”.
 
 The app uses a beginner Standard American framework. Bridge conventions are partnership agreements, and the app states this in Settings and on Home.
 
