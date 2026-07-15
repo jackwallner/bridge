@@ -1,0 +1,1 @@
+bridge,subastas,cartas,aprender,tutor,principiante,lección,ejercicio,defensa,declarante,práctica

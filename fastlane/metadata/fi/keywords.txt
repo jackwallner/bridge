@@ -1,0 +1,1 @@
+bridge,tarjoukset,kortit,oppia,tutor,aloittelija,oppitunti,harjoitus,puolustus,pelinviejä,treeni

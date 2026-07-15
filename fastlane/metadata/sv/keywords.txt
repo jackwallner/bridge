@@ -1,0 +1,1 @@
+bridge,budgivning,kort,lära,tutor,nybörjare,lektion,drill,försvar,spelförare,träning,quiz,kontrakt

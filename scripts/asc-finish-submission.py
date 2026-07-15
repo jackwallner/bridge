@@ -148,8 +148,8 @@ def main() -> int:
 
     ensure_support_urls(c, vid)
 
-    # Keep review contact email on the +m alias used for feedback.
-    email = read_meta("review_information", "email_address") or "jackwallner+m@gmail.com"
+    # Keep review contact email on the +b alias used for feedback.
+    email = read_meta("review_information", "email_address") or "jackwallner+b@gmail.com"
     # review_information lives under metadata/review_information/, not a locale.
     ri = Path(__file__).resolve().parent.parent / "fastlane/metadata/review_information"
     if (ri / "email_address.txt").exists():

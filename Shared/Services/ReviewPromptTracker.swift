@@ -9,7 +9,7 @@ enum AppStoreLinks {
     /// only risks sending a UK player to the US store.
     static let writeReviewURL = URL(string: "https://apps.apple.com/app/id\(appStoreID)?action=write-review")!
 
-    static let feedbackEmail = "jackwallner+m@gmail.com"
+    static let feedbackEmail = "jackwallner+b@gmail.com"
 }
 
 /// How the player last resolved the review funnel. Either terminal outcome

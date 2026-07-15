@@ -1,0 +1,1 @@
+bridge,meldinger,kort,lære,tutor,nybegynner,leksjon,drill,forsvar,spillefører,trening,quiz,kontrakt
