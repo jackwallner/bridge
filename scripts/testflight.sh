@@ -4,8 +4,8 @@ set -e
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$DIR/.."
 
-SCHEME="MahjTrainer"
-ARCHIVE_PATH="$PROJECT_DIR/build/MahjTrainer.xcarchive"
+SCHEME="Bridge"
+ARCHIVE_PATH="$PROJECT_DIR/build/Bridge.xcarchive"
 
 cd "$PROJECT_DIR"
 
@@ -20,14 +20,14 @@ echo "==> Regenerating Xcode project..."
 if command -v xcodegen &> /dev/null; then
   xcodegen generate
 else
-  echo "warning: xcodegen not found. Using existing MahjTrainer.xcodeproj."
+  echo "warning: xcodegen not found. Using existing Bridge.xcodeproj."
 fi
 
 echo "==> Cleaning..."
-xcodebuild -project MahjTrainer.xcodeproj -scheme "$SCHEME" clean
+xcodebuild -project Bridge.xcodeproj -scheme "$SCHEME" clean
 
 echo "==> Archiving..."
-xcodebuild -project MahjTrainer.xcodeproj -scheme "$SCHEME" -configuration Release archive -archivePath "$ARCHIVE_PATH" -destination "generic/platform=iOS" -allowProvisioningUpdates
+xcodebuild -project Bridge.xcodeproj -scheme "$SCHEME" -configuration Release archive -archivePath "$ARCHIVE_PATH" -destination "generic/platform=iOS" -allowProvisioningUpdates
 
 echo "==> Exporting & Uploading..."
 exec "$DIR/upload-testflight.sh" "$ARCHIVE_PATH"

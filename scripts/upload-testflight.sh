@@ -6,13 +6,13 @@
 # Prerequisites: Xcode signed in (Xcode → Settings → Accounts) with team YXG4MP6W39.
 #
 # Usage:
-#   ./scripts/upload-testflight.sh [path/to/MahjTrainer.xcarchive]
+#   ./scripts/upload-testflight.sh [path/to/Bridge.xcarchive]
 #
-# Default archive: ./build/MahjTrainer.xcarchive
+# Default archive: ./build/Bridge.xcarchive
 
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-ARCHIVE="${1:-$ROOT/build/MahjTrainer.xcarchive}"
+ARCHIVE="${1:-$ROOT/build/Bridge.xcarchive}"
 STAGING="$ROOT/build/upload-staging"
 PLIST="$ROOT/AppStoreUploadOptions.plist"
 

@@ -38,7 +38,7 @@ final class AppSettings: ObservableObject {
         static let reminderMinute = "settings.reminderMinute"
     }
 
-    private static let reminderID = "mahj.dailyReminder"
+    private static let reminderID = "bridge.dailyReminder"
 
     @Published var appearance: Appearance {
         didSet { defaults.set(appearance.rawValue, forKey: Keys.appearance) }
@@ -111,7 +111,7 @@ final class AppSettings: ObservableObject {
 
         let content = UNMutableNotificationContent()
         content.title = "Time for a quick drill"
-        content.body = "Five minutes of practice keeps your Charleston calm and your rack reading sharp."
+        content.body = "Five minutes of practice keeps your bidding clear and your card play sharp."
         content.sound = .default
 
         var parts = Calendar.current.dateComponents([.hour, .minute], from: reminderTime)

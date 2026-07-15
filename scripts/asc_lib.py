@@ -262,6 +262,6 @@ def description_for_locale(locale: str, source: str = "en-US") -> str:
     if len(desc) < 10:
         desc = (
             read_meta("en-US", "description")
-            or "Mahj Trainer - practice app for American Mah Jongg with quick drills."
+            or "Bridge Trainer, quick practice for bidding, play, and defense."
         )
     return desc[:4000]

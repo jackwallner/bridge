@@ -15,17 +15,17 @@ struct CardChoice: Sendable {
 struct Flashcard: Identifiable, Sendable {
     let id: String
     let frontTitle: String
-    let frontTiles: [Tile]
+    let frontCards: [BridgeCard]
     let frontSubtitle: String?
     let backTitle: String
     let backBody: String
     let choice: CardChoice?
 
-    init(id: String, frontTitle: String, frontTiles: [Tile] = [], frontSubtitle: String? = nil,
+    init(id: String, frontTitle: String, frontCards: [BridgeCard] = [], frontSubtitle: String? = nil,
          backTitle: String, backBody: String, choice: CardChoice? = nil) {
         self.id = id
         self.frontTitle = frontTitle
-        self.frontTiles = frontTiles
+        self.frontCards = frontCards
         self.frontSubtitle = frontSubtitle
         self.backTitle = backTitle
         self.backBody = backBody
@@ -36,16 +36,16 @@ struct Flashcard: Identifiable, Sendable {
 struct QuizQuestion: Identifiable, Sendable {
     let id: String
     let prompt: String
-    let tiles: [Tile]
+    let cards: [BridgeCard]
     let choices: [String]
     let answerIndex: Int
     let explanation: String
 
-    init(id: String, prompt: String, tiles: [Tile] = [], choices: [String], answerIndex: Int,
+    init(id: String, prompt: String, cards: [BridgeCard] = [], choices: [String], answerIndex: Int,
          explanation: String) {
         self.id = id
         self.prompt = prompt
-        self.tiles = tiles
+        self.cards = cards
         self.choices = choices
         self.answerIndex = answerIndex
         self.explanation = explanation
@@ -54,17 +54,17 @@ struct QuizQuestion: Identifiable, Sendable {
 
 struct HandMatchQuestion: Identifiable, Sendable {
     let id: String
-    let tiles: [Tile]
+    let cards: [BridgeCard]
     let choices: [HandCategory]
     let answer: HandCategory
     let explanation: String
 }
 
-struct CharlestonScenario: Identifiable, Sendable {
+struct PlayScenario: Identifiable, Sendable {
     let id: String
     let situation: String
-    let deal: [Tile]
-    let recommendedPass: [Tile]
+    let cards: [BridgeCard]
+    let answerIndex: Int
     let reasoning: String
     let tip: String
 }
@@ -73,14 +73,14 @@ enum DrillKind: Sendable {
     case flashcards([Flashcard])
     case quiz([QuizQuestion])
     case handMatch([HandMatchQuestion])
-    case charleston([CharlestonScenario])
+    case play([PlayScenario])
 
     var itemCount: Int {
         switch self {
         case .flashcards(let cards): return cards.count
         case .quiz(let questions): return questions.count
         case .handMatch(let questions): return questions.count
-        case .charleston(let scenarios): return scenarios.count
+        case .play(let scenarios): return scenarios.count
         }
     }
 }
@@ -91,7 +91,7 @@ struct Drill: Identifiable, Sendable {
     let subtitle: String
     let kind: DrillKind
     /// Extra practice sets inside an otherwise-free room: same mechanics, more
-    /// original questions, locked behind Mahj+. Nothing that was free became
+    /// original questions, locked behind Bridge+. Nothing that was free became
     /// paid; these are additions.
     let isPlus: Bool
 

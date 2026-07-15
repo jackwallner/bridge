@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Create the Pro Lifetime non-consumable in App Store Connect.
 
-Creates com.jackwallner.mahj.lifetime, adds the en-US localization, sets a
+Creates com.jackwallner.bridge.lifetime, adds the en-US localization, sets a
 $29.99 USA-based price schedule (other territories auto-equalize from the base
 territory), and makes it available in all territories. Idempotent-ish: skips
 steps whose object already exists. Review screenshot + submission happen with
@@ -21,12 +21,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import asc_lib
 
-BUNDLE = "com.jackwallner.mahj"
-PRODUCT_ID = "com.jackwallner.mahj.lifetime"
+BUNDLE = "com.jackwallner.bridge"
+PRODUCT_ID = "com.jackwallner.bridge.lifetime"
 PRICE = "29.99"
-NAME = "Pro Lifetime"
-DISPLAY_NAME = "Mahj Trainer Pro Lifetime"
-DESCRIPTION = "All rooms and drills, forever"
+NAME = "Bridge+ Lifetime"
+DISPLAY_NAME = "Bridge+ Lifetime"
+DESCRIPTION = "Advanced bridge drills and Master Tables, forever"
 
 BASE = "https://api.appstoreconnect.apple.com"
 
@@ -146,7 +146,7 @@ def main() -> None:
         }
     })
     print(f"availability set: {len(terrs)} territories")
-    print("done — needs review screenshot + submission with next app version")
+    print("done, needs review screenshot and submission with next app version")
 
 
 if __name__ == "__main__":
