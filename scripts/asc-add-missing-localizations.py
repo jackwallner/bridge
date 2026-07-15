@@ -229,7 +229,7 @@ def create_version_loc(
     attrs: dict = {
         "locale": locale,
         "description": desc,
-        "keywords": (t["keywords"] or "mahjongg,practice,learn")[:100],
+        "keywords": (t["keywords"] or "bridgeongg,practice,learn")[:100],
     }
     if t.get("release_notes"):
         attrs["whatsNew"] = t["release_notes"][:4000]

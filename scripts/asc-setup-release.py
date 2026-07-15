@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One-time App Store Connect setup for Mahj Trainer: subscription group,
+"""One-time App Store Connect setup for Bridge Trainer: subscription group,
 monthly/yearly subs with prices + 1-week free trials (all territories),
 localizations, categories, and the age-rating questionnaire.
 
@@ -13,27 +13,27 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import asc_lib
 
-BUNDLE = "com.jackwallner.mahj"
-GROUP_NAME = "Pro"
+BUNDLE = "com.jackwallner.bridge"
+GROUP_NAME = "Bridge+"
 SUBS = [
     {
-        "productId": "com.jackwallner.mahj.monthly",
-        "name": "Mahj Trainer Pro Monthly",
+        "productId": "com.jackwallner.bridge.monthly",
+        "name": "Bridge+ Monthly",
         "period": "ONE_MONTH",
-        "price": "4.99",
-        "desc": "All rooms and drills, billed monthly.",
+        "price": "1.99",
+        "desc": "Advanced bridge drills, billed monthly.",
         "trial": True,
     },
     {
-        "productId": "com.jackwallner.mahj.yearly",
-        "name": "Mahj Trainer Pro Yearly",
+        "productId": "com.jackwallner.bridge.yearly",
+        "name": "Bridge+ Yearly",
         "period": "ONE_YEAR",
-        "price": "29.99",
-        "desc": "All rooms and drills, billed yearly.",
+        "price": "9.99",
+        "desc": "Advanced bridge drills, billed yearly.",
         "trial": True,
     },
 ]
-REVIEW_NOTE = "Unlocks the Card Room, Charleston Room, and Table Room drill packs."
+REVIEW_NOTE = "Unlocks extra bidding, declarer-play, and defense drills, plus Master Tables."
 
 
 def main() -> None:
@@ -127,7 +127,7 @@ def main() -> None:
             {
                 "data": {
                     "type": "subscriptionGroupLocalizations",
-                    "attributes": {"locale": "en-US", "name": GROUP_NAME, "customAppName": "Mahj Trainer"},
+                    "attributes": {"locale": "en-US", "name": GROUP_NAME, "customAppName": "Bridge Trainer"},
                     "relationships": {
                         "subscriptionGroup": {"data": {"type": "subscriptionGroups", "id": group_id}}
                     },

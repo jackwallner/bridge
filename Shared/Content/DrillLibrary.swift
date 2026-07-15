@@ -1,144 +1,67 @@
 import Foundation
 
 enum DrillLibrary {
-
     static let rooms: [Room] = [
-        Room(
-            id: "tile-room",
-            name: "The Tile Room",
-            tagline: "Meet the tiles and talk the talk",
-            icon: "square.grid.3x3.fill",
-            isFree: true,
-            drills: [
-                Drill(
-                    id: "meet-tiles",
-                    title: "Meet the Tiles",
-                    subtitle: "Flashcards: every tile family and what it does",
-                    kind: .flashcards(TileBasicsContent.meetTheTiles)
-                ),
-                Drill(
-                    id: "tile-quiz",
-                    title: "Tile Check",
-                    subtitle: "Quick quiz: dragons, jokers, and the rules everyone gets wrong",
-                    kind: .quiz(TileBasicsContent.tileQuiz)
-                ),
-                Drill(
-                    id: "plus-tile-extras",
-                    title: "Tile Check: Extra Reps",
-                    subtitle: "Eight more: set counts, calling rules, and how hands go dead",
-                    kind: .quiz(PlusContent.tileExtras),
-                    isPlus: true
-                ),
-            ]
-        ),
         Room(
             id: "card-room",
             name: "The Card Room",
-            tagline: "Learn to read the card and your rack",
-            icon: "menucard.fill",
+            tagline: "Ranks, tricks, contracts, and table roles",
+            icon: "suit.spade.fill",
             isFree: true,
             drills: [
-                Drill(
-                    id: "category-cards",
-                    title: "Know the Sections",
-                    subtitle: "Flashcards: every card section and how to spot it",
-                    kind: .flashcards(CategoryContent.categoryCards)
-                ),
-                Drill(
-                    id: "hand-match",
-                    title: "Read the Rack",
-                    subtitle: "See 13 tiles, name the section they're chasing",
-                    kind: .handMatch(CategoryContent.handMatch)
-                ),
-                Drill(
-                    id: "plus-rack-extras",
-                    title: "Read the Rack: Extra Reps",
-                    subtitle: "Six more racks, including the ones with a convincing decoy",
-                    kind: .handMatch(PlusContent.extraRackReading),
-                    isPlus: true
-                ),
+                Drill(id: "meet-cards", title: "Meet the Game", subtitle: "Flashcards: the deck, tricks, trump, and contracts", kind: .flashcards(CardBasicsContent.meetTheCards)),
+                Drill(id: "card-check", title: "Card Check", subtitle: "Quick quiz: the rules every player needs", kind: .quiz(CardBasicsContent.cardQuiz)),
+                Drill(id: "plus-card-extras", title: "Card Check: Extra Reps", subtitle: "Games, slams, dummy, and bridge vocabulary", kind: .quiz(PlusContent.cardExtras), isPlus: true),
             ]
         ),
         Room(
-            id: "charleston-room",
-            name: "The Charleston Room",
-            tagline: "Practice the pass without the pressure",
-            icon: "arrow.triangle.2.circlepath",
+            id: "auction-room",
+            name: "The Auction Room",
+            tagline: "Count points and find your opening call",
+            icon: "quote.bubble.fill",
             isFree: true,
             drills: [
-                Drill(
-                    id: "charleston-rules",
-                    title: "Charleston Playbook",
-                    subtitle: "Flashcards: the rules and the strategy",
-                    kind: .flashcards(CharlestonContent.strategyCards)
-                ),
-                Drill(
-                    id: "charleston-pass",
-                    title: "Pick Your Pass",
-                    subtitle: "Real deals: choose 3 tiles to pass, then compare with the coach",
-                    kind: .charleston(CharlestonContent.scenarios)
-                ),
-                Drill(
-                    id: "plus-charleston-extras",
-                    title: "Pick Your Pass: Extra Reps",
-                    subtitle: "Four more deals: the blind pass, the courtesy pass, and flower discipline",
-                    kind: .charleston(PlusContent.extraPasses),
-                    isPlus: true
-                ),
+                Drill(id: "opening-playbook", title: "Opening Playbook", subtitle: "Flashcards: pass, suits, and 1NT", kind: .flashcards(CategoryContent.openingCards)),
+                Drill(id: "opening-bid", title: "Name Your Opening", subtitle: "Read 13 cards and choose the call", kind: .handMatch(CategoryContent.openingHands)),
+                Drill(id: "plus-opening-extras", title: "Openings: Extra Reps", subtitle: "More five-card majors, minors, and shapes", kind: .handMatch(PlusContent.extraOpeningHands), isPlus: true),
             ]
         ),
         Room(
-            id: "table-room",
-            name: "The Table Room",
-            tagline: "Keep-or-throw judgment for real games",
+            id: "declarer-room",
+            name: "The Declarer Room",
+            tagline: "Plan the hand and choose the card",
             icon: "hand.point.up.left.fill",
             isFree: true,
             drills: [
-                Drill(
-                    id: "judgment-cards",
-                    title: "Keep or Throw",
-                    subtitle: "Make the call, then flip to see the coach's answer",
-                    kind: .flashcards(KeepDiscardContent.judgmentCards)
-                ),
-                Drill(
-                    id: "plus-judgment-extras",
-                    title: "Keep or Throw: Extra Reps",
-                    subtitle: "Six more calls: safe discards, dead tiles, and when NOT to call",
-                    kind: .flashcards(PlusContent.extraJudgment),
-                    isPlus: true
-                ),
+                Drill(id: "play-plan", title: "Declarer Playbook", subtitle: "Flashcards: winners, trump, finesses, and timing", kind: .flashcards(PlayContent.strategyCards)),
+                Drill(id: "choose-card", title: "Choose the Card", subtitle: "Table situations: make the legal, winning play", kind: .play(PlayContent.scenarios)),
+                Drill(id: "plus-play-extras", title: "Choose the Card: Extra Reps", subtitle: "Covering honors, second hand, and unblocking", kind: .play(PlusContent.extraPlays), isPlus: true),
             ]
         ),
         Room(
-            id: "pro-tables",
+            id: "defense-room",
+            name: "The Defense Room",
+            tagline: "Opening leads and partnership habits",
+            icon: "shield.lefthalf.filled",
+            isFree: true,
+            drills: [
+                Drill(id: "defense-calls", title: "Lead or Hold?", subtitle: "Make the call, then flip for the coach's answer", kind: .flashcards(JudgmentContent.judgmentCards)),
+                Drill(id: "plus-defense-extras", title: "Defense: Extra Reps", subtitle: "Sequences, trump leads, and shortness", kind: .flashcards(PlusContent.extraDefense), isPlus: true),
+            ]
+        ),
+        Room(
+            id: "master-tables",
             name: "The Master Tables",
-            tagline: "Advanced Charleston, defense, and expert rack reading",
+            tagline: "Conventions, advanced card play, and duplicate",
             icon: "crown.fill",
             isFree: false,
             drills: [
-                Drill(
-                    id: "pro-charleston",
-                    title: "Advanced Charleston",
-                    subtitle: "Torn deals, pair math, and defending with your pass",
-                    kind: .charleston(ProContent.advancedCharleston)
-                ),
-                Drill(
-                    id: "pro-defense",
-                    title: "Defense School",
-                    subtitle: "Read exposures, count tiles, and stop feeding winners",
-                    kind: .quiz(ProContent.defenseQuiz)
-                ),
-                Drill(
-                    id: "pro-rack-reading",
-                    title: "Expert Rack Reading",
-                    subtitle: "Ambiguous racks where two sections look right",
-                    kind: .handMatch(ProContent.expertRackReading)
-                ),
+                Drill(id: "competitive-bidding", title: "Competitive Bidding", subtitle: "Doubles, preempts, Stayman, and transfers", kind: .quiz(ProContent.competitiveBidding)),
+                Drill(id: "advanced-play", title: "Advanced Card Play", subtitle: "Finesses, hold-ups, and safety plays", kind: .play(ProContent.advancedPlay)),
+                Drill(id: "duplicate-bridge", title: "Duplicate Decisions", subtitle: "Game levels, vulnerability, and matchpoints", kind: .quiz(ProContent.duplicateQuiz)),
             ]
         ),
     ]
 
-    static func room(id: String) -> Room? {
-        rooms.first { $0.id == id }
-    }
+    static func room(id: String) -> Room? { rooms.first { $0.id == id } }
 }

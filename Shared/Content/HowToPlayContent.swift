@@ -1,86 +1,76 @@
 import Foundation
 
-/// One page of the How to Play quick start. All example tiles are original
-/// teaching arrangements, never hands from the NMJL card.
 struct HowToPlayPage: Identifiable, Sendable {
     let id: String
     let icon: String
     let title: String
     let body: String
-    let tiles: [Tile]
+    let cards: [BridgeCard]
     let tip: String?
 
-    init(id: String, icon: String, title: String, body: String, tiles: [Tile] = [], tip: String? = nil) {
+    init(id: String, icon: String, title: String, body: String, cards: [BridgeCard] = [], tip: String? = nil) {
         self.id = id
         self.icon = icon
         self.title = title
         self.body = body
-        self.tiles = tiles
+        self.cards = cards
         self.tip = tip
     }
 }
 
-/// The five-minute primer for players who picked "brand new" in onboarding.
-/// Original teaching content only; the real card and its hands stay with the
-/// NMJL.
 enum HowToPlayContent {
     static let pages: [HowToPlayPage] = [
         HowToPlayPage(
-            id: "htp-goal",
-            icon: "flag.checkered",
-            title: "The goal",
-            body: "Every player races to build a 14-tile hand that exactly matches one of the hands printed on the yearly card. Thirteen tiles live on your rack; the fourteenth is the tile you draw or call that completes the pattern. Complete it first and you call mahj.",
-            tiles: [.c(3), .c(3), .c(3)],
-            tip: "Three of a kind is a pung. Most hands are built from groups like this."
+            id: "htp-table",
+            icon: "person.4.fill",
+            title: "Four players, two partnerships",
+            body: "Partners sit opposite each other. A 52-card deck is dealt evenly, giving every player 13 cards. North-South compete against East-West.",
+            cards: [.s(.ace), .h(.ace), .d(.ace), .c(.ace)]
         ),
         HowToPlayPage(
-            id: "htp-tiles",
-            icon: "square.grid.3x3.fill",
-            title: "Meet the tiles",
-            body: "Three suits run 1 through 9: craks (red), bams (green), and dots (blue). Winds are printed N, E, W, S. Each dragon belongs with a suit: red with craks, green with bams, and the blank soap with dots. Flowers are bonus tiles, and jokers stand in for tiles inside bigger groups.",
-            tiles: [.c(5), .b(5), .d(5), .wind(.north), .dragon(.red), .flower, .joker]
+            id: "htp-tricks",
+            icon: "square.stack.3d.up.fill",
+            title: "Win tricks",
+            body: "Each player contributes one card. You must follow the suit led when you can. The highest card in that suit wins unless a trump is played.",
+            cards: [.h(.two), .h(.ten), .h(.king), .h(.ace)],
+            tip: "The trick winner leads the next trick."
         ),
         HowToPlayPage(
-            id: "htp-card",
-            icon: "menucard.fill",
-            title: "Read the card",
-            body: "The card groups its hands into sections, like even numbers or runs. You never memorize every hand. You learn to spot which section your rack is drifting toward, pick a target, and chase it.",
-            tiles: [.c(2), .c(4), .b(6), .d(8)],
-            tip: "All even numbers? That rack is whispering which section to check first."
+            id: "htp-auction",
+            icon: "quote.bubble.fill",
+            title: "Bid a contract",
+            body: "Before play, the auction sets a target. A bid names a level from 1 to 7 and a suit or notrump. The level is how many tricks above six your side promises.",
+            tip: "A contract of 4♠ promises 10 tricks with spades as trump."
         ),
         HowToPlayPage(
-            id: "htp-charleston",
-            icon: "arrow.left.arrow.right",
-            title: "The Charleston",
-            body: "Before play begins, everyone passes three unwanted tiles: right, across, then left, with an optional second round. Jokers never pass. The Charleston is how a messy deal turns into a plan.",
-            tiles: [.b(1), .d(9), .wind(.west)],
-            tip: "Pass tiles that fit no section you are chasing. Never pass a joker."
+            id: "htp-points",
+            icon: "number.circle.fill",
+            title: "Count your strength",
+            body: "High-card points help describe a hand: ace 4, king 3, queen 2, jack 1. In a beginner framework, pass below opening strength and open around 13 points.",
+            cards: [.s(.ace), .h(.king), .d(.queen), .c(.jack)],
+            tip: "A balanced 15 to 17 HCP hand usually opens 1NT."
         ),
         HowToPlayPage(
-            id: "htp-turn",
-            icon: "hand.draw.fill",
-            title: "Play a turn",
-            body: "On your turn, draw a tile, then keep it or discard one face up. You may call a discard for a pung, kong, or quint and expose that group. Pairs and single tiles can only be called when the discard completes mahj, and hands marked concealed cannot call except for mahj. Match your whole hand to the card and you win.",
-            tiles: [.d(7), .d(7), .d(7), .joker],
-            tip: "A joker can sit inside a pung or bigger group, never alone as a pair partner."
+            id: "htp-roles",
+            icon: "person.2.fill",
+            title: "Declarer, dummy, defenders",
+            body: "The player who first named the contract's denomination becomes declarer. Their partner lays dummy face up after the opening lead. The other partnership defends.",
+            tip: "Declarer chooses every card played from dummy."
         ),
         HowToPlayPage(
             id: "htp-ready",
             icon: "checkmark.seal.fill",
             title: "You're ready to train",
-            body: "That's the whole shape of the game: build toward the card, survive the Charleston, and read racks fast. The drills teach each skill one room at a time, five minutes at a stretch."
+            body: "That is the shape of bridge: describe the hand, choose a contract, then plan and play 13 tricks. Each room builds one skill in a few focused minutes."
         ),
     ]
 
-    /// Maps the onboarding skill level (defaults key `mahj.skillLevel`) to the
-    /// room recommended at the end of the primer. Falls back to the Tile Room
-    /// for an unset or unrecognized level.
     static func recommendedRoom(forSkillLevel skillLevel: String) -> Room {
         let roomID: String
         switch skillLevel {
-        case "basics": roomID = "card-room"
-        case "played": roomID = "table-room"
-        default: roomID = "tile-room"
+        case "basics": roomID = "auction-room"
+        case "played": roomID = "declarer-room"
+        default: roomID = "card-room"
         }
         return DrillLibrary.rooms.first { $0.id == roomID } ?? DrillLibrary.rooms[0]
     }

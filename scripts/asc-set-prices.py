@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Set Mahj Trainer subscription prices in every territory from the USA base.
+"""Set Bridge Trainer subscription prices in every territory from the USA base.
 
 Adapted from Queasy's asc-equalize-sub-prices.py. Takes the target USA price
 point per subscription, fetches Apple's equalizations, and posts a
@@ -16,10 +16,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import asc_lib
 
-BUNDLE = "com.jackwallner.mahj"
+BUNDLE = "com.jackwallner.bridge"
 USA_PRICES = {
-    "com.jackwallner.mahj.monthly": "1.99",
-    "com.jackwallner.mahj.yearly": "9.99",
+    "com.jackwallner.bridge.monthly": "1.99",
+    "com.jackwallner.bridge.yearly": "9.99",
 }
 
 

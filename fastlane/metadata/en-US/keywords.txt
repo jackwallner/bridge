@@ -1,1 +1,1 @@
-majong,joker,mahjongg,tile,nmjl,charleston,flashcard,tutor,beginner,lesson,drill,rule,hand,strategy
+bridge,bidding,cards,contract,learn,tutor,beginner,lesson,drill,defense,declarer,practice,quiz

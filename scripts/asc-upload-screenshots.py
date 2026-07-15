@@ -17,7 +17,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import asc_lib as L
 
-BUNDLE = "com.jackwallner.mahj"
+BUNDLE = "com.jackwallner.bridge"
 DISPLAY_TYPE = "APP_IPHONE_67"
 
 

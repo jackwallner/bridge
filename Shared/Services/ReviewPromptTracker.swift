@@ -23,7 +23,7 @@ enum ReviewPromptOutcome: String, Sendable {
 /// the player has done enough for the ask to be fair.
 ///
 /// The funnel itself: a positive moment (a finished drill) leads to "Enjoying
-/// Mahj Trainer?" A yes leads to the App Store; a no leads to a feedback box
+/// Bridge Trainer?" A yes leads to the App Store; a no leads to a feedback box
 /// that mails us instead. Unhappy players never get pushed at a star rating,
 /// which is the whole point of gating it.
 @MainActor
