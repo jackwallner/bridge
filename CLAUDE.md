@@ -35,3 +35,6 @@ Teaching content uses a beginner Standard American framework. Partnership agreem
 ## Release workflow
 
 Fastlane metadata is under `fastlane/metadata/en-US`. ASC setup and readiness scripts are under `scripts/`. The app uses a warm cream and jade visual system with high-contrast red and black playing cards.
+
+## Subagent delegation
+Follow the global CLAUDE.md subagent rules: ask Jack for the model before spawning, spawn at most one at a time unless Jack explicitly approves more, and never allow a subagent to spawn another subagent.
