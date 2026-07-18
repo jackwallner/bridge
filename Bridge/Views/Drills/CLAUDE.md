@@ -16,3 +16,6 @@ silently never fires. Don't "simplify" it back to `onTapGesture`.
 edge-on. Never rotate the text faces inside a static card background; that's
 what made text detach from the card. `BridgeCardFace` carries the bridgeong-card
 chrome (ivory surface, double frame, eyebrow, watermark) — both faces use it.
+
+## Subagent delegation
+Follow the global CLAUDE.md subagent rules: ask Jack for the model before spawning, spawn at most one at a time unless Jack explicitly approves more, and never allow a subagent to spawn another subagent.
