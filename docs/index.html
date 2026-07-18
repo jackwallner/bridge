@@ -1,36 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Bridge Trainer</title>
-    <style>
-      body {
-        font: 18px system-ui;
-        line-height: 1.6;
-        max-width: 720px;
-        margin: 64px auto;
-        padding: 0 24px;
-        color: #173c36;
-      }
-      h1 {
-        font-size: 44px;
-      }
-      a {
-        color: #087866;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bridge Trainer | Five-minute bridge practice</title>
+  <meta name="description" content="Bridge Trainer turns contract bridge basics, bidding, declarer play, and defense into short daily practice sessions.">
+  <link rel="canonical" href="https://jackwallner.github.io/bridge/">
+  <link rel="icon" type="image/png" sizes="256x256" href="icon_256.png">
+  <link rel="apple-touch-icon" href="icon_256.png">
+  <meta property="og:title" content="Bridge Trainer">
+  <meta property="og:description" content="Five-minute contract bridge practice for newer players.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jackwallner.github.io/bridge/">
+  <meta property="og:image" content="https://jackwallner.github.io/bridge/icon_256.png">
+  <style>
+    :root { --ink:#173c36; --jade:#087866; --cream:#f6f1e7; --paper:#fffdf8; --red:#b62e35; --muted:#63736d; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--cream); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+    .hero { overflow:hidden; padding:72px 24px 76px; text-align:center; color:#fff; background:radial-gradient(circle at 50% -20%, #2b816d, transparent 52%), linear-gradient(145deg,#123f37,#0b5e4e); }
+    .hero img { width:112px; height:112px; border-radius:26px; box-shadow:0 20px 44px #082a2466; }
+    .eyebrow { margin:24px 0 10px; color:#c6eee0; font-size:.76rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
+    h1 { margin:0; font:700 clamp(2.4rem,7vw,4.6rem)/1.05 Georgia,serif; letter-spacing:-.045em; }
+    .hero p { max-width:600px; margin:18px auto 0; color:#e3f5ef; font-size:1.18rem; }
+    .wrap { width:min(1040px,calc(100% - 40px)); margin:auto; }
+    .intro { display:grid; grid-template-columns:1fr 1fr; gap:24px; padding:56px 0 20px; }
+    .intro h2 { margin:0; font:700 clamp(1.8rem,4vw,2.7rem)/1.1 Georgia,serif; letter-spacing:-.03em; }
+    .intro p { margin:2px 0 0; color:var(--muted); font-size:1.05rem; }
+    .features { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; padding:24px 0 58px; }
+    .feature { min-height:170px; padding:22px; border:1px solid #d9ded6; border-radius:18px; background:var(--paper); box-shadow:0 8px 22px #173c3608; }
+    .feature b { display:block; margin-bottom:8px; color:var(--jade); font-size:1.02rem; }
+    .feature p { margin:0; color:var(--muted); font-size:.94rem; }
+    .screens { padding:42px 0 64px; border-top:1px solid #d9ded6; }
+    .screens h2 { margin:0 0 22px; font:700 2rem/1.1 Georgia,serif; }
+    .screen-row { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; align-items:start; }
+    .screen-row figure { margin:0; }
+    .screen-row img { display:block; width:100%; border-radius:22px; box-shadow:0 12px 28px #173c3620; }
+    figcaption { padding:10px 4px 0; color:var(--muted); font-size:.85rem; }
+    .links { display:flex; flex-wrap:wrap; gap:10px 18px; padding:22px 0 62px; border-top:1px solid #d9ded6; }
+    .links a { color:var(--jade); font-weight:650; }
+    footer { padding:26px 20px 42px; color:#71817b; text-align:center; font-size:.86rem; }
+    footer a { color:var(--jade); }
+    @media (max-width:760px) { .intro,.features { grid-template-columns:1fr 1fr; } .screen-row { grid-template-columns:1fr 1fr; } }
+    @media (max-width:500px) { .hero { padding-top:52px; } .wrap { width:min(100% - 32px,1040px); } .intro,.features { grid-template-columns:1fr; } .feature { min-height:auto; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="icon_256.png" alt="Bridge Trainer app icon" width="112" height="112">
+    <p class="eyebrow">Bridge practice for newer players</p>
     <h1>Bridge Trainer</h1>
-    <p>
-      Five-minute contract bridge practice for card basics, opening bids,
-      declarer play, and defense.
-    </p>
-    <p>
-      <a href="support/">Support</a> ·
-      <a href="privacy-policy/">Privacy Policy</a> ·
+    <p>Build better instincts in five minutes at a time, from card basics to bidding, declarer play, and defense.</p>
+  </header>
+  <main class="wrap">
+    <section class="intro">
+      <h2>Learn the table without needing a table.</h2>
+      <p>Short, focused drills make contract bridge easier to return to every day. Work through original examples, see the reasoning, and build confidence one decision at a time. Bridge Trainer uses a beginner Standard American framework. Partnership agreements vary, so treat conventions as a starting point, not a universal rulebook.</p>
+    </section>
+    <section class="features" aria-label="Bridge Trainer features">
+      <article class="feature"><b>Card basics</b><p>Get comfortable with suits, ranks, tricks, and the vocabulary that makes every later lesson easier.</p></article>
+      <article class="feature"><b>Opening bids</b><p>Practice first decisions with clear explanations for beginner Standard American bidding.</p></article>
+      <article class="feature"><b>Declarer play</b><p>Choose a plan, count your winners, and learn to turn a contract into a sequence of manageable plays.</p></article>
+      <article class="feature"><b>Defense</b><p>Build good habits for opening leads, signals, and the keep-or-switch decisions that shape a hand.</p></article>
+    </section>
+    <section class="screens">
+      <h2>Inside the practice loop</h2>
+      <div class="screen-row">
+        <figure><img src="screenshots/01-home.png" alt="Bridge Trainer home screen"><figcaption>Choose a room or start a quick session.</figcaption></figure>
+        <figure><img src="screenshots/02-session.png" alt="Bridge Trainer practice session"><figcaption>Work through one focused decision.</figcaption></figure>
+        <figure><img src="screenshots/03-answer.png" alt="Bridge Trainer answer explanation"><figcaption>See the reasoning behind the answer.</figcaption></figure>
+        <figure><img src="screenshots/04-paywall.png" alt="Bridge Trainer membership screen"><figcaption>Optional Bridge+ membership for more practice.</figcaption></figure>
+      </div>
+    </section>
+    <nav class="links" aria-label="Bridge Trainer links">
+      <a href="support/">Support</a>
+      <a href="privacy-policy/">Privacy Policy</a>
       <a href="terms/">Terms of Use</a>
-    </p>
-  </body>
+      <a href="https://github.com/jackwallner/bridge">Source on GitHub</a>
+    </nav>
+  </main>
+  <footer>Bridge Trainer is not affiliated with or endorsed by ACBL or any other bridge organization.<br><a href="mailto:jackwallner@gmail.com">Questions? Email Jack Wallner.</a></footer>
+</body>
 </html>
