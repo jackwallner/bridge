@@ -1,5 +1,11 @@
 Bridge Trainer is a contract bridge practice app. It contains flashcards, quizzes, opening-bid hand evaluation, and card-play scenarios. There is no live multiplayer, wagering, or user-generated content.
 
+HOW TO FIND THE FOUR FREE PRACTICE ROOMS
+1. On first launch, tap Get Started on the final onboarding page.
+2. On the feature tour, tap Skip the tour, take me to the app. If the tour is completed, dismiss the sample session first.
+3. On Home, scroll to the THE ROOMS section. The first four cards are free and tappable: The Card Room, The Auction Room, The Declarer Room, and The Defense Room.
+4. Tap any room card, then tap its unlocked drill, such as Meet the Game, Opening Playbook, Declarer Playbook, or Lead or Hold?. No purchase is required.
+
 All four beginner rooms are free. Bridge+ adds one extra practice set in each room and unlocks the Master Tables. The RevenueCat entitlement is “Bridge+”.
 
 The app uses a beginner Standard American framework. Bridge conventions are partnership agreements, and the app states this in Settings and on Home.
