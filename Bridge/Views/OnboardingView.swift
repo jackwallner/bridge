@@ -193,7 +193,7 @@ struct OnboardingView: View {
                 .foregroundStyle(Theme.gold)
                 .frame(width: 92, height: 92)
                 .background(Theme.gold.opacity(0.14), in: Circle())
-            Text("Try \(Membership.name) free")
+            Text("Unlock \(Membership.name)")
                 .font(Theme.display(30))
                 .foregroundStyle(Theme.ink)
                 .multilineTextAlignment(.center)
@@ -222,9 +222,16 @@ struct OnboardingView: View {
     /// One concise line, matching the approved fleet pattern (StatScout): trial
     /// length, price, that it renews, how to cancel. The EULA behind the Terms
     /// link carries the full legalese; this is the point-of-purchase micro copy.
+    /// The billed amount, shown prominently (App Review 3.1.2(c)).
+    private var yearlyPrice: String {
+        PaywallPricing.price(subscriptions, .yearly)
+    }
+
+    /// Subordinate fine print. Kept smaller than `yearlyPrice` and does not lead
+    /// with the free trial, so the billed amount stays the most conspicuous
+    /// pricing element on the screen.
     private var yearlyDisclosure: String {
-        let price = PaywallPricing.price(subscriptions, .yearly)
-        return "7 days free, then \(price). Auto-renews until canceled."
+        "Includes a 7-day free trial. Auto-renews until canceled."
     }
 
     // MARK: - Footer (identical geometry on every page: zero-shift CTA)
@@ -248,15 +255,21 @@ struct OnboardingView: View {
             .frame(height: 30)
             .opacity(onTrialPage ? 1 : 0)
             .disabled(!onTrialPage)
-            // Disclosure slot, also reserved. Small and tertiary: present at the
-            // point of purchase (3.1.2) without shouting.
-            Text(yearlyDisclosure)
-                .font(.caption2)
-                .foregroundStyle(Theme.inkTertiary)
-                .multilineTextAlignment(.center)
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(height: 30)
-                .opacity(onTrialPage ? 1 : 0)
+            // Pricing slot, reserved on every page. The billed amount is the
+            // most prominent pricing element (App Review 3.1.2(c)); the trial
+            // fine print below it is deliberately smaller and secondary.
+            VStack(spacing: 2) {
+                Text(yearlyPrice)
+                    .font(Theme.display(22))
+                    .foregroundStyle(Theme.ink)
+                Text(yearlyDisclosure)
+                    .font(.caption2)
+                    .foregroundStyle(Theme.inkTertiary)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            .frame(height: 48)
+            .opacity(onTrialPage ? 1 : 0)
             Button {
                 primaryAction()
             } label: {
@@ -264,7 +277,7 @@ struct OnboardingView: View {
                     if purchasing {
                         ProgressView().tint(.white)
                     } else {
-                        Text(onTrialPage ? "Start 7-day free trial" : "Continue")
+                        Text("Continue")
                     }
                 }
                 .primaryCTA()
