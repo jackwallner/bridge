@@ -4,10 +4,9 @@ import RevenueCat
 enum PaywallPlan: String, CaseIterable {
     case yearly, lifetime, monthly
 
-    // Neutral CTA on purpose (App Review 3.1.2(c)): the button must not promote
-    // the free trial more prominently than the billed amount. The prominent
-    // billed price lives directly above the button; the trial is fine print.
-    var ctaTitle: String { "Continue" }
+    var ctaTitle: String {
+        self == .lifetime ? "Unlock \(Membership.name) Forever" : "Start 7-Day Free Trial"
+    }
 }
 
 enum PaywallLinks {
@@ -63,11 +62,11 @@ struct PaywallContent: View {
     private var planCards: some View {
         VStack(spacing: 10) {
             planCard(.yearly, title: "Yearly", price: PaywallPricing.price(subscriptions, .yearly),
-                     detail: "Billed yearly. Includes a 7-day free trial. Auto-renews.", badge: "BEST VALUE")
+                     detail: "7 days free, then billed yearly. Auto-renews.", badge: "BEST VALUE")
             planCard(.lifetime, title: "Lifetime", price: PaywallPricing.price(subscriptions, .lifetime),
                      detail: "One payment. No subscription, nothing renews.", badge: "NO SUBSCRIPTION")
             planCard(.monthly, title: "Monthly", price: PaywallPricing.price(subscriptions, .monthly),
-                     detail: "Billed monthly. Includes a 7-day free trial. Auto-renews.", badge: nil)
+                     detail: "7 days free, then billed monthly. Auto-renews.", badge: nil)
         }
     }
 
@@ -99,7 +98,7 @@ struct PaywallContent: View {
                 }
                 Spacer(minLength: 8)
                 Text(price)
-                    .font(.headline.weight(.bold))
+                    .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Theme.ink)
             }
             .padding(14)
@@ -129,16 +128,15 @@ enum PaywallPricing {
         }
     }
 
-    /// Subordinate point-of-purchase fine print (App Review 3.1.2(c)): the
-    /// billed amount is shown prominently on its own line above the CTA, so this
-    /// line stays small and does not lead with the free trial. The full legalese
-    /// lives in the EULA behind the Terms link.
+    /// One concise point-of-purchase line: price, trial, auto-renew, cancel.
+    /// The full legalese lives in the EULA behind the Terms link.
     static func terms(_ subscriptions: SubscriptionService, _ plan: PaywallPlan) -> String {
+        let amount = price(subscriptions, plan)
         switch plan {
         case .lifetime:
-            return "One-time purchase. Not a subscription, nothing renews."
+            return "\(amount) one-time. Not a subscription, nothing renews."
         case .yearly, .monthly:
-            return "Includes a 7-day free trial. Auto-renews until canceled."
+            return "7 days free, then \(amount). Auto-renews until canceled."
         }
     }
 }
@@ -161,15 +159,15 @@ struct PaywallView: View {
             .background(Theme.background)
             .safeAreaInset(edge: .bottom) {
                 VStack(spacing: 8) {
-                    // Billed amount is the most prominent pricing element on the
-                    // screen (App Review 3.1.2(c)); the trial fine print below is
-                    // deliberately smaller and secondary.
+                    // Billed amount, shown prominently at the point of purchase
+                    // (App Review 3.1.2(c)): the reviewer flagged that it wasn't
+                    // clearly and conspicuously displayed.
                     Text(PaywallPricing.price(subscriptions, selectedPlan))
-                        .font(Theme.display(24))
+                        .font(Theme.display(22))
                         .foregroundStyle(Theme.ink)
                     Text(PaywallPricing.terms(subscriptions, selectedPlan))
-                        .font(.caption2)
-                        .foregroundStyle(Theme.inkTertiary)
+                        .font(.caption)
+                        .foregroundStyle(Theme.inkSecondary)
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                     Button {
