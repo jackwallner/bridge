@@ -1,83 +1,654 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bridge Trainer | Five-minute bridge practice</title>
-  <meta name="description" content="Bridge Trainer turns contract bridge basics, bidding, declarer play, and defense into short daily practice sessions.">
-  <link rel="canonical" href="https://jackwallner.github.io/bridge/">
-  <link rel="icon" type="image/png" sizes="256x256" href="icon_256.png">
-  <link rel="apple-touch-icon" href="icon_256.png">
-  <meta property="og:title" content="Bridge Trainer">
-  <meta property="og:description" content="Five-minute contract bridge practice for newer players.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jackwallner.github.io/bridge/">
-  <meta property="og:image" content="https://jackwallner.github.io/bridge/icon_256.png">
-  <style>
-    :root { --ink:#173c36; --jade:#087866; --cream:#f6f1e7; --paper:#fffdf8; --red:#b62e35; --muted:#63736d; }
-    * { box-sizing:border-box; }
-    body { margin:0; color:var(--ink); background:var(--cream); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
-    .hero { overflow:hidden; padding:72px 24px 76px; text-align:center; color:#fff; background:radial-gradient(circle at 50% -20%, #2b816d, transparent 52%), linear-gradient(145deg,#123f37,#0b5e4e); }
-    .hero img { width:112px; height:112px; border-radius:26px; box-shadow:0 20px 44px #082a2466; }
-    .eyebrow { margin:24px 0 10px; color:#c6eee0; font-size:.76rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
-    h1 { margin:0; font:700 clamp(2.4rem,7vw,4.6rem)/1.05 Georgia,serif; letter-spacing:-.045em; }
-    .hero p { max-width:600px; margin:18px auto 0; color:#e3f5ef; font-size:1.18rem; }
-    .wrap { width:min(1040px,calc(100% - 40px)); margin:auto; }
-    .intro { display:grid; grid-template-columns:1fr 1fr; gap:24px; padding:56px 0 20px; }
-    .intro h2 { margin:0; font:700 clamp(1.8rem,4vw,2.7rem)/1.1 Georgia,serif; letter-spacing:-.03em; }
-    .intro p { margin:2px 0 0; color:var(--muted); font-size:1.05rem; }
-    .features { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; padding:24px 0 58px; }
-    .feature { min-height:170px; padding:22px; border:1px solid #d9ded6; border-radius:18px; background:var(--paper); box-shadow:0 8px 22px #173c3608; }
-    .feature b { display:block; margin-bottom:8px; color:var(--jade); font-size:1.02rem; }
-    .feature p { margin:0; color:var(--muted); font-size:.94rem; }
-    .screens { padding:42px 0 64px; border-top:1px solid #d9ded6; }
-    .screens h2 { margin:0 0 22px; font:700 2rem/1.1 Georgia,serif; }
-    .screen-row { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; align-items:start; }
-    .screen-row figure { margin:0; }
-    .screen-row img { display:block; width:100%; border-radius:22px; box-shadow:0 12px 28px #173c3620; }
-    figcaption { padding:10px 4px 0; color:var(--muted); font-size:.85rem; }
-    .links { display:flex; flex-wrap:wrap; gap:10px 18px; padding:22px 0 62px; border-top:1px solid #d9ded6; }
-    .links a { color:var(--jade); font-weight:650; }
-    footer { padding:26px 20px 42px; color:#71817b; text-align:center; font-size:.86rem; }
-    footer a { color:var(--jade); }
-    @media (max-width:760px) { .intro,.features { grid-template-columns:1fr 1fr; } .screen-row { grid-template-columns:1fr 1fr; } }
-    @media (max-width:500px) { .hero { padding-top:52px; } .wrap { width:min(100% - 32px,1040px); } .intro,.features { grid-template-columns:1fr; } .feature { min-height:auto; } }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="256x256" href="icon_256.png">
+    <link rel="apple-touch-icon" href="icon_256.png">
+    <title>Bridge Trainer: Learn &amp; Bid - Contract Bridge Practice for iPhone</title>
+    <meta name="description" content="Learn contract bridge in five-minute drills. Practice bidding, declarer play, and defense with the reason behind every call. Free, no account, iPhone.">
+    <link rel="canonical" href="https://jackwallner.github.io/bridge/">
+    <meta name="apple-itunes-app" content="app-id=6791026407">
+    <meta name="keywords" content="bridge, contract bridge, bidding practice, bridge lessons, declarer play, defense, beginner bridge, Standard American, card game, drills, iPhone">
+    <meta property="og:title" content="Bridge Trainer: Learn &amp; Bid">
+    <meta property="og:description" content="Five-minute bridge drills for bidding, declarer play, and defense. Learn the why behind every call and card.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jackwallner.github.io/bridge/">
+    <meta property="og:image" content="https://jackwallner.github.io/bridge/appstore-screenshot-01.png">
+    <meta property="og:site_name" content="Bridge Trainer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bridge Trainer: Learn &amp; Bid">
+    <meta name="twitter:description" content="Bidding, declarer play, and defense as quick drills. Free, no account, no opponents.">
+    <meta name="twitter:image" content="https://jackwallner.github.io/bridge/appstore-screenshot-01.png">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bridge Trainer: Learn & Bid",
+        "operatingSystem": "iOS",
+        "applicationCategory": "EducationalApplication",
+        "offers": [
+            {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "Free tier with four practice rooms, coaching cards, quizzes, and streaks"
+            },
+            {
+                "@type": "Offer",
+                "price": "1.99",
+                "priceCurrency": "USD",
+                "description": "Bridge+ Monthly, extra practice in every room plus the Master Tables"
+            },
+            {
+                "@type": "Offer",
+                "price": "9.99",
+                "priceCurrency": "USD",
+                "description": "Bridge+ Yearly, same features billed annually"
+            },
+            {
+                "@type": "Offer",
+                "price": "29.99",
+                "priceCurrency": "USD",
+                "description": "Bridge+ Lifetime, one-time purchase"
+            }
+        ],
+        "description": "Bridge Trainer teaches contract bridge in five-minute drills across four practice rooms: the Card Room, the Auction Room, the Declarer Room, and the Defense Room. Free to use, with an optional Bridge+ upgrade.",
+        "url": "https://jackwallner.github.io/bridge/",
+        "downloadUrl": "https://apps.apple.com/us/app/bridge-trainer-learn-bid/id6791026407",
+        "screenshot": "https://jackwallner.github.io/bridge/appstore-screenshot-01.png",
+        "softwareVersion": "1.0",
+        "author": {
+            "@type": "Person",
+            "name": "Jack Wallner"
+        }
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+            color: #1d1d1f;
+            background: #fafafa;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Nav */
+        nav {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            background: rgba(250,250,250,0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #1d1d1f;
+        }
+
+        .nav-brand img {
+            width: 32px;
+            height: 32px;
+            border-radius: 7px;
+        }
+
+        .nav-brand span {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            text-decoration: none;
+            background: #1d1d1f;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 980px;
+            font-weight: 500;
+            transition: opacity 0.15s;
+        }
+
+        .nav-link:hover { opacity: 0.85; }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 100px 24px 64px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            line-height: 1.08;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #087866, #12a184);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .tagline {
+            font-size: 19px;
+            color: #6e6e73;
+            line-height: 1.5;
+            max-width: 440px;
+            margin: 0 auto 12px;
+        }
+
+        .hero .platforms {
+            font-size: 13px;
+            color: #86868b;
+            letter-spacing: 0.3px;
+            margin-bottom: 36px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #1d1d1f;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 14px 36px;
+            border-radius: 980px;
+            text-decoration: none;
+            transition: opacity 0.15s;
+        }
+
+        .download-btn:hover { opacity: 0.85; }
+
+        /* Screenshot showcase */
+        .showcase {
+            padding: 0 0 80px;
+        }
+
+        .showcase-scroll {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 0 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            scrollbar-width: none;
+        }
+
+        .showcase-scroll::-webkit-scrollbar { display: none; }
+
+        .showcase-card {
+            flex-shrink: 0;
+            scroll-snap-align: center;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 16px 48px rgba(0,0,0,0.08);
+        }
+
+        .showcase-card img {
+            height: 540px;
+            display: block;
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 0;
+            background: #fff;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .features-header h2 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .features-header p {
+            font-size: 17px;
+            color: #6e6e73;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: rgba(0,0,0,0.06);
+            border-top: 1px solid rgba(0,0,0,0.06);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 36px 32px;
+        }
+
+        .feature-card .label {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #86868b;
+            margin-bottom: 10px;
+        }
+
+        .feature-card .label.bridge-plus {
+            color: #087866;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #6e6e73;
+            line-height: 1.55;
+        }
+
+        /* Privacy */
+        .privacy {
+            padding: 80px 0;
+        }
+
+        .privacy .container {
+            max-width: 640px;
+            text-align: center;
+        }
+
+        .privacy .lockup {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: #f5f5f7;
+            margin-bottom: 20px;
+        }
+
+        .privacy .lockup svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: #1d1d1f;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .privacy h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .privacy p {
+            font-size: 17px;
+            color: #6e6e73;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .privacy a {
+            font-size: 15px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .privacy a:hover { text-decoration: underline; }
+
+        /* More Info */
+        .more-info {
+            padding: 64px 24px;
+            background: #fff;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .more-info-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .more-info-header h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .more-info-header p {
+            font-size: 17px;
+            color: #6e6e73;
+        }
+
+        .more-info-content {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .more-info-section {
+            margin-bottom: 40px;
+        }
+
+        .more-info-section h3 {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #86868b;
+            margin-bottom: 12px;
+        }
+
+        .more-info-section p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+
+        .more-info-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .more-info-section strong {
+            font-weight: 600;
+        }
+
+        .specs-table {
+            width: 100%;
+            font-size: 14px;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .specs-table td {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .specs-table td:first-child {
+            color: #86868b;
+            width: 140px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            padding: 40px 24px 0;
+        }
+
+        .disclaimer .container {
+            max-width: 720px;
+        }
+
+        .disclaimer p {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #86868b;
+            text-align: center;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 64px 24px 80px;
+            background: #fff;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .cta h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .cta p {
+            font-size: 15px;
+            color: #86868b;
+            margin-bottom: 28px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 24px;
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        footer a {
+            color: #86868b;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover { color: #1d1d1f; }
+
+        footer .divider { margin: 4px 0; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { padding: 72px 20px 48px; }
+            .hero h1 { font-size: 36px; letter-spacing: -1px; }
+            .hero .tagline { font-size: 17px; }
+
+            .showcase-card img { height: 400px; }
+
+            .features-grid { grid-template-columns: 1fr; }
+
+            .features-header h2 { font-size: 28px; }
+            .privacy h2, .cta h2 { font-size: 26px; }
+        }
+
+        @media (max-width: 480px) {
+            .showcase-card img { height: 360px; }
+        }
+    </style>
 </head>
 <body>
-  <header class="hero">
-    <img src="icon_256.png" alt="Bridge Trainer app icon" width="112" height="112">
-    <p class="eyebrow">Bridge practice for newer players</p>
-    <h1>Bridge Trainer</h1>
-    <p>Build better instincts in five minutes at a time, from card basics to bidding, declarer play, and defense.</p>
-  </header>
-  <main class="wrap">
-    <section class="intro">
-      <h2>Learn the table without needing a table.</h2>
-      <p>Short, focused drills make contract bridge easier to return to every day. Work through original examples, see the reasoning, and build confidence one decision at a time. Bridge Trainer uses a beginner Standard American framework. Partnership agreements vary, so treat conventions as a starting point, not a universal rulebook.</p>
-    </section>
-    <section class="features" aria-label="Bridge Trainer features">
-      <article class="feature"><b>Card basics</b><p>Get comfortable with suits, ranks, tricks, and the vocabulary that makes every later lesson easier.</p></article>
-      <article class="feature"><b>Opening bids</b><p>Practice first decisions with clear explanations for beginner Standard American bidding.</p></article>
-      <article class="feature"><b>Declarer play</b><p>Choose a plan, count your winners, and learn to turn a contract into a sequence of manageable plays.</p></article>
-      <article class="feature"><b>Defense</b><p>Build good habits for opening leads, signals, and the keep-or-switch decisions that shape a hand.</p></article>
-    </section>
-    <section class="screens">
-      <h2>Inside the practice loop</h2>
-      <div class="screen-row">
-        <figure><img src="screenshots/01-home.png" alt="Bridge Trainer home screen"><figcaption>Choose a room or start a quick session.</figcaption></figure>
-        <figure><img src="screenshots/02-session.png" alt="Bridge Trainer practice session"><figcaption>Work through one focused decision.</figcaption></figure>
-        <figure><img src="screenshots/03-answer.png" alt="Bridge Trainer answer explanation"><figcaption>See the reasoning behind the answer.</figcaption></figure>
-        <figure><img src="screenshots/04-paywall.png" alt="Bridge Trainer membership screen"><figcaption>Optional Bridge+ membership for more practice.</figcaption></figure>
-      </div>
-    </section>
-    <nav class="links" aria-label="Bridge Trainer links">
-      <a href="support/">Support</a>
-      <a href="privacy-policy/">Privacy Policy</a>
-      <a href="terms/">Terms of Use</a>
-      <a href="https://github.com/jackwallner/bridge">Source on GitHub</a>
+
+    <nav>
+        <div class="container">
+            <a class="nav-brand" href="./">
+                <img src="icon_256.png" alt="Bridge Trainer">
+                <span>Bridge Trainer</span>
+            </a>
+            <a class="nav-link" href="https://apps.apple.com/us/app/bridge-trainer-learn-bid/id6791026407">Download</a>
+        </div>
     </nav>
-  </main>
-  <footer>Bridge Trainer is not affiliated with or endorsed by ACBL or any other bridge organization.<br><a href="mailto:jackwallner@gmail.com">Questions? Email Jack Wallner.</a></footer>
+
+    <section class="hero">
+        <h1>Bridge, in <span>five minutes a day</span></h1>
+        <p class="tagline">Bidding, declarer play, and defense as quick drills. No opponents, no timers, and the reasoning behind every answer.</p>
+        <p class="platforms">iPhone &middot; Four practice rooms &middot; Works offline</p>
+        <a class="download-btn" href="https://apps.apple.com/us/app/bridge-trainer-learn-bid/id6791026407">Download for free</a>
+    </section>
+
+    <section class="showcase">
+        <div class="showcase-scroll">
+            <div class="showcase-card">
+                <img src="appstore-screenshot-01.png" alt="Practice, not pressure. &mdash; The four bridge practice rooms on the home screen">
+            </div>
+            <div class="showcase-card">
+                <img src="appstore-screenshot-02.png" alt="Five-minute sessions. &mdash; A drill in progress with a 13-card hand">
+            </div>
+            <div class="showcase-card">
+                <img src="appstore-screenshot-03.png" alt="Learn the why. &mdash; The coaching answer explaining the right call">
+            </div>
+            <div class="showcase-card">
+                <img src="appstore-screenshot-04.png" alt="Go deeper. &mdash; Bridge+ and the Master Tables">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2>Four rooms, one habit</h2>
+                <p>Everything below is free. Bridge+ adds more of it.</p>
+            </div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="label">Card Room</span>
+                <h3>Ranks, points, tricks</h3>
+                <p>Card rank, high-card points, tricks, trump, contracts, and who does what at the table.</p>
+            </div>
+            <div class="feature-card">
+                <span class="label">Auction Room</span>
+                <h3>Choose the opening bid</h3>
+                <p>Read a 13-card hand and decide between pass, a suit opening, and 1NT in a beginner Standard American framework.</p>
+            </div>
+            <div class="feature-card">
+                <span class="label">Declarer Room</span>
+                <h3>Plan the play</h3>
+                <p>Count winners, draw trump, establish long suits, finesse, and pick the right card in real table situations.</p>
+            </div>
+            <div class="feature-card">
+                <span class="label">Defense Room</span>
+                <h3>Lead and follow well</h3>
+                <p>Opening leads, sequences, third-hand play, suit returns, and the partnership habits that make you easy to play with.</p>
+            </div>
+            <div class="feature-card">
+                <span class="label">Daily session</span>
+                <h3>Misses come back</h3>
+                <p>A daily mixed session pulls in the material you got wrong, so weak spots resurface until they stop being weak.</p>
+            </div>
+            <div class="feature-card">
+                <span class="label">Coaching cards</span>
+                <h3>The why on the back</h3>
+                <p>Swipeable explanations behind every call and card, so a right answer teaches you something.</p>
+            </div>
+            <div class="feature-card">
+                <span class="label bridge-plus">Extra practice &middot; Bridge+</span>
+                <h3>More reps per room</h3>
+                <p>A second practice set in each beginner room, with fresh hands and questions added through the year.</p>
+            </div>
+            <div class="feature-card">
+                <span class="label bridge-plus">Master Tables &middot; Bridge+</span>
+                <h3>Conventions and duplicate</h3>
+                <p>Conventions, advanced card play, and duplicate strategy for players moving past the basics.</p>
+            </div>
+            <div class="feature-card">
+                <span class="label">Streaks</span>
+                <h3>Practice between games</h3>
+                <p>Streaks and per-room progress keep the habit going between Tuesday nights.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="privacy">
+        <div class="container">
+            <div class="lockup">
+                <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h2>No account, no cloud</h2>
+            <p>Bridge Trainer keeps practice progress and preferences on your iPhone. There is no sign-up, no ads, and nothing sold. Reminders are scheduled locally on your device. Apple processes purchases, and RevenueCat receives only the identifiers needed to unlock and restore Bridge+.</p>
+            <a href="privacy-policy.html">Privacy Policy &rarr;</a>
+        </div>
+    </section>
+
+    <section class="more-info">
+        <div class="container">
+            <div class="more-info-header">
+                <h2>More info</h2>
+                <p>How it's built and why it matters.</p>
+            </div>
+            <div class="more-info-content">
+                <div class="more-info-section">
+                    <h3>The Pitch</h3>
+                    <p>Most people learn bridge at a weekly game or a beginner class, then have no way to practice until the next one. The lesson fades, the auction gets scary, and the same mistakes come back.</p>
+                    <p>Bridge Trainer takes the parts beginners need most and turns them into short drills you can run standing in line: count the points, choose a bid, plan the play, pick a lead. No opponents, no clock, and an explanation on every answer.</p>
+                </div>
+
+                <div class="more-info-section">
+                    <h3>Bridge+</h3>
+                    <p>The four beginner rooms stay free. Bridge+ is for players who want more reps and more depth: $1.99/month or $9.99/year (both with a 1-week free trial), or $29.99 once for lifetime access.</p>
+                    <p><strong>Extra practice sets.</strong> A second set of hands and questions in every beginner room, using the same drills you already know.</p>
+                    <p><strong>The Master Tables.</strong> Conventions, advanced declarer play and defense, and duplicate strategy, added to through the year.</p>
+                </div>
+
+                <div class="more-info-section">
+                    <h3>Specs</h3>
+                    <table class="specs-table">
+                        <tr><td>Platform</td><td>iOS 17+</td></tr>
+                        <tr><td>Language</td><td>Swift 6 with strict concurrency</td></tr>
+                        <tr><td>Framework</td><td>SwiftUI &middot; StoreKit 2 &middot; RevenueCat</td></tr>
+                        <tr><td>Data</td><td>No account; progress stored on device</td></tr>
+                        <tr><td>Storage</td><td>Local preferences, bundled practice content</td></tr>
+                        <tr><td>Offline</td><td>Every drill works with no network</td></tr>
+                    </table>
+                </div>
+
+                <div class="more-info-section">
+                    <h3>What Mattered</h3>
+                    <p><strong>Five minutes, honestly.</strong> A session is short enough to finish while the kettle boils. Nothing in the app asks you to sit down for an hour.</p>
+                    <p><strong>Reasoning over scoring.</strong> Every answer explains the bridge logic, because a beginner who knows why they were wrong improves faster than one who just sees a score.</p>
+                    <p><strong>Real 13-card hands.</strong> Drills use full deals rather than abstract puzzles, so the judgment transfers to the table.</p>
+                    <p><strong>Free means free.</strong> All four beginner rooms are complete without paying. Bridge+ adds volume and advanced material rather than gating the basics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <div class="container">
+            <p>Bridge Trainer teaches a beginner Standard American framework. Partnership agreements and conventions vary, so confirm what you play with your partner.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Sit down ready</h2>
+        <p>Free on the App Store. Four practice rooms, no account. Bridge+ optional.</p>
+        <a class="download-btn" href="https://apps.apple.com/us/app/bridge-trainer-learn-bid/id6791026407">Download for free</a>
+    </section>
+
+    <footer>
+        <div class="divider">&copy; 2026 Jack Wallner</div>
+        <div>
+            <a href="support.html">Support</a>
+            <a href="privacy-policy.html">Privacy</a>
+        </div>
+    </footer>
+
 </body>
 </html>
