@@ -224,7 +224,10 @@ struct FeatureTourView: View {
                         .foregroundStyle(Theme.jade)
                 }
             }
-            ForEach(["Endless Practice, never repeats", "Extra sets in every room", "Conventions and duplicate"], id: \.self) { line in
+            // The same three modes the paywall leads with. Extra sets and the
+            // Master Tables are carried by the page body, so the hero does not
+            // have to say everything.
+            ForEach(["Endless Practice, never repeats", "Fix My Mistakes replays your misses", "Timed Challenge, 90 seconds"], id: \.self) { line in
                 HStack(spacing: 8) {
                     Image(systemName: locked ? "sparkles" : "checkmark.circle.fill")
                         .font(.footnote)
