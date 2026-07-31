@@ -471,7 +471,7 @@ struct HomeView: View {
                     Text("Get \(Membership.name)")
                         .font(.headline)
                         .foregroundStyle(Theme.ink)
-                    Text("\(lockedDrillCount) more drills across every room, plus the Master Tables")
+                    Text("Endless Practice, timed challenges, and \(lockedDrillCount) more drills across every room")
                         .font(.caption)
                         .foregroundStyle(Theme.inkSecondary)
                         .multilineTextAlignment(.leading)

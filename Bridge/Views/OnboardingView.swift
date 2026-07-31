@@ -199,9 +199,9 @@ struct OnboardingView: View {
                 .multilineTextAlignment(.center)
             VStack(alignment: .leading, spacing: 12) {
                 trialBenefit("Every beginner room is free, forever")
-                trialBenefit("\(Membership.name) adds extra practice sets in all four rooms")
-                trialBenefit("Plus the Master Tables: conventions, play, and duplicate")
-                trialBenefit("New drills added all year")
+                trialBenefit("Endless Practice deals a fresh hand every time")
+                trialBenefit("Fix My Mistakes brings back what you miss")
+                trialBenefit("Extra sets in all four rooms, plus the Master Tables")
             }
             Spacer()
             Spacer()
@@ -217,12 +217,6 @@ struct OnboardingView: View {
                 .font(.subheadline)
                 .foregroundStyle(Theme.ink)
         }
-    }
-
-    /// The billed amount, shown prominently at the point of purchase (App Review
-    /// 3.1.2(c) flagged that it wasn't clearly and conspicuously displayed).
-    private var yearlyPrice: String {
-        PaywallPricing.price(subscriptions, .yearly)
     }
 
     /// One concise line, matching the approved fleet pattern (StatScout): trial
@@ -254,21 +248,18 @@ struct OnboardingView: View {
             .frame(height: 30)
             .opacity(onTrialPage ? 1 : 0)
             .disabled(!onTrialPage)
-            // Pricing slot, reserved on every page. Adds a conspicuous billed
-            // amount above the existing disclosure (App Review 3.1.2(c) flagged
-            // it wasn't clearly displayed); everything else is unchanged.
-            VStack(spacing: 2) {
-                Text(yearlyPrice)
-                    .font(Theme.display(22))
-                    .foregroundStyle(Theme.ink)
-                Text(yearlyDisclosure)
-                    .font(.caption2)
-                    .foregroundStyle(Theme.inkTertiary)
-                    .multilineTextAlignment(.center)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            .frame(height: 48)
-            .opacity(onTrialPage ? 1 : 0)
+            // Disclosure slot, also reserved. Small and tertiary: present at the
+            // point of purchase (3.1.2) without shouting. This carries the
+            // billed amount inline rather than as a separate display-size
+            // price line, matching Mahj's approved onboarding; the full
+            // plan-picker paywall still shows the conspicuous amount.
+            Text(yearlyDisclosure)
+                .font(.caption2)
+                .foregroundStyle(Theme.inkTertiary)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+                .frame(height: 30)
+                .opacity(onTrialPage ? 1 : 0)
             Button {
                 primaryAction()
             } label: {

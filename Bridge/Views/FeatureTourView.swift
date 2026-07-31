@@ -122,14 +122,14 @@ struct FeatureTourView: View {
                 ? TourPage(
                     eyebrow: "YOURS NOW",
                     title: "\(Membership.name) is open",
-                    body: "Your trial already includes extra practice in every room, plus the Master Tables: conventions, advanced play, and duplicate decisions.",
+                    body: "Your trial already includes Endless Practice, the timed challenge, the extra sets in every room, and the Master Tables: conventions, advanced play, and duplicate decisions.",
                     hero: AnyView(proHero(locked: false)),
                     accentGold: true
                 )
                 : TourPage(
                     eyebrow: "BEHIND THE GOLD DOOR",
                     title: "\(Membership.name) adds more of it",
-                    body: "Every room keeps a set of extra drills behind the lock, and the Master Tables hold the advanced ones. Nothing you have now goes away. Unlock any time from Home or Settings.",
+                    body: "Endless Practice deals hands that never run out, every room keeps a set of extra drills behind the lock, and the Master Tables hold the advanced ones. Nothing you have now goes away. Unlock any time from Home or Settings.",
                     hero: AnyView(proHero(locked: true)),
                     accentGold: true
                 ),
@@ -224,7 +224,7 @@ struct FeatureTourView: View {
                         .foregroundStyle(Theme.jade)
                 }
             }
-            ForEach(["Extra sets in every room", "Advanced play and defense", "Conventions and duplicate"], id: \.self) { line in
+            ForEach(["Endless Practice, never repeats", "Extra sets in every room", "Conventions and duplicate"], id: \.self) { line in
                 HStack(spacing: 8) {
                     Image(systemName: locked ? "sparkles" : "checkmark.circle.fill")
                         .font(.footnote)
