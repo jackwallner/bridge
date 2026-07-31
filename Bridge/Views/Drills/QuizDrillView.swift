@@ -90,6 +90,7 @@ struct QuizDrillView: View {
         selection = choiceIndex
         let correct = choiceIndex == shuffled.answerIndex
         progress.recordItem(id: question.id, correct: correct)
+        PracticeRecordStore.shared.record(itemID: question.id, roomID: DrillLibrary.roomID(forDrillID: drill.id), correct: correct)
         if correct {
             score += 1
             confettiTrigger += 1

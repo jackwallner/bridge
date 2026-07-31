@@ -112,6 +112,7 @@ struct PlayDrillView: View {
         }
         let correct = cardIndex == scenario.answerIndex
         progress.recordItem(id: scenario.id, correct: correct)
+        PracticeRecordStore.shared.record(itemID: scenario.id, roomID: DrillLibrary.roomID(forDrillID: drill.id), correct: correct)
         if correct {
             score += 1
             confettiTrigger += 1

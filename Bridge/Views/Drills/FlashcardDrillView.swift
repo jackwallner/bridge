@@ -218,6 +218,7 @@ struct FlashcardDrillView: View {
         choicePick = index
         let correct = index == choice.answerIndex
         progress.recordItem(id: card.id, correct: correct)
+        PracticeRecordStore.shared.record(itemID: card.id, roomID: DrillLibrary.roomID(forDrillID: drill.id), correct: correct)
         if correct {
             confettiTrigger += 1
             Haptics.correctAnswer()
@@ -329,6 +330,7 @@ struct FlashcardDrillView: View {
         } else {
             knewIt = gotIt
             progress.recordItem(id: card.id, correct: gotIt)
+            PracticeRecordStore.shared.record(itemID: card.id, roomID: DrillLibrary.roomID(forDrillID: drill.id), correct: gotIt)
         }
         lastSwipe = SwipeRecord(card: card, gotIt: knewIt)
         choicePick = nil

@@ -144,6 +144,10 @@ struct QuickSessionView: View {
         selection = pick
         let correct = pick == item.answerIndex
         progress.recordItem(id: item.id, correct: correct)
+        // Also feeds the spaced-repetition queue and the accuracy stats. The
+        // daily mix is where most answers happen, so leaving it out would mean
+        // Fix My Mistakes had almost nothing to work with.
+        PracticeRecordStore.shared.record(itemID: item.id, roomID: item.roomID, correct: correct)
         if correct {
             score += 1
             streak += 1

@@ -67,7 +67,10 @@ enum CategoryContent {
         ),
         HandMatchQuestion(
             id: "hand-one-diamond",
-            cards: [.s(.ace), .s(.eight), .s(.four), .h(.king), .h(.seven), .h(.three), .d(.ace), .d(.queen), .d(.nine), .d(.six), .c(.jack), .c(.five), .c(.two)],
+            // Shipped at 14 HCP with an explanation claiming 16, which made
+            // the graded answer (1NT) wrong: a balanced 14 opens the longer
+            // minor. The queen restores the hand the explanation describes.
+            cards: [.s(.ace), .s(.queen), .s(.four), .h(.king), .h(.seven), .h(.three), .d(.ace), .d(.queen), .d(.nine), .d(.six), .c(.jack), .c(.five), .c(.two)],
             choices: [.oneClub, .oneDiamond, .oneHeart, .oneNotrump],
             answer: .oneNotrump,
             explanation: "This balanced hand has 16 HCP, so open the descriptive 1NT rather than a minor."

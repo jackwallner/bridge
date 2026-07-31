@@ -363,6 +363,10 @@ struct OnboardingView: View {
     }
 
     private func finish() {
+        // A brand-new player has never run an older version, so there is
+        // nothing "new" to tell them. Stamping the baseline here is what keeps
+        // the update sheet off a fresh install.
+        WhatsNew.markCurrentAsBaseline()
         // RootView branches on this key, so setting it swaps Home in.
         progress.hasOnboarded = true
     }
