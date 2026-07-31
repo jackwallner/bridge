@@ -17,7 +17,19 @@ SAVUNMA ODASI
 Atakları, sekansları, üçüncü el oyununu, renk dönüşlerini ve ortaklık alışkanlıklarını çalışın.
 
 BRIDGE+ (OPSİYONEL)
-Yukarıdaki her şey ücretsiz kalmaya devam eder. Bridge+, her başlangıç odasına ekstra pratik ekler ve konvansiyonlar, ileri düzey kart oyunu ve duplicate stratejisi içeren Master Tables seçeneğini açar.
+Yukarıdaki her şey ücretsiz kalır. Bridge+ hiç bitmeyen alıştırma ekler:
+
+ENDLESS PRACTICE her seferinde anında üretilen 13 kartlık yeni bir el dağıtır, böylece açılış deklarasyonu alıştırmaları ne tekrarlanır ne de tükenir.
+
+FIX MY MISTAKES yanlış yaptıklarını hatırlar ve aralıklı bir programla geri getirir, böylece zayıf noktalar gerçekten kapanır.
+
+TIMED CHALLENGE sana doksan saniyelik karışık sorular ve kovalayacağın bir kişisel rekor verir.
+
+EK ALIŞTIRMA SETLERİ dört başlangıç odasının her birinde; hâlihazırda kullandığın aynı alıştırmalarda yeni sorular ve eller.
+
+THE MASTER TABLES, konvansiyonlar, ileri kart oyunu ve turnuva stratejisi ile.
+
+Yıl boyunca yeni alıştırmalar ekleniyor.
 
 ÖĞRENMEK İÇİN TASARLANDI
 Kaydırılabilir koçluk kartları, hızlı testler, gerçekçi 13 kartlık eller, kart oyunu senaryoları, seriler ve kaçırılan materyalleri geri getiren günlük karışık pratikler.

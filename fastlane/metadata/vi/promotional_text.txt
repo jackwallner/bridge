@@ -1,1 +1,1 @@
-Các bài tập chơi bridge năm phút để đấu thầu, chơi bài và phòng thủ. Học lý do đằng sau.
+Mới: Endless Practice chia một bộ bài mới mỗi lần, nên bài tập đấu giá không bao giờ lặp lại. Thêm phần ôn lại lỗi sai theo lịch và thử thách 90 giây.

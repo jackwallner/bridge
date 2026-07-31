@@ -1,9 +1,9 @@
-Practice that never runs out.
+끝나지 않는 연습.
 
-Endless Practice deals a fresh hand every time, so you can drill opening bids and point counting for as long as you like, with a full explanation after every answer.
+Endless Practice는 매번 새로운 핸드를 배분하므로 오프닝 비드와 점수 계산을 원하는 만큼 연습할 수 있습니다. 답을 낼 때마다 자세한 해설이 나옵니다.
 
-Fix My Mistakes now remembers what you got wrong and brings it back on a schedule, so weak spots actually close.
+Fix My Mistakes는 이제 틀린 문제를 기억했다가 일정에 맞춰 다시 내줍니다. 약점이 쌓이지 않고 실제로 메워집니다.
 
-Timed Challenge gives you ninety seconds and a personal best to chase.
+Timed Challenge는 90초 동안 도전하며 개인 최고 기록을 경신할 수 있습니다.
 
-Also new: an accuracy breakdown for every room, and more hand-written questions across the auction, declarer play, defense, and the Master Tables.
+또한 방별 정답률과 옥션, 디클레어러 플레이, 디펜스, Master Tables 전반에 걸친 직접 만든 문제가 추가되었습니다.
