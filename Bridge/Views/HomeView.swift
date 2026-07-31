@@ -11,8 +11,10 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject private var progress: ProgressStore
     @EnvironmentObject private var subscriptions: SubscriptionService
+    @StateObject private var records = PracticeRecordStore.shared
     @State private var showPaywall = false
     @State private var showSettings = false
+    @State private var showWhatsNew = false
     @State private var highlightedRoomID: String?
     @AppStorage("bridge.skillLevel") private var skillLevel = ""
     /// Set once the primer has been read all the way through. After that it
@@ -39,6 +41,7 @@ struct HomeView: View {
                         if showsPrimerCard {
                             howToPlayCard
                         }
+                        trainingSection
                         roomsHeading
                         ForEach(DrillLibrary.rooms) { room in
                             roomCard(room)
@@ -71,8 +74,32 @@ struct HomeView: View {
             .toolbarBackground(.hidden, for: .navigationBar)
             .sheet(isPresented: $showPaywall) { PaywallView() }
             .sheet(isPresented: $showSettings) { SettingsView() }
+            .sheet(isPresented: $showWhatsNew) {
+                if let release = WhatsNew.currentRelease {
+                    WhatsNewSheet(release: release) {
+                        showWhatsNew = false
+                        // The sheet cannot present the paywall while it is
+                        // dismissing, so hand off on the next runloop.
+                        Task { @MainActor in
+                            try? await Task.sleep(nanoseconds: 350_000_000)
+                            showPaywall = true
+                        }
+                    }
+                }
+            }
+            .task { presentWhatsNewIfNeeded() }
         }
         .tint(Theme.jade)
+    }
+
+    /// The post-update note, once. Deliberately deferred a beat so it lands on
+    /// a drawn Home rather than racing the first frame.
+    private func presentWhatsNewIfNeeded() {
+        guard WhatsNew.shouldPresent(hasOnboarded: progress.hasOnboarded) else { return }
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 500_000_000)
+            showWhatsNew = true
+        }
     }
 
     /// Consumes the one-shot recommendation hint: scrolls to and briefly
@@ -107,12 +134,21 @@ struct HomeView: View {
                     .foregroundStyle(Theme.inkSecondary)
             }
             Spacer(minLength: 8)
-            HStack(spacing: 8) {
-                statChip(value: progress.streakCount, icon: "flame.fill", color: Theme.coral,
-                         label: "\(progress.streakCount) day streak")
-                statChip(value: progress.totalSessions, icon: "checkmark.seal.fill", color: Theme.jade,
-                         label: "\(progress.totalSessions) drills done")
+            // The chips were already the honest summary of practice, so they
+            // are also the door to the full breakdown rather than yet another
+            // row competing with the rooms.
+            NavigationLink {
+                StatsView()
+            } label: {
+                HStack(spacing: 8) {
+                    statChip(value: progress.streakCount, icon: "flame.fill", color: Theme.coral,
+                             label: "\(progress.streakCount) day streak")
+                    statChip(value: progress.totalSessions, icon: "checkmark.seal.fill", color: Theme.jade,
+                             label: "\(progress.totalSessions) drills done")
+                }
             }
+            .buttonStyle(.plain)
+            .accessibilityHint("Opens your progress breakdown")
             .padding(.top, 4)
         }
         .padding(.top, 2)
@@ -227,6 +263,125 @@ struct HomeView: View {
             .themedCard(corner: 16)
         }
         .buttonStyle(PressableCardStyle())
+    }
+
+    // MARK: - Training modes
+
+    /// The three cross-cutting practice modes. They sit above the rooms
+    /// because they are what a returning player comes back FOR, but they ride
+    /// in one scrolling row of compact tiles rather than three full-width
+    /// cards: Home's job is still the rooms, and everything else earns its
+    /// space.
+    private var trainingSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text("TRAINING")
+                    .font(.caption.weight(.heavy))
+                    .kerning(1.4)
+                    .foregroundStyle(Theme.inkSecondary)
+                Spacer()
+            }
+            .padding(.horizontal, 4)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 10) {
+                    trainingTile(
+                        title: "Endless\nPractice",
+                        icon: "infinity",
+                        color: Theme.jade,
+                        badge: nil
+                    ) {
+                        EndlessPickerView()
+                    }
+                    trainingTile(
+                        title: "Timed\nChallenge",
+                        icon: "timer",
+                        color: Theme.coral,
+                        badge: records.bestChallengeScore > 0 ? "Best \(records.bestChallengeScore)" : nil
+                    ) {
+                        PracticeRunView(mode: .timed)
+                    }
+                    // Only offered when there is something to fix. An empty
+                    // review session is a dead end dressed up as a feature.
+                    if records.dueCount > 0 {
+                        trainingTile(
+                            title: "Fix My\nMistakes",
+                            icon: "arrow.trianglehead.counterclockwise",
+                            color: Theme.plum,
+                            badge: "\(records.dueCount) due"
+                        ) {
+                            PracticeRunView(
+                                mode: .review,
+                                items: SessionBuilder.reviewSession(
+                                    ids: records.reviewQueue(),
+                                    includePro: subscriptions.isPro
+                                )
+                            )
+                        }
+                    }
+                }
+                .padding(.horizontal, 4)
+                .padding(.vertical, 2)
+            }
+        }
+    }
+
+    /// A compact training tile. Locked for free players: tapping opens the
+    /// paywall instead of the mode, and the tile says so before it is tapped.
+    @ViewBuilder
+    private func trainingTile<Destination: View>(
+        title: String,
+        icon: String,
+        color: Color,
+        badge: String?,
+        @ViewBuilder destination: @escaping () -> Destination
+    ) -> some View {
+        let locked = !subscriptions.isPro
+        if locked {
+            Button { showPaywall = true } label: {
+                trainingTileLabel(title: title, icon: icon, color: color, badge: badge, locked: true)
+            }
+            .buttonStyle(PressableCardStyle())
+            .accessibilityHint("Included with \(Membership.name)")
+        } else {
+            NavigationLink { destination() } label: {
+                trainingTileLabel(title: title, icon: icon, color: color, badge: badge, locked: false)
+            }
+            .buttonStyle(PressableCardStyle())
+        }
+    }
+
+    private func trainingTileLabel(title: String, icon: String, color: Color, badge: String?, locked: Bool) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 4) {
+                Image(systemName: icon)
+                    .font(.title3.weight(.semibold))
+                    .foregroundStyle(color)
+                Spacer(minLength: 0)
+                if locked {
+                    Image(systemName: "lock.fill")
+                        .font(.caption2)
+                        .foregroundStyle(Theme.gold)
+                }
+            }
+            Spacer(minLength: 0)
+            Text(title)
+                .font(.subheadline.weight(.bold))
+                .foregroundStyle(Theme.ink)
+                .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
+            if let badge {
+                Text(badge)
+                    .font(.caption2.weight(.semibold))
+                    .foregroundStyle(color)
+            } else {
+                Text(locked ? Membership.name : " ")
+                    .font(.caption2.weight(.semibold))
+                    .foregroundStyle(Theme.gold)
+            }
+        }
+        .padding(12)
+        .frame(width: 128, height: 118, alignment: .leading)
+        .themedCard(corner: 16)
     }
 
     // MARK: - Rooms

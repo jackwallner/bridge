@@ -9,6 +9,7 @@ struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.requestReview) private var requestReview
     @State private var showPaywall = false
+    @State private var showWhatsNew = false
     @State private var showResetConfirm = false
     @State private var restoreMessage: String?
     /// Non-nil while the review funnel is up; the value is where it opens.
@@ -38,6 +39,17 @@ struct SettingsView: View {
                 }
             }
             .sheet(isPresented: $showPaywall) { PaywallView() }
+            .sheet(isPresented: $showWhatsNew) {
+                if let release = WhatsNew.currentRelease {
+                    WhatsNewSheet(release: release) {
+                        showWhatsNew = false
+                        Task { @MainActor in
+                            try? await Task.sleep(nanoseconds: 350_000_000)
+                            showPaywall = true
+                        }
+                    }
+                }
+            }
             .sheet(item: $reviewPromptStep) { step in
                 ReviewPromptSheet(initialStep: step) { outcome in
                     if outcome == .enjoyedMaybeLater { requestReview() }
@@ -62,7 +74,10 @@ struct SettingsView: View {
                 Text("Bridge Trainer can't send your daily reminder until notifications are turned on for it in iOS Settings.")
             }
             .alert("Reset all progress?", isPresented: $showResetConfirm) {
-                Button("Reset", role: .destructive) { progress.resetAll() }
+                Button("Reset", role: .destructive) {
+                    progress.resetAll()
+                    PracticeRecordStore.shared.resetAll()
+                }
                 Button("Cancel", role: .cancel) {}
             } message: {
                 Text("Your streak, completed drills, and practice history will be cleared. Purchases are not affected.")
@@ -96,6 +111,11 @@ struct SettingsView: View {
     /// something does.
     private var dataSection: some View {
         Section("Your Practice History") {
+            NavigationLink {
+                StatsView()
+            } label: {
+                Label("Your Progress", systemImage: "chart.bar.fill")
+            }
             Button("Reset Progress", role: .destructive) {
                 showResetConfirm = true
             }
@@ -136,6 +156,13 @@ struct SettingsView: View {
                 HowToPlayView()
             } label: {
                 Label("How to Play", systemImage: "book.fill")
+            }
+            if WhatsNew.currentRelease != nil {
+                Button {
+                    showWhatsNew = true
+                } label: {
+                    Label("What's New", systemImage: "sparkle")
+                }
             }
             Button {
                 reviewPromptStep = .reviewPitch

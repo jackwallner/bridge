@@ -27,6 +27,10 @@ extension View {
     }
 }
 
+/// Scroll target for the coaching note revealed on grading. Lives outside
+/// `QuestionPager` because a generic type cannot hold a static stored property.
+private let questionExplanationID = "question-explanation"
+
 /// Shared question scaffolding: prompt + cards + choices + explanation, the
 /// shape every choice-based drill uses (Quiz, Hand Match, Quick Session).
 struct QuestionPager<Choices: View>: View {
@@ -38,6 +42,7 @@ struct QuestionPager<Choices: View>: View {
 
     var body: some View {
         ScrollView {
+            ScrollViewReader { proxy in
             VStack(spacing: 20) {
                 Text(prompt)
                     .font(Theme.display(22))
@@ -59,16 +64,28 @@ struct QuestionPager<Choices: View>: View {
                     .padding(14)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(Theme.gold.opacity(0.12), in: RoundedRectangle(cornerRadius: 14))
+                    .id(questionExplanationID)
                 }
             }
             // Headroom so the winning row's pop and glow have somewhere to go.
             // A ScrollView clips its content, so a row that scales up to the
-            // full content width gets its sides sheared off (that was the
-            // "glitchy edges" on the correct answer).
+            // full content width would get its sides sheared off (that was the
+            // "glitchy edges" on the correct answer). The padding is what buys
+            // that room. Do NOT reach for `scrollClipDisabled()` instead: an
+            // unclipped scroll view draws its overflow straight through the
+            // navigation bar above and the drill's Next button below.
             .padding(.horizontal, 10)
+            .padding(.vertical, 10)
+            .onChange(of: answered) { _, isAnswered in
+                guard isAnswered else { return }
+                // Bring the coaching note into view rather than leaving it
+                // parked below the fold behind the Next button.
+                withAnimation(.easeOut(duration: 0.35)) {
+                    proxy.scrollTo(questionExplanationID, anchor: .bottom)
+                }
+            }
+            }
         }
-        // The pop can overshoot the scroll view's own bounds too.
-        .scrollClipDisabled()
     }
 }
 
