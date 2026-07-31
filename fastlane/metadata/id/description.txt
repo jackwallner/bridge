@@ -17,7 +17,17 @@ RUANG PERTAHANAN
 Latih lead pembuka, urutan kartu, permainan tangan ketiga (third-hand play), pengembalian suit, dan kebiasaan kemitraan.
 
 BRIDGE+ (OPSIONAL)
-Semua fitur di atas tetap gratis. Bridge+ menambahkan latihan ekstra di setiap ruang pemula dan membuka Master Tables, yang dilengkapi dengan konvensi, permainan kartu tingkat lanjut, dan strategi duplicate.
+Semua di atas tetap gratis. Bridge+ menambahkan latihan yang tidak pernah habis:
+
+ENDLESS PRACTICE membagikan kartu 13 lembar yang dibuat baru setiap kali, jadi latihan bidding pembuka tidak pernah berulang dan tidak pernah habis.
+
+FIX MY MISTAKES mengingat apa yang kamu jawab salah dan memunculkannya kembali sesuai jadwal berjarak, sehingga titik lemah benar-benar tertutup.
+
+TIMED CHALLENGE memberimu sembilan puluh detik pertanyaan campuran dan rekor pribadi untuk dikejar.
+
+SET LATIHAN TAMBAHAN di setiap dari empat ruangan pemula, dengan pertanyaan dan kartu baru dalam latihan yang sudah kamu pakai.
+
+THE MASTER TABLES, dengan konvensi, permainan kartu tingkat lanjut, dan strategi duplikat.
 
 DIRANCANG UNTUK BELAJAR
 Kartu pelatihan yang dapat digeser, kuis cepat, 13 kartu tangan yang realistis, skenario permainan kartu, streak latihan, dan sesi campuran harian yang memunculkan kembali materi yang salah.

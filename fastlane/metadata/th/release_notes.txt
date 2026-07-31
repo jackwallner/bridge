@@ -1,9 +1,9 @@
-Practice that never runs out.
+การฝึกที่ไม่มีวันหมด
 
-Endless Practice deals a fresh hand every time, so you can drill opening bids and point counting for as long as you like, with a full explanation after every answer.
+Endless Practice แจกไพ่ชุดใหม่ทุกครั้ง คุณจึงฝึกการเปิดประมูลและการนับแต้มได้นานเท่าที่ต้องการ พร้อมคำอธิบายเต็มหลังทุกคำตอบ
 
-Fix My Mistakes now remembers what you got wrong and brings it back on a schedule, so weak spots actually close.
+Fix My Mistakes จะจดจำข้อที่คุณตอบผิดและนำกลับมาถามใหม่ตามตาราง จุดอ่อนจึงถูกปิดได้จริง
 
-Timed Challenge gives you ninety seconds and a personal best to chase.
+Timed Challenge ให้เวลาคุณเก้าสิบวินาที พร้อมสถิติส่วนตัวให้ไล่ตาม
 
-Also new: an accuracy breakdown for every room, and more hand-written questions across the auction, declarer play, defense, and the Master Tables.
+ใหม่อีกด้วย: อัตราความแม่นยำของแต่ละห้อง และคำถามที่เขียนขึ้นเองเพิ่มเติมครอบคลุมการประมูล การเล่นของผู้เล่นหลัก การป้องกัน และ Master Tables
