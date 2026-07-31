@@ -33,15 +33,20 @@ struct PaywallContent: View {
                 Text("Get \(Membership.name)")
                     .font(Theme.display(28))
                     .foregroundStyle(Theme.ink)
-                Text("Everything you have stays free. \(Membership.name) adds more.")
+                Text("Everything you have stays free. \(Membership.name) adds practice that never runs out.")
                     .font(.subheadline)
                     .foregroundStyle(Theme.inkSecondary)
                     .multilineTextAlignment(.center)
             }
+            // Leads with the endless modes on purpose. Selling "more drills"
+            // is what let a motivated player finish the membership in two
+            // sittings; what they are actually buying now is practice that
+            // does not end.
             VStack(alignment: .leading, spacing: 9) {
-                benefit("Extra practice sets in every room")
-                benefit("The Master Tables: advanced play")
-                benefit("New drills all year")
+                benefit("Endless Practice: a fresh hand dealt every time")
+                benefit("Fix My Mistakes: misses come back until they stick")
+                benefit("Timed Challenge: 90 seconds, chase your best")
+                benefit("Extra practice sets in every room, plus the Master Tables")
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             planCards
