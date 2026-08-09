@@ -123,8 +123,17 @@ enum HandGenerator {
     /// is what keeps practice balanced: a purely random deal is a Pass more
     /// than half the time, and drilling Pass fifty times teaches nothing.
     static func hand(for target: HandCategory, attempts: Int = 400) -> GeneratedHand? {
+        var generator = SystemRandomNumberGenerator()
+        return hand(for: target, attempts: attempts, using: &generator)
+    }
+
+    static func hand<R: RandomNumberGenerator>(
+        for target: HandCategory,
+        attempts: Int = 400,
+        using generator: inout R
+    ) -> GeneratedHand? {
         for _ in 0..<attempts {
-            let cards = Array(fullDeck.shuffled().prefix(13)).racked
+            let cards = Array(fullDeck.shuffled(using: &generator).prefix(13)).racked
             guard opening(for: cards) == target else { continue }
             return GeneratedHand(cards: cards, answer: target, explanation: explain(cards, answer: target))
         }
@@ -134,17 +143,33 @@ enum HandGenerator {
     /// A batch of hands spread across the six answers, shuffled. Pass appears
     /// once per cycle like everything else rather than at its natural frequency.
     static func batch(count: Int) -> [GeneratedHand] {
+        var generator = SystemRandomNumberGenerator()
+        return batch(count: count, using: &generator)
+    }
+
+    /// A reproducible batch for a dated shared challenge. The same app build
+    /// and seed deal the same original hands on every device, which is what
+    /// lets every member answer the same Bridge Minute without a server.
+    static func batch(count: Int, seed: String) -> [GeneratedHand] {
+        var generator = StableSeededGenerator(seed: seed)
+        return batch(count: count, using: &generator)
+    }
+
+    private static func batch<R: RandomNumberGenerator>(
+        count: Int,
+        using generator: inout R
+    ) -> [GeneratedHand] {
         var hands: [GeneratedHand] = []
         var targets: [HandCategory] = []
         while targets.count < count {
-            targets += HandCategory.allCases.shuffled()
+            targets += HandCategory.allCases.shuffled(using: &generator)
         }
         for target in targets.prefix(count) {
-            if let hand = hand(for: target) {
+            if let hand = hand(for: target, using: &generator) {
                 hands.append(hand)
             }
         }
-        return hands.shuffled()
+        return hands.shuffled(using: &generator)
     }
 
     // MARK: - Explanation

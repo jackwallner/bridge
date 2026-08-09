@@ -11,7 +11,7 @@ enum ChoiceShuffle {
     /// original index that should render at `displayPosition`.
     static func permutation(count: Int, seed: String) -> [Int] {
         guard count > 1 else { return Array(0..<count) }
-        var generator = SeededGenerator(seed: seed)
+        var generator = StableSeededGenerator(seed: seed)
         var indices = Array(0..<count)
         indices.shuffle(using: &generator)
         return indices
@@ -30,7 +30,7 @@ enum ChoiceShuffle {
 
 /// FNV-1a backed generator: plain string hash, not Swift's per-process
 /// `Hasher`, so the same seed produces the same stream across launches.
-private struct SeededGenerator: RandomNumberGenerator {
+struct StableSeededGenerator: RandomNumberGenerator {
     private var state: UInt64
 
     init(seed: String) {

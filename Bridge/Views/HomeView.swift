@@ -11,10 +11,16 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject private var progress: ProgressStore
     @EnvironmentObject private var subscriptions: SubscriptionService
+    @EnvironmentObject private var settings: AppSettings
+    @EnvironmentObject private var router: AppRouter
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @StateObject private var records = PracticeRecordStore.shared
+    @StateObject private var minuteStore = BridgeMinuteStore.shared
+    @State private var path: [AppDestination] = []
     @State private var showPaywall = false
     @State private var showSettings = false
     @State private var showWhatsNew = false
+    @State private var pendingAfterUpgrade: AppDestination?
     @State private var highlightedRoomID: String?
     @AppStorage("bridge.skillLevel") private var skillLevel = ""
     /// Set once the primer has been read all the way through. After that it
@@ -28,33 +34,16 @@ struct HomeView: View {
     private var showsPrimerCard: Bool { skillLevel == "new" && !hasReadPrimer }
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ScrollViewReader { proxy in
                 ScrollView {
-                    VStack(spacing: 14) {
-                        header
-                        if progress.quickSessionCompletedToday() {
-                            getStartedDoneCard
-                        } else {
-                            getStartedCard
-                        }
-                        if showsPrimerCard {
-                            howToPlayCard
-                        }
-                        trainingSection
-                        roomsHeading
-                        ForEach(DrillLibrary.rooms) { room in
-                            roomCard(room)
-                        }
-                        if !subscriptions.isPro {
-                            upgradeCard
-                        }
-                        disclaimerFooter
-                    }
-                    .padding(.horizontal)
+                    homeContent
                     .padding(.bottom, 24)
                 }
-                .onAppear { consumeRecommendedRoomHint(proxy: proxy) }
+                .onAppear {
+                    consumeRecommendedRoomHint(proxy: proxy)
+                    consumePendingDestination()
+                }
                 .onChange(of: showSettings) { _, isShowing in
                     if !isShowing { consumeRecommendedRoomHint(proxy: proxy) }
                 }
@@ -72,6 +61,12 @@ struct HomeView: View {
                 }
             }
             .toolbarBackground(.hidden, for: .navigationBar)
+            .navigationDestination(for: AppDestination.self) { destination in
+                switch destination {
+                case .gameNightPrepSession:
+                    QuickSessionView(gameNightPrep: gameNightPrepItems)
+                }
+            }
             .sheet(isPresented: $showPaywall) { PaywallView() }
             .sheet(isPresented: $showSettings) { SettingsView() }
             .sheet(isPresented: $showWhatsNew) {
@@ -88,8 +83,100 @@ struct HomeView: View {
                 }
             }
             .task { presentWhatsNewIfNeeded() }
+            .onChange(of: router.pendingDestination) { _, _ in consumePendingDestination() }
+            .onChange(of: subscriptions.isPro) { _, isMember in
+                if isMember {
+                    if let pendingAfterUpgrade {
+                        self.pendingAfterUpgrade = nil
+                        path = [pendingAfterUpgrade]
+                    } else {
+                        consumePendingDestination()
+                    }
+                } else if settings.gameNightReminderEnabled {
+                    settings.gameNightReminderEnabled = false
+                }
+            }
+            .onChange(of: showPaywall) { _, isShowing in
+                if !isShowing, !subscriptions.isPro { pendingAfterUpgrade = nil }
+            }
         }
         .tint(Theme.jade)
+    }
+
+    @ViewBuilder
+    private var homeContent: some View {
+        if horizontalSizeClass == .regular {
+            VStack(spacing: 18) {
+                header
+                HStack(alignment: .top, spacing: 20) {
+                    todayColumn
+                    roomsColumn
+                }
+                disclaimerFooter
+            }
+            .padding(.horizontal, 24)
+            .frame(maxWidth: Theme.wideContentWidth)
+            .frame(maxWidth: .infinity)
+        } else {
+            VStack(spacing: 14) {
+                header
+                todaySession
+                if showsPrimerCard { howToPlayCard }
+                trainingSection
+                roomsColumn
+                if !subscriptions.isPro { upgradeCard }
+                disclaimerFooter
+            }
+            .padding(.horizontal)
+        }
+    }
+
+    private var todayColumn: some View {
+        VStack(spacing: 14) {
+            todaySession
+            if showsPrimerCard { howToPlayCard }
+            trainingSection
+            if !subscriptions.isPro { upgradeCard }
+        }
+        .frame(maxWidth: .infinity, alignment: .top)
+    }
+
+    private var roomsColumn: some View {
+        VStack(spacing: 14) {
+            roomsHeading
+            ForEach(DrillLibrary.rooms) { room in
+                roomCard(room)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .top)
+    }
+
+    @ViewBuilder
+    private var todaySession: some View {
+        if progress.quickSessionCompletedToday() {
+            getStartedDoneCard
+        } else {
+            getStartedCard
+        }
+    }
+
+    private var gameNightPrepItems: [QuickItem] {
+        SessionBuilder.gameNightPrep(
+            seen: progress.seenItems,
+            missed: progress.missedItems,
+            dueIDs: records.reviewQueue(),
+            weakestRoomID: records.weakestRoom()?.id
+        )
+    }
+
+    private func consumePendingDestination() {
+        guard let destination = router.consumePendingDestination() else { return }
+        guard subscriptions.isPro else {
+            pendingAfterUpgrade = destination
+            showPaywall = true
+            return
+        }
+        path = [destination]
     }
 
     /// The post-update note, once. Deliberately deferred a beat so it lands on
@@ -267,7 +354,7 @@ struct HomeView: View {
 
     // MARK: - Training modes
 
-    /// The three cross-cutting practice modes. They sit above the rooms
+    /// The cross-cutting practice modes. They sit above the rooms
     /// because they are what a returning player comes back FOR, but they ride
     /// in one scrolling row of compact tiles rather than three full-width
     /// cards: Home's job is still the rooms, and everything else earns its
@@ -282,45 +369,73 @@ struct HomeView: View {
                 Spacer()
             }
             .padding(.horizontal, 4)
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
-                    trainingTile(
-                        title: "Endless\nPractice",
-                        icon: "infinity",
-                        color: Theme.jade,
-                        badge: nil
-                    ) {
-                        EndlessPickerView()
-                    }
-                    trainingTile(
-                        title: "Timed\nChallenge",
-                        icon: "timer",
-                        color: Theme.coral,
-                        badge: records.bestChallengeScore > 0 ? "Best \(records.bestChallengeScore)" : nil
-                    ) {
-                        PracticeRunView(mode: .timed)
-                    }
-                    // Only offered when there is something to fix. An empty
-                    // review session is a dead end dressed up as a feature.
-                    if records.dueCount > 0 {
-                        trainingTile(
-                            title: "Fix My\nMistakes",
-                            icon: "arrow.trianglehead.counterclockwise",
-                            color: Theme.plum,
-                            badge: "\(records.dueCount) due"
-                        ) {
-                            PracticeRunView(
-                                mode: .review,
-                                items: SessionBuilder.reviewSession(
-                                    ids: records.reviewQueue(),
-                                    includePro: subscriptions.isPro
-                                )
-                            )
-                        }
-                    }
+            if horizontalSizeClass == .regular {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: 10)], spacing: 10) {
+                    trainingTiles
                 }
                 .padding(.horizontal, 4)
-                .padding(.vertical, 2)
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        trainingTiles
+                    }
+                    .padding(.horizontal, 4)
+                    .padding(.vertical, 2)
+                }
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var trainingTiles: some View {
+        trainingTile(
+            title: "Endless\nPractice",
+            icon: "infinity",
+            color: Theme.jade,
+            badge: nil
+        ) {
+            EndlessPickerView()
+        }
+        trainingTile(
+            title: "Bridge\nMinute",
+            icon: "calendar.badge.clock",
+            color: Theme.coral,
+            badge: minuteStore.result(for: Date()).map { "\($0.score)/\($0.total) today" } ?? "Daily"
+        ) {
+            BridgeMinuteView()
+        }
+        trainingTile(
+            title: "Game Night\nPrep",
+            icon: "person.2.fill",
+            color: Theme.plum,
+            badge: settings.gameNightReminderEnabled ? settings.gameNightDay.displayName : "Weekly"
+        ) {
+            GameNightPrepView()
+        }
+        trainingTile(
+            title: "Timed\nChallenge",
+            icon: "timer",
+            color: Theme.coral,
+            badge: records.bestChallengeScore > 0 ? "Best \(records.bestChallengeScore)" : nil
+        ) {
+            PracticeRunView(mode: .timed)
+        }
+        // Only offered when there is something to fix. An empty review
+        // session is a dead end dressed up as a feature.
+        if records.dueCount > 0 {
+            trainingTile(
+                title: "Fix My\nMistakes",
+                icon: "arrow.trianglehead.counterclockwise",
+                color: Theme.plum,
+                badge: "\(records.dueCount) due"
+            ) {
+                PracticeRunView(
+                    mode: .review,
+                    items: SessionBuilder.reviewSession(
+                        ids: records.reviewQueue(),
+                        includePro: subscriptions.isPro
+                    )
+                )
             }
         }
     }
@@ -380,7 +495,8 @@ struct HomeView: View {
             }
         }
         .padding(12)
-        .frame(width: 128, height: 118, alignment: .leading)
+        .frame(width: horizontalSizeClass == .regular ? nil : 128, height: 118, alignment: .leading)
+        .frame(maxWidth: horizontalSizeClass == .regular ? .infinity : nil, alignment: .leading)
         .themedCard(corner: 16)
     }
 
@@ -471,7 +587,7 @@ struct HomeView: View {
                     Text("Get \(Membership.name)")
                         .font(.headline)
                         .foregroundStyle(Theme.ink)
-                    Text("Endless Practice, timed challenges, and \(lockedDrillCount) more drills across every room")
+                    Text("Bridge Minute, Game Night Prep, endless modes, and \(lockedDrillCount) more drills across every room")
                         .font(.caption)
                         .foregroundStyle(Theme.inkSecondary)
                         .multilineTextAlignment(.leading)

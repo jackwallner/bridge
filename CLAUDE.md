@@ -1,12 +1,14 @@
 # Bridge Trainer Project Guide
 
-Bridge Trainer is a contract bridge drill app for newer players. It teaches card basics, Standard American opening bids, declarer play, and defense through short practice sessions. The XcodeGen project and scheme are `Bridge`; the dedicated headless simulator is `agent-bridge`.
+Bridge Trainer is a contract bridge drill app for newer players. It teaches card basics, Standard American opening bids, declarer play, and defense through short practice sessions. The XcodeGen project and scheme are `Bridge`; runtime checks use a checked-out shared agent-sim group.
 
 ## Build and test
 
 ```bash
 xcodegen generate
-xcodebuild test -project Bridge.xcodeproj -scheme Bridge -destination 'platform=iOS Simulator,name=agent-bridge'
+UDID=$(agent-sim checkout bridge)
+trap 'agent-sim checkin bridge' EXIT
+xcodebuild test -project Bridge.xcodeproj -scheme Bridge -destination "id=$UDID"
 ```
 
 Never open Simulator.app. After app-code pushes, run `./scripts/testflight.sh`.
@@ -77,3 +79,56 @@ Fastlane metadata is under `fastlane/metadata/en-US`. ASC setup and readiness sc
 
 ## Subagent delegation
 Follow the global CLAUDE.md subagent rules: ask Jack for the model before spawning, spawn at most one at a time unless Jack explicitly approves more, and never allow a subagent to spawn another subagent.
+
+## Game-night rhythm (1.2)
+
+Bridge+ owns two recurring rituals. `BridgeMinuteContent` deterministically
+builds the same five questions for every member on a local calendar day: two
+generated opening calls, one declarer decision, and two defensive judgments.
+Results and a 30-day archive stay on device in `BridgeMinuteStore`; sharing uses
+the system share sheet and needs no account or leaderboard.
+
+The declarer question is built straight from the authored `PlayScenario`s, NOT
+through `SessionBuilder.choiceItems`. The quick-session pool deliberately
+excludes Play drills, so drawing the daily from it silently produced a
+four-question challenge with no declarer play in it at all.
+
+`GameNightPrepView` stores a weekly bridge night in `AppSettings`, schedules a
+local notification, and opens directly into `SessionBuilder.gameNightPrep`,
+which prioritizes due mistakes, misses, the weakest room, and unseen member
+content in that order. Both features are entirely Bridge+ gated.
+
+## iPad (1.2)
+
+iPad support is free: `TARGETED_DEVICE_FAMILY "1,2"`, portrait and landscape,
+adaptive Home columns, drill grids, and readable content widths.
+
+Every drill body is a scroll view, so a question that underfills the viewport
+was pinned to the top and left the bottom half of a 13-inch iPad empty.
+`CenteringScrollView` centres short content and leaves taller content scrolling
+untouched (minHeight, not height). Keep its `maxWidth: .infinity`: a plain
+ScrollView centres narrow content for you, an explicitly framed one does not.
+The room eyebrow lives INSIDE `QuestionPager` so it centres with the question,
+and the flashcard deck is capped at 520pt wide so a card still looks like a
+card.
+
+## Screenshots
+
+`scripts/capture-screenshots.sh <udid> <out-dir> [prefix]` drives the real app
+through the App Store screens via the `Screenshots` scheme.
+`scripts/with-ipad-sim.sh` creates a throwaway 13-inch iPad (App Store iPad
+shots must be 2064x2752 and the agent-sim pool has no iPad Pro), boots it
+headless, and deletes it on exit:
+
+```bash
+./scripts/with-ipad-sim.sh sh -c './scripts/capture-screenshots.sh "$IPAD_UDID" out ipad_'
+```
+
+Gotchas baked into the test: the What's New sheet covers Home on the first
+launch after a version bump and comes back every time Home reappears, so the
+script passes the marketing version in through
+`TEST_RUNNER_SCREENSHOT_APP_VERSION` and the test marks it seen; returning to
+the root only taps navigation-bar button 0 while a back button is there,
+because on Home that button is the Settings gear; and the test never calls
+XCTFail, because a failing UI test spends ten minutes collecting simulator
+diagnostics first.

@@ -9,6 +9,11 @@ enum AppStoreLinks {
     /// only risks sending a UK player to the US store.
     static let writeReviewURL = URL(string: "https://apps.apple.com/app/id\(appStoreID)?action=write-review")!
 
+    /// The plain product page, for share text. The write-review URL above
+    /// would drop a friend straight into a rating form for an app they have
+    /// never opened.
+    static let productURL = URL(string: "https://apps.apple.com/app/id\(appStoreID)")!
+
     static let feedbackEmail = "jackwallner+b@gmail.com"
 }
 

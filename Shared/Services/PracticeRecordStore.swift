@@ -16,6 +16,9 @@ struct PracticeRecord: Codable, Sendable {
     var intervalDays: Double = 0
     var ease: Double = 2.5
     var roomID: String = ""
+    /// Optional for backward-compatible decoding of records written before
+    /// generated daily prompts existed.
+    var reviewSuppressed: Bool?
 
     var accuracy: Double {
         attempts == 0 ? 0 : Double(correct) / Double(attempts)
@@ -25,7 +28,7 @@ struct PracticeRecord: Codable, Sendable {
 
     /// True while the item still needs work: it has been missed at least once
     /// and has not yet been answered right twice running.
-    var needsReview: Bool { attempts > correct && streak < 2 }
+    var needsReview: Bool { reviewSuppressed != true && attempts > correct && streak < 2 }
 }
 
 /// Per-item practice history, the spaced-repetition queue built on top of it,
@@ -63,13 +66,20 @@ final class PracticeRecordStore: ObservableObject {
     /// an endless mode mints a new id every question, and storing each one
     /// would grow this dictionary without bound and drown the real items in
     /// the review queue.
-    func record(itemID: String, roomID: String, correct: Bool, now: Date = Date()) {
+    func record(
+        itemID: String,
+        roomID: String,
+        correct: Bool,
+        isReviewable: Bool = true,
+        now: Date = Date()
+    ) {
         let key = PracticeSkill.skill(forItemID: itemID).map(\.rawValue) ?? itemID
         let isGenerated = PracticeSkill.skill(forItemID: itemID) != nil
 
         var record = records[key] ?? PracticeRecord()
         record.attempts += 1
         record.roomID = roomID
+        record.reviewSuppressed = !isReviewable || isGenerated
         record.lastAnswered = now
         if correct {
             record.correct += 1
@@ -79,7 +89,7 @@ final class PracticeRecordStore: ObservableObject {
         }
         // Generated questions never repeat, so scheduling one for review is
         // meaningless. They contribute to accuracy stats only.
-        if !isGenerated {
+        if isReviewable && !isGenerated {
             schedule(&record, correct: correct, now: now)
         }
         records[key] = record

@@ -38,12 +38,25 @@ struct QuestionPager<Choices: View>: View {
     let cards: [BridgeCard]
     let explanation: String
     let answered: Bool
+    /// The room/source eyebrow. It belongs INSIDE the pager so it centres with
+    /// the question: pinned above it on an iPad, the eyebrow sat alone at the
+    /// top with a hand's width of empty cream between it and the prompt.
+    var eyebrow: String? = nil
     @ViewBuilder let choices: () -> Choices
 
     var body: some View {
-        ScrollView {
+        // Centring, not top-aligned: on a 13-inch iPad a four-choice question
+        // used to sit in the top quarter of the screen. See CenteringScrollView.
+        CenteringScrollView {
             ScrollViewReader { proxy in
             VStack(spacing: 20) {
+                if let eyebrow {
+                    Text(eyebrow)
+                        .font(.caption2.weight(.heavy))
+                        .kerning(1.4)
+                        .foregroundStyle(Theme.inkTertiary)
+                        .padding(.bottom, -8)
+                }
                 Text(prompt)
                     .font(Theme.display(22))
                     .foregroundStyle(Theme.ink)
