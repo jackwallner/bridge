@@ -53,11 +53,26 @@ struct FlashcardDrillView: View {
         VStack(spacing: 14) {
             header
             GeometryReader { geo in
-                deck(size: geo.size)
+                // A card should still look like a card. Unbounded, the deck
+                // stretches to whatever height it is given, which on a 13-inch
+                // iPad is a playing card two feet tall with its text marooned
+                // in the middle. 520pt keeps it close to the proportions the
+                // face was designed at, and the capped size is also what the
+                // fling distance is measured against.
+                let width = min(geo.size.width, 520)
+                let capped = CGSize(
+                    width: width,
+                    height: min(geo.size.height, width * 1.5)
+                )
+                deck(size: capped)
+                    .frame(width: capped.width, height: capped.height)
+                    .frame(width: geo.size.width, height: geo.size.height)
             }
             .padding(.horizontal, 4)
         }
         .padding()
+        .frame(maxWidth: Theme.readableContentWidth)
+        .frame(maxWidth: .infinity)
         .background(Theme.background)
         .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.42)) }
         .navigationTitle(drill.title)

@@ -28,11 +28,11 @@ targets:
         PRODUCT_MODULE_NAME: Bridge
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        MARKETING_VERSION: "1.1"
+        MARKETING_VERSION: "1.2.0"
         CURRENT_PROJECT_VERSION: "9"
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: Bridge/Info.plist
-        TARGETED_DEVICE_FAMILY: "1"
+        TARGETED_DEVICE_FAMILY: "1,2"
     dependencies:
       - package: RevenueCat
 
@@ -47,6 +47,21 @@ targets:
       base:
         GENERATE_INFOPLIST_FILE: YES
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Bridge Trainer.app/Bridge Trainer"
+
+  # App Store screenshot capture. Deliberately NOT in the Bridge scheme's test
+  # action: it drives the real UI and takes a minute, and the unit-test loop
+  # should stay instant. Drive it with scripts/capture-screenshots.sh.
+  BridgeScreenshots:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: BridgeScreenshots
+    dependencies:
+      - target: Bridge
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: Bridge
 
 schemes:
   Bridge:
@@ -66,3 +81,13 @@ schemes:
       config: Debug
     archive:
       config: Release
+
+  Screenshots:
+    build:
+      targets:
+        Bridge: all
+        BridgeScreenshots: [test]
+    test:
+      config: Debug
+      targets:
+        - BridgeScreenshots

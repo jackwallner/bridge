@@ -26,7 +26,7 @@ struct PlayDrillView: View {
         VStack(spacing: 16) {
             ProgressView(value: Double(index), total: Double(scenarios.count))
                 .tint(Theme.jade)
-            ScrollView {
+            CenteringScrollView {
                 VStack(spacing: 20) {
                     Text(scenario.situation)
                         .font(Theme.display(21, weight: .semibold))
@@ -73,6 +73,8 @@ struct PlayDrillView: View {
             }
         }
         .padding()
+        .frame(maxWidth: Theme.readableContentWidth)
+        .frame(maxWidth: .infinity)
         .background(Theme.background)
         .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.35)) }
         .navigationTitle(drill.title)

@@ -26,6 +26,8 @@ struct StatsView: View {
             }
             .padding(.horizontal)
             .padding(.bottom, 24)
+            .frame(maxWidth: Theme.readableContentWidth)
+            .frame(maxWidth: .infinity)
         }
         .background(Theme.background)
         .navigationTitle("Your Progress")

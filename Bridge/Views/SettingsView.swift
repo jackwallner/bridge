@@ -77,6 +77,7 @@ struct SettingsView: View {
                 Button("Reset", role: .destructive) {
                     progress.resetAll()
                     PracticeRecordStore.shared.resetAll()
+                    BridgeMinuteStore.shared.resetAll()
                 }
                 Button("Cancel", role: .cancel) {}
             } message: {
@@ -102,6 +103,13 @@ struct SettingsView: View {
             Toggle("Daily Reminder", isOn: $settings.reminderEnabled)
             if settings.reminderEnabled {
                 DatePicker("Reminder Time", selection: $settings.reminderTime, displayedComponents: .hourAndMinute)
+            }
+            if subscriptions.isPro {
+                NavigationLink {
+                    GameNightPrepView()
+                } label: {
+                    Label("Game Night Prep", systemImage: "person.2.fill")
+                }
             }
         }
     }

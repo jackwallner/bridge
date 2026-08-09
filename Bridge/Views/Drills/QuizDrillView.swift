@@ -55,6 +55,8 @@ struct QuizDrillView: View {
             ))
         }
         .padding()
+        .frame(maxWidth: Theme.readableContentWidth)
+        .frame(maxWidth: .infinity)
         .background(Theme.background)
         .drillStage(answerRect: $answerRect)
         .overlay {

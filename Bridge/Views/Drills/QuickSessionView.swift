@@ -1,5 +1,21 @@
 import SwiftUI
 
+private enum QuickSessionPurpose {
+    case quickSession(isDaily: Bool)
+    case bridgeMinute(BridgeMinuteChallenge)
+    case gameNightPrep
+
+    var drill: Drill {
+        switch self {
+        case .quickSession: return SessionBuilder.sessionDrill
+        case .bridgeMinute: return BridgeMinuteContent.drill
+        case .gameNightPrep: return SessionBuilder.gameNightPrepDrill
+        }
+    }
+
+    var navigationTitle: String { drill.title }
+}
+
 /// The Get Started session: a short, UNIFORM run of single-select choice
 /// items pulled from across the rooms. Every item follows the same beat -
 /// pick, grade immediately, the correct answer highlights and HOLDS, then an
@@ -23,20 +39,35 @@ struct QuickSessionView: View {
     /// Home's daily session spends the day's Get Started; the onboarding tour's
     /// demo run does not, so a brand-new player still finds a fresh Get Started
     /// waiting the first time they reach Home.
-    private let isDaily: Bool
+    private let purpose: QuickSessionPurpose
 
     init(items: [QuickItem], isDaily: Bool = true, onClose: (() -> Void)? = nil) {
         _items = State(initialValue: items)
-        self.isDaily = isDaily
+        purpose = .quickSession(isDaily: isDaily)
+        self.onClose = onClose
+    }
+
+    init(bridgeMinute challenge: BridgeMinuteChallenge, onClose: (() -> Void)? = nil) {
+        _items = State(initialValue: challenge.items)
+        purpose = .bridgeMinute(challenge)
+        self.onClose = onClose
+    }
+
+    init(gameNightPrep items: [QuickItem], onClose: (() -> Void)? = nil) {
+        _items = State(initialValue: items)
+        purpose = .gameNightPrep
         self.onClose = onClose
     }
 
     @EnvironmentObject private var progress: ProgressStore
+    @StateObject private var minuteStore = BridgeMinuteStore.shared
 
     @State private var index = 0
     @State private var score = 0
     @State private var finished = false
     @State private var selection: Int?
+    @State private var answers: [Bool] = []
+    @State private var minuteResult: BridgeMinuteResult?
 
     @State private var confettiTrigger = 0
     @State private var confettiParticleCount = 30
@@ -53,9 +84,18 @@ struct QuickSessionView: View {
 
     var body: some View {
         if finished || items.isEmpty {
-            DrillCompleteView(drill: SessionBuilder.sessionDrill, score: score, total: items.count, onDone: onClose)
+            completion
         } else {
             drillBody
+        }
+    }
+
+    @ViewBuilder
+    private var completion: some View {
+        if case .bridgeMinute = purpose, let minuteResult {
+            BridgeMinuteResultView(result: minuteResult, recordsCompletion: true, onDone: onClose)
+        } else {
+            DrillCompleteView(drill: purpose.drill, score: score, total: items.count, onDone: onClose)
         }
     }
 
@@ -67,15 +107,12 @@ struct QuickSessionView: View {
             ProgressView(value: Double(index), total: Double(items.count))
                 .tint(Theme.jade)
             VStack(spacing: 12) {
-                Text(item.sourceLabel.uppercased())
-                    .font(.caption2.weight(.heavy))
-                    .kerning(1.4)
-                    .foregroundStyle(Theme.inkTertiary)
                 QuestionPager(
                     prompt: item.prompt,
                     cards: item.cards,
                     explanation: item.explanation,
-                    answered: answered
+                    answered: answered,
+                    eyebrow: item.sourceLabel.uppercased()
                 ) {
                     ChoiceList(labels: item.choices, selection: selection, answerIndex: item.answerIndex) { pick in
                         grade(pick)
@@ -90,6 +127,8 @@ struct QuickSessionView: View {
             ))
         }
         .padding()
+        .frame(maxWidth: Theme.readableContentWidth)
+        .frame(maxWidth: .infinity)
         .background(Theme.background)
         .drillStage(answerRect: $answerRect)
         .overlay { Theme.bamGreen.opacity(flashOpacity).allowsHitTesting(false).ignoresSafeArea() }
@@ -108,7 +147,7 @@ struct QuickSessionView: View {
                     .transition(.move(edge: .top).combined(with: .opacity))
             }
         }
-        .navigationTitle("Quick Session")
+        .navigationTitle(purpose.navigationTitle)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             if let onClose {
@@ -143,11 +182,19 @@ struct QuickSessionView: View {
         guard selection == nil else { return }
         selection = pick
         let correct = pick == item.answerIndex
-        progress.recordItem(id: item.id, correct: correct)
+        answers.append(correct)
+        if item.isReviewable {
+            progress.recordItem(id: item.id, correct: correct)
+        }
         // Also feeds the spaced-repetition queue and the accuracy stats. The
         // daily mix is where most answers happen, so leaving it out would mean
         // Fix My Mistakes had almost nothing to work with.
-        PracticeRecordStore.shared.record(itemID: item.id, roomID: item.roomID, correct: correct)
+        PracticeRecordStore.shared.record(
+            itemID: item.trackingID,
+            roomID: item.roomID,
+            correct: correct,
+            isReviewable: item.isReviewable
+        )
         if correct {
             score += 1
             streak += 1
@@ -199,7 +246,14 @@ struct QuickSessionView: View {
     }
 
     private func finishSession() {
-        if isDaily { progress.markQuickSessionCompleted() }
+        switch purpose {
+        case .quickSession(let isDaily):
+            if isDaily { progress.markQuickSessionCompleted() }
+        case .bridgeMinute(let challenge):
+            minuteResult = minuteStore.record(challenge: challenge, answers: answers)
+        case .gameNightPrep:
+            break
+        }
         withAnimation(.easeInOut(duration: 0.3)) { finished = true }
     }
 

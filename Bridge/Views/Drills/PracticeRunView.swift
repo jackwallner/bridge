@@ -105,15 +105,12 @@ struct PracticeRunView: View {
         VStack(spacing: 16) {
             statusBar
             VStack(spacing: 12) {
-                Text(item.sourceLabel.uppercased())
-                    .font(.caption2.weight(.heavy))
-                    .kerning(1.4)
-                    .foregroundStyle(Theme.inkTertiary)
                 QuestionPager(
                     prompt: item.prompt,
                     cards: item.cards,
                     explanation: item.explanation,
-                    answered: answered
+                    answered: answered,
+                    eyebrow: item.sourceLabel.uppercased()
                 ) {
                     ChoiceList(labels: item.choices, selection: selection, answerIndex: item.answerIndex) { pick in
                         grade(pick)
@@ -128,6 +125,8 @@ struct PracticeRunView: View {
             ))
         }
         .padding()
+        .frame(maxWidth: Theme.readableContentWidth)
+        .frame(maxWidth: .infinity)
         .background(Theme.background)
         .drillStage(answerRect: $answerRect)
         .overlay { Theme.bamGreen.opacity(flashOpacity).allowsHitTesting(false).ignoresSafeArea() }

@@ -41,6 +41,32 @@ enum WhatsNew {
 
     static let releases: [WhatsNewRelease] = [
         WhatsNewRelease(
+            version: "1.2.0",
+            headline: "A smarter rhythm for the table",
+            items: [
+                WhatsNewItem(
+                    id: "bridge-minute",
+                    icon: "calendar.badge.clock",
+                    title: "Bridge Minute",
+                    body: "Take the same five-question challenge as every other member, share your score, and keep a forgiving five-day weekly rhythm.",
+                    isPlus: true
+                ),
+                WhatsNewItem(
+                    id: "game-night-prep",
+                    icon: "person.2.fill",
+                    title: "Game Night Prep",
+                    body: "Choose your usual bridge night and get a five-minute session built from your mistakes and weakest room when it matters.",
+                    isPlus: true
+                ),
+                WhatsNewItem(
+                    id: "ipad",
+                    icon: "ipad.landscape",
+                    title: "Made for iPad",
+                    body: "Practice at the table with a native iPad layout in portrait or landscape."
+                ),
+            ]
+        ),
+        WhatsNewRelease(
             version: "1.1",
             headline: "Practice that never runs out",
             items: [
