@@ -11,3 +11,8 @@ All four beginner rooms are free. Bridge+ adds one extra practice set in each ro
 The app uses a beginner Standard American framework. Bridge conventions are partnership agreements, and the app states this in Settings and on Home.
 
 To review purchases, open Settings, choose Get Bridge+, and use Apple sandbox purchasing. Restore Purchases is available on the same screen.
+
+PRICE DISCLOSURE (GUIDELINE 3.1.2(c))
+The total billed amount is the most clear and conspicuous pricing element on both purchase surfaces, and every amount shown is the localized StoreKit price for the reviewer's storefront. Nothing is hardcoded, so no figure can disagree with what Apple charges; if the product has not loaded yet, the screen shows a loading placeholder and the disclosure omits the amount rather than quoting one.
+
+The onboarding offer buys the Monthly plan, and the disclosure under that button names the monthly plan and its billed amount. The in-app paywall defaults to Yearly and shows the yearly amount, its per-month equivalent, and the monthly plan's own price struck through beside it, so the saving is stated rather than implied. Free-trial and introductory references stay in a smaller, secondary font beneath the billed amount.
