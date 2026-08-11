@@ -1,6 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Generate high-quality ASO-optimized localized App Store metadata for all 50 locales with strict validation."""
+"""Generate high-quality ASO-optimized localized App Store metadata for all 50 locales with strict validation.
+
+STALE WARNING (2026-08-11): the copy baked into this file still quotes the
+pre-raise prices ($1.99 / $9.99 / $29.99) in its subscription paragraphs.
+fastlane/metadata/ is now the source of truth and is deliberately price-free:
+Guideline 3.1.2 is enforced in the binary, the product page renders the real
+per-territory price, and a figure in a description is true in at most one of
+175 storefronts once a PPP ladder is applied. Running this as-is would put
+wrong prices back into all 50 locales. Strip the price sentences here before
+using it again.
+"""
 
 import os
 import json
