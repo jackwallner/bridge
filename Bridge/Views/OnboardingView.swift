@@ -227,8 +227,10 @@ struct OnboardingView: View {
     /// One concise line, matching the approved fleet pattern (StatScout): trial
     /// length, price, that it renews, how to cancel. The EULA behind the Terms
     /// link carries the full legalese; this is the point-of-purchase micro copy.
-    private var yearlyDisclosure: String {
-        let price = PaywallPricing.price(subscriptions, .yearly)
+    private var monthlyDisclosure: String {
+        guard let price = PaywallPricing.price(subscriptions, .monthly) else {
+            return "Includes 7 days free. Auto-renews until canceled."
+        }
         return "7 days free, then \(price). Auto-renews until canceled."
     }
 
@@ -258,7 +260,7 @@ struct OnboardingView: View {
             // billed amount inline rather than as a separate display-size
             // price line, matching Mahj's approved onboarding; the full
             // plan-picker paywall still shows the conspicuous amount.
-            Text(yearlyDisclosure)
+            Text(monthlyDisclosure)
                 .font(.caption2)
                 .foregroundStyle(Theme.inkTertiary)
                 .multilineTextAlignment(.center)
@@ -326,12 +328,12 @@ struct OnboardingView: View {
         Task {
             defer { purchasing = false }
             await subscriptions.ensureOfferings()
-            guard let yearly = subscriptions.package(for: .yearly) else {
+            guard let monthly = subscriptions.package(for: .monthly) else {
                 showPaywallFallback = true
                 return
             }
             do {
-                let outcome = try await subscriptions.purchase(yearly)
+                let outcome = try await subscriptions.purchase(monthly)
                 switch outcome {
                 case .purchased:
                     startTour()

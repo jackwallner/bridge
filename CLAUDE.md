@@ -17,9 +17,9 @@ Never open Simulator.app. After app-code pushes, run `./scripts/testflight.sh`.
 
 - Bundle ID: `com.jackwallner.bridge`
 - RevenueCat entitlement: `Bridge+`
-- Monthly: `com.jackwallner.bridge.monthly`, $1.99
-- Yearly: `com.jackwallner.bridge.yearly`, $9.99
-- Lifetime: `com.jackwallner.bridge.lifetime`, $29.99
+- Monthly: `com.jackwallner.bridge.monthly`, $8.99
+- Yearly: `com.jackwallner.bridge.yearly`, $34.99
+- Lifetime: `com.jackwallner.bridge.lifetime`, $79.99
 - Membership name: Bridge+
 
 RevenueCat is deliberately disabled in simulator builds. The public SDK key lives in `Shared/Services/SubscriptionService.swift`. App Store Connect credentials come from `~/.baseball_credentials` and must never be printed or committed.

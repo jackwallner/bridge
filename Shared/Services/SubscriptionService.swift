@@ -21,6 +21,12 @@ enum PurchaseError: LocalizedError {
     }
 }
 
+struct PaywallPrice {
+    let amount: Decimal
+    let localized: String
+    let locale: Locale
+}
+
 @MainActor
 final class SubscriptionService: NSObject, ObservableObject {
     static let shared = SubscriptionService()
@@ -87,6 +93,15 @@ final class SubscriptionService: NSObject, ObservableObject {
         case .monthly: return offering.monthly
         case .lifetime: return offering.lifetime
         }
+    }
+
+    func paywallPrice(for plan: PaywallPlan) -> PaywallPrice? {
+        guard let product = package(for: plan)?.storeProduct else { return nil }
+        return PaywallPrice(
+            amount: product.price,
+            localized: product.localizedPriceString,
+            locale: product.priceFormatter?.locale ?? .current
+        )
     }
 
     /// Offerings can still be in flight when a player reaches the trial CTA on

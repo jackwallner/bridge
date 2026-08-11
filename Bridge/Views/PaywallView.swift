@@ -66,16 +66,22 @@ struct PaywallContent: View {
 
     private var planCards: some View {
         VStack(spacing: 10) {
-            planCard(.yearly, title: "Yearly", price: PaywallPricing.price(subscriptions, .yearly),
-                     detail: "7 days free, then billed yearly. Auto-renews.", badge: "BEST VALUE")
-            planCard(.lifetime, title: "Lifetime", price: PaywallPricing.price(subscriptions, .lifetime),
-                     detail: "One payment. No subscription, nothing renews.", badge: "NO SUBSCRIPTION")
-            planCard(.monthly, title: "Monthly", price: PaywallPricing.price(subscriptions, .monthly),
+            planCard(.yearly, title: "Yearly", price: PaywallPricing.priceText(subscriptions, .yearly),
+                     perMonth: PaywallPricing.perMonthEquivalent(subscriptions),
+                     anchor: PaywallPricing.monthlyAnchor(subscriptions),
+                     detail: "7 days free, then billed yearly. Auto-renews.",
+                     badge: PaywallPricing.savingsBadge(subscriptions))
+            planCard(.monthly, title: "Monthly", price: PaywallPricing.priceText(subscriptions, .monthly),
+                     perMonth: nil, anchor: nil,
                      detail: "7 days free, then billed monthly. Auto-renews.", badge: nil)
+            planCard(.lifetime, title: "Lifetime", price: PaywallPricing.priceText(subscriptions, .lifetime),
+                     perMonth: nil, anchor: nil,
+                     detail: "One payment. No subscription, nothing renews.", badge: "NO SUBSCRIPTION")
         }
     }
 
-    private func planCard(_ plan: PaywallPlan, title: String, price: String, detail: String, badge: String?) -> some View {
+    private func planCard(_ plan: PaywallPlan, title: String, price: String, perMonth: String?,
+                          anchor: String?, detail: String, badge: String?) -> some View {
         let isSelected = selectedPlan == plan
         return Button {
             selectedPlan = plan
@@ -102,9 +108,24 @@ struct PaywallContent: View {
                         .multilineTextAlignment(.leading)
                 }
                 Spacer(minLength: 8)
-                Text(price)
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(Theme.ink)
+                VStack(alignment: .trailing, spacing: 1) {
+                    Text(price)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Theme.ink)
+                    if let perMonth {
+                        HStack(spacing: 5) {
+                            if let anchor {
+                                Text(anchor)
+                                    .font(.caption2)
+                                    .foregroundStyle(Theme.inkTertiary)
+                                    .strikethrough(true, color: Theme.inkTertiary)
+                            }
+                            Text(perMonth)
+                                .font(.caption2)
+                                .foregroundStyle(Theme.inkSecondary)
+                        }
+                    }
+                }
             }
             .padding(14)
             .background(
@@ -120,23 +141,68 @@ struct PaywallContent: View {
     }
 }
 
-/// Price and terms strings, live from StoreKit when RevenueCat has loaded and
-/// falling back to the configured prices so the screen is never blank.
+/// Price and terms strings, live from StoreKit. Never invent a price while the
+/// store is loading, because customers must see the amount Apple will charge.
 @MainActor
 enum PaywallPricing {
-    static func price(_ subscriptions: SubscriptionService, _ plan: PaywallPlan) -> String {
-        let base = subscriptions.package(for: plan)?.storeProduct.localizedPriceString
+    static let placeholder = "Loading price…"
+
+    static func price(_ subscriptions: SubscriptionService, _ plan: PaywallPlan) -> String? {
+        guard let base = subscriptions.paywallPrice(for: plan)?.localized else { return nil }
         switch plan {
-        case .yearly: return "\(base ?? "$9.99")/year"
-        case .monthly: return "\(base ?? "$1.99")/month"
-        case .lifetime: return base ?? "$29.99"
+        case .yearly: return "\(base)/year"
+        case .monthly: return "\(base)/month"
+        case .lifetime: return base
         }
+    }
+
+    static func priceText(_ subscriptions: SubscriptionService, _ plan: PaywallPlan) -> String {
+        price(subscriptions, plan) ?? placeholder
+    }
+
+    static func perMonthEquivalent(_ subscriptions: SubscriptionService) -> String? {
+        guard let product = subscriptions.paywallPrice(for: .yearly) else { return nil }
+        let monthly = product.amount / 12
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = product.locale
+        guard let text = formatter.string(from: monthly as NSDecimalNumber) else { return nil }
+        return "\(text)/mo"
+    }
+
+    static func monthlyAnchor(_ subscriptions: SubscriptionService) -> String? {
+        guard let product = subscriptions.paywallPrice(for: .monthly) else { return nil }
+        return "\(product.localized)/mo"
+    }
+
+    static func savingsPercent(_ subscriptions: SubscriptionService) -> Int? {
+        guard let yearly = subscriptions.paywallPrice(for: .yearly),
+              let monthly = subscriptions.paywallPrice(for: .monthly) else { return nil }
+        let twelveMonths = monthly.amount * 12
+        guard twelveMonths > 0, yearly.amount < twelveMonths else { return nil }
+        var rounded = Decimal()
+        var raw = (twelveMonths - yearly.amount) / twelveMonths * 100
+        NSDecimalRound(&rounded, &raw, 0, .plain)
+        let percent = NSDecimalNumber(decimal: rounded).intValue
+        return percent > 0 ? percent : nil
+    }
+
+    static func savingsBadge(_ subscriptions: SubscriptionService) -> String {
+        guard let percent = savingsPercent(subscriptions) else { return "BEST VALUE" }
+        return "SAVE \(percent)%"
     }
 
     /// One concise point-of-purchase line: price, trial, auto-renew, cancel.
     /// The full legalese lives in the EULA behind the Terms link.
     static func terms(_ subscriptions: SubscriptionService, _ plan: PaywallPlan) -> String {
-        let amount = price(subscriptions, plan)
+        guard let amount = price(subscriptions, plan) else {
+            switch plan {
+            case .lifetime:
+                return "One-time purchase. Not a subscription, nothing renews."
+            case .yearly, .monthly:
+                return "Includes 7 days free. Auto-renews until canceled."
+            }
+        }
         switch plan {
         case .lifetime:
             return "\(amount) one-time. Not a subscription, nothing renews."
@@ -167,7 +233,7 @@ struct PaywallView: View {
                     // Billed amount, shown prominently at the point of purchase
                     // (App Review 3.1.2(c)): the reviewer flagged that it wasn't
                     // clearly and conspicuously displayed.
-                    Text(PaywallPricing.price(subscriptions, selectedPlan))
+                    Text(PaywallPricing.priceText(subscriptions, selectedPlan))
                         .font(Theme.display(22))
                         .foregroundStyle(Theme.ink)
                     Text(PaywallPricing.terms(subscriptions, selectedPlan))
@@ -210,6 +276,7 @@ struct PaywallView: View {
             .onChange(of: subscriptions.isPro) { _, isPro in
                 if isPro { dismiss() }
             }
+            .task { await subscriptions.ensureOfferings() }
         }
     }
 
