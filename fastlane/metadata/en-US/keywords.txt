@@ -1,1 +1,1 @@
-bridge,bidding,cards,contract,learn,tutor,beginner,lesson,drill,defense,declarer,practice,quiz,play
+contract,tutor,beginner,lesson,drill,defense,declarer,quiz,play,game,trump,hand,score,duplicate
