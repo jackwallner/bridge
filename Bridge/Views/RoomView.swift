@@ -38,7 +38,7 @@ struct RoomView: View {
         .background(Theme.background)
         .navigationTitle(room.name)
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showPaywall) { PaywallView() }
+        .sheet(isPresented: $showPaywall) { PaywallView(source: "bridge_room_sheet") }
     }
 
     private var header: some View {
