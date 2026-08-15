@@ -74,8 +74,12 @@ struct OnboardingView: View {
             footer
         }
         .background(Theme.background)
+        .onChange(of: page) { _, newPage in
+            guard newPage == lastPage else { return }
+            subscriptions.trackPaywallImpression(id: "bridge_onboarding_trial", oncePerSession: true)
+        }
         .sheet(isPresented: $showPaywallFallback, onDismiss: paywallDismissed) {
-            PaywallView()
+            PaywallView(source: "bridge_onboarding_fallback")
         }
         .alert("Purchase Issue", isPresented: .init(
             get: { purchaseError != nil },

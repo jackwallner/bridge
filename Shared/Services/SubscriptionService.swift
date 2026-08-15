@@ -36,6 +36,7 @@ final class SubscriptionService: NSObject, ObservableObject {
 
     private var isConfigured = false
     private let localOverrideKey = "subscription.localProOverride"
+    private var paywallImpressionsThisSession: Set<String> = []
 
     override private init() {
         super.init()
@@ -72,6 +73,20 @@ final class SubscriptionService: NSObject, ObservableObject {
         Purchases.shared.delegate = self
         isConfigured = true
         #endif
+    }
+
+    /// Feeds RevenueCat's `paywall_encounter_v3`. A custom paywall emits no
+    /// events of its own, so without this call everything between "installed"
+    /// and "started a trial" is invisible for this app.
+    func trackPaywallImpression(id: String, oncePerSession: Bool = false) {
+        guard isConfigured else { return }
+        if oncePerSession {
+            guard !paywallImpressionsThisSession.contains(id) else { return }
+            paywallImpressionsThisSession.insert(id)
+        }
+        Purchases.shared.trackCustomPaywallImpression(
+            CustomPaywallImpressionParams(paywallId: id)
+        )
     }
 
     func refreshCustomerInfo() async {
