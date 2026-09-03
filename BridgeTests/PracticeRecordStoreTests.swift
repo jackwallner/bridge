@@ -121,9 +121,14 @@ final class WhatsNewTests: XCTestCase {
     }
 
     /// A player updating from a build that predates the feature has no stored
-    /// marker at all. That is exactly who the sheet is for.
+    /// marker at all. That is exactly who the sheet is for, but only when the
+    /// running version actually has notes: a patch release with nothing
+    /// player-visible ships no entry, and must show no sheet.
     func testShownToAnUpgraderWithNoMarker() {
-        XCTAssertTrue(WhatsNew.shouldPresent(hasOnboarded: true, defaults: defaults))
+        XCTAssertEqual(
+            WhatsNew.shouldPresent(hasOnboarded: true, defaults: defaults),
+            WhatsNew.currentRelease != nil
+        )
     }
 
     func testShownOnlyOnce() {
@@ -136,15 +141,36 @@ final class WhatsNewTests: XCTestCase {
         XCTAssertFalse(WhatsNew.shouldPresent(hasOnboarded: true, defaults: defaults))
     }
 
+    /// Checks every entry, not just the running version's. A patch release with
+    /// no notes is legitimate, and `try!` on a nil unwrap used to trap and take
+    /// the rest of the test process down with it.
     func testReleaseNotesAreWellFormed() {
-        let release = try! XCTUnwrap(WhatsNew.currentRelease)
-        XCTAssertEqual(release.version, WhatsNew.currentVersion)
-        XCTAssertFalse(release.items.isEmpty)
-        XCTAssertEqual(Set(release.items.map(\.id)).count, release.items.count)
-        for item in release.items {
-            XCTAssertFalse(item.title.isEmpty)
-            XCTAssertFalse(item.body.isEmpty)
-            XCTAssertFalse(item.body.contains("—"), "No em dashes in copy")
+        XCTAssertFalse(WhatsNew.releases.isEmpty)
+        XCTAssertEqual(
+            Set(WhatsNew.releases.map(\.version)).count,
+            WhatsNew.releases.count,
+            "One entry per version"
+        )
+        for release in WhatsNew.releases {
+            XCTAssertFalse(release.items.isEmpty, release.version)
+            XCTAssertEqual(
+                Set(release.items.map(\.id)).count,
+                release.items.count,
+                "Duplicate item id in \(release.version)"
+            )
+            for item in release.items {
+                XCTAssertFalse(item.title.isEmpty, release.version)
+                XCTAssertFalse(item.body.isEmpty, release.version)
+                XCTAssertFalse(item.body.contains("—"), "No em dashes in copy")
+                XCTAssertFalse(item.title.contains("—"), "No em dashes in copy")
+            }
         }
+    }
+
+    /// The sheet reads `currentRelease`, so an entry whose version string does
+    /// not match the bundle's would be authored but never shown.
+    func testCurrentReleaseMatchesTheRunningVersion() {
+        guard let release = WhatsNew.currentRelease else { return }
+        XCTAssertEqual(release.version, WhatsNew.currentVersion)
     }
 }
