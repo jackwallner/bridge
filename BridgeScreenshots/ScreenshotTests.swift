@@ -29,6 +29,7 @@ final class ScreenshotTests: XCTestCase {
             "-progress.hasOnboarded", "YES",
             "-bridge.hasReadPrimer", "YES",
             "-bridge.skillLevel", "some",
+            "-subscription.localProOverride", "YES",
         ]
         // The What's New sheet fires on the first launch after a version bump
         // and covers Home. Marking the CURRENT version as already seen is what
@@ -49,26 +50,56 @@ final class ScreenshotTests: XCTestCase {
 
         if open("Get Started") {
             capture("01_quick_session")
+            if answerVisibleChoice() {
+                capture("01_quick_session_answered")
+                if advanceToNextQuestion() {
+                    capture("01_quick_session_next")
+                }
+            }
         }
         home()
 
         if open("The Auction Room"), open("Name Your Opening") {
             capture("02_opening")
+            if answerVisibleChoice() {
+                capture("02_opening_answered")
+            }
         }
         home()
 
         if open("The Defense Room"), open("Lead or Hold?") {
             capture("03_lead_or_hold")
+            if answerVisibleChoice() {
+                capture("03_lead_or_hold_answered")
+            }
         }
         home()
 
         if open("The Declarer Room"), open("Choose the Card") {
             capture("04_declarer")
+            if answerVisibleChoice() {
+                capture("04_declarer_answered")
+            }
         }
         home()
 
         if open("The Card Room") {
             capture("06_card_room")
+        }
+        home()
+
+        if open("The Auction Room") {
+            capture("07_auction_room")
+        }
+        home()
+
+        if open("The Declarer Room") {
+            capture("08_declarer_room")
+        }
+        home()
+
+        if open("The Defense Room") {
+            capture("09_defense_room")
         }
 
         if !problems.isEmpty {
@@ -136,6 +167,47 @@ final class ScreenshotTests: XCTestCase {
             back.tap()
             settle(0.6)
         }
+    }
+
+    @discardableResult
+    private func answerVisibleChoice() -> Bool {
+        let height = max(app.windows.firstMatch.frame.height, 1)
+        let excluded = ["Settings", "Back", "Next", "Next Question", "Finish", "Close"]
+        let leadChoice = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Lead ")).firstMatch
+        if leadChoice.exists {
+            leadChoice.tap()
+            settle()
+            return true
+        }
+        let choice = app.buttons.allElementsBoundByIndex.first { element in
+            let label = element.label
+            return !label.isEmpty
+                && label != "Against notrump"
+                && !excluded.contains(label)
+                && element.frame.midY > height * 0.20
+                && element.frame.midY < height * 0.82
+        }
+        guard let choice else {
+            problems.append("could not answer visible choice")
+            return false
+        }
+        choice.press(forDuration: 0.1)
+        settle()
+        return true
+    }
+
+    @discardableResult
+    private func advanceToNextQuestion() -> Bool {
+        let next = app.buttons.matching(
+            NSPredicate(format: "label CONTAINS[c] %@", "Next")
+        ).firstMatch
+        guard next.waitForExistence(timeout: 3) else {
+            problems.append("could not advance quick session")
+            return false
+        }
+        next.tap()
+        settle()
+        return true
     }
 
     private var atHome: Bool {
