@@ -8,3 +8,6 @@ fastlane/report.xml
 fastlane/README.md
 metadata.bak.*
 scripts/.asc-state.json
+
+# App Review contact phone stays local (never in a public repo)
+fastlane/metadata*/review_information/phone_number.txt
