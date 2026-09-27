@@ -18,4 +18,4 @@ what made text detach from the card. `BridgeCardFace` carries the bridgeong-card
 chrome (ivory surface, double frame, eyebrow, watermark) — both faces use it.
 
 ## Subagent delegation
-Follow the global CLAUDE.md subagent rules: ask Jack for the model before spawning, spawn at most one at a time unless Jack explicitly approves more, and never allow a subagent to spawn another subagent.
+Follow the global subagent rules: ask Jack for the model before spawning, spawn at most one at a time unless Jack explicitly approves more, and never allow a subagent to spawn another subagent.

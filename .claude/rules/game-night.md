@@ -17,7 +17,7 @@ paths:
 
 # Bridge Trainer: game-night rhythm
 
-Moved verbatim from CLAUDE.md. Loads when a matching file is read; update it here.
+Moved verbatim from AGENTS.md. Loads when a matching file is read; update it here.
 
 ## Game-night rhythm (1.2)
 
