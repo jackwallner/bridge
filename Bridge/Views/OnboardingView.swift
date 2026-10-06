@@ -228,6 +228,13 @@ struct OnboardingView: View {
         }
     }
 
+    /// The billed amount, shown larger than anything else about price on the
+    /// trial page (App Review 3.1.2(c)). Same plan as the CTA buys; empty for
+    /// a member, who is not being charged.
+    private var trialPrice: String {
+        subscriptions.isPro ? "" : PaywallPricing.priceText(subscriptions, .monthly)
+    }
+
     /// One concise line, matching the approved fleet pattern (StatScout): trial
     /// length, price, that it renews, how to cancel. The EULA behind the Terms
     /// link carries the full legalese; this is the point-of-purchase micro copy.
@@ -259,18 +266,24 @@ struct OnboardingView: View {
             .frame(height: 30)
             .opacity(onTrialPage ? 1 : 0)
             .disabled(!onTrialPage)
-            // Disclosure slot, also reserved. Small and tertiary: present at the
-            // point of purchase (3.1.2) without shouting. This carries the
-            // billed amount inline rather than as a separate display-size
-            // price line, matching Mahj's approved onboarding; the full
-            // plan-picker paywall still shows the conspicuous amount.
-            Text(monthlyDisclosure)
-                .font(.caption2)
-                .foregroundStyle(Theme.inkTertiary)
-                .multilineTextAlignment(.center)
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(height: 30)
-                .opacity(onTrialPage ? 1 : 0)
+            // Pricing slot, reserved on every page. The billed amount is the
+            // most conspicuous pricing element (App Review 3.1.2(c) rejected
+            // Mahj 1.3.0 for letting the trial outshine it); the disclosure
+            // under it stays small. Cribbage and Mahj's approved fix, ported
+            // as-is. minHeight so the disclosure can wrap without moving the
+            // CTA on any page.
+            VStack(spacing: 2) {
+                Text(trialPrice)
+                    .font(Theme.display(22))
+                    .foregroundStyle(Theme.ink)
+                Text(monthlyDisclosure)
+                    .font(.caption2)
+                    .foregroundStyle(Theme.inkTertiary)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            .frame(minHeight: 48)
+            .opacity(onTrialPage ? 1 : 0)
             Button {
                 primaryAction()
             } label: {
