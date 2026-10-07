@@ -36,6 +36,14 @@ def main() -> int:
     app_id = app["id"]
     version = find_editable_version(c, app_id)
     if not version:
+        # A --dry-run leaves the version READY_FOR_REVIEW, which is no longer
+        # "editable" but is exactly what a real submit should pick up next.
+        version = next(
+            (v for v in list_all(c, f"/apps/{app_id}/appStoreVersions")
+             if v["attributes"].get("appStoreState") == "READY_FOR_REVIEW"),
+            None,
+        )
+    if not version:
         print("No editable version.")
         return 1
     vid = version["id"]
