@@ -1,1 +1,1 @@
-contract,tutor,beginner,drill,declarer,play,game,trump,hand,score,duplicate,training,offline,classic
+contract,tutor,beginner,lesson,drill,defense,declarer,quiz,play,trump,hand,duplicate,offline
