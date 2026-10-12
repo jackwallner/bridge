@@ -1,41 +1,6 @@
 #!/usr/bin/env bash
-# Upload to TestFlight via xcodebuild -exportArchive with AppStoreUploadOptions.plist
-# (destination=upload, method=app-store-connect) and -allowProvisioningUpdates,
-# so Xcode uses your local App Store Connect / Apple ID session (no password needed).
-#
-# Prerequisites: Xcode signed in (Xcode → Settings → Accounts) with team YXG4MP6W39.
-#
-# Usage:
-#   ./scripts/upload-testflight.sh [path/to/Bridge.xcarchive]
-#
-# Default archive: ./build/Bridge.xcarchive
-
-set -euo pipefail
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-ARCHIVE="${1:-$ROOT/build/Bridge.xcarchive}"
-STAGING="$ROOT/build/upload-staging"
-PLIST="$ROOT/AppStoreUploadOptions.plist"
-
-if [[ ! -d "$ARCHIVE" ]]; then
-  echo "error: archive not found: $ARCHIVE" >&2
-  echo "Create one first: bash scripts/testflight.sh" >&2
-  exit 1
-fi
-
-if [[ ! -f "$PLIST" ]]; then
-  echo "error: missing $PLIST" >&2
-  exit 1
-fi
-
-mkdir -p "$STAGING"
-echo "Uploading archive via App Store Connect (local Xcode session)..."
-echo "  archive: $ARCHIVE"
-echo "  plist:   $PLIST"
-
-xcodebuild -exportArchive \
-  -archivePath "$ARCHIVE" \
-  -exportPath "$STAGING" \
-  -exportOptionsPlist "$PLIST" \
-  -allowProvisioningUpdates
-
-echo "If upload succeeded, check App Store Connect → TestFlight for \"Processing\"."
+# Upload an existing archive of Bridge to TestFlight (default build/Bridge.xcarchive)
+# with the App Store Connect API key. The shared fleet script does the work; see
+# ~/ios/release/testflight.sh for flags and credentials.
+cd "$(dirname "$0")/.." || exit 1
+exec "$HOME/ios/release/testflight.sh" --project Bridge.xcodeproj --scheme Bridge --upload-only "$@"
