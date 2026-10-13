@@ -8,6 +8,11 @@ struct BridgeApp: App {
     @StateObject private var settings = AppSettings.shared
     @StateObject private var router = AppRouter.shared
 
+    init() {
+        // Once per cold launch; the rating prompt waits for the second.
+        ReviewPromptTracker.recordAppLaunch()
+    }
+
     var body: some Scene {
         WindowGroup {
             RootView()
@@ -18,7 +23,6 @@ struct BridgeApp: App {
                 .preferredColorScheme(settings.appearance.colorScheme)
                 .onAppear {
                     subscriptions.start()
-                    ReviewPromptTracker.recordAppLaunch()
                     ConversionDiagnostics.recordAppOpen()
                     #if DEBUG
                     if RevenueCatProbe.isEnabled {

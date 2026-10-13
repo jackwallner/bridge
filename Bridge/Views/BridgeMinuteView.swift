@@ -1,4 +1,3 @@
-import StoreKit
 import SwiftUI
 
 struct BridgeMinuteView: View {
@@ -158,10 +157,9 @@ struct BridgeMinuteResultView: View {
 
     @EnvironmentObject private var progress: ProgressStore
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.requestReview) private var requestReview
     @StateObject private var store = BridgeMinuteStore.shared
     @State private var recorded = false
-    @State private var showReviewPrompt = false
+    @State private var reviewMoment = 0
     @State private var confettiTrigger = 0
 
     var body: some View {
@@ -191,11 +189,7 @@ struct BridgeMinuteResultView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(recordsCompletion)
         .onAppear { recordCompletionIfNeeded() }
-        .sheet(isPresented: $showReviewPrompt) {
-            ReviewPromptSheet { outcome in
-                if outcome == .enjoyedMaybeLater { requestReview() }
-            }
-        }
+        .requestsReview(after: reviewMoment)
     }
 
     private var scoreCard: some View {
@@ -289,10 +283,6 @@ struct BridgeMinuteResultView: View {
         SoundPlayer.play(.complete)
         progress.recordSession(drillID: BridgeMinuteContent.drill.id)
         ReviewPromptTracker.recordPositiveMoment()
-        guard ReviewPromptTracker.shouldShowAfterPositiveMoment() else { return }
-        Task { @MainActor in
-            try? await Task.sleep(nanoseconds: 1_400_000_000)
-            showReviewPrompt = true
-        }
+        reviewMoment += 1
     }
 }

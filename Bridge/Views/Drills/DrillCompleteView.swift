@@ -1,5 +1,4 @@
 import SwiftUI
-import StoreKit
 
 struct DrillCompleteView: View {
     let drill: Drill
@@ -11,8 +10,7 @@ struct DrillCompleteView: View {
 
     @EnvironmentObject private var progress: ProgressStore
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.requestReview) private var requestReview
-    @State private var showReviewPrompt = false
+    @State private var reviewMoment = 0
     @State private var recorded = false
     @State private var celebrate = false
     @State private var confettiTrigger = 0
@@ -82,28 +80,14 @@ struct DrillCompleteView: View {
             progress.recordSession(drillID: drill.id)
             recordPositiveMoment()
         }
-        .sheet(isPresented: $showReviewPrompt) {
-            ReviewPromptSheet(onFinish: handleReviewOutcome)
-        }
+        .requestsReview(after: reviewMoment)
     }
 
-    /// A finished drill is the positive moment the funnel waits for. Let the
-    /// celebration land first: a sheet that lands on top of the confetti reads
-    /// as an interruption, not a thank-you.
+    /// A finished drill is a positive moment: Apple's rating prompt may follow
+    /// once the confetti has landed.
     private func recordPositiveMoment() {
         ReviewPromptTracker.recordPositiveMoment()
-        guard ReviewPromptTracker.shouldShowAfterPositiveMoment() else { return }
-        Task { @MainActor in
-            try? await Task.sleep(nanoseconds: 1_400_000_000)
-            showReviewPrompt = true
-        }
-    }
-
-    private func handleReviewOutcome(_ outcome: ReviewPromptDismissOutcome) {
-        // "Yes" then "Maybe later" is the one case worth spending Apple's
-        // native prompt on: they're warm, and the system sheet is one tap.
-        guard outcome == .enjoyedMaybeLater else { return }
-        requestReview()
+        reviewMoment += 1
     }
 
     private var headline: String {

@@ -87,6 +87,5 @@ final class ProgressStoreTests: XCTestCase {
         XCTAssertTrue(store.hasOnboarded, "Reset must not re-trigger onboarding")
     }
 
-    // The review gate moved to ReviewPromptTracker (enjoyment -> rate / feedback
-    // funnel); see ReviewPromptTrackerTests.
+    // Rating-ask rules live in ReviewPromptTracker; see ReviewPromptTrackerTests.
 }

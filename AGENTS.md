@@ -28,6 +28,10 @@ Condensed from the deep notes below; the reasoning behind each one lives there.
 
 Teaching content uses a beginner Standard American framework. Partnership agreements vary, so avoid presenting conventions as universal rules. Do not imply affiliation with ACBL or any other bridge organization.
 
+## Ratings
+
+No custom rating question (App Review 5.6.1). A finished drill or Bridge Minute records a positive moment in `ReviewPromptTracker`; `requestsReview(after:)` calls Apple's prompt about 3s later if the screen is still clear. Gates: second cold launch, onboarding done, 30-day cooldown; only the Settings "Rate Bridge Trainer" row (write-review link, App Store ID 6791026407) ends the asks. "Send Feedback" opens `FeedbackSheet` and never stops them. Fleet policy: `ios-dev` skill, "App Store ratings and feedback".
+
 ## Release workflow
 
 Fastlane metadata is under `fastlane/metadata/en-US`. ASC setup and readiness scripts are under `scripts/`. The app uses a warm cream and jade visual system with high-contrast red and black playing cards.

@@ -1,5 +1,4 @@
 import SwiftUI
-import StoreKit
 import UIKit
 
 struct SettingsView: View {
@@ -7,13 +6,11 @@ struct SettingsView: View {
     @EnvironmentObject private var settings: AppSettings
     @EnvironmentObject private var progress: ProgressStore
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.requestReview) private var requestReview
     @State private var showPaywall = false
     @State private var showWhatsNew = false
     @State private var showResetConfirm = false
     @State private var restoreMessage: String?
-    /// Non-nil while the review funnel is up; the value is where it opens.
-    @State private var reviewPromptStep: ReviewPromptSheet.Step?
+    @State private var showFeedback = false
 
     var body: some View {
         NavigationStack {
@@ -50,11 +47,7 @@ struct SettingsView: View {
                     }
                 }
             }
-            .sheet(item: $reviewPromptStep) { step in
-                ReviewPromptSheet(initialStep: step) { outcome in
-                    if outcome == .enjoyedMaybeLater { requestReview() }
-                }
-            }
+            .sheet(isPresented: $showFeedback) { FeedbackSheet() }
             .alert("Restore", isPresented: .init(
                 get: { restoreMessage != nil },
                 set: { if !$0 { restoreMessage = nil } }
@@ -173,12 +166,13 @@ struct SettingsView: View {
                 }
             }
             Button {
-                reviewPromptStep = .reviewPitch
+                ReviewPromptTracker.markOpenedWriteReview()
+                UIApplication.shared.open(AppStoreLinks.writeReviewURL)
             } label: {
                 Label("Rate Bridge Trainer", systemImage: "star.fill")
             }
             Button {
-                reviewPromptStep = .feedback
+                showFeedback = true
             } label: {
                 Label("Send Feedback", systemImage: "envelope.fill")
             }

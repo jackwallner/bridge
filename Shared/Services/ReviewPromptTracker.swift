@@ -1,5 +1,4 @@
 import Foundation
-import StoreKit
 
 enum AppStoreLinks {
     static let appStoreID = "6791026407"
@@ -17,20 +16,17 @@ enum AppStoreLinks {
     static let feedbackEmail = "jackwallner+b@gmail.com"
 }
 
-/// How the player last resolved the review funnel. Either terminal outcome
-/// retires the prompt for good: we asked, they acted, we stop asking.
+/// What the player did about a review. Only opening the review page ends the
+/// passive asks: someone who sent feedback can still rate later.
 enum ReviewPromptOutcome: String, Sendable {
     case openedWriteReview
     case submittedFeedback
 }
 
-/// The review funnel's memory: when we last asked, what happened, and whether
-/// the player has done enough for the ask to be fair.
-///
-/// The funnel itself: a positive moment (a finished drill) leads to "Enjoying
-/// Bridge Trainer?" A yes leads to the App Store; a no leads to a feedback box
-/// that mails us instead. Unhappy players never get pushed at a star rating,
-/// which is the whole point of gating it.
+/// When to call Apple's rating prompt. There is no question in front of it:
+/// App Review 5.6.1 rejects an "Enjoying it?" gate that routes only happy
+/// players to the store. A finished drill marks a positive moment, and the
+/// next clear screen after it asks.
 @MainActor
 enum ReviewPromptTracker {
     private static let defaults = UserDefaults.standard
@@ -41,19 +37,17 @@ enum ReviewPromptTracker {
         static let lastShown = "reviewPrompt.lastShownDate"
         static let outcome = "reviewPrompt.outcome"
         static let positiveMoments = "reviewPrompt.positiveMomentCount"
+        static let pendingMoment = "reviewPrompt.pendingPositiveMoment"
+        /// Written by the old gate's "Maybe later". Only cleared now.
         static let softDefer = "reviewPrompt.softDefer"
     }
 
-    /// Finished drills before we're willing to ask. Three is enough to know
-    /// whether the app is any good.
-    static let minimumPositiveMoments = 3
+    /// Ask early: most installs are gone within a week. The only tenure gate
+    /// is "not the first session", a second cold launch.
     static let minimumLaunchCount = 2
-    /// After a "Not now", don't ask again for months.
-    static let cooldownDays = 120
-    /// After a "Maybe later" on the review pitch we fired `requestReview()`,
-    /// which Apple often silently swallows. Short cooldown so that dead ask
-    /// doesn't cost us the next one.
-    static let softDeferCooldownDays = 30
+    /// Days between our calls. Apple shows the prompt at most three times a
+    /// year per device and decides each time, so this only paces the asks.
+    static let cooldownDays = 30
 
     static var launchCount: Int {
         get { max(defaults.integer(forKey: Keys.launchCount), 0) }
@@ -63,6 +57,11 @@ enum ReviewPromptTracker {
     static var positiveMomentCount: Int {
         get { max(defaults.integer(forKey: Keys.positiveMoments), 0) }
         set { defaults.set(newValue, forKey: Keys.positiveMoments) }
+    }
+
+    static var hasPendingPositiveMoment: Bool {
+        get { defaults.bool(forKey: Keys.pendingMoment) }
+        set { defaults.set(newValue, forKey: Keys.pendingMoment) }
     }
 
     static var outcome: ReviewPromptOutcome? {
@@ -76,11 +75,18 @@ enum ReviewPromptTracker {
         }
     }
 
-    private static var lastShownDate: Date? {
+    static var lastShownDate: Date? {
         get { defaults.object(forKey: Keys.lastShown) as? Date }
-        set { defaults.set(newValue, forKey: Keys.lastShown) }
+        set {
+            if let newValue {
+                defaults.set(newValue, forKey: Keys.lastShown)
+            } else {
+                defaults.removeObject(forKey: Keys.lastShown)
+            }
+        }
     }
 
+    /// Call once per cold launch, from the app's init.
     static func recordAppLaunch(now: Date = Date()) {
         if defaults.object(forKey: Keys.firstOpen) == nil {
             defaults.set(now, forKey: Keys.firstOpen)
@@ -90,28 +96,27 @@ enum ReviewPromptTracker {
 
     static func recordPositiveMoment() {
         positiveMomentCount += 1
+        hasPendingPositiveMoment = true
     }
 
-    /// Eligibility for the enjoyment gate after a finished drill.
-    static func shouldShowAfterPositiveMoment(now: Date = Date()) -> Bool {
-        guard outcome == nil else { return false }
-        guard positiveMomentCount >= minimumPositiveMoments else { return false }
+    static func canRequestReview(hasCompletedSetup: Bool, now: Date = Date()) -> Bool {
+        guard hasCompletedSetup else { return false }
+        guard outcome != .openedWriteReview else { return false }
         guard launchCount >= minimumLaunchCount else { return false }
         guard let last = lastShownDate else { return true }
-        let days = defaults.bool(forKey: Keys.softDefer) ? softDeferCooldownDays : cooldownDays
-        return now.timeIntervalSince(last) >= TimeInterval(days) * 86_400
+        return now.timeIntervalSince(last) >= TimeInterval(cooldownDays) * 86_400
+    }
+
+    /// Eligible and a positive moment is still waiting. An ask that finds the
+    /// screen busy leaves the moment pending, so the next one can ask.
+    static func shouldRequestAfterPositiveMoment(hasCompletedSetup: Bool, now: Date = Date()) -> Bool {
+        guard hasPendingPositiveMoment else { return false }
+        return canRequestReview(hasCompletedSetup: hasCompletedSetup, now: now)
     }
 
     static func markShown(now: Date = Date()) {
         lastShownDate = now
-        defaults.set(false, forKey: Keys.softDefer)
-    }
-
-    /// They said yes, then "Maybe later": we fired `requestReview()` and Apple
-    /// may well have shown nothing. Come back sooner than a hard dismissal.
-    static func markSoftDeferred(now: Date = Date()) {
-        lastShownDate = now
-        defaults.set(true, forKey: Keys.softDefer)
+        hasPendingPositiveMoment = false
     }
 
     static func markOpenedWriteReview() {
@@ -119,14 +124,17 @@ enum ReviewPromptTracker {
         markShown()
     }
 
+    /// Feedback never ends the asks, and never overwrites a review-page stop.
     static func markFeedbackSubmitted() {
-        outcome = .submittedFeedback
+        if outcome != .openedWriteReview {
+            outcome = .submittedFeedback
+        }
         markShown()
     }
 
-    /// Settings' "Reset Progress" should not un-retire a review we already got.
     static func resetForTesting() {
-        [Keys.launchCount, Keys.firstOpen, Keys.lastShown, Keys.outcome, Keys.positiveMoments, Keys.softDefer]
+        [Keys.launchCount, Keys.firstOpen, Keys.lastShown, Keys.outcome,
+         Keys.positiveMoments, Keys.pendingMoment, Keys.softDefer]
             .forEach(defaults.removeObject(forKey:))
     }
 }
