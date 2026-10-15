@@ -27,6 +27,7 @@
         "@graph": [
             {
                 "@type": "MobileApplication",
+                "dateModified": "2026-10-15",
                 "@id": "https://jackwallner.com/ios/bridge/#app",
                 "name": "Bridge Trainer: Learn & Bid",
                 "description": "Bridge Trainer is a free bridge bidding practice app for iPhone and iPad. It helps beginners learn contract bridge in five-minute drills across four rooms: card basics, bidding in a beginner Standard American framework, declarer play, and defense. Every answer explains the reasoning, and it needs no account and works offline.",
@@ -251,7 +252,7 @@
 
         .hero .platforms {
             font-size: 13px;
-            color: #86868b;
+            color: #6e6e73;
             letter-spacing: 0.3px;
             margin-bottom: 36px;
         }
@@ -339,20 +340,6 @@
         .feature-card {
             background: #fff;
             padding: 36px 32px;
-        }
-
-        .feature-card .label {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            color: #86868b;
-            margin-bottom: 10px;
-        }
-
-        .feature-card .label.bridge-plus {
-            color: #087866;
         }
 
         .feature-card h3 {
@@ -460,7 +447,7 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.8px;
-            color: #86868b;
+            color: #6e6e73;
             margin-bottom: 12px;
         }
 
@@ -492,7 +479,7 @@
         }
 
         .specs-table td:first-child {
-            color: #86868b;
+            color: #6e6e73;
             width: 140px;
             font-size: 12px;
             text-transform: uppercase;
@@ -511,7 +498,7 @@
         .disclaimer p {
             font-size: 12px;
             line-height: 1.6;
-            color: #86868b;
+            color: #6e6e73;
             text-align: center;
         }
 
@@ -532,7 +519,7 @@
 
         .cta p {
             font-size: 15px;
-            color: #86868b;
+            color: #6e6e73;
             margin-bottom: 28px;
         }
 
@@ -541,11 +528,11 @@
             text-align: center;
             padding: 20px 24px;
             font-size: 12px;
-            color: #86868b;
+            color: #6e6e73;
         }
 
         footer a {
-            color: #86868b;
+            color: #6e6e73;
             text-decoration: none;
             margin: 0 10px;
         }
@@ -570,6 +557,12 @@
 
         @media (max-width: 480px) {
             .showcase-card img { height: 360px; }
+        }
+        .feature-card .tier {
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #087866;
         }
     </style>
 </head>
@@ -618,47 +611,40 @@
         </div>
         <div class="features-grid">
             <div class="feature-card">
-                <span class="label">Card Room</span>
                 <h3>Ranks, points, tricks</h3>
                 <p>Card rank, high-card points, tricks, trump, contracts, and who does what at the table.</p>
             </div>
             <div class="feature-card">
-                <span class="label">Auction Room</span>
                 <h3>Choose the opening bid</h3>
                 <p>Read a 13-card hand and decide between pass, a suit opening, and 1NT in a beginner Standard American framework.</p>
             </div>
             <div class="feature-card">
-                <span class="label">Declarer Room</span>
                 <h3>Plan the play</h3>
                 <p>Count winners, draw trump, establish long suits, finesse, and pick the right card in real table situations.</p>
             </div>
             <div class="feature-card">
-                <span class="label">Defense Room</span>
                 <h3>Lead and follow well</h3>
                 <p>Opening leads, sequences, third-hand play, suit returns, and the partnership habits that make you easy to play with.</p>
             </div>
             <div class="feature-card">
-                <span class="label">Daily session</span>
                 <h3>Misses come back</h3>
                 <p>A daily mixed session pulls in the material you got wrong, so missed questions come back until you get them right.</p>
             </div>
             <div class="feature-card">
-                <span class="label">Coaching cards</span>
                 <h3>The why on the back</h3>
                 <p>Swipeable explanations behind every call and card, so a right answer teaches you something.</p>
             </div>
             <div class="feature-card">
-                <span class="label bridge-plus">Extra practice &middot; Bridge+</span>
                 <h3>More reps per room</h3>
                 <p>A second practice set in each beginner room, with fresh hands and questions added through the year.</p>
+                <p class="tier">Included with Bridge+</p>
             </div>
             <div class="feature-card">
-                <span class="label bridge-plus">Master Tables &middot; Bridge+</span>
                 <h3>Conventions and duplicate</h3>
                 <p>Conventions, advanced card play, and duplicate strategy for players moving past the basics.</p>
+                <p class="tier">Included with Bridge+</p>
             </div>
             <div class="feature-card">
-                <span class="label">Streaks</span>
                 <h3>Practice between games</h3>
                 <p>Streaks and per-room progress keep the habit going between Tuesday nights.</p>
             </div>
@@ -770,7 +756,7 @@
     </section>
 
     <footer>
-        <div class="divider">&copy; 2026 Jack Wallner</div>
+        <div class="divider">&copy; 2026 Jack Wallner · Last updated <time datetime="2026-10-15" data-updated>October 15, 2026</time></div>
         <div>
             <a href="bridge-bidding-for-beginners.html">Bridge bidding for beginners</a>
             <a href="best-bridge-app-for-beginners.html">Best bridge app for beginners</a>
