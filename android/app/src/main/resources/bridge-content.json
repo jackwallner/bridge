@@ -1,0 +1,1782 @@
+{
+  "primer" : [
+    {
+      "body" : "Partners sit opposite each other. A 52-card deck is dealt evenly, giving every player 13 cards. North-South compete against East-West.",
+      "cards" : [
+        "SA",
+        "HA",
+        "DA",
+        "CA"
+      ],
+      "icon" : "person.4.fill",
+      "id" : "htp-table",
+      "title" : "Four players, two partnerships"
+    },
+    {
+      "body" : "Each player contributes one card. You must follow the suit led when you can. The highest card in that suit wins unless a trump is played.",
+      "cards" : [
+        "H2",
+        "H10",
+        "HK",
+        "HA"
+      ],
+      "icon" : "square.stack.3d.up.fill",
+      "id" : "htp-tricks",
+      "tip" : "The trick winner leads the next trick.",
+      "title" : "Win tricks"
+    },
+    {
+      "body" : "Before play, the auction sets a target. A bid names a level from 1 to 7 and a suit or notrump. The level is how many tricks above six your side promises.",
+      "cards" : [
+
+      ],
+      "icon" : "quote.bubble.fill",
+      "id" : "htp-auction",
+      "tip" : "A contract of 4♠ promises 10 tricks with spades as trump.",
+      "title" : "Bid a contract"
+    },
+    {
+      "body" : "High-card points help describe a hand: ace 4, king 3, queen 2, jack 1. In a beginner framework, pass below opening strength and open around 13 points.",
+      "cards" : [
+        "SA",
+        "HK",
+        "DQ",
+        "CJ"
+      ],
+      "icon" : "number.circle.fill",
+      "id" : "htp-points",
+      "tip" : "A balanced 15 to 17 HCP hand usually opens 1NT.",
+      "title" : "Count your strength"
+    },
+    {
+      "body" : "The player who first named the contract's denomination becomes declarer. Their partner lays dummy face up after the opening lead. The other partnership defends.",
+      "cards" : [
+
+      ],
+      "icon" : "person.2.fill",
+      "id" : "htp-roles",
+      "tip" : "Declarer chooses every card played from dummy.",
+      "title" : "Declarer, dummy, defenders"
+    },
+    {
+      "body" : "That is the shape of bridge: describe the hand, choose a contract, then plan and play 13 tricks. Each room builds one skill in a few focused minutes.",
+      "cards" : [
+
+      ],
+      "icon" : "checkmark.seal.fill",
+      "id" : "htp-ready",
+      "title" : "You're ready to train"
+    }
+  ],
+  "rooms" : [
+    {
+      "drills" : [
+        {
+          "id" : "meet-cards",
+          "isPlus" : false,
+          "items" : [
+            {
+              "backBody" : "Spades and hearts are the major suits. Diamonds and clubs are the minor suits. A standard bridge deck has 13 cards in each suit.",
+              "backTitle" : "Two majors, two minors",
+              "frontCards" : [
+                "SA",
+                "HA",
+                "DA",
+                "CA"
+              ],
+              "frontTitle" : "Four suits",
+              "id" : "basics-four-suits"
+            },
+            {
+              "backBody" : "Within a suit, cards rank A, K, Q, J, 10 down to 2. The ace is normally the highest card.",
+              "backTitle" : "Ace is high",
+              "frontCards" : [
+                "SA",
+                "SK",
+                "SQ",
+                "SJ"
+              ],
+              "frontTitle" : "Which card is highest?",
+              "id" : "basics-rank-order"
+            },
+            {
+              "backBody" : "Ace = 4 points, king = 3, queen = 2, jack = 1. Add those values across your 13 cards to estimate your hand's strength.",
+              "backTitle" : "4, 3, 2, 1",
+              "frontCards" : [
+                "HA",
+                "HK",
+                "HQ",
+                "HJ"
+              ],
+              "frontTitle" : "High-card points",
+              "id" : "basics-hcp"
+            },
+            {
+              "backBody" : "Each player contributes one card. The highest card of the suit led wins unless a trump is played. The trick winner leads next.",
+              "backTitle" : "One card from each player",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "What is a trick?",
+              "id" : "basics-trick"
+            },
+            {
+              "backBody" : "If you hold a card in the suit led, you must play one. Only when you are void in that suit may you discard or play a trump.",
+              "backTitle" : "Yes, when you can",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "Must you follow suit?",
+              "id" : "basics-follow-suit"
+            },
+            {
+              "backBody" : "A contract level counts tricks above the first six. Four means 6 + 4 = 10 tricks. The denomination names trump, or NT when there is no trump.",
+              "backTitle" : "Ten tricks with spades as trump",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "What does 4♠ promise?",
+              "id" : "basics-contract"
+            },
+            {
+              "backBody" : "Declarer plays the contract. Declarer's partner becomes dummy after the opening lead, lays all 13 cards face up, and plays the cards declarer calls.",
+              "backTitle" : "One player controls two hands",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "Declarer and dummy",
+              "id" : "basics-roles"
+            }
+          ],
+          "kind" : "flashcards",
+          "subtitle" : "Flashcards: the deck, tricks, trump, and contracts",
+          "title" : "Meet the Game"
+        },
+        {
+          "id" : "card-check",
+          "isPlus" : false,
+          "items" : [
+            {
+              "answerIndex" : 3,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "explanation" : "An ace is worth 4 HCP. Kings are 3, queens 2, and jacks 1.",
+              "id" : "quiz-hcp-ace",
+              "prompt" : "How many high-card points is an ace worth?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Clubs and diamonds",
+                "Hearts and spades",
+                "Spades and clubs",
+                "Hearts and diamonds"
+              ],
+              "explanation" : "Hearts and spades are the majors. They score 30 points per contracted trick.",
+              "id" : "quiz-major-suits",
+              "prompt" : "Which pair are the major suits?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "10",
+                "12",
+                "13",
+                "14"
+              ],
+              "explanation" : "The 52-card deck is dealt equally, so each of four players receives 13 cards.",
+              "id" : "quiz-cards-hand",
+              "prompt" : "How many cards does each player receive?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "3",
+                "6",
+                "9",
+                "10"
+              ],
+              "explanation" : "Contract levels count above six. 3NT therefore requires 6 + 3 = 9 tricks.",
+              "id" : "quiz-contract-tricks",
+              "prompt" : "How many tricks must declarer take in 3NT?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "One pass",
+                "Two passes",
+                "Three consecutive passes",
+                "The opening lead"
+              ],
+              "explanation" : "The auction ends after three consecutive passes. The preceding bid becomes the final contract.",
+              "id" : "quiz-auction-end",
+              "prompt" : "After a bid, what ends the auction?"
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Play a heart",
+                "Play a trump",
+                "Play your highest card",
+                "Pass"
+              ],
+              "explanation" : "You must follow the suit led whenever you can. The card need not be high.",
+              "id" : "quiz-follow-suit",
+              "prompt" : "A heart is led and you hold a heart. What must you do?"
+            },
+            {
+              "answerIndex" : 3,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Declarer",
+                "Dummy",
+                "The dealer",
+                "The previous trick winner"
+              ],
+              "explanation" : "Whoever wins a trick leads the first card to the next trick.",
+              "id" : "quiz-trick-lead",
+              "prompt" : "Who leads to the next trick?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "1♥",
+                "1♦",
+                "1NT",
+                "1♣"
+              ],
+              "explanation" : "At the same level, bids rank clubs, diamonds, hearts, spades, then notrump.",
+              "id" : "quiz-bid-order",
+              "prompt" : "Which bid outranks 1♠?"
+            }
+          ],
+          "kind" : "quiz",
+          "subtitle" : "Quick quiz: the rules every player needs",
+          "title" : "Card Check"
+        },
+        {
+          "id" : "plus-card-extras",
+          "isPlus" : true,
+          "items" : [
+            {
+              "answerIndex" : 0,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "The first six tricks",
+                "The auction record",
+                "A convention card",
+                "A score bonus"
+              ],
+              "explanation" : "Book is the first six tricks. Contract levels name the number of tricks required beyond book.",
+              "id" : "plus-card-book",
+              "prompt" : "What does bridge players' word “book” mean?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "2♠",
+                "3♦",
+                "3NT",
+                "4♣"
+              ],
+              "explanation" : "3NT is game. The other common game levels are 4♥, 4♠, 5♣, and 5♦.",
+              "id" : "plus-card-game",
+              "prompt" : "Which is a game contract?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "explanation" : "A level-six contract requires 6 + 6 = 12 tricks. Level seven is a grand slam requiring all 13.",
+              "id" : "plus-card-slam",
+              "prompt" : "How many tricks does a small slam require?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Dummy alone",
+                "Declarer calls the card",
+                "Either defender",
+                "The director"
+              ],
+              "explanation" : "Dummy lays the hand face up and plays only the card declarer calls.",
+              "id" : "plus-card-dummy",
+              "prompt" : "Who physically plays cards from dummy?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Whenever you want to win the trick",
+                "Only when you are void in the suit led",
+                "Only when you are declarer",
+                "Only on the first trick"
+              ],
+              "explanation" : "Following suit comes first. You may ruff only when you hold no cards in the suit led.",
+              "id" : "more-card-trump",
+              "prompt" : "In a suit contract, when may you play a trump instead of following suit?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Ace through jack",
+                "Ace through ten",
+                "Ace, king, queen",
+                "Face cards only"
+              ],
+              "explanation" : "The five honors are ace, king, queen, jack, and ten. Only the top four carry high-card points.",
+              "id" : "more-card-honors",
+              "prompt" : "Which cards are the honors in a suit?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Declarer",
+                "The player to declarer's left",
+                "Dummy's partner",
+                "Whoever bid last"
+              ],
+              "explanation" : "The defender on declarer's left leads to the first trick, before dummy comes down.",
+              "id" : "more-card-opening-lead",
+              "prompt" : "Who makes the opening lead?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Three",
+                "Six",
+                "Nine",
+                "Ten"
+              ],
+              "explanation" : "Contract level plus book: 3 + 6 = 9 tricks, with no trump suit in play.",
+              "id" : "more-card-notrump-tricks",
+              "prompt" : "How many tricks does 3NT require?"
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Play a heart",
+                "Play your highest card",
+                "Discard if you cannot win",
+                "Anything you like"
+              ],
+              "explanation" : "You must follow suit whenever you hold the suit led. Which heart you choose is up to you.",
+              "id" : "more-card-follow-suit",
+              "prompt" : "You hold two hearts and a heart is led. What must you do?"
+            }
+          ],
+          "kind" : "quiz",
+          "subtitle" : "Games, slams, dummy, and bridge vocabulary",
+          "title" : "Card Check: Extra Reps"
+        }
+      ],
+      "icon" : "suit.spade.fill",
+      "id" : "card-room",
+      "isFree" : true,
+      "name" : "The Card Room",
+      "tagline" : "Ranks, tricks, contracts, and table roles"
+    },
+    {
+      "drills" : [
+        {
+          "id" : "opening-playbook",
+          "isPlus" : false,
+          "items" : [
+            {
+              "backBody" : "In this beginner framework, pass with 0 to 12 total points and open with 13 or more. Distribution can change close decisions as you improve.",
+              "backTitle" : "Start around 13 points",
+              "frontCards" : [
+
+              ],
+              "frontSubtitle" : "Count your high-card points first",
+              "frontTitle" : "Open or pass?",
+              "id" : "bid-open-or-pass"
+            },
+            {
+              "backBody" : "Open 1NT with 15 to 17 high-card points and a balanced hand. Balanced means no singleton or void, and usually no suit longer than five.",
+              "backTitle" : "15 to 17 HCP, balanced",
+              "frontCards" : [
+
+              ],
+              "frontSubtitle" : "A precise bid",
+              "frontTitle" : "The 1NT opening",
+              "id" : "bid-one-notrump"
+            },
+            {
+              "backBody" : "With opening strength and a five-card major, open that major unless the hand is a balanced 15 to 17 that belongs in 1NT.",
+              "backTitle" : "Show hearts or spades",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "Five-card majors",
+              "id" : "bid-five-card-major"
+            },
+            {
+              "backBody" : "With opening strength but no five-card major, open your longer minor. With three clubs and three diamonds, open 1♣.",
+              "backTitle" : "Open your longer minor",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "No five-card major?",
+              "id" : "bid-longest-suit"
+            },
+            {
+              "backBody" : "After partner opens, count your points and support. A beginner framework groups responses as 0 to 7, 8 to 9, and 10 or more points.",
+              "backTitle" : "Place your hand in a range",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "Responder is captain",
+              "id" : "bid-response-ranges"
+            }
+          ],
+          "kind" : "flashcards",
+          "subtitle" : "Flashcards: pass, suits, and 1NT",
+          "title" : "Opening Playbook"
+        },
+        {
+          "id" : "opening-bid",
+          "isPlus" : false,
+          "items" : [
+            {
+              "answer" : "pass",
+              "cards" : [
+                "SQ",
+                "S9",
+                "S6",
+                "HK",
+                "H8",
+                "H4",
+                "DJ",
+                "D7",
+                "D3",
+                "C9",
+                "C6",
+                "C4",
+                "C2"
+              ],
+              "choices" : [
+                "pass",
+                "oneClub",
+                "oneDiamond",
+                "oneNotrump"
+              ],
+              "explanation" : "This hand has 6 HCP: Q=2, K=3, and J=1. It is well below opening strength, so pass.",
+              "id" : "hand-pass-10"
+            },
+            {
+              "answer" : "oneSpade",
+              "cards" : [
+                "SA",
+                "SK",
+                "S10",
+                "S7",
+                "S3",
+                "HQ",
+                "H8",
+                "H4",
+                "DK",
+                "D6",
+                "C9",
+                "C5",
+                "C2"
+              ],
+              "choices" : [
+                "pass",
+                "oneHeart",
+                "oneSpade",
+                "oneNotrump"
+              ],
+              "explanation" : "This hand has 14 HCP and five spades. Open the five-card major, 1♠.",
+              "id" : "hand-one-spade"
+            },
+            {
+              "answer" : "oneHeart",
+              "cards" : [
+                "SK",
+                "S7",
+                "S2",
+                "HA",
+                "HQ",
+                "H10",
+                "H6",
+                "H3",
+                "DK",
+                "D8",
+                "D4",
+                "C7",
+                "C3"
+              ],
+              "choices" : [
+                "pass",
+                "oneHeart",
+                "oneSpade",
+                "oneNotrump"
+              ],
+              "explanation" : "With 14 HCP and five hearts, open 1♥.",
+              "id" : "hand-one-heart"
+            },
+            {
+              "answer" : "oneNotrump",
+              "cards" : [
+                "SA",
+                "SJ",
+                "S7",
+                "S3",
+                "HK",
+                "H10",
+                "H5",
+                "DA",
+                "D8",
+                "D4",
+                "CA",
+                "C6",
+                "C2"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneDiamond",
+                "oneSpade",
+                "oneNotrump"
+              ],
+              "explanation" : "This balanced hand has 16 HCP, right in the 15 to 17 range. Open 1NT.",
+              "id" : "hand-one-nt-16"
+            },
+            {
+              "answer" : "oneNotrump",
+              "cards" : [
+                "SA",
+                "SQ",
+                "S4",
+                "HK",
+                "H7",
+                "H3",
+                "DA",
+                "DQ",
+                "D9",
+                "D6",
+                "CJ",
+                "C5",
+                "C2"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneDiamond",
+                "oneHeart",
+                "oneNotrump"
+              ],
+              "explanation" : "This balanced hand has 16 HCP, so open the descriptive 1NT rather than a minor.",
+              "id" : "hand-one-diamond"
+            },
+            {
+              "answer" : "oneDiamond",
+              "cards" : [
+                "SA",
+                "S9",
+                "HK",
+                "H7",
+                "H4",
+                "DA",
+                "DJ",
+                "D10",
+                "D6",
+                "D3",
+                "CQ",
+                "C8",
+                "C2"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneDiamond",
+                "oneHeart",
+                "oneNotrump"
+              ],
+              "explanation" : "This hand has opening strength, five diamonds, and no five-card major. Open the longer minor, 1♦.",
+              "id" : "hand-long-diamonds"
+            },
+            {
+              "answer" : "oneNotrump",
+              "cards" : [
+                "SA",
+                "SQ",
+                "S8",
+                "S4",
+                "HK",
+                "HQ",
+                "H6",
+                "DJ",
+                "D7",
+                "D3",
+                "CA",
+                "C6",
+                "C2"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneDiamond",
+                "oneSpade",
+                "oneNotrump"
+              ],
+              "explanation" : "This balanced hand has 16 HCP. The 1NT range takes priority over choosing between the minors.",
+              "id" : "hand-three-three-minors"
+            }
+          ],
+          "kind" : "handMatch",
+          "subtitle" : "Read 13 cards and choose the call",
+          "title" : "Name Your Opening"
+        },
+        {
+          "id" : "plus-opening-extras",
+          "isPlus" : true,
+          "items" : [
+            {
+              "answer" : "oneSpade",
+              "cards" : [
+                "SA",
+                "SK",
+                "SJ",
+                "S8",
+                "S5",
+                "S2",
+                "HQ",
+                "H6",
+                "DK",
+                "D7",
+                "D3",
+                "C8",
+                "C4"
+              ],
+              "choices" : [
+                "pass",
+                "oneHeart",
+                "oneSpade",
+                "oneNotrump"
+              ],
+              "explanation" : "Six spades and 14 HCP make 1♠ the clear opening.",
+              "id" : "plus-open-spade-six"
+            },
+            {
+              "answer" : "oneClub",
+              "cards" : [
+                "SA",
+                "S9",
+                "S4",
+                "HK",
+                "H7",
+                "H3",
+                "DQ",
+                "D6",
+                "CA",
+                "CJ",
+                "C8",
+                "C5",
+                "C2"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneDiamond",
+                "oneHeart",
+                "oneNotrump"
+              ],
+              "explanation" : "This hand has opening strength, five clubs, and no five-card major. It is not balanced enough for 1NT, so open 1♣.",
+              "id" : "plus-open-club"
+            },
+            {
+              "answer" : "oneHeart",
+              "cards" : [
+                "SK",
+                "S8",
+                "HA",
+                "HK",
+                "H10",
+                "H6",
+                "H4",
+                "DQ",
+                "D9",
+                "D5",
+                "CJ",
+                "C7",
+                "C2"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneHeart",
+                "oneSpade",
+                "oneNotrump"
+              ],
+              "explanation" : "The five-card heart suit and opening strength point to 1♥.",
+              "id" : "plus-open-heart"
+            },
+            {
+              "answer" : "pass",
+              "cards" : [
+                "SQ",
+                "S7",
+                "S4",
+                "HJ",
+                "H9",
+                "H6",
+                "H3",
+                "DK",
+                "D8",
+                "D5",
+                "C10",
+                "C4",
+                "C2"
+              ],
+              "choices" : [
+                "pass",
+                "oneClub",
+                "oneDiamond",
+                "oneHeart"
+              ],
+              "explanation" : "Six high-card points and no long suit. You need about 12 to open at the one level, so pass.",
+              "id" : "more-open-pass"
+            },
+            {
+              "answer" : "oneNotrump",
+              "cards" : [
+                "SA",
+                "SQ",
+                "S6",
+                "HK",
+                "H9",
+                "H4",
+                "DQ",
+                "DJ",
+                "D7",
+                "D2",
+                "CK",
+                "C8",
+                "C3"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneDiamond",
+                "oneNotrump",
+                "oneSpade"
+              ],
+              "explanation" : "Fifteen points, balanced 4-3-3-3, and no five-card major. That is the 1NT range exactly.",
+              "id" : "more-open-notrump"
+            },
+            {
+              "answer" : "oneDiamond",
+              "cards" : [
+                "SK",
+                "S9",
+                "S4",
+                "HQ",
+                "H8",
+                "H3",
+                "DA",
+                "DJ",
+                "D7",
+                "D5",
+                "CK",
+                "C6",
+                "C2"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneDiamond",
+                "oneNotrump",
+                "pass"
+              ],
+              "explanation" : "Thirteen points and no five-card major, but too weak for 1NT. Open your longer minor, 1♦.",
+              "id" : "more-open-diamond"
+            },
+            {
+              "answer" : "oneHeart",
+              "cards" : [
+                "SQ",
+                "S5",
+                "HA",
+                "HK",
+                "HJ",
+                "H9",
+                "H6",
+                "H3",
+                "DK",
+                "D7",
+                "D4",
+                "C8",
+                "C2"
+              ],
+              "choices" : [
+                "oneClub",
+                "oneDiamond",
+                "oneHeart",
+                "oneSpade"
+              ],
+              "explanation" : "Thirteen points with a six-card heart suit. Open the major and tell partner about the length straight away.",
+              "id" : "more-open-heart-six"
+            }
+          ],
+          "kind" : "handMatch",
+          "subtitle" : "More five-card majors, minors, and shapes",
+          "title" : "Openings: Extra Reps"
+        }
+      ],
+      "icon" : "quote.bubble.fill",
+      "id" : "auction-room",
+      "isFree" : true,
+      "name" : "The Auction Room",
+      "tagline" : "Count points and find your opening call"
+    },
+    {
+      "drills" : [
+        {
+          "id" : "play-plan",
+          "isPlus" : false,
+          "items" : [
+            {
+              "backBody" : "In notrump, count tricks you can take without giving up the lead. Then identify the suit that can produce the extra tricks you need.",
+              "backTitle" : "Count sure winners",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "Plan before trick one",
+              "id" : "play-count-winners"
+            },
+            {
+              "backBody" : "If your plan does not depend on ruffing losers in the short-trump hand, draw opponents' trumps so they cannot ruff your winners.",
+              "backTitle" : "When opponents' trumps are the danger",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "When should declarer draw trump?",
+              "id" : "play-draw-trump"
+            },
+            {
+              "backBody" : "The ace may take the first round, but your remaining honors can become winners. Giving up one trick can create several later.",
+              "backTitle" : "Establish a long suit",
+              "frontCards" : [
+                "SK",
+                "SQ",
+                "SJ",
+                "S10"
+              ],
+              "frontTitle" : "Lose one to win three",
+              "id" : "play-established-suit"
+            },
+            {
+              "backBody" : "Lead toward the A-Q and play the queen when the lower hand follows low. It wins when the missing king is before the A-Q hand.",
+              "backTitle" : "Play for a missing honor to be well placed",
+              "frontCards" : [
+                "HA",
+                "HQ"
+              ],
+              "frontTitle" : "What is a finesse?",
+              "id" : "play-finesse"
+            },
+            {
+              "backBody" : "Playing low in second seat often preserves your honor to capture a later card. It is a guideline, not a rule, but a strong default.",
+              "backTitle" : "Make declarer guess later",
+              "frontCards" : [
+
+              ],
+              "frontTitle" : "Defender: second hand low",
+              "id" : "play-second-hand-low"
+            }
+          ],
+          "kind" : "flashcards",
+          "subtitle" : "Flashcards: winners, trump, finesses, and timing",
+          "title" : "Declarer Playbook"
+        },
+        {
+          "id" : "choose-card",
+          "isPlus" : false,
+          "items" : [
+            {
+              "answerIndex" : 1,
+              "cards" : [
+                "SA",
+                "H2",
+                "DK",
+                "CQ"
+              ],
+              "id" : "play-follow-heart",
+              "reasoning" : "You hold a heart, so you must follow suit with the 2♥.",
+              "situation" : "West leads the 7♥. You hold these four cards. Which card is legal?",
+              "tip" : "Following suit is mandatory. Winning the trick is not."
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "C10",
+                "CK",
+                "CA"
+              ],
+              "id" : "play-win-cheaply",
+              "reasoning" : "The 10♣ beats the 9♣. Save the king and ace for later tricks.",
+              "situation" : "In notrump, partner leads 4♣. Dummy plays 6♣ and declarer plays 9♣. Which card wins most cheaply?",
+              "tip" : "Win with the lowest card that does the job."
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "H2",
+                "DA",
+                "CA",
+                "D2"
+              ],
+              "id" : "play-ruff",
+              "reasoning" : "Because you are void in spades, you may play a trump. Even the 2♥ beats every non-trump card in the trick.",
+              "situation" : "Hearts are trump. A spade is led and you have no spades. Which card can win the trick?",
+              "tip" : "A low trump outranks a high card in the suit led."
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "DA",
+                "DQ",
+                "D2"
+              ],
+              "id" : "play-cash-ace",
+              "reasoning" : "The ace is the only card here that beats the king. Play A♦ to win the trick.",
+              "situation" : "No trump is in play. You are last to a trick of 10♦, 3♦, K♦. Which card wins?",
+              "tip" : "Compare only cards in the suit led when there is no trump."
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "S2",
+                "H4",
+                "D6"
+              ],
+              "id" : "play-discard",
+              "reasoning" : "Any card is legal when you cannot follow suit. The 2♠ is a sensible low discard.",
+              "situation" : "Clubs are led in notrump and you have no clubs. Which card are you allowed to play?",
+              "tip" : "A discard cannot win unless it is trump, and notrump has no trump suit."
+            }
+          ],
+          "kind" : "play",
+          "subtitle" : "Table situations: make the legal, winning play",
+          "title" : "Choose the Card"
+        },
+        {
+          "id" : "plus-play-extras",
+          "isPlus" : true,
+          "items" : [
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "DK",
+                "D7",
+                "D2"
+              ],
+              "id" : "plus-play-cover",
+              "reasoning" : "Play K♦. Covering may promote partner's jack or ten into a winner.",
+              "situation" : "Declarer leads Q♦ toward dummy. You hold K♦ and play second. Which card follows the guideline “cover an honor with an honor”?",
+              "tip" : "The guideline is strongest when partner may hold the next lower honor."
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+                "CK",
+                "C8",
+                "C2"
+              ],
+              "id" : "plus-play-low-second",
+              "reasoning" : "Play low. If you rise with the king, dummy's ace wins and the jack may become good.",
+              "situation" : "Declarer leads 4♣ from hand. You play second with these clubs and dummy has A-J behind you. What is the usual play?",
+              "tip" : "Second hand low protects honors that sit in front of dummy."
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "SQ"
+              ],
+              "id" : "plus-play-unblock",
+              "reasoning" : "Play Q♠ because it is your only spade. It also unblocks the suit so partner can continue cleanly.",
+              "situation" : "Partner leads A♠ from A-K. You hold a singleton queen. Which card must you play?",
+              "tip" : "Following suit comes before every defensive signal."
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "SA",
+                "SK",
+                "SQ"
+              ],
+              "id" : "more-play-draw-trumps",
+              "reasoning" : "Start drawing trumps with the ace. Leaving trumps outstanding invites a defender to ruff one of your winners.",
+              "situation" : "You are in 4♠ with no side-suit shortness and plenty of trumps. What is usually the first job?",
+              "tip" : "Delay drawing trumps only when you need dummy's trumps for ruffing first."
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "HA",
+                "HK",
+                "DA"
+              ],
+              "id" : "more-play-count-winners",
+              "reasoning" : "Count your sure winners first, then work out where the extra tricks will come from. The ace here is a winner you can already count.",
+              "situation" : "In a notrump contract, what should you do before playing to trick one?",
+              "tip" : "In notrump count winners. In a suit contract count losers."
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+                "SA",
+                "CK",
+                "CQ"
+              ],
+              "id" : "more-play-entry",
+              "reasoning" : "Protect the outside ace. Without an entry the established clubs are unreachable and the whole plan collapses.",
+              "situation" : "Dummy holds a long solid club suit but only one outside entry. Which card do you protect?",
+              "tip" : "A long suit is worth nothing if you cannot get to it."
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+                "D6",
+                "H4",
+                "H3"
+              ],
+              "id" : "more-play-ruff-in-dummy",
+              "reasoning" : "Ruff diamonds in dummy with the small trumps. Dummy's shortness is what turns losers into winners.",
+              "situation" : "You are in 4♥ holding three small diamonds while dummy has a singleton diamond and three trumps. Where do the extra tricks come from?",
+              "tip" : "Ruff in the hand with the fewer trumps, so you keep enough to draw the opponents'."
+            }
+          ],
+          "kind" : "play",
+          "subtitle" : "Covering honors, second hand, and unblocking",
+          "title" : "Choose the Card: Extra Reps"
+        }
+      ],
+      "icon" : "hand.point.up.left.fill",
+      "id" : "declarer-room",
+      "isFree" : true,
+      "name" : "The Declarer Room",
+      "tagline" : "Plan the hand and choose the card"
+    },
+    {
+      "drills" : [
+        {
+          "id" : "defense-calls",
+          "isPlus" : false,
+          "items" : [
+            {
+              "backBody" : "From a solid sequence, lead the top card. The king tells partner you hold the touching honors below it.",
+              "backTitle" : "Lead the K♠",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Lead K♠",
+                  "Lead 6♠"
+                ]
+              },
+              "frontCards" : [
+                "SK",
+                "SQ",
+                "SJ",
+                "S6"
+              ],
+              "frontSubtitle" : "Lead the K♠ or a low spade?",
+              "frontTitle" : "Opening lead against notrump",
+              "id" : "defense-lead-sequence"
+            },
+            {
+              "backBody" : "Against notrump, a long suit is your best chance to establish extra tricks. Without a sequence, lead a low card.",
+              "backTitle" : "Usually yes",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Lead low",
+                  "Avoid hearts"
+                ]
+              },
+              "frontCards" : [
+                "HQ",
+                "H8",
+                "H6",
+                "H4",
+                "H2"
+              ],
+              "frontSubtitle" : "Lead your long suit?",
+              "frontTitle" : "Against 3NT",
+              "id" : "defense-longest-nt"
+            },
+            {
+              "backBody" : "An unsupported ace is often more valuable as an entry or capture later. Do not automatically cash aces on opening lead.",
+              "backTitle" : "Usually save it",
+              "choice" : {
+                "answerIndex" : 1,
+                "options" : [
+                  "Cash it",
+                  "Save it"
+                ]
+              },
+              "frontCards" : [
+                "DA",
+                "D7",
+                "D3"
+              ],
+              "frontSubtitle" : "Cash the ace immediately?",
+              "frontTitle" : "Against notrump",
+              "id" : "defense-ace-unsupported"
+            },
+            {
+              "backBody" : "When partner leads and dummy plays low, third hand often plays high to force out declarer's higher card or win the trick.",
+              "backTitle" : "Third hand high",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Play K♣",
+                  "Play 3♣"
+                ]
+              },
+              "frontCards" : [
+                "CK",
+                "C9",
+                "C3"
+              ],
+              "frontSubtitle" : "Dummy plays low. Play high?",
+              "frontTitle" : "Partner leads low",
+              "id" : "defense-third-hand"
+            },
+            {
+              "backBody" : "Partner chose that suit for a reason. Returning it helps establish and cash the partnership's winners.",
+              "backTitle" : "Usually return it",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Return it",
+                  "Switch suits"
+                ]
+              },
+              "frontCards" : [
+
+              ],
+              "frontSubtitle" : "Return the same suit?",
+              "frontTitle" : "You win partner's opening lead",
+              "id" : "defense-return-suit"
+            }
+          ],
+          "kind" : "flashcards",
+          "subtitle" : "Make the call, then flip for the coach's answer",
+          "title" : "Lead or Hold?"
+        },
+        {
+          "id" : "defense-quiz",
+          "isPlus" : false,
+          "items" : [
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "K♠",
+                "9♠",
+                "4♠",
+                "2♠"
+              ],
+              "explanation" : "Without a strong sequence, lead fourth best from the top: the four. It tells partner about your length as well as your suit.",
+              "id" : "more-defense-fourth-best",
+              "prompt" : "Against notrump you lead your longest suit. From K-9-7-4-2, which card is the standard lead?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "A trump",
+                "Your own longest suit",
+                "A heart",
+                "A singleton in any suit"
+              ],
+              "explanation" : "Partner told you where their strength is. Leading their suit is usually the friendliest start, unless you have a strong reason of your own.",
+              "id" : "more-defense-partner-suit",
+              "prompt" : "Partner overcalled hearts during the auction. What is a reasonable opening lead?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Play low",
+                "Play high",
+                "Play your second highest",
+                "Always play an ace"
+              ],
+              "explanation" : "Third hand high. You are trying to win the trick or force out a high card, since dummy has already passed on it.",
+              "id" : "more-defense-third-hand",
+              "prompt" : "Partner leads a small card and dummy plays low. As third hand, what is the general rule?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "It is against the rules",
+                "It can crash partner's king",
+                "It gives up control and may set up declarer's king",
+                "Aces cannot be led at trick one"
+              ],
+              "explanation" : "Leading an ace with no king behind it gives away a trick and hands declarer a free winner. Save it to capture something.",
+              "id" : "more-defense-ace-lead",
+              "prompt" : "Why is leading an unsupported ace against a suit contract usually a poor choice?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Announcing your points aloud",
+                "Playing cards in an order that shows how many you hold",
+                "Counting declarer's tricks",
+                "Doubling for penalty"
+              ],
+              "explanation" : "Playing high then low usually shows an even number of cards, low then high an odd number. Partnerships agree on this in advance.",
+              "id" : "more-defense-count",
+              "prompt" : "What does it mean to give partner count?"
+            }
+          ],
+          "kind" : "quiz",
+          "subtitle" : "Leads, signals, and third-hand rules",
+          "title" : "Defender's Quiz"
+        },
+        {
+          "id" : "plus-defense-extras",
+          "isPlus" : true,
+          "items" : [
+            {
+              "backBody" : "Lead the top of a touching honor sequence. It describes the holding and avoids giving away a cheap trick.",
+              "backTitle" : "Lead the queen",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Lead Q♦",
+                  "Lead 5♦"
+                ]
+              },
+              "frontCards" : [
+                "DQ",
+                "DJ",
+                "D10",
+                "D5"
+              ],
+              "frontTitle" : "Lead from Q-J-10-5",
+              "id" : "plus-defense-top-sequence"
+            },
+            {
+              "backBody" : "A trump lead can remove dummy's ruffing power and cut down declarer's crossruff.",
+              "backTitle" : "Yes",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Lead trump",
+                  "Avoid trump"
+                ]
+              },
+              "frontCards" : [
+
+              ],
+              "frontSubtitle" : "Lead a trump?",
+              "frontTitle" : "Declarer plans crossruffs",
+              "id" : "plus-defense-trump-lead"
+            },
+            {
+              "backBody" : "A singleton can create a ruff when partner gets the lead and returns the suit.",
+              "backTitle" : "Often worth considering",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Consider it",
+                  "Never"
+                ]
+              },
+              "frontCards" : [
+
+              ],
+              "frontSubtitle" : "Lead a singleton side suit?",
+              "frontTitle" : "Against a suit contract",
+              "id" : "plus-defense-shortness"
+            },
+            {
+              "backBody" : "This is an interior sequence. The jack is safe, describes the holding to partner, and keeps the king guarding the suit.",
+              "backTitle" : "Lead the jack",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Lead J♥",
+                  "Lead K♥"
+                ]
+              },
+              "frontCards" : [
+                "HK",
+                "HJ",
+                "H10",
+                "H6"
+              ],
+              "frontTitle" : "Lead from K-J-10-6",
+              "id" : "more-defense-interior"
+            },
+            {
+              "backBody" : "Top of a doubleton. Following with the three next time shows partner the suit was two cards long and may set up a ruff.",
+              "backTitle" : "Lead the eight",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Lead 8♣",
+                  "Lead 3♣"
+                ]
+              },
+              "frontCards" : [
+                "C8",
+                "C3"
+              ],
+              "frontTitle" : "Lead from 8-3",
+              "id" : "more-defense-doubleton"
+            },
+            {
+              "backBody" : "Leading through dummy's honors means declarer has to commit before partner plays. The old phrase is lead through strength, up to weakness.",
+              "backTitle" : "Yes, lead through strength",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Lead through",
+                  "Lead around"
+                ]
+              },
+              "frontCards" : [
+
+              ],
+              "frontSubtitle" : "Lead through it?",
+              "frontTitle" : "Dummy's strength sits on your left",
+              "id" : "more-defense-through-strength"
+            },
+            {
+              "backBody" : "When declarer sounds stretched, the tricks are often already there for you. A quiet lead avoids handing over the one trick they were missing.",
+              "backTitle" : "Lead passively",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "Lead passively",
+                  "Attack hard"
+                ]
+              },
+              "frontCards" : [
+
+              ],
+              "frontSubtitle" : "Attack, or lead passively?",
+              "frontTitle" : "Declarer bid confidently to a thin game",
+              "id" : "more-defense-passive"
+            },
+            {
+              "backBody" : "A high spot card is the standard encouraging signal. Partnerships vary, so agree your discard method before you sit down.",
+              "backTitle" : "Throw a high diamond",
+              "choice" : {
+                "answerIndex" : 0,
+                "options" : [
+                  "A high one",
+                  "A low one"
+                ]
+              },
+              "frontCards" : [
+
+              ],
+              "frontSubtitle" : "Which diamond do you throw?",
+              "frontTitle" : "You must discard and want a diamond back",
+              "id" : "more-defense-signal-discard"
+            }
+          ],
+          "kind" : "flashcards",
+          "subtitle" : "Sequences, trump leads, and shortness",
+          "title" : "Defense: Extra Reps"
+        }
+      ],
+      "icon" : "shield.lefthalf.filled",
+      "id" : "defense-room",
+      "isFree" : true,
+      "name" : "The Defense Room",
+      "tagline" : "Opening leads and partnership habits"
+    },
+    {
+      "drills" : [
+        {
+          "id" : "competitive-bidding",
+          "isPlus" : false,
+          "items" : [
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Pass",
+                "Bid an unbid suit",
+                "Lead a heart",
+                "Bid notrump at any strength"
+              ],
+              "explanation" : "A takeout double shows support for the unbid suits and asks partner to choose one, unless partner has a special reason to pass.",
+              "id" : "pro-takeout-double",
+              "prompt" : "Left-hand opponent opens 1♥. A takeout double usually asks partner to do what?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Show a balanced hand",
+                "Ask for aces",
+                "Describe a long suit and consume bidding space",
+                "Force partner to game"
+              ],
+              "explanation" : "A preempt shows a long suit and limited hand while making the opponents start their exchange at a higher level.",
+              "id" : "pro-preempt",
+              "prompt" : "What is the main purpose of a preemptive opening?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "For aces",
+                "For a four-card major",
+                "For club support",
+                "For a minimum hand"
+              ],
+              "explanation" : "Stayman asks the 1NT opener whether they hold a four-card major.",
+              "id" : "pro-stayman",
+              "prompt" : "After partner opens 1NT, what does 2♣ Stayman ask?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "The weaker hand",
+                "The stronger notrump hand",
+                "Either opponent",
+                "Dummy"
+              ],
+              "explanation" : "Transfers place the strong 1NT hand as declarer, keeping its honors concealed on opening lead.",
+              "id" : "pro-transfer",
+              "prompt" : "After 1NT, a Jacoby transfer primarily lets which hand become declarer?"
+            }
+          ],
+          "kind" : "quiz",
+          "subtitle" : "Doubles, preempts, Stayman, and transfers",
+          "title" : "Competitive Bidding"
+        },
+        {
+          "id" : "advanced-play",
+          "isPlus" : false,
+          "items" : [
+            {
+              "answerIndex" : 1,
+              "cards" : [
+                "HA",
+                "HQ"
+              ],
+              "id" : "pro-play-finesse",
+              "reasoning" : "Play Q♥. It wins when the missing king is with the opponent who already played.",
+              "situation" : "You lead low toward A-Q of hearts. Left-hand opponent follows low. Which card executes the finesse?",
+              "tip" : "The ace remains as a later winner and entry."
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+                "SA",
+                "S3",
+                "S2"
+              ],
+              "id" : "pro-play-hold-up",
+              "reasoning" : "Duck a small card early. Winning the ace immediately may let defenders run the suit when they regain the lead.",
+              "situation" : "In 3NT, opponents lead a suit where you hold A-x-x and dummy has two small. Which card often breaks their communication?",
+              "tip" : "Count the suit before holding up. Do not duck if the contract is in immediate danger elsewhere."
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+                "CA",
+                "CK",
+                "CQ"
+              ],
+              "id" : "pro-play-safety",
+              "reasoning" : "Cash the queen from the shorter honor holding first. This preserves flexibility when one defender shows out.",
+              "situation" : "You need four club tricks from A-K-9-8 opposite Q-7-6-5. Which honor do you cash first to guard against a 4-1 split?",
+              "tip" : "A safety play trades the maximum result for a better chance to make the contract."
+            }
+          ],
+          "kind" : "play",
+          "subtitle" : "Finesses, hold-ups, and safety plays",
+          "title" : "Advanced Card Play"
+        },
+        {
+          "id" : "duplicate-bridge",
+          "isPlus" : false,
+          "items" : [
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Your raw score alone",
+                "How your result compares with other pairs",
+                "Winning every contract",
+                "Avoiding all doubles"
+              ],
+              "explanation" : "Duplicate matchpoints compare your score on a board with every pair holding the same direction.",
+              "id" : "pro-duplicate-score",
+              "prompt" : "At matchpoints, what matters most?"
+            },
+            {
+              "answerIndex" : 2,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "2♥",
+                "3♠",
+                "4♥",
+                "5♠"
+              ],
+              "explanation" : "Four of a major is the standard game level. Higher contracts may also score game but take unnecessary risk.",
+              "id" : "pro-game-major",
+              "prompt" : "Which major-suit contract earns the game bonus?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Card rank and turn order",
+                "Game bonuses and undertrick penalties",
+                "Trump order and bidding order",
+                "Dummy and declarer"
+              ],
+              "explanation" : "Vulnerability increases the game bonus and the penalties for going down.",
+              "id" : "pro-vulnerability",
+              "prompt" : "Vulnerability changes which two things most directly?"
+            }
+          ],
+          "kind" : "quiz",
+          "subtitle" : "Game levels, vulnerability, and matchpoints",
+          "title" : "Duplicate Decisions"
+        },
+        {
+          "id" : "defensive-signals",
+          "isPlus" : false,
+          "items" : [
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Q",
+                "8",
+                "4",
+                "Any of them"
+              ],
+              "explanation" : "The eight is your highest spare card and reads as encouraging. The queen is too valuable to throw and the four discourages.",
+              "id" : "more-pro-attitude",
+              "prompt" : "Partner leads the ace and you hold Q-8-4. Playing standard signals, which card encourages a continuation?"
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Your highest card in the ruffed suit",
+                "Your lowest card in the ruffed suit",
+                "A trump",
+                "It cannot be shown"
+              ],
+              "explanation" : "Suit preference: a high card asks for the higher-ranking side suit, a low card for the lower. It is one of the most useful agreements in defense.",
+              "id" : "more-pro-suit-preference",
+              "prompt" : "You are giving partner a ruff and want them to return the higher of the two remaining side suits. What do you lead for the ruff?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Doubling a slam",
+                "Ruffing high to force declarer to overruff with an honor",
+                "Leading a trump at trick one",
+                "Discarding a winner"
+              ],
+              "explanation" : "Ruffing with a card declarer must beat can promote a trump trick for partner. Losing your ruff to gain a bigger trick is the whole idea.",
+              "id" : "more-pro-uppercut",
+              "prompt" : "What is an uppercut in defense?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "One",
+                "Two",
+                "Three",
+                "Cannot be known"
+              ],
+              "explanation" : "Thirteen cards total: 5 + 4 + 2 clubs leaves 2 diamonds. Counting the hand out is what separates good defenders from lucky ones.",
+              "id" : "more-pro-count-declarer",
+              "prompt" : "Declarer has shown five spades and four hearts and follows to two rounds of clubs. How many diamonds do they hold?"
+            },
+            {
+              "answerIndex" : 1,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "Never, the rule is absolute",
+                "When playing low would let a singleton or doubleton honor in dummy win",
+                "Only at notrump",
+                "Only when holding an ace"
+              ],
+              "explanation" : "Rules of thumb bend to the layout. If ducking hands declarer a trick they could not otherwise take, rise instead.",
+              "id" : "more-pro-second-hand-high",
+              "prompt" : "When is second hand high right rather than second hand low?"
+            }
+          ],
+          "kind" : "quiz",
+          "subtitle" : "Attitude, count, suit preference, and the uppercut",
+          "title" : "Defensive Signals"
+        }
+      ],
+      "icon" : "crown.fill",
+      "id" : "master-tables",
+      "isFree" : false,
+      "name" : "The Master Tables",
+      "tagline" : "Conventions, advanced card play, and duplicate"
+    }
+  ],
+  "whatsNew" : [
+    {
+      "headline" : "A smarter rhythm for the table",
+      "items" : [
+        {
+          "body" : "Take the same five-question challenge as every other member, share your score, and keep a forgiving five-day weekly rhythm.",
+          "icon" : "calendar.badge.clock",
+          "id" : "bridge-minute",
+          "isPlus" : true,
+          "title" : "Bridge Minute"
+        },
+        {
+          "body" : "Choose your usual bridge night and get a five-minute session built from your mistakes and weakest room when it matters.",
+          "icon" : "person.2.fill",
+          "id" : "game-night-prep",
+          "isPlus" : true,
+          "title" : "Game Night Prep"
+        }
+      ],
+      "version" : "1.2.0"
+    },
+    {
+      "headline" : "Practice that never runs out",
+      "items" : [
+        {
+          "body" : "Freshly dealt hands, every time. Name the opening call or count the points for as long as you like, with a full explanation after every answer.",
+          "icon" : "infinity",
+          "id" : "endless",
+          "isPlus" : true,
+          "title" : "Endless Practice"
+        },
+        {
+          "body" : "The app now remembers what you get wrong and brings it back on a schedule, so the weak spots actually close instead of piling up.",
+          "icon" : "arrow.trianglehead.counterclockwise",
+          "id" : "review",
+          "isPlus" : true,
+          "title" : "Fix My Mistakes"
+        },
+        {
+          "body" : "Ninety seconds, as many correct calls as you can manage, and a personal best to chase.",
+          "icon" : "timer",
+          "id" : "challenge",
+          "isPlus" : true,
+          "title" : "Timed Challenge"
+        },
+        {
+          "body" : "Accuracy for every room, your weakest area, and how much you have practised overall.",
+          "icon" : "chart.bar.fill",
+          "id" : "stats",
+          "isPlus" : false,
+          "title" : "Your progress, in detail"
+        },
+        {
+          "body" : "New hand-written questions across the auction, declarer play, defense, and the Master Tables.",
+          "icon" : "plus.rectangle.on.folder.fill",
+          "id" : "content",
+          "isPlus" : false,
+          "title" : "More drills in every room"
+        }
+      ],
+      "version" : "1.1"
+    }
+  ]
+}
