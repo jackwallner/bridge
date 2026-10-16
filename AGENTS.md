@@ -45,3 +45,4 @@ These files load automatically when you read a file matching their `paths:`. Age
 | `.claude/rules/game-night.md` | Game-night rhythm (1.2): Bridge Minute, the daily declarer question, game night prep | `BridgeMinute*`, `GameNightPrepView`, `SessionBuilder` |
 | `.claude/rules/ipad-layout.md` | iPad (1.2): device family, `CenteringScrollView`, the pager eyebrow, the deck width cap | Drill layouts, Home columns |
 | `.claude/rules/screenshots.md` | Screenshots: the capture script, the throwaway iPad, test gotchas | Capture scripts, the `Screenshots` scheme |
+| `.claude/rules/android.md` | Android port: package, Play products and prices, RevenueCat IDs, content export and parity, signing, Pro emulator, store assets, Play state | Anything in `android/`, `docs/android-*.html`, the Play scripts |
