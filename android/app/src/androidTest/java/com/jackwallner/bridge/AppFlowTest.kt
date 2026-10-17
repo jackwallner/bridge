@@ -85,7 +85,7 @@ class AppFlowTest {
     fun freeQuizGradesAndFinishes() {
         launch(onboarded = true)
         tag("room-card-room")
-        tag("drill-card-quiz")
+        tag("drill-card-check")
         answerUntilScored()
         tag("drill-done")
         waitFor("The Card Room")

@@ -26,7 +26,9 @@ object DebugLaunchOptions {
             graph.progress.setOnboarded(true)
         }
         if (extras.getBoolean("seedProgress")) ScreenshotFixtures.seed(graph)
-        if (extras.getBoolean("forcePro")) graph.subscriptions.forceProForDebug()
+        if (extras.containsKey("forcePro")) {
+            graph.subscriptions.forceProForDebug(extras.getBoolean("forcePro"))
+        }
         extras.getString("appearance")?.let { graph.settings.updateAppearance(Appearance.fromRaw(it)) }
     }
 }

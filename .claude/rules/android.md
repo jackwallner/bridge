@@ -135,3 +135,45 @@ are `docs/android-privacy.html` and `docs/android-terms.html` on GitHub Pages.
 
 Not yet created. The app record, listing, App content declarations, products,
 service account access and every upload are still to do in Play Console.
+
+
+## Pro test runner checks
+
+The Pro's `connectedDebugAndroidTest` returned `BUILD SUCCESSFUL` with zero
+tests on 2026-10-17 after its device runner was killed. Require a nonzero count
+in the XML report. If the runner fails, install the debug app and test APK on
+`emulator-5572` and invoke `AppFlowTest` directly on the Pro:
+
+```sh
+~/Library/Android/sdk/platform-tools/adb -s emulator-5572 shell am instrument -w -r -e class com.jackwallner.bridge.AppFlowTest com.jackwallner.bridge.test/androidx.test.runner.AndroidJUnitRunner
+```
+
+Require `OK (8 tests)` in its output. Never infer a pass from Gradle's exit
+code alone.
+
+On this temporary AVD only, Play Store and Play services can be disabled for
+UI tests that do not exercise billing. This AVD showed System UI ANRs during
+startup on the 2015 Pro. UI tests can use `wm size 720x1600` and
+`wm density 280` to reduce software rendering work, with the same effective
+screen width as 1080x2400 at density 420. Reset both before store captures.
+Preserve `small_phone` and its Google Play account.
+
+`forcePro` launch extras honor both true and false so member and free tests
+remain isolated when run in one instrumentation process. The free card quiz
+uses drill ID `card-check`, exported from Swift.
+
+
+## Verified build (2026-10-17)
+
+- Unit tests: 56 passed. Release APK and signed AAB: `assembleRelease` and
+  `bundleRelease` passed for version 1.2.5, versionCode 1, target SDK 36.
+- Pro device tests: 8 passed with direct instrumentation. The local report is
+  `android/app/build/reports/pro-20261017/AppFlowTest.xml` and its sibling log.
+  Six `StoreScreenshotTest` cases also passed; its log is in the same folder.
+- Verified AAB signature and upload certificate above, all four native-library
+  ELF load alignments at 16 KB, and release APK ZIP alignment at 16 KB.
+- Visually reviewed light and dark Home plus the six captured drill/room
+  screens. The six RGB Play frames and feature graphic are generated in
+  `android/play-assets/`; no store upload was performed in this build session.
+- Shut down the Pro emulator, verified its serial and process were absent,
+  then removed this task's temporary Bridge AVD and test checkout.
