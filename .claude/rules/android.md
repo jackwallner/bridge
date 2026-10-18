@@ -146,9 +146,10 @@ device IDs), IARC, category Education. Publishing overview shows
 
 Left for Jack: paste `BRIDGE_PLAY_REVIEW_CODE` from `~/.bridge_credentials`
 into App access > Bridge+ review unlock > Password, then press Send for review
-when this app's pacing slot comes. Grant the RevenueCat service account
-access to this app and upload the Play credentials JSON in RevenueCat
-(console-recipes play.md 2, revenuecat-developer.md B) if not yet done.
+when this app's pacing slot comes. Both steps are scripted: `~/docs/android/tools/play_handoff.py review-codes`
+and `play_handoff.py rc-credentials --apply` (RevenueCat Play credentials,
+missing as of 2026-10-17). The RevenueCat service account already has
+account-wide Play permissions, so no per-app grant is needed.
 
 ## Pro test runner checks
 
