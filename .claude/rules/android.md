@@ -131,11 +131,24 @@ the 1024x500 feature graphic. Listing text and the changelog are in
 dashes, worded apart from the other card trainers). Privacy and terms pages
 are `docs/android-privacy.html` and `docs/android-terms.html` on GitHub Pages.
 
-## Play state (2026-10-16)
+## Play state (2026-10-17)
 
-Not yet created. The app record, listing, App content declarations, products,
-service account access and every upload are still to do in Play Console.
+Staged, not sent for review. Play app id `4972397687798213539` (E3 Apps). versionCode 1
+(1.2.5) uploaded with `~/docs/android/tools/play_stage.py`; listing, icon,
+feature graphic and 6 screenshots committed by API; draft releases on
+internal and production, production targets all 178 countries. Products from
+`scripts/play-products.py` are active (two subscriptions with `trial-7d`, one
+lifetime). App content is complete: privacy policy, no ads, no ad ID, not a
+government app, no financial features, App access (instructions only),
+18 and over, data safety (RevenueCat: purchase history, app interactions,
+device IDs), IARC, category Education. Publishing overview shows
+"Submit 11 changes for review".
 
+Left for Jack: paste `BRIDGE_PLAY_REVIEW_CODE` from `~/.bridge_credentials`
+into App access > Bridge+ review unlock > Password, then press Send for review
+when this app's pacing slot comes. Grant the RevenueCat service account
+access to this app and upload the Play credentials JSON in RevenueCat
+(console-recipes play.md 2, revenuecat-developer.md B) if not yet done.
 
 ## Pro test runner checks
 
