@@ -90,25 +90,24 @@ paths:
 
 Follow the `android-dev` skill's Remote MacBook Pro section. Host
 `jackwallner@192.168.4.25` (strict host keys), SDK
-`/Users/jackwallner/Library/Android/sdk`. The Pro has no cmdline-tools. Non-connected
-builds use `fm-gradle <tasks>` from `android/` (jmbp is the Pro), never
-`./gradlew` on the Air. For connected tests on this AVD, sync `android/` (minus `build/`, `.gradle/`, `local.properties`,
-`play-assets/`) to `~/bridge-agent-test/android`, write a debug-only
-`local.properties` (sdk.dir, Test Store key, review digest), and set
-`JAVA_HOME` to the Pro's `$HOME/jdks/temurin-17/Contents/Home`. Create the temporary AVD
+`/Users/jackwallner/Library/Android/sdk`. The Pro has no cmdline-tools. Build and
+test with `fm-gradle <tasks>` from `android/` (jmbp is the Pro), never
+`./gradlew` on the Air. It syncs the source with a debug-only
+`local.properties` (no Play key or upload secrets), uses the Pro's JDK 17 and
+forwards `ANDROID_SERIAL`, so connected tests need no hand sync. Create the temporary AVD
 `bridge_agent_test` by hand (`.ini` plus a `config.ini` cloned from another
 agent AVD, `android-36` `google_apis_playstore` x86_64, 1080x2400), boot it
 headless on port 5572:
 
 ```sh
-ssh jackwallner@192.168.4.25 'nohup ~/Library/Android/sdk/emulator/emulator -avd bridge_agent_test -port 5572 -no-window -no-audio -no-boot-anim -no-metrics -gpu swiftshader_indirect > ~/bridge-agent-test/emulator.log 2>&1 &'
+ssh jackwallner@192.168.4.25 'mkdir -p ~/bridge-agent-test && nohup ~/Library/Android/sdk/emulator/emulator -avd bridge_agent_test -port 5572 -no-window -no-audio -no-boot-anim -no-metrics -gpu swiftshader_indirect > ~/bridge-agent-test/emulator.log 2>&1 &'
 ssh jackwallner@192.168.4.25 '~/Library/Android/sdk/platform-tools/adb -s emulator-5572 shell getprop sys.boot_completed'
 ```
 
 Disable Digital Wellbeing (`pm disable-user --user 0
 com.google.android.apps.wellbeing`) and set the three animation scales to 0
-before tests. Run connected tests there with `ANDROID_SERIAL=emulator-5572`
-`./gradlew --no-daemon --max-workers=2 connectedDebugAndroidTest`. Afterwards
+before tests. Run connected tests from `android/` with
+`ANDROID_SERIAL=emulator-5572 fm-gradle --max-workers=2 connectedDebugAndroidTest`. Afterwards
 `adb -s emulator-5572 emu kill`, then delete only
 `~/.android/avd/bridge_agent_test.{avd,ini}` and `~/bridge-agent-test`. Never
 touch `small_phone` (emulator-5554) or other agents' AVDs. The Pro is a 2-core
