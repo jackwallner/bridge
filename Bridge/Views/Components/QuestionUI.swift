@@ -116,6 +116,7 @@ struct ChoiceList: View {
     let answerIndex: Int
     let onPick: (Int) -> Void
 
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var shineTrigger = 0
     @State private var landed = false
     @State private var shakes: CGFloat = 0
@@ -193,7 +194,7 @@ struct ChoiceList: View {
             .shine(trigger: answered && isAnswer ? shineTrigger : 0)
             .winGlow(Theme.bamGreen, active: answered && isAnswer && landed)
             .scaleEffect(answered && isAnswer && landed ? 1.035 : 1)
-            .modifier(ShakeEffect(travels: isMiss ? shakes : 0))
+            .modifier(ShakeEffect(travels: isMiss && !reduceMotion ? shakes : 0))
             .opacity(recedes ? 0.72 : 1)
             .animation(.spring(response: 0.3, dampingFraction: 0.8), value: answered)
         }
