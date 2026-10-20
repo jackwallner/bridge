@@ -1,0 +1,35 @@
+downloaded iOS 27.1 runtime for iPhone Duo in 184s
+xcode 27.1, iPhone Duo on iOS-27-1, runner 3 cores
+xcodegen ready in 0s
+built Bridge in 48s
+booted in 78s
+simctl io enumerate empty, keeping the earlier display ids
+launched com.jackwallner.bridge 434s after the build
+screenshot shots/launch-outer.png (1398x2034)
+openurl failed: noop://1
+screenshot shots/url1-noop---1--outer.png (1398x2034)
+openurl failed: noop://2
+screenshot shots/url2-noop---2--outer.png (1398x2034)
+openurl failed: noop://3
+screenshot shots/url3-noop---3--outer.png (1398x2034)
+openurl failed: noop://4
+screenshot shots/url4-noop---4--outer.png (1398x2034)
+openurl failed: noop://5
+screenshot shots/url5-noop---5--outer.png (1398x2034)
+openurl failed: noop://6
+screenshot shots/url6-noop---6--outer.png (1398x2034)
+unfolded, inner display drawing after 5s
+screenshot shots/launch-inner.png (2853x2007)
+openurl failed: noop://1
+screenshot shots/url1-noop---1--inner.png (2853x2007)
+openurl failed: noop://2
+screenshot shots/url2-noop---2--inner.png (2853x2007)
+openurl failed: noop://3
+screenshot shots/url3-noop---3--inner.png (2853x2007)
+openurl failed: noop://4
+screenshot shots/url4-noop---4--inner.png (2853x2007)
+openurl failed: noop://5
+screenshot shots/url5-noop---5--inner.png (2853x2007)
+openurl failed: noop://6
+screenshot shots/url6-noop---6--inner.png (2853x2007)
+app still running at the end

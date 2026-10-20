@@ -1,0 +1,399 @@
+{
+  "app": "bridge",
+  "target": "iphone_duo_outer",
+  "expected_size": [
+    1398,
+    2034
+  ],
+  "copy_contract": "single-header-benefit-story-v3",
+  "market": {
+    "category": "Bridge learning and decision-practice apps",
+    "audience": "Beginning and improving contract bridge players who want to bid, declare and defend with more confidence",
+    "problem": "Bridge rules are broad, but the table demands a specific bid or play before a player feels ready",
+    "advantage": "Bridge Trainer turns Standard American foundations, bidding, declarer play and defense into short explained drills with mastery tracking",
+    "competitive_context": "It competes with full bridge games and broad lesson libraries. It wins on low-pressure practice for the exact decisions that feel hardest at the table",
+    "search_intent": [
+      "learn bridge",
+      "bridge bidding practice",
+      "bridge trainer",
+      "bridge card game"
+    ],
+    "proof_points": [
+      {
+        "claim": "Name Your Opening deals a hand and asks for the opening call",
+        "source": "raw/outer-opening.png"
+      },
+      {
+        "claim": "Your Progress shows accuracy and per-room mastery",
+        "source": "raw/outer-stats.png"
+      },
+      {
+        "claim": "How to Play explains partnerships with card faces",
+        "source": "raw/outer-howto.png"
+      }
+    ]
+  },
+  "sets": [
+    {
+      "id": "duo-folded",
+      "submission": true,
+      "story": {
+        "throughline": "Move from bridge uncertainty to confident bids and plays through short explained practice on the iPhone Duo outer display",
+        "sequence": [
+          "problem",
+          "mechanism",
+          "proof"
+        ]
+      },
+      "frames": [
+        {
+          "filename": "01-how-bridge-works.png",
+          "path": "duo-folded/01-how-bridge-works.png",
+          "header": "Learn how bridge works in minutes",
+          "pitch": {
+            "benefit": "Understand the deal, partnerships and tricks before the first bid",
+            "problem": "New players feel lost because the rules of bridge arrive all at once at the table",
+            "advantage": "A paged How to Play primer explains one idea per card with real card faces",
+            "proof": "The literal How to Play capture shows the four-player, two-partnership page with card faces",
+            "header_problem": "new players feel lost",
+            "header_advantage": "how bridge works",
+            "search_terms": [
+              "learn bridge",
+              "how to play bridge"
+            ]
+          },
+          "capture_flow": "gh-sim-duo-tour",
+          "evidence_status": "validated-staged",
+          "benefit": "Understand the deal, partnerships and tricks before the first bid",
+          "generic_header_terms": [],
+          "size": [
+            1398,
+            2034
+          ],
+          "mode": "RGB",
+          "header_only": true,
+          "compositor_text_layers": [
+            "header"
+          ],
+          "header_font_size": 150,
+          "header_lines": 2,
+          "header_bounds": [
+            171,
+            120,
+            1228,
+            394
+          ],
+          "story_role": "problem",
+          "story_focus": "how bridge works",
+          "background_id": "theme",
+          "foreground_sha256": "7f238f80dc5c7a1203a872ff4dfd11b9a27e3ae9c85ea3ac637d24ca118adca4",
+          "background_contrast": {
+            "top": 13.06,
+            "bottom": 11.44
+          },
+          "thumbnail_ocr": "Learn how bridge works in minutes < Four players, two partnerships BBB IA",
+          "corner_contrast_vs_ink": 12.26
+        },
+        {
+          "filename": "02-opening-bid.png",
+          "path": "duo-folded/02-opening-bid.png",
+          "header": "Name the right opening bid",
+          "pitch": {
+            "benefit": "Practice choosing an opening call from a real thirteen-card hand",
+            "problem": "Players freeze when they must open and cannot count points and shape quickly",
+            "advantage": "Name Your Opening deals a hand and asks for the best Standard American opening call",
+            "proof": "The literal Name Your Opening capture shows a dealt hand and the call choices",
+            "header_problem": "players freeze when they must open and cannot count points a",
+            "header_advantage": "right opening bid",
+            "search_terms": [
+              "bridge bidding practice",
+              "opening bid"
+            ]
+          },
+          "capture_flow": "gh-sim-duo-tour",
+          "evidence_status": "validated-staged",
+          "benefit": "Practice choosing an opening call from a real thirteen-card hand",
+          "generic_header_terms": [],
+          "size": [
+            1398,
+            2034
+          ],
+          "mode": "RGB",
+          "header_only": true,
+          "compositor_text_layers": [
+            "header"
+          ],
+          "header_font_size": 150,
+          "header_lines": 2,
+          "header_bounds": [
+            244,
+            120,
+            1153,
+            427
+          ],
+          "story_role": "mechanism",
+          "story_focus": "right opening bid",
+          "background_id": "theme",
+          "foreground_sha256": "178a45b862e11c4668ccb7d5a490a171bfb767eb3dfe1935bc7dd4986daf2466",
+          "background_contrast": {
+            "top": 13.06,
+            "bottom": 11.44
+          },
+          "thumbnail_ocr": "2 Name the right rele opening bid What is the best opening call? @ alfselxlsf4 lr) & 7 5",
+          "corner_contrast_vs_ink": 12.26
+        },
+        {
+          "filename": "03-skills-solid.png",
+          "path": "duo-folded/03-skills-solid.png",
+          "header": "See which bridge skills are solid",
+          "pitch": {
+            "benefit": "Know which rooms are mastered and which still need work",
+            "problem": "Without feedback, practice drifts toward what already feels comfortable",
+            "advantage": "Your Progress tracks accuracy and shows which questions are holding in each room",
+            "proof": "The literal Your Progress capture shows accuracy, a work-on card and per-room mastery bars",
+            "header_problem": "without feedback, practice drifts toward what already feels ",
+            "header_advantage": "bridge skills are solid",
+            "search_terms": [
+              "bridge trainer",
+              "bridge practice"
+            ]
+          },
+          "capture_flow": "gh-sim-duo-tour",
+          "evidence_status": "validated-staged",
+          "benefit": "Know which rooms are mastered and which still need work",
+          "generic_header_terms": [],
+          "size": [
+            1398,
+            2034
+          ],
+          "mode": "RGB",
+          "header_only": true,
+          "compositor_text_layers": [
+            "header"
+          ],
+          "header_font_size": 150,
+          "header_lines": 2,
+          "header_bounds": [
+            182,
+            120,
+            1215,
+            394
+          ],
+          "story_role": "proof",
+          "story_focus": "bridge skills are solid",
+          "background_id": "theme",
+          "foreground_sha256": "09d85c7cfefda600d048e3bd943d44cd59043543cabb6081ad384510df92b68b",
+          "background_contrast": {
+            "top": 13.06,
+            "bottom": 11.44
+          },
+          "thumbnail_ocr": "See which bridge skills are solid 84% 69 14 @ Work on The Defense Room s .",
+          "corner_contrast_vs_ink": 12.26
+        },
+        {
+          "filename": "04-plan-the-hand.png",
+          "path": "duo-folded/04-plan-the-hand.png",
+          "header": "Plan the hand before you play a card",
+          "pitch": {
+            "benefit": "Rehearse declarer decisions such as winners, trumps and finesses",
+            "problem": "Declarer play feels rushed when the plan is made one trick at a time",
+            "advantage": "The Declarer Room offers a playbook and table situations to choose the winning card",
+            "proof": "The literal Declarer Room capture lists Declarer Playbook and Choose the Card drills",
+            "header_problem": "declarer play feels rushed when the plan is made one trick a",
+            "header_advantage": "plan the hand",
+            "search_terms": [
+              "bridge declarer play",
+              "bridge play practice"
+            ]
+          },
+          "capture_flow": "gh-sim-duo-tour",
+          "evidence_status": "validated-staged",
+          "benefit": "Rehearse declarer decisions such as winners, trumps and finesses",
+          "generic_header_terms": [],
+          "size": [
+            1398,
+            2034
+          ],
+          "mode": "RGB",
+          "header_only": true,
+          "compositor_text_layers": [
+            "header"
+          ],
+          "header_font_size": 146,
+          "header_lines": 2,
+          "header_bounds": [
+            85,
+            116,
+            1314,
+            419
+          ],
+          "story_role": "support",
+          "story_focus": "plan the hand",
+          "background_id": "theme",
+          "foreground_sha256": "bf6f541ce23c37892dd048e1068fc302ed850abd40b79890b3cd321b04b84db3",
+          "background_contrast": {
+            "top": 13.06,
+            "bottom": 11.44
+          },
+          "thumbnail_ocr": "Plan the hand before you play a card The Declarer Room @",
+          "corner_contrast_vs_ink": 12.26
+        },
+        {
+          "filename": "05-legal-card.png",
+          "path": "duo-folded/05-legal-card.png",
+          "header": "Pick the legal card at the table",
+          "pitch": {
+            "benefit": "Follow suit correctly and choose the card a partner expects",
+            "problem": "Revokes and wrong-card plays embarrass newer players at the club",
+            "advantage": "Quick Session mixes card-play questions such as following suit into a short run",
+            "proof": "The literal Quick Session capture asks what to do holding two hearts when a heart is led",
+            "header_problem": "revokes and wrong-card plays embarrass newer players at the ",
+            "header_advantage": "legal card",
+            "search_terms": [
+              "bridge card play",
+              "learn bridge"
+            ]
+          },
+          "capture_flow": "gh-sim-duo-tour",
+          "evidence_status": "validated-staged",
+          "benefit": "Follow suit correctly and choose the card a partner expects",
+          "generic_header_terms": [],
+          "size": [
+            1398,
+            2034
+          ],
+          "mode": "RGB",
+          "header_only": true,
+          "compositor_text_layers": [
+            "header"
+          ],
+          "header_font_size": 150,
+          "header_lines": 2,
+          "header_bounds": [
+            214,
+            120,
+            1185,
+            394
+          ],
+          "story_role": "support",
+          "story_focus": "legal card",
+          "background_id": "theme",
+          "foreground_sha256": "046487ea532ce538d03acd0cb28dbd849a212bded4f093fa88a107ecf9695e1f",
+          "background_contrast": {
+            "top": 13.06,
+            "bottom": 11.44
+          },
+          "thumbnail_ocr": ". Pick the legal card at the table i) You hold two hearts and a < heart is led. What must you do?",
+          "corner_contrast_vs_ink": 12.26
+        },
+        {
+          "filename": "06-daily-questions.png",
+          "path": "duo-folded/06-daily-questions.png",
+          "header": "Solve fresh bridge questions each day",
+          "pitch": {
+            "benefit": "Answer the same five original bridge questions as every other member each day",
+            "problem": "Skills fade between weekly games without small regular practice",
+            "advantage": "Bridge Minute gives five fresh questions daily with a weekly tracker and archive",
+            "proof": "The literal Bridge Minute capture shows today's challenge, the week tracker and archive",
+            "header_problem": "skills fade between weekly games without small regular pract",
+            "header_advantage": "fresh bridge questions",
+            "search_terms": [
+              "daily bridge",
+              "bridge puzzle"
+            ]
+          },
+          "capture_flow": "gh-sim-duo-tour",
+          "evidence_status": "validated-staged",
+          "benefit": "Answer the same five original bridge questions as every other member each day",
+          "generic_header_terms": [],
+          "size": [
+            1398,
+            2034
+          ],
+          "mode": "RGB",
+          "header_only": true,
+          "compositor_text_layers": [
+            "header"
+          ],
+          "header_font_size": 150,
+          "header_lines": 2,
+          "header_bounds": [
+            124,
+            117,
+            1274,
+            427
+          ],
+          "story_role": "support",
+          "story_focus": "fresh bridge questions",
+          "background_id": "theme",
+          "foreground_sha256": "7640bfbfe30751cbf618e55866f1e9107796d38e665b1765cac645e3b83257cb",
+          "background_contrast": {
+            "top": 13.06,
+            "bottom": 11.44
+          },
+          "thumbnail_ocr": "Solve fresh bridge questions each day = \u00ae Bodayis) prided titi S",
+          "corner_contrast_vs_ink": 12.26
+        },
+        {
+          "filename": "07-game-night.png",
+          "path": "duo-folded/07-game-night.png",
+          "header": "Walk into game night ready",
+          "pitch": {
+            "benefit": "Get a personal warm-up built from recent mistakes before bridge night",
+            "problem": "Players arrive at the table rusty on the spots they missed last week",
+            "advantage": "Game Night Prep schedules a reminder that opens a session from mistakes and weak rooms",
+            "proof": "The literal Game Night Prep capture shows the reminder settings and what the prep targets",
+            "header_problem": "players arrive at the table rusty on the spots they missed l",
+            "header_advantage": "game night ready",
+            "search_terms": [
+              "bridge club",
+              "bridge night"
+            ]
+          },
+          "capture_flow": "gh-sim-duo-tour",
+          "evidence_status": "validated-staged",
+          "benefit": "Get a personal warm-up built from recent mistakes before bridge night",
+          "generic_header_terms": [],
+          "size": [
+            1398,
+            2034
+          ],
+          "mode": "RGB",
+          "header_only": true,
+          "compositor_text_layers": [
+            "header"
+          ],
+          "header_font_size": 150,
+          "header_lines": 2,
+          "header_bounds": [
+            224,
+            120,
+            1174,
+            427
+          ],
+          "story_role": "support",
+          "story_focus": "game night ready",
+          "background_id": "theme",
+          "foreground_sha256": "8c0c15a79edf8e80453cff944f3196f99d665e09362a3bd71ce44218a977db04",
+          "background_contrast": {
+            "top": 13.06,
+            "bottom": 11.44
+          },
+          "thumbnail_ocr": ": Walk into game , night ready < Walk in ready",
+          "corner_contrast_vs_ink": 12.26
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "release_requested": false,
+  "release_ready": false,
+  "disposition": "staged",
+  "capture_status": "ok",
+  "canonical_submission_evidence": false,
+  "status": "pass"
+}

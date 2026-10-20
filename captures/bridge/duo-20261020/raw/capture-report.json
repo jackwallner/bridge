@@ -1,0 +1,201 @@
+{
+  "status": "ok",
+  "manifest": "captures/bridge/duo-20261020/manifest.json",
+  "app": "bridge",
+  "mode": "gh-sim",
+  "device": "iPhone Duo (iOS 27.1, GitHub-hosted simulator via gh-sim launch)",
+  "source_commits": {
+    "run1": "3f3309b (060df5b + build number only)",
+    "run2": "19ea0af (build 21 source)"
+  },
+  "launch_args": {
+    "run1": "-DuoSeed -DuoTour -bridge.suppressWhatsNew -DuoTourFirst 1 -DuoTourStep 12 -DuoTourStepRegular 12 -DuoRoutes stats,room-declarer-room,howto,prep,minute",
+    "run2": "-DuoSeed -DuoTour -bridge.suppressWhatsNew -DuoTourFirst 1 -DuoTourStep 12 -DuoTourStepRegular 12 -DuoRoutes drill-opening-bid,drill-choose-card,quick,prep"
+  },
+  "proof_only": false,
+  "lease_checked_in": null,
+  "note": "Captured on GitHub-hosted Macs with gh-sim; no local agent-sim lease was used, so the audit cannot mark this canonical. Rejected frames: run1 url2 (duplicate), url4 outer (transition artifact); run2 url2 outer (Home mid-transition).",
+  "flows": [
+    {
+      "id": "gh-sim-duo-tour"
+    }
+  ],
+  "screenshot_records": [
+    {
+      "name": "inner-choose-card.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-choose-card.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "8435df8809cc6857611c9a68655d416dff71d6145d08b218af6fa628796effd5",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-082500-5157"
+    },
+    {
+      "name": "inner-declarer-room.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-declarer-room.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "418b72d83377ff2090099ebdb3659abb58194f949b9c148db5966b74dd45ef98",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "inner-home.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-home.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "3eff7ee48d9bd501edf87945176b62f7dfa39ac2f9eb9891570fd00df2ca8985",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "inner-howto.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-howto.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "57aaa43a8308b9ce27f6af5c23fc45e8a775bff9bf08a6b7858c4d50b2cfee29",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "inner-minute.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-minute.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "f701b5307b9f4e692e1b51b085576fb0c62879a3eaec03d0b383a2586fc545b7",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "inner-opening.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-opening.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "770dea8e0a85d274f6c39ab3dbea91216b3b32b2ebd5aa972639b377778a182d",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-082500-5157"
+    },
+    {
+      "name": "inner-prep.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-prep.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "10b32806dae94840d02596c1efe6cec4a206e7b6abccedd18924ada075ca8428",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-082500-5157"
+    },
+    {
+      "name": "inner-quick-defense.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-quick-defense.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "cb78dd6fe6d59a947774739a1ec22502944ef8c4c5cd700260a5e4f7a636fcd7",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-082500-5157"
+    },
+    {
+      "name": "inner-stats.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/inner-stats.png",
+      "size": [
+        2853,
+        2007
+      ],
+      "mode": "RGBA",
+      "sha256": "867a917d69a2cb2ed9c6e5bdb41ea283248a81389c1b271ece4cfbc7030b9a08",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "outer-declarer-room.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/outer-declarer-room.png",
+      "size": [
+        1398,
+        2034
+      ],
+      "mode": "RGBA",
+      "sha256": "5cea109674df36cd7ae01029088437bbea74afc3808c9a9ead3b982c966651ee",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "outer-howto.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/outer-howto.png",
+      "size": [
+        1398,
+        2034
+      ],
+      "mode": "RGBA",
+      "sha256": "7b989a41a0512371de0fb2578be9893e535e7885436ffc856a5abbe47f64d4c2",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "outer-minute.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/outer-minute.png",
+      "size": [
+        1398,
+        2034
+      ],
+      "mode": "RGBA",
+      "sha256": "6fe6387eb98d4478f4a7c12ce6556f449ae69fdf5995535a41144b70cd0badd7",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "outer-opening.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/outer-opening.png",
+      "size": [
+        1398,
+        2034
+      ],
+      "mode": "RGBA",
+      "sha256": "648651d6ec45f2006c0d1573b0982ff49209aeda8a8167ca147c814aea1334d7",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-082500-5157"
+    },
+    {
+      "name": "outer-prep.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/outer-prep.png",
+      "size": [
+        1398,
+        2034
+      ],
+      "mode": "RGBA",
+      "sha256": "1613e03ce535d0f438ededfa47177f6297efc1f1df0b28557ed3f7aa2c7be0bc",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    },
+    {
+      "name": "outer-quick-follow-suit.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/outer-quick-follow-suit.png",
+      "size": [
+        1398,
+        2034
+      ],
+      "mode": "RGBA",
+      "sha256": "2e1a44be5626cc86bcf2c6f1058b88dc8137da1af229cfcc280ba32cb7103d20",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-082500-5157"
+    },
+    {
+      "name": "outer-stats.png",
+      "path": "/Users/jackwallner/.fleet-shift/worktrees/shift-stage-bridge-2-1792508563/captures/bridge/duo-20261020/raw/outer-stats.png",
+      "size": [
+        1398,
+        2034
+      ],
+      "mode": "RGBA",
+      "sha256": "58d0e60e9e86ddd311410b246e8f2855161f31032187bd025d01e011192446cd",
+      "gh_sim_run": "shift-stage-bridge-2-1792508563-mbairdc89-1020-080510-12068"
+    }
+  ]
+}
