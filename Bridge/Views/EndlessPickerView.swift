@@ -7,7 +7,7 @@ struct EndlessPickerView: View {
     @StateObject private var records = PracticeRecordStore.shared
 
     var body: some View {
-        ScrollView {
+        RegularCenteringScrollView {
             VStack(spacing: 12) {
                 intro
                 ForEach(PracticeSkill.allCases) { skill in
