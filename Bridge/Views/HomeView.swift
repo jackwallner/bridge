@@ -13,7 +13,7 @@ struct HomeView: View {
     @EnvironmentObject private var subscriptions: SubscriptionService
     @EnvironmentObject private var settings: AppSettings
     @EnvironmentObject private var router: AppRouter
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var membershipWaitOver = false
     @StateObject private var records = PracticeRecordStore.shared

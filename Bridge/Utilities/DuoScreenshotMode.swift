@@ -8,7 +8,8 @@ import SwiftUI
 /// network, no RevenueCat). `-DuoTour` then walks Home through `-DuoRoutes a,b`
 /// on a timer, because `simctl openurl` raises a confirmation sheet and the
 /// capture job cannot tap. `-DuoTourStep <s>` is the dwell per route and
-/// `-DuoTourFirst <s>` the delay before the first. The tour restarts when the
+/// `-DuoTourFirst <s>` the delay before the first; `-DuoTourStepRegular <s>`
+/// overrides the dwell at regular width (the inner display). The tour restarts when the
 /// size class changes, so folded and unfolded each get the full walk.
 ///
 /// Routes: home, quick, room-<id>, drill-<id>, stats, endless, minute, prep,
@@ -112,13 +113,16 @@ extension HomeView {
     @MainActor
     func runDuoTour() async {
         guard DuoScreenshotMode.wantsTour else { return }
-        let step = Double(DuoScreenshotMode.value("-DuoTourStep") ?? "") ?? 10
+        // The inner display's screenshots are slower, so it may want a longer dwell.
+        let stepKey = horizontalSizeClass == .regular ? "-DuoTourStepRegular" : "-DuoTourStep"
+        let step = Double(DuoScreenshotMode.value(stepKey) ?? DuoScreenshotMode.value("-DuoTourStep") ?? "") ?? 10
         let first = Double(DuoScreenshotMode.value("-DuoTourFirst") ?? "") ?? 2
         let routes = (DuoScreenshotMode.value("-DuoRoutes") ?? Self.defaultDuoRoutes)
             .split(separator: ",").map(String.init)
         try? await Task.sleep(nanoseconds: UInt64(first * 1_000_000_000))
         for route in routes {
             if Task.isCancelled { return }
+            NSLog("DUOTOUR %@ route=%@", horizontalSizeClass == .regular ? "inner" : "outer", route)
             await openDuoRoute(route)
             try? await Task.sleep(nanoseconds: UInt64(step * 1_000_000_000))
         }
