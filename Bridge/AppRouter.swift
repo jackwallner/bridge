@@ -4,6 +4,10 @@ import UserNotifications
 
 enum AppDestination: Hashable {
     case gameNightPrepSession
+
+    /// Free destinations open for everyone; the rest wait behind the paywall.
+    /// Phase 2's challenge is the first free one.
+    var isFree: Bool { false }
 }
 
 enum AppNotification {
@@ -33,6 +37,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         UNUserNotificationCenter.current().delegate = self
+        MetaAds.start(application, launchOptions: launchOptions)
         return true
     }
 

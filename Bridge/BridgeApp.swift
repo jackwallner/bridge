@@ -7,6 +7,7 @@ struct BridgeApp: App {
     @StateObject private var progress = ProgressStore.shared
     @StateObject private var settings = AppSettings.shared
     @StateObject private var router = AppRouter.shared
+    @Environment(\.scenePhase) private var scenePhase
 
     init() {
         // Once per cold launch; the rating prompt waits for the second.
@@ -21,9 +22,17 @@ struct BridgeApp: App {
                 .environmentObject(settings)
                 .environmentObject(router)
                 .preferredColorScheme(settings.appearance.colorScheme)
+                .onChange(of: scenePhase) { _, phase in
+                    // iOS rarely cold-launches an app, so a report queued
+                    // offline also retries every time the app comes back.
+                    guard phase == .active else { return }
+                    Task { await FeedbackService.shared.flushPending() }
+                    MetaAds.activateApp()
+                }
                 .onAppear {
                     subscriptions.start()
                     ConversionDiagnostics.recordAppOpen()
+                    Task { await FeedbackService.shared.flushPending() }
                     #if DEBUG
                     if RevenueCatProbe.isEnabled {
                         // Same entry point the real paywall screens call, so
