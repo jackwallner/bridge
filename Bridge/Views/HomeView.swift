@@ -88,7 +88,6 @@ struct HomeView: View {
             .navigationDestination(item: $duoRoute) {
                 DuoScreenshotMode.destination($0, progress: progress, subscriptions: subscriptions)
             }
-            .task(id: horizontalSizeClass) { await runDuoTour() }
             #endif
             .sheet(isPresented: $showPaywall) { PaywallView(source: "bridge_home_sheet") }
             .sheet(isPresented: $showSettings) { SettingsView() }
@@ -149,6 +148,10 @@ struct HomeView: View {
             }
         }
         .tint(Theme.jade)
+        #if DEBUG
+        // On the stack, not Home's root: a pushed route would cancel a task there.
+        .task(id: horizontalSizeClass) { await runDuoTour() }
+        #endif
     }
 
     @ViewBuilder
