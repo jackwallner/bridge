@@ -3,7 +3,7 @@ import Foundation
 extension Calendar {
     /// Gregorian in the device's time zone.
     ///
-    /// Shared identities (the month's challenge, the day's Mahj Minute) and
+    /// Shared identities (the month's challenge, the day's Bridge Minute) and
     /// stored day keys use it instead of `.current`, so a Buddhist, Hebrew or
     /// Japanese system calendar cannot hand a player different questions from
     /// everyone else, orphan their saved results, or stretch the challenge

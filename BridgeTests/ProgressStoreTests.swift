@@ -36,7 +36,7 @@ final class ProgressStoreTests: XCTestCase {
         XCTAssertTrue(store.hasPracticedSinceOnboarding)
     }
 
-    /// Players who onboarded before 1.3 have no stored mark, so any
+    /// Players who onboarded before 1.2.5 have no stored mark, so any
     /// finished practice counts, as before.
     func testUpgradersCountEveryPractice() {
         store.recordSession(drillID: "meet-cards")

@@ -17,7 +17,7 @@ enum AppStoreLinks {
 /// ends the passive asks: someone who sent feedback can still rate later.
 enum ReviewPromptOutcome: String, Sendable {
     case openedWriteReview
-    /// Written by the old in-app feedback sheet (before 1.3). Kept so
+    /// Written by the old in-app feedback sheet (before 1.2.5). Kept so
     /// those installs decode it; it no longer stops anything.
     case submittedFeedback
 }

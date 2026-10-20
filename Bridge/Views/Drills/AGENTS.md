@@ -15,7 +15,7 @@ silently never fires. Don't "simplify" it back to `onTapGesture`.
 `FlipRotation` is `Animatable` and swaps faces exactly at 90° while the card is
 edge-on. Never rotate the text faces inside a static card background; that's
 what made text detach from the card. Both faces use the same `BridgeCardFace`
-bridgeong-card chrome (ivory surface, double frame, eyebrow, watermark).
+playing-card chrome (ivory surface, double frame, eyebrow, watermark).
 
 ## Subagent delegation
-Follow the global subagent rules: ask Jack for the model before spawning, spawn at most one at a time unless Jack explicitly approves more, and never allow a subagent to spawn another subagent.
+Follow the global subagent rules: omit the `model` parameter, spawn at most one at a time unless Jack explicitly approves more, and never allow a subagent to spawn another subagent.

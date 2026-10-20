@@ -84,7 +84,8 @@ paths:
 - Increment `versionCode` on every Play upload. 1.2.5 is versionCode 1.
 - `scripts/play-upload.sh [validate|internal|internal-draft|production-draft]`
   and `scripts/play-products.py [--dry-run]` need `PLAY_SERVICE_ACCOUNT_JSON`.
-  Neither has been run yet.
+  `play-products.py` has run (see Play state below); `play-upload.sh` has not,
+  the 1.2.5 upload went through `~/docs/android/tools/play_stage.py`.
 
 ## Emulator (remote MacBook Pro only)
 
