@@ -546,8 +546,8 @@ struct FlipCardFace: View {
     }
 }
 
-/// The bridgeong-card chrome both faces share: ivory surface, double frame like
-/// the printed card, corner pips, and a faint tile-glyph watermark so the
+/// The playing-card chrome both faces share: ivory surface, double frame like
+/// the printed card, corner pips, and a faint spade watermark so the
 /// open space feels designed instead of empty.
 private struct BridgeCardFace<Content: View>: View {
     let accent: Color
@@ -574,7 +574,7 @@ private struct BridgeCardFace<Content: View>: View {
         }
         .overlay {
             // Watermark sits above the surface but below the frame.
-            Text("麻")
+            Text("♠")
                 .font(.system(size: 190, weight: .bold))
                 .foregroundStyle(accent.opacity(0.05))
                 .rotationEffect(.degrees(-10))

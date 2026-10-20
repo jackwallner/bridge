@@ -256,6 +256,16 @@ struct ReviewPromptSheet: View {
             sending = false
             if outcome == .sent { Haptics.success() }
             withAnimation(.easeOut(duration: 0.25)) { sendOutcome = outcome }
+            // The Send button VoiceOver was on is gone: say what happened.
+            AccessibilityNotification.Announcement(Self.announcement(outcome)).post()
+        }
+    }
+
+    static func announcement(_ outcome: FeedbackService.Outcome) -> String {
+        switch outcome {
+        case .sent: return "Sent. Thank you."
+        case .queued: return "Saved. It will send the next time you open the app with a connection."
+        case .failed: return "That didn't go through. Try again, or copy your message."
         }
     }
 

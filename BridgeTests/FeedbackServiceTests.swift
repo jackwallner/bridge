@@ -141,4 +141,11 @@ final class FeedbackServiceTests: XCTestCase {
         }
         XCTAssertEqual(service.pendingCount, 20)
     }
+
+    /// The Send button VoiceOver was on is gone, so each outcome is spoken.
+    func testEveryOutcomeHasAnAnnouncement() {
+        for outcome in [FeedbackService.Outcome.sent, .queued, .failed] {
+            XCTAssertFalse(ReviewPromptSheet.announcement(outcome).isEmpty)
+        }
+    }
 }
