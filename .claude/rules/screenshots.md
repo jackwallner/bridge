@@ -29,3 +29,28 @@ the root only taps navigation-bar button 0 while a back button is there,
 because on Home that button is the Settings gear; and the test never calls
 XCTFail, because a failing UI test spends ten minutes collecting simulator
 diagnostics first.
+
+## iPhone Duo capture
+
+DEBUG only (`Bridge/Utilities/DuoScreenshotMode.swift`). `-DuoSeed` fills the
+real stores with a week of practice (streak, mastery rings, Bridge+ override;
+no RevenueCat, no network). `-DuoTour -DuoRoutes a,b,c` walks Home through
+routes on a timer, because the capture job cannot tap and `simctl openurl`
+raises a confirmation sheet. Routes: home, quick, room-<id>, drill-<id>,
+stats, endless, minute, prep, timed, howto, settings, paywall. Dwell is
+`-DuoTourStep` (outer, about 7s per screenshot) and `-DuoTourStepRegular`
+(inner, about 12s). The tour restarts when the size class changes, so each
+display gets a full walk, and it lives on the NavigationStack, not Home's root
+(a pushed route would cancel a task there).
+
+```bash
+gh-sim launch --device 'iPhone Duo' --wait 6 \
+  --args "-DuoSeed -DuoTour -bridge.suppressWhatsNew -DuoTourFirst 1 -DuoTourStep 8 -DuoTourStepRegular 13 -DuoRoutes quick,room-auction-room,stats" \
+  --url noop://1 ... --url noop://8
+```
+
+The launch step has a 10 minute cap that includes boot and every screenshot, so
+keep to about 5 routes and 8 urls per launch, and split bigger sets across
+launches. `--record-seconds` eats the same budget. Never kill a watching
+`gh-sim`; reattach with `gh-sim get <id>`. Sizes: outer 1398x2034, inner
+2853x2007, both in `APP_IPHONE_DUO`.
