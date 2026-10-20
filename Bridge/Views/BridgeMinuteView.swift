@@ -83,7 +83,7 @@ struct BridgeMinuteView: View {
                             if index < completed {
                                 Image(systemName: "checkmark")
                                     .font(.caption2.weight(.black))
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(Theme.onFill)
                             }
                         }
                         .frame(width: 34, height: 34)
@@ -282,7 +282,7 @@ struct BridgeMinuteResultView: View {
         Haptics.success()
         SoundPlayer.play(.complete)
         progress.recordSession(drillID: BridgeMinuteContent.drill.id)
-        ReviewPromptTracker.recordPositiveMoment()
-        reviewMoment += 1
+        // The ask is for a good moment, as in drills: half right or better.
+        if result.score * 2 >= result.total { reviewMoment += 1 }
     }
 }

@@ -1,5 +1,6 @@
 import Foundation
 import RevenueCat
+import StoreKit
 
 enum RevenueCatConfig {
     /// Prod public SDK key (safe to ship; sim builds never configure with it).
@@ -33,23 +34,111 @@ final class SubscriptionService: NSObject, ObservableObject {
 
     @Published private(set) var isPro = false
     @Published private(set) var offerings: Offerings?
+    /// False until a customer record has actually been read, from
+    /// RevenueCat's on-device cache or the network. `isPro` is false before
+    /// that for members too, so nothing may treat "not a member" as a lapse,
+    /// or sell a member a trial, until this is true.
+    @Published private(set) var membershipResolved = false
+    /// The active entitlement is the free week (RevenueCat `periodType`), not a
+    /// paid or lifetime membership.
+    @Published private(set) var isTrialing = false
+    /// When the current entitlement ends. nil for lifetime and for no membership.
+    @Published private(set) var expirationDate: Date?
+    /// Set when a trial or membership was just seen turning toward the exit,
+    /// and not yet asked about. Home presents the one-question prompt and
+    /// clears it. Survives a launch: the ask is stored, not just published.
+    @Published private(set) var pendingChurnMoment: ChurnMoment?
 
     private var isConfigured = false
     private let localOverrideKey = "subscription.localProOverride"
+    private let snapshotKey = "membership.lastSnapshot"
+    private let churnAskSpentKey = "membership.churnAskSpent"
+    private let pendingChurnKey = "membership.pendingChurnMoment"
+    private let reinstallSyncKey = "membership.reinstallSyncDone"
+    /// How old a customer record may be and still serve as the first baseline.
+    static let freshBaselineAge: TimeInterval = 300
+    private var membershipRecovery: Task<Void, Never>?
     private var paywallImpressionsThisSession: Set<String> = []
 
     override private init() {
         super.init()
         isPro = UserDefaults.standard.bool(forKey: localOverrideKey)
+        pendingChurnMoment = UserDefaults.standard.string(forKey: pendingChurnKey)
+            .flatMap(ChurnMoment.init(rawValue:))
+    }
+
+    /// The offering's metadata (the remote switches) is known: loaded, or
+    /// there is no store to ask at all (simulator, screenshots).
+    var remoteConfigKnown: Bool { offerings != nil || !isConfigured }
+
+    /// The churn prompt was shown (or dismissed). One ask per departure.
+    func consumeChurnMoment() {
+        pendingChurnMoment = nil
+        UserDefaults.standard.removeObject(forKey: pendingChurnKey)
     }
 
     func start() {
         configureIfNeeded()
-        guard isConfigured else { return }
+        guard isConfigured else {
+            // No store at all (simulator, screenshots): nothing will ever
+            // load, so what we have is the answer.
+            membershipResolved = true
+            return
+        }
+        // The last record RevenueCat saw, from the first frame: a member is a
+        // member before the network answers.
+        if let cached = Purchases.shared.cachedCustomerInfo { apply(cached) }
         Task {
+            // In parallel with offerings: a reinstalled member should be
+            // recognised before the trial page can be reached.
+            async let recovered: Void = recoverReinstalledMembershipIfNeeded()
             await refreshCustomerInfo()
             await loadOfferings()
+            await recovered
         }
+    }
+
+    /// A reinstall is a new anonymous RevenueCat user, and iOS does not bring
+    /// an existing subscription across on its own, so a paying member looked
+    /// like a stranger (and was offered a trial) until they found Restore.
+    /// StoreKit already knows what this Apple Account owns: if it holds a
+    /// current entitlement and RevenueCat does not, sync once per install.
+    /// `syncPurchases` never shows an Apple Account sign-in prompt.
+    ///
+    /// Retried (from `ensureOfferings`, so before any purchase) until one sync
+    /// succeeds: a failed sync on a bad network must not lose it for good.
+    /// A second caller (the trial button) waits for a sync already running
+    /// instead of skipping it, so a slow sync cannot let a member be sold,
+    /// but never holds the button more than a few seconds on a stalled one.
+    func recoverReinstalledMembershipIfNeeded() async {
+        if membershipRecovery != nil {
+            // Poll rather than await the task: an await on it cannot be cut
+            // short, and a task group waits for every child before it returns.
+            let deadline = Date().addingTimeInterval(3)
+            while membershipRecovery != nil, Date() < deadline {
+                try? await Task.sleep(nanoseconds: 100_000_000)
+            }
+            return
+        }
+        guard isConfigured, !isPro, !UserDefaults.standard.bool(forKey: reinstallSyncKey) else { return }
+        let recovery = Task { await recoverReinstalledMembership() }
+        membershipRecovery = recovery
+        await recovery.value
+        membershipRecovery = nil
+    }
+
+    private func recoverReinstalledMembership() async {
+        var ownsSomething = false
+        for await result in Transaction.currentEntitlements {
+            if case .verified = result {
+                ownsSomething = true
+                break
+            }
+        }
+        guard ownsSomething else { return }
+        guard let info = try? await Purchases.shared.syncPurchases() else { return }
+        UserDefaults.standard.set(true, forKey: reinstallSyncKey)
+        apply(info)
     }
 
     /// Dev/testing switch: flips Pro without a live RC key (Settings toggle).
@@ -91,6 +180,8 @@ final class SubscriptionService: NSObject, ObservableObject {
         // campaign and keyword drove an install, so ad cohorts can be judged on
         // trials and revenue instead of installs alone.
         Purchases.shared.attribution.enableAdServicesAttributionTokenCollection()
+        // Meta ad measurement, off until the build carries a Meta app id.
+        MetaAds.linkRevenueCat()
         isConfigured = true
         #endif
     }
@@ -121,9 +212,12 @@ final class SubscriptionService: NSObject, ObservableObject {
     /// `isConfigured` is the load-bearing guard: `Purchases.shared` traps when
     /// RevenueCat was never configured, which is every simulator run.
     ///
-    /// `setAttributes` only queues. RevenueCat uploads when the app backgrounds
-    /// or folds the queue into the POST that creates a customer, so a probe run
-    /// has to background the app before reading anything back.
+    /// `setAttributes` only queues. RevenueCat uploads the queue when the app
+    /// backgrounds, or folds it into the POST that creates a customer, and a
+    /// customer-info fetch does NOT flush it (measured, not assumed). That is
+    /// fine in production, where every session ends in a backgrounding, but it
+    /// means a probe run has to background the app before reading anything
+    /// back.
     func syncConversionAttributes() {
         guard isConfigured else { return }
         var attributes = ConversionDiagnostics.subscriberAttributes
@@ -131,12 +225,19 @@ final class SubscriptionService: NSObject, ObservableObject {
         if let offering = offerings?.current?.identifier {
             attributes["offering_id"] = offering
         }
+        // Which trial button wording this customer saw (`RemoteConfig`), for
+        // reading an Experiment by attribute as well as by offering.
+        attributes.merge(remoteVariantAttributes) { _, new in new }
         Purchases.shared.attribution.setAttributes(attributes)
     }
 
-    func refreshCustomerInfo() async {
+    /// `fetchCurrent` when the answer has to be new (right after a purchase):
+    /// the default policy hands back a cached record for five minutes, so a
+    /// "confirm" loop on it re-read the same stale record three times.
+    func refreshCustomerInfo(fetchCurrent: Bool = false) async {
         guard isConfigured else { return }
-        if let info = try? await Purchases.shared.customerInfo() {
+        let policy: CacheFetchPolicy = fetchCurrent ? .fetchCurrent : .cachedOrFetched
+        if let info = try? await Purchases.shared.customerInfo(fetchPolicy: policy) {
             apply(info)
         }
     }
@@ -170,6 +271,7 @@ final class SubscriptionService: NSObject, ObservableObject {
     @discardableResult
     func ensureOfferings() async -> Bool {
         guard isConfigured else { return false }
+        await recoverReinstalledMembershipIfNeeded()
         if offerings?.current != nil { return true }
         await loadOfferings()
         return offerings?.current != nil
@@ -181,13 +283,15 @@ final class SubscriptionService: NSObject, ObservableObject {
             return .purchased
         }
         guard let package else { throw PurchaseError.productsUnavailable }
-        let startedTrial = package.storeProduct.introductoryDiscount?.paymentMode == .freeTrial
         let result = try await Purchases.shared.purchase(package: package)
         // RevenueCat reports a user backing out of Apple's sheet as a normal
         // result, not an error. Treating it as a failure is what used to shove
         // a second paywall in front of someone who just said "not now".
         if result.userCancelled { return .cancelled }
         apply(result.customerInfo)
+        // What Apple actually sold, not what the product offers: a returning
+        // subscriber buying a plan with a trial is charged on day one.
+        let startedTrial = result.customerInfo.entitlements[RevenueCatConfig.entitlement]?.periodType == .trial
         ConversionDiagnostics.recordConversion(
             plan: package.storeProduct.productIdentifier,
             startedTrial: startedTrial,
@@ -204,7 +308,7 @@ final class SubscriptionService: NSObject, ObservableObject {
     func confirmEntitlement(attempts: Int = 3) async -> Bool {
         guard isConfigured else { return isPro }
         for attempt in 0..<attempts {
-            await refreshCustomerInfo()
+            await refreshCustomerInfo(fetchCurrent: true)
             if isPro { return true }
             if attempt < attempts - 1 {
                 try? await Task.sleep(nanoseconds: 1_200_000_000)
@@ -220,9 +324,58 @@ final class SubscriptionService: NSObject, ObservableObject {
     }
 
     private func apply(_ info: CustomerInfo) {
-        let entitled = info.entitlements[RevenueCatConfig.entitlement]?.isActive == true
+        let entitlement = info.entitlements[RevenueCatConfig.entitlement]
+        let entitled = entitlement?.isActive == true
         let override = UserDefaults.standard.bool(forKey: localOverrideKey)
         isPro = entitled || override
+        membershipResolved = true
+        isTrialing = entitled && entitlement?.periodType == .trial
+        expirationDate = entitled ? entitlement?.expirationDate : nil
+        observe(MembershipSnapshot.observed(
+            isActive: entitled,
+            isTrial: entitlement?.periodType == .trial,
+            // A card problem turns willRenew off too, but nobody chose to
+            // leave: Apple is still retrying, so it is not a churn moment.
+            willRenew: entitlement?.willRenew == true || entitlement?.billingIssueDetectedAt != nil,
+            expirationDate: entitlement?.expirationDate
+        ), answeredAt: info.requestDate)
+    }
+
+    /// Compares this customer record with the last one seen and remembers a
+    /// churn moment, once per departure. Both snapshots come from RevenueCat,
+    /// never from the local override, so a debug toggle cannot fake a lapse.
+    ///
+    /// The first record ever seen becomes the baseline only if RevenueCat
+    /// answered it recently. Launch applies the cached record first, which
+    /// can be months old: a member who lapsed on an older build read as
+    /// active there, then lapsed a second later, and was asked why they were
+    /// leaving about a departure the app never watched.
+    func observe(
+        _ current: MembershipSnapshot,
+        answeredAt: Date = Date(),
+        now: Date = Date(),
+        defaults: UserDefaults = .standard
+    ) {
+        let previous = (defaults.data(forKey: snapshotKey))
+            .flatMap { try? JSONDecoder().decode(MembershipSnapshot.self, from: $0) }
+        if previous == nil, now.timeIntervalSince(answeredAt) > Self.freshBaselineAge { return }
+        defer {
+            if let data = try? JSONEncoder().encode(current) {
+                defaults.set(data, forKey: snapshotKey)
+            }
+        }
+        if MembershipTransitions.resetsAsk(from: previous, to: current) {
+            defaults.removeObject(forKey: churnAskSpentKey)
+            // They came back before Home asked: a queued "why are you
+            // leaving?" is now false, so drop it.
+            pendingChurnMoment = nil
+            defaults.removeObject(forKey: pendingChurnKey)
+        }
+        guard pendingChurnMoment == nil, !defaults.bool(forKey: churnAskSpentKey) else { return }
+        guard let moment = MembershipTransitions.churnMoment(from: previous, to: current) else { return }
+        defaults.set(true, forKey: churnAskSpentKey)
+        defaults.set(moment.rawValue, forKey: pendingChurnKey)
+        pendingChurnMoment = moment
     }
 }
 

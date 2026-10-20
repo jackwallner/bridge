@@ -14,12 +14,20 @@ struct HomeView: View {
     @EnvironmentObject private var settings: AppSettings
     @EnvironmentObject private var router: AppRouter
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @State private var membershipWaitOver = false
     @StateObject private var records = PracticeRecordStore.shared
     @StateObject private var minuteStore = BridgeMinuteStore.shared
+    @StateObject private var ledger = MasteryLedger.shared
     @State private var path: [AppDestination] = []
     @State private var showPaywall = false
     @State private var showSettings = false
     @State private var showWhatsNew = false
+    /// Non-nil while the one churn question is up.
+    @State private var churnPrompt: ChurnMoment?
+    /// False while a room, drill or deep-linked screen is pushed over Home.
+    /// Room links are view-based, so `path` alone cannot tell.
+    @State private var homeOnScreen = false
     @State private var pendingAfterUpgrade: AppDestination?
     @State private var highlightedRoomID: String?
     @AppStorage("bridge.skillLevel") private var skillLevel = ""
@@ -41,9 +49,13 @@ struct HomeView: View {
                     .padding(.bottom, 24)
                 }
                 .onAppear {
+                    homeOnScreen = true
                     consumeRecommendedRoomHint(proxy: proxy)
                     consumePendingDestination()
+                    recordMastery()
+                    homeIsBareAgain()
                 }
+                .onDisappear { homeOnScreen = false }
                 .onChange(of: showSettings) { _, isShowing in
                     if !isShowing { consumeRecommendedRoomHint(proxy: proxy) }
                 }
@@ -60,7 +72,9 @@ struct HomeView: View {
                     .accessibilityLabel("Settings")
                 }
             }
-            .toolbarBackground(.hidden, for: .navigationBar)
+            // No `.toolbarBackground(.hidden)`: it also removed the system's
+            // scroll-edge blur, and scrolled rooms ran straight under the
+            // clock and the gear. The bar is still clear at the top of Home.
             .navigationDestination(for: AppDestination.self) { destination in
                 switch destination {
                 case .gameNightPrepSession:
@@ -82,8 +96,32 @@ struct HomeView: View {
                     }
                 }
             }
-            .task { presentWhatsNewIfNeeded() }
+            .onChange(of: showWhatsNew) { _, isShowing in
+                if !isShowing { homeIsBareAgain() }
+            }
+            .onChange(of: showSettings) { _, isShowing in
+                if !isShowing { homeIsBareAgain() }
+            }
+            .onChange(of: subscriptions.offerings != nil) { _, loaded in
+                // The tracking switch rides on the offering: act on it once
+                // it is known.
+                guard loaded else { return }
+                Task { await askForTrackingIfNeeded() }
+            }
+            .onChange(of: churnPrompt) { _, moment in
+                if moment == nil { Task { await askForTrackingIfNeeded() } }
+            }
+            .sheet(item: $churnPrompt) { moment in
+                ReviewPromptSheet(initialStep: .churn(moment))
+            }
+            .onChange(of: subscriptions.pendingChurnMoment) { _, _ in presentChurnPromptIfNeeded() }
+            .onChange(of: records.records.count) { _, _ in recordMastery() }
             .onChange(of: router.pendingDestination) { _, _ in consumePendingDestination() }
+            .onChange(of: subscriptions.membershipResolved) { _, _ in
+                recordMastery()
+                consumePendingDestination()
+            }
+            .onChange(of: subscriptions.isPro) { _, _ in recordMastery() }
             .onChange(of: subscriptions.isPro) { _, isMember in
                 if isMember {
                     if let pendingAfterUpgrade {
@@ -98,6 +136,7 @@ struct HomeView: View {
             }
             .onChange(of: showPaywall) { _, isShowing in
                 if !isShowing, !subscriptions.isPro { pendingAfterUpgrade = nil }
+                if !isShowing { homeIsBareAgain() }
             }
         }
         .tint(Theme.jade)
@@ -105,7 +144,10 @@ struct HomeView: View {
 
     @ViewBuilder
     private var homeContent: some View {
-        if horizontalSizeClass == .regular {
+        // Two columns only while the type fits them. At accessibility sizes an
+        // iPad's half-width columns broke room names into fragments, so it
+        // gets the phone's single column.
+        if horizontalSizeClass == .regular, !dynamicTypeSize.isAccessibilitySize {
             VStack(spacing: 18) {
                 header
                 HStack(alignment: .top, spacing: 20) {
@@ -128,6 +170,8 @@ struct HomeView: View {
                 disclaimerFooter
             }
             .padding(.horizontal)
+            .frame(maxWidth: Theme.wideContentWidth)
+            .frame(maxWidth: .infinity)
         }
     }
 
@@ -160,6 +204,41 @@ struct HomeView: View {
         }
     }
 
+    /// Today's mastery, written to the ledger so the week-over-week gain has
+    /// something to measure from. Cheap, and idempotent within a day.
+    private func recordMastery() {
+        // Before RevenueCat answers, a member reads as free and the day's
+        // entry would drop every Bridge+ item, faking a gain the next day.
+        guard subscriptions.membershipResolved else { return }
+        ledger.record(records.masteryByRoom(isMember: subscriptions.isPro))
+    }
+
+    /// The one question asked when a membership turns toward the exit. Waits
+    /// for a drawn, bare Home (no drill pushed, no sheet up) and is only spent
+    /// once it is actually shown; a covered Home retries when it is bare again.
+    private func presentChurnPromptIfNeeded() {
+        guard subscriptions.pendingChurnMoment != nil, progress.hasOnboarded else { return }
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 900_000_000)
+            guard let moment = subscriptions.pendingChurnMoment, homeIsBare else { return }
+            subscriptions.consumeChurnMoment()
+            churnPrompt = moment
+        }
+    }
+
+    /// Nothing pushed and no sheet up: the only state Home may put a prompt on.
+    private var homeIsBare: Bool {
+        homeOnScreen && path.isEmpty && !showWhatsNew && !showPaywall && !showSettings && churnPrompt == nil
+    }
+
+    /// A sheet closed or the player came back to Home: anything that waited
+    /// for a bare Home gets its turn (What's New, the churn question, then ATT).
+    private func homeIsBareAgain() {
+        presentWhatsNewIfNeeded()
+        presentChurnPromptIfNeeded()
+        Task { await askForTrackingIfNeeded() }
+    }
+
     private var gameNightPrepItems: [QuickItem] {
         SessionBuilder.gameNightPrep(
             seen: progress.seenItems,
@@ -170,8 +249,21 @@ struct HomeView: View {
     }
 
     private func consumePendingDestination() {
+        // A member opening a notification cold has isPro false until the
+        // customer record loads; wait for it rather than sell them a paywall.
+        if !subscriptions.membershipResolved, !membershipWaitOver,
+           let waiting = router.pendingDestination, !waiting.isFree {
+            // Offline with no cached record it may never resolve: give it a
+            // few seconds, then fall back to the normal paywall guard.
+            Task { @MainActor in
+                try? await Task.sleep(nanoseconds: 4_000_000_000)
+                membershipWaitOver = true
+                consumePendingDestination()
+            }
+            return
+        }
         guard let destination = router.consumePendingDestination() else { return }
-        guard subscriptions.isPro else {
+        guard destination.isFree || subscriptions.isPro else {
             pendingAfterUpgrade = destination
             showPaywall = true
             return
@@ -180,13 +272,40 @@ struct HomeView: View {
     }
 
     /// The post-update note, once. Deliberately deferred a beat so it lands on
-    /// a drawn Home rather than racing the first frame.
+    /// a drawn Home rather than racing the first frame, and never over a
+    /// screen the player opened from a notification; it waits for them to
+    /// come back to Home.
     private func presentWhatsNewIfNeeded() {
         guard WhatsNew.shouldPresent(hasOnboarded: progress.hasOnboarded) else { return }
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 500_000_000)
+            guard homeIsBare, WhatsNew.shouldPresent(hasOnboarded: progress.hasOnboarded) else { return }
+            // Seen once shown: a swipe-down dismiss must not bring it back
+            // every time Home is bare again.
+            WhatsNew.markSeen()
+            WhatsNew.shownThisLaunch = true
             showWhatsNew = true
         }
+    }
+
+    /// Apple's tracking prompt (Meta ads), only once the player has finished
+    /// a practice of their own after the tour and is back on a bare Home:
+    /// never at launch, never in onboarding, never over a sheet or a pushed
+    /// screen. A stranger asked to be tracked before they have used the app is
+    /// spooked; someone who just finished a drill has a reason to say yes.
+    /// Anything covering Home just defers it until Home is bare again, and a
+    /// launch that showed What's New defers it to the next launch (every
+    /// updater has finished practices).
+    ///
+    /// The `att_prompt` switch lives in the offering, which a cold launch may
+    /// not have yet; with no offering there is no ask, and the offering
+    /// arriving tries again. Inert while `MetaAds.isEnabled` is false.
+    private func askForTrackingIfNeeded() async {
+        guard MetaAds.shouldAskForTracking, progress.hasOnboarded, progress.hasPracticedSinceOnboarding,
+              !WhatsNew.shownThisLaunch else { return }
+        try? await Task.sleep(nanoseconds: 1_200_000_000)
+        guard subscriptions.remoteConfigKnown, subscriptions.isOn(.attPrompt), homeIsBare else { return }
+        await MetaAds.requestTracking()
     }
 
     /// Consumes the one-shot recommendation hint: scrolls to and briefly
@@ -210,43 +329,75 @@ struct HomeView: View {
 
     // MARK: - Header (title left, stats right, one row total)
 
+    /// Title and stats. On a regular width they share one row; on a phone they
+    /// cannot.
+    ///
+    /// Home's content sits directly under the Settings gear. At 402 points the
+    /// trailing stats chip ran into the gear's height and the two controls
+    /// overlapped. Stacking the chips under the title on compact widths costs
+    /// one row and removes the collision outright, rather than tuning a
+    /// padding that only holds at one text size.
+    @ViewBuilder
     private var header: some View {
-        HStack(alignment: .top) {
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Bridge Trainer")
-                    .font(Theme.display(32))
-                    .foregroundStyle(Theme.ink)
-                Text("Your seat at the table.")
-                    .font(.subheadline)
-                    .foregroundStyle(Theme.inkSecondary)
+        if horizontalSizeClass == .regular {
+            HStack(alignment: .top) {
+                headerTitle
+                Spacer(minLength: 8)
+                statsLink
+                    .padding(.top, 4)
             }
-            Spacer(minLength: 8)
-            // The chips were already the honest summary of practice, so they
-            // are also the door to the full breakdown rather than yet another
-            // row competing with the rooms.
-            NavigationLink {
-                StatsView()
-            } label: {
-                HStack(spacing: 8) {
-                    statChip(value: progress.streakCount, icon: "flame.fill", color: Theme.coral,
-                             label: "\(progress.streakCount) day streak")
-                    statChip(value: progress.totalSessions, icon: "checkmark.seal.fill", color: Theme.jade,
-                             label: "\(progress.totalSessions) drills done")
-                }
+            .padding(.top, 2)
+        } else {
+            VStack(alignment: .leading, spacing: 10) {
+                headerTitle
+                statsLink
             }
-            .buttonStyle(.plain)
-            .accessibilityHint("Opens your progress breakdown")
-            .padding(.top, 4)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.top, 2)
         }
-        .padding(.top, 2)
     }
 
-    private func statChip(value: Int, icon: String, color: Color, label: String) -> some View {
+    private var headerTitle: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text("Bridge Trainer")
+                .font(Theme.display(32))
+                .foregroundStyle(Theme.ink)
+            Text("Your seat at the table.")
+                .font(.subheadline)
+                .foregroundStyle(Theme.inkSecondary)
+        }
+    }
+
+    /// The chips were already the honest summary of practice, so they are also
+    /// the door to the full breakdown rather than yet another row competing
+    /// with the rooms.
+    private var statsLink: some View {
+        NavigationLink {
+            StatsView()
+        } label: {
+            HStack(spacing: 8) {
+                statChip(value: progress.currentStreak(), icon: "flame.fill", color: Theme.coral,
+                         label: "\(progress.currentStreak()) day streak")
+                statChip(value: progress.totalSessions, icon: "checkmark.seal.fill", color: Theme.jade,
+                         label: "\(progress.totalSessions) drills done")
+                // Only ever positive. A week that went backwards is not news
+                // worth a chip; the ring already says where things stand.
+                if let gain = ledger.weeklyGain() {
+                    statChip(value: gain, icon: "arrow.up.right", color: Theme.plum,
+                             label: "\(gain) \(gain == 1 ? "question" : "questions") locked in this week", prefix: "+")
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityHint("Opens your progress breakdown")
+    }
+
+    private func statChip(value: Int, icon: String, color: Color, label: String, prefix: String = "") -> some View {
         HStack(spacing: 5) {
             Image(systemName: icon)
                 .font(.caption)
                 .foregroundStyle(color)
-            Text("\(value)")
+            Text("\(prefix)\(value)")
                 .font(.subheadline.weight(.bold))
                 .foregroundStyle(Theme.ink)
                 .monospacedDigit()
@@ -271,15 +422,15 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Get Started")
                         .font(Theme.display(24))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Theme.onFill)
                     Text("A five-minute mix of what you need next")
                         .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.85))
+                        .foregroundStyle(Theme.onFill.opacity(0.9))
                 }
                 Spacer(minLength: 4)
                 Image(systemName: "play.circle.fill")
                     .font(.system(size: 44))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Theme.onFill)
             }
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -330,7 +481,7 @@ struct HomeView: View {
             HStack(spacing: 12) {
                 Image(systemName: "book.fill")
                     .font(.body.weight(.semibold))
-                    .foregroundStyle(Theme.gold)
+                    .foregroundStyle(Theme.goldText)
                     .frame(width: 38, height: 38)
                     .background(Theme.gold.opacity(0.13), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                 VStack(alignment: .leading, spacing: 2) {
@@ -361,15 +512,36 @@ struct HomeView: View {
     /// space.
     private var trainingSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            HStack {
+            HStack(spacing: 6) {
                 Text("TRAINING")
                     .font(.caption.weight(.heavy))
                     .kerning(1.4)
                     .foregroundStyle(Theme.inkSecondary)
                 Spacer()
+                // A phone fits two and a bit of these tiles and the scroll
+                // indicators are off, so without a cue the visible cards read
+                // as the whole offering and the last tiles are never found.
+                if horizontalSizeClass != .regular, !dynamicTypeSize.isAccessibilitySize {
+                    HStack(spacing: 3) {
+                        Text("SWIPE FOR MORE")
+                            .font(.caption2.weight(.heavy))
+                            .kerning(1.1)
+                        Image(systemName: "chevron.compact.right")
+                            .font(.caption2.weight(.bold))
+                    }
+                    .foregroundStyle(Theme.inkTertiary)
+                    .accessibilityHidden(true)
+                }
             }
             .padding(.horizontal, 4)
-            if horizontalSizeClass == .regular {
+            if dynamicTypeSize.isAccessibilitySize {
+                // One full-width column that grows with its text. Fixed-height
+                // tiles drew over each other at the largest sizes.
+                VStack(spacing: 10) {
+                    trainingTiles
+                }
+                .padding(.horizontal, 4)
+            } else if horizontalSizeClass == .regular {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: 10)], spacing: 10) {
                     trainingTiles
                 }
@@ -475,7 +647,7 @@ struct HomeView: View {
                 if locked {
                     Image(systemName: "lock.fill")
                         .font(.caption2)
-                        .foregroundStyle(Theme.gold)
+                        .foregroundStyle(Theme.goldText)
                 }
             }
             Spacer(minLength: 0)
@@ -491,12 +663,14 @@ struct HomeView: View {
             } else {
                 Text(locked ? Membership.name : " ")
                     .font(.caption2.weight(.semibold))
-                    .foregroundStyle(Theme.gold)
+                    .foregroundStyle(Theme.goldText)
             }
         }
         .padding(12)
-        .frame(width: horizontalSizeClass == .regular ? nil : 128, height: 118, alignment: .leading)
-        .frame(maxWidth: horizontalSizeClass == .regular ? .infinity : nil, alignment: .leading)
+        .modifier(TrainingTileFrame(
+            fullWidth: horizontalSizeClass == .regular || dynamicTypeSize.isAccessibilitySize,
+            fixedHeight: !dynamicTypeSize.isAccessibilitySize
+        ))
         .themedCard(corner: 16)
     }
 
@@ -516,6 +690,13 @@ struct HomeView: View {
 
     /// Progress is a ring, not a sentence. "2 of 3 done · 2 free, 1 with Bridge+"
     /// was three facts nobody asked for on a card whose job is to be a door.
+    /// Name and Bridge+ badge side by side, or stacked at accessibility sizes.
+    private var titleLayout: AnyLayout {
+        dynamicTypeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
+            : AnyLayout(HStackLayout(spacing: 6))
+    }
+
     private func roomCard(_ room: Room) -> some View {
         let locked = !room.isFree && !subscriptions.isPro
         let highlighted = highlightedRoomID == room.id
@@ -529,13 +710,17 @@ struct HomeView: View {
             RoomView(room: room)
         } label: {
             HStack(spacing: 14) {
-                Image(systemName: room.icon)
-                    .font(.title3.weight(.semibold))
-                    .foregroundStyle(room.accent)
-                    .frame(width: 48, height: 48)
-                    .background(room.accent.opacity(0.12), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                // At accessibility sizes the icon and a badge beside the name
+                // left the name a word's width, and it broke mid-word.
+                if !dynamicTypeSize.isAccessibilitySize {
+                    Image(systemName: room.icon)
+                        .font(.title3.weight(.semibold))
+                        .foregroundStyle(room.accent)
+                        .frame(width: 48, height: 48)
+                        .background(room.accent.opacity(0.12), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                }
                 VStack(alignment: .leading, spacing: 3) {
-                    HStack(spacing: 6) {
+                    titleLayout {
                         Text(room.name)
                             .font(.headline)
                             .foregroundStyle(Theme.ink)
@@ -546,14 +731,14 @@ struct HomeView: View {
                     Text(room.tagline)
                         .font(.subheadline)
                         .foregroundStyle(Theme.inkSecondary)
-                        .lineLimit(2)
                         .multilineTextAlignment(.leading)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer(minLength: 4)
                 if locked {
                     Image(systemName: "lock.fill")
                         .font(.footnote)
-                        .foregroundStyle(Theme.gold)
+                        .foregroundStyle(Theme.goldText)
                 } else {
                     ProgressRing(done: done, total: total, color: room.accent)
                 }
@@ -674,6 +859,23 @@ extension DrillKind {
         case .quiz: return "questions"
         case .handMatch: return "hands"
         case .play: return "deals"
+        }
+    }
+}
+
+/// A training tile is a fixed 118pt card in the phone's scrolling row and the
+/// iPad grid, and grows with its text at accessibility sizes.
+private struct TrainingTileFrame: ViewModifier {
+    let fullWidth: Bool
+    let fixedHeight: Bool
+
+    func body(content: Content) -> some View {
+        if fixedHeight {
+            content
+                .frame(width: fullWidth ? nil : 128, height: 118, alignment: .leading)
+                .frame(maxWidth: fullWidth ? .infinity : nil, alignment: .leading)
+        } else {
+            content.frame(maxWidth: .infinity, minHeight: 118, alignment: .leading)
         }
     }
 }

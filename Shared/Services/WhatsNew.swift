@@ -107,23 +107,40 @@ enum WhatsNew {
         )
     ]
 
+    /// The newest notes at or below the running version, so a release with
+    /// no entry of its own still carries the last notes to a player updating
+    /// straight past the version that had them.
     static var currentRelease: WhatsNewRelease? {
-        releases.first { $0.version == currentVersion }
+        releases
+            .filter { !isOlder(currentVersion, than: $0.version) }
+            .max { isOlder($0.version, than: $1.version) }
+    }
+
+    static func isOlder(_ version: String, than other: String) -> Bool {
+        version.compare(other, options: .numeric) == .orderedAscending
     }
 
     /// True when this launch is the first one after an update and there are
     /// notes to show for the version now running.
     static func shouldPresent(hasOnboarded: Bool, defaults: UserDefaults = .standard) -> Bool {
-        guard hasOnboarded, currentRelease != nil else { return false }
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-bridge.suppressWhatsNew") { return false }
+        #endif
+        guard hasOnboarded, let release = currentRelease else { return false }
         let lastSeen = defaults.string(forKey: lastSeenKey) ?? ""
         // An empty marker on an onboarded player means they updated from a
         // build that predates this feature. That is exactly the audience.
-        return lastSeen != currentVersion
+        // Anyone who last saw these notes' version or later has read them.
+        return lastSeen.isEmpty || isOlder(lastSeen, than: release.version)
     }
 
     static func markSeen(defaults: UserDefaults = .standard) {
         defaults.set(currentVersion, forKey: lastSeenKey)
     }
+
+    /// Set when the sheet shows. Apple's tracking prompt waits for the next
+    /// launch, so an updating player is not hit with both back to back.
+    @MainActor static var shownThisLaunch = false
 
     /// Called when onboarding finishes so a new player is never shown notes
     /// for a version they have only ever run.

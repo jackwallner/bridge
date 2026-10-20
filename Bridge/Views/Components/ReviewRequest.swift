@@ -5,12 +5,11 @@ import UIKit
 extension View {
     /// Calls Apple's rating prompt about three seconds after a positive moment,
     /// with no question in front of it. Bump `moment` when the moment happens
-    /// (a finished drill, a finished Bridge Minute) after recording it in
-    /// `ReviewPromptTracker`.
+    /// (a finished drill, a finished Bridge Minute).
     ///
     /// Everything is checked again when the wait is over: the view must still
     /// be on screen, `isClear` must hold, and no alert or share sheet may sit on
-    /// top. A blocked ask keeps the moment pending for the next one.
+    /// top. A blocked ask costs nothing; the next positive moment asks again.
     func requestsReview(after moment: Int, isClear: @escaping () -> Bool = { true }) -> some View {
         modifier(ReviewRequestModifier(moment: moment, isClear: isClear))
     }
@@ -30,8 +29,13 @@ private struct ReviewRequestModifier: ViewModifier {
             .onChange(of: moment) { _, _ in schedule() }
     }
 
+    /// RevenueCat's `rating_prompt: off` pauses the asks without a release.
+    /// Never inside onboarding: the tour ends in a real session, and a player
+    /// who relaunched mid-onboarding is already past launch two.
     private var eligible: Bool {
-        ReviewPromptTracker.shouldRequestAfterPositiveMoment(hasCompletedSetup: ProgressStore.shared.hasOnboarded)
+        ProgressStore.shared.hasOnboarded
+            && SubscriptionService.shared.isOn(.ratingPrompt)
+            && ReviewPromptTracker.shouldRequestReview()
     }
 
     private func schedule() {

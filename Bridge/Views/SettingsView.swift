@@ -6,11 +6,13 @@ struct SettingsView: View {
     @EnvironmentObject private var settings: AppSettings
     @EnvironmentObject private var progress: ProgressStore
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.openURL) private var openURL
     @State private var showPaywall = false
     @State private var showWhatsNew = false
     @State private var showResetConfirm = false
     @State private var restoreMessage: String?
     @State private var showFeedback = false
+    @State private var restoring = false
 
     var body: some View {
         NavigationStack {
@@ -47,7 +49,9 @@ struct SettingsView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showFeedback) { FeedbackSheet() }
+            .sheet(isPresented: $showFeedback) {
+                ReviewPromptSheet(initialStep: .feedback)
+            }
             .alert("Restore", isPresented: .init(
                 get: { restoreMessage != nil },
                 set: { if !$0 { restoreMessage = nil } }
@@ -64,13 +68,14 @@ struct SettingsView: View {
                 }
                 Button("Not now", role: .cancel) {}
             } message: {
-                Text("Bridge Trainer can't send your daily reminder until notifications are turned on for it in iOS Settings.")
+                Text("Bridge Trainer cannot send reminders until notifications are turned on in iOS Settings.")
             }
             .alert("Reset all progress?", isPresented: $showResetConfirm) {
                 Button("Reset", role: .destructive) {
                     progress.resetAll()
                     PracticeRecordStore.shared.resetAll()
                     BridgeMinuteStore.shared.resetAll()
+                    MasteryLedger.shared.resetAll()
                 }
                 Button("Cancel", role: .cancel) {}
             } message: {
@@ -128,7 +133,10 @@ struct SettingsView: View {
             if subscriptions.isPro {
                 Label("\(Membership.name) unlocked", systemImage: "checkmark.seal.fill")
                     .foregroundStyle(Theme.jade)
-                Link("Manage Subscription", destination: PaywallLinks.manageSubscriptions)
+                // Lifetime has no expiration and nothing to manage.
+                if subscriptions.expirationDate != nil {
+                    Link("Manage Subscription", destination: PaywallLinks.manageSubscriptions)
+                }
             } else {
                 Button {
                     showPaywall = true
@@ -136,8 +144,11 @@ struct SettingsView: View {
                     Label("Get \(Membership.name)", systemImage: "sparkles")
                 }
             }
-            Button("Restore Purchases") {
+            Button {
+                guard !restoring else { return }
+                restoring = true
                 Task {
+                    defer { restoring = false }
                     do {
                         try await subscriptions.restore()
                         restoreMessage = subscriptions.isPro
@@ -147,7 +158,16 @@ struct SettingsView: View {
                         restoreMessage = error.localizedDescription
                     }
                 }
+            } label: {
+                HStack {
+                    Text("Restore Purchases")
+                    if restoring {
+                        Spacer()
+                        ProgressView()
+                    }
+                }
             }
+            .disabled(restoring)
         }
     }
 
@@ -166,15 +186,19 @@ struct SettingsView: View {
                 }
             }
             Button {
+                // A button never calls `requestReview()`: Apple may show
+                // nothing and the tap would look broken. It opens the
+                // write-review page, which always works. Opening it is the
+                // one thing that ends the passive asks.
                 ReviewPromptTracker.markOpenedWriteReview()
-                UIApplication.shared.open(AppStoreLinks.writeReviewURL)
+                openURL(AppStoreLinks.writeReviewURL)
             } label: {
                 Label("Rate Bridge Trainer", systemImage: "star.fill")
             }
             Button {
                 showFeedback = true
             } label: {
-                Label("Send Feedback", systemImage: "envelope.fill")
+                Label("Send Feedback", systemImage: "bubble.left.fill")
             }
         }
     }

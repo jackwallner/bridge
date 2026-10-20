@@ -167,10 +167,24 @@ final class WhatsNewTests: XCTestCase {
         }
     }
 
-    /// The sheet reads `currentRelease`, so an entry whose version string does
-    /// not match the bundle's would be authored but never shown.
-    func testCurrentReleaseMatchesTheRunningVersion() {
+    /// The sheet reads `currentRelease`: the newest entry at or below the
+    /// bundle's version, so an entry authored for a later version never shows.
+    func testCurrentReleaseIsNotNewerThanTheRunningVersion() {
         guard let release = WhatsNew.currentRelease else { return }
-        XCTAssertEqual(release.version, WhatsNew.currentVersion)
+        XCTAssertFalse(WhatsNew.isOlder(WhatsNew.currentVersion, than: release.version))
+    }
+
+    /// A player who skipped a version still sees the last notes, once; a
+    /// player who already saw them does not see them again on a patch build.
+    func testPatchReleaseCarriesTheLastNotesOnce() {
+        guard let release = WhatsNew.currentRelease else { return }
+        defaults.set("1.0", forKey: "whatsnew.lastSeenVersion")
+        XCTAssertEqual(
+            WhatsNew.shouldPresent(hasOnboarded: true, defaults: defaults),
+            WhatsNew.isOlder("1.0", than: release.version)
+        )
+        defaults.set(release.version, forKey: "whatsnew.lastSeenVersion")
+        XCTAssertFalse(WhatsNew.shouldPresent(hasOnboarded: true, defaults: defaults))
+        XCTAssertTrue(WhatsNew.isOlder("1.4.1", than: "1.4.10"))
     }
 }

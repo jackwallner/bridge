@@ -16,9 +16,15 @@ struct WhatsNewSheet: View {
 
     @EnvironmentObject private var subscriptions: SubscriptionService
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.dynamicTypeSize) private var typeSize
+
+    /// Phase 2: filter out a line whose feature is switched off remotely
+    /// (`RemoteSwitch.challenge`), so the sheet never announces something Home
+    /// no longer shows.
+    private var items: [WhatsNewItem] { release.items }
 
     private var lockedItems: [WhatsNewItem] {
-        subscriptions.isPro ? [] : release.items.filter(\.isPlus)
+        subscriptions.isPro ? [] : items.filter(\.isPlus)
     }
 
     var body: some View {
@@ -26,15 +32,25 @@ struct WhatsNewSheet: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
                     header
-                    ForEach(release.items) { item in
+                    ForEach(items) { item in
                         row(item)
                     }
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 16)
+                // At accessibility sizes a pinned footer covered most of a
+                // small phone, so the buttons scroll with the list there.
+                // Done stays in the toolbar either way.
+                if typeSize.isAccessibilitySize {
+                    footer
+                }
             }
             .background(Theme.background)
-            .safeAreaInset(edge: .bottom) { footer }
+            .safeAreaInset(edge: .bottom) {
+                if !typeSize.isAccessibilitySize {
+                    footer
+                }
+            }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") { close() }
@@ -92,7 +108,7 @@ struct WhatsNewSheet: View {
         }
     }
 
-    /// Members get a single "Start practising" button. Free players get the
+    /// Members get a single "Start practicing" button. Free players get the
     /// same button plus one line about the membership, never a plan picker.
     private var footer: some View {
         VStack(spacing: 10) {
@@ -107,11 +123,14 @@ struct WhatsNewSheet: View {
             Button {
                 close()
             } label: {
-                Text(lockedItems.isEmpty ? "Start practising" : "Keep practising free")
+                Text(lockedItems.isEmpty ? "Start practicing" : "Keep practicing free")
                     .font(.headline)
-                    .foregroundStyle(lockedItems.isEmpty ? .white : Theme.inkSecondary)
+                    .foregroundStyle(lockedItems.isEmpty ? Theme.onFill : Theme.inkSecondary)
+                    .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
-                    .frame(height: lockedItems.isEmpty ? 56 : 44)
+                    // A floor, not a fixed height: at accessibility sizes the
+                    // label wraps instead of cutting to "Keep practic...".
+                    .frame(minHeight: lockedItems.isEmpty ? 56 : 44)
                     .background(
                         lockedItems.isEmpty ? Theme.jade : .clear,
                         in: RoundedRectangle(cornerRadius: 18, style: .continuous)

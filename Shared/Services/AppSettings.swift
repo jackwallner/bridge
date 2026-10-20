@@ -148,6 +148,16 @@ final class AppSettings: ObservableObject {
         ) ?? Date()
     }
 
+    // MARK: - Reminder copy
+
+    /// Generic on purpose. A repeating notification is static text, so any
+    /// number in it goes stale for exactly the player who stops opening the
+    /// app. Progress counts live on Home and Your Progress, where they are
+    /// always current. (Mahj's 1.4.0 baked a weekly count in and had to take
+    /// it back; Bridge never shipped one.)
+    static let dailyReminderBody = "Five minutes of practice keeps your bidding clear and your card play sharp."
+    static let gameNightReminderBody = "Five personalized minutes now can make the table feel calmer later."
+
     // MARK: - Daily reminder
 
     private func requestPermissionAndSchedule() {
@@ -169,7 +179,7 @@ final class AppSettings: ObservableObject {
 
         let content = UNMutableNotificationContent()
         content.title = "Time for a quick drill"
-        content.body = "Five minutes of practice keeps your bidding clear and your card play sharp."
+        content.body = Self.dailyReminderBody
         content.sound = .default
 
         var parts = Calendar.current.dateComponents([.hour, .minute], from: reminderTime)
@@ -204,7 +214,7 @@ final class AppSettings: ObservableObject {
 
         let content = UNMutableNotificationContent()
         content.title = "Your game night prep is ready"
-        content.body = "Five personalized minutes now can make the table feel calmer later."
+        content.body = Self.gameNightReminderBody
         content.sound = .default
         content.userInfo = [AppNotification.routeKey: AppNotification.gameNightPrepValue]
 
