@@ -279,7 +279,7 @@ private struct StreakBanner: View {
             Text(text)
                 .font(.subheadline.weight(.heavy))
         }
-        .foregroundStyle(.white)
+        .foregroundStyle(Theme.onFill)
         .padding(.horizontal, 16)
         .padding(.vertical, 9)
         .background(Theme.coral, in: Capsule())

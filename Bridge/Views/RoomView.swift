@@ -7,6 +7,7 @@ struct RoomView: View {
 
     @EnvironmentObject private var progress: ProgressStore
     @EnvironmentObject private var subscriptions: SubscriptionService
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var showPaywall = false
 
     private var roomLocked: Bool { !room.isFree && !subscriptions.isPro }
@@ -19,7 +20,11 @@ struct RoomView: View {
             VStack(spacing: 14) {
                 header
                 LazyVGrid(
-                    columns: [GridItem(.adaptive(minimum: 320), spacing: 14)],
+                    // One column at accessibility sizes: two on an iPad broke
+                    // drill titles mid-word.
+                    columns: dynamicTypeSize.isAccessibilitySize
+                        ? [GridItem(.flexible())]
+                        : [GridItem(.adaptive(minimum: 320), spacing: 14)],
                     spacing: 14
                 ) {
                     ForEach(room.drills) { drill in
@@ -61,7 +66,7 @@ struct RoomView: View {
                 // preview, not a dead end. Say so, or the lock reads as a wall.
                 Text("Look around. Every drill here opens with \(Membership.name).")
                     .font(.caption.weight(.medium))
-                    .foregroundStyle(Theme.gold)
+                    .foregroundStyle(Theme.goldText)
                     .multilineTextAlignment(.center)
             }
         }
@@ -92,14 +97,21 @@ struct RoomView: View {
 
     private func drillRowBody(_ drill: Drill, locked: Bool) -> some View {
         let done = progress.completions(for: drill.id) > 0
+        let accessibilitySize = dynamicTypeSize.isAccessibilitySize
         return HStack(spacing: 14) {
-            Image(systemName: drill.kind.symbol)
-                .font(.body.weight(.semibold))
-                .foregroundStyle(locked ? room.accent.opacity(0.55) : room.accent)
-                .frame(width: 42, height: 42)
-                .background(room.accent.opacity(locked ? 0.08 : 0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+            if !accessibilitySize {
+                Image(systemName: drill.kind.symbol)
+                    .font(.body.weight(.semibold))
+                    .foregroundStyle(locked ? room.accent.opacity(0.55) : room.accent)
+                    .frame(width: 42, height: 42)
+                    .background(room.accent.opacity(locked ? 0.08 : 0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+            }
             VStack(alignment: .leading, spacing: 3) {
-                HStack(spacing: 6) {
+                // Stacked at accessibility sizes, where a badge beside the
+                // title broke it mid-word ("Tile Chec / k").
+                (accessibilitySize
+                    ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
+                    : AnyLayout(HStackLayout(spacing: 6))) {
                     Text(drill.title)
                         .font(.headline)
                         .foregroundStyle(Theme.ink)
@@ -112,7 +124,7 @@ struct RoomView: View {
                     .font(.subheadline)
                     .foregroundStyle(Theme.inkSecondary)
                     .multilineTextAlignment(.leading)
-                    .lineLimit(2)
+                    .fixedSize(horizontal: false, vertical: true)
                 Text("\(drill.kind.itemCount) \(drill.kind.unitName)")
                     .font(.caption)
                     .foregroundStyle(Theme.inkTertiary)

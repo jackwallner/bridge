@@ -14,6 +14,10 @@ enum Theme {
     static let coral = Color(light: (0.86, 0.42, 0.31), dark: (0.94, 0.56, 0.45))
     /// Soft gold — locks, "best value", coach highlights.
     static let gold = Color(light: (0.76, 0.57, 0.18), dark: (0.88, 0.72, 0.38))
+    /// Gold for TEXT. The fill gold is about 2.5:1 on cream, under AA for the
+    /// small badge and caption text it was used for; this one clears 4.5:1 on
+    /// cream and on a gold-tinted pill.
+    static let goldText = Color(light: (0.52, 0.37, 0.08), dark: (0.88, 0.72, 0.38))
     /// Plum — Play room identity.
     static let plum = Color(light: (0.48, 0.28, 0.52), dark: (0.72, 0.53, 0.76))
 
@@ -62,10 +66,18 @@ enum Theme {
 
     // MARK: Type
 
-    /// Serif display for titles — the "bridge club" voice.
+    /// Serif display for titles: the "bridge club" voice.
+    /// Display type follows the reader's text size, so a title never ends up
+    /// smaller than the body copy under it at accessibility sizes. Capped so
+    /// a 34pt score does not outgrow its screen.
     static func display(_ size: CGFloat, weight: Font.Weight = .bold) -> Font {
-        .system(size: size, weight: weight, design: .serif)
+        let scaled = UIFontMetrics(forTextStyle: .title1).scaledValue(for: size)
+        return .system(size: min(scaled, size * 1.6), weight: weight, design: .serif)
     }
+
+    /// Label on a filled button. The dark-mode fills are light enough that
+    /// white text fell to about 2.5:1, so dark mode uses the background ink.
+    static let onFill = Color(light: (1, 1, 1), dark: (0.11, 0.10, 0.09))
 
     /// Keeps reading and answering comfortable on iPad instead of stretching
     /// phone-sized interactions across the full window.
@@ -106,7 +118,7 @@ struct PlusBadge: View {
     var body: some View {
         Text(text)
             .font(.caption.weight(.heavy))
-            .foregroundStyle(Theme.gold)
+            .foregroundStyle(Theme.goldText)
             .padding(.horizontal, 8)
             .padding(.vertical, 3)
             .background(Theme.gold.opacity(0.15), in: Capsule())
@@ -144,9 +156,12 @@ extension View {
     func primaryCTA(color: Color = Theme.jade) -> some View {
         self
             .font(.headline)
-            .foregroundStyle(.white)
+            .foregroundStyle(Theme.onFill)
+            .multilineTextAlignment(.center)
+            .padding(.vertical, 8)
+            .padding(.horizontal, 12)
             .frame(maxWidth: .infinity)
-            .frame(height: 56)
+            .frame(minHeight: 56)
             .background(color, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
             .shadow(color: color.opacity(0.35), radius: 8, y: 4)
     }

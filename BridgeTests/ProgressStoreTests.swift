@@ -25,6 +25,24 @@ final class ProgressStoreTests: XCTestCase {
         XCTAssertEqual(store.totalSessions, 2)
     }
 
+    /// The tour's closing practice is recorded before onboarding ends, so
+    /// Home's extras wait for a practice the player starts after it.
+    func testTourPracticeDoesNotCountTowardHomeExtras() {
+        XCTAssertFalse(store.hasPracticedSinceOnboarding)
+        store.recordSession(drillID: "quick-session")
+        store.sessionsAtOnboarding = store.totalSessions
+        XCTAssertFalse(store.hasPracticedSinceOnboarding)
+        store.recordSession(drillID: "meet-cards")
+        XCTAssertTrue(store.hasPracticedSinceOnboarding)
+    }
+
+    /// Players who onboarded before 1.3 have no stored mark, so any
+    /// finished practice counts, as before.
+    func testUpgradersCountEveryPractice() {
+        store.recordSession(drillID: "meet-cards")
+        XCTAssertTrue(store.hasPracticedSinceOnboarding)
+    }
+
     func testStreakStartsAtOne() {
         store.recordSession(drillID: "a")
         XCTAssertEqual(store.streakCount, 1)
@@ -49,6 +67,29 @@ final class ProgressStoreTests: XCTestCase {
         store.recordSession(drillID: "a", now: day1)
         store.recordSession(drillID: "a", now: day1.addingTimeInterval(86_400 * 3))
         XCTAssertEqual(store.streakCount, 1)
+    }
+
+    func testCurrentStreakHoldsThroughTheNextDay() {
+        let day1 = Date(timeIntervalSince1970: 1_750_000_000)
+        store.recordSession(drillID: "a", now: day1)
+        store.recordSession(drillID: "a", now: day1.addingTimeInterval(86_400))
+        XCTAssertEqual(store.currentStreak(now: day1.addingTimeInterval(86_400 * 2)), 2)
+    }
+
+    func testCurrentStreakDropsToZeroAfterAMissedDay() {
+        let day1 = Date(timeIntervalSince1970: 1_750_000_000)
+        store.recordSession(drillID: "a", now: day1)
+        store.recordSession(drillID: "a", now: day1.addingTimeInterval(86_400))
+        XCTAssertEqual(store.currentStreak(now: day1.addingTimeInterval(86_400 * 5)), 0)
+    }
+
+    func testClockGoingBackwardsDoesNotRewindTheLastDay() {
+        let day1 = Date(timeIntervalSince1970: 1_750_000_000)
+        store.recordSession(drillID: "a", now: day1)
+        store.recordSession(drillID: "a", now: day1.addingTimeInterval(86_400))
+        store.recordSession(drillID: "a", now: day1)
+        store.recordSession(drillID: "a", now: day1.addingTimeInterval(86_400))
+        XCTAssertEqual(store.streakCount, 2, "Returning to the real date must not count the same day twice")
     }
 
     func testRoomProgress() {

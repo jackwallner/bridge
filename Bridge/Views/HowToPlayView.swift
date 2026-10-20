@@ -13,6 +13,7 @@ struct HowToPlayView: View {
     var onSkip: (() -> Void)?
 
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @AppStorage("bridge.skillLevel") private var skillLevel = ""
     @AppStorage("bridge.recommendedRoomHint") private var recommendedRoomHint = ""
     /// Read to the end once: Home stops showing the primer card, and the
@@ -33,23 +34,28 @@ struct HowToPlayView: View {
     var body: some View {
         VStack(spacing: 18) {
             progressDots
-            Spacer(minLength: 0)
-            pageCard
-                .id(page.id)
-                .offset(x: drag)
-                .rotationEffect(.degrees(Double(drag / 40)), anchor: .bottom)
-                .transition(goingForward
-                    ? .asymmetric(
-                        insertion: .move(edge: .trailing).combined(with: .opacity),
-                        removal: .move(edge: .leading).combined(with: .opacity)
-                    )
-                    : .asymmetric(
-                        insertion: .move(edge: .leading).combined(with: .opacity),
-                        removal: .move(edge: .trailing).combined(with: .opacity)
-                    )
-                )
-                .gesture(pageSwipe)
-            Spacer(minLength: 0)
+            if dynamicTypeSize.isAccessibilitySize {
+                // At the largest sizes a page outgrows the screen and pushed
+                // Continue and Skip below it with no way to reach them. The
+                // page scrolls there, from the top on every page; the footer
+                // stays put.
+                ScrollView { movingCard(swipes: false) }
+                    .id(page.id)
+            } else {
+                // Centred as designed where it fits. On an iPhone SE the
+                // longest pages are taller than the screen and pushed the
+                // dots under the status bar and Skip off the bottom, so
+                // those scroll instead.
+                ViewThatFits(in: .vertical) {
+                    VStack(spacing: 0) {
+                        Spacer(minLength: 0)
+                        movingCard(swipes: true)
+                        Spacer(minLength: 0)
+                    }
+                    ScrollView { movingCard(swipes: false) }
+                        .id(page.id)
+                }
+            }
             footer
         }
         .padding()
@@ -135,6 +141,28 @@ struct HowToPlayView: View {
         }
     }
 
+    /// The page card with its swipe, tilt and page transition. Inside a
+    /// scroll view the swipe is off: it took every drag, vertical ones too,
+    /// so the end of a long page on an iPhone SE could not be scrolled to.
+    /// Back and Continue still page there.
+    private func movingCard(swipes: Bool) -> some View {
+        pageCard
+            .id(page.id)
+            .offset(x: drag)
+            .rotationEffect(.degrees(Double(drag / 40)), anchor: .bottom)
+            .transition(goingForward
+                ? .asymmetric(
+                    insertion: .move(edge: .trailing).combined(with: .opacity),
+                    removal: .move(edge: .leading).combined(with: .opacity)
+                )
+                : .asymmetric(
+                    insertion: .move(edge: .leading).combined(with: .opacity),
+                    removal: .move(edge: .trailing).combined(with: .opacity)
+                )
+            )
+            .gesture(pageSwipe, including: swipes ? .all : .subviews)
+    }
+
     private var pageCard: some View {
         VStack(spacing: 16) {
             Image(systemName: page.icon)
@@ -147,7 +175,14 @@ struct HowToPlayView: View {
                 .foregroundStyle(Theme.ink)
                 .multilineTextAlignment(.center)
             if !page.cards.isEmpty {
-                BridgeHandView(cards: page.cards, cardWidth: 46)
+                // A wide hand at 46pt can be wider than the card on a small
+                // iPhone and push Back and Continue off the screen. Take the
+                // largest size that fits.
+                ViewThatFits(in: .horizontal) {
+                    ForEach([46, 40, 36, 32], id: \.self) { width in
+                        BridgeHandView(cards: page.cards, cardWidth: CGFloat(width))
+                    }
+                }
             }
             Text(page.body)
                 .font(.body)

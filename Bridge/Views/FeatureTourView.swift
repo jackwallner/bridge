@@ -9,6 +9,7 @@ struct FeatureTourView: View {
 
     @EnvironmentObject private var subscriptions: SubscriptionService
     @EnvironmentObject private var progress: ProgressStore
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var index = 0
     @State private var shineTrigger = 0
     @State private var confettiTrigger = 0
@@ -37,69 +38,100 @@ struct FeatureTourView: View {
                 }
             }
             .padding(.top, 10)
-            Spacer(minLength: 0)
-            VStack(spacing: 16) {
-                Text(page.eyebrow)
-                    .font(.caption.weight(.heavy))
-                    .kerning(2)
-                    .foregroundStyle(page.accentGold ? Theme.gold : Theme.jade)
-                page.hero
-                Text(page.title)
-                    .font(Theme.display(27))
-                    .foregroundStyle(Theme.ink)
-                    .multilineTextAlignment(.center)
-                Text(page.body)
-                    .font(.body)
-                    .foregroundStyle(Theme.inkSecondary)
-                    .multilineTextAlignment(.center)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            .padding(24)
-            .frame(maxWidth: .infinity)
-            .themedCard(corner: 22)
-            .shine(trigger: shineTrigger, corner: 22)
-            .id(index)
-            .transition(.asymmetric(
-                insertion: .move(edge: .trailing).combined(with: .opacity),
-                removal: .move(edge: .leading).combined(with: .opacity)
-            ))
-            Spacer(minLength: 0)
-            // The escape hatch is offered on EVERY page, not just at the
-            // session prompt: by the time someone has tapped through a trial
-            // page and a tour, "let me just use the app" is a fair ask.
-            VStack(spacing: 10) {
-                Button {
-                    advance(pageCount: pages.count)
-                } label: {
-                    Text(isLast ? "Start my first session" : "Show me").primaryCTA()
-                }
-                Button {
-                    Haptics.impact(.light, intensity: 0.6)
-                    onDone()
-                } label: {
-                    Text(isLast ? "Skip it, take me to the app" : "Skip the tour")
-                        .font(.subheadline.weight(.medium))
-                        .foregroundStyle(Theme.inkSecondary)
+            if dynamicTypeSize.isAccessibilitySize {
+                // At the largest sizes a page outgrows the screen and pushed
+                // Show me and Skip below it with no way to reach them. The
+                // page scrolls there, from the top on every page; the
+                // buttons stay put.
+                ScrollView { card(page) }
+                    .id(index)
+            } else {
+                // Centred where it fits; scrolls on a small phone rather than
+                // pushing the buttons off the screen.
+                ViewThatFits(in: .vertical) {
+                    VStack(spacing: 0) {
+                        Spacer(minLength: 0)
+                        card(page)
+                        Spacer(minLength: 0)
+                    }
+                    ScrollView { card(page) }
+                        .id(index)
                 }
             }
+            buttons(isLast: isLast, pageCount: pages.count)
         }
         .padding()
+        .frame(maxWidth: Theme.readableContentWidth)
+        .frame(maxWidth: .infinity)
         .background(Theme.background)
         .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.35)) }
         .fullScreenCover(isPresented: $showQuickSession, onDismiss: onDone) {
-            NavigationStack {
-                QuickSessionView(
-                    items: SessionBuilder.quickSession(
-                        seen: progress.seenItems,
-                        missed: progress.missedItems,
-                        includePro: subscriptions.isPro
-                    ),
-                    isDaily: false,
-                    onClose: { showQuickSession = false }
-                )
-            }
+            quickSession
         }
         .onAppear { fireShine() }
+    }
+
+    private func card(_ page: TourPage) -> some View {
+        VStack(spacing: 16) {
+            Text(page.eyebrow)
+                .font(.caption.weight(.heavy))
+                .kerning(2)
+                .foregroundStyle(page.accentGold ? Theme.gold : Theme.jade)
+            page.hero
+            Text(page.title)
+                .font(Theme.display(27))
+                .foregroundStyle(Theme.ink)
+                .multilineTextAlignment(.center)
+            Text(page.body)
+                .font(.body)
+                .foregroundStyle(Theme.inkSecondary)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(24)
+        .frame(maxWidth: .infinity)
+        .themedCard(corner: 22)
+        .shine(trigger: shineTrigger, corner: 22)
+        .id(index)
+        .transition(.asymmetric(
+            insertion: .move(edge: .trailing).combined(with: .opacity),
+            removal: .move(edge: .leading).combined(with: .opacity)
+        ))
+    }
+
+    // The escape hatch is offered on EVERY page, not just at the session
+    // prompt: by the time someone has tapped through a trial page and a tour,
+    // "let me just use the app" is a fair ask.
+    private func buttons(isLast: Bool, pageCount: Int) -> some View {
+        VStack(spacing: 10) {
+            Button {
+                advance(pageCount: pageCount)
+            } label: {
+                Text(isLast ? "Start my first session" : "Show me").primaryCTA()
+            }
+            Button {
+                Haptics.impact(.light, intensity: 0.6)
+                onDone()
+            } label: {
+                Text(isLast ? "Skip it, take me to the app" : "Skip the tour")
+                    .font(.subheadline.weight(.medium))
+                    .foregroundStyle(Theme.inkSecondary)
+            }
+        }
+    }
+
+    private var quickSession: some View {
+        NavigationStack {
+            QuickSessionView(
+                items: SessionBuilder.quickSession(
+                    seen: progress.seenItems,
+                    missed: progress.missedItems,
+                    includePro: subscriptions.isPro
+                ),
+                isDaily: false,
+                onClose: { showQuickSession = false }
+            )
+        }
     }
 
     // MARK: - Pages
@@ -122,7 +154,7 @@ struct FeatureTourView: View {
                 ? TourPage(
                     eyebrow: "YOURS NOW",
                     title: "\(Membership.name) is open",
-                    body: "Your trial already includes Endless Practice, the timed challenge, the extra sets in every room, and the Master Tables: conventions, advanced play, and duplicate decisions.",
+                    body: "\(subscriptions.isTrialing ? "Your free week" : "Your membership") already includes Endless Practice, the timed challenge, the extra sets in every room, and the Master Tables: conventions, advanced play, and duplicate decisions.",
                     hero: AnyView(proHero(locked: false)),
                     accentGold: true
                 )
@@ -157,15 +189,15 @@ struct FeatureTourView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Get Started")
                         .font(Theme.display(20))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Theme.onFill)
                     Text("A five-minute mix of what you need next")
                         .font(.caption)
-                        .foregroundStyle(.white.opacity(0.85))
+                        .foregroundStyle(Theme.onFill.opacity(0.9))
                 }
                 Spacer(minLength: 4)
                 Image(systemName: "play.circle.fill")
                     .font(.system(size: 34))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Theme.onFill)
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -217,7 +249,7 @@ struct FeatureTourView: View {
                 Text(Membership.name.uppercased())
                     .font(.caption.weight(.heavy))
                     .kerning(1.6)
-                    .foregroundStyle(Theme.gold)
+                    .foregroundStyle(Theme.goldText)
                 Spacer()
                 if !locked {
                     Image(systemName: "checkmark.seal.fill")
@@ -228,13 +260,16 @@ struct FeatureTourView: View {
             // Master Tables are carried by the page body, so the hero does not
             // have to say everything.
             ForEach(["Endless Practice, never repeats", "Fix My Mistakes replays your misses", "Timed Challenge, 90 seconds"], id: \.self) { line in
-                HStack(spacing: 8) {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
                     Image(systemName: locked ? "sparkles" : "checkmark.circle.fill")
                         .font(.footnote)
                         .foregroundStyle(locked ? Theme.gold : Theme.jade)
+                    // Wrap, never truncate: on an iPhone SE and at larger
+                    // sizes all three lines lost their second half.
                     Text(line)
                         .font(.subheadline.weight(.medium))
                         .foregroundStyle(Theme.ink)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
         }
