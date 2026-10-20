@@ -703,9 +703,7 @@ struct HomeView: View {
         // Count only the drills this player can actually open. Putting the
         // locked Bridge+ set in the denominator would mean a free player's ring
         // can never close, which is a nag dressed up as progress.
-        let open = room.drills.filter { !room.isLocked($0, isMember: subscriptions.isPro) }
-        let total = open.count
-        let done = open.filter { progress.completions(for: $0.id) > 0 }.count
+        let mastery = records.mastery(for: room, isMember: subscriptions.isPro)
         return NavigationLink {
             RoomView(room: room)
         } label: {
@@ -740,7 +738,7 @@ struct HomeView: View {
                         .font(.footnote)
                         .foregroundStyle(Theme.goldText)
                 } else {
-                    ProgressRing(done: done, total: total, color: room.accent)
+                    MasteryRing(mastery: mastery, color: room.accent)
                 }
             }
             .padding(14)
@@ -753,8 +751,8 @@ struct HomeView: View {
         }
         .buttonStyle(PressableCardStyle())
         .accessibilityHint(locked
-            ? "Locked. \(total) drills, included with \(Membership.name)"
-            : "\(done) of \(total) drills done")
+            ? "Locked. \(room.drills.count) drills, included with \(Membership.name)"
+            : "\(mastery.level.title). \(mastery.known) of \(mastery.total) questions solid")
         .id(room.id)
     }
 
@@ -806,39 +804,49 @@ struct HomeView: View {
     }
 }
 
-/// Room completion at a glance: a ring that fills as the room's drills get
-/// done, and becomes a seal once they all are.
-struct ProgressRing: View {
-    let done: Int
-    let total: Int
+/// Room mastery at a glance: a ring that fills as the room's questions start
+/// holding, with the level word underneath so the ring means more than
+/// "some of a thing".
+struct MasteryRing: View {
+    let mastery: RoomMastery
     var color: Color
 
-    private var fraction: Double {
-        guard total > 0 else { return 0 }
-        return Double(done) / Double(total)
-    }
+    /// 9pt by default, growing with text size but capped at 12pt: wider and the
+    /// level word took the width from the room name beside it.
+    @ScaledMetric(relativeTo: .caption2) private var captionSize: CGFloat = 9
 
     var body: some View {
-        ZStack {
-            Circle()
-                .stroke(color.opacity(0.18), lineWidth: 3)
-            Circle()
-                .trim(from: 0, to: fraction)
-                .stroke(color, style: StrokeStyle(lineWidth: 3, lineCap: .round))
-                .rotationEffect(.degrees(-90))
-                .animation(.spring(response: 0.5, dampingFraction: 0.8), value: fraction)
-            if done == total, total > 0 {
-                Image(systemName: "checkmark")
-                    .font(.caption2.weight(.black))
-                    .foregroundStyle(color)
-            } else {
-                Text("\(done)/\(total)")
-                    .font(.system(size: 10, weight: .bold, design: .rounded))
-                    .foregroundStyle(Theme.inkSecondary)
-                    .monospacedDigit()
+        VStack(spacing: 3) {
+            ZStack {
+                Circle()
+                    .stroke(color.opacity(0.18), lineWidth: 3)
+                Circle()
+                    .trim(from: 0, to: mastery.fraction)
+                    .stroke(color, style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                    .rotationEffect(.degrees(-90))
+                    .animation(.spring(response: 0.5, dampingFraction: 0.8), value: mastery.fraction)
+                switch mastery.level {
+                case .sharp:
+                    Image(systemName: "star.fill")
+                        .font(.system(size: 11, weight: .black))
+                        .foregroundStyle(color)
+                case .untouched, .learning where mastery.known == 0:
+                    // An empty ring already says nothing is locked in yet.
+                    EmptyView()
+                default:
+                    Text("\(Int((mastery.fraction * 100).rounded()))")
+                        .font(.system(size: 10, weight: .bold, design: .rounded))
+                        .foregroundStyle(Theme.inkSecondary)
+                        .monospacedDigit()
+                }
             }
+            .frame(width: 32, height: 32)
+            Text(mastery.level == .untouched ? "New" : mastery.level.title)
+                .font(.system(size: min(captionSize, 12), weight: .semibold))
+                .foregroundStyle(Theme.inkTertiary)
+                .fixedSize()
         }
-        .frame(width: 32, height: 32)
+        .frame(minWidth: 46)
         .accessibilityHidden(true)
     }
 }

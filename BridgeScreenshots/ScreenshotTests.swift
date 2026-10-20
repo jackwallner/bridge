@@ -101,6 +101,14 @@ final class ScreenshotTests: XCTestCase {
         if open("The Defense Room") {
             capture("09_defense_room")
         }
+        home()
+
+        // After the answers above the rings have moved and the chips link to
+        // Your Progress, where mastery and the work-on card live.
+        capture("10_home_after_practice")
+        if open("drills done") {
+            capture("11_your_progress")
+        }
 
         if !problems.isEmpty {
             let note = XCTAttachment(string: problems.joined(separator: "\n"))

@@ -164,4 +164,29 @@ final class MasteryTests: XCTestCase {
         }
         XCTAssertNotEqual(store.roomToWorkOn(isMember: false)?.roomID, "master-tables")
     }
+
+    /// Records key on item id alone, so two authored questions sharing an id
+    /// would share one streak and a room could report a question known that
+    /// the player never answered.
+    func testTrackableItemIDsAreUniqueAcrossTheWholeLibrary() {
+        var seen = Set<String>()
+        for room in DrillLibrary.rooms {
+            for id in PracticeRecordStore.trackableItemIDs(in: room, isMember: true) {
+                XCTAssertTrue(seen.insert(id).inserted, "Duplicate item id \(id) in \(room.id)")
+            }
+        }
+    }
+
+    /// Of two started rooms, the card points at the one with less locked in.
+    func testRoomToWorkOnPicksTheLeastMasteredStartedRoom() {
+        let other = DrillLibrary.rooms.first { $0.id != cardRoom.id && $0.isFree }!
+        let strong = PracticeRecordStore.trackableItemIDs(in: cardRoom, isMember: false)
+        let weak = PracticeRecordStore.trackableItemIDs(in: other, isMember: false)
+        for id in strong.prefix(strong.count * 2 / 3) {
+            store.record(itemID: id, roomID: cardRoom.id, correct: true)
+            store.record(itemID: id, roomID: cardRoom.id, correct: true)
+        }
+        store.record(itemID: weak[0], roomID: other.id, correct: false)
+        XCTAssertEqual(store.roomToWorkOn(isMember: false)?.roomID, other.id)
+    }
 }
