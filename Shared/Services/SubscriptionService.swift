@@ -89,10 +89,10 @@ final class SubscriptionService: NSObject, ObservableObject {
         // member before the network answers.
         if let cached = Purchases.shared.cachedCustomerInfo { apply(cached) }
         Task {
+            await refreshCustomerInfo()
             // In parallel with offerings: a reinstalled member should be
             // recognised before the trial page can be reached.
             async let recovered: Void = recoverReinstalledMembershipIfNeeded()
-            await refreshCustomerInfo()
             await loadOfferings()
             await recovered
         }
