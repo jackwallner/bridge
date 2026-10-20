@@ -67,5 +67,7 @@ Bridge never shipped Mahj's counted 1.4.0 copy, so no migration exists).
 
 Trial-end reminder screen (Mahj removed it from the frozen trial flow), the
 game night card on Home, per-question report link, and the monthly challenge
-(phase 2). Mastery rings on Home rooms, the "what is holding" list and "work on"
-card use the same `Mastery.swift` data and are phase 2.
+(needs authored, defensible deals; not started). Mastery rings on Home rooms
+(`MasteryRing`), the "What is holding" list and the "Work on" card (a link into
+the room) shipped 2026-10-20 in `HomeView` and `StatsView`. Confetti, shine and
+the wrong-answer shake skip under Reduce Motion.
