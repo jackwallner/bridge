@@ -23,6 +23,9 @@ struct HomeView: View {
     @State private var showPaywall = false
     @State private var showSettings = false
     @State private var showWhatsNew = false
+    #if DEBUG
+    @State var duoRoute: DuoScreenshotMode.Route?
+    #endif
     /// Non-nil while the one churn question is up.
     @State private var churnPrompt: ChurnMoment?
     /// False while a room, drill or deep-linked screen is pushed over Home.
@@ -81,6 +84,12 @@ struct HomeView: View {
                     QuickSessionView(gameNightPrep: gameNightPrepItems)
                 }
             }
+            #if DEBUG
+            .navigationDestination(item: $duoRoute) {
+                DuoScreenshotMode.destination($0, progress: progress, subscriptions: subscriptions)
+            }
+            .task(id: horizontalSizeClass) { await runDuoTour() }
+            #endif
             .sheet(isPresented: $showPaywall) { PaywallView(source: "bridge_home_sheet") }
             .sheet(isPresented: $showSettings) { SettingsView() }
             .sheet(isPresented: $showWhatsNew) {
@@ -326,6 +335,13 @@ struct HomeView: View {
             withAnimation(.easeOut(duration: 0.4)) { highlightedRoomID = nil }
         }
     }
+
+    #if DEBUG
+    func setDuoSheets(settings: Bool, paywall: Bool) {
+        showSettings = settings
+        showPaywall = paywall
+    }
+    #endif
 
     // MARK: - Header (title left, stats right, one row total)
 
