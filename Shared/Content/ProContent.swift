@@ -43,19 +43,11 @@ enum ProContent {
         ),
         PlayScenario(
             id: "pro-play-hold-up",
-            situation: "In 3NT, opponents lead a suit where you hold A-x-x and dummy has two small. Which card often breaks their communication?",
-            cards: [.s(.ace), .s(.three), .s(.two)],
-            answerIndex: 2,
+            situation: "In 3NT, the opponents lead a spade. You hold the ace and two small spades, and dummy has two small. Which card do you play on this first round?",
+            cards: [.s(.ace), .s(.three)],
+            answerIndex: 1,
             reasoning: "Duck a small card early. Winning the ace immediately may let defenders run the suit when they regain the lead.",
             tip: "Count the suit before holding up. Do not duck if the contract is in immediate danger elsewhere."
-        ),
-        PlayScenario(
-            id: "pro-play-safety",
-            situation: "You need four club tricks from A-K-9-8 opposite Q-7-6-5. Which honor do you cash first to guard against a 4-1 split?",
-            cards: [.c(.ace), .c(.king), .c(.queen)],
-            answerIndex: 2,
-            reasoning: "Cash the queen from the shorter honor holding first. This preserves flexibility when one defender shows out.",
-            tip: "A safety play trades the maximum result for a better chance to make the contract."
         ),
     ]
 
@@ -69,10 +61,10 @@ enum ProContent {
         ),
         QuizQuestion(
             id: "pro-game-major",
-            prompt: "Which major-suit contract earns the game bonus?",
+            prompt: "Which is the lowest major-suit contract that earns the game bonus?",
             choices: ["2♥", "3♠", "4♥", "5♠"],
             answerIndex: 2,
-            explanation: "Four of a major is the standard game level. Higher contracts may also score game but take unnecessary risk."
+            explanation: "Four of a major is the game level: 10 tricks. Higher contracts also score game but ask for more tricks than you need."
         ),
         QuizQuestion(
             id: "pro-vulnerability",

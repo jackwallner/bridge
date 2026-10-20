@@ -74,6 +74,22 @@ final class HandGeneratorTests: XCTestCase {
         XCTAssertNil(HandGenerator.opening(for: cards))
     }
 
+    /// 11 and 12 point hands are a judgment call at many tables, and a major
+    /// with a six-card minor splits the room. Neither may become a question.
+    func testSkipsBorderlineHands() {
+        var generator = StableSeededGenerator(seed: "borderline")
+        let deck = Suit.allCases.flatMap { suit in Rank.allCases.map { BridgeCard($0, suit) } }
+        for _ in 0..<4000 {
+            let cards = Array(deck.shuffled(using: &generator).prefix(13)).racked
+            let shape = HandGenerator.Shape(cards)
+            guard let answer = HandGenerator.opening(for: cards) else { continue }
+            XCTAssertFalse((11...12).contains(shape.highCardPoints), "\(shape.highCardPoints) HCP was graded \(answer.displayName)")
+            if let major = shape.longestMajor, shape.length(major) == 5 {
+                XCTAssertFalse(shape.length(.clubs) >= 6 || shape.length(.diamonds) >= 6)
+            }
+        }
+    }
+
     func testRejectsWrongCardCount() {
         XCTAssertNil(HandGenerator.opening(for: [.s(.ace), .s(.king)]))
     }
@@ -147,7 +163,8 @@ final class HandGeneratorTests: XCTestCase {
             XCTAssertEqual(question.cards.count, 13, "\(question.id) is not a 13-card hand")
             XCTAssertEqual(Set(question.cards).count, 13, "\(question.id) repeats a card")
             XCTAssertTrue(question.choices.contains(question.answer), "\(question.id) cannot be answered")
-            guard let classified = HandGenerator.opening(for: question.cards) else { continue }
+            let classified = HandGenerator.opening(for: question.cards)
+            XCTAssertNotNil(classified, "\(question.id) is a judgment call the engine will not grade")
             XCTAssertEqual(classified, question.answer, "\(question.id) disagrees with the classifier")
         }
     }

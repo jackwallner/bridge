@@ -46,7 +46,7 @@ enum HowToPlayContent {
             id: "htp-points",
             icon: "number.circle.fill",
             title: "Count your strength",
-            body: "High-card points help describe a hand: ace 4, king 3, queen 2, jack 1. In a beginner framework, pass below opening strength and open around 13 points.",
+            body: "High-card points help describe a hand: ace 4, king 3, queen 2, jack 1. In a beginner framework, pass below opening strength and open with about 13 or more.",
             cards: [.s(.ace), .h(.king), .d(.queen), .c(.jack)],
             tip: "A balanced 15 to 17 HCP hand usually opens 1NT."
         ),
@@ -54,7 +54,7 @@ enum HowToPlayContent {
             id: "htp-roles",
             icon: "person.2.fill",
             title: "Declarer, dummy, defenders",
-            body: "The player who first named the contract's denomination becomes declarer. Their partner lays dummy face up after the opening lead. The other partnership defends.",
+            body: "On the side that wins the auction, the partner who first bid the contract's suit (or notrump) becomes declarer. Their partner lays dummy face up after the opening lead. The other partnership defends.",
             tip: "Declarer chooses every card played from dummy."
         ),
         HowToPlayPage(

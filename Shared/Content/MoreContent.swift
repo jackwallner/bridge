@@ -75,7 +75,7 @@ enum MoreContent {
                     .c(.ten), .c(.four), .c(.two)],
             choices: [.pass, .oneClub, .oneDiamond, .oneHeart],
             answer: .pass,
-            explanation: "Six high-card points and no long suit. You need about 12 to open at the one level, so pass."
+            explanation: "Six high-card points and no long suit. You need about 13 to open at the one level, so pass."
         ),
         HandMatchQuestion(
             id: "more-open-notrump",
@@ -114,35 +114,35 @@ enum MoreContent {
     static let plays: [PlayScenario] = [
         PlayScenario(
             id: "more-play-draw-trumps",
-            situation: "You are in 4♠ with no side-suit shortness and plenty of trumps. What is usually the first job?",
-            cards: [.s(.ace), .s(.king), .s(.queen)],
+            situation: "You are in 4♠ with plenty of trumps and no plan to ruff anything in dummy. You are on lead in your hand. Which card do you play first?",
+            cards: [.s(.ace), .h(.two), .d(.two)],
             answerIndex: 0,
-            reasoning: "Start drawing trumps with the ace. Leaving trumps outstanding invites a defender to ruff one of your winners.",
+            reasoning: "Start drawing trumps with the ace of spades. Leaving trumps outstanding invites a defender to ruff one of your winners.",
             tip: "Delay drawing trumps only when you need dummy's trumps for ruffing first."
         ),
         PlayScenario(
             id: "more-play-count-winners",
-            situation: "In a notrump contract, what should you do before playing to trick one?",
-            cards: [.h(.ace), .h(.king), .d(.ace)],
+            situation: "You are declarer in 3NT and dummy has just come down. Before you play to trick one, you count your sure winners. Which of these cards is a sure winner on its own?",
+            cards: [.h(.ace), .h(.seven), .d(.five)],
             answerIndex: 0,
-            reasoning: "Count your sure winners first, then work out where the extra tricks will come from. The ace here is a winner you can already count.",
+            reasoning: "The ace of hearts cannot be beaten, so it is a trick you can count right now. A low card is only a winner if every higher card in its suit has gone.",
             tip: "In notrump count winners. In a suit contract count losers."
         ),
         PlayScenario(
             id: "more-play-entry",
-            situation: "Dummy holds a long solid club suit but only one outside entry. Which card do you protect?",
+            situation: "Dummy has a long club suit headed by the king and queen, plus the ace of spades, which is dummy's only way back in. Which card do you save until the clubs are ready to run?",
             cards: [.s(.ace), .c(.king), .c(.queen)],
             answerIndex: 0,
-            reasoning: "Protect the outside ace. Without an entry the established clubs are unreachable and the whole plan collapses.",
+            reasoning: "Save the ace of spades. It is the entry that lets you reach the long clubs once they are established. Spend it early and the clubs are stranded.",
             tip: "A long suit is worth nothing if you cannot get to it."
         ),
         PlayScenario(
             id: "more-play-ruff-in-dummy",
-            situation: "You are in 4♥ holding three small diamonds while dummy has a singleton diamond and three trumps. Where do the extra tricks come from?",
+            situation: "You are in 4♥. You hold three small diamonds and dummy has a singleton diamond plus trumps. You are on lead in your hand. Which card starts the plan to ruff diamonds in dummy?",
             cards: [.d(.six), .h(.four), .h(.three)],
-            answerIndex: 1,
-            reasoning: "Ruff diamonds in dummy with the small trumps. Dummy's shortness is what turns losers into winners.",
-            tip: "Ruff in the hand with the fewer trumps, so you keep enough to draw the opponents'."
+            answerIndex: 0,
+            reasoning: "Lead a small diamond. Dummy follows with its singleton, and when you lead diamonds again dummy has none left and can ruff with a trump. Dummy's shortness is what turns a loser into a trick.",
+            tip: "Ruff in the hand with the fewer trumps, so you keep enough to draw the opponents' trumps."
         ),
     ]
 
@@ -188,7 +188,7 @@ enum MoreContent {
                 "Aces cannot be led at trick one"
             ],
             answerIndex: 2,
-            explanation: "Leading an ace with no king behind it gives away a trick and hands declarer a free winner. Save it to capture something."
+            explanation: "An ace with no king behind it is worth more later, when it can capture a king or queen. Leading it early can let declarer's king or queen win a trick it could never have won otherwise."
         ),
         QuizQuestion(
             id: "more-defense-count",
@@ -231,12 +231,13 @@ enum MoreContent {
             choice: CardChoice("Lead through", "Lead around", answerIndex: 0)
         ),
         Flashcard(
-            id: "more-defense-passive",
-            frontTitle: "Declarer bid confidently to a thin game",
-            frontSubtitle: "Attack, or lead passively?",
-            backTitle: "Lead passively",
-            backBody: "When declarer sounds stretched, the tricks are often already there for you. A quiet lead avoids handing over the one trick they were missing.",
-            choice: CardChoice("Lead passively", "Attack hard", answerIndex: 0)
+            id: "more-defense-ace-king",
+            frontTitle: "Against a suit contract, you hold A-K-4",
+            frontCards: [.h(.ace), .h(.king), .h(.four)],
+            frontSubtitle: "Which card do you lead?",
+            backTitle: "Lead the ace or the king",
+            backBody: "With A-K you can lead either top card, and the lead tells partner you hold the other. Lead the ace, look at dummy, and then decide how to continue.",
+            choice: CardChoice("Lead A♥", "Lead 4♥", answerIndex: 0)
         ),
         Flashcard(
             id: "more-defense-signal-discard",
@@ -256,7 +257,7 @@ enum MoreContent {
             prompt: "Partner leads the ace and you hold Q-8-4. Playing standard signals, which card encourages a continuation?",
             choices: ["Q", "8", "4", "Any of them"],
             answerIndex: 1,
-            explanation: "The eight is your highest spare card and reads as encouraging. The queen is too valuable to throw and the four discourages."
+            explanation: "A high spot card such as the eight reads as encouraging. Keep the queen, which can win a trick later. The four would discourage."
         ),
         QuizQuestion(
             id: "more-pro-suit-preference",
@@ -280,14 +281,14 @@ enum MoreContent {
                 "Discarding a winner"
             ],
             answerIndex: 1,
-            explanation: "Ruffing with a card declarer must beat can promote a trump trick for partner. Losing your ruff to gain a bigger trick is the whole idea."
+            explanation: "You ruff with a trump high enough that declarer must overruff with an honor. That can promote a trump trick for your partner, so the trump you spend buys a bigger trick later."
         ),
         QuizQuestion(
             id: "more-pro-count-declarer",
-            prompt: "Declarer has shown five spades and four hearts and follows to two rounds of clubs. How many diamonds do they hold?",
+            prompt: "Declarer has shown five spades and four hearts, and held exactly two clubs. How many diamonds do they hold?",
             choices: ["One", "Two", "Three", "Cannot be known"],
             answerIndex: 1,
-            explanation: "Thirteen cards total: 5 + 4 + 2 clubs leaves 2 diamonds. Counting the hand out is what separates good defenders from lucky ones."
+            explanation: "A hand has 13 cards: 5 + 4 + 2 clubs leaves 2 diamonds. Counting the hand out is what separates good defenders from lucky ones."
         ),
         QuizQuestion(
             id: "more-pro-second-hand-high",
