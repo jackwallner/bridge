@@ -55,6 +55,6 @@ queue or the seen/missed sets, which would otherwise grow without bound.
 **What's New sheet:** `WhatsNew` + `WhatsNewSheet`, shown once on the first
 launch after an update. A FRESH install never sees it: onboarding calls
 `WhatsNew.markCurrentAsBaseline()`. An onboarded player with no stored marker
-is an upgrader from a pre-1.1 build and does get it. The sheet raises
+is an upgrader from a pre-1.1 build and does get it. `currentRelease` is the newest entry at or below the running version (see `membership-and-trial.md`). The sheet raises
 `onUpgrade` rather than presenting `PaywallView` itself, because a sheet cannot
 present another sheet while dismissing.

@@ -16,6 +16,8 @@ RevenueCat is deliberately disabled in simulator builds. The public SDK key live
 ## Rules that hold everywhere
 Condensed from the deep notes below; the reasoning behind each one lives there.
 - A generated hand only reaches a player when exactly one of the six `HandCategory` answers is right. Keep `HandGeneratorTests.testAuthoredHandsMatchTheClassifier`: authored opening drills must agree with the engine that grades Endless Practice.
+- The trial flow (onboarding trial page, paywall, purchase to tour) is structurally Mahj 1.3.2; only the button wording varies, through RevenueCat offering metadata (`TrialCTA`). Prices are always read live from StoreKit. Any other change needs Jack's go-ahead.
+- The Meta SDK is inert while `META_APP_ID` and `META_CLIENT_TOKEN` are empty in `project.yml`, and never starts on a simulator. Never ask for ATT outside `HomeView.askForTrackingIfNeeded`.
 - The daily declarer question is built from the authored `PlayScenario`s, never through `SessionBuilder.choiceItems`.
 
 ## Architecture
@@ -30,7 +32,7 @@ Teaching content uses a beginner Standard American framework. Partnership agreem
 
 ## Ratings
 
-No custom rating question (App Review 5.6.1). A finished drill or Bridge Minute records a positive moment in `ReviewPromptTracker`; `requestsReview(after:)` calls Apple's prompt about 3s later if the screen is still clear. Gates: second cold launch, onboarding done, 30-day cooldown; only the Settings "Rate Bridge Trainer" row (write-review link, App Store ID 6791026407) ends the asks. "Send Feedback" opens `FeedbackSheet` and never stops them. Fleet policy: `ios-dev` skill, "App Store ratings and feedback".
+No custom rating question (App Review 5.6.1). A finished drill or Bridge Minute scoring half or better calls Apple's `requestReview()` about 3s later via `.requestsReview(after:)`, gated only by `ReviewPromptTracker` (second cold launch, onboarded, 30-day cooldown) and the `rating_prompt` remote switch. Settings has two separate rows: Rate (write-review link, App Store ID 6791026407, the only thing that ends the asks) and Send Feedback (`ReviewPromptSheet(.feedback)` into `FeedbackService`, never stops them). The same sheet hosts the one churn question. No per-question report link. Fleet policy: `ios-dev` skill, "App Store ratings and feedback". Details: `.claude/rules/feedback-and-retention.md`.
 
 ## Release workflow
 
@@ -45,4 +47,7 @@ These files load automatically when you read a file matching their `paths:`. Age
 | `.claude/rules/game-night.md` | Game-night rhythm (1.2): Bridge Minute, the daily declarer question, game night prep | `BridgeMinute*`, `GameNightPrepView`, `SessionBuilder` |
 | `.claude/rules/ipad-layout.md` | iPad (1.2): device family, `CenteringScrollView`, the pager eyebrow, the deck width cap | Drill layouts, Home columns |
 | `.claude/rules/screenshots.md` | Screenshots: the capture script, the throwaway iPad, test gotchas | Capture scripts, the `Screenshots` scheme |
+| `.claude/rules/feedback-and-retention.md` | Feedback sink, churn question, weekly gain ledger, ratings policy, what was not ported | `FeedbackService`, `ReviewPromptSheet`, `MasteryLedger`, `Mastery`, `ReviewRequest` |
+| `.claude/rules/meta-ads.md` | Meta SDK + ATT (inert), remote switches and `TrialCTA`, the relay that lives in Mahj | `MetaAds`, `RemoteConfig`, ATT timing, `project.yml` Meta ids |
+| `.claude/rules/membership-and-trial.md` | Trial flow, 3.1.2(c) price line, membership state, fit at every size, What's New mechanics | `SubscriptionService`, onboarding, paywall, primer, tour |
 | `.claude/rules/android.md` | Android port: package, Play products and prices, RevenueCat IDs, content export and parity, signing, Pro emulator, store assets, Play state | Anything in `android/`, `docs/android-*.html`, the Play scripts |
