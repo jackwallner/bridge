@@ -16,7 +16,7 @@ struct RoomView: View {
     }
 
     var body: some View {
-        ScrollView {
+        RegularCenteringScrollView {
             VStack(spacing: 14) {
                 header
                 LazyVGrid(

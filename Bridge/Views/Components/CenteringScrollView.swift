@@ -31,3 +31,20 @@ struct CenteringScrollView<Content: View>: View {
         }
     }
 }
+
+/// `CenteringScrollView` on a regular width, a plain `ScrollView` on a compact
+/// one. Short screens (a room's drills, the Endless picker) floated at the top
+/// of the iPad and the iPhone Duo's inner display, but on a phone they have
+/// always sat under the title, so only the wide layouts change.
+struct RegularCenteringScrollView<Content: View>: View {
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    @ViewBuilder let content: () -> Content
+
+    var body: some View {
+        if horizontalSizeClass == .regular {
+            CenteringScrollView(content: content)
+        } else {
+            ScrollView(content: content)
+        }
+    }
+}
