@@ -6,6 +6,7 @@ struct ShineSweep: ViewModifier {
     var trigger: Int
     var corner: CGFloat = 14
 
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var phase: CGFloat = -1
 
     /// Drawn in a Canvas, not as an offset gradient view, and that is not a
@@ -52,7 +53,7 @@ struct ShineSweep: ViewModifier {
                 .accessibilityHidden(true)
             }
             .onChange(of: trigger) { _, _ in
-                guard trigger > 0 else { return }
+                guard trigger > 0, !reduceMotion else { return }
                 phase = -1
                 withAnimation(.easeInOut(duration: 0.85)) { phase = 1.4 }
             }
