@@ -256,6 +256,20 @@ final class SubscriptionService: NSObject, ObservableObject {
         }
     }
 
+    /// Whether this Apple Account still gets the plan's free week. Apple gives
+    /// an introductory offer once per subscription group, so a lapsed member
+    /// is charged on day one. No product to ask about (offerings not loaded,
+    /// no RevenueCat on a simulator) reads as eligible, as before.
+    func isTrialEligible(for plan: PaywallPlan) async -> Bool {
+        await Self.isTrialEligible(package(for: plan)?.storeProduct.sk2Product)
+    }
+
+    nonisolated static func isTrialEligible(_ product: Product?) async -> Bool {
+        guard let subscription = product?.subscription else { return true }
+        guard subscription.introductoryOffer != nil else { return false }
+        return await subscription.isEligibleForIntroOffer
+    }
+
     func paywallPrice(for plan: PaywallPlan) -> PaywallPrice? {
         guard let product = package(for: plan)?.storeProduct else { return nil }
         return PaywallPrice(
