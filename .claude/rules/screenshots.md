@@ -33,8 +33,9 @@ diagnostics first.
 ## iPhone Duo capture
 
 DEBUG only (`Bridge/Utilities/DuoScreenshotMode.swift`). `-DuoSeed` fills the
-real stores with a week of practice (streak, mastery rings, Bridge+ override;
-no RevenueCat, no network). `-DuoTour -DuoRoutes a,b,c` walks Home through
+real stores with a week of practice (streak, mastery rings, three Bridge
+Minutes, Bridge+ override; no RevenueCat, no network), once per install
+(`duo.seeded`), so gh-sim's relaunch for the inner display shows the same week. `-DuoTour -DuoRoutes a,b,c` walks Home through
 routes on a timer, because the capture job cannot tap and `simctl openurl`
 raises a confirmation sheet. Routes: home, quick, room-<id>, drill-<id>,
 stats, endless, minute, prep, timed, howto, settings, paywall. Dwell is
