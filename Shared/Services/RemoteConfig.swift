@@ -44,8 +44,6 @@ enum TrialCTA: String, CaseIterable, Sendable {
 /// Remote off switches, for what is worth pausing without a release. On
 /// unless the metadata says "off".
 enum RemoteSwitch: String, CaseIterable, Sendable {
-    /// Apple's tracking prompt for Meta ads.
-    case attPrompt = "att_prompt"
     /// Apple's rating prompt after a good drill.
     case ratingPrompt = "rating_prompt"
     /// The daily and monthly challenge. Nothing reads it yet: the challenge

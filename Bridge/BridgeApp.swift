@@ -30,7 +30,6 @@ struct BridgeApp: App {
                     // offline also retries every time the app comes back.
                     guard phase == .active else { return }
                     Task { await FeedbackService.shared.flushPending() }
-                    MetaAds.activateApp()
                 }
                 .onAppear {
                     subscriptions.start()

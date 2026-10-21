@@ -17,7 +17,7 @@ RevenueCat is deliberately disabled in simulator builds. The public SDK key live
 Condensed from the deep notes below; the reasoning behind each one lives there.
 - A generated hand only reaches a player when exactly one of the six `HandCategory` answers is right. Keep `HandGeneratorTests.testAuthoredHandsMatchTheClassifier`: authored opening drills must agree with the engine that grades Endless Practice.
 - The trial flow (onboarding trial page, paywall, purchase to tour) is structurally Mahj 1.3.2; only the button wording varies, through RevenueCat offering metadata (`TrialCTA`). Prices are always read live from StoreKit. Any other change needs Jack's go-ahead.
-- The Meta SDK is inert while `META_APP_ID` and `META_CLIENT_TOKEN` are empty in `project.yml`, and never starts on a simulator. Never ask for ATT outside `HomeView.askForTrackingIfNeeded`, which waits for a trial or purchase (`MetaAds.askAfterPurchase`).
+- No Meta SDK and no tracking prompt (Jack 2026-10-21: Meta only in Mahj for now).
 - The daily declarer question is built from the authored `PlayScenario`s, never through `SessionBuilder.choiceItems`.
 
 ## Architecture
@@ -48,6 +48,6 @@ These files load automatically when you read a file matching their `paths:`. Age
 | `.claude/rules/ipad-layout.md` | iPad (1.2): device family, `CenteringScrollView`, the pager eyebrow, the deck width cap | Drill layouts, Home columns |
 | `.claude/rules/screenshots.md` | Screenshots: the capture script, the throwaway iPad, test gotchas | Capture scripts, the `Screenshots` scheme |
 | `.claude/rules/feedback-and-retention.md` | Feedback sink, churn question, weekly gain ledger, ratings policy, what was not ported | `FeedbackService`, `ReviewPromptSheet`, `MasteryLedger`, `Mastery`, `ReviewRequest` |
-| `.claude/rules/meta-ads.md` | Meta SDK + ATT (inert), remote switches and `TrialCTA`, the relay that lives in Mahj | `MetaAds`, `RemoteConfig`, ATT timing, `project.yml` Meta ids |
+| `.claude/rules/meta-ads.md` | No Meta SDK (removed), remote switches and `TrialCTA` | `RemoteConfig`, adding Meta or tracking |
 | `.claude/rules/membership-and-trial.md` | Trial flow, 3.1.2(c) price line, membership state, fit at every size, What's New mechanics | `SubscriptionService`, onboarding, paywall, primer, tour |
 | `.claude/rules/android.md` | Android port: package, Play products and prices, RevenueCat IDs, content export and parity, signing, Pro emulator, store assets, Play state | Anything in `android/`, `docs/android-*.html`, the Play scripts |

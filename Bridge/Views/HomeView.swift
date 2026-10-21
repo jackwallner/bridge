@@ -110,15 +110,6 @@ struct HomeView: View {
             .onChange(of: showSettings) { _, isShowing in
                 if !isShowing { homeIsBareAgain() }
             }
-            .onChange(of: subscriptions.offerings != nil) { _, loaded in
-                // The tracking switch rides on the offering: act on it once
-                // it is known.
-                guard loaded else { return }
-                Task { await askForTrackingIfNeeded() }
-            }
-            .onChange(of: churnPrompt) { _, moment in
-                if moment == nil { Task { await askForTrackingIfNeeded() } }
-            }
             .sheet(item: $churnPrompt) { moment in
                 ReviewPromptSheet(initialStep: .churn(moment))
             }
@@ -244,11 +235,10 @@ struct HomeView: View {
     }
 
     /// A sheet closed or the player came back to Home: anything that waited
-    /// for a bare Home gets its turn (What's New, the churn question, then ATT).
+    /// for a bare Home gets its turn (What's New, then the churn question).
     private func homeIsBareAgain() {
         presentWhatsNewIfNeeded()
         presentChurnPromptIfNeeded()
-        Task { await askForTrackingIfNeeded() }
     }
 
     private var gameNightPrepItems: [QuickItem] {
@@ -298,25 +288,6 @@ struct HomeView: View {
             WhatsNew.shownThisLaunch = true
             showWhatsNew = true
         }
-    }
-
-    /// Apple's tracking prompt (Meta ads), only after a trial start or a
-    /// purchase (Jack 2026-10-19), on the next bare Home: never at launch,
-    /// never in onboarding, never over a sheet or a pushed screen. Only
-    /// paying players are asked, and soon enough for the trial relay to
-    /// count a consented trial. Anything covering Home just defers it until
-    /// Home is bare again, and a launch that showed What's New defers it to
-    /// the next launch.
-    ///
-    /// The `att_prompt` switch lives in the offering, which a cold launch may
-    /// not have yet; with no offering there is no ask, and the offering
-    /// arriving tries again. Inert while `MetaAds.isEnabled` is false.
-    private func askForTrackingIfNeeded() async {
-        guard MetaAds.shouldAskForTracking, MetaAds.askAfterPurchase, progress.hasOnboarded,
-              !WhatsNew.shownThisLaunch else { return }
-        try? await Task.sleep(nanoseconds: 1_200_000_000)
-        guard subscriptions.remoteConfigKnown, subscriptions.isOn(.attPrompt), homeIsBare else { return }
-        await MetaAds.requestTracking()
     }
 
     /// Consumes the one-shot recommendation hint: scrolls to and briefly
