@@ -127,6 +127,10 @@ final class SubscriptionService: NSObject, ObservableObject {
         membershipRecovery = nil
     }
 
+    /// A reinstall's StoreKit sync is still running. The purchase buttons will
+    /// not sell until it knows what this Apple Account already owns.
+    var isRecoveringMembership: Bool { membershipRecovery != nil }
+
     private func recoverReinstalledMembership() async {
         var ownsSomething = false
         for await result in Transaction.currentEntitlements {

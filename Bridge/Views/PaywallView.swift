@@ -443,6 +443,12 @@ struct PaywallView: View {
                 await subscriptions.ensureOfferings()
                 // A reinstalled member recovered just now: nothing to sell.
                 guard !subscriptions.isPro else { return }
+                // A reinstalled member whose purchases are still syncing must
+                // not reach Apple's sheet as a stranger.
+                guard !subscriptions.isRecoveringMembership else {
+                    message = "Still checking what this Apple Account owns. Try again in a moment, or tap Restore."
+                    return
+                }
                 // The sheet may have drawn before StoreKit answered. If the
                 // free week is gone, show the real terms and let them tap
                 // again.
