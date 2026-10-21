@@ -9,6 +9,10 @@ struct StatsView: View {
     @EnvironmentObject private var subscriptions: SubscriptionService
     @StateObject private var records = PracticeRecordStore.shared
     @StateObject private var ledger = MasteryLedger.shared
+    /// Set when Your Progress has its own pane beside Home (the unfolded Duo):
+    /// the work-on card opens the room on Home's side instead of pushing it
+    /// here, so the progress stays in view while the room is practised.
+    var openRoom: ((Room) -> Void)?
 
     private var roomStats: [PracticeRecordStore.RoomStat] { records.roomStats() }
 
@@ -223,37 +227,43 @@ struct StatsView: View {
     @ViewBuilder
     private func workOnCard(_ mastery: RoomMastery) -> some View {
         if let room = DrillLibrary.room(id: mastery.roomID) {
-            NavigationLink {
-                RoomView(room: room)
-            } label: {
-                HStack(spacing: 12) {
-                    Image(systemName: "target")
-                        .font(.body.weight(.semibold))
-                        .foregroundStyle(Theme.coral)
-                        .frame(width: 38, height: 38)
-                        .background(Theme.coral.opacity(0.13), in: Circle())
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Work on \(room.name)")
-                            .font(.headline)
-                            .foregroundStyle(Theme.ink)
-                            .multilineTextAlignment(.leading)
-                        Text("\(mastery.known) of \(mastery.total) questions are holding. \(mastery.level.nextStep)")
-                            .font(.caption)
-                            .foregroundStyle(Theme.inkSecondary)
-                            .multilineTextAlignment(.leading)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                    Spacer(minLength: 4)
-                    Image(systemName: "chevron.right")
-                        .font(.footnote.weight(.semibold))
-                        .foregroundStyle(Theme.inkTertiary)
+            Group {
+                if let openRoom {
+                    Button { openRoom(room) } label: { workOnLabel(room, mastery: mastery) }
+                } else {
+                    NavigationLink { RoomView(room: room) } label: { workOnLabel(room, mastery: mastery) }
                 }
-                .padding(14)
-                .themedCard(corner: 16)
             }
             .buttonStyle(PressableCardStyle())
             .accessibilityHint("Opens the room")
         }
+    }
+
+    private func workOnLabel(_ room: Room, mastery: RoomMastery) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: "target")
+                .font(.body.weight(.semibold))
+                .foregroundStyle(Theme.coral)
+                .frame(width: 38, height: 38)
+                .background(Theme.coral.opacity(0.13), in: Circle())
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Work on \(room.name)")
+                    .font(.headline)
+                    .foregroundStyle(Theme.ink)
+                    .multilineTextAlignment(.leading)
+                Text("\(mastery.known) of \(mastery.total) questions are holding. \(mastery.level.nextStep)")
+                    .font(.caption)
+                    .foregroundStyle(Theme.inkSecondary)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 4)
+            Image(systemName: "chevron.right")
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(Theme.inkTertiary)
+        }
+        .padding(14)
+        .themedCard(corner: 16)
     }
 
     private var roomBreakdown: some View {

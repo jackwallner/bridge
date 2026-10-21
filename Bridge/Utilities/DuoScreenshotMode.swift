@@ -9,8 +9,8 @@ import SwiftUI
 /// on a timer, because `simctl openurl` raises a confirmation sheet and the
 /// capture job cannot tap. `-DuoTourStep <s>` is the dwell per route and
 /// `-DuoTourFirst <s>` the delay before the first; `-DuoTourStepRegular <s>`
-/// overrides the dwell at regular width (the inner display). The tour restarts when the
-/// size class changes, so folded and unfolded each get the full walk.
+/// overrides the dwell while split (the inner display). The tour restarts when
+/// the panes split or join, so folded and unfolded each get the full walk.
 ///
 /// Routes: home, quick, room-<id>, drill-<id>, stats, endless, minute, prep,
 /// timed, howto, settings, paywall.
@@ -29,8 +29,11 @@ enum DuoScreenshotMode {
     /// Your Progress cards each have something to say.
     @MainActor
     static func seedIfNeeded() {
-        guard isSeeded else { return }
         let defaults = UserDefaults.standard
+        // gh-sim relaunches the app for the inner display; seed once, so both
+        // displays show the same week.
+        guard isSeeded, !defaults.bool(forKey: "duo.seeded") else { return }
+        defaults.set(true, forKey: "duo.seeded")
         defaults.set(true, forKey: "progress.hasOnboarded")
         defaults.set(true, forKey: "bridge.hasReadPrimer")
         defaults.set("some", forKey: "bridge.skillLevel")
@@ -65,6 +68,15 @@ enum DuoScreenshotMode {
             }
         }
         records.recordChallengeScore(14)
+
+        // The last three Bridge Minutes, so the week reads as a habit; today's
+        // is left open so its start button shows.
+        let minutes = BridgeMinuteStore.shared
+        let scores: [[Bool]] = [[true, true, false, true, true], [true, true, true, true, false], [true, false, true, true, true]]
+        for (offset, answers) in scores.enumerated() {
+            let date = now.addingTimeInterval(-Double(offset + 1) * day)
+            minutes.record(challenge: BridgeMinuteContent.challenge(for: date), answers: answers, now: date)
+        }
     }
 
     enum Route: Hashable {
@@ -114,7 +126,8 @@ extension HomeView {
     func runDuoTour() async {
         guard DuoScreenshotMode.wantsTour else { return }
         // The inner display's screenshots are slower, so it may want a longer dwell.
-        let stepKey = horizontalSizeClass == .regular ? "-DuoTourStepRegular" : "-DuoTourStep"
+        let unfolded = split != nil
+        let stepKey = unfolded ? "-DuoTourStepRegular" : "-DuoTourStep"
         let step = Double(DuoScreenshotMode.value(stepKey) ?? DuoScreenshotMode.value("-DuoTourStep") ?? "") ?? 10
         let first = Double(DuoScreenshotMode.value("-DuoTourFirst") ?? "") ?? 2
         let routes = (DuoScreenshotMode.value("-DuoRoutes") ?? Self.defaultDuoRoutes)
@@ -122,7 +135,7 @@ extension HomeView {
         try? await Task.sleep(nanoseconds: UInt64(first * 1_000_000_000))
         for route in routes {
             if Task.isCancelled { return }
-            NSLog("DUOTOUR %@ route=%@", horizontalSizeClass == .regular ? "inner" : "outer", route)
+            NSLog("DUOTOUR %@ route=%@", unfolded ? "inner" : "outer", route)
             await openDuoRoute(route)
             try? await Task.sleep(nanoseconds: UInt64(step * 1_000_000_000))
         }

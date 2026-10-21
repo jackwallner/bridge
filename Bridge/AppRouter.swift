@@ -4,10 +4,19 @@ import UserNotifications
 
 enum AppDestination: Hashable {
     case gameNightPrepSession
+    /// A room opened from Your Progress in the unfolded Duo's trailing pane,
+    /// pushed on Home's side so the progress stays in view.
+    case room(String)
 
     /// Free destinations open for everyone; the rest wait behind the paywall.
-    /// Phase 2's challenge is the first free one.
-    var isFree: Bool { false }
+    /// Phase 2's challenge is the first free one. A room is a door, not a
+    /// drill: it shows its own locks.
+    var isFree: Bool {
+        switch self {
+        case .gameNightPrepSession: return false
+        case .room: return true
+        }
+    }
 }
 
 enum AppNotification {

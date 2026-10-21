@@ -13,7 +13,7 @@ struct HomeView: View {
     @EnvironmentObject private var subscriptions: SubscriptionService
     @EnvironmentObject private var settings: AppSettings
     @EnvironmentObject private var router: AppRouter
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.horizontalSizeClass) private var windowSizeClass
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var membershipWaitOver = false
     @StateObject private var records = PracticeRecordStore.shared
@@ -23,6 +23,11 @@ struct HomeView: View {
     @State private var showPaywall = false
     @State private var showSettings = false
     @State private var showWhatsNew = false
+    /// The container's width and fold, measured so the unfolded iPhone Duo can
+    /// put Home and Your Progress on opposite sides of the fold.
+    @State private var paneGeometry = PaneGeometry(width: 0, fold: nil)
+    /// Mounted on the first unfold and kept, so folding only hides it.
+    @State private var progressPaneMounted = false
     #if DEBUG
     @State var duoRoute: DuoScreenshotMode.Route?
     #endif
@@ -44,7 +49,80 @@ struct HomeView: View {
 
     private var showsPrimerCard: Bool { skillLevel == "new" && !hasReadPrimer }
 
+    /// Unfolded, Your Progress has its own pane beside Home.
+    var split: UnfoldedSplit? {
+        UnfoldedSplit.make(
+            width: paneGeometry.width,
+            isRegularWidth: windowSizeClass == .regular,
+            fold: paneGeometry.fold
+        )
+    }
+
+    /// Each unfolded pane is phone-width, so Home and everything pushed over
+    /// it lay out as on a phone.
+    var horizontalSizeClass: UserInterfaceSizeClass? {
+        split == nil ? windowSizeClass : .compact
+    }
+
     var body: some View {
+        // Opening or closing the Duo only moves these frames, so neither stack
+        // is rebuilt and a drill in progress survives the fold.
+        ZStack(alignment: .topLeading) {
+            homeStack
+                .environment(\.horizontalSizeClass, horizontalSizeClass)
+                .frame(maxWidth: split?.primaryWidth ?? .infinity, maxHeight: .infinity)
+            if progressPaneMounted {
+                progressPane
+                    .environment(\.horizontalSizeClass, .compact)
+                    .frame(maxWidth: split?.secondaryWidth ?? .infinity, maxHeight: .infinity)
+                    .padding(.leading, split?.secondaryX ?? 0)
+                    .opacity(split == nil ? 0 : 1)
+                    .allowsHitTesting(split != nil)
+                    .accessibilityHidden(split == nil)
+            }
+        }
+        .background(Theme.background)
+        .onGeometryChange(for: PaneGeometry.self) { proxy in
+            PaneGeometry(width: proxy.size.width, fold: proxy.verticalFold())
+        } action: { paneGeometry = $0 }
+        .onChange(of: split != nil, initial: true) { _, isSplit in
+            if isSplit { progressPaneMounted = true }
+        }
+        .tint(Theme.jade)
+        #if DEBUG
+        // Here, not on Home's root: a pushed route would cancel a task there.
+        .task(id: split != nil) { await runDuoTour() }
+        #endif
+    }
+
+    /// The trailing pane: the practice record that the drills on the left are
+    /// building, updating as each answer lands. Settings opens here too, so it
+    /// never sits across the fold as a sheet.
+    private var progressPane: some View {
+        ZStack {
+            NavigationStack {
+                StatsView(openRoom: { room in path = [.room(room.id)] })
+            }
+            .accessibilityHidden(showSettings)
+            if showSettings, split != nil {
+                SettingsView(onDone: { showSettings = false })
+                    .transition(.move(edge: .trailing))
+            }
+        }
+        .animation(.snappy(duration: 0.3), value: showSettings)
+    }
+
+    /// Folded, Settings is the usual sheet; unfolded it lives in the trailing
+    /// pane. Opening the Duo with the sheet up moves it there rather than
+    /// closing it.
+    private var settingsSheet: Binding<Bool> {
+        Binding(
+            get: { showSettings && split == nil },
+            set: { if !$0, split == nil { showSettings = false } }
+        )
+    }
+
+    private var homeStack: some View {
         NavigationStack(path: $path) {
             ScrollViewReader { proxy in
                 ScrollView {
@@ -82,6 +160,8 @@ struct HomeView: View {
                 switch destination {
                 case .gameNightPrepSession:
                     QuickSessionView(gameNightPrep: gameNightPrepItems)
+                case .room(let id):
+                    if let room = DrillLibrary.room(id: id) { RoomView(room: room) }
                 }
             }
             #if DEBUG
@@ -90,7 +170,7 @@ struct HomeView: View {
             }
             #endif
             .sheet(isPresented: $showPaywall) { PaywallView(source: "bridge_home_sheet") }
-            .sheet(isPresented: $showSettings) { SettingsView() }
+            .sheet(isPresented: settingsSheet) { SettingsView() }
             .sheet(isPresented: $showWhatsNew) {
                 if let release = WhatsNew.currentRelease {
                     WhatsNewSheet(release: release) {
@@ -147,11 +227,6 @@ struct HomeView: View {
                 if !isShowing { homeIsBareAgain() }
             }
         }
-        .tint(Theme.jade)
-        #if DEBUG
-        // On the stack, not Home's root: a pushed route would cancel a task there.
-        .task(id: horizontalSizeClass) { await runDuoTour() }
-        #endif
     }
 
     @ViewBuilder
@@ -408,7 +483,9 @@ struct HomeView: View {
             }
         }
         .buttonStyle(.plain)
-        .accessibilityHint("Opens your progress breakdown")
+        // Unfolded, the breakdown is already open beside Home.
+        .allowsHitTesting(split == nil)
+        .accessibilityHint(split == nil ? "Opens your progress breakdown" : "")
     }
 
     private func statChip(value: Int, icon: String, color: Color, label: String, prefix: String = "") -> some View {
