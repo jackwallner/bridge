@@ -344,6 +344,7 @@ struct OnboardingView: View {
 
     private static let trialBenefitLines = [
         "Every beginner room is free, forever",
+        "Bridge Minute and a personalized Game Night Prep",
         "Endless Practice deals a fresh hand every time",
         "Fix My Mistakes brings back what you miss",
         "Extra sets in all four rooms, plus the Master Tables",
