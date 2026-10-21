@@ -132,6 +132,16 @@ the 1024x500 feature graphic. Listing text and the changelog are in
 dashes, worded apart from the other card trainers). Privacy and terms pages
 are `docs/android-privacy.html` and `docs/android-terms.html` on GitHub Pages.
 
+## Play state (2026-10-21)
+
+vc1 (1.2.5) went to production review 2026-10-21 about 13:25 PDT. It was not
+sent from the Console: the plain-commit fallback in `play_stage.py upload`
+sent the pending vc1 release when vc2 was uploaded (fixed the same day).
+vc1 predates the SAYC content audit (16475f4). vc2 (1.2.5, built from
+8107884 with that content, signed with the upload key, 56 unit tests) is
+uploaded and drafted on internal and production. Send vc2 as the first update
+once vc1 is approved, or remove vc1 from review and send vc2 instead.
+
 ## Play state (2026-10-17)
 
 Ready to send (verified 2026-10-17): review code saved in App access, RevenueCat

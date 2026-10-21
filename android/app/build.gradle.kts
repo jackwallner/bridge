@@ -41,7 +41,7 @@ android {
         applicationId = "com.jackwallner.bridge"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
+        versionCode = 2
         versionName = "1.2.5"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // Every connected test starts from a clean install: no progress, no purchase.
