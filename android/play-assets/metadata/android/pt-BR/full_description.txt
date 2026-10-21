@@ -1,0 +1,32 @@
+Aprenda bridge de contrato com exercícios curtos. Conte pontos, escolha uma abertura, planeje o jogo como declarante e defenda com seu parceiro. Cada resposta vem com a explicação.
+
+O app em si está apenas em inglês: lições, perguntas e menus são em inglês.
+
+QUATRO SALAS
+
+Sala das cartas: valor das cartas, pontos de honra, vazas, trunfo e contratos em cartões deslizantes.
+
+Sala do leilão: leia uma mão de 13 cartas, conte os pontos e decida entre passar, abertura de nível um e 1 SA (Standard American para iniciantes).
+
+Sala do declarante: conte suas vazas, tire os trunfos, desenvolva um naipe longo e faça um impasse.
+
+Sala da defesa: saídas, terceira mão alto e devolução do naipe do parceiro.
+
+BRIDGE+ (OPCIONAL)
+
+- Prática sem fim com uma mão nova a cada vez
+- Corrigir meus erros: as perguntas erradas voltam até você acertar
+- Desafio cronometrado de noventa segundos
+- Minuto do bridge e preparação para a noite de jogo conforme seus pontos fracos
+
+PRIVADO
+
+Sem cadastro, sem anúncios, sem rastreamento. Seu histórico fica no seu aparelho.
+
+O Bridge+ é uma compra opcional mensal, anual ou vitalícia. O preço da sua região aparece no app antes da compra. O Google Play cobra na sua conta ao confirmar; as assinaturas renovam até serem canceladas e são gerenciadas no Google Play, em Pagamentos e assinaturas.
+
+Privacidade: https://jackwallner.github.io/bridge/android-privacy.html
+
+Termos de uso: https://jackwallner.github.io/bridge/android-terms.html
+
+O Bridge Trainer é um app independente que ensina um sistema de leilão para iniciantes; os acordos entre parceiros variam, então combinem suas convenções.

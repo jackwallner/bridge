@@ -1,0 +1,32 @@
+Lär dig kontraktbridge med korta övningar. Räkna poäng, välj öppningsbud, planera spelet som spelförare och försvara med din partner. Varje svar har en förklaring.
+
+Själva appen är bara på engelska: lektioner, frågor och menyer är på engelska.
+
+FYRA RUM
+
+Kortrummet: kortens värde, hög-kortspoäng, stick, trumf och kontrakt på kort att bläddra bland.
+
+Budrummet: läs en hand med 13 kort, räkna den och välj mellan pass, öppning på ettnivå och 1 NT (Standard American för nybörjare).
+
+Spelförarrummet: räkna dina stick, dra trumf, utveckla en lång färg och ta en impass.
+
+Försvarsrummet: utspel, tredje hand högt och att returnera partnerns färg.
+
+BRIDGE+ (VALFRITT)
+
+- Oändlig träning med en ny hand varje gång
+- Rätta mina fel: missade frågor kommer tillbaka tills de sitter
+- Tidsutmaning på nittio sekunder
+- Bridgeminuten och spelkvällsförberedelse kring dina svagheter
+
+PRIVAT
+
+Ingen registrering, inga annonser, ingen spårning. Din träningshistorik stannar på din enhet.
+
+Bridge+ är ett valfritt köp per månad, per år eller för alltid. Priset för din region visas i appen före köpet. Google Play debiterar ditt konto vid bekräftelse; prenumerationer förnyas tills du avbryter dem och hanteras i Google Play under Betalningar och prenumerationer.
+
+Integritetspolicy: https://jackwallner.github.io/bridge/android-privacy.html
+
+Användarvillkor: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer är en oberoende app som lär ut ett budsystem för nybörjare; överenskommelser mellan partners varierar, så bestäm era konventioner tillsammans.

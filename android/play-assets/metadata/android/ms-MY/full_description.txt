@@ -1,0 +1,32 @@
+Belajar bridge kontrak melalui latihan ringkas. Kira mata, pilih bidaan pembuka, rancang permainan sebagai deklarer dan bertahan bersama pasangan. Setiap jawapan disertakan sebab.
+
+Aplikasi ini sendiri hanya dalam bahasa Inggeris: pelajaran, soalan dan menu semuanya dalam bahasa Inggeris.
+
+EMPAT BILIK
+
+Bilik Kad: nilai kad, mata honor, trik, trump dan kontrak pada kad yang boleh dileret.
+
+Bilik Bidaan: baca tangan 13 kad, kira, kemudian pilih antara pas, pembukaan tahap satu dan 1NT (Standard American untuk pemula).
+
+Bilik Deklarer: kira trik menang, tarik trump, bina suit panjang dan mainkan finesse.
+
+Bilik Pertahanan: lead pembukaan, tangan ketiga tinggi dan pulangkan suit pasangan.
+
+BRIDGE+ (PILIHAN)
+
+- Latihan tanpa henti dengan tangan baharu setiap kali
+- Baiki Kesilapan Saya: soalan yang salah kembali sehingga anda betul
+- Cabaran bermasa sembilan puluh saat
+- Minit Bridge dan persiapan malam permainan mengikut kelemahan anda
+
+PERSENDIRIAN
+
+Tanpa pendaftaran, tanpa iklan, tanpa penjejakan. Sejarah latihan anda kekal pada peranti anda.
+
+Bridge+ ialah pembelian pilihan bulanan, tahunan atau seumur hidup. Harga untuk wilayah anda dipaparkan dalam aplikasi sebelum membeli. Google Play mengecaj akaun anda apabila anda mengesahkan; langganan diperbaharui sehingga dibatalkan dan boleh diurus dalam Google Play di bawah Pembayaran dan langganan.
+
+Dasar Privasi: https://jackwallner.github.io/bridge/android-privacy.html
+
+Terma Penggunaan: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer ialah aplikasi bebas yang mengajar satu sistem bidaan untuk pemula; persetujuan antara pasangan berbeza, jadi tetapkan konvensyen bersama.

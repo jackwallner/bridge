@@ -1,0 +1,32 @@
+Lær kontraktbridge med korte øvelser. Tell poeng, velg åpningsmelding, planlegg spillet som spillefører og forsvar sammen med makkeren. Hvert svar har en forklaring.
+
+Selve appen er bare på engelsk: leksjoner, spørsmål og menyer er på engelsk.
+
+FIRE ROM
+
+Kortrommet: kortenes verdi, honnørpoeng, stikk, trumf og kontrakter på kort du sveiper gjennom.
+
+Meldingsrommet: les en hånd med 13 kort, tell den og velg mellom pass, åpning på ett-nivå og 1 NT (Standard American for nybegynnere).
+
+Spilleførerrommet: tell stikkene dine, trekk trumf, utvikle en lang farge og ta en impass.
+
+Forsvarsrommet: utspill, tredjehånd høyt og retur i makkerens farge.
+
+BRIDGE+ (VALGFRITT)
+
+- Uendelig trening med en ny hånd hver gang
+- Rett mine feil: spørsmål du bommet på kommer tilbake til du klarer dem
+- Tidsutfordring på nitti sekunder
+- Bridgeminuttet og forberedelse til spillekvelden rundt svakhetene dine
+
+PRIVAT
+
+Ingen registrering, ingen reklame, ingen sporing. Treningshistorikken blir på enheten din.
+
+Bridge+ er et valgfritt kjøp per måned, per år eller for alltid. Prisen for din region vises i appen før kjøpet. Google Play belaster kontoen din ved bekreftelse; abonnement fornyes til du sier dem opp og styres i Google Play under Betalinger og abonnementer.
+
+Personvern: https://jackwallner.github.io/bridge/android-privacy.html
+
+Vilkår for bruk: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer er en uavhengig app som lærer ett meldingssystem for nybegynnere; avtaler mellom makkere varierer, så bli enige om konvensjonene sammen.

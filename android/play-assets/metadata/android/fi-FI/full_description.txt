@@ -1,0 +1,32 @@
+Opi sopimusbridgeä lyhyillä harjoituksilla. Laske pisteet, valitse avaus, suunnittele pelinviejän peli ja puolusta parisi kanssa. Jokaiseen vastaukseen kuuluu perustelu.
+
+Itse sovellus on vain englanniksi: oppitunnit, kysymykset ja valikot ovat englanniksi.
+
+NELJÄ HUONETTA
+
+Korttihuone: korttien arvot, kunniapisteet, tikit, valtti ja sopimukset pyyhkäistävillä korteilla.
+
+Tarjoushuone: lue 13 kortin käsi, laske se ja valitse pass, yhden tason avaus tai 1 SA (Standard American aloittelijoille).
+
+Pelinviejän huone: laske tikit, vedä valtit, kehitä pitkä maa ja tee impassi.
+
+Puolustushuone: ulosmenot, kolmas käsi korkealta ja pariskunnan maan palautus.
+
+BRIDGE+ (VALINNAINEN)
+
+- Loputon harjoittelu uudella kädellä joka kerta
+- Korjaa virheeni: ohi menneet kysymykset palaavat, kunnes osaat ne
+- Aikahaaste, yhdeksänkymmentä sekuntia
+- Bridge-minuutti ja pelki-illan valmistelu heikkouksiesi ympärille
+
+YKSITYINEN
+
+Ei rekisteröitymistä, ei mainoksia, ei seurantaa. Harjoitushistoria pysyy laitteellasi.
+
+Bridge+ on valinnainen osto kuukausi-, vuosi- tai kertamaksuna. Alueesi hinta näytetään sovelluksessa ennen ostoa. Google Play veloittaa tiliäsi vahvistettaessa; tilaukset uusiutuvat, kunnes perut ne, ja niitä hallitaan Google Playssa kohdassa Maksut ja tilaukset.
+
+Tietosuoja: https://jackwallner.github.io/bridge/android-privacy.html
+
+Käyttöehdot: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer on riippumaton sovellus, joka opettaa yhden aloittelijan tarjousjärjestelmän; parien sopimukset vaihtelevat, joten sopikaa käytänteistänne yhdessä.

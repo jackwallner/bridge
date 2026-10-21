@@ -1,0 +1,32 @@
+Nauči ugovorni bridž kratkim vježbama. Broji bodove, odaberi otvaranje, planiraj igru kao izvođač i brani zajedno s partnerom. Svaki odgovor ima objašnjenje.
+
+Sama aplikacija je samo na engleskom: lekcije, pitanja i izbornici su na engleskom.
+
+ČETIRI SOBE
+
+Soba s kartama: vrijednost karata, bodovi za figure, štihovi, adut i ugovori na karticama za listanje.
+
+Soba licitacije: pročitaj ruku od 13 karata, izbroji je i odaberi između pasa, otvaranja na prvoj razini i 1BA (Standard American za početnike).
+
+Soba izvođača: broji štihove, izvuci adute, razvij dugu boju i odigraj impas.
+
+Soba obrane: ižimanja, treća ruka visoko i vraćanje partnerove boje.
+
+BRIDGE+ (NEOBVEZNO)
+
+- Beskrajna vježba s novom rukom svaki put
+- Ispravi moje pogreške: promašena pitanja vraćaju se dok ih ne svladaš
+- Vremenski izazov od devedeset sekundi
+- Bridž minuta i priprema za večer igre prema tvojim slabostima
+
+PRIVATNO
+
+Bez registracije, bez oglasa, bez praćenja. Povijest vježbanja ostaje na tvom uređaju.
+
+Bridge+ je neobvezna kupnja mjesečno, godišnje ili doživotno. Cijenu za tvoju regiju vidiš u aplikaciji prije kupnje. Google Play tereti tvoj račun nakon potvrde; pretplate se obnavljaju dok ih ne otkažeš, a upravlja se njima u Google Playu pod Plaćanja i pretplate.
+
+Privatnost: https://jackwallner.github.io/bridge/android-privacy.html
+
+Uvjeti korištenja: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer je neovisna aplikacija koja uči jedan sustav licitacije za početnike; dogovori među partnerima razlikuju se, pa se o konvencijama dogovorite zajedno.

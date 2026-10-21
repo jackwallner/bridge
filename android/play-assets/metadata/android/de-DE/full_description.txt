@@ -1,0 +1,32 @@
+Lerne Kontrakt-Bridge mit kurzen Übungen. Zähle Punkte, wähle ein Eröffnungsgebot, plane das Spiel als Alleinspieler und verteidige mit deinem Partner. Zu jeder Antwort gibt es die Begründung.
+
+Die App selbst ist nur auf Englisch: Lektionen, Fragen und Menüs sind englisch.
+
+VIER RÄUME
+
+Kartenzimmer: Kartenwerte, Honorpunkte, Stiche, Trumpf und Kontrakte auf Lernkarten zum Wischen.
+
+Reizzimmer: Lies eine Hand mit 13 Karten, zähle sie und entscheide zwischen Passen, Eröffnung auf Stufe 1 und 1 SA (Standard American für Einsteiger).
+
+Alleinspieler-Raum: Zähle Gewinnstiche, ziehe Trumpf, baue eine lange Farbe auf und spiele einen Schnitt.
+
+Verteidigungsraum: Ausspiele, dritte Hand hoch und Partners Farbe zurückspielen.
+
+BRIDGE+ (OPTIONAL)
+
+- Endlos-Training mit jedes Mal neu erzeugter Hand
+- Fehler-Training: verpasste Fragen kommen wieder, bis sie sitzen
+- Zeit-Challenge: 90 Sekunden gemischte Fragen
+- Bridge-Minute und Spieleabend-Vorbereitung rund um deine Schwächen
+
+PRIVAT
+
+Ohne Anmeldung, ohne Werbung, ohne Tracking. Dein Übungsverlauf bleibt auf deinem Gerät.
+
+Bridge+ ist optional und als Monats-, Jahres- oder Lifetime-Kauf erhältlich. Den Preis für deine Region siehst du vor dem Kauf in der App. Die Zahlung läuft über Google Play; Abos verlängern sich, bis du kündigst, und lassen sich in Google Play unter Zahlungen und Abos verwalten.
+
+Datenschutz: https://jackwallner.github.io/bridge/android-privacy.html
+
+Nutzungsbedingungen: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer ist eine unabhängige App und zeigt ein Einsteiger-Reizsystem. Absprachen unter Partnern unterscheiden sich, also klärt eure Konventionen miteinander.

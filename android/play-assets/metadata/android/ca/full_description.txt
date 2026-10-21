@@ -1,0 +1,32 @@
+Aprèn bridge de contracte amb exercicis curts. Compta punts, tria una obertura, planifica el joc com a declarant i defensa amb el teu company. Cada resposta inclou l'explicació.
+
+L'aplicació en si només és en anglès: les lliçons, les preguntes i els menús són en anglès.
+
+QUATRE SALES
+
+Sala de cartes: valor de les cartes, punts d'honor, basses, triomf i contractes en targetes lliscants.
+
+Sala de licitació: llegeix una mà de 13 cartes, compta-la i tria entre passar, obertura de nivell u i 1SA (Standard American per a principiants).
+
+Sala del declarant: compta les basses, treu els triomfs, desenvolupa un pal llarg i fes un impàs.
+
+Sala de defensa: sortides, tercera mà alt i retornar el pal del company.
+
+BRIDGE+ (OPCIONAL)
+
+- Pràctica sense fi amb una mà nova cada vegada
+- Corregeix els meus errors: les preguntes fallades tornen fins que les encertes
+- Repte cronometrat de noranta segons
+- Minut de bridge i preparació de la nit de joc segons els teus punts febles
+
+PRIVAT
+
+Sense registre, sense anuncis, sense seguiment. L'historial es queda al teu dispositiu.
+
+Bridge+ és una compra opcional mensual, anual o per a sempre. El preu per a la teva regió es mostra a l'aplicació abans de comprar. Google Play et cobra en confirmar; les subscripcions es renoven fins que les cancel·lis i es gestionen a Google Play, a Pagaments i subscripcions.
+
+Privacitat: https://jackwallner.github.io/bridge/android-privacy.html
+
+Condicions d'ús: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer és una aplicació independent que ensenya un sistema de licitació per a principiants; els acords entre companys varien, així que pacteu les vostres convencions.

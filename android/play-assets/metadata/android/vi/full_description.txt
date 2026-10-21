@@ -1,0 +1,32 @@
+Học bridge hợp đồng bằng các bài tập ngắn. Đếm điểm, chọn lời mở bài, lên kế hoạch chơi khi làm người chơi chính và phòng thủ cùng đồng đội. Mỗi đáp án đều có giải thích.
+
+Bản thân ứng dụng chỉ có tiếng Anh: bài học, câu hỏi và menu đều bằng tiếng Anh.
+
+BỐN PHÒNG
+
+Phòng Lá bài: giá trị lá bài, điểm quân cao, ăn lượt, chủ bài và hợp đồng trên các thẻ vuốt được.
+
+Phòng Đấu thầu: đọc bài 13 lá, đếm điểm rồi chọn giữa bỏ lượt, mở bài mức một và 1NT (Standard American cho người mới).
+
+Phòng Người chơi chính: đếm lượt thắng, rút chủ bài, xây chất dài và đánh finesse.
+
+Phòng Phòng thủ: đánh bài mở đầu, tay thứ ba đánh cao và trả chất của đồng đội.
+
+BRIDGE+ (TÙY CHỌN)
+
+- Luyện tập không giới hạn với ván bài mới mỗi lần
+- Sửa lỗi của tôi: câu làm sai sẽ quay lại cho đến khi bạn làm đúng
+- Thử thách tính giờ chín mươi giây
+- Phút Bridge và chuẩn bị cho buổi chơi bài theo điểm yếu của bạn
+
+RIÊNG TƯ
+
+Không cần đăng ký, không quảng cáo, không theo dõi. Lịch sử luyện tập nằm trên thiết bị của bạn.
+
+Bridge+ là giao dịch mua tùy chọn theo tháng, theo năm hoặc trọn đời. Giá cho khu vực của bạn hiển thị trong ứng dụng trước khi mua. Google Play tính phí tài khoản khi bạn xác nhận; gói đăng ký tự gia hạn cho đến khi hủy và quản lý trong Google Play tại Thanh toán và gói đăng ký.
+
+Chính sách quyền riêng tư: https://jackwallner.github.io/bridge/android-privacy.html
+
+Điều khoản sử dụng: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer là ứng dụng độc lập dạy một hệ thống đấu thầu cho người mới; thỏa thuận giữa các đồng đội khác nhau, vì vậy hãy cùng thống nhất quy ước.

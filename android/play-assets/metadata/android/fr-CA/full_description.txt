@@ -1,0 +1,32 @@
+Apprenez le bridge de contrat par petits exercices. Comptez vos points, choisissez une ouverture, planifiez le jeu en déclarant et défendez avec votre partenaire. Chaque réponse est expliquée.
+
+L'application elle-même est seulement en anglais : leçons, questions et menus sont en anglais.
+
+QUATRE SALLES
+
+Salle des cartes : valeur des cartes, points d'honneurs, levées, atout et contrats sur des fiches à faire défiler.
+
+Salle des enchères : lisez une main de 13 cartes, comptez-la et choisissez entre passer, une ouverture à un et 1SA (Standard américain pour débutants).
+
+Salle du déclarant : comptez vos levées, tirez les atouts, établissez une longue couleur et tentez une impasse.
+
+Salle de la défense : entames, troisième main haut et retour dans la couleur du partenaire.
+
+BRIDGE+ (OPTIONNEL)
+
+- Entraînement illimité avec une nouvelle main à chaque fois
+- Corriger mes erreurs : les questions manquées reviennent jusqu'à la réussite
+- Défi chronométré de quatre-vingt-dix secondes
+- Minute de bridge et préparation de soirée de jeu selon vos points faibles
+
+CONFIDENTIEL
+
+Sans inscription, sans publicité, sans suivi. Votre historique reste sur votre appareil.
+
+Bridge+ est un achat optionnel, mensuel, annuel ou à vie. Le prix pour votre région s'affiche dans l'application avant l'achat. Google Play débite votre compte à la confirmation; les abonnements se renouvellent jusqu'à l'annulation et se gèrent dans Google Play, sous Paiements et abonnements.
+
+Confidentialité: https://jackwallner.github.io/bridge/android-privacy.html
+
+Conditions d'utilisation: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer est une application indépendante qui enseigne un système d'enchères pour débutants; les ententes entre partenaires varient, entendez-vous sur vos conventions.

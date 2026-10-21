@@ -1,0 +1,32 @@
+Naučte sa kontraktový bridž krátkymi cvičeniami. Počítajte body, vyberajte otvorenie, plánujte hru ako hlavný hráč a bráňte spolu s partnerom. Ku každej odpovedi patrí vysvetlenie.
+
+Samotná aplikácia je iba v angličtine: lekcie, otázky aj ponuky sú po anglicky.
+
+ŠTYRI MIESTNOSTI
+
+Miestnosť kariet: hodnoty kariet, honorové body, zdvihy, tromf a kontrakty na kartách na posúvanie.
+
+Miestnosť licitácie: prečítajte si ruku s 13 kartami, spočítajte ju a vyberte medzi pasom, otvorením na úrovni jedna a 1BT (Standard American pre začiatočníkov).
+
+Miestnosť hlavného hráča: počítajte zdvihy, vytiahnite tromfy, vybudujte dlhú farbu a zahrajte impas.
+
+Miestnosť obrany: výnosy, tretia ruka vysoko a vrátenie farby partnera.
+
+BRIDGE+ (VOLITEĽNE)
+
+- Nekonečný tréning s novou rukou zakaždým
+- Opraviť moje chyby: zlé otázky sa vracajú, kým ich nezvládnete
+- Časová výzva na deväťdesiat sekúnd
+- Bridžová minúta a príprava na herný večer podľa vašich slabín
+
+SÚKROMIE
+
+Bez registrácie, bez reklám, bez sledovania. História cvičení zostáva vo vašom zariadení.
+
+Bridge+ je voliteľný nákup mesačný, ročný alebo doživotný. Cenu pre váš región uvidíte v aplikácii pred nákupom. Google Play stiahne platbu po potvrdení; predplatné sa obnovuje, kým ho nezrušíte, a spravuje sa v Google Play v časti Platby a predplatné.
+
+Zásady ochrany osobných údajov: https://jackwallner.github.io/bridge/android-privacy.html
+
+Podmienky používania: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer je nezávislá aplikácia, ktorá učí jeden licitačný systém pre začiatočníkov; dohody medzi partnermi sa líšia, dohodnite si preto konvencie spolu.

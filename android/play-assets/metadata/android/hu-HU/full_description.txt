@@ -1,0 +1,32 @@
+Tanulj szerződéses bridzset rövid gyakorlatokkal. Számolj pontot, válassz nyitást, tervezd meg a játékot felvevőként, és védekezz a partnereddel. Minden válaszhoz magyarázat tartozik.
+
+Maga az alkalmazás csak angol nyelvű: a leckék, a kérdések és a menük angolul vannak.
+
+NÉGY SZOBA
+
+Kártyaszoba: lapok értéke, figurapontok, ütések, adu és szerződések lapozható kártyákon.
+
+Licitszoba: olvass le egy 13 lapos kezet, számold meg, és válassz a passz, az egyszintes nyitás és az 1SA között (Standard American kezdőknek).
+
+Felvevő szoba: számold az ütéseket, húzd az adukat, építs hosszú színt és játssz bemetszést.
+
+Védő szoba: kijátszások, harmadik kéz magasan és a partner színének visszajátszása.
+
+BRIDGE+ (VÁLASZTHATÓ)
+
+- Végtelen gyakorlás minden alkalommal új kézzel
+- Hibáim javítása: a hibás kérdések visszatérnek, amíg nem megy
+- Időre menő kihívás, kilencven másodperc
+- Bridzs-perc és játékest-felkészítés a gyenge pontjaid körül
+
+MAGÁNÉLET
+
+Nincs regisztráció, nincs reklám, nincs követés. A gyakorlási előzmények az eszközödön maradnak.
+
+A Bridge+ választható vásárlás havi, éves vagy végleges formában. A régiódra érvényes árat az alkalmazásban látod vásárlás előtt. A Google Play a megerősítéskor terheli a fiókodat; az előfizetések a lemondásig megújulnak, és a Google Play Fizetések és előfizetések menüjében kezelhetők.
+
+Adatvédelem: https://jackwallner.github.io/bridge/android-privacy.html
+
+Felhasználási feltételek: https://jackwallner.github.io/bridge/android-terms.html
+
+A Bridge Trainer független alkalmazás, amely egy kezdő licitrendszert tanít; a partnerek megállapodásai eltérnek, ezért a megegyezéseket beszéljétek meg egymással.

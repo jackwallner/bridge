@@ -1,0 +1,32 @@
+Impara il bridge a contratto con esercizi brevi. Conta i punti, scegli un'apertura, pianifica il gioco da dichiarante e difendi con il compagno. Ogni risposta ha la sua spiegazione.
+
+L'app è solo in inglese: lezioni, domande e menu sono in inglese.
+
+QUATTRO SALE
+
+Sala delle carte: valore delle carte, punti onore, prese, atout e contratti su schede da scorrere.
+
+Sala della licita: leggi una mano di 13 carte, contala e scegli tra passo, apertura a livello uno e 1 SA (Standard American per principianti).
+
+Sala del dichiarante: conta le prese, tira gli atout, sviluppa un seme lungo e prova un impasse.
+
+Sala della difesa: attacchi, terza mano alta e ritorno nel seme del compagno.
+
+BRIDGE+ (OPZIONALE)
+
+- Pratica senza fine con una mano nuova ogni volta
+- Correggi i miei errori: le domande sbagliate tornano finché non rispondi bene
+- Sfida a tempo di novanta secondi
+- Minuto del bridge e preparazione della serata di gioco sui tuoi punti deboli
+
+PRIVATO
+
+Nessuna registrazione, nessuna pubblicità, nessun tracciamento. La cronologia resta sul tuo dispositivo.
+
+Bridge+ è un acquisto facoltativo mensile, annuale o a vita. Il prezzo per la tua area è mostrato nell'app prima dell'acquisto. Google Play addebita il tuo account alla conferma; gli abbonamenti si rinnovano fino alla disdetta e si gestiscono in Google Play, in Pagamenti e abbonamenti.
+
+Privacy: https://jackwallner.github.io/bridge/android-privacy.html
+
+Termini d'uso: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer è un'app indipendente che insegna un sistema di licita per principianti; gli accordi tra compagni variano, quindi decidete insieme le vostre convenzioni.

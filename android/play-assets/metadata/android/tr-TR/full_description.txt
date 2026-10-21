@@ -1,0 +1,32 @@
+Kontrat briçi kısa alıştırmalarla öğren. Puanları say, açılış seç, oyunu deklaran olarak planla ve partnerinle savun. Her cevabın bir açıklaması var.
+
+Uygulamanın kendisi yalnızca İngilizcedir: dersler, sorular ve menüler İngilizcedir.
+
+DÖRT ODA
+
+Kart Odası: kart değerleri, onur puanları, eller, koz ve kontratlar kaydırılan kartlarda.
+
+İhale Odası: 13 kartlık eli oku, say ve pas, bir seviye açılış ve 1 SA arasında seç (yeni başlayanlar için Standard American).
+
+Deklaran Odası: elleri say, kozları çek, uzun bir renk kur ve fines yap.
+
+Savunma Odası: açılış atışları, üçüncü el yüksek ve partnerin rengini geri oynama.
+
+BRIDGE+ (İSTEĞE BAĞLI)
+
+- Her seferinde yeni bir elle bitmeyen pratik
+- Hatalarımı düzelt: kaçırılan sorular öğrenene kadar geri gelir
+- Doksan saniyelik süreli meydan okuma
+- Briç Dakikası ve zayıf yönlerine göre oyun gecesi hazırlığı
+
+GİZLİ
+
+Kayıt yok, reklam yok, izleme yok. Alıştırma geçmişin cihazında kalır.
+
+Bridge+ isteğe bağlı aylık, yıllık veya ömür boyu bir satın almadır. Bölgenin fiyatı satın almadan önce uygulamada gösterilir. Google Play onayladığında hesabından ücret alır; abonelikler iptal edene kadar yenilenir ve Google Play'de Ödemeler ve abonelikler bölümünden yönetilir.
+
+Gizlilik: https://jackwallner.github.io/bridge/android-privacy.html
+
+Kullanım koşulları: https://jackwallner.github.io/bridge/android-terms.html
+
+Bridge Trainer, yeni başlayanlar için tek bir ihale sistemi öğreten bağımsız bir uygulamadır; partnerler arasındaki anlaşmalar değişir, konvansiyonlarınızı birlikte belirleyin.
