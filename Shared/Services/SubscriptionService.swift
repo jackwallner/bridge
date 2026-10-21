@@ -265,7 +265,11 @@ final class SubscriptionService: NSObject, ObservableObject {
     /// is charged on day one. No product to ask about (offerings not loaded,
     /// no RevenueCat on a simulator) reads as eligible, as before.
     func isTrialEligible(for plan: PaywallPlan) async -> Bool {
-        await Self.isTrialEligible(package(for: plan)?.storeProduct.sk2Product)
+        #if DEBUG
+        // Captures only: shows a lapsed account's billed-today screens.
+        if ProcessInfo.processInfo.arguments.contains("-bridge.previewTrialIneligible") { return false }
+        #endif
+        return await Self.isTrialEligible(package(for: plan)?.storeProduct.sk2Product)
     }
 
     nonisolated static func isTrialEligible(_ product: Product?) async -> Bool {

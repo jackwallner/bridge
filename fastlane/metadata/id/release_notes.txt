@@ -1,9 +1,1 @@
-Latihan yang tidak pernah habis.
-
-Endless Practice membagikan kartu baru setiap kali, jadi kamu bisa melatih bidding pembuka dan penghitungan poin selama yang kamu mau, dengan penjelasan lengkap setelah setiap jawaban.
-
-Fix My Mistakes kini mengingat apa yang kamu jawab salah dan memunculkannya kembali sesuai jadwal, sehingga titik lemah benar-benar tertutup.
-
-Timed Challenge memberimu sembilan puluh detik dan rekor pribadi untuk dikejar.
-
-Juga baru: tingkat akurasi untuk setiap ruangan, dan lebih banyak pertanyaan buatan tangan tentang lelang, permainan declarer, pertahanan, dan Master Tables.
+Cincin penguasaan di setiap ruang, tampilan Your Progress yang memberi tahu apa yang perlu dilatih berikutnya, dan hitungan soal yang kamu kuasai minggu ini. Juga baru: Send Feedback, dukungan Kurangi Gerakan, dan ketentuan langganan yang lebih jelas.

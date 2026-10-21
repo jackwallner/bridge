@@ -1,9 +1,1 @@
-Pràctica que no s'acaba mai.
-
-Endless Practice reparteix una mà nova cada vegada, per practicar les obertures i el recompte de punts tant com vulguis, amb una explicació completa després de cada resposta.
-
-Fix My Mistakes ara recorda què has fallat i t'ho retorna segons un calendari, perquè els punts febles es tanquin de debò.
-
-Timed Challenge et dóna noranta segons i un rècord personal per superar.
-
-També nou: un índex d'encerts per a cada sala i més preguntes escrites a mà sobre la subhasta, el joc del declarant, la defensa i les Master Tables.
+Anells de domini a cada sala, una vista Your Progress que et diu en què treballar i el recompte de preguntes consolidades aquesta setmana. A més: Send Feedback, compatibilitat amb Reduir el moviment i condicions de subscripció més clares.

@@ -1,9 +1,1 @@
-Vadba, ki se nikoli ne izteče.
-
-Endless Practice vsakič razdeli novo roko, tako da lahko odpiranja in štetje točk vadiš, kolikor dolgo želiš, po vsakem odgovoru pa dobiš popolno razlago.
-
-Fix My Mistakes si zdaj zapomni, kaj si zgrešil, in to vrne po urniku, da se šibke točke res zaprejo.
-
-Timed Challenge ti da devetdeset sekund in osebni rekord, ki ga lahko podiraš.
-
-Tudi novo: uspešnost za vsako sobo in več ročno napisanih vprašanj o licitiranju, igri igralca, obrambi in Master Tables.
+Obroči obvladanja pri vsaki sobi, pogled Your Progress, ki pove, na čem delati naprej, in število vprašanj, ki ste jih utrdili ta teden. Novo tudi: Send Feedback, podpora za Zmanjšanje gibanja in jasnejši pogoji naročnine.

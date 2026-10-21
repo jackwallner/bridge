@@ -1,9 +1,1 @@
-Trening som aldri tar slutt.
-
-Endless Practice deler ut en ny hånd hver gang, så du kan trene på åpningsmeldinger og poengtelling så lenge du vil, med en full forklaring etter hvert svar.
-
-Fix My Mistakes husker nå hva du svarte feil, og henter det tilbake etter en plan, slik at svake punkter faktisk lukkes.
-
-Timed Challenge gir deg nitti sekunder og en personlig rekord å jage.
-
-Også nytt: treffsikkerhet for hvert rom og flere håndskrevne spørsmål om meldingene, spillførerens spill, forsvaret og Master Tables.
+Mestringsringer på hvert rom, en Your Progress-visning som sier hva du bør øve på videre, og en telling av spørsmålene du har lært denne uken. Også nytt: Send Feedback, støtte for Reduser bevegelse og tydeligere medlemsvilkår.

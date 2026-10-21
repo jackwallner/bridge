@@ -1,9 +1,1 @@
-Luyện tập không bao giờ cạn.
-
-Endless Practice chia một bộ bài mới mỗi lần, nên bạn có thể luyện gọi mở đầu và đếm điểm bao lâu tùy thích, kèm giải thích đầy đủ sau mỗi câu trả lời.
-
-Fix My Mistakes nay ghi nhớ những câu bạn làm sai và đưa lại theo lịch, để điểm yếu thực sự được khắc phục.
-
-Timed Challenge cho bạn chín mươi giây và một kỷ lục cá nhân để phá.
-
-Cũng mới: tỷ lệ chính xác cho từng phòng, và thêm nhiều câu hỏi viết tay về đấu giá, lối chơi của người chơi chính, phòng thủ và Master Tables.
+Vòng thành thạo cho mỗi phòng, màn hình Your Progress cho biết nên luyện gì tiếp theo và số câu hỏi bạn đã nắm chắc trong tuần này. Ngoài ra: Send Feedback, hỗ trợ Giảm chuyển động và điều khoản thành viên rõ ràng hơn.

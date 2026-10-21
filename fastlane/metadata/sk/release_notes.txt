@@ -1,9 +1,1 @@
-Cvičenie, ktoré sa nikdy neminie.
-
-Endless Practice zakaždým rozdá nový list, takže môžeš trénovať otváraciu dražbu a počítanie bodov, ako dlho chceš, a po každej odpovedi dostaneš úplné vysvetlenie.
-
-Fix My Mistakes si teraz pamätá, čo si mal zle, a vracia to podľa rozvrhu, aby sa slabé miesta naozaj uzavreli.
-
-Timed Challenge ti dá deväťdesiat sekúnd a osobný rekord, ktorý môžeš prekonávať.
-
-Ďalej je nové: úspešnosť pre každú miestnosť a viac ručne písaných otázok k dražbe, hre rozohrávajúceho, obrane a Master Tables.
+Krúžky zvládnutia pri každej miestnosti, prehľad Your Progress, ktorý povie, na čom pracovať ďalej, a počet otázok upevnených tento týždeň. Navyše: Send Feedback, podpora Obmedziť pohyb a jasnejšie podmienky predplatného.

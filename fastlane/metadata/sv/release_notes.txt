@@ -1,9 +1,1 @@
-Övning som aldrig tar slut.
-
-Endless Practice delar ut en ny hand varje gång, så att du kan öva öppningsbud och poängräkning hur länge du vill, med en fullständig förklaring efter varje svar.
-
-Fix My Mistakes kommer nu ihåg vad du svarade fel på och tar tillbaka det enligt ett schema, så att svaga punkter faktiskt täpps till.
-
-Timed Challenge ger dig nittio sekunder och ett personbästa att jaga.
-
-Också nytt: träffsäkerhet för varje rum och fler handskrivna frågor om budgivningen, spelförarens spel, försvaret och Master Tables.
+Behärskningsringar på varje rum, en Your Progress-vy som säger vad du ska öva på härnäst och en räkning av frågorna du har lärt dig den här veckan. Även nytt: Send Feedback, stöd för Minska rörelse och tydligare medlemsvillkor.

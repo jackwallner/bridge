@@ -1,9 +1,1 @@
-Harjoittelua, joka ei lopu kesken.
-
-Endless Practice jakaa joka kerta uuden käden, joten voit harjoitella avaustarjouksia ja pisteiden laskemista niin kauan kuin haluat, ja jokaisen vastauksen jälkeen saat täyden selityksen.
-
-Fix My Mistakes muistaa nyt, mitä vastasit väärin, ja tuo sen takaisin aikataulun mukaan, jotta heikot kohdat todella umpeutuvat.
-
-Timed Challenge antaa sinulle yhdeksänkymmentä sekuntia ja ennätyksen tavoiteltavaksi.
-
-Myös uutta: osumatarkkuus jokaiselle huoneelle ja lisää käsin kirjoitettuja kysymyksiä tarjoussarjasta, pelinviejän pelistä, puolustuksesta ja Master Tablesista.
+Hallintarenkaat jokaiseen huoneeseen, Your Progress -näkymä, joka kertoo mitä harjoitella seuraavaksi, ja tällä viikolla opittujen kysymysten määrä. Lisäksi: Send Feedback, Vähennä liikettä -tuki ja selkeämmät jäsenyysehdot.

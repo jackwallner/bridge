@@ -1,9 +1,5 @@
-A smarter rhythm for the table.
+See your progress at a glance.
 
-Bridge Minute is a new daily challenge. Every member gets the same five questions on the same day: two opening calls, one declarer decision, and two defensive judgments. Share your score, and keep a forgiving five-day weekly rhythm with a 30-day archive to catch up from.
+Every room on Home now shows a mastery ring. Your Progress names what is holding you back and what to work on next, and Home counts the questions you locked in this week.
 
-Game Night Prep lets you set your usual bridge night. A reminder arrives beforehand and opens straight into a five-minute session built from your due mistakes, your weakest room, and material you have not seen yet.
-
-Bridge Trainer now runs natively on iPad, in portrait or landscape.
-
-Bridge Minute and Game Night Prep are part of Bridge+.
+Also new: Send Feedback in Settings, Reduce Motion support, tidier iPad layouts and clearer membership terms.

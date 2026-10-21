@@ -1,9 +1,1 @@
-Pratica che non finisce mai.
-
-Endless Practice distribuisce una mano nuova ogni volta, così puoi allenarti sulle aperture e sul conteggio dei punti quanto vuoi, con una spiegazione completa dopo ogni risposta.
-
-Fix My Mistakes ora ricorda che cosa hai sbagliato e te lo ripropone secondo un calendario, così i punti deboli si chiudono davvero.
-
-Timed Challenge ti dà novanta secondi e un record personale da battere.
-
-Anche nuovo: la precisione per ogni stanza e altre domande scritte a mano su dichiarazione, gioco della carta, difesa e Master Tables.
+Anelli di padronanza su ogni stanza, una vista Your Progress che ti dice su cosa lavorare dopo e il conteggio delle domande consolidate questa settimana. Inoltre: Send Feedback, supporto per Riduci movimento e condizioni di abbonamento più chiare.
