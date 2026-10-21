@@ -62,7 +62,7 @@ object EndlessPractice {
         while (items.size < count) {
             val cards = BridgeCard.fullDeck.shuffled().take(13).racked
             val hcp = cards.highCardPoints
-            // A hand with no honours at all is a trick question, not a drill.
+            // A hand with no honors at all is a trick question, not a drill.
             if (hcp < 3) continue
             val values = sortedSetOf(hcp)
             for (offset in listOf(-2, -1, 1, 2).shuffled().take(3)) {
@@ -88,7 +88,7 @@ object EndlessPractice {
             val held = cards.count { it.rank == rank }
             if (held == 0) null else "$held ${rank.spokenName.lowercase()}${if (held == 1) "" else "s"} at $value"
         }
-        val breakdown = if (parts.isEmpty()) "no honours" else parts.joinToString(", ")
+        val breakdown = if (parts.isEmpty()) "no honors" else parts.joinToString(", ")
         return "$breakdown. That totals $total high-card points. Aces 4, kings 3, queens 2, jacks 1."
     }
 }

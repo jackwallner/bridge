@@ -26,7 +26,7 @@ enum PlayContent {
             frontTitle: "What is a finesse?",
             frontCards: [.h(.ace), .h(.queen)],
             backTitle: "Play for a missing honor to be well placed",
-            backBody: "Lead toward the A-Q and play the queen when the lower hand follows low. It wins when the missing king is before the A-Q hand."
+            backBody: "Lead toward the A-Q. If the next defender plays low, play the queen. It wins when the missing king sits with the defender who plays before the A-Q hand."
         ),
         Flashcard(
             id: "play-second-hand-low",
@@ -47,7 +47,7 @@ enum PlayContent {
         ),
         PlayScenario(
             id: "play-win-cheaply",
-            situation: "In notrump, partner leads 4♣. Dummy plays 6♣ and declarer plays 9♣. Which card wins most cheaply?",
+            situation: "You are declarer in notrump. West leads 4♣, dummy plays 6♣, and East plays 9♣. You play last. Which card wins most cheaply?",
             cards: [.c(.ten), .c(.king), .c(.ace)],
             answerIndex: 0,
             reasoning: "The 10♣ beats the 9♣. Save the king and ace for later tricks.",
@@ -71,10 +71,10 @@ enum PlayContent {
         ),
         PlayScenario(
             id: "play-discard",
-            situation: "Clubs are led in notrump and you have no clubs. Which card are you allowed to play?",
-            cards: [.s(.two), .h(.four), .d(.six)],
-            answerIndex: 0,
-            reasoning: "Any card is legal when you cannot follow suit. The 2♠ is a sensible low discard.",
+            situation: "Clubs are led in notrump and you have no clubs. Any card is legal. Which is the sensible discard?",
+            cards: [.s(.ace), .h(.king), .d(.two)],
+            answerIndex: 2,
+            reasoning: "Any card is legal when you cannot follow suit. Throw the card you need least, here the 2♦, and keep your ace and king.",
             tip: "A discard cannot win unless it is trump, and notrump has no trump suit."
         ),
     ]

@@ -1,6 +1,6 @@
 Xây dựng bản năng chơi bridge hợp đồng thực sự trong các phiên năm phút.
 
-Bridge Trainer chuyển đổi các phần mà người mới bắt đầu cần nhất thành các bài tập nhanh chóng, tập trung. Không có đối thủ, không có đồng hồ bấm giờ và không có áp lực. Tính điểm, chọn mở thầu, lập kế hoạch chơi bài và học các thói quen phòng thủ với lý do đằng sau mỗi câu trả lời.
+Bridge Trainer chuyển đổi các phần mà người mới bắt đầu cần nhất thành các bài tập nhanh chóng, tập trung. Không có đối thủ và không có áp lực. Tính điểm, chọn mở thầu, lập kế hoạch chơi bài và học các thói quen phòng thủ với lý do đằng sau mỗi câu trả lời.
 
 BỐN PHÒNG LUYỆN TẬP MIỄN PHÍ
 

@@ -402,7 +402,7 @@
         "D2",
         "CK"
       ],
-      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -496,7 +496,7 @@
         "CJ",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -516,7 +516,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -536,9 +536,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-3-3-3, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣. With three of each minor the convention is the short club.",
-      "hcp" : 12,
-      "opening" : "oneClub"
+      "hcp" : 12
     },
     {
       "cards" : [
@@ -576,7 +574,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -614,7 +612,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -634,7 +632,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -672,9 +670,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "12 high-card points, 4-3-3-3, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣. With three of each minor the convention is the short club.",
-      "hcp" : 12,
-      "opening" : "oneClub"
+      "hcp" : 12
     },
     {
       "cards" : [
@@ -748,7 +744,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -786,7 +782,7 @@
         "C10",
         "C9"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -806,7 +802,7 @@
         "CA",
         "CJ"
       ],
-      "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠. With a minor of the same length, start with the higher ranking suit.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -864,7 +860,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -884,7 +880,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "5 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -922,7 +918,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -962,7 +958,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "5 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -982,7 +978,7 @@
         "D4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -1002,7 +998,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -1022,7 +1018,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "2 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -1042,7 +1038,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -1080,7 +1076,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "3 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -1118,7 +1114,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -1178,7 +1174,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "3 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -1198,7 +1194,7 @@
         "D3",
         "C4"
       ],
-      "explanation" : "1 high-card point, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "1 high-card point, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 1,
       "opening" : "pass"
     },
@@ -1218,7 +1214,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "2 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "2 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -1256,7 +1252,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "1 high-card point, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "1 high-card point, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
       "hcp" : 1,
       "opening" : "pass"
     },
@@ -1276,7 +1272,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1296,7 +1292,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1316,7 +1312,7 @@
         "CK",
         "C5"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1336,7 +1332,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1356,7 +1352,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "14 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -1376,7 +1372,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -1414,7 +1410,7 @@
         "D4",
         "CK"
       ],
-      "explanation" : "15 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -1452,7 +1448,7 @@
         "C9",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -1472,7 +1468,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -1492,7 +1488,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -1512,7 +1508,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -1532,7 +1528,7 @@
         "CA",
         "C2"
       ],
-      "explanation" : "16 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "16 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 16,
       "opening" : "oneHeart"
     },
@@ -1552,7 +1548,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠. With a minor of the same length, start with the higher ranking suit.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -1592,9 +1588,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "13 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
-      "hcp" : 13,
-      "opening" : "oneDiamond"
+      "hcp" : 13
     },
     {
       "cards" : [
@@ -1632,7 +1626,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "13 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "13 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥. With a minor of the same length, start with the higher ranking suit.",
       "hcp" : 13,
       "opening" : "oneHeart"
     },
@@ -1652,7 +1646,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "18 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "18 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 18,
       "opening" : "oneSpade"
     },
@@ -1672,7 +1666,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "14 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -1712,9 +1706,7 @@
         "C9",
         "C6"
       ],
-      "explanation" : "14 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
-      "hcp" : 14,
-      "opening" : "oneDiamond"
+      "hcp" : 14
     },
     {
       "cards" : [
@@ -1750,7 +1742,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -1770,7 +1762,7 @@
         "CQ",
         "CJ"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1790,7 +1782,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "0 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "0 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 8. Pass and wait for your partner.",
       "hcp" : 0,
       "opening" : "pass"
     },
@@ -1810,7 +1802,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -1850,7 +1842,7 @@
         "CK",
         "C3"
       ],
-      "explanation" : "15 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -1870,7 +1862,7 @@
         "CJ",
         "C2"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -1890,7 +1882,7 @@
         "D3",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -1910,7 +1902,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -1930,7 +1922,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -1950,7 +1942,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -1970,7 +1962,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "14 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -2008,7 +2000,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -2028,7 +2020,7 @@
         "C9",
         "C6"
       ],
-      "explanation" : "6 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -2048,7 +2040,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -2068,7 +2060,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -2088,7 +2080,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -2108,7 +2100,7 @@
         "D2",
         "CA"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -2128,7 +2120,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-4-4-0. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-4-0. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -2166,7 +2158,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "14 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -2186,7 +2178,7 @@
         "CJ",
         "C8"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -2206,7 +2198,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "3 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -2226,7 +2218,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -2282,7 +2274,7 @@
         "D8",
         "C4"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -2322,7 +2314,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -2342,7 +2334,7 @@
         "C9",
         "C2"
       ],
-      "explanation" : "14 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -2362,7 +2354,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -2400,7 +2392,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -2438,7 +2430,7 @@
         "D2",
         "C10"
       ],
-      "explanation" : "14 high-card points with 7 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 7 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -2476,7 +2468,7 @@
         "CK",
         "C10"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -2496,7 +2488,7 @@
         "D2",
         "C5"
       ],
-      "explanation" : "12 high-card points, 8-3-1-1, no five-card major. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 8-3-1-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 23, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -2516,7 +2508,7 @@
         "CK",
         "C2"
       ],
-      "explanation" : "14 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -2536,7 +2528,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "0 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "0 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
       "hcp" : 0,
       "opening" : "pass"
     },
@@ -2612,7 +2604,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-4-4-0. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-4-0. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -2632,7 +2624,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -2652,7 +2644,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -2710,7 +2702,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -2730,7 +2722,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -2750,7 +2742,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "3 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -2770,7 +2762,7 @@
         "CQ",
         "C9"
       ],
-      "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -2826,7 +2818,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -2846,7 +2838,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -2866,7 +2858,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -2886,7 +2878,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -2906,7 +2898,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -2966,7 +2958,7 @@
         "CK",
         "C7"
       ],
-      "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -3006,7 +2998,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "3 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -3044,7 +3036,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "12 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -3064,7 +3056,7 @@
         "CQ",
         "C10"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -3124,7 +3116,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -3144,7 +3136,7 @@
         "C10",
         "C5"
       ],
-      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -3164,7 +3156,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -3204,7 +3196,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "16 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "16 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 16,
       "opening" : "oneHeart"
     },
@@ -3224,7 +3216,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -3244,7 +3236,7 @@
         "CJ",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -3264,7 +3256,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -3284,7 +3276,7 @@
         "C9",
         "C6"
       ],
-      "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -3322,7 +3314,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -3378,7 +3370,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "7 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -3398,7 +3390,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "4 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -3418,7 +3410,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -3438,7 +3430,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -3534,7 +3526,7 @@
         "CK",
         "C9"
       ],
-      "explanation" : "16 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "16 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 16,
       "opening" : "oneSpade"
     },
@@ -3574,7 +3566,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -3594,7 +3586,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "14 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -3614,7 +3606,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -3634,9 +3626,9 @@
         "C5",
         "C2"
       ],
-      "explanation" : "13 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "13 high-card points, 6-5-2-0. Your minor is longer than your five-card major, and Standard American opens the longest suit first, so open 1♣. Show the major on your next bid.",
       "hcp" : 13,
-      "opening" : "oneHeart"
+      "opening" : "oneClub"
     },
     {
       "cards" : [
@@ -3708,7 +3700,7 @@
         "DA",
         "CA"
       ],
-      "explanation" : "12 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥. Holding five of each major, start with the higher ranking suit.",
+      "explanation" : "12 high-card points with 6 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 23, and 20 is enough. Open your longest suit, a five-card major: 1♥. Holding both majors, start with the longer one.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -3728,7 +3720,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "3 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -3786,7 +3778,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -3826,7 +3818,7 @@
         "C9",
         "C2"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -3864,7 +3856,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -3942,7 +3934,7 @@
         "D6",
         "C2"
       ],
-      "explanation" : "6 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -3962,7 +3954,7 @@
         "D3",
         "C8"
       ],
-      "explanation" : "6 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -3982,7 +3974,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "4 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -4020,7 +4012,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4060,7 +4052,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "6 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -4100,7 +4092,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "13 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "13 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 13,
       "opening" : "oneHeart"
     },
@@ -4156,7 +4148,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4176,7 +4168,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4196,7 +4188,7 @@
         "D2",
         "CK"
       ],
-      "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -4236,9 +4228,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-3-3-3, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣. With three of each minor the convention is the short club.",
-      "hcp" : 12,
-      "opening" : "oneClub"
+      "hcp" : 12
     },
     {
       "cards" : [
@@ -4276,7 +4266,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -4296,7 +4286,7 @@
         "D2",
         "C9"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -4316,7 +4306,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -4336,7 +4326,7 @@
         "CJ",
         "C5"
       ],
-      "explanation" : "14 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -4394,7 +4384,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -4414,7 +4404,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -4452,7 +4442,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -4492,7 +4482,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -4512,7 +4502,7 @@
         "D4",
         "CK"
       ],
-      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -4588,7 +4578,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -4628,7 +4618,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -4648,7 +4638,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -4740,7 +4730,7 @@
         "D8",
         "C8"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -4760,7 +4750,7 @@
         "CQ",
         "C8"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -4780,7 +4770,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -4800,7 +4790,7 @@
         "C9",
         "C4"
       ],
-      "explanation" : "12 high-card points, 6-4-2-1, no five-card major. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 6-4-2-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -4840,7 +4830,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -4878,7 +4868,7 @@
         "D3",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4898,7 +4888,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4938,7 +4928,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "2 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "2 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -4958,7 +4948,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "8 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -4998,7 +4988,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -5018,7 +5008,7 @@
         "D5",
         "CK"
       ],
-      "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -5056,7 +5046,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -5076,7 +5066,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "2 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "2 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -5096,7 +5086,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "12 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "12 high-card points with 6 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -5116,7 +5106,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "13 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "13 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 13,
       "opening" : "oneHeart"
     },
@@ -5156,7 +5146,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -5176,7 +5166,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -5252,7 +5242,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -5272,7 +5262,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -5292,7 +5282,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "15 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -5312,7 +5302,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -5352,7 +5342,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "10 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -5468,9 +5458,7 @@
         "C8",
         "C4"
       ],
-      "explanation" : "12 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♣.",
-      "hcp" : 12,
-      "opening" : "oneClub"
+      "hcp" : 12
     },
     {
       "cards" : [
@@ -5526,7 +5514,7 @@
         "D2",
         "C3"
       ],
-      "explanation" : "10 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -5564,7 +5552,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "5 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -5584,7 +5572,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -5640,7 +5628,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -5678,7 +5666,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -5716,9 +5704,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "12 high-card points, 4-3-3-3, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
-      "hcp" : 12,
-      "opening" : "oneClub"
+      "hcp" : 12
     },
     {
       "cards" : [
@@ -5756,7 +5742,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -5776,7 +5762,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "13 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -5796,7 +5782,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "2 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "2 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -5816,7 +5802,7 @@
         "D2",
         "C6"
       ],
-      "explanation" : "3 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -5854,9 +5840,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "13 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♣.",
-      "hcp" : 13,
-      "opening" : "oneClub"
+      "hcp" : 13
     },
     {
       "cards" : [
@@ -5874,7 +5858,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -5894,7 +5878,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -5934,7 +5918,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -5974,7 +5958,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "12 high-card points, 5-5-2-1, no five-card major. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
+      "explanation" : "12 high-card points, 5-5-2-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -6012,7 +5996,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -6050,7 +6034,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -6070,7 +6054,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -6090,7 +6074,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -6146,7 +6130,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -6166,7 +6150,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -6186,7 +6170,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♠. With a minor of the same length, start with the higher ranking suit.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -6224,7 +6208,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -6244,7 +6228,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -6284,7 +6268,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -6304,7 +6288,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -6380,7 +6364,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -6400,9 +6384,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "15 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
-      "hcp" : 15,
-      "opening" : "oneDiamond"
+      "hcp" : 15
     },
     {
       "cards" : [
@@ -6460,7 +6442,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -6480,7 +6462,7 @@
         "CJ",
         "C9"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -6518,7 +6500,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "3 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -6556,7 +6538,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -6576,7 +6558,7 @@
         "CQ",
         "C6"
       ],
-      "explanation" : "14 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -6614,7 +6596,7 @@
         "CA",
         "C4"
       ],
-      "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 13,
       "opening" : "oneSpade"
     },
@@ -6674,7 +6656,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "2 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -6694,7 +6676,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -6714,7 +6696,7 @@
         "C8",
         "C4"
       ],
-      "explanation" : "12 high-card points, 5-4-4-0, no five-card major. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-4-0, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -6808,7 +6790,7 @@
         "D2",
         "CJ"
       ],
-      "explanation" : "4 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -6828,7 +6810,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -6848,7 +6830,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -6868,7 +6850,7 @@
         "CQ",
         "C6"
       ],
-      "explanation" : "13 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "13 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 13,
       "opening" : "oneHeart"
     },
@@ -6888,7 +6870,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -6908,7 +6890,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -6928,7 +6910,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -6966,7 +6948,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -7006,7 +6988,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7026,7 +7008,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -7046,7 +7028,7 @@
         "C9",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -7066,7 +7048,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -7086,7 +7068,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7106,7 +7088,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -7126,7 +7108,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "1 high-card point, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
       "hcp" : 1,
       "opening" : "pass"
     },
@@ -7164,7 +7146,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -7184,7 +7166,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -7204,7 +7186,7 @@
         "CQ",
         "C2"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -7224,7 +7206,7 @@
         "D9",
         "D8"
       ],
-      "explanation" : "10 high-card points, 5-4-4-0. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-4-0. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -7244,7 +7226,7 @@
         "CQ",
         "CJ"
       ],
-      "explanation" : "18 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "18 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 18,
       "opening" : "oneSpade"
     },
@@ -7320,7 +7302,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "5 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -7360,7 +7342,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7438,7 +7420,7 @@
         "C9",
         "C5"
       ],
-      "explanation" : "3 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -7494,7 +7476,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -7534,9 +7516,9 @@
         "D2",
         "CK"
       ],
-      "explanation" : "17 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "17 high-card points, 6-5-1-1. Your minor is longer than your five-card major, and Standard American opens the longest suit first, so open 1♦. Show the major on your next bid.",
       "hcp" : 17,
-      "opening" : "oneHeart"
+      "opening" : "oneDiamond"
     },
     {
       "cards" : [
@@ -7554,9 +7536,7 @@
         "CQ",
         "C6"
       ],
-      "explanation" : "18 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
-      "hcp" : 18,
-      "opening" : "oneDiamond"
+      "hcp" : 18
     },
     {
       "cards" : [
@@ -7574,7 +7554,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -7594,7 +7574,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -7614,7 +7594,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7634,7 +7614,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7654,7 +7634,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -7674,7 +7654,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7694,7 +7674,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -7732,7 +7712,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "6 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -7772,7 +7752,7 @@
         "C10",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -7792,7 +7772,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -7832,7 +7812,7 @@
         "D6",
         "C10"
       ],
-      "explanation" : "8 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7852,7 +7832,7 @@
         "CQ",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -7872,7 +7852,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -7952,7 +7932,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -7972,7 +7952,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "12 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "12 high-card points with 6 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -8030,7 +8010,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -8070,7 +8050,7 @@
         "D2",
         "C9"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -8090,7 +8070,7 @@
         "D6",
         "C9"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -8110,7 +8090,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -8130,7 +8110,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -8150,7 +8130,7 @@
         "CK",
         "CQ"
       ],
-      "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -8170,7 +8150,7 @@
         "D6",
         "C10"
       ],
-      "explanation" : "14 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -8190,7 +8170,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -8210,9 +8190,7 @@
         "C10",
         "C9"
       ],
-      "explanation" : "12 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
-      "hcp" : 12,
-      "opening" : "oneDiamond"
+      "hcp" : 12
     },
     {
       "cards" : [
@@ -8230,7 +8208,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -8286,7 +8264,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "15 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "15 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 15,
       "opening" : "oneHeart"
     },
@@ -8342,7 +8320,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "15 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -8380,7 +8358,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "3 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -8418,7 +8396,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -8438,7 +8416,7 @@
         "D3",
         "C8"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -8458,7 +8436,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "14 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -8496,7 +8474,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -8572,7 +8550,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -8610,7 +8588,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -8666,7 +8644,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -8686,7 +8664,7 @@
         "CA",
         "C10"
       ],
-      "explanation" : "12 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -8706,7 +8684,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -8744,7 +8722,7 @@
         "CA",
         "C10"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -8764,7 +8742,7 @@
         "D3",
         "D2"
       ],
-      "explanation" : "15 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠. Holding five of each major, start with the higher ranking suit.",
+      "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠. Holding the same length in both majors, start with the higher ranking suit.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -8804,7 +8782,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -8824,7 +8802,7 @@
         "D5",
         "C5"
       ],
-      "explanation" : "15 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -8882,7 +8860,7 @@
         "CA",
         "C3"
       ],
-      "explanation" : "12 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -8938,7 +8916,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "14 high-card points with 7 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 7 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -8958,7 +8936,7 @@
         "D2",
         "CK"
       ],
-      "explanation" : "16 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "16 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 16,
       "opening" : "oneSpade"
     },
@@ -8978,9 +8956,7 @@
         "D2",
         "C8"
       ],
-      "explanation" : "14 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♦.",
-      "hcp" : 14,
-      "opening" : "oneDiamond"
+      "hcp" : 14
     },
     {
       "cards" : [
@@ -8998,7 +8974,7 @@
         "C9",
         "C2"
       ],
-      "explanation" : "18 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "18 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 18,
       "opening" : "oneSpade"
     },
@@ -9018,7 +8994,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -9038,7 +9014,7 @@
         "CA",
         "C8"
       ],
-      "explanation" : "15 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -9058,7 +9034,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -9078,7 +9054,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -9098,7 +9074,7 @@
         "C10",
         "C5"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -9136,7 +9112,7 @@
         "D2",
         "C5"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -9156,7 +9132,7 @@
         "D6",
         "C8"
       ],
-      "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠. Holding five of each major, start with the higher ranking suit.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♠. Holding the same length in both majors, start with the higher ranking suit.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -9194,7 +9170,7 @@
         "C9",
         "C2"
       ],
-      "explanation" : "14 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -9214,7 +9190,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -9234,7 +9210,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -9272,7 +9248,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -9292,7 +9268,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "15 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "15 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 15,
       "opening" : "oneHeart"
     },
@@ -9352,7 +9328,7 @@
         "D2",
         "CJ"
       ],
-      "explanation" : "12 high-card points, 7-4-1-1, no five-card major. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 7-4-1-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 23, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -9408,7 +9384,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -9446,7 +9422,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -9466,7 +9442,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -9504,7 +9480,7 @@
         "D2",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -9524,7 +9500,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -9562,7 +9538,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "14 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥. With a minor of the same length, start with the higher ranking suit.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -9622,7 +9598,7 @@
         "C10",
         "C9"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -9642,7 +9618,7 @@
         "CJ",
         "C9"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -9662,9 +9638,9 @@
         "C3",
         "C2"
       ],
-      "explanation" : "13 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "13 high-card points, 6-5-1-1. Your minor is longer than your five-card major, and Standard American opens the longest suit first, so open 1♣. Show the major on your next bid.",
       "hcp" : 13,
-      "opening" : "oneHeart"
+      "opening" : "oneClub"
     },
     {
       "cards" : [
@@ -9682,7 +9658,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -9702,7 +9678,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -9722,7 +9698,7 @@
         "D3",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -9742,7 +9718,7 @@
         "CQ",
         "CJ"
       ],
-      "explanation" : "15 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "15 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 15,
       "opening" : "oneHeart"
     },
@@ -9762,7 +9738,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -9800,7 +9776,7 @@
         "D2",
         "CK"
       ],
-      "explanation" : "19 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "19 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 19,
       "opening" : "oneSpade"
     },
@@ -9820,7 +9796,7 @@
         "CK",
         "CJ"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -9840,7 +9816,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -9860,7 +9836,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -9900,7 +9876,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -9976,9 +9952,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "14 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
-      "hcp" : 14,
-      "opening" : "oneDiamond"
+      "hcp" : 14
     },
     {
       "cards" : [
@@ -9996,7 +9970,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -10016,7 +9990,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -10036,7 +10010,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -10056,7 +10030,7 @@
         "CA",
         "C7"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -10076,7 +10050,7 @@
         "D2",
         "C2"
       ],
-      "explanation" : "14 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -10096,7 +10070,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -10156,9 +10130,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "12 high-card points, 4-3-3-3, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
-      "hcp" : 12,
-      "opening" : "oneClub"
+      "hcp" : 12
     },
     {
       "cards" : [
@@ -10176,7 +10148,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -10214,7 +10186,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -10272,7 +10244,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -10310,7 +10282,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "14 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -10348,7 +10320,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -10368,7 +10340,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -10388,7 +10360,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "6 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -10468,7 +10440,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "1 high-card point, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
       "hcp" : 1,
       "opening" : "pass"
     },
@@ -10488,7 +10460,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -10508,7 +10480,7 @@
         "CQ",
         "C7"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -10548,7 +10520,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -10588,7 +10560,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -10626,7 +10598,7 @@
         "CJ",
         "C5"
       ],
-      "explanation" : "4 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -10646,7 +10618,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -10666,7 +10638,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "1 high-card point, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
       "hcp" : 1,
       "opening" : "pass"
     },
@@ -10686,7 +10658,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -10724,7 +10696,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-5-2-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -10764,7 +10736,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "15 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -10784,7 +10756,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -10804,7 +10776,7 @@
         "D4",
         "C2"
       ],
-      "explanation" : "16 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "16 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 16,
       "opening" : "oneSpade"
     },
@@ -10824,7 +10796,7 @@
         "CK",
         "C9"
       ],
-      "explanation" : "14 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "14 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 14,
       "opening" : "oneHeart"
     },
@@ -10900,7 +10872,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -10920,7 +10892,7 @@
         "CJ",
         "C8"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -10940,7 +10912,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "6 high-card points, 4-4-4-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -10960,7 +10932,7 @@
         "CJ",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -11040,7 +11012,7 @@
         "D5",
         "C6"
       ],
-      "explanation" : "15 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -11060,7 +11032,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -11116,7 +11088,7 @@
         "CQ",
         "C10"
       ],
-      "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -11154,7 +11126,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "5 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -11174,7 +11146,7 @@
         "CQ",
         "CJ"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -11214,9 +11186,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "12 high-card points, 4-3-3-3, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣. With three of each minor the convention is the short club.",
-      "hcp" : 12,
-      "opening" : "oneClub"
+      "hcp" : 12
     },
     {
       "cards" : [
@@ -11234,7 +11204,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "2 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -11254,7 +11224,7 @@
         "D4",
         "CK"
       ],
-      "explanation" : "12 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -11274,7 +11244,7 @@
         "CJ",
         "C8"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -11294,7 +11264,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -11314,7 +11284,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "15 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -11334,7 +11304,7 @@
         "CK",
         "C4"
       ],
-      "explanation" : "14 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -11354,7 +11324,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -11374,7 +11344,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -11394,7 +11364,7 @@
         "CJ",
         "C5"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -11414,7 +11384,7 @@
         "CQ",
         "C6"
       ],
-      "explanation" : "2 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "2 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -11434,7 +11404,7 @@
         "CQ",
         "C8"
       ],
-      "explanation" : "15 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "15 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 15,
       "opening" : "oneHeart"
     },
@@ -11454,7 +11424,7 @@
         "C9",
         "C5"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -11494,7 +11464,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -11532,7 +11502,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "5 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -11630,7 +11600,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "3 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -11650,7 +11620,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -11688,7 +11658,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -11708,7 +11678,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -11728,7 +11698,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -11748,7 +11718,7 @@
         "D3",
         "C3"
       ],
-      "explanation" : "14 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "14 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 14,
       "opening" : "oneSpade"
     },
@@ -11808,7 +11778,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -11848,7 +11818,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -11906,7 +11876,7 @@
         "C9",
         "C4"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -11926,7 +11896,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -11946,7 +11916,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -11966,7 +11936,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "1 high-card point, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
       "hcp" : 1,
       "opening" : "pass"
     },
@@ -12004,7 +11974,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "1 high-card point, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner.",
+      "explanation" : "1 high-card point, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
       "hcp" : 1,
       "opening" : "pass"
     },
@@ -12042,7 +12012,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "15 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+      "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠. With a minor of the same length, start with the higher ranking suit.",
       "hcp" : 15,
       "opening" : "oneSpade"
     },
@@ -12080,7 +12050,7 @@
         "CA",
         "CK"
       ],
-      "explanation" : "18 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+      "explanation" : "18 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 18,
       "opening" : "oneHeart"
     },
@@ -12167,7 +12137,7 @@
           "D4",
           "CK"
         ],
-        "explanation" : "12 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠."
+        "explanation" : "12 high-card points with 6 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "oneClub",
@@ -12243,7 +12213,7 @@
           "C8",
           "C7"
         ],
-        "explanation" : "13 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠."
+        "explanation" : "13 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "oneHeart",
@@ -12262,7 +12232,7 @@
           "C7",
           "C5"
         ],
-        "explanation" : "13 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥."
+        "explanation" : "13 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥. With a minor of the same length, start with the higher ranking suit."
       },
       {
         "answer" : "pass",
@@ -12281,7 +12251,7 @@
           "C9",
           "C7"
         ],
-        "explanation" : "3 high-card points, 4-4-3-2. You need about 12 to open at the one level, so pass and wait for your partner."
+        "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner."
       }
     ],
     "daily-2026-10-01" : [
@@ -12302,7 +12272,7 @@
           "CJ",
           "C4"
         ],
-        "explanation" : "15 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥."
+        "explanation" : "15 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥."
       },
       {
         "answer" : "pass",
@@ -12321,7 +12291,7 @@
           "C7",
           "C4"
         ],
-        "explanation" : "3 high-card points, 4-3-3-3. You need about 12 to open at the one level, so pass and wait for your partner."
+        "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner."
       },
       {
         "answer" : "oneDiamond",
@@ -12340,7 +12310,7 @@
           "C5",
           "C4"
         ],
-        "explanation" : "12 high-card points, 6-3-3-1, no five-card major. Open your longer minor: 1♦."
+        "explanation" : "12 high-card points, 6-3-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦."
       },
       {
         "answer" : "oneNotrump",
@@ -12378,7 +12348,7 @@
           "C5",
           "C2"
         ],
-        "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠."
+        "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "pass",
@@ -12397,7 +12367,7 @@
           "C10",
           "C7"
         ],
-        "explanation" : "4 high-card points, 5-3-3-2. You need about 12 to open at the one level, so pass and wait for your partner."
+        "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner."
       },
       {
         "answer" : "oneClub",
@@ -12437,7 +12407,7 @@
           "D4",
           "C7"
         ],
-        "explanation" : "9 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner."
+        "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner."
       },
       {
         "answer" : "oneNotrump",
@@ -12475,7 +12445,7 @@
           "C6",
           "C2"
         ],
-        "explanation" : "17 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠."
+        "explanation" : "17 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "oneDiamond",
@@ -12513,7 +12483,7 @@
           "C6",
           "C5"
         ],
-        "explanation" : "12 high-card points with 6 hearts. With 12 or more and a five-card major, open the major: 1♥."
+        "explanation" : "12 high-card points with 6 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♥."
       },
       {
         "answer" : "oneClub",
@@ -12572,7 +12542,7 @@
           "C5",
           "C3"
         ],
-        "explanation" : "13 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥."
+        "explanation" : "13 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥."
       },
       {
         "answer" : "oneClub",
@@ -12629,7 +12599,7 @@
           "C5",
           "C3"
         ],
-        "explanation" : "7 high-card points, 5-4-3-1. You need about 12 to open at the one level, so pass and wait for your partner."
+        "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner."
       },
       {
         "answer" : "oneSpade",
@@ -12648,7 +12618,7 @@
           "CJ",
           "C8"
         ],
-        "explanation" : "15 high-card points with 6 spades. With 12 or more and a five-card major, open the major: 1♠."
+        "explanation" : "15 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "oneDiamond",
@@ -12667,7 +12637,7 @@
           "D2",
           "CA"
         ],
-        "explanation" : "12 high-card points, 6-3-3-1, no five-card major. Open your longer minor: 1♦."
+        "explanation" : "12 high-card points, 6-3-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦."
       },
       {
         "answer" : "oneNotrump",
@@ -12912,10 +12882,10 @@
         "The director",
         "Dummy alone"
       ],
-      "explanation" : "Dummy lays the hand face up and plays only the card declarer calls.",
+      "explanation" : "Dummy lays the hand face up and takes no part in the play. Declarer names each card to be played from it.",
       "id" : "plus-card-dummy",
       "isReviewable" : true,
-      "prompt" : "Who physically plays cards from dummy?",
+      "prompt" : "Who decides which card is played from dummy?",
       "roomID" : "card-room",
       "sourceLabel" : "The Card Room",
       "trackingID" : "plus-card-dummy"
@@ -13038,7 +13008,7 @@
         "Pass",
         "1♦"
       ],
-      "explanation" : "This hand has 6 HCP: Q=2, K=3, and J=1. It is well below opening strength, so pass.",
+      "explanation" : "This hand has 6 HCP: Q=2, K=3, and J=1. It is well below the 13 you need to open, so pass.",
       "id" : "hand-pass-10",
       "isReviewable" : true,
       "prompt" : "What is the best opening call?",
@@ -13055,11 +13025,11 @@
         "S7",
         "S3",
         "HQ",
-        "H8",
+        "HJ",
         "H4",
         "DK",
         "D6",
-        "C9",
+        "CJ",
         "C5",
         "C2"
       ],
@@ -13081,7 +13051,7 @@
       "answerIndex" : 1,
       "cards" : [
         "SK",
-        "S7",
+        "SJ",
         "S2",
         "HA",
         "HQ",
@@ -13089,7 +13059,7 @@
         "H6",
         "H3",
         "DK",
-        "D8",
+        "DJ",
         "D4",
         "C7",
         "C3"
@@ -13255,7 +13225,7 @@
         "1NT",
         "Pass"
       ],
-      "explanation" : "Six spades and 14 HCP make 1♠ the clear opening.",
+      "explanation" : "Six spades and 13 HCP make 1♠ the clear opening.",
       "id" : "plus-open-spade-six",
       "isReviewable" : true,
       "prompt" : "What is the best opening call?",
@@ -13286,7 +13256,7 @@
         "1♥",
         "1NT"
       ],
-      "explanation" : "This hand has opening strength, five clubs, and no five-card major. It is not balanced enough for 1NT, so open 1♣.",
+      "explanation" : "This hand has 14 HCP, five clubs, and no five-card major. That is too weak for 1NT, which needs 15 to 17, so open your longer minor, 1♣.",
       "id" : "plus-open-club",
       "isReviewable" : true,
       "prompt" : "What is the best opening call?",
@@ -13348,7 +13318,7 @@
         "Pass",
         "1♥"
       ],
-      "explanation" : "Six high-card points and no long suit. You need about 12 to open at the one level, so pass.",
+      "explanation" : "Six high-card points and no long suit. You need 13 to open at the one level, so pass.",
       "id" : "more-open-pass",
       "isReviewable" : true,
       "prompt" : "What is the best opening call?",
@@ -13613,7 +13583,7 @@
         "It can crash partner's king",
         "Aces cannot be led at trick one"
       ],
-      "explanation" : "Leading an ace with no king behind it gives away a trick and hands declarer a free winner. Save it to capture something.",
+      "explanation" : "An ace with no king behind it usually wins only small cards, and it can turn declarer's king into a winner. Save the ace to capture an honor.",
       "id" : "more-defense-ace-lead",
       "isReviewable" : true,
       "prompt" : "Why is leading an unsupported ace against a suit contract usually a poor choice?",
@@ -13758,10 +13728,10 @@
         "Attack hard",
         "Lead passively"
       ],
-      "explanation" : "When declarer sounds stretched, the tricks are often already there for you. A quiet lead avoids handing over the one trick they were missing.",
+      "explanation" : "When the opponents have only just enough strength, they often need you to help. A quiet lead avoids handing over the one trick they were missing.",
       "id" : "more-defense-passive",
       "isReviewable" : true,
-      "prompt" : "Declarer bid confidently to a thin game\nAttack, or lead passively?",
+      "prompt" : "The opponents stretched to a thin game\nAttack, or lead passively?",
       "roomID" : "defense-room",
       "sourceLabel" : "The Defense Room",
       "trackingID" : "more-defense-passive"
@@ -13889,10 +13859,10 @@
         "5♠",
         "2♥"
       ],
-      "explanation" : "Four of a major is the standard game level. Higher contracts may also score game but take unnecessary risk.",
+      "explanation" : "Four of a major is the lowest game level, worth 120 trick points. Higher contracts also score game but need more tricks.",
       "id" : "pro-game-major",
       "isReviewable" : true,
-      "prompt" : "Which major-suit contract earns the game bonus?",
+      "prompt" : "What is the lowest major-suit contract that earns the game bonus?",
       "roomID" : "master-tables",
       "sourceLabel" : "The Master Tables",
       "trackingID" : "pro-game-major"
@@ -13984,10 +13954,10 @@
         "One",
         "Cannot be known"
       ],
-      "explanation" : "Thirteen cards total: 5 + 4 + 2 clubs leaves 2 diamonds. Counting the hand out is what separates good defenders from lucky ones.",
+      "explanation" : "The discard shows exactly two clubs. Thirteen cards total: 5 + 4 + 2 leaves 2 diamonds. Counting the hand out is what separates good defenders from lucky ones.",
       "id" : "more-pro-count-declarer",
       "isReviewable" : true,
-      "prompt" : "Declarer has shown five spades and four hearts and follows to two rounds of clubs. How many diamonds do they hold?",
+      "prompt" : "Declarer has shown five spades and four hearts, followed to two rounds of clubs, then discarded on the third round. How many diamonds do they hold?",
       "roomID" : "master-tables",
       "sourceLabel" : "The Master Tables",
       "trackingID" : "more-pro-count-declarer"
@@ -14042,7 +14012,7 @@
               "1♣",
               "Pass"
             ],
-            "explanation" : "12 high-card points with 5 spades. With 12 or more and a five-card major, open the major: 1♠.",
+            "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
             "id" : "gen-openings-minute-2026-02-28-0",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14058,17 +14028,17 @@
             "cards" : [
               "CA",
               "CK",
-              "CQ"
+              "C9"
             ],
             "choices" : [
               "King of Clubs",
               "Ace of Clubs",
-              "Queen of Clubs"
+              "9 of Clubs"
             ],
-            "explanation" : "Cash the queen from the shorter honor holding first. This preserves flexibility when one defender shows out.",
+            "explanation" : "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
             "id" : "bridge-minute-declarer-2026-02-28",
             "isReviewable" : false,
-            "prompt" : "You need four club tricks from A-K-9-8 opposite Q-7-6-5. Which honor do you cash first to guard against a 4-1 split? Which card do you play?",
+            "prompt" : "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand? Which card do you play?",
             "roomID" : "declarer-room",
             "sourceLabel" : "Bridge Minute: Declarer Play",
             "trackingID" : "bridge-minute-declarer"
@@ -14124,7 +14094,7 @@
               "1NT",
               "1♥"
             ],
-            "explanation" : "18 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+            "explanation" : "18 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
             "id" : "gen-openings-minute-2026-02-28-1",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14205,17 +14175,17 @@
             "cards" : [
               "CA",
               "CK",
-              "CQ"
+              "C9"
             ],
             "choices" : [
-              "Queen of Clubs",
+              "9 of Clubs",
               "King of Clubs",
               "Ace of Clubs"
             ],
-            "explanation" : "Cash the queen from the shorter honor holding first. This preserves flexibility when one defender shows out.",
+            "explanation" : "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
             "id" : "bridge-minute-declarer-2026-08-09",
             "isReviewable" : false,
-            "prompt" : "You need four club tricks from A-K-9-8 opposite Q-7-6-5. Which honor do you cash first to guard against a 4-1 split? Which card do you play?",
+            "prompt" : "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand? Which card do you play?",
             "roomID" : "declarer-room",
             "sourceLabel" : "Bridge Minute: Declarer Play",
             "trackingID" : "bridge-minute-declarer"
@@ -14268,7 +14238,7 @@
               "1NT",
               "1♥"
             ],
-            "explanation" : "16 high-card points with 8 spades. With 12 or more and a five-card major, open the major: 1♠.",
+            "explanation" : "16 high-card points with 8 spades. Open your longest suit, a five-card major: 1♠.",
             "id" : "gen-openings-minute-2026-08-09-1",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14408,7 +14378,7 @@
               "1♠",
               "1♦"
             ],
-            "explanation" : "14 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+            "explanation" : "14 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
             "id" : "gen-openings-minute-2026-09-30-1",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14447,21 +14417,21 @@
         {
           "category" : "bidding",
           "item" : {
-            "answerIndex" : 1,
+            "answerIndex" : 0,
             "cards" : [
-              "S9",
-              "S5",
-              "HA",
-              "H8",
-              "H7",
-              "H2",
-              "DA",
+              "SA",
+              "S7",
+              "HJ",
+              "H10",
+              "H9",
+              "H5",
               "DK",
               "D10",
+              "D7",
+              "D6",
               "CA",
-              "CQ",
-              "C8",
-              "C5"
+              "C10",
+              "C7"
             ],
             "choices" : [
               "1♦",
@@ -14471,7 +14441,7 @@
               "Pass",
               "1♥"
             ],
-            "explanation" : "17 high-card points and a balanced 4-4-3-2 with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call.",
+            "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
             "id" : "gen-openings-minute-2026-10-01-0",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14483,21 +14453,21 @@
         {
           "category" : "declarerPlay",
           "item" : {
-            "answerIndex" : 1,
+            "answerIndex" : 0,
             "cards" : [
-              "S2",
-              "H4",
-              "D6"
+              "SA",
+              "HK",
+              "D2"
             ],
             "choices" : [
-              "6 of Diamonds",
-              "2 of Spades",
-              "4 of Hearts"
+              "2 of Diamonds",
+              "Ace of Spades",
+              "King of Hearts"
             ],
-            "explanation" : "Any card is legal when you cannot follow suit. The 2♠ is a sensible low discard.",
+            "explanation" : "Any card is legal when you cannot follow suit. Throw the card you need least, here the 2♦, and keep your ace and king.",
             "id" : "bridge-minute-declarer-2026-10-01",
             "isReviewable" : false,
-            "prompt" : "Clubs are led in notrump and you have no clubs. Which card are you allowed to play? Which card do you play?",
+            "prompt" : "Clubs are led in notrump and you have no clubs. Any card is legal. Which is the sensible discard? Which card do you play?",
             "roomID" : "declarer-room",
             "sourceLabel" : "Bridge Minute: Declarer Play",
             "trackingID" : "bridge-minute-declarer"
@@ -14529,21 +14499,21 @@
         {
           "category" : "bidding",
           "item" : {
-            "answerIndex" : 0,
+            "answerIndex" : 5,
             "cards" : [
-              "SJ",
+              "S9",
+              "S5",
               "HA",
-              "HQ",
               "H8",
-              "H4",
+              "H7",
+              "H2",
+              "DA",
               "DK",
-              "D9",
-              "D8",
-              "D3",
-              "CK",
-              "C9",
-              "C7",
-              "C2"
+              "D10",
+              "CA",
+              "CQ",
+              "C8",
+              "C5"
             ],
             "choices" : [
               "1♦",
@@ -14553,7 +14523,7 @@
               "1♣",
               "1NT"
             ],
-            "explanation" : "13 high-card points, 4-4-4-1, no five-card major. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
+            "explanation" : "17 high-card points and a balanced 4-4-3-2 with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call.",
             "id" : "gen-openings-minute-2026-10-01-1",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14617,7 +14587,7 @@
               "1♠",
               "1♦"
             ],
-            "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Open your longer minor: 1♦.",
+            "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦.",
             "id" : "gen-openings-minute-2026-10-16-0",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14629,21 +14599,19 @@
         {
           "category" : "declarerPlay",
           "item" : {
-            "answerIndex" : 2,
+            "answerIndex" : 1,
             "cards" : [
               "SA",
-              "S3",
               "S2"
             ],
             "choices" : [
-              "3 of Spades",
               "Ace of Spades",
               "2 of Spades"
             ],
             "explanation" : "Duck a small card early. Winning the ace immediately may let defenders run the suit when they regain the lead.",
             "id" : "bridge-minute-declarer-2026-10-16",
             "isReviewable" : false,
-            "prompt" : "In 3NT, opponents lead a suit where you hold A-x-x and dummy has two small. Which card often breaks their communication? Which card do you play?",
+            "prompt" : "In 3NT, opponents lead a suit where you hold A-3-2 and dummy has two small cards. Which card do you play on the first round to break their communication? Which card do you play?",
             "roomID" : "declarer-room",
             "sourceLabel" : "Bridge Minute: Declarer Play",
             "trackingID" : "bridge-minute-declarer"
@@ -14763,7 +14731,7 @@
               "1♠",
               "1♥"
             ],
-            "explanation" : "19 high-card points with 5 hearts. With 12 or more and a five-card major, open the major: 1♥.",
+            "explanation" : "19 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥.",
             "id" : "gen-openings-minute-2027-01-15-0",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",

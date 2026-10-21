@@ -293,9 +293,9 @@ fun WhatsNewSheet(onClose: () -> Unit, onUpgrade: () -> Unit) {
                     graph.whatsNew.markSeen()
                     onUpgrade()
                 }
-                QuietButton("Keep practising free", Modifier.fillMaxWidth()) { close() }
+                QuietButton("Keep practicing free", Modifier.fillMaxWidth()) { close() }
             } else {
-                PrimaryCTA("Start practising") { close() }
+                PrimaryCTA("Start practicing") { close() }
             }
         }
     }

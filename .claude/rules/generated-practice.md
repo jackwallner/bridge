@@ -29,9 +29,14 @@ Review) on the existing `QuickItem` shape:
 
 - **Endless Practice** (`HandGenerator` + `EndlessPractice`) deals hands
   procedurally, forever. The opening bid is a deterministic function of points
-  and shape, so `HandGenerator.opening` grades it. It returns nil for anything
-  a beginner Standard American table would argue about (22+ and 20-21 hands,
-  borderline 11-counts, 15-17 balanced holding a five-card major); generation
+  and shape, so `HandGenerator.opening` grades it, following the ACBL SAYC:
+  one of a suit takes 13+ points, or 12 by the Rule of 20 (points plus the two
+  longest suits reach 20); 1NT is a balanced 15 to 17; the longest suit opens
+  first (a five-card major gives way only to a six-card minor), equal length
+  opens the higher suit, 4-4 minors open 1D, 3-3 open 1C. It returns nil for
+  anything a beginner Standard American table would argue about (20+ HCP,
+  11-counts, a 12 outside the Rule of 20, 4-4-4-1 shapes, 15-17 balanced
+  holding a five-card major); generation
   is rejection sampling on top, so a hand only reaches a player when exactly
   one of the six `HandCategory` answers is right. `batch` targets the answer
   first, because a purely random deal is a Pass more than half the time.

@@ -7,12 +7,18 @@ import Foundation
 /// and a real explanation, instead of shipping a finite pile of hand-written
 /// deals a player exhausts in two sittings.
 ///
+/// It follows the ACBL Standard American Yellow Card (SAYC): one of a suit
+/// takes 13 or more points, or 12 under the Rule of 20; 1NT is a balanced
+/// 15 to 17; the longest suit is opened first, and with equal length the
+/// higher ranking one (4-4 in the minors opens 1♦, 3-3 opens 1♣).
+///
 /// The classifier deliberately returns nil for anything a beginner Standard
 /// American table would argue about (strong 2-club hands, 20-21 balanced,
-/// borderline 11-counts, 15-17 balanced holding a five-card major). Generation
-/// is rejection sampling on top of it, so a hand only ever reaches a player if
-/// exactly one of the six `HandCategory` answers is right. A drill that grades
-/// a judgment call as "wrong" teaches the player to distrust the app.
+/// 11-counts, a 12-count outside the Rule of 20, 15-17 balanced holding a
+/// five-card major, 4-4-4-1 shapes). Generation is rejection sampling on top
+/// of it, so a hand only ever reaches a player if exactly one of the six
+/// `HandCategory` answers is right. A drill that grades a judgment call as
+/// "wrong" teaches the player to distrust the app.
 enum HandGenerator {
 
     // MARK: - Shape
@@ -51,7 +57,13 @@ enum HandGenerator {
 
         var hasFiveCardMajor: Bool { longestMajor != nil }
 
-        /// The minor to open when there is no biddable major. Equal lengths go
+        /// The length of the longer minor, in cards.
+        var longestMinorLength: Int { max(length(.clubs), length(.diamonds)) }
+
+        /// 4-4-4-1 has no single longest suit, and SAYC does not say which to open.
+        var isFourFourFourOne: Bool { sortedLengths == [4, 4, 4, 1] }
+
+        /// The minor to open when no major is long enough. Equal lengths go
         /// to diamonds except the 3-3 case, which is the classic "short club".
         var longerMinor: Suit {
             let clubs = length(.clubs)
@@ -61,8 +73,7 @@ enum HandGenerator {
             return clubs == 3 ? .clubs : .diamonds
         }
 
-        /// Points plus the two longest suits: the classic test for whether a
-        /// sub-12 hand is worth opening anyway.
+        /// Points plus the two longest suits: the Rule of 20 that lets a 12 open.
         var ruleOfTwenty: Int {
             let twoLongest = sortedLengths.prefix(2).reduce(0, +)
             return highCardPoints + twoLongest
@@ -93,13 +104,20 @@ enum HandGenerator {
             return .pass
         }
 
+        // SAYC opens one of a suit with 13 or more, and a 12 only by the Rule
+        // of 20. A 12 short of that is a judgment call, so it is not graded.
+        guard hcp >= 13 || shape.ruleOfTwenty >= 20 else { return nil }
+        guard !shape.isFourFourFourOne else { return nil }
+
         if (15...17).contains(hcp) && shape.isBalanced {
             // A balanced 15-17 with a five-card major splits the room. Skip it.
             guard !shape.hasFiveCardMajor else { return nil }
             return .oneNotrump
         }
 
-        if let major = shape.longestMajor {
+        // The longest suit goes first. A five-card major only gives way to a
+        // minor of six or more cards; at equal length the major ranks higher.
+        if let major = shape.longestMajor, shape.length(major) >= shape.longestMinorLength {
             return major == .spades ? .oneSpade : .oneHeart
         }
 
@@ -184,30 +202,57 @@ enum HandGenerator {
 
         switch answer {
         case .pass:
-            return "\(points), \(shape.pattern). You need about 12 to open at the one level, so pass and wait for your partner."
+            return "\(points), \(shape.pattern). One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes \(shape.ruleOfTwenty). Pass and wait for your partner."
         case .oneNotrump:
             return "\(points) and a balanced \(shape.pattern) with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
         case .oneHeart, .oneSpade:
-            let suit: Suit = answer == .oneSpade ? .spades : .hearts
-            let length = shape.length(suit)
-            var line = "\(points) with \(length) \(suit.displayName.lowercased()). With 12 or more and a five-card major, open the major: \(answer.displayName)."
-            if shape.length(.spades) >= 5 && shape.length(.hearts) >= 5 {
-                line += " Holding five of each major, start with the higher ranking suit."
-            }
-            return line
+            return explainMajor(shape, answer: answer, points: points)
         case .oneClub, .oneDiamond:
-            let suit: Suit = answer == .oneDiamond ? .diamonds : .clubs
-            var line = "\(points), \(shape.pattern), no five-card major"
-            if shape.isBalanced && (15...17).contains(hcp) == false {
-                line += " and outside the 15 to 17 notrump range"
-            }
-            line += ". Open your longer minor: \(answer.displayName)."
-            if shape.length(.clubs) == shape.length(.diamonds) {
-                line += shape.length(.clubs) == 3
-                    ? " With three of each minor the convention is the short club."
-                    : " With equal length in the minors, open the higher ranking one."
-            }
-            return line
+            return explainMinor(shape, answer: answer, points: points)
         }
+    }
+
+    /// Only a 12 needs the Rule of 20 spelled out; 13 or more is plain strength.
+    private static func strengthNote(_ shape: Shape) -> String {
+        guard shape.highCardPoints == 12 else { return "" }
+        return " Twelve points open here by the Rule of 20: points plus your two longest suits make \(shape.ruleOfTwenty), and 20 is enough."
+    }
+
+    private static func explainMajor(_ shape: Shape, answer: HandCategory, points: String) -> String {
+        let suit: Suit = answer == .oneSpade ? .spades : .hearts
+        let length = shape.length(suit)
+        var line = "\(points) with \(length) \(suit.displayName.lowercased())."
+        line += strengthNote(shape)
+        line += " Open your longest suit, a five-card major: \(answer.displayName)."
+        let spades = shape.length(.spades)
+        let hearts = shape.length(.hearts)
+        if spades >= 5 && hearts >= 5 {
+            line += spades == hearts
+                ? " Holding the same length in both majors, start with the higher ranking suit."
+                : " Holding both majors, start with the longer one."
+        } else if shape.longestMinorLength == length {
+            line += " With a minor of the same length, start with the higher ranking suit."
+        }
+        return line
+    }
+
+    private static func explainMinor(_ shape: Shape, answer: HandCategory, points: String) -> String {
+        var line = "\(points), \(shape.pattern)"
+        if shape.hasFiveCardMajor {
+            line += ". Your minor is longer than your five-card major, and Standard American opens the longest suit first, so open \(answer.displayName)."
+            return line + strengthNote(shape) + " Show the major on your next bid."
+        }
+        line += ", no five-card major"
+        if shape.isBalanced && (15...17).contains(shape.highCardPoints) == false {
+            line += " and outside the 15 to 17 notrump range"
+        }
+        line += "." + strengthNote(shape)
+        line += " Open your longer minor: \(answer.displayName)."
+        if shape.length(.clubs) == shape.length(.diamonds) {
+            line += shape.length(.clubs) == 3
+                ? " With three of each minor the convention is the short club."
+                : " With equal length in the minors, open the higher ranking one."
+        }
+        return line
     }
 }

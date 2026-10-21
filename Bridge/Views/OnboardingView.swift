@@ -71,7 +71,7 @@ struct OnboardingView: View {
                 infoPage(
                     icon: "figure.walk",
                     title: "Walk in confident",
-                    body: "Read an opening hand, plan a contract, and defend with purpose. Practice at your own pace, with no timers and no opponents.",
+                    body: "Read an opening hand, plan a contract, and defend with purpose. Practice at your own pace, with no opponents and no pressure.",
                     cards: [.h(.ace), .d(.ace), .c(.ace)]
                 ).tag(2).accessibilityHidden(page != 2)
                 skillLevelPage.tag(3).accessibilityHidden(page != 3)

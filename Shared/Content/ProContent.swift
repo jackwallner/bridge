@@ -43,18 +43,18 @@ enum ProContent {
         ),
         PlayScenario(
             id: "pro-play-hold-up",
-            situation: "In 3NT, opponents lead a suit where you hold A-x-x and dummy has two small. Which card often breaks their communication?",
-            cards: [.s(.ace), .s(.three), .s(.two)],
-            answerIndex: 2,
+            situation: "In 3NT, opponents lead a suit where you hold A-3-2 and dummy has two small cards. Which card do you play on the first round to break their communication?",
+            cards: [.s(.ace), .s(.two)],
+            answerIndex: 1,
             reasoning: "Duck a small card early. Winning the ace immediately may let defenders run the suit when they regain the lead.",
             tip: "Count the suit before holding up. Do not duck if the contract is in immediate danger elsewhere."
         ),
         PlayScenario(
             id: "pro-play-safety",
-            situation: "You need four club tricks from A-K-9-8 opposite Q-7-6-5. Which honor do you cash first to guard against a 4-1 split?",
-            cards: [.c(.ace), .c(.king), .c(.queen)],
+            situation: "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand?",
+            cards: [.c(.ace), .c(.king), .c(.nine)],
             answerIndex: 2,
-            reasoning: "Cash the queen from the shorter honor holding first. This preserves flexibility when one defender shows out.",
+            reasoning: "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
             tip: "A safety play trades the maximum result for a better chance to make the contract."
         ),
     ]
@@ -69,10 +69,10 @@ enum ProContent {
         ),
         QuizQuestion(
             id: "pro-game-major",
-            prompt: "Which major-suit contract earns the game bonus?",
+            prompt: "What is the lowest major-suit contract that earns the game bonus?",
             choices: ["2♥", "3♠", "4♥", "5♠"],
             answerIndex: 2,
-            explanation: "Four of a major is the standard game level. Higher contracts may also score game but take unnecessary risk."
+            explanation: "Four of a major is the lowest game level, worth 120 trick points. Higher contracts also score game but need more tricks."
         ),
         QuizQuestion(
             id: "pro-vulnerability",

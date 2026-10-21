@@ -110,7 +110,7 @@ enum EndlessPractice {
         while items.count < count {
             let cards = Array(deck.shuffled().prefix(13)).racked
             let hcp = cards.highCardPoints
-            // A hand with no honours at all is a trick question, not a drill.
+            // A hand with no honors at all is a trick question, not a drill.
             guard hcp >= 3 else { continue }
 
             let offsets = [-2, -1, 1, 2].shuffled().prefix(3)
@@ -142,7 +142,7 @@ enum EndlessPractice {
             guard held > 0 else { continue }
             parts.append("\(held) \(rank.spokenName.lowercased())\(held == 1 ? "" : "s") at \(value)")
         }
-        let breakdown = parts.isEmpty ? "no honours" : parts.joined(separator: ", ")
+        let breakdown = parts.isEmpty ? "no honors" : parts.joined(separator: ", ")
         return "\(breakdown). That totals \(total) high-card points. Aces 4, kings 3, queens 2, jacks 1."
     }
 }

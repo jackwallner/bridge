@@ -25,10 +25,10 @@ enum PlusContent {
         ),
         QuizQuestion(
             id: "plus-card-dummy",
-            prompt: "Who physically plays cards from dummy?",
+            prompt: "Who decides which card is played from dummy?",
             choices: ["Dummy alone", "Declarer calls the card", "Either defender", "The director"],
             answerIndex: 1,
-            explanation: "Dummy lays the hand face up and plays only the card declarer calls."
+            explanation: "Dummy lays the hand face up and takes no part in the play. Declarer names each card to be played from it."
         ),
     ]
 
@@ -38,14 +38,14 @@ enum PlusContent {
             cards: [.s(.ace), .s(.king), .s(.jack), .s(.eight), .s(.five), .s(.two), .h(.queen), .h(.six), .d(.king), .d(.seven), .d(.three), .c(.eight), .c(.four)],
             choices: [.pass, .oneHeart, .oneSpade, .oneNotrump],
             answer: .oneSpade,
-            explanation: "Six spades and 14 HCP make 1♠ the clear opening."
+            explanation: "Six spades and 13 HCP make 1♠ the clear opening."
         ),
         HandMatchQuestion(
             id: "plus-open-club",
             cards: [.s(.ace), .s(.nine), .s(.four), .h(.king), .h(.seven), .h(.three), .d(.queen), .d(.six), .c(.ace), .c(.jack), .c(.eight), .c(.five), .c(.two)],
             choices: [.oneClub, .oneDiamond, .oneHeart, .oneNotrump],
             answer: .oneClub,
-            explanation: "This hand has opening strength, five clubs, and no five-card major. It is not balanced enough for 1NT, so open 1♣."
+            explanation: "This hand has 14 HCP, five clubs, and no five-card major. That is too weak for 1NT, which needs 15 to 17, so open your longer minor, 1♣."
         ),
         HandMatchQuestion(
             id: "plus-open-heart",
@@ -67,9 +67,9 @@ enum PlusContent {
         ),
         PlayScenario(
             id: "plus-play-low-second",
-            situation: "Declarer leads 4♣ from hand. You play second with these clubs and dummy has A-J behind you. What is the usual play?",
-            cards: [.c(.king), .c(.eight), .c(.two)],
-            answerIndex: 2,
+            situation: "Declarer leads 4♣ from hand. You hold K-8-2 and play second, with dummy's A-J behind you. What is the usual play?",
+            cards: [.c(.king), .c(.two)],
+            answerIndex: 1,
             reasoning: "Play low. If you rise with the king, dummy's ace wins and the jack may become good.",
             tip: "Second hand low protects honors that sit in front of dummy."
         ),

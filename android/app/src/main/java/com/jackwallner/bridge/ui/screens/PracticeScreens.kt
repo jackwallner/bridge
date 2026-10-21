@@ -69,7 +69,7 @@ fun EndlessPickerScreen() {
                 ) {
                     Icon(symbol("infinity"), null, tint = colors.jade, modifier = Modifier.size(20.dp))
                     Text(
-                        "Every hand here is dealt fresh the moment you see it, so you can practise for as long as you like without repeating a question.",
+                        "Every hand here is dealt fresh the moment you see it, so you can practice for as long as you like without repeating a question.",
                         style = BridgeType.subheadline,
                         color = colors.inkSecondary,
                     )

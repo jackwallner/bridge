@@ -95,7 +95,7 @@ enum WhatsNew {
                     id: "stats",
                     icon: "chart.bar.fill",
                     title: "Your progress, in detail",
-                    body: "Accuracy for every room, your weakest area, and how much you have practised overall."
+                    body: "Accuracy for every room, your weakest area, and how much you have practiced overall."
                 ),
                 WhatsNewItem(
                     id: "content",

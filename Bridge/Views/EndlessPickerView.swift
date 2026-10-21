@@ -33,7 +33,7 @@ struct EndlessPickerView: View {
         HStack(alignment: .top, spacing: 10) {
             Image(systemName: "infinity")
                 .foregroundStyle(Theme.jade)
-            Text("Every hand here is dealt fresh the moment you see it, so you can practise for as long as you like without repeating a question.")
+            Text("Every hand here is dealt fresh the moment you see it, so you can practice for as long as you like without repeating a question.")
                 .font(.subheadline)
                 .foregroundStyle(Theme.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)

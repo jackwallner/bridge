@@ -224,7 +224,7 @@ private fun OnboardingPages(skillLevel: String, onSkill: (String) -> Unit, onDon
                     2 -> InfoPage(
                         "figure.walk",
                         "Walk in confident",
-                        "Read an opening hand, plan a contract, and defend with purpose. Practice at your own pace, with no timers and no opponents.",
+                        "Read an opening hand, plan a contract, and defend with purpose. Practice at your own pace, with no opponents and no pressure.",
                         listOf(BridgeCard.h(Rank.ACE), BridgeCard.d(Rank.ACE), BridgeCard.c(Rank.ACE)),
                     )
                     3 -> SkillPage(skillLevel, onSkill)
