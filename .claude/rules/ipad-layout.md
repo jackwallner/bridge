@@ -16,6 +16,10 @@ Moved verbatim from AGENTS.md. Loads when a matching file is read; update it her
 iPad support is free: `TARGETED_DEVICE_FAMILY "1,2"`, portrait and landscape,
 adaptive Home columns, drill grids, and readable content widths.
 
+Since the iPhone Duo pass (`iphone-duo.md`), any regular width of at least
+720 pt, iPad included, shows Home beside Your Progress as two phone-layout
+panes. Home's two-column layout now only appears at narrower regular widths.
+
 Every drill body is a scroll view, so a question that underfills the viewport
 was pinned to the top and left the bottom half of a 13-inch iPad empty.
 `CenteringScrollView` centres short content and leaves taller content scrolling
