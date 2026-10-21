@@ -47,8 +47,8 @@ final class ProgressStore: ObservableObject {
     }
 
     /// True once the player has finished a practice of their own after
-    /// onboarding. Home's extras (the tracking prompt, later the challenge
-    /// card) wait for it, so the first Home after the tour is the plain lobby.
+    /// onboarding. Home's extras (later the challenge card) wait for it, so the
+    /// first Home after the tour is the plain lobby.
     var hasPracticedSinceOnboarding: Bool { totalSessions > sessionsAtOnboarding }
 
     func completions(for drillID: String) -> Int {

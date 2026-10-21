@@ -75,12 +75,31 @@ enum MetaAds {
         isEnabled && ATTrackingManager.trackingAuthorizationStatus == .notDetermined
     }
 
-    /// Apple's prompt, once. Asked on Home after the first finished practice,
-    /// never at launch or in onboarding: a player who has not used the app
-    /// yet has no reason to say yes.
-    /// Nothing in the app depends on the answer.
+    private static let purchaseAskKey = "meta.askAfterPurchase"
+
+    /// A trial started or something was bought. The trial relay sends
+    /// StartTrial 15 minutes later, but only for a customer whose
+    /// `$attConsentStatus` is authorized; one still undetermined after 24
+    /// hours is dropped. Jack (2026-10-19): ask for tracking only after a
+    /// trial or a purchase, never otherwise, so only paying players see the
+    /// prompt and the relay can count a consented trial inside 15 minutes.
+    /// Stored, so a relaunch before Home still asks.
+    static func notePurchase() {
+        guard shouldAskForTracking else { return }
+        UserDefaults.standard.set(true, forKey: purchaseAskKey)
+    }
+
+    /// True between a trial or purchase and the tracking prompt that follows.
+    static var askAfterPurchase: Bool {
+        UserDefaults.standard.bool(forKey: purchaseAskKey)
+    }
+
+    /// Apple's prompt, once, on a bare Home after a trial or purchase; never
+    /// at launch, in onboarding or over a sheet. Nothing in the app depends
+    /// on the answer.
     static func requestTracking() async {
         guard shouldAskForTracking else { return }
+        UserDefaults.standard.removeObject(forKey: purchaseAskKey)
         let status = await askApple()
         if sdkStarted {
             Settings.shared.isAdvertiserIDCollectionEnabled = status == .authorized

@@ -20,12 +20,17 @@ Ported from Mahj 1.4.1. Mahj's `.claude/rules/meta-ads.md` and
   the privacy page in the SAME submission that sets the ids, never before.
 - `MetaAds.start` runs in `AppDelegate`, `linkRevenueCat()` right after
   `Purchases.configure`, `activateApp()` on every foreground.
-- ATT is asked only by `HomeView.askForTrackingIfNeeded`: onboarded, a finished
-  practice of the player's own after the tour (`hasPracticedSinceOnboarding`),
-  bare Home, 1.2s settle, not in a launch that showed What's New
-  (`WhatsNew.shownThisLaunch`), after the offering loaded
-  (`remoteConfigKnown`), and `att_prompt` not `off`. Never move it to launch or
-  onboarding. `askApple()` stays `nonisolated` (Swift 6 trap).
+- ATT is asked only after a trial start or a purchase (Jack 2026-10-19), so
+  only paying players are prompted and the relay can count a consented trial
+  within its 15 minutes. `SubscriptionService.purchase` calls
+  `MetaAds.notePurchase()` on every completed purchase (onboarding page,
+  paywall; restore is not a purchase), which stores `meta.askAfterPurchase`;
+  `HomeView.askForTrackingIfNeeded` asks on the next bare Home and
+  `requestTracking` clears the flag. A player who never starts a trial or buys
+  never sees the prompt. Guards kept: onboarded, bare Home, 1.2s settle, not in
+  a launch that showed What's New (`WhatsNew.shownThisLaunch`), after the
+  offering loaded (`remoteConfigKnown`), and `att_prompt` not `off`. Never move
+  it to launch or onboarding. `askApple()` stays `nonisolated` (Swift 6 trap).
 - StartTrial belongs to a server relay, never to RevenueCat's Meta integration.
   The relay lives in the Mahj repo (`supabase/functions/meta-trial-relay`) and is
   NOT ported. When Bridge gets a Meta app id the relay needs a per-app

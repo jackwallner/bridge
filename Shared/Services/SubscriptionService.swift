@@ -298,6 +298,9 @@ final class SubscriptionService: NSObject, ObservableObject {
             offeringID: package.presentedOfferingContext.offeringIdentifier
         )
         syncConversionAttributes()
+        // The tracking prompt follows a trial or a purchase, and nothing
+        // else: Meta only counts a trial whose owner allowed tracking.
+        MetaAds.notePurchase()
         return .purchased
     }
 

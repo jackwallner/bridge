@@ -17,7 +17,7 @@ RevenueCat is deliberately disabled in simulator builds. The public SDK key live
 Condensed from the deep notes below; the reasoning behind each one lives there.
 - A generated hand only reaches a player when exactly one of the six `HandCategory` answers is right. Keep `HandGeneratorTests.testAuthoredHandsMatchTheClassifier`: authored opening drills must agree with the engine that grades Endless Practice.
 - The trial flow (onboarding trial page, paywall, purchase to tour) is structurally Mahj 1.3.2; only the button wording varies, through RevenueCat offering metadata (`TrialCTA`). Prices are always read live from StoreKit. Any other change needs Jack's go-ahead.
-- The Meta SDK is inert while `META_APP_ID` and `META_CLIENT_TOKEN` are empty in `project.yml`, and never starts on a simulator. Never ask for ATT outside `HomeView.askForTrackingIfNeeded`.
+- The Meta SDK is inert while `META_APP_ID` and `META_CLIENT_TOKEN` are empty in `project.yml`, and never starts on a simulator. Never ask for ATT outside `HomeView.askForTrackingIfNeeded`, which waits for a trial or purchase (`MetaAds.askAfterPurchase`).
 - The daily declarer question is built from the authored `PlayScenario`s, never through `SessionBuilder.choiceItems`.
 
 ## Architecture
