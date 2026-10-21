@@ -94,6 +94,78 @@ final class ContentValidityTests: XCTestCase {
         }
     }
 
+    // MARK: - Independent recounts
+
+    private static let numberWords: [String: Int] = [
+        "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7,
+        "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13,
+        "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17, "eighteen": 18,
+        "nineteen": 19, "twenty": 20, "twenty-one": 21
+    ]
+
+    private static func number(_ token: String) -> Int? {
+        Int(token) ?? numberWords[token.lowercased()]
+    }
+
+    private func matches(_ pattern: String, in text: String) -> [[String]] {
+        guard let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive]) else { return [] }
+        let range = NSRange(text.startIndex..., in: text)
+        return regex.matches(in: text, range: range).map { match in
+            (1..<match.numberOfRanges).compactMap { index in
+                Range(match.range(at: index), in: text).map { String(text[$0]) }
+            }
+        }
+    }
+
+    /// The deck holds 40 high-card points. Every guide and quiz that quotes an
+    /// average hand of 10 depends on it.
+    func testDeckHoldsFortyPoints() {
+        let deck = Suit.allCases.flatMap { suit in Rank.allCases.map { BridgeCard($0, suit) } }
+        XCTAssertEqual(deck.count, 52)
+        XCTAssertEqual(deck.highCardPoints, 40)
+    }
+
+    /// Recounts the cards of every authored opening hand and compares the
+    /// point total and suit lengths its explanation quotes. A hand that says
+    /// "14 HCP" over 12 points is exactly how a wrong answer key ships.
+    func testAuthoredOpeningExplanationsQuoteTheRealHand() {
+        let pointsPattern = "\\b(\\d+|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\s+(?:HCP|high-card points?|points)\\b"
+        let lengthPattern = "\\b(three|four|five|six|seven)(?:-card)?\\s+(spades?|hearts?|diamonds?|clubs?)\\b"
+        var checked = 0
+        for question in allHandMatch {
+            let actualPoints = question.cards.highCardPoints
+            for match in matches(pointsPattern, in: question.explanation) {
+                XCTAssertEqual(Self.number(match[0]), actualPoints, "\(question.id) quotes the wrong points: \(question.explanation)")
+                checked += 1
+            }
+            for match in matches(lengthPattern, in: question.explanation) {
+                let suit = Suit.allCases.first { match[1].lowercased().hasPrefix($0.rawValue.dropLast()) }
+                let actual = question.cards.filter { $0.suit == suit }.count
+                XCTAssertEqual(Self.number(match[0]), actual, "\(question.id) quotes the wrong suit length: \(question.explanation)")
+                checked += 1
+            }
+        }
+        XCTAssertGreaterThan(checked, 15, "The recount should reach most authored hands")
+    }
+
+    /// The generated Count the Points drill must agree with an independent
+    /// sum, in both the marked answer and the written breakdown.
+    func testGeneratedPointCountsAreRight() {
+        for item in EndlessPractice.items(for: .pointCount, count: 60) {
+            let recount = item.cards.reduce(0) { total, card in
+                switch card.rank {
+                case .ace: return total + 4
+                case .king: return total + 3
+                case .queen: return total + 2
+                case .jack: return total + 1
+                default: return total
+                }
+            }
+            XCTAssertEqual(Int(item.choices[item.answerIndex]), recount)
+            XCTAssertTrue(item.explanation.contains("totals \(recount) high-card points"), item.explanation)
+        }
+    }
+
     func testNoEmDashesInPlayerFacingContent() {
         var copy: [String] = []
         for room in DrillLibrary.rooms {
