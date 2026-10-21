@@ -28,6 +28,12 @@ only when there is an expiration date (not for lifetime). Only the button wordin
 varies, via `TrialCTA` offering metadata; any other change to this flow needs
 Jack's go-ahead.
 
+The five benefit rows follow Mahj 1.3.2 (Jack, 2026-10-21): free beginner
+rooms first, then the paid Minute and a personalized Game Night Prep, then
+Endless Practice, Fix My Mistakes and the extra sets. Mahj 1.4.1 rewrote
+rows 2 and 4 because its Minute went free; here the Minute is still paid,
+so the 1.3.2 wording holds. Drop the Minute from row 2 if it ever goes free.
+
 **Intro-offer eligibility (2026-10-20, Mahj fc6b7ed).** Apple gives one free
 week per subscription group, so a lapsed member is charged on day one.
 `SubscriptionService.isTrialEligible(for:)` asks StoreKit (no product reads as
