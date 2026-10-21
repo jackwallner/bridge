@@ -318,12 +318,31 @@ struct OnboardingView: View {
                 }
             }
         } else {
-            VStack(spacing: 22) {
-                Spacer()
+            // Five rows leave an iPhone SE no room for the icon, which ran
+            // under the status bar. There the icon goes, as on the info
+            // pages; every larger phone keeps the full page.
+            let full = VStack(spacing: 22) {
                 trialHeader
                 trialBenefits
-                Spacer()
-                Spacer()
+            }
+            ViewThatFits(in: .vertical) {
+                // All three gaps and spacers: with less, the page "fit" by
+                // squeezing the rows to one truncated line instead.
+                ContentFit(margin: 3 * (22 + 8)) {
+                    full.hidden().accessibilityHidden(true)
+                    VStack(spacing: 22) {
+                        Spacer()
+                        full
+                        Spacer()
+                        Spacer()
+                    }
+                }
+                VStack(spacing: 22) {
+                    Spacer(minLength: 0)
+                    trialTitle
+                    trialBenefits
+                    Spacer(minLength: 0)
+                }
             }
             .padding(.horizontal, 28)
         }
@@ -331,11 +350,19 @@ struct OnboardingView: View {
 
     @ViewBuilder
     private var trialHeader: some View {
+        trialIcon
+        trialTitle
+    }
+
+    private var trialIcon: some View {
         Image(systemName: "sparkles")
             .font(.system(size: 40, weight: .semibold))
             .foregroundStyle(Theme.gold)
             .frame(width: 92, height: 92)
             .background(Theme.gold.opacity(0.14), in: Circle())
+    }
+
+    private var trialTitle: some View {
         Text(trialPageTitle)
             .font(Theme.display(30))
             .foregroundStyle(Theme.ink)
