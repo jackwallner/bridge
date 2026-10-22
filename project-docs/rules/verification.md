@@ -5,7 +5,7 @@
 - XcodeGen: `xcodegen generate` passed.
 - Git: `git diff --check` passed. Work is isolated in `fix/rules-audit-20261022`; original working-tree edits are preserved.
 - Table SHA-256: `41bc9f9017376e89b5348d7779e8cd32d217107877d47577936d2a3876f831cc`. XCTest and JUnit reference files are byte-identical.
-- TestFlight: 1.2.5 (28) uploaded and reached VALID. Apple then approved 1.2.5 and closed that train, rejecting the final-copy build 29. App Store Connect reports 1.2.6 in PREPARE_FOR_SUBMISSION and reserves build 29, so the retry is 1.2.6 (30), the next safe build number. Final upload receipt follows.
+- TestFlight: **1.2.6 (30), VALID**, confirmed through App Store Connect (`5d802905-cf3e-4cf8-9075-53f68bb05c0d`). `./scripts/testflight.sh --no-bump` exited 0 after signed archive and upload; application code is from `00c9275`.
 
 The Swift runner selects engine, generator and content tests. It excludes UI/persistence/mastery cases from mixed files; it is not an iOS simulator UI run. The queued simulator attempt was canceled because the account had more than 30 queued jobs. The release archive separately verifies iOS application compilation.
 
@@ -14,3 +14,5 @@ The final SAYC teaching-copy table reproduced 14 failed assertions before correc
 Scoring rows also verify the actual displayed quiz answers for passed-out boards, making a doubled partscore into game, and the fourth doubled nonvulnerable undertrick.
 
 Both platform suites pass after excluding weak five-card-suit hands from Pass questions, regenerating the seeded parity fixtures, and preparing 1.2.6 (30). The opening table independently covers AKQJT with 10 HCP as a hand that must not be graded Pass.
+
+Build 1.2.5 (28) also reached VALID. Apple rejected build 29 because the 1.2.5 train was closed. App Store Connect reported 1.2.6 in PREPARE_FOR_SUBMISSION and build 29 already reserved; its next-build-number result selected 30 for the successful retry.

@@ -6,7 +6,7 @@ Final integration base: `a2e0fde` (current origin/main). Some corrections listed
 
 ## Authorities and rules
 
-[ACBL SAYC System Booklet, January 2006](https://web2.acbl.org/documentlibrary/play/SP3%20%28bk%29%20single%20pages.pdf) defines the bidding agreements. [WBF Laws of Duplicate Bridge](https://www.worldbridge.org/wp-content/uploads/2016/12/2017LawsofDuplicateBridge-paginated.pdf), Laws 18, 19, 22, 44, 77 and 78 define auctions, legal play and scoring.
+[ACBL SAYC System Booklet, January 2006](https://web2.acbl.org/documentlibrary/play/SP3%20%28bk%29%20single%20pages.pdf) defines the bidding agreements. [WBF Laws of Duplicate Bridge](https://www.worldbridge.org/wp-content/uploads/2016/12/2017LawsofDuplicateBridge-paginated.pdf), Laws 18, 19, 22, 44, 77 and 78 define auctions, legal play and scoring. [ACBL Commonly Used Conventions, Lesson 5](https://cdn.acbl.org/assets/documents/teachers/Teacher-Manuals/Commonly-Used-Conventions-Lesson-5.pdf), exercise one, explicitly opens the longer minor with a five-card major.
 
 | Area | Authoritative rule | Test on both platforms |
 | --- | --- | --- |
