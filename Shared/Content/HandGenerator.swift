@@ -98,9 +98,9 @@ enum HandGenerator {
         guard hcp < 20 else { return nil }
 
         if hcp < 12 {
-            // 11-counts and shapely 10-counts are openable at many tables. Only
-            // the hands nobody opens are safe to grade as Pass.
-            guard hcp <= 10, shape.ruleOfTwenty < 20, shape.sortedLengths[0] <= 5 else { return nil }
+            // Omit long-suit weak hands: SAYC permits a rare weak two with a
+            // very good five-card suit. Pass questions have no five-card suit.
+            guard hcp <= 10, shape.ruleOfTwenty < 20, shape.sortedLengths[0] <= 4 else { return nil }
             return .pass
         }
 

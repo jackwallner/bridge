@@ -80,8 +80,9 @@ object HandGenerator {
         // Strong hands open 2♣ or 2NT. Neither is an answer here.
         if (hcp >= 20) return null
         if (hcp < 12) {
-            // Only the hands nobody opens are safe to grade as Pass.
-            if (hcp > 10 || shape.ruleOfTwenty >= 20 || shape.sortedLengths[0] > 5) return null
+            // SAYC permits a rare weak two with a very good five-card suit.
+            // Conservative Pass questions omit long-suit weak hands.
+            if (hcp > 10 || shape.ruleOfTwenty >= 20 || shape.sortedLengths[0] > 4) return null
             return HandCategory.PASS
         }
         // Conservative training selection, rather than a universal SAYC minimum.

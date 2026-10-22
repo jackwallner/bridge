@@ -34,6 +34,7 @@ Matchpoints compare the board result with other pairs in the same direction. The
 | A third-hand defender supposedly sees declarer's fourth-hand play before choosing. | Position explicitly places the learner fourth. | Lowest winning-card calculation |
 | Q-first from AK98 opposite Q765 claimed to guard against 4-1 for four tricks; both hands have four clubs. | Replaced with a fully specified cheapest-winner question. | Lowest winning-card calculation |
 | Unsupported ace lead described as necessarily giving away a trick. Two rounds of clubs treated as proof of exactly two clubs. | Conditional lead advice; count exercise explicitly knows exactly two clubs. | Reviewed exact teaching copy |
+| A weak hand with AKQJT in a five-card major was graded Pass, although SAYC permits a rare weak two with a very good five-card suit. | Conservative Pass generation omits weak hands with five-card or longer suits. | Independent opening table includes the AKQJT boundary on both platforms |
 | Primer could assign declarer to an opponent who named the strain first. | Declarer is first bidder of the strain on the winning side. | Auction table includes opposing strain bids |
 
 `RulesAuditTests.swift` and `RulesAuditTest.kt` consume identical, independently authored `rules-reference.json` tables. They also inspect real catalog questions. Swift-to-Kotlin parity fixtures are additional checks, not the source of expected rules.

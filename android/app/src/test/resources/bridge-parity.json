@@ -496,9 +496,7 @@
         "CJ",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -516,9 +514,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -632,9 +628,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -744,9 +738,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -880,9 +872,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "5 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -958,9 +948,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "5 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -978,9 +966,7 @@
         "D4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -1018,9 +1004,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -1038,9 +1022,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -1194,9 +1176,7 @@
         "D3",
         "C4"
       ],
-      "explanation" : "1 high-card point, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -1332,9 +1312,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -1372,9 +1350,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -1448,9 +1424,7 @@
         "C9",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -1488,9 +1462,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -1742,9 +1714,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -1862,9 +1832,7 @@
         "CJ",
         "C2"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -1882,9 +1850,7 @@
         "D3",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -2000,9 +1966,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -2040,9 +2004,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -2100,9 +2062,7 @@
         "D2",
         "CA"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -2120,9 +2080,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-4-4-0. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -2198,9 +2156,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "3 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 3,
-      "opening" : "pass"
+      "hcp" : 3
     },
     {
       "cards" : [
@@ -2218,9 +2174,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -2274,9 +2228,7 @@
         "D8",
         "C4"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -2354,9 +2306,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -2468,9 +2418,7 @@
         "CK",
         "C10"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -2528,9 +2476,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "0 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 0,
-      "opening" : "pass"
+      "hcp" : 0
     },
     {
       "cards" : [
@@ -2604,9 +2550,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-4-4-0. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -2838,9 +2782,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -3056,9 +2998,7 @@
         "CQ",
         "C10"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -3156,9 +3096,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -3236,9 +3174,7 @@
         "CJ",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -3256,9 +3192,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -3430,9 +3364,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -3566,9 +3498,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -3720,9 +3650,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "3 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 3,
-      "opening" : "pass"
+      "hcp" : 3
     },
     {
       "cards" : [
@@ -3954,9 +3882,7 @@
         "D3",
         "C8"
       ],
-      "explanation" : "6 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -3974,9 +3900,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "4 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -4148,9 +4072,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -4286,9 +4208,7 @@
         "D2",
         "C9"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4306,9 +4226,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4442,9 +4360,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4482,9 +4398,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4578,9 +4492,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -4638,9 +4550,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -4730,9 +4640,7 @@
         "D8",
         "C8"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4750,9 +4658,7 @@
         "CQ",
         "C8"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4770,9 +4676,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -4928,9 +4832,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "2 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -4948,9 +4850,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "8 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -5046,9 +4946,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -5146,9 +5044,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -5302,9 +5198,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -5572,9 +5466,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -5802,9 +5694,7 @@
         "D2",
         "C6"
       ],
-      "explanation" : "3 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 3,
-      "opening" : "pass"
+      "hcp" : 3
     },
     {
       "cards" : [
@@ -5878,9 +5768,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -5996,9 +5884,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -6054,9 +5940,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -6074,9 +5958,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -6130,9 +6012,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -6228,9 +6108,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -6268,9 +6146,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -6364,9 +6240,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -6442,9 +6316,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -6462,9 +6334,7 @@
         "CJ",
         "C9"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -6656,9 +6526,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -6676,9 +6544,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -6870,9 +6736,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -6988,9 +6852,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -7028,9 +6890,7 @@
         "C9",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -7068,9 +6928,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -7108,9 +6966,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -7166,9 +7022,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -7206,9 +7060,7 @@
         "D9",
         "D8"
       ],
-      "explanation" : "10 high-card points, 5-4-4-0. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -7342,9 +7194,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -7574,9 +7424,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -7712,9 +7560,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "6 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -7752,9 +7598,7 @@
         "C10",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -7812,9 +7656,7 @@
         "D6",
         "C10"
       ],
-      "explanation" : "8 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -7852,9 +7694,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -7932,9 +7772,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -8050,9 +7888,7 @@
         "D2",
         "C9"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -8070,9 +7906,7 @@
         "D6",
         "C9"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -8090,9 +7924,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -8110,9 +7942,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -8396,9 +8226,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -8416,9 +8244,7 @@
         "D3",
         "C8"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -8474,9 +8300,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -8550,9 +8374,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -8588,9 +8410,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -8644,9 +8464,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -8684,9 +8502,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -8782,9 +8598,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -8994,9 +8808,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -9034,9 +8846,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -9054,9 +8864,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -9112,9 +8920,7 @@
         "D2",
         "C5"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -9210,9 +9016,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -9248,9 +9052,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -9384,9 +9186,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -9480,9 +9280,7 @@
         "D2",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -9598,9 +9396,7 @@
         "C10",
         "C9"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -9618,9 +9414,7 @@
         "CJ",
         "C9"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -9658,9 +9452,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -9738,9 +9530,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -9816,9 +9606,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -9876,9 +9664,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -10148,9 +9934,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -10186,9 +9970,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -10244,9 +10026,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -10320,9 +10100,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -10340,9 +10118,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -10440,9 +10216,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -10460,9 +10234,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -10520,9 +10292,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -10560,9 +10330,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -10638,9 +10406,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -10658,9 +10424,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -10696,9 +10460,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-5-2-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -10872,9 +10634,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -10932,9 +10692,7 @@
         "CJ",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -11126,9 +10884,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "5 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -11204,9 +10960,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -11244,9 +10998,7 @@
         "CJ",
         "C8"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -11324,9 +11076,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -11344,9 +11094,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -11364,9 +11112,7 @@
         "CJ",
         "C5"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -11384,9 +11130,7 @@
         "CQ",
         "C6"
       ],
-      "explanation" : "2 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -11464,9 +11208,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -11502,9 +11244,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -11620,9 +11360,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -11658,9 +11396,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -11678,9 +11414,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -11778,9 +11512,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -11896,9 +11628,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -11916,9 +11646,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -11936,9 +11664,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -11974,9 +11700,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "1 high-card point, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -12353,21 +12077,21 @@
       {
         "answer" : "pass",
         "cards" : [
-          "S10",
-          "S7",
+          "SQ",
           "S6",
-          "S3",
+          "S4",
           "S2",
+          "HJ",
           "H10",
           "H8",
-          "H3",
           "DQ",
-          "D5",
-          "CQ",
-          "C10",
-          "C7"
+          "D9",
+          "D2",
+          "CA",
+          "C8",
+          "C2"
         ],
-        "explanation" : "4 high-card points, 5-3-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
+        "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
       },
       {
         "answer" : "oneClub",
@@ -12394,20 +12118,20 @@
         "answer" : "pass",
         "cards" : [
           "SQ",
+          "S10",
           "S9",
-          "S8",
-          "S3",
-          "H8",
-          "H6",
+          "H10",
           "H3",
-          "DA",
+          "H2",
           "DQ",
-          "DJ",
-          "D8",
-          "D4",
-          "C7"
+          "D10",
+          "D9",
+          "D2",
+          "CK",
+          "C6",
+          "C4"
         ],
-        "explanation" : "9 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
+        "explanation" : "7 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
       },
       {
         "answer" : "oneNotrump",
@@ -12526,42 +12250,118 @@
     ],
     "h2" : [
       {
-        "answer" : "oneHeart",
+        "answer" : "pass",
         "cards" : [
-          "SK",
-          "HA",
-          "HK",
+          "SQ",
+          "S5",
+          "S3",
+          "S2",
           "HQ",
-          "H8",
+          "H7",
           "H5",
-          "DJ",
+          "H2",
           "D7",
           "D4",
-          "D3",
+          "D2",
           "C8",
-          "C5",
+          "C5"
+        ],
+        "explanation" : "4 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
+      },
+      {
+        "answer" : "oneSpade",
+        "cards" : [
+          "SK",
+          "SJ",
+          "S8",
+          "S4",
+          "S3",
+          "HA",
+          "DA",
+          "D9",
+          "D7",
+          "D3",
+          "CK",
+          "C8",
           "C3"
         ],
-        "explanation" : "13 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥."
+        "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "oneClub",
         "cards" : [
-          "SK",
+          "S8",
+          "S5",
+          "H9",
+          "H8",
+          "H7",
+          "DA",
+          "DK",
+          "DQ",
+          "CK",
+          "CJ",
+          "C5",
+          "C3",
+          "C2"
+        ],
+        "explanation" : "13 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣."
+      },
+      {
+        "answer" : "oneHeart",
+        "cards" : [
+          "SJ",
           "S9",
-          "HQ",
+          "HA",
+          "HJ",
+          "H7",
+          "H5",
+          "H4",
+          "H3",
+          "DK",
+          "DQ",
+          "D4",
+          "CA",
+          "C8"
+        ],
+        "explanation" : "15 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥."
+      },
+      {
+        "answer" : "oneNotrump",
+        "cards" : [
+          "SK",
+          "SQ",
+          "S9",
+          "HA",
+          "HK",
+          "H9",
+          "DQ",
+          "D8",
+          "D6",
+          "CJ",
+          "C8",
+          "C7",
+          "C6"
+        ],
+        "explanation" : "15 high-card points and a balanced 4-3-3-3 with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
+      },
+      {
+        "answer" : "oneDiamond",
+        "cards" : [
+          "S5",
+          "HK",
+          "HJ",
           "H5",
           "DA",
           "DK",
-          "D8",
-          "D3",
-          "CK",
-          "CJ",
-          "C10",
+          "D10",
+          "D6",
+          "D4",
+          "CQ",
           "C9",
-          "C7"
+          "C8",
+          "C2"
         ],
-        "explanation" : "16 high-card points, 5-4-2-2, no five-card major. Open your longer minor: 1♣."
+        "explanation" : "13 high-card points, 5-4-3-1, no five-card major. Open your longer minor: 1♦."
       },
       {
         "answer" : "oneNotrump",
@@ -12579,82 +12379,6 @@
           "CA",
           "C9",
           "C2"
-        ],
-        "explanation" : "16 high-card points and a balanced 4-3-3-3 with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
-      },
-      {
-        "answer" : "pass",
-        "cards" : [
-          "SK",
-          "S8",
-          "S7",
-          "S6",
-          "S5",
-          "H10",
-          "DA",
-          "D10",
-          "D9",
-          "D3",
-          "C9",
-          "C5",
-          "C3"
-        ],
-        "explanation" : "7 high-card points, 5-4-3-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
-      },
-      {
-        "answer" : "oneSpade",
-        "cards" : [
-          "SA",
-          "SK",
-          "SQ",
-          "S10",
-          "S5",
-          "S4",
-          "HA",
-          "H7",
-          "H3",
-          "DJ",
-          "D5",
-          "CJ",
-          "C8"
-        ],
-        "explanation" : "15 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠."
-      },
-      {
-        "answer" : "oneDiamond",
-        "cards" : [
-          "SA",
-          "S6",
-          "S5",
-          "H9",
-          "H7",
-          "H2",
-          "DK",
-          "DJ",
-          "D10",
-          "D6",
-          "D3",
-          "D2",
-          "CA"
-        ],
-        "explanation" : "12 high-card points, 6-3-3-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♦."
-      },
-      {
-        "answer" : "oneNotrump",
-        "cards" : [
-          "SQ",
-          "S3",
-          "S2",
-          "HA",
-          "HQ",
-          "H6",
-          "DK",
-          "DQ",
-          "D3",
-          "CK",
-          "C6",
-          "C5",
-          "C4"
         ],
         "explanation" : "16 high-card points and a balanced 4-3-3-3 with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
       }

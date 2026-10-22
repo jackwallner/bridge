@@ -570,6 +570,25 @@
         "C4"
       ],
       "answer": "oneClub"
+    },
+    {
+      "id": "veryGoodFiveCardWeakTwoNotGraded",
+      "cards": [
+        "SA",
+        "SK",
+        "SQ",
+        "SJ",
+        "S10",
+        "H9",
+        "H8",
+        "H7",
+        "D9",
+        "D8",
+        "D7",
+        "C9",
+        "C8"
+      ],
+      "answer": null
     }
   ],
   "teaching": [
