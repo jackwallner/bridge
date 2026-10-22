@@ -18,8 +18,15 @@ import org.junit.Test
 class RulesAuditTest {
     private fun reference() = JSONObject(javaClass.getResourceAsStream("/rules-reference.json")!!.bufferedReader().readText())
     @Test fun duplicateScoringTable() {
-        for (r in reference().getJSONArray("scores").objects()) assertEquals(r.toString(), r.getInt("score"),
-            BridgeRules.score(r.getInt("level"), r.getInt("strain"), r.getInt("multiplier"), r.getInt("tricks"), r.getBoolean("vulnerable")))
+        val quizzes = DrillLibrary.rooms.flatMap { it.drills }.flatMap { (it.kind as? DrillKind.Quiz)?.questions.orEmpty() }
+        for (r in reference().getJSONArray("scores").objects()) {
+            assertEquals(r.toString(), r.getInt("score"),
+                BridgeRules.score(r.getInt("level"), r.getInt("strain"), r.getInt("multiplier"), r.getInt("tricks"), r.getBoolean("vulnerable")))
+            if (r.has("lessonId")) {
+                val question = quizzes.first { it.id == r.getString("lessonId") }
+                assertEquals(question.id, r.getInt("score"), question.choices[question.answerIndex].toInt())
+            }
+        }
     }
     @Test fun legalAuctionsAndPassedOutHands() {
         for (r in reference().getJSONArray("auctions").objects()) {

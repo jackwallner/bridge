@@ -119,7 +119,8 @@
       "multiplier": 2,
       "tricks": 8,
       "vulnerable": false,
-      "score": 470
+      "score": 470,
+      "lessonId": "rules-doubled-game"
     },
     {
       "level": 1,
@@ -207,7 +208,8 @@
       "multiplier": 2,
       "tricks": 6,
       "vulnerable": false,
-      "score": -800
+      "score": -800,
+      "lessonId": "rules-down-four"
     },
     {
       "level": 4,
@@ -239,7 +241,8 @@
       "multiplier": 1,
       "tricks": 0,
       "vulnerable": false,
-      "score": 0
+      "score": 0,
+      "lessonId": "rules-passed-out"
     },
     {
       "level": 0,

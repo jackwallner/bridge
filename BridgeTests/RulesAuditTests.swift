@@ -16,6 +16,10 @@ final class RulesAuditTests: XCTestCase {
             XCTAssertEqual(BridgeRules.score(level: row["level"] as! Int, strain: row["strain"] as! Int,
                                             multiplier: row["multiplier"] as! Int, tricks: row["tricks"] as! Int,
                                             vulnerable: row["vulnerable"] as! Bool), row["score"] as! Int, "\(row)")
+            if let id = row["lessonId"] as? String {
+                let question = try XCTUnwrap(ProContent.duplicateQuiz.first { $0.id == id })
+                XCTAssertEqual(Int(question.choices[question.answerIndex]), row["score"] as? Int, id)
+            }
         }
     }
     func testLegalAuctionsAndPassedOutHands() throws {
