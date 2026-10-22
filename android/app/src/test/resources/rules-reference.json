@@ -1,0 +1,644 @@
+{
+  "source": "ACBL SAYC 2006; WBF Laws 18,19,22,44,77",
+  "scores": [
+    {
+      "level": 1,
+      "strain": 0,
+      "multiplier": 1,
+      "tricks": 7,
+      "vulnerable": false,
+      "score": 70
+    },
+    {
+      "level": 1,
+      "strain": 1,
+      "multiplier": 1,
+      "tricks": 8,
+      "vulnerable": false,
+      "score": 90
+    },
+    {
+      "level": 1,
+      "strain": 2,
+      "multiplier": 1,
+      "tricks": 7,
+      "vulnerable": false,
+      "score": 80
+    },
+    {
+      "level": 1,
+      "strain": 4,
+      "multiplier": 1,
+      "tricks": 7,
+      "vulnerable": false,
+      "score": 90
+    },
+    {
+      "level": 1,
+      "strain": 4,
+      "multiplier": 1,
+      "tricks": 8,
+      "vulnerable": false,
+      "score": 120
+    },
+    {
+      "level": 3,
+      "strain": 4,
+      "multiplier": 1,
+      "tricks": 9,
+      "vulnerable": false,
+      "score": 400
+    },
+    {
+      "level": 3,
+      "strain": 4,
+      "multiplier": 1,
+      "tricks": 9,
+      "vulnerable": true,
+      "score": 600
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 1,
+      "tricks": 10,
+      "vulnerable": false,
+      "score": 420
+    },
+    {
+      "level": 4,
+      "strain": 2,
+      "multiplier": 1,
+      "tricks": 11,
+      "vulnerable": true,
+      "score": 650
+    },
+    {
+      "level": 5,
+      "strain": 0,
+      "multiplier": 1,
+      "tricks": 11,
+      "vulnerable": false,
+      "score": 400
+    },
+    {
+      "level": 6,
+      "strain": 4,
+      "multiplier": 1,
+      "tricks": 12,
+      "vulnerable": false,
+      "score": 990
+    },
+    {
+      "level": 6,
+      "strain": 2,
+      "multiplier": 1,
+      "tricks": 12,
+      "vulnerable": true,
+      "score": 1430
+    },
+    {
+      "level": 7,
+      "strain": 4,
+      "multiplier": 1,
+      "tricks": 13,
+      "vulnerable": false,
+      "score": 1520
+    },
+    {
+      "level": 7,
+      "strain": 3,
+      "multiplier": 1,
+      "tricks": 13,
+      "vulnerable": true,
+      "score": 2210
+    },
+    {
+      "level": 2,
+      "strain": 2,
+      "multiplier": 2,
+      "tricks": 8,
+      "vulnerable": false,
+      "score": 470,
+      "lessonId": "rules-doubled-game"
+    },
+    {
+      "level": 1,
+      "strain": 0,
+      "multiplier": 2,
+      "tricks": 7,
+      "vulnerable": false,
+      "score": 140
+    },
+    {
+      "level": 1,
+      "strain": 4,
+      "multiplier": 2,
+      "tricks": 7,
+      "vulnerable": false,
+      "score": 180
+    },
+    {
+      "level": 1,
+      "strain": 4,
+      "multiplier": 4,
+      "tricks": 7,
+      "vulnerable": false,
+      "score": 560
+    },
+    {
+      "level": 2,
+      "strain": 2,
+      "multiplier": 2,
+      "tricks": 9,
+      "vulnerable": true,
+      "score": 870
+    },
+    {
+      "level": 2,
+      "strain": 2,
+      "multiplier": 4,
+      "tricks": 9,
+      "vulnerable": false,
+      "score": 840
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 1,
+      "tricks": 9,
+      "vulnerable": false,
+      "score": -50
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 1,
+      "tricks": 8,
+      "vulnerable": true,
+      "score": -200
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 2,
+      "tricks": 9,
+      "vulnerable": false,
+      "score": -100
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 2,
+      "tricks": 8,
+      "vulnerable": false,
+      "score": -300
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 2,
+      "tricks": 7,
+      "vulnerable": false,
+      "score": -500
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 2,
+      "tricks": 6,
+      "vulnerable": false,
+      "score": -800,
+      "lessonId": "rules-down-four"
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 2,
+      "tricks": 7,
+      "vulnerable": true,
+      "score": -800
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 4,
+      "tricks": 6,
+      "vulnerable": false,
+      "score": -1600
+    },
+    {
+      "level": 4,
+      "strain": 3,
+      "multiplier": 4,
+      "tricks": 9,
+      "vulnerable": true,
+      "score": -400
+    },
+    {
+      "level": 0,
+      "strain": 0,
+      "multiplier": 1,
+      "tricks": 0,
+      "vulnerable": false,
+      "score": 0,
+      "lessonId": "rules-passed-out"
+    },
+    {
+      "level": 0,
+      "strain": 0,
+      "multiplier": 1,
+      "tricks": 0,
+      "vulnerable": true,
+      "score": 0
+    }
+  ],
+  "auctions": [
+    {
+      "calls": [
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": false,
+      "declarer": null,
+      "level": 0,
+      "multiplier": 1
+    },
+    {
+      "calls": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": null,
+      "level": 0,
+      "multiplier": 1
+    },
+    {
+      "calls": [
+        "1H",
+        "P",
+        "2H",
+        "P",
+        "4H",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": 0,
+      "level": 4,
+      "multiplier": 1
+    },
+    {
+      "calls": [
+        "1C",
+        "1H",
+        "1S",
+        "P",
+        "2S",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": 2,
+      "level": 2,
+      "multiplier": 1
+    },
+    {
+      "calls": [
+        "1H",
+        "X",
+        "XX",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": 0,
+      "level": 1,
+      "multiplier": 4
+    },
+    {
+      "calls": [
+        "1H",
+        "P",
+        "P",
+        "X",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": 0,
+      "level": 1,
+      "multiplier": 2
+    },
+    {
+      "calls": [
+        "1H",
+        "P",
+        "P",
+        "X",
+        "XX",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": 0,
+      "level": 1,
+      "multiplier": 4
+    },
+    {
+      "calls": [
+        "1H",
+        "X",
+        "2H",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": 0,
+      "level": 2,
+      "multiplier": 1
+    },
+    {
+      "calls": [
+        "1C",
+        "P",
+        "1H",
+        "P",
+        "4H",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": 2,
+      "level": 4,
+      "multiplier": 1
+    },
+    {
+      "calls": [
+        "1H",
+        "1S",
+        "2C",
+        "2S",
+        "4S",
+        "P",
+        "P",
+        "P"
+      ],
+      "ended": true,
+      "declarer": 0,
+      "level": 4,
+      "multiplier": 1
+    }
+  ],
+  "invalidAuctions": [
+    "X",
+    "XX",
+    "1H P X",
+    "1S 1H",
+    "1H X P XX",
+    "1H X P X",
+    "8C",
+    "1H P P P P"
+  ],
+  "legal": [
+    {
+      "hand": [
+        "SA",
+        "H2",
+        "DK",
+        "CQ"
+      ],
+      "led": "hearts",
+      "expected": [
+        "H2"
+      ]
+    },
+    {
+      "hand": [
+        "SA",
+        "H2"
+      ],
+      "led": "clubs",
+      "expected": [
+        "SA",
+        "H2"
+      ]
+    },
+    {
+      "hand": [
+        "S2",
+        "SA",
+        "H2"
+      ],
+      "led": "spades",
+      "expected": [
+        "S2",
+        "SA"
+      ]
+    }
+  ],
+  "tricks": [
+    {
+      "cards": [
+        "H2",
+        "H10",
+        "HK",
+        "HA"
+      ],
+      "trump": null,
+      "winner": 3
+    },
+    {
+      "cards": [
+        "CA",
+        "C10",
+        "S2",
+        "HA"
+      ],
+      "trump": "spades",
+      "winner": 2
+    },
+    {
+      "cards": [
+        "C2",
+        "HA",
+        "SK",
+        "C3"
+      ],
+      "trump": null,
+      "winner": 3
+    }
+  ],
+  "openings": [
+    {
+      "cards": [
+        "SA",
+        "SQ",
+        "S6",
+        "HK",
+        "H9",
+        "H4",
+        "DQ",
+        "DJ",
+        "D7",
+        "D2",
+        "CK",
+        "C8",
+        "C3"
+      ],
+      "answer": "oneNotrump"
+    },
+    {
+      "cards": [
+        "SA",
+        "SK",
+        "S6",
+        "HK",
+        "HJ",
+        "H4",
+        "DQ",
+        "DJ",
+        "D7",
+        "D2",
+        "CK",
+        "C8",
+        "C3"
+      ],
+      "answer": "oneNotrump"
+    },
+    {
+      "cards": [
+        "SA",
+        "SQ",
+        "S6",
+        "HK",
+        "H9",
+        "H4",
+        "DQ",
+        "DJ",
+        "DK",
+        "D2",
+        "CK",
+        "C8",
+        "C3"
+      ],
+      "answer": "oneDiamond"
+    },
+    {
+      "cards": [
+        "SA",
+        "SK",
+        "SJ",
+        "S6",
+        "S2",
+        "HK",
+        "H9",
+        "H4",
+        "DA",
+        "D7",
+        "CJ",
+        "C8",
+        "C3"
+      ],
+      "answer": null
+    },
+    {
+      "cards": [
+        "SA",
+        "SK",
+        "SQ",
+        "SJ",
+        "S2",
+        "HA",
+        "D2",
+        "CK",
+        "CQ",
+        "C10",
+        "C8",
+        "C6",
+        "C4"
+      ],
+      "answer": "oneClub"
+    },
+    {
+      "id": "veryGoodFiveCardWeakTwoNotGraded",
+      "cards": [
+        "SA",
+        "SK",
+        "SQ",
+        "SJ",
+        "S10",
+        "H9",
+        "H8",
+        "H7",
+        "D9",
+        "D8",
+        "D7",
+        "C9",
+        "C8"
+      ],
+      "answer": null
+    }
+  ],
+  "teaching": [
+    {
+      "id": "bid-response-ranges",
+      "includes": [
+        "unpassed",
+        "nonjump",
+        "6 or more",
+        "10 or more",
+        "forcing for one round",
+        "6 to 10 dummy",
+        "10 to 11 dummy",
+        "1NT response over a major shows 6 to 9",
+        "nonforcing"
+      ],
+      "excludes": [
+        "10 to 12",
+        "1NT response shows 6 to 10"
+      ]
+    },
+    {
+      "id": "bid-five-card-major",
+      "includes": [
+        "may open 1NT",
+        "minor is longer"
+      ],
+      "excludes": [
+        "SAYC) opens 1NT"
+      ]
+    },
+    {
+      "id": "hand-pass-10",
+      "includes": [
+        "6 HCP",
+        "below ordinary opening strength"
+      ],
+      "excludes": [
+        "13 you need"
+      ]
+    },
+    {
+      "id": "more-open-pass",
+      "includes": [
+        "Six high-card points",
+        "below ordinary opening strength"
+      ],
+      "excludes": [
+        "need 13"
+      ]
+    }
+  ]
+}

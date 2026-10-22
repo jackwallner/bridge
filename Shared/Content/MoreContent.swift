@@ -75,7 +75,7 @@ enum MoreContent {
                     .c(.ten), .c(.four), .c(.two)],
             choices: [.pass, .oneClub, .oneDiamond, .oneHeart],
             answer: .pass,
-            explanation: "Six high-card points and no long suit. You need 13 to open at the one level, so pass."
+            explanation: "Six high-card points and no long suit. This is below ordinary opening strength, so pass."
         ),
         HandMatchQuestion(
             id: "more-open-notrump",

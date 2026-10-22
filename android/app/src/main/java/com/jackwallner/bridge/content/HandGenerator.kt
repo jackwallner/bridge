@@ -12,8 +12,8 @@ import com.jackwallner.bridge.model.shuffledSwift
 
 /**
  * Port of iOS `HandGenerator`: deals random 13-card hands and names the
- * beginner Standard American opening call for them, following the ACBL SAYC
- * (13+ points to open, or 12 by the Rule of 20; longest suit first). The
+ * beginner Standard American opening call for them, using SAYC suit choices.
+ * Borderline openings use the Rule of 20 as a conservative training guideline. The
  * classifier returns null for anything a beginner table would argue about,
  * and generation is
  * rejection sampling on top, so a hand only reaches a player when exactly one
@@ -65,7 +65,7 @@ object HandGenerator {
                 }
             }
 
-        /** Points plus the two longest suits: the Rule of 20 that lets a 12 open. */
+        /** Points plus the two longest suits, a hand-evaluation guideline. */
         val ruleOfTwenty: Int get() = highCardPoints + sortedLengths.take(2).sum()
 
         /** "5-3-3-2" for the explanation line. */
@@ -74,18 +74,19 @@ object HandGenerator {
 
     /** The opening call, or null when the hand is outside the six answers or a judgment call. */
     fun opening(cards: List<BridgeCard>): HandCategory? {
-        if (cards.size != 13) return null
+        if (cards.size != 13 || cards.toSet().size != 13) return null
         val shape = Shape(cards)
         val hcp = shape.highCardPoints
         // Strong hands open 2♣ or 2NT. Neither is an answer here.
         if (hcp >= 20) return null
         if (hcp < 12) {
-            // Only the hands nobody opens are safe to grade as Pass.
-            if (hcp > 10 || shape.ruleOfTwenty >= 20 || shape.sortedLengths[0] > 5) return null
+            // SAYC permits a rare weak two with a very good five-card suit.
+            // Conservative Pass questions omit long-suit weak hands.
+            if (hcp > 10 || shape.ruleOfTwenty >= 20 || shape.sortedLengths[0] > 4) return null
             return HandCategory.PASS
         }
-        // SAYC opens one of a suit with 13 or more, and a 12 only by the Rule of
-        // 20. A 12 short of that is a judgment call, so it is not graded.
+        // Conservative training selection, rather than a universal SAYC minimum.
+        // A 12 short of the Rule of 20 is not graded.
         if (hcp < 13 && shape.ruleOfTwenty < 20) return null
         if (shape.isFourFourFourOne) return null
         if (hcp in 15..17 && shape.isBalanced) {
@@ -132,7 +133,7 @@ object HandGenerator {
         val points = "$hcp high-card point${if (hcp == 1) "" else "s"}"
         return when (answer) {
             HandCategory.PASS ->
-                "$points, ${shape.pattern}. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes ${shape.ruleOfTwenty}. Pass and wait for your partner."
+                "$points, ${shape.pattern}. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
             HandCategory.ONE_NOTRUMP ->
                 "$points and a balanced ${shape.pattern} with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
             HandCategory.ONE_HEART, HandCategory.ONE_SPADE -> explainMajor(shape, answer, points)
@@ -143,7 +144,7 @@ object HandGenerator {
     /** Only a 12 needs the Rule of 20 spelled out; 13 or more is plain strength. */
     private fun strengthNote(shape: Shape): String {
         if (shape.highCardPoints != 12) return ""
-        return " Twelve points open here by the Rule of 20: points plus your two longest suits make ${shape.ruleOfTwenty}, and 20 is enough."
+        return " Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make ${shape.ruleOfTwenty}."
     }
 
     private fun explainMajor(shape: Shape, answer: HandCategory, points: String): String {

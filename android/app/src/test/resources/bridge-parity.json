@@ -402,7 +402,7 @@
         "D2",
         "CK"
       ],
-      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -496,9 +496,7 @@
         "CJ",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -516,9 +514,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -574,7 +570,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -612,7 +608,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -632,9 +628,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -744,9 +738,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -782,7 +774,7 @@
         "C10",
         "C9"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -860,7 +852,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -880,9 +872,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "5 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -918,7 +908,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -958,9 +948,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "5 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -978,9 +966,7 @@
         "D4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -998,7 +984,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -1018,9 +1004,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -1038,9 +1022,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -1076,7 +1058,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -1114,7 +1096,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -1174,7 +1156,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -1194,9 +1176,7 @@
         "D3",
         "C4"
       ],
-      "explanation" : "1 high-card point, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -1214,7 +1194,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "2 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
+      "explanation" : "2 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -1252,7 +1232,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "1 high-card point, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
+      "explanation" : "1 high-card point, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 1,
       "opening" : "pass"
     },
@@ -1272,7 +1252,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1292,7 +1272,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1312,7 +1292,7 @@
         "CK",
         "C5"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1332,9 +1312,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -1372,9 +1350,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -1448,9 +1424,7 @@
         "C9",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -1468,7 +1442,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -1488,9 +1462,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -1508,7 +1480,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -1742,9 +1714,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -1762,7 +1732,7 @@
         "CQ",
         "CJ"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -1782,7 +1752,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "0 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 8. Pass and wait for your partner.",
+      "explanation" : "0 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 0,
       "opening" : "pass"
     },
@@ -1802,7 +1772,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -1862,9 +1832,7 @@
         "CJ",
         "C2"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -1882,9 +1850,7 @@
         "D3",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -1902,7 +1868,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -1922,7 +1888,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -1942,7 +1908,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -2000,9 +1966,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -2020,7 +1984,7 @@
         "C9",
         "C6"
       ],
-      "explanation" : "6 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -2040,9 +2004,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -2060,7 +2022,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -2080,7 +2042,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -2100,9 +2062,7 @@
         "D2",
         "CA"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -2120,9 +2080,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-4-4-0. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -2178,7 +2136,7 @@
         "CJ",
         "C8"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -2198,9 +2156,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "3 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
-      "hcp" : 3,
-      "opening" : "pass"
+      "hcp" : 3
     },
     {
       "cards" : [
@@ -2218,9 +2174,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -2274,9 +2228,7 @@
         "D8",
         "C4"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -2314,7 +2266,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -2354,9 +2306,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -2392,7 +2342,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -2468,9 +2418,7 @@
         "CK",
         "C10"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -2488,7 +2436,7 @@
         "D2",
         "C5"
       ],
-      "explanation" : "12 high-card points, 8-3-1-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 23, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 8-3-1-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 23. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -2528,9 +2476,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "0 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
-      "hcp" : 0,
-      "opening" : "pass"
+      "hcp" : 0
     },
     {
       "cards" : [
@@ -2604,9 +2550,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-4-4-0. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -2624,7 +2568,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -2644,7 +2588,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -2702,7 +2646,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -2722,7 +2666,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -2742,7 +2686,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -2818,7 +2762,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -2838,9 +2782,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -2858,7 +2800,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -2878,7 +2820,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -2898,7 +2840,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -2998,7 +2940,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -3036,7 +2978,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -3056,9 +2998,7 @@
         "CQ",
         "C10"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -3116,7 +3056,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -3136,7 +3076,7 @@
         "C10",
         "C5"
       ],
-      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -3156,9 +3096,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -3216,7 +3154,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -3236,9 +3174,7 @@
         "CJ",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -3256,9 +3192,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -3276,7 +3210,7 @@
         "C9",
         "C6"
       ],
-      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -3314,7 +3248,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -3370,7 +3304,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "7 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -3390,7 +3324,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "4 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -3410,7 +3344,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -3430,9 +3364,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -3566,9 +3498,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -3606,7 +3536,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -3700,7 +3630,7 @@
         "DA",
         "CA"
       ],
-      "explanation" : "12 high-card points with 6 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 23, and 20 is enough. Open your longest suit, a five-card major: 1♥. Holding both majors, start with the longer one.",
+      "explanation" : "12 high-card points with 6 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 23. Open your longest suit, a five-card major: 1♥. Holding both majors, start with the longer one.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -3720,9 +3650,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "3 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
-      "hcp" : 3,
-      "opening" : "pass"
+      "hcp" : 3
     },
     {
       "cards" : [
@@ -3778,7 +3706,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -3818,7 +3746,7 @@
         "C9",
         "C2"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -3856,7 +3784,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -3934,7 +3862,7 @@
         "D6",
         "C2"
       ],
-      "explanation" : "6 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -3954,9 +3882,7 @@
         "D3",
         "C8"
       ],
-      "explanation" : "6 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -3974,9 +3900,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "4 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -4012,7 +3936,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4052,7 +3976,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "6 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -4148,9 +4072,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -4168,7 +4090,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4188,7 +4110,7 @@
         "D2",
         "CK"
       ],
-      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -4266,7 +4188,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -4286,9 +4208,7 @@
         "D2",
         "C9"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4306,9 +4226,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4384,7 +4302,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -4404,7 +4322,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -4442,9 +4360,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4482,9 +4398,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4502,7 +4416,7 @@
         "D4",
         "CK"
       ],
-      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -4578,9 +4492,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -4618,7 +4530,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -4638,9 +4550,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -4730,9 +4640,7 @@
         "D8",
         "C8"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4750,9 +4658,7 @@
         "CQ",
         "C8"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4770,9 +4676,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -4790,7 +4694,7 @@
         "C9",
         "C4"
       ],
-      "explanation" : "12 high-card points, 6-4-2-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 6-4-2-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 22. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -4868,7 +4772,7 @@
         "D3",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4888,7 +4792,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -4928,9 +4832,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "2 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -4948,9 +4850,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "8 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -4988,7 +4888,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -5046,9 +4946,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -5066,7 +4964,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "2 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
+      "explanation" : "2 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -5086,7 +4984,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "12 high-card points with 6 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
+      "explanation" : "12 high-card points with 6 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 22. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -5146,9 +5044,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -5166,7 +5062,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -5242,7 +5138,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -5302,9 +5198,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -5342,7 +5236,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "10 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -5514,7 +5408,7 @@
         "D2",
         "C3"
       ],
-      "explanation" : "10 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -5552,7 +5446,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "5 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -5572,9 +5466,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -5628,7 +5520,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -5666,7 +5558,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -5742,7 +5634,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -5782,7 +5674,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "2 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
+      "explanation" : "2 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 2,
       "opening" : "pass"
     },
@@ -5802,9 +5694,7 @@
         "D2",
         "C6"
       ],
-      "explanation" : "3 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 3,
-      "opening" : "pass"
+      "hcp" : 3
     },
     {
       "cards" : [
@@ -5858,7 +5748,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -5878,9 +5768,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -5918,7 +5806,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -5958,7 +5846,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "12 high-card points, 5-5-2-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
+      "explanation" : "12 high-card points, 5-5-2-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 22. Open your longer minor: 1♦. With equal length in the minors, open the higher ranking one.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -5996,9 +5884,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -6034,7 +5920,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -6054,9 +5940,7 @@
         "C8",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -6074,9 +5958,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -6130,9 +6012,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -6150,7 +6030,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -6170,7 +6050,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♠. With a minor of the same length, start with the higher ranking suit.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 22. Open your longest suit, a five-card major: 1♠. With a minor of the same length, start with the higher ranking suit.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -6208,7 +6088,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -6228,9 +6108,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -6268,9 +6146,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -6288,7 +6164,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -6364,9 +6240,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -6442,9 +6316,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -6462,9 +6334,7 @@
         "CJ",
         "C9"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -6500,7 +6370,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -6538,7 +6408,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -6656,9 +6526,7 @@
         "C10",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -6676,9 +6544,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -6696,7 +6562,7 @@
         "C8",
         "C4"
       ],
-      "explanation" : "12 high-card points, 5-4-4-0, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-4-0, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -6790,7 +6656,7 @@
         "D2",
         "CJ"
       ],
-      "explanation" : "4 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -6810,7 +6676,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -6830,7 +6696,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -6870,9 +6736,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -6890,7 +6754,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -6910,7 +6774,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -6948,7 +6812,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -6988,9 +6852,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -7008,7 +6870,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -7028,9 +6890,7 @@
         "C9",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -7048,7 +6908,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -7068,9 +6928,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -7088,7 +6946,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -7108,9 +6966,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -7146,7 +7002,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -7166,9 +7022,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -7186,7 +7040,7 @@
         "CQ",
         "C2"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -7206,9 +7060,7 @@
         "D9",
         "D8"
       ],
-      "explanation" : "10 high-card points, 5-4-4-0. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -7302,7 +7154,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "5 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -7342,9 +7194,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -7420,7 +7270,7 @@
         "C9",
         "C5"
       ],
-      "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -7476,7 +7326,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -7554,7 +7404,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -7574,9 +7424,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -7594,7 +7442,7 @@
         "C9",
         "C7"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7614,7 +7462,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7634,7 +7482,7 @@
         "C8",
         "C3"
       ],
-      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -7654,7 +7502,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -7674,7 +7522,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -7712,9 +7560,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "6 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -7752,9 +7598,7 @@
         "C10",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -7772,7 +7616,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -7812,9 +7656,7 @@
         "D6",
         "C10"
       ],
-      "explanation" : "8 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -7832,7 +7674,7 @@
         "CQ",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -7852,9 +7694,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -7932,9 +7772,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -7952,7 +7790,7 @@
         "C10",
         "C7"
       ],
-      "explanation" : "12 high-card points with 6 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
+      "explanation" : "12 high-card points with 6 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -8010,7 +7848,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -8050,9 +7888,7 @@
         "D2",
         "C9"
       ],
-      "explanation" : "8 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -8070,9 +7906,7 @@
         "D6",
         "C9"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -8090,9 +7924,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -8110,9 +7942,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -8130,7 +7960,7 @@
         "CK",
         "CQ"
       ],
-      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -8170,7 +8000,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "9 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -8208,7 +8038,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -8358,7 +8188,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -8396,9 +8226,7 @@
         "C9",
         "C8"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -8416,9 +8244,7 @@
         "D3",
         "C8"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -8474,9 +8300,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -8550,9 +8374,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -8588,9 +8410,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -8644,9 +8464,7 @@
         "C8",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -8664,7 +8482,7 @@
         "CA",
         "C10"
       ],
-      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -8684,9 +8502,7 @@
         "CQ",
         "C5"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -8722,7 +8538,7 @@
         "CA",
         "C10"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -8782,9 +8598,7 @@
         "C6",
         "C5"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -8860,7 +8674,7 @@
         "CA",
         "C3"
       ],
-      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -8994,9 +8808,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -9034,9 +8846,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -9054,9 +8864,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -9074,7 +8882,7 @@
         "C10",
         "C5"
       ],
-      "explanation" : "7 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "7 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 7,
       "opening" : "pass"
     },
@@ -9112,9 +8920,7 @@
         "D2",
         "C5"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -9132,7 +8938,7 @@
         "D6",
         "C8"
       ],
-      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♠. Holding the same length in both majors, start with the higher ranking suit.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 22. Open your longest suit, a five-card major: 1♠. Holding the same length in both majors, start with the higher ranking suit.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -9190,7 +8996,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -9210,9 +9016,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -9248,9 +9052,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -9328,7 +9130,7 @@
         "D2",
         "CJ"
       ],
-      "explanation" : "12 high-card points, 7-4-1-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 23, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 7-4-1-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 23. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -9384,9 +9186,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -9422,7 +9222,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -9442,7 +9242,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -9480,9 +9280,7 @@
         "D2",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -9500,7 +9298,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -9598,9 +9396,7 @@
         "C10",
         "C9"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -9618,9 +9414,7 @@
         "CJ",
         "C9"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -9658,9 +9452,7 @@
         "C7",
         "C4"
       ],
-      "explanation" : "6 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -9678,7 +9470,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -9698,7 +9490,7 @@
         "D3",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -9738,9 +9530,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -9796,7 +9586,7 @@
         "CK",
         "CJ"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -9816,9 +9606,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -9836,7 +9624,7 @@
         "C8",
         "C7"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -9876,9 +9664,7 @@
         "CJ",
         "C10"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -9970,7 +9756,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -9990,7 +9776,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -10010,7 +9796,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -10030,7 +9816,7 @@
         "CA",
         "C7"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -10070,7 +9856,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦.",
+      "explanation" : "12 high-card points, 5-4-2-2, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♦.",
       "hcp" : 12,
       "opening" : "oneDiamond"
     },
@@ -10148,9 +9934,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -10186,9 +9970,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -10244,9 +10026,7 @@
         "C8",
         "C6"
       ],
-      "explanation" : "6 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -10320,9 +10100,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -10340,9 +10118,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "9 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -10360,7 +10136,7 @@
         "C7",
         "C6"
       ],
-      "explanation" : "6 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -10440,9 +10216,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -10460,9 +10234,7 @@
         "C7",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -10480,7 +10252,7 @@
         "CQ",
         "C7"
       ],
-      "explanation" : "10 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -10520,9 +10292,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -10560,9 +10330,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -10598,7 +10366,7 @@
         "CJ",
         "C5"
       ],
-      "explanation" : "4 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -10618,7 +10386,7 @@
         "C5",
         "C3"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -10638,9 +10406,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -10658,9 +10424,7 @@
         "C6",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -10696,9 +10460,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-5-2-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -10756,7 +10518,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "5 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "5 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 5,
       "opening" : "pass"
     },
@@ -10872,9 +10634,7 @@
         "C4",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -10892,7 +10652,7 @@
         "CJ",
         "C8"
       ],
-      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♣.",
+      "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♣.",
       "hcp" : 12,
       "opening" : "oneClub"
     },
@@ -10912,7 +10672,7 @@
         "C10",
         "C8"
       ],
-      "explanation" : "6 high-card points, 4-4-4-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-4-4-1. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -10932,9 +10692,7 @@
         "CJ",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -11032,7 +10790,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -11088,7 +10846,7 @@
         "CQ",
         "C10"
       ],
-      "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
+      "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longest suit, a five-card major: 1♠.",
       "hcp" : 12,
       "opening" : "oneSpade"
     },
@@ -11126,9 +10884,7 @@
         "CJ",
         "C7"
       ],
-      "explanation" : "5 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 14. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -11146,7 +10902,7 @@
         "CQ",
         "CJ"
       ],
-      "explanation" : "9 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
+      "explanation" : "9 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 9,
       "opening" : "pass"
     },
@@ -11204,9 +10960,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "2 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -11224,7 +10978,7 @@
         "D4",
         "CK"
       ],
-      "explanation" : "12 high-card points with 5 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♥.",
+      "explanation" : "12 high-card points with 5 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longest suit, a five-card major: 1♥.",
       "hcp" : 12,
       "opening" : "oneHeart"
     },
@@ -11244,9 +10998,7 @@
         "CJ",
         "C8"
       ],
-      "explanation" : "4 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -11264,7 +11016,7 @@
         "C7",
         "C3"
       ],
-      "explanation" : "4 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
+      "explanation" : "4 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 4,
       "opening" : "pass"
     },
@@ -11324,9 +11076,7 @@
         "C3",
         "C2"
       ],
-      "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner.",
-      "hcp" : 4,
-      "opening" : "pass"
+      "hcp" : 4
     },
     {
       "cards" : [
@@ -11344,9 +11094,7 @@
         "CJ",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -11364,9 +11112,7 @@
         "CJ",
         "C5"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -11384,9 +11130,7 @@
         "CQ",
         "C6"
       ],
-      "explanation" : "2 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner.",
-      "hcp" : 2,
-      "opening" : "pass"
+      "hcp" : 2
     },
     {
       "cards" : [
@@ -11424,7 +11168,7 @@
         "C9",
         "C5"
       ],
-      "explanation" : "8 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -11464,9 +11208,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "7 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -11502,9 +11244,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "5 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
-      "hcp" : 5,
-      "opening" : "pass"
+      "hcp" : 5
     },
     {
       "cards" : [
@@ -11600,7 +11340,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
+      "explanation" : "3 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 3,
       "opening" : "pass"
     },
@@ -11620,9 +11360,7 @@
         "C10",
         "C6"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -11658,9 +11396,7 @@
         "C4",
         "C3"
       ],
-      "explanation" : "6 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 6,
-      "opening" : "pass"
+      "hcp" : 6
     },
     {
       "cards" : [
@@ -11678,9 +11414,7 @@
         "C5",
         "C4"
       ],
-      "explanation" : "9 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 9,
-      "opening" : "pass"
+      "hcp" : 9
     },
     {
       "cards" : [
@@ -11698,7 +11432,7 @@
         "C6",
         "C2"
       ],
-      "explanation" : "8 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
+      "explanation" : "8 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 8,
       "opening" : "pass"
     },
@@ -11778,9 +11512,7 @@
         "C9",
         "C3"
       ],
-      "explanation" : "7 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 15. Pass and wait for your partner.",
-      "hcp" : 7,
-      "opening" : "pass"
+      "hcp" : 7
     },
     {
       "cards" : [
@@ -11818,7 +11550,7 @@
         "C10",
         "C4"
       ],
-      "explanation" : "6 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 13. Pass and wait for your partner.",
+      "explanation" : "6 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 6,
       "opening" : "pass"
     },
@@ -11876,7 +11608,7 @@
         "C9",
         "C4"
       ],
-      "explanation" : "10 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner.",
+      "explanation" : "10 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.",
       "hcp" : 10,
       "opening" : "pass"
     },
@@ -11896,9 +11628,7 @@
         "C10",
         "C2"
       ],
-      "explanation" : "10 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 19. Pass and wait for your partner.",
-      "hcp" : 10,
-      "opening" : "pass"
+      "hcp" : 10
     },
     {
       "cards" : [
@@ -11916,9 +11646,7 @@
         "C7",
         "C5"
       ],
-      "explanation" : "8 high-card points, 5-4-2-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 17. Pass and wait for your partner.",
-      "hcp" : 8,
-      "opening" : "pass"
+      "hcp" : 8
     },
     {
       "cards" : [
@@ -11936,9 +11664,7 @@
         "C5",
         "C2"
       ],
-      "explanation" : "1 high-card point, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 9. Pass and wait for your partner.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -11974,9 +11700,7 @@
         "C6",
         "C4"
       ],
-      "explanation" : "1 high-card point, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner.",
-      "hcp" : 1,
-      "opening" : "pass"
+      "hcp" : 1
     },
     {
       "cards" : [
@@ -12081,7 +11805,7 @@
     "defense-calls" : 5,
     "defense-quiz" : 5,
     "defensive-signals" : 5,
-    "duplicate-bridge" : 3,
+    "duplicate-bridge" : 6,
     "meet-cards" : 7,
     "opening-bid" : 7,
     "opening-playbook" : 5,
@@ -12137,7 +11861,7 @@
           "D4",
           "CK"
         ],
-        "explanation" : "12 high-card points with 6 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♠."
+        "explanation" : "12 high-card points with 6 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 22. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "oneClub",
@@ -12251,7 +11975,7 @@
           "C9",
           "C7"
         ],
-        "explanation" : "3 high-card points, 4-4-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 11. Pass and wait for your partner."
+        "explanation" : "3 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
       }
     ],
     "daily-2026-10-01" : [
@@ -12291,7 +12015,7 @@
           "C7",
           "C4"
         ],
-        "explanation" : "3 high-card points, 4-3-3-3. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 10. Pass and wait for your partner."
+        "explanation" : "3 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
       },
       {
         "answer" : "oneDiamond",
@@ -12310,7 +12034,7 @@
           "C5",
           "C4"
         ],
-        "explanation" : "12 high-card points, 6-3-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦."
+        "explanation" : "12 high-card points, 6-3-3-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♦."
       },
       {
         "answer" : "oneNotrump",
@@ -12348,26 +12072,26 @@
           "C5",
           "C2"
         ],
-        "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longest suit, a five-card major: 1♠."
+        "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "pass",
         "cards" : [
-          "S10",
-          "S7",
+          "SQ",
           "S6",
-          "S3",
+          "S4",
           "S2",
+          "HJ",
           "H10",
           "H8",
-          "H3",
           "DQ",
-          "D5",
-          "CQ",
-          "C10",
-          "C7"
+          "D9",
+          "D2",
+          "CA",
+          "C8",
+          "C2"
         ],
-        "explanation" : "4 high-card points, 5-3-3-2. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 12. Pass and wait for your partner."
+        "explanation" : "9 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
       },
       {
         "answer" : "oneClub",
@@ -12394,20 +12118,20 @@
         "answer" : "pass",
         "cards" : [
           "SQ",
+          "S10",
           "S9",
-          "S8",
-          "S3",
-          "H8",
-          "H6",
+          "H10",
           "H3",
-          "DA",
+          "H2",
           "DQ",
-          "DJ",
-          "D8",
-          "D4",
-          "C7"
+          "D10",
+          "D9",
+          "D2",
+          "CK",
+          "C6",
+          "C4"
         ],
-        "explanation" : "9 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 18. Pass and wait for your partner."
+        "explanation" : "7 high-card points, 4-3-3-3. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
       },
       {
         "answer" : "oneNotrump",
@@ -12483,7 +12207,7 @@
           "C6",
           "C5"
         ],
-        "explanation" : "12 high-card points with 6 hearts. Twelve points open here by the Rule of 20: points plus your two longest suits make 22, and 20 is enough. Open your longest suit, a five-card major: 1♥."
+        "explanation" : "12 high-card points with 6 hearts. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 22. Open your longest suit, a five-card major: 1♥."
       },
       {
         "answer" : "oneClub",
@@ -12526,42 +12250,118 @@
     ],
     "h2" : [
       {
-        "answer" : "oneHeart",
+        "answer" : "pass",
         "cards" : [
-          "SK",
-          "HA",
-          "HK",
+          "SQ",
+          "S5",
+          "S3",
+          "S2",
           "HQ",
-          "H8",
+          "H7",
           "H5",
-          "DJ",
+          "H2",
           "D7",
           "D4",
-          "D3",
+          "D2",
           "C8",
-          "C5",
+          "C5"
+        ],
+        "explanation" : "4 high-card points, 4-4-3-2. With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
+      },
+      {
+        "answer" : "oneSpade",
+        "cards" : [
+          "SK",
+          "SJ",
+          "S8",
+          "S4",
+          "S3",
+          "HA",
+          "DA",
+          "D9",
+          "D7",
+          "D3",
+          "CK",
+          "C8",
           "C3"
         ],
-        "explanation" : "13 high-card points with 5 hearts. Open your longest suit, a five-card major: 1♥."
+        "explanation" : "15 high-card points with 5 spades. Open your longest suit, a five-card major: 1♠."
       },
       {
         "answer" : "oneClub",
         "cards" : [
-          "SK",
+          "S8",
+          "S5",
+          "H9",
+          "H8",
+          "H7",
+          "DA",
+          "DK",
+          "DQ",
+          "CK",
+          "CJ",
+          "C5",
+          "C3",
+          "C2"
+        ],
+        "explanation" : "13 high-card points, 5-3-3-2, no five-card major and outside the 15 to 17 notrump range. Open your longer minor: 1♣."
+      },
+      {
+        "answer" : "oneHeart",
+        "cards" : [
+          "SJ",
           "S9",
-          "HQ",
+          "HA",
+          "HJ",
+          "H7",
+          "H5",
+          "H4",
+          "H3",
+          "DK",
+          "DQ",
+          "D4",
+          "CA",
+          "C8"
+        ],
+        "explanation" : "15 high-card points with 6 hearts. Open your longest suit, a five-card major: 1♥."
+      },
+      {
+        "answer" : "oneNotrump",
+        "cards" : [
+          "SK",
+          "SQ",
+          "S9",
+          "HA",
+          "HK",
+          "H9",
+          "DQ",
+          "D8",
+          "D6",
+          "CJ",
+          "C8",
+          "C7",
+          "C6"
+        ],
+        "explanation" : "15 high-card points and a balanced 4-3-3-3 with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
+      },
+      {
+        "answer" : "oneDiamond",
+        "cards" : [
+          "S5",
+          "HK",
+          "HJ",
           "H5",
           "DA",
           "DK",
-          "D8",
-          "D3",
-          "CK",
-          "CJ",
-          "C10",
+          "D10",
+          "D6",
+          "D4",
+          "CQ",
           "C9",
-          "C7"
+          "C8",
+          "C2"
         ],
-        "explanation" : "16 high-card points, 5-4-2-2, no five-card major. Open your longer minor: 1♣."
+        "explanation" : "13 high-card points, 5-4-3-1, no five-card major. Open your longer minor: 1♦."
       },
       {
         "answer" : "oneNotrump",
@@ -12579,82 +12379,6 @@
           "CA",
           "C9",
           "C2"
-        ],
-        "explanation" : "16 high-card points and a balanced 4-3-3-3 with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
-      },
-      {
-        "answer" : "pass",
-        "cards" : [
-          "SK",
-          "S8",
-          "S7",
-          "S6",
-          "S5",
-          "H10",
-          "DA",
-          "D10",
-          "D9",
-          "D3",
-          "C9",
-          "C5",
-          "C3"
-        ],
-        "explanation" : "7 high-card points, 5-4-3-1. One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes 16. Pass and wait for your partner."
-      },
-      {
-        "answer" : "oneSpade",
-        "cards" : [
-          "SA",
-          "SK",
-          "SQ",
-          "S10",
-          "S5",
-          "S4",
-          "HA",
-          "H7",
-          "H3",
-          "DJ",
-          "D5",
-          "CJ",
-          "C8"
-        ],
-        "explanation" : "15 high-card points with 6 spades. Open your longest suit, a five-card major: 1♠."
-      },
-      {
-        "answer" : "oneDiamond",
-        "cards" : [
-          "SA",
-          "S6",
-          "S5",
-          "H9",
-          "H7",
-          "H2",
-          "DK",
-          "DJ",
-          "D10",
-          "D6",
-          "D3",
-          "D2",
-          "CA"
-        ],
-        "explanation" : "12 high-card points, 6-3-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦."
-      },
-      {
-        "answer" : "oneNotrump",
-        "cards" : [
-          "SQ",
-          "S3",
-          "S2",
-          "HA",
-          "HQ",
-          "H6",
-          "DK",
-          "DQ",
-          "D3",
-          "CK",
-          "C6",
-          "C5",
-          "C4"
         ],
         "explanation" : "16 high-card points and a balanced 4-3-3-3 with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
       }
@@ -13008,7 +12732,7 @@
         "Pass",
         "1♦"
       ],
-      "explanation" : "This hand has 6 HCP: Q=2, K=3, and J=1. It is well below the 13 you need to open, so pass.",
+      "explanation" : "This hand has 6 HCP: Q=2, K=3, and J=1. It is below ordinary opening strength and has no preemptive long suit, so pass.",
       "id" : "hand-pass-10",
       "isReviewable" : true,
       "prompt" : "What is the best opening call?",
@@ -13318,7 +13042,7 @@
         "Pass",
         "1♥"
       ],
-      "explanation" : "Six high-card points and no long suit. You need 13 to open at the one level, so pass.",
+      "explanation" : "Six high-card points and no long suit. This is below ordinary opening strength, so pass.",
       "id" : "more-open-pass",
       "isReviewable" : true,
       "prompt" : "What is the best opening call?",
@@ -13855,14 +13579,14 @@
       ],
       "choices" : [
         "4♥",
-        "3♠",
-        "5♠",
+        "3♥",
+        "6♥",
         "2♥"
       ],
       "explanation" : "Four of a major is the lowest game level, worth 120 trick points. Higher contracts also score game but need more tricks.",
       "id" : "pro-game-major",
       "isReviewable" : true,
-      "prompt" : "What is the lowest major-suit contract that earns the game bonus?",
+      "prompt" : "Which is the lowest undoubled heart contract that earns the game bonus when made?",
       "roomID" : "master-tables",
       "sourceLabel" : "The Master Tables",
       "trackingID" : "pro-game-major"
@@ -13885,6 +13609,60 @@
       "roomID" : "master-tables",
       "sourceLabel" : "The Master Tables",
       "trackingID" : "pro-vulnerability"
+    },
+    {
+      "answerIndex" : 1,
+      "cards" : [
+
+      ],
+      "choices" : [
+        "50 to the dealer",
+        "0",
+        "Play 1NT"
+      ],
+      "explanation" : "Four opening passes end the auction with no contract. The passed-out board scores zero. After a bid, double, or redouble, three consecutive passes end the auction.",
+      "id" : "rules-passed-out",
+      "isReviewable" : true,
+      "prompt" : "All four players pass before any bid. What is the duplicate board score?",
+      "roomID" : "master-tables",
+      "sourceLabel" : "The Master Tables",
+      "trackingID" : "rules-passed-out"
+    },
+    {
+      "answerIndex" : 0,
+      "cards" : [
+
+      ],
+      "choices" : [
+        "470",
+        "240",
+        "170"
+      ],
+      "explanation" : "Contract tricks score 2 × 30 × 2 = 120, enough for the 300 game bonus. Add 50 for making a doubled contract: 470. Overtricks do not decide whether the contract earns game.",
+      "id" : "rules-doubled-game",
+      "isReviewable" : true,
+      "prompt" : "You make 2♥ doubled, exactly, not vulnerable. What is your duplicate score?",
+      "roomID" : "master-tables",
+      "sourceLabel" : "The Master Tables",
+      "trackingID" : "rules-doubled-game"
+    },
+    {
+      "answerIndex" : 2,
+      "cards" : [
+
+      ],
+      "choices" : [
+        "-400",
+        "-700",
+        "-800"
+      ],
+      "explanation" : "The first undertrick costs 100, the next two 200 each, and the fourth 300: -800. Vulnerable doubled penalties are 200 for the first and 300 for each later undertrick.",
+      "id" : "rules-down-four",
+      "isReviewable" : true,
+      "prompt" : "You go down four doubled, not vulnerable. What is your duplicate score?",
+      "roomID" : "master-tables",
+      "sourceLabel" : "The Master Tables",
+      "trackingID" : "rules-down-four"
     },
     {
       "answerIndex" : 3,
@@ -14012,7 +13790,7 @@
               "1♣",
               "Pass"
             ],
-            "explanation" : "12 high-card points with 5 spades. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longest suit, a five-card major: 1♠.",
+            "explanation" : "12 high-card points with 5 spades. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longest suit, a five-card major: 1♠.",
             "id" : "gen-openings-minute-2026-02-28-0",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14028,17 +13806,17 @@
             "cards" : [
               "CA",
               "CK",
-              "C9"
+              "CQ"
             ],
             "choices" : [
               "King of Clubs",
               "Ace of Clubs",
-              "9 of Clubs"
+              "Queen of Clubs"
             ],
-            "explanation" : "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
+            "explanation" : "The queen beats the jack. All three honors win, so spend the lowest winner and preserve the ace and king.",
             "id" : "bridge-minute-declarer-2026-02-28",
             "isReviewable" : false,
-            "prompt" : "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand? Which card do you play?",
+            "prompt" : "In notrump, you are fourth to 2♣, 10♣, J♣, played in that order. Which honor wins most cheaply? Which card do you play?",
             "roomID" : "declarer-room",
             "sourceLabel" : "Bridge Minute: Declarer Play",
             "trackingID" : "bridge-minute-declarer"
@@ -14175,17 +13953,17 @@
             "cards" : [
               "CA",
               "CK",
-              "C9"
+              "CQ"
             ],
             "choices" : [
-              "9 of Clubs",
+              "Queen of Clubs",
               "King of Clubs",
               "Ace of Clubs"
             ],
-            "explanation" : "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
+            "explanation" : "The queen beats the jack. All three honors win, so spend the lowest winner and preserve the ace and king.",
             "id" : "bridge-minute-declarer-2026-08-09",
             "isReviewable" : false,
-            "prompt" : "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand? Which card do you play?",
+            "prompt" : "In notrump, you are fourth to 2♣, 10♣, J♣, played in that order. Which honor wins most cheaply? Which card do you play?",
             "roomID" : "declarer-room",
             "sourceLabel" : "Bridge Minute: Declarer Play",
             "trackingID" : "bridge-minute-declarer"
@@ -14441,7 +14219,7 @@
               "Pass",
               "1♥"
             ],
-            "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points open here by the Rule of 20: points plus your two longest suits make 20, and 20 is enough. Open your longer minor: 1♦.",
+            "explanation" : "12 high-card points, 4-4-3-2, no five-card major and outside the 15 to 17 notrump range. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 20. Open your longer minor: 1♦.",
             "id" : "gen-openings-minute-2026-10-01-0",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",
@@ -14587,7 +14365,7 @@
               "1♠",
               "1♦"
             ],
-            "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points open here by the Rule of 20: points plus your two longest suits make 21, and 20 is enough. Open your longer minor: 1♦.",
+            "explanation" : "12 high-card points, 5-4-3-1, no five-card major. Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make 21. Open your longer minor: 1♦.",
             "id" : "gen-openings-minute-2026-10-16-0",
             "isReviewable" : false,
             "prompt" : "What is your opening call?",

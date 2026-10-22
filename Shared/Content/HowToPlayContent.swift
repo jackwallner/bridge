@@ -46,7 +46,7 @@ enum HowToPlayContent {
             id: "htp-points",
             icon: "number.circle.fill",
             title: "Count your strength",
-            body: "High-card points help describe a hand: ace 4, king 3, queen 2, jack 1. In Standard American, pass below 13 points and open one of a suit with 13 or more (a good 12 can open by the Rule of 20).",
+            body: "High-card points help describe a hand: ace 4, king 3, queen 2, jack 1. In SAYC, ordinary one-level opening strength is around 12 to 13 HCP, with judgment for shape and playing strength.",
             cards: [.s(.ace), .h(.king), .d(.queen), .c(.jack)],
             tip: "A balanced 15 to 17 HCP hand usually opens 1NT."
         ),
@@ -54,7 +54,7 @@ enum HowToPlayContent {
             id: "htp-roles",
             icon: "person.2.fill",
             title: "Declarer, dummy, defenders",
-            body: "In the winning partnership, the player who first named the contract's denomination becomes declarer. Their partner lays dummy face up after the opening lead. The other partnership defends.",
+            body: "On the side winning the auction, the player who first bid the final contract's denomination becomes declarer. Their partner lays dummy face up after the opening lead. The other partnership defends.",
             tip: "Declarer chooses every card played from dummy."
         ),
         HowToPlayPage(

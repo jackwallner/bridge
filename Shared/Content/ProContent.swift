@@ -51,11 +51,11 @@ enum ProContent {
         ),
         PlayScenario(
             id: "pro-play-safety",
-            situation: "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand?",
-            cards: [.c(.ace), .c(.king), .c(.nine)],
+            situation: "In notrump, you are fourth to 2♣, 10♣, J♣, played in that order. Which honor wins most cheaply?",
+            cards: [.c(.ace), .c(.king), .c(.queen)],
             answerIndex: 2,
-            reasoning: "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
-            tip: "A safety play trades the maximum result for a better chance to make the contract."
+            reasoning: "The queen beats the jack. All three honors win, so spend the lowest winner and preserve the ace and king.",
+            tip: "Choose the lowest card that is certain to win the completed trick."
         ),
     ]
 
@@ -69,8 +69,8 @@ enum ProContent {
         ),
         QuizQuestion(
             id: "pro-game-major",
-            prompt: "What is the lowest major-suit contract that earns the game bonus?",
-            choices: ["2♥", "3♠", "4♥", "5♠"],
+            prompt: "Which is the lowest undoubled heart contract that earns the game bonus when made?",
+            choices: ["2♥", "3♥", "4♥", "6♥"],
             answerIndex: 2,
             explanation: "Four of a major is the lowest game level, worth 120 trick points. Higher contracts also score game but need more tricks."
         ),
@@ -81,5 +81,5 @@ enum ProContent {
             answerIndex: 1,
             explanation: "Vulnerability increases the game bonus and the penalties for going down."
         ),
-    ]
+    ] + RuleQuestions.duplicate
 }

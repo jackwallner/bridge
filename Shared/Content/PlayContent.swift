@@ -47,7 +47,7 @@ enum PlayContent {
         ),
         PlayScenario(
             id: "play-win-cheaply",
-            situation: "You are declarer in notrump. West leads 4♣, dummy plays 6♣, and East plays 9♣. You play last. Which card wins most cheaply?",
+            situation: "In notrump, you are fourth to a trick of 4♣, 6♣, 9♣, played in that order. Which card wins most cheaply?",
             cards: [.c(.ten), .c(.king), .c(.ace)],
             answerIndex: 0,
             reasoning: "The 10♣ beats the 9♣. Save the king and ace for later tricks.",

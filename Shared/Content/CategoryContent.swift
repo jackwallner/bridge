@@ -6,21 +6,21 @@ enum CategoryContent {
             id: "bid-open-or-pass",
             frontTitle: "Open or pass?",
             frontSubtitle: "Count your high-card points first",
-            backTitle: "Open with 13 or more",
-            backBody: "In Standard American (SAYC), open one of a suit with 13 or more points and pass with fewer. A 12 may open by the Rule of 20: add your points to the lengths of your two longest suits, and open if the total is 20 or more."
+            backTitle: "Evaluate opening strength",
+            backBody: "In SAYC, ordinary one-level openings usually start around 12 to 13 high-card points. Shape and playing strength matter. Do not automatically pass a 12-count, and consider a weak preempt with a suitable long suit."
         ),
         Flashcard(
             id: "bid-one-notrump",
             frontTitle: "The 1NT opening",
             frontSubtitle: "A precise bid",
             backTitle: "15 to 17 HCP, balanced",
-            backBody: "Open 1NT with 15 to 17 high-card points and a balanced hand. Balanced means no singleton or void and at most one doubleton: 4-3-3-3, 4-4-3-2 or 5-3-3-2."
+            backBody: "Open 1NT with 15 to 17 high-card points and a balanced hand. The balanced shapes are 4-3-3-3, 4-4-3-2, and 5-3-3-2. A 5-4-2-2 is not balanced. SAYC permits a five-card major in a notrump opening."
         ),
         Flashcard(
             id: "bid-five-card-major",
             frontTitle: "Five-card majors",
             backTitle: "Show hearts or spades",
-            backBody: "With opening strength and a five-card major, open that major. The exception is a balanced 15 to 17, which Standard American (SAYC) opens 1NT even with a five-card suit. A minor of six or more cards is longer, so you open that first."
+            backBody: "With opening strength, normally open a five-card major unless a minor is longer. With a balanced 15 to 17, you may open 1NT even with a five-card major. Discuss your approach with partner."
         ),
         Flashcard(
             id: "bid-longest-suit",
@@ -32,7 +32,7 @@ enum CategoryContent {
             id: "bid-response-ranges",
             frontTitle: "Responder is captain",
             backTitle: "Place your hand in a range",
-            backBody: "After partner opens, count your points and support. In Standard American, pass with 0 to 5, respond with 6 or more, and think of 6 to 9 as minimum, 10 to 12 as an invitation to game, and 13 or more as game strength."
+            backBody: "For an unpassed responder in an uncontested SAYC auction, a nonjump new-suit response needs 6 or more points at the one level or 10 or more at the two level; either is forcing for one round. Over a major, a simple raise shows 6 to 10 dummy points with support, a limit raise 10 to 11 dummy points. A 1NT response over a major shows 6 to 9 and is nonforcing. These are response ranges, not the 15 to 17 opening 1NT range."
         ),
     ]
 
@@ -42,7 +42,7 @@ enum CategoryContent {
             cards: [.s(.queen), .s(.nine), .s(.six), .h(.king), .h(.eight), .h(.four), .d(.jack), .d(.seven), .d(.three), .c(.nine), .c(.six), .c(.four), .c(.two)],
             choices: [.pass, .oneClub, .oneDiamond, .oneNotrump],
             answer: .pass,
-            explanation: "This hand has 6 HCP: Q=2, K=3, and J=1. It is well below the 13 you need to open, so pass."
+            explanation: "This hand has 6 HCP: Q=2, K=3, and J=1. It is below ordinary opening strength and has no preemptive long suit, so pass."
         ),
         HandMatchQuestion(
             id: "hand-one-spade",
