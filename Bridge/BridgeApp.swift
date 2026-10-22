@@ -41,15 +41,15 @@ struct BridgeApp: App {
                         if RevenueCatProbe.wantsPurchase {
                             Task {
                                 await subscriptions.loadOfferings()
-                                let package = subscriptions.offerings?.current?.availablePackages.first
+                                let package = subscriptions.currentOffering?.availablePackages.first
                                 // Logged rather than asserted: when the sheet
                                 // never appears, this is what separates "no
                                 // offering" from "offering with no packages"
                                 // from "purchase threw".
                                 NSLog("RCPROBE offerings=%@ current=%@ packages=%d",
-                                      String(describing: subscriptions.offerings != nil),
-                                      subscriptions.offerings?.current?.identifier ?? "nil",
-                                      subscriptions.offerings?.current?.availablePackages.count ?? -1)
+                                      String(describing: subscriptions.currentOffering != nil),
+                                      subscriptions.currentOffering?.identifier ?? "nil",
+                                      subscriptions.currentOffering?.availablePackages.count ?? -1)
                                 do {
                                     let outcome = try await subscriptions.purchase(package)
                                     NSLog("RCPROBE purchase outcome=%@", String(describing: outcome))

@@ -82,11 +82,14 @@ enum RemoteConfig {
 }
 
 extension SubscriptionService {
-    private var remoteMetadata: [String: Any]? { offerings?.current?.metadata }
+    private var remoteMetadata: [String: Any]? { currentOffering?.metadata }
 
     var trialCTAArm: TrialCTA { TrialCTA.from(metadata: remoteMetadata) }
 
-    func trialCTA(_ surface: TrialCTA.Surface) -> String { trialCTAArm.title(surface) }
+    func trialCTA(_ surface: TrialCTA.Surface, plan: PaywallPlan? = nil) -> String {
+        let plan = plan ?? (surface == .onboarding ? .monthly : .yearly)
+        return isEligibleForIntroOffer(plan) ? trialCTAArm.title(surface) : "Subscribe Now"
+    }
 
     func isOn(_ remoteSwitch: RemoteSwitch) -> Bool { RemoteConfig.isOn(remoteSwitch, in: remoteMetadata) }
 

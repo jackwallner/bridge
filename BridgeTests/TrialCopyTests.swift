@@ -8,15 +8,15 @@ final class TrialCopyTests: XCTestCase {
     func testTermsAreTheShippedLines() {
         XCTAssertEqual(
             PaywallPricing.terms(amount: "$9.99/month", plan: .monthly),
-            "7 days free, then $9.99/month. Auto-renews until canceled."
+            "$9.99/month. Auto-renews until canceled."
         )
-        XCTAssertEqual(PaywallPricing.terms(amount: nil, plan: .yearly), "Includes 7 days free. Auto-renews until canceled.")
+        XCTAssertEqual(PaywallPricing.terms(amount: nil, plan: .yearly), "Auto-renews until canceled.")
         XCTAssertEqual(PaywallPricing.terms(amount: "$49.99", plan: .lifetime), "$49.99 one-time. Not a subscription, nothing renews.")
     }
 
     func testControlIsTheShippedButton() {
-        XCTAssertEqual(PaywallPlan.yearly.ctaTitle(), "Start 7-Day Free Trial")
-        XCTAssertEqual(PaywallPlan.monthly.ctaTitle(), "Start 7-Day Free Trial")
+        XCTAssertEqual(PaywallPlan.yearly.ctaTitle(eligibleForTrial: true), "Start 7-Day Free Trial")
+        XCTAssertEqual(PaywallPlan.monthly.ctaTitle(eligibleForTrial: true), "Start 7-Day Free Trial")
         XCTAssertFalse(PaywallPlan.lifetime.ctaTitle().contains("Trial"))
         XCTAssertEqual(TrialCTA.sevenDay.title(.onboarding), "Start 7-day free trial")
     }

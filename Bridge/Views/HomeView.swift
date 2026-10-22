@@ -102,7 +102,7 @@ struct HomeView: View {
             .onChange(of: showSettings) { _, isShowing in
                 if !isShowing { homeIsBareAgain() }
             }
-            .onChange(of: subscriptions.offerings != nil) { _, loaded in
+            .onChange(of: subscriptions.currentOffering != nil) { _, loaded in
                 // The tracking switch rides on the offering: act on it once
                 // it is known.
                 guard loaded else { return }

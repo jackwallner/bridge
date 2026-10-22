@@ -358,7 +358,7 @@ struct OnboardingView: View {
 
     private var trialPageTitle: String {
         if subscriptions.isPro { return "\(Membership.name) is on your account" }
-        return "Try \(Membership.name) free"
+        return subscriptions.isEligibleForIntroOffer(onboardingPlan) ? "Try \(Membership.name) free" : "Unlock \(Membership.name)"
     }
 
     /// The plan this tap buys: monthly. The price line and disclosure below
@@ -384,7 +384,7 @@ struct OnboardingView: View {
         // Nobody is being charged anything here, so quoting a price would be
         // a lie about the button next to it.
         if subscriptions.isPro { return "" }
-        return PaywallPricing.terms(amount: PaywallPricing.price(subscriptions, onboardingPlan), plan: onboardingPlan)
+        return PaywallPricing.terms(subscriptions, onboardingPlan)
     }
 
     /// A player who already owns \(Membership.name) is not a trial prospect.
@@ -439,7 +439,7 @@ struct OnboardingView: View {
                 }
                 .primaryCTA()
             }
-            .disabled(purchasing || restoring || (page == skillPage && skillLevel.isEmpty))
+            .disabled(purchasing || restoring || (page == skillPage && skillLevel.isEmpty) || (onTrialPage && !subscriptions.membershipResolved))
             .opacity(page == skillPage && skillLevel.isEmpty ? 0.5 : 1)
             // Legal footer slot, reserved on every page.
             if reservesTrialSlots {
