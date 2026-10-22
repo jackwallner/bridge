@@ -74,7 +74,7 @@ object HandGenerator {
 
     /** The opening call, or null when the hand is outside the six answers or a judgment call. */
     fun opening(cards: List<BridgeCard>): HandCategory? {
-        if (cards.size != 13) return null
+        if (cards.size != 13 || cards.toSet().size != 13) return null
         val shape = Shape(cards)
         val hcp = shape.highCardPoints
         // Strong hands open 2♣ or 2NT. Neither is an answer here.

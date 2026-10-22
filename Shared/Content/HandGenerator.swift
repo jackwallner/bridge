@@ -90,7 +90,7 @@ enum HandGenerator {
     /// The opening call, or nil when the hand is outside the six answers this
     /// app teaches or is a genuine judgment call.
     static func opening(for cards: [BridgeCard]) -> HandCategory? {
-        guard cards.count == 13 else { return nil }
+        guard cards.count == 13, Set(cards).count == 13 else { return nil }
         let shape = Shape(cards)
         let hcp = shape.highCardPoints
 

@@ -12081,7 +12081,7 @@
     "defense-calls" : 5,
     "defense-quiz" : 5,
     "defensive-signals" : 5,
-    "duplicate-bridge" : 3,
+    "duplicate-bridge" : 6,
     "meet-cards" : 7,
     "opening-bid" : 7,
     "opening-playbook" : 5,
@@ -13855,14 +13855,14 @@
       ],
       "choices" : [
         "4♥",
-        "3♠",
-        "5♠",
+        "3♥",
+        "6♥",
         "2♥"
       ],
       "explanation" : "Four of a major is the lowest game level, worth 120 trick points. Higher contracts also score game but need more tricks.",
       "id" : "pro-game-major",
       "isReviewable" : true,
-      "prompt" : "What is the lowest major-suit contract that earns the game bonus?",
+      "prompt" : "Which is the lowest undoubled heart contract that earns the game bonus when made?",
       "roomID" : "master-tables",
       "sourceLabel" : "The Master Tables",
       "trackingID" : "pro-game-major"
@@ -13885,6 +13885,60 @@
       "roomID" : "master-tables",
       "sourceLabel" : "The Master Tables",
       "trackingID" : "pro-vulnerability"
+    },
+    {
+      "answerIndex" : 1,
+      "cards" : [
+
+      ],
+      "choices" : [
+        "50 to the dealer",
+        "0",
+        "Play 1NT"
+      ],
+      "explanation" : "Four opening passes end the auction with no contract. The passed-out board scores zero. After a bid, double, or redouble, three consecutive passes end the auction.",
+      "id" : "rules-passed-out",
+      "isReviewable" : true,
+      "prompt" : "All four players pass before any bid. What is the duplicate board score?",
+      "roomID" : "master-tables",
+      "sourceLabel" : "The Master Tables",
+      "trackingID" : "rules-passed-out"
+    },
+    {
+      "answerIndex" : 0,
+      "cards" : [
+
+      ],
+      "choices" : [
+        "470",
+        "240",
+        "170"
+      ],
+      "explanation" : "Contract tricks score 2 × 30 × 2 = 120, enough for the 300 game bonus. Add 50 for making a doubled contract: 470. Overtricks do not decide whether the contract earns game.",
+      "id" : "rules-doubled-game",
+      "isReviewable" : true,
+      "prompt" : "You make 2♥ doubled, exactly, not vulnerable. What is your duplicate score?",
+      "roomID" : "master-tables",
+      "sourceLabel" : "The Master Tables",
+      "trackingID" : "rules-doubled-game"
+    },
+    {
+      "answerIndex" : 2,
+      "cards" : [
+
+      ],
+      "choices" : [
+        "-400",
+        "-700",
+        "-800"
+      ],
+      "explanation" : "The first undertrick costs 100, the next two 200 each, and the fourth 300: -800. Vulnerable doubled penalties are 200 for the first and 300 for each later undertrick.",
+      "id" : "rules-down-four",
+      "isReviewable" : true,
+      "prompt" : "You go down four doubled, not vulnerable. What is your duplicate score?",
+      "roomID" : "master-tables",
+      "sourceLabel" : "The Master Tables",
+      "trackingID" : "rules-down-four"
     },
     {
       "answerIndex" : 3,
@@ -14028,17 +14082,17 @@
             "cards" : [
               "CA",
               "CK",
-              "C9"
+              "CQ"
             ],
             "choices" : [
               "King of Clubs",
               "Ace of Clubs",
-              "9 of Clubs"
+              "Queen of Clubs"
             ],
-            "explanation" : "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
+            "explanation" : "The queen beats the jack. All three honors win, so spend the lowest winner and preserve the ace and king.",
             "id" : "bridge-minute-declarer-2026-02-28",
             "isReviewable" : false,
-            "prompt" : "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand? Which card do you play?",
+            "prompt" : "In notrump, you are fourth to 2♣, 10♣, J♣, played in that order. Which honor wins most cheaply? Which card do you play?",
             "roomID" : "declarer-room",
             "sourceLabel" : "Bridge Minute: Declarer Play",
             "trackingID" : "bridge-minute-declarer"
@@ -14175,17 +14229,17 @@
             "cards" : [
               "CA",
               "CK",
-              "C9"
+              "CQ"
             ],
             "choices" : [
-              "9 of Clubs",
+              "Queen of Clubs",
               "King of Clubs",
               "Ace of Clubs"
             ],
-            "explanation" : "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
+            "explanation" : "The queen beats the jack. All three honors win, so spend the lowest winner and preserve the ace and king.",
             "id" : "bridge-minute-declarer-2026-08-09",
             "isReviewable" : false,
-            "prompt" : "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand? Which card do you play?",
+            "prompt" : "In notrump, you are fourth to 2♣, 10♣, J♣, played in that order. Which honor wins most cheaply? Which card do you play?",
             "roomID" : "declarer-room",
             "sourceLabel" : "Bridge Minute: Declarer Play",
             "trackingID" : "bridge-minute-declarer"

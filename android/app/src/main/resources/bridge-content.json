@@ -36,7 +36,7 @@
       "title" : "Bid a contract"
     },
     {
-      "body" : "High-card points help describe a hand: ace 4, king 3, queen 2, jack 1. In Standard American, pass below 13 points and open one of a suit with 13 or more (a good 12 can open by the Rule of 20).",
+      "body" : "High-card points help describe a hand: ace 4, king 3, queen 2, jack 1. In SAYC, ordinary one-level opening strength is around 12 to 13 HCP, with judgment for shape and playing strength.",
       "cards" : [
         "SA",
         "HK",
@@ -49,7 +49,7 @@
       "title" : "Count your strength"
     },
     {
-      "body" : "In the winning partnership, the player who first named the contract's denomination becomes declarer. Their partner lays dummy face up after the opening lead. The other partnership defends.",
+      "body" : "On the side winning the auction, the player who first bid the final contract's denomination becomes declarer. Their partner lays dummy face up after the opening lead. The other partnership defends.",
       "cards" : [
 
       ],
@@ -439,8 +439,8 @@
           "isPlus" : false,
           "items" : [
             {
-              "backBody" : "In Standard American (SAYC), open one of a suit with 13 or more points and pass with fewer. A 12 may open by the Rule of 20: add your points to the lengths of your two longest suits, and open if the total is 20 or more.",
-              "backTitle" : "Open with 13 or more",
+              "backBody" : "In SAYC, ordinary one-level openings usually start around 12 to 13 high-card points. Shape and playing strength matter. Do not automatically pass a 12-count, and consider a weak preempt with a suitable long suit.",
+              "backTitle" : "Evaluate opening strength",
               "frontCards" : [
 
               ],
@@ -449,7 +449,7 @@
               "id" : "bid-open-or-pass"
             },
             {
-              "backBody" : "Open 1NT with 15 to 17 high-card points and a balanced hand. Balanced means no singleton or void and at most one doubleton: 4-3-3-3, 4-4-3-2 or 5-3-3-2.",
+              "backBody" : "Open 1NT with 15 to 17 high-card points and a balanced hand. The balanced shapes are 4-3-3-3, 4-4-3-2, and 5-3-3-2. A 5-4-2-2 is not balanced. SAYC permits a five-card major in a notrump opening.",
               "backTitle" : "15 to 17 HCP, balanced",
               "frontCards" : [
 
@@ -477,7 +477,7 @@
               "id" : "bid-longest-suit"
             },
             {
-              "backBody" : "After partner opens, count your points and support. In Standard American, pass with 0 to 5, respond with 6 or more, and think of 6 to 9 as minimum, 10 to 12 as an invitation to game, and 13 or more as game strength.",
+              "backBody" : "In an uncontested SAYC auction after a one-level suit opening, a new suit at the one level needs 6 or more points; a new suit at the two level needs 10 or more and is forcing for one round. Over a major, a simple raise shows 6 to 10 with support, a limit raise 10 to 12. A 1NT response shows 6 to 10 and is nonforcing. Responses to 1NT use different ranges.",
               "backTitle" : "Place your hand in a range",
               "frontCards" : [
 
@@ -965,7 +965,7 @@
               ],
               "id" : "play-win-cheaply",
               "reasoning" : "The 10♣ beats the 9♣. Save the king and ace for later tricks.",
-              "situation" : "You are declarer in notrump. West leads 4♣, dummy plays 6♣, and East plays 9♣. You play last. Which card wins most cheaply?",
+              "situation" : "In notrump, you are fourth to a trick of 4♣, 6♣, 9♣, played in that order. Which card wins most cheaply?",
               "tip" : "Win with the lowest card that does the job."
             },
             {
@@ -1556,12 +1556,12 @@
               "cards" : [
                 "CA",
                 "CK",
-                "C9"
+                "CQ"
               ],
               "id" : "pro-play-safety",
-              "reasoning" : "Play the nine. It loses at most one trick to the queen or ten, and your ace, king and jack stay in reserve. Cashing the ace or king first can leave East with queen-ten behind your jack and cost you two tricks.",
-              "situation" : "You need three club tricks from A-K-J-9 in your hand and 5-4-3 in dummy. The queen and ten could both be with East. You lead the 5♣ from dummy and East plays low. Which club do you play from your hand?",
-              "tip" : "A safety play trades the maximum result for a better chance to make the contract."
+              "reasoning" : "The queen beats the jack. All three honors win, so spend the lowest winner and preserve the ace and king.",
+              "situation" : "In notrump, you are fourth to 2♣, 10♣, J♣, played in that order. Which honor wins most cheaply?",
+              "tip" : "Choose the lowest card that is certain to win the completed trick."
             }
           ],
           "kind" : "play",
@@ -1594,13 +1594,13 @@
               ],
               "choices" : [
                 "2♥",
-                "3♠",
+                "3♥",
                 "4♥",
-                "5♠"
+                "6♥"
               ],
               "explanation" : "Four of a major is the lowest game level, worth 120 trick points. Higher contracts also score game but need more tricks.",
               "id" : "pro-game-major",
-              "prompt" : "What is the lowest major-suit contract that earns the game bonus?"
+              "prompt" : "Which is the lowest undoubled heart contract that earns the game bonus when made?"
             },
             {
               "answerIndex" : 1,
@@ -1616,6 +1616,48 @@
               "explanation" : "Vulnerability increases the game bonus and the penalties for going down.",
               "id" : "pro-vulnerability",
               "prompt" : "Vulnerability changes which two things most directly?"
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "0",
+                "50 to the dealer",
+                "Play 1NT"
+              ],
+              "explanation" : "Four opening passes end the auction with no contract. The passed-out board scores zero. After a bid, double, or redouble, three consecutive passes end the auction.",
+              "id" : "rules-passed-out",
+              "prompt" : "All four players pass before any bid. What is the duplicate board score?"
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "470",
+                "170",
+                "240"
+              ],
+              "explanation" : "Contract tricks score 2 × 30 × 2 = 120, enough for the 300 game bonus. Add 50 for making a doubled contract: 470. Overtricks do not decide whether the contract earns game.",
+              "id" : "rules-doubled-game",
+              "prompt" : "You make 2♥ doubled, exactly, not vulnerable. What is your duplicate score?"
+            },
+            {
+              "answerIndex" : 0,
+              "cards" : [
+
+              ],
+              "choices" : [
+                "-800",
+                "-700",
+                "-400"
+              ],
+              "explanation" : "The first undertrick costs 100, the next two 200 each, and the fourth 300: -800. Vulnerable doubled penalties are 200 for the first and 300 for each later undertrick.",
+              "id" : "rules-down-four",
+              "prompt" : "You go down four doubled, not vulnerable. What is your duplicate score?"
             }
           ],
           "kind" : "quiz",
