@@ -5,7 +5,7 @@ enum PaywallPlan: String, CaseIterable {
     case yearly, lifetime, monthly
 
     /// `trialTitle` is the subscription plans' button (`TrialCTA`).
-    func ctaTitle(trialTitle: String = TrialCTA.sevenDay.title(.paywall), trialEligible: Bool = true) -> String {
+    func ctaTitle(trialTitle: String = TrialCTA.sevenDay.title(.paywall), trialEligible: Bool = false) -> String {
         if self == .lifetime { return "Unlock \(Membership.name) Forever" }
         return trialEligible ? trialTitle : "Join \(Membership.name)"
     }
@@ -38,7 +38,7 @@ struct PaywallContent: View {
     @Binding var selectedPlan: PaywallPlan
     /// False once StoreKit says this Apple Account already had its free week:
     /// the cards then state the billing and promise no trial.
-    var trialEligible = true
+    var trialEligible = false
 
     var body: some View {
         VStack(spacing: 16) {
@@ -87,11 +87,11 @@ struct PaywallContent: View {
             planCard(.yearly, title: "Yearly", price: PaywallPricing.priceText(subscriptions, .yearly),
                      perMonth: PaywallPricing.perMonthEquivalent(subscriptions),
                      anchor: PaywallPricing.monthlyAnchor(subscriptions),
-                     detail: trialEligible ? "7 days free, then billed yearly. Auto-renews." : "Billed yearly. Auto-renews.",
+                     detail: PaywallPricing.planDetail(subscriptions, .yearly),
                      badge: PaywallPricing.savingsBadge(subscriptions))
             planCard(.monthly, title: "Monthly", price: PaywallPricing.priceText(subscriptions, .monthly),
                      perMonth: nil, anchor: nil,
-                     detail: trialEligible ? "7 days free, then billed monthly. Auto-renews." : "Billed monthly. Auto-renews.", badge: nil)
+                     detail: PaywallPricing.planDetail(subscriptions, .monthly), badge: nil)
             planCard(.lifetime, title: "Lifetime", price: PaywallPricing.priceText(subscriptions, .lifetime),
                      perMonth: nil, anchor: nil,
                      detail: "One payment. No subscription, nothing renews.", badge: "NO SUBSCRIPTION")
@@ -250,13 +250,22 @@ enum PaywallPricing {
 
     /// One concise point-of-purchase line: price, trial, auto-renew, cancel.
     /// The full legalese lives in the EULA behind the Terms link.
-    static func terms(_ subscriptions: SubscriptionService, _ plan: PaywallPlan, trial: Bool = true) -> String {
-        terms(amount: price(subscriptions, plan), plan: plan, trial: trial)
+    static func terms(_ subscriptions: SubscriptionService, _ plan: PaywallPlan, trial: Bool? = nil) -> String {
+        terms(amount: price(subscriptions, plan), plan: plan,
+              trial: trial ?? subscriptions.isEligibleForIntroOffer(plan))
+    }
+
+    static func planDetail(_ subscriptions: SubscriptionService, _ plan: PaywallPlan) -> String {
+        let billing = plan == .monthly ? "billed monthly" : "billed yearly"
+        if subscriptions.isEligibleForIntroOffer(plan) {
+            return "7 days free, then \(billing). Auto-renews."
+        }
+        return "\(billing.capitalized). Auto-renews."
     }
 
     /// `trial: false` is for an Apple Account that already had its free week
     /// (Apple gives one per subscription group): it is charged on day one.
-    static func terms(amount: String?, plan: PaywallPlan, trial: Bool = true) -> String {
+    static func terms(amount: String?, plan: PaywallPlan, trial: Bool = false) -> String {
         if !trial, plan != .lifetime {
             guard let amount else { return "Billed today. Auto-renews until canceled." }
             return "\(amount), billed today. Auto-renews until canceled."
@@ -295,16 +304,21 @@ struct PaywallView: View {
     @State private var priceLoadAttempted = false
     @State private var message: String?
     /// False once StoreKit says this Apple Account already had its free week.
-    @State private var trialEligible = true
+    @State private var trialEligible = false
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                PaywallContent(selectedPlan: $selectedPlan, trialEligible: trialEligible)
-                    .padding()
-                    .frame(maxWidth: 680)
-                    .frame(maxWidth: .infinity)
+                if subscriptions.isCheckingEntitlements {
+                    ProgressView("Checking membership…")
+                        .padding()
+                } else {
+                    PaywallContent(selectedPlan: $selectedPlan, trialEligible: trialEligible)
+                        .padding()
+                        .frame(maxWidth: 680)
+                        .frame(maxWidth: .infinity)
+                }
                 // At accessibility sizes a pinned footer covered most of the
                 // screen and clipped Restore, Terms and Privacy, so there it
                 // scrolls with the plans instead.
@@ -337,8 +351,15 @@ struct PaywallView: View {
             } message: {
                 Text(message ?? "")
             }
-            .onChange(of: subscriptions.isPro) { _, isPro in
+            .onChange(of: subscriptions.isPro, initial: true) { _, isPro in
                 if isPro { dismiss() }
+            }
+            .onChange(of: subscriptions.introEligibility) { _, _ in
+                Task { trialEligible = await currentTrialEligibility() }
+            }
+            .onChange(of: selectedPlan) { _, _ in
+                trialEligible = false
+                Task { trialEligible = await currentTrialEligibility() }
             }
             .task {
                 subscriptions.trackPaywallImpression(id: source)
@@ -381,7 +402,7 @@ struct PaywallView: View {
                     if purchasing || loadingPrices || (!priceLoadAttempted && !priceReady) {
                         ProgressView().tint(Theme.onFill)
                     } else {
-                        Text(selectedPlan.ctaTitle(trialTitle: subscriptions.trialCTA(.paywall), trialEligible: trialEligible))
+                        Text(selectedPlan.ctaTitle(trialTitle: subscriptions.trialCTA(.paywall, plan: selectedPlan), trialEligible: trialEligible))
                     }
                 }
                 .primaryCTA()
@@ -391,7 +412,7 @@ struct PaywallView: View {
             // then showed a generic "products unavailable" alert, which
             // reads as the app being broken rather than the store being
             // slow.
-            .disabled(purchasing || restoring || !priceReady)
+            .disabled(purchasing || restoring || !priceReady || !subscriptions.membershipResolved || subscriptions.isPro)
             .opacity(priceReady ? 1 : 0.75)
             .accessibilityHint(priceReady ? "" : "Waiting for the App Store to return prices")
             footerLinks

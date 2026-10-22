@@ -53,10 +53,9 @@ final class TrialEligibilityTests: XCTestCase {
         XCTAssertTrue(eligible)
     }
 
-    /// No product to ask about (no RevenueCat on a simulator, offerings not
-    /// loaded) keeps the shipped behaviour rather than hiding the offer.
-    func testUnknownProductReadsAsEligible() async {
+    /// Unknown products cannot establish eligibility or promise a free week.
+    func testUnknownProductDoesNotPromiseAFreeWeek() async {
         let eligible = await SubscriptionService.isTrialEligible(nil)
-        XCTAssertTrue(eligible)
+        XCTAssertFalse(eligible)
     }
 }

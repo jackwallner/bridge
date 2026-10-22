@@ -26,7 +26,7 @@ struct OnboardingView: View {
     @State private var purchaseError: String?
     /// False once StoreKit says this Apple Account already had its free week:
     /// the page then states the price billed today and promises no trial.
-    @State private var trialEligible = true
+    @State private var trialEligible = false
     @AppStorage("bridge.skillLevel") private var skillLevel = ""
 
     private enum Stage: Equatable { case pages, tour, howToPlay }
@@ -90,6 +90,10 @@ struct OnboardingView: View {
             guard page == lastPage else { return }
             await subscriptions.ensureOfferings()
             trialEligible = await subscriptions.isTrialEligible(for: onboardingPlan)
+        }
+        .onChange(of: subscriptions.introEligibility) { _, _ in
+            guard page == lastPage else { return }
+            Task { trialEligible = await subscriptions.isTrialEligible(for: onboardingPlan) }
         }
         .onChange(of: page) { _, newPage in
             // The TabView pages by swipe too, and only the Continue button is
@@ -479,7 +483,7 @@ struct OnboardingView: View {
                 }
                 .primaryCTA()
             }
-            .disabled(purchasing || restoring || (page == skillPage && skillLevel.isEmpty))
+            .disabled(purchasing || restoring || (page == skillPage && skillLevel.isEmpty) || (onTrialPage && !subscriptions.membershipResolved))
             .opacity(page == skillPage && skillLevel.isEmpty ? 0.5 : 1)
             // Legal footer slot, reserved on every page.
             if reservesTrialSlots {
