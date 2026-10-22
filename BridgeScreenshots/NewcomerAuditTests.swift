@@ -121,9 +121,10 @@ final class NewcomerAuditTests: XCTestCase {
                 logFrame("session Close", app.buttons["Close"].firstMatch)
             }
             guard answerVisibleChoice() else { break }
-            if number <= 3 { capture("22_session_q\(number)_answered") }
+            if number <= 3 || number == 7 { capture("22_session_q\(number)_answered") }
+            // Exact labels: the tour card behind the cover reads "... what you need next".
             let advance = app.buttons.matching(
-                NSPredicate(format: "label CONTAINS[c] %@ OR label CONTAINS[c] %@", "Next", "Finish")
+                NSPredicate(format: "label == %@ OR label == %@", "Next", "Finish")
             ).firstMatch
             guard advance.waitForExistence(timeout: 4) else {
                 problems.append("no Next/Finish after Q\(number)")
@@ -144,7 +145,7 @@ final class NewcomerAuditTests: XCTestCase {
 
     private func homeAfterFirstSession() {
         for label in ["Done", "Back to Home", "Close", "Finish"] {
-            let button = app.buttons.matching(NSPredicate(format: "label CONTAINS[c] %@", label)).firstMatch
+            let button = app.buttons.matching(NSPredicate(format: "label == %@", label)).firstMatch
             if button.exists {
                 button.tap()
                 settle(1.8)
