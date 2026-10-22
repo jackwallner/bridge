@@ -7,9 +7,9 @@ import Foundation
 /// and a real explanation, instead of shipping a finite pile of hand-written
 /// deals a player exhausts in two sittings.
 ///
-/// It follows the ACBL Standard American Yellow Card (SAYC): one of a suit
-/// takes 13 or more points, or 12 under the Rule of 20; 1NT is a balanced
-/// 15 to 17; the longest suit is opened first, and with equal length the
+/// It uses SAYC suit choices and the balanced 15 to 17 notrump range. For
+/// borderline openings, this trainer uses the Rule of 20 as a conservative
+/// selection guideline, not an additional SAYC agreement. With equal length the
 /// higher ranking one (4-4 in the minors opens 1♦, 3-3 opens 1♣).
 ///
 /// The classifier deliberately returns nil for anything a beginner Standard
@@ -73,7 +73,7 @@ enum HandGenerator {
             return clubs == 3 ? .clubs : .diamonds
         }
 
-        /// Points plus the two longest suits: the Rule of 20 that lets a 12 open.
+        /// Points plus the two longest suits, a hand-evaluation guideline.
         var ruleOfTwenty: Int {
             let twoLongest = sortedLengths.prefix(2).reduce(0, +)
             return highCardPoints + twoLongest
@@ -104,8 +104,8 @@ enum HandGenerator {
             return .pass
         }
 
-        // SAYC opens one of a suit with 13 or more, and a 12 only by the Rule
-        // of 20. A 12 short of that is a judgment call, so it is not graded.
+        // Conservative training selection, rather than a universal SAYC minimum.
+        // A 12 short of the Rule of 20 is not graded.
         guard hcp >= 13 || shape.ruleOfTwenty >= 20 else { return nil }
         guard !shape.isFourFourFourOne else { return nil }
 
@@ -202,7 +202,7 @@ enum HandGenerator {
 
         switch answer {
         case .pass:
-            return "\(points), \(shape.pattern). One of a suit needs 13 or more points, or 12 by the Rule of 20, and adding your two longest suits only makes \(shape.ruleOfTwenty). Pass and wait for your partner."
+            return "\(points), \(shape.pattern). With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
         case .oneNotrump:
             return "\(points) and a balanced \(shape.pattern) with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
         case .oneHeart, .oneSpade:
@@ -215,7 +215,7 @@ enum HandGenerator {
     /// Only a 12 needs the Rule of 20 spelled out; 13 or more is plain strength.
     private static func strengthNote(_ shape: Shape) -> String {
         guard shape.highCardPoints == 12 else { return "" }
-        return " Twelve points open here by the Rule of 20: points plus your two longest suits make \(shape.ruleOfTwenty), and 20 is enough."
+        return " Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make \(shape.ruleOfTwenty)."
     }
 
     private static func explainMajor(_ shape: Shape, answer: HandCategory, points: String) -> String {

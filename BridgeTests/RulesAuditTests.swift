@@ -80,7 +80,16 @@ final class RulesAuditTests: XCTestCase {
         let game = try XCTUnwrap(ProContent.duplicateQuiz.first { $0.id == "pro-game-major" })
         XCTAssertTrue(game.prompt.contains("lowest"))
         XCTAssertEqual(game.choices[game.answerIndex], "4♥")
-        let response = try XCTUnwrap(CategoryContent.openingCards.first { $0.id == "bid-response-ranges" })
-        for range in ["6 to 10", "10 to 12", "10 or more", "one round", "nonforcing"] { XCTAssertTrue(response.backBody.contains(range)) }
+        let hands = DrillLibrary.rooms.flatMap(\.drills).flatMap { drill -> [HandMatchQuestion] in
+            if case .handMatch(let questions) = drill.kind { return questions }; return []
+        }
+        for row in try reference()["teaching"] as! [[String: Any]] {
+            let id = row["id"] as! String
+            let copy = CategoryContent.openingCards.first { $0.id == id }?.backBody
+                ?? hands.first { $0.id == id }?.explanation
+            let actual = try XCTUnwrap(copy, id)
+            for text in row["includes"] as! [String] { XCTAssertTrue(actual.contains(text), "\(id): \(text)") }
+            for text in row["excludes"] as! [String] { XCTAssertFalse(actual.contains(text), "\(id): \(text)") }
+        }
     }
 }

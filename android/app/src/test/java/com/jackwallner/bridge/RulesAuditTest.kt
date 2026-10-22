@@ -10,6 +10,7 @@ import com.jackwallner.bridge.model.Suit
 import com.jackwallner.bridge.model.highCardPoints
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -80,7 +81,12 @@ class RulesAuditTest {
         assertTrue(game.prompt.contains("lowest"))
         assertEquals("4♥", game.choices[game.answerIndex])
         val cards = drills.flatMap { (it.kind as? DrillKind.Flashcards)?.cards.orEmpty() }
-        val response = cards.first { it.id == "bid-response-ranges" }
-        for (range in listOf("6 to 10", "10 to 12", "10 or more", "one round", "nonforcing")) assertTrue(response.backBody.contains(range))
+        val hands = drills.flatMap { (it.kind as? DrillKind.HandMatch)?.questions.orEmpty() }
+        for (row in reference().getJSONArray("teaching").objects()) {
+            val id = row.getString("id")
+            val copy = cards.firstOrNull { it.id == id }?.backBody ?: hands.first { it.id == id }.explanation
+            for (text in row.getJSONArray("includes").strings()) assertTrue("$id: $text", copy.contains(text))
+            for (text in row.getJSONArray("excludes").strings()) assertFalse("$id: $text", copy.contains(text))
+        }
     }
 }

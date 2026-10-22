@@ -13,7 +13,7 @@ Final integration base: `a2e0fde` (current origin/main). Some corrections listed
 | Hand evaluation | A/K/Q/J count 4/3/2/1. Ordinary openings require hand evaluation, not an automatic pass through 12 HCP. | `saycOpeningsAndTeachingCounts` |
 | SAYC opening shape | Normally five-card majors. Equal long suits: higher ranking; 3-3 minors: clubs; 4-4 minors: diamonds. | `saycOpeningsAndTeachingCounts`, existing generator tests |
 | Notrump | 1NT is 15-17 balanced. 4333, 4432 and 5332 are balanced; 5422 is not. Five-card majors are permitted. The generator deliberately omits contested examples rather than penalizing a reasonable choice. | `saycOpeningsAndTeachingCounts` |
-| Responses | Uncontested new suit: 6+ at one level, 10+ at two, forcing one round. Simple major raise: 6-10; limit raise: 10-12. 1NT response: 6-10, nonforcing. | `gradedAdviceMatchesTheDisplayedPosition` checks the actual lesson; there is no response AI |
+| Responses | Unpassed responder, uncontested nonjump new suit: 6+ at one level, 10+ at two, forcing one round. Major raise: 6-10 dummy points; limit raise: 10-11 dummy points. 1NT over a major: 6-9, nonforcing. | `gradedAdviceMatchesTheDisplayedPosition` checks the actual lesson; there is no response AI |
 | Auction | Increasing levels/strains C,D,H,S,NT. Opponents may double an undoubled bid; declaring side may redouble. New bids cancel doubles. Four opening passes give no contract; otherwise three passes end the auction. Declarer first named the final strain on the winning side. | `legalAuctionsAndPassedOutHands` |
 | Play | Follow suit, including trump. When void, any card is legal. Highest trump wins; without trump, highest led suit wins. | `followingAndTrickWinners` |
 | Duplicate score | Minor tricks 20; majors 30; first NT trick 40, later 30. Contract trick points of 100 earn game (300/500 NV/V); otherwise 50 partscore. Doubled/redoubled insult 50/100. Overtricks do not qualify a contract for game. Slams add 500/750 or 1000/1500. | `duplicateScoringTable` |
@@ -25,8 +25,9 @@ Matchpoints compare the board result with other pairs in the same direction. The
 
 | Rule/advice wrong before | After | Regression |
 | --- | --- | --- |
-| Pass with 0-12, open at 13, despite grading 12-count major openings as open. Generic responder ranges 0-7/8-9/10+. | Hand evaluation and actual SAYC context/ranges. | Opening and advice tables |
+| Pass with 0-12, open at 13, despite grading 12-count major openings as open. Generic responder ranges 0-7/8-9/10+. | Hand evaluation and the booklet's exact major-response ranges, including passed-hand and nonjump qualifications. Rule of 20 is identified as a training guideline. | Opening and advice tables |
 | `hand-one-spade`, `hand-one-heart` originally claimed 14 HCP but held 12. `plus-open-spade-six` claims 14; it has 13. | The upstream corrected 14-point holdings are preserved; explanations count their displayed cards. | Six authored opening/count rows |
+| Copy says a balanced five-card major must open 1NT; two pass explanations still require 13. | SAYC permits that NT opening; ordinary opening strength requires judgment. | Four actual teaching-copy rows on both platforms |
 | 14 HCP 5332 club hand described as insufficiently balanced for NT. | It is balanced but below the NT point range. | Authored count and balanced-shape tables |
 | The older checkout preferred a five-card major over a six-card minor. Duplicate cards were accepted as a hand. | The newer upstream longest-suit policy is preserved; physical duplicates are rejected. | Opening boundary table |
 | `pro-game-major` offers both 4H and 5S, both game contracts, but accepts only 4H. | Asks for the lowest undoubled heart game. | Actual question plus scoring table |

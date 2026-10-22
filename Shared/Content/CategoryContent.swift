@@ -20,7 +20,7 @@ enum CategoryContent {
             id: "bid-five-card-major",
             frontTitle: "Five-card majors",
             backTitle: "Show hearts or spades",
-            backBody: "With opening strength and a five-card major, open that major. The exception is a balanced 15 to 17, which Standard American (SAYC) opens 1NT even with a five-card suit. A minor of six or more cards is longer, so you open that first."
+            backBody: "With opening strength, normally open a five-card major unless a minor is longer. With a balanced 15 to 17, you may open 1NT even with a five-card major. Discuss your approach with partner."
         ),
         Flashcard(
             id: "bid-longest-suit",
@@ -32,7 +32,7 @@ enum CategoryContent {
             id: "bid-response-ranges",
             frontTitle: "Responder is captain",
             backTitle: "Place your hand in a range",
-            backBody: "In an uncontested SAYC auction after a one-level suit opening, a new suit at the one level needs 6 or more points; a new suit at the two level needs 10 or more and is forcing for one round. Over a major, a simple raise shows 6 to 10 with support, a limit raise 10 to 12. A 1NT response shows 6 to 10 and is nonforcing. Responses to 1NT use different ranges."
+            backBody: "For an unpassed responder in an uncontested SAYC auction, a nonjump new-suit response needs 6 or more points at the one level or 10 or more at the two level; either is forcing for one round. Over a major, a simple raise shows 6 to 10 dummy points with support, a limit raise 10 to 11 dummy points. A 1NT response over a major shows 6 to 9 and is nonforcing. These are response ranges, not the 15 to 17 opening 1NT range."
         ),
     ]
 
@@ -42,7 +42,7 @@ enum CategoryContent {
             cards: [.s(.queen), .s(.nine), .s(.six), .h(.king), .h(.eight), .h(.four), .d(.jack), .d(.seven), .d(.three), .c(.nine), .c(.six), .c(.four), .c(.two)],
             choices: [.pass, .oneClub, .oneDiamond, .oneNotrump],
             answer: .pass,
-            explanation: "This hand has 6 HCP: Q=2, K=3, and J=1. It is well below the 13 you need to open, so pass."
+            explanation: "This hand has 6 HCP: Q=2, K=3, and J=1. It is below ordinary opening strength and has no preemptive long suit, so pass."
         ),
         HandMatchQuestion(
             id: "hand-one-spade",

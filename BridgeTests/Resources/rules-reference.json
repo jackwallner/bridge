@@ -568,5 +568,55 @@
       ],
       "answer": "oneClub"
     }
+  ],
+  "teaching": [
+    {
+      "id": "bid-response-ranges",
+      "includes": [
+        "unpassed",
+        "nonjump",
+        "6 or more",
+        "10 or more",
+        "forcing for one round",
+        "6 to 10 dummy",
+        "10 to 11 dummy",
+        "1NT response over a major shows 6 to 9",
+        "nonforcing"
+      ],
+      "excludes": [
+        "10 to 12",
+        "1NT response shows 6 to 10"
+      ]
+    },
+    {
+      "id": "bid-five-card-major",
+      "includes": [
+        "may open 1NT",
+        "minor is longer"
+      ],
+      "excludes": [
+        "SAYC) opens 1NT"
+      ]
+    },
+    {
+      "id": "hand-pass-10",
+      "includes": [
+        "6 HCP",
+        "below ordinary opening strength"
+      ],
+      "excludes": [
+        "13 you need"
+      ]
+    },
+    {
+      "id": "more-open-pass",
+      "includes": [
+        "Six high-card points",
+        "below ordinary opening strength"
+      ],
+      "excludes": [
+        "need 13"
+      ]
+    }
   ]
 }
