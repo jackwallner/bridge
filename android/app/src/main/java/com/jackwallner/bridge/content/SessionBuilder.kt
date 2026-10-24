@@ -32,6 +32,9 @@ data class QuickItem(
  * wrong in one tap.
  */
 object SessionBuilder {
+    /** Only these authored items can be replayed by the review runner. */
+    val reviewableItemIDs: Set<String> by lazy { choicePool(true).map { it.id }.toSet() }
+
     val sessionDrill = Drill("quick-session", "Quick Session", "A short mix of what you need next", DrillKind.Flashcards(emptyList()))
     val reviewDrill = Drill("review-session", "Fix My Mistakes", "The questions you keep getting wrong", DrillKind.Flashcards(emptyList()))
     val gameNightPrepDrill = Drill("game-night-prep", "Game Night Prep", "A five-minute mix for your next table", DrillKind.Flashcards(emptyList()))

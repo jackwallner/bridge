@@ -5,6 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.jackwallner.bridge.content.DrillLibrary
 import com.jackwallner.bridge.content.PracticeSkill
+import com.jackwallner.bridge.content.SessionBuilder
 import org.json.JSONObject
 
 /** One item's answering history and its next review date. Times are epoch millis. */
@@ -116,7 +117,7 @@ class PracticeRecordStore(private val defaults: KeyValueStore, private val clock
 
     private fun dueRecords(): Map<String, PracticeRecord> {
         val now = clock.millis()
-        return records.filter { (id, record) -> record.needsReview && record.isDue(now) && PracticeSkill.fromRaw(id) == null }
+        return records.filter { (id, record) -> record.needsReview && record.isDue(now) && id in SessionBuilder.reviewableItemIDs }
     }
 
     data class RoomStat(val id: String, val name: String, val attempts: Int, val correct: Int) {

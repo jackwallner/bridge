@@ -10,17 +10,29 @@ import androidx.browser.customtabs.CustomTabsIntent
 import androidx.compose.runtime.staticCompositionLocalOf
 import com.jackwallner.bridge.AppGraph
 import com.jackwallner.bridge.data.StoreLinks
+import com.jackwallner.bridge.ui.nav.Route
 
 val LocalGraph = staticCompositionLocalOf<AppGraph> { error("No app graph") }
 
 /** App-wide presentations any screen can ask for; the root owns the sheets. */
 interface AppActions {
-    fun openPaywall(source: String)
+    fun openPaywall(source: String, destination: Route? = null)
     fun openFeedback()
     fun openWhatsNew()
 
     /** A finished drill: count the positive moment and maybe show Play's review card. */
     fun positiveMoment()
+}
+
+/** A locked action is consumed once, after the paywall has closed. */
+class UpgradeIntent<Destination> {
+    var destination: Destination? = null
+
+    fun consume(isMember: Boolean): Destination? {
+        val result = if (isMember) destination else null
+        destination = null
+        return result
+    }
 }
 
 val LocalAppActions = staticCompositionLocalOf<AppActions> { error("No app actions") }

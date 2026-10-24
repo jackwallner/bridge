@@ -4,10 +4,25 @@ import UserNotifications
 
 enum AppDestination: Hashable {
     case gameNightPrepSession
+    case endlessPicker
+    case bridgeMinute
+    case gameNightPrep
+    case timedChallenge
+    case review
 
     /// Free destinations open for everyone; the rest wait behind the paywall.
     /// Phase 2's challenge is the first free one.
     var isFree: Bool { false }
+}
+
+/// A locked action survives the paywall, then is consumed once on dismissal.
+struct UpgradeIntent<Destination> {
+    var destination: Destination?
+
+    mutating func consume(isMember: Bool) -> Destination? {
+        defer { destination = nil }
+        return isMember ? destination : nil
+    }
 }
 
 enum AppNotification {

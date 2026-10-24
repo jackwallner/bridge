@@ -1,3 +1,5 @@
+import SwiftUI
+import UIKit
 import XCTest
 @testable import Bridge
 
@@ -19,6 +21,82 @@ final class PracticeRecordStoreTests: XCTestCase {
     }
 
     private let room = "card-room"
+    private var reviewIDs: [String] { SessionBuilder.reviewableItemIDs.sorted() }
+
+    private var unsupportedIDs: [String] {
+        DrillLibrary.rooms.flatMap { $0.drills }.flatMap { drill -> [String] in
+            switch drill.kind {
+            case .play(let scenarios): return scenarios.map(\.id)
+            case .flashcards(let cards): return cards.filter { $0.choice == nil }.map(\.id)
+            default: return []
+            }
+        }
+    }
+
+    func testUnsupportedAndStaleMistakesDoNotCountOrQueueAfterReload() throws {
+        let ids = unsupportedIDs + ["removed-question"]
+        XCTAssertFalse(unsupportedIDs.isEmpty)
+        // Legacy rows had no suppression flag, even for unservable items.
+        let legacy = Dictionary(uniqueKeysWithValues: ids.map {
+            ($0, PracticeRecord(attempts: 1, roomID: room))
+        })
+        defaults.set(try JSONEncoder().encode(legacy), forKey: "practice.records")
+        let reloaded = PracticeRecordStore(defaults: defaults)
+        XCTAssertEqual(reloaded.dueCount, 0)
+        XCTAssertTrue(reloaded.reviewQueue().isEmpty)
+        XCTAssertEqual(reloaded.totalAttempts, ids.count, "Keep accuracy history")
+    }
+
+    func testUnsupportedMistakesCannotFillTheQueueAheadOfPlayableItems() {
+        for id in unsupportedIDs + (0..<12).map({ "removed-\($0)" }) {
+            store.record(itemID: id, roomID: room, correct: false, now: .distantPast)
+        }
+        for id in reviewIDs.prefix(13) {
+            store.record(itemID: id, roomID: room, correct: false)
+        }
+        XCTAssertEqual(store.dueCount, 13)
+        let queue = store.reviewQueue()
+        XCTAssertEqual(queue.count, 12)
+        XCTAssertEqual(SessionBuilder.reviewSession(ids: queue, includePro: true).map(\.id), queue)
+    }
+
+    func testEmptyReviewDoesNotRecordACompletedSession() async throws {
+        try await assertSessionCount(PracticeRunView(mode: .review, items: []))
+    }
+
+    func testEmptyCompletionDoesNotRecordACompletedSession() async throws {
+        try await assertSessionCount(
+            DrillCompleteView(drill: SessionBuilder.reviewDrill, score: 0, total: 0)
+        )
+    }
+
+    func testNonemptyCompletionStillRecordsACompletedSession() async throws {
+        try await assertSessionCount(
+            DrillCompleteView(drill: SessionBuilder.reviewDrill, score: 1, total: 1),
+            expected: 1
+        )
+    }
+
+    private func assertSessionCount<Content: View>(_ content: Content, expected: Int = 0) async throws {
+        let progress = ProgressStore(defaults: defaults)
+        let subscriptions = SubscriptionService(defaults: defaults)
+        var appeared = false
+        let controller = UIHostingController(rootView: content
+            .environmentObject(progress)
+            .environmentObject(subscriptions)
+            .onAppear { appeared = true })
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = controller
+        window.makeKeyAndVisible()
+        defer {
+            window.isHidden = true
+            window.rootViewController = nil
+        }
+        try await Task.sleep(for: .milliseconds(200))
+        XCTAssertTrue(appeared, "The hosted view must appear to exercise completion recording")
+        XCTAssertEqual(progress.totalSessions, expected)
+        XCTAssertEqual(progress.completions(for: SessionBuilder.reviewDrill.id), expected)
+    }
 
     func testRecordsAccuracy() {
         store.record(itemID: "q1", roomID: room, correct: true)
@@ -33,24 +111,24 @@ final class PracticeRecordStoreTests: XCTestCase {
     /// the second condition an item would either nag forever or vanish on the
     /// first lucky guess.
     func testMissedItemEntersAndLeavesTheQueue() {
-        store.record(itemID: "q1", roomID: room, correct: false)
-        XCTAssertEqual(store.reviewQueue(), ["q1"])
+        store.record(itemID: reviewIDs[0], roomID: room, correct: false)
+        XCTAssertEqual(store.reviewQueue(), [reviewIDs[0]])
 
-        store.record(itemID: "q1", roomID: room, correct: true)
+        store.record(itemID: reviewIDs[0], roomID: room, correct: true)
         XCTAssertEqual(store.reviewQueue(), [], "One correct answer schedules it a day out")
 
-        store.record(itemID: "q1", roomID: room, correct: true)
-        XCTAssertFalse(store.records["q1"]!.needsReview, "Two in a row retires it")
+        store.record(itemID: reviewIDs[0], roomID: room, correct: true)
+        XCTAssertFalse(store.records[reviewIDs[0]]!.needsReview, "Two in a row retires it")
     }
 
     func testQueueRanksWorstFirst() {
         // q1: 1 of 3. q2: 2 of 3. Both due, q1 should lead.
         for correct in [false, false, false] {
-            store.record(itemID: "q1", roomID: room, correct: correct)
+            store.record(itemID: reviewIDs[0], roomID: room, correct: correct)
         }
-        store.record(itemID: "q2", roomID: room, correct: true)
-        store.record(itemID: "q2", roomID: room, correct: false)
-        XCTAssertEqual(store.reviewQueue().first, "q1")
+        store.record(itemID: reviewIDs[1], roomID: room, correct: true)
+        store.record(itemID: reviewIDs[1], roomID: room, correct: false)
+        XCTAssertEqual(store.reviewQueue().first, reviewIDs[0])
     }
 
     /// Generated items mint a new id per question. They must roll up onto one

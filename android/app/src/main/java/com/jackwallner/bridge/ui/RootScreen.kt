@@ -60,7 +60,7 @@ fun RootScreen(graph: AppGraph, pendingRoute: String?, onRouteConsumed: () -> Un
     var paywallSource by remember { mutableStateOf<String?>(null) }
     var showWhatsNew by remember { mutableStateOf(false) }
     var showFeedback by remember { mutableStateOf(false) }
-    var prepAfterUpgrade by remember { mutableStateOf(false) }
+    val pendingAfterUpgrade = remember { UpgradeIntent<Route>() }
     var pendingGrant by remember { mutableStateOf<(() -> Unit)?>(null) }
     val isPro = graph.subscriptions.isPro
 
@@ -80,7 +80,8 @@ fun RootScreen(graph: AppGraph, pendingRoute: String?, onRouteConsumed: () -> Un
 
     val actions = remember(graph) {
         object : AppActions {
-            override fun openPaywall(source: String) {
+            override fun openPaywall(source: String, destination: Route?) {
+                pendingAfterUpgrade.destination = destination
                 paywallSource = source
             }
 
@@ -127,15 +128,12 @@ fun RootScreen(graph: AppGraph, pendingRoute: String?, onRouteConsumed: () -> Un
             navigator.popToRoot()
             navigator.push(Route.Session(gameNightPrepItems(graph), SessionPurpose.GameNightPrep))
         } else {
-            prepAfterUpgrade = true
+            pendingAfterUpgrade.destination = Route.Session(gameNightPrepItems(graph), SessionPurpose.GameNightPrep)
             paywallSource = "bridge_home_sheet"
         }
     }
     LaunchedEffect(isPro, membershipResolved) {
-        if (isPro && prepAfterUpgrade) {
-            prepAfterUpgrade = false
-            navigator.push(Route.Session(gameNightPrepItems(graph), SessionPurpose.GameNightPrep))
-        } else if (!isPro && membershipResolved && graph.settings.gameNightReminderEnabled) {
+        if (!isPro && membershipResolved && graph.settings.gameNightReminderEnabled) {
             // Only on a customer record that says "not a member". Every launch
             // starts with isPro false, and switching the reminder off then
             // cancelled a paid member's alarm on a slow or offline start.
@@ -175,7 +173,13 @@ fun RootScreen(graph: AppGraph, pendingRoute: String?, onRouteConsumed: () -> Un
                 }
             }
         }
-        BridgeSheet(paywallSource != null, onDismiss = { paywallSource = null; prepAfterUpgrade = false }) {
+        BridgeSheet(
+            paywallSource != null,
+            onDismiss = { paywallSource = null },
+            onClosed = {
+                pendingAfterUpgrade.consume(graph.subscriptions.isPro)?.let { navigator.push(it) }
+            },
+        ) {
             PaywallSheet(paywallSource ?: "bridge_paywall_sheet", onClose = { paywallSource = null })
         }
         BridgeSheet(showWhatsNew, onDismiss = { graph.whatsNew.markSeen(); showWhatsNew = false }) {

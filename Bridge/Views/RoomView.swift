@@ -9,6 +9,9 @@ struct RoomView: View {
     @EnvironmentObject private var subscriptions: SubscriptionService
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var showPaywall = false
+    @State private var pendingAfterUpgrade = UpgradeIntent<String>()
+    @State private var unlockedDrill: Drill?
+    @State private var showUnlockedDrill = false
 
     private var roomLocked: Bool { !room.isFree && !subscriptions.isPro }
     private var lockedCount: Int {
@@ -43,7 +46,17 @@ struct RoomView: View {
         .background(Theme.background)
         .navigationTitle(room.name)
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showPaywall) { PaywallView(source: "bridge_room_sheet") }
+        .sheet(isPresented: $showPaywall, onDismiss: finishUpgrade) { PaywallView(source: "bridge_room_sheet") }
+        .navigationDestination(isPresented: $showUnlockedDrill) {
+            if let unlockedDrill { destination(unlockedDrill) }
+        }
+    }
+
+    private func finishUpgrade() {
+        guard let id = pendingAfterUpgrade.consume(isMember: subscriptions.isPro),
+              let drill = room.drills.first(where: { $0.id == id }) else { return }
+        unlockedDrill = drill
+        showUnlockedDrill = true
     }
 
     private var header: some View {
@@ -80,6 +93,7 @@ struct RoomView: View {
         let locked = room.isLocked(drill, isMember: subscriptions.isPro)
         if locked {
             Button {
+                pendingAfterUpgrade.destination = drill.id
                 showPaywall = true
             } label: {
                 drillRowBody(drill, locked: true)

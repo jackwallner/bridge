@@ -90,7 +90,7 @@ fun RoomScreen(roomId: String) {
                 room.drills.forEach { drill ->
                     val locked = room.isLocked(drill, isPro)
                     DrillRow(room, drill, locked, done = graph.progress.completions(drill.id) > 0) {
-                        if (locked) actions.openPaywall("bridge_room_sheet")
+                        if (locked) actions.openPaywall("bridge_room_sheet", Route.Drill(room.id, drill.id))
                         else navigator.push(Route.Drill(room.id, drill.id))
                     }
                 }

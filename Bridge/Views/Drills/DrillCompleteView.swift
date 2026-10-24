@@ -73,7 +73,7 @@ struct DrillCompleteView: View {
         .onAppear {
             celebrate = true
             confettiTrigger += 1
-            guard !recorded else { return }
+            guard !recorded, total > 0 else { return }
             recorded = true
             Haptics.success()
             SoundPlayer.play(.complete)

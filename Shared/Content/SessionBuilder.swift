@@ -54,6 +54,9 @@ struct QuickItem: Identifiable, Sendable {
 /// they aren't right/wrong in one tap and don't belong in a uniform choice flow.
 enum SessionBuilder {
 
+    /// Only these authored items can be replayed by the review runner.
+    static let reviewableItemIDs = Set(choicePool(includePro: true).map(\.id))
+
     static let sessionDrill = Drill(
         id: "quick-session",
         title: "Quick Session",

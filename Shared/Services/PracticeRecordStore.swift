@@ -130,8 +130,7 @@ final class PracticeRecordStore: ObservableObject {
     /// accuracy, then longest overdue, so the questions a player keeps getting
     /// wrong surface before the ones they nearly have.
     func reviewQueue(limit: Int = 12) -> [String] {
-        records
-            .filter { $0.value.needsReview && $0.value.isDue && PracticeSkill(rawValue: $0.key) == nil }
+        dueRecords
             .sorted { lhs, rhs in
                 if lhs.value.accuracy != rhs.value.accuracy { return lhs.value.accuracy < rhs.value.accuracy }
                 return lhs.value.dueDate < rhs.value.dueDate
@@ -142,7 +141,14 @@ final class PracticeRecordStore: ObservableObject {
 
     /// How many items are waiting, for the Home card's badge.
     var dueCount: Int {
-        records.filter { $0.value.needsReview && $0.value.isDue && PracticeSkill(rawValue: $0.key) == nil }.count
+        dueRecords.count
+    }
+
+    /// Filter before limiting, including records saved by earlier releases.
+    private var dueRecords: [String: PracticeRecord] {
+        records.filter {
+            $0.value.needsReview && $0.value.isDue && SessionBuilder.reviewableItemIDs.contains($0.key)
+        }
     }
 
     // MARK: - Stats

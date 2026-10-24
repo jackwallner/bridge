@@ -130,7 +130,7 @@ fun HomeScreen() {
             if (skillLevel == "new" && !graph.defaults.getBoolean(HAS_READ_PRIMER)) {
                 HowToPlayCard { navigator.push(Route.HowToPlay) }
             }
-            TrainingSection(isPro, onLocked = { actions.openPaywall("bridge_home_sheet") })
+            TrainingSection(isPro, onLocked = { actions.openPaywall("bridge_home_sheet", it) })
             Row(Modifier.padding(top = 6.dp, start = 4.dp)) { Eyebrow("THE ROOMS") }
             DrillLibrary.rooms.forEach { room ->
                 // Count only the drills this player can open, so a free player's ring can close.
@@ -252,7 +252,7 @@ private fun HowToPlayCard(onClick: () -> Unit) {
 
 /** The cross-cutting practice modes in one scrolling row of compact cards. */
 @Composable
-private fun TrainingSection(isPro: Boolean, onLocked: () -> Unit) {
+private fun TrainingSection(isPro: Boolean, onLocked: (Route) -> Unit) {
     val graph = LocalGraph.current
     val navigator = LocalNavigator.current
     val colors = BridgeUI.colors
@@ -264,32 +264,29 @@ private fun TrainingSection(isPro: Boolean, onLocked: () -> Unit) {
             horizontalArrangement = Arrangement.spacedBy(10.dp),
         ) {
             TrainingTile("Endless\nPractice", "infinity", colors.jade, null, locked = !isPro, tag = "tile-endless") {
-                if (isPro) navigator.push(Route.EndlessPicker) else onLocked()
+                if (isPro) navigator.push(Route.EndlessPicker) else onLocked(Route.EndlessPicker)
             }
             val minute = graph.minutes.result(graph.clock.today())
             TrainingTile(
                 "Bridge\nMinute", "calendar.badge.clock", colors.coral,
                 minute?.let { "${it.score}/${it.total} today" } ?: "Daily", locked = !isPro, tag = "tile-minute",
-            ) { if (isPro) navigator.push(Route.BridgeMinute) else onLocked() }
+            ) { if (isPro) navigator.push(Route.BridgeMinute) else onLocked(Route.BridgeMinute) }
             TrainingTile(
                 "Game Night\nPrep", "person.2.fill", colors.plum,
                 if (graph.settings.gameNightReminderEnabled) graph.settings.gameNightDay.displayName else "Weekly",
                 locked = !isPro, tag = "tile-game-night",
-            ) { if (isPro) navigator.push(Route.GameNightPrep) else onLocked() }
+            ) { if (isPro) navigator.push(Route.GameNightPrep) else onLocked(Route.GameNightPrep) }
             TrainingTile(
                 "Timed\nChallenge", "timer", colors.coral,
                 if (records.bestChallengeScore > 0) "Best ${records.bestChallengeScore}" else null, locked = !isPro, tag = "tile-timed",
-            ) { if (isPro) navigator.push(Route.Practice(PracticeMode.Timed)) else onLocked() }
+            ) { if (isPro) navigator.push(Route.Practice(PracticeMode.Timed)) else onLocked(Route.Practice(PracticeMode.Timed)) }
             // Only offered when there is something to fix: an empty review is a dead end.
             val due = records.dueCount
             if (due > 0) {
                 TrainingTile("Fix My\nMistakes", "arrow.trianglehead.counterclockwise", colors.plum, "$due due", locked = !isPro, tag = "tile-review") {
-                    if (!isPro) {
-                        onLocked()
-                    } else {
-                        val items = SessionBuilder.reviewSession(records.reviewQueue(), isPro)
-                        navigator.push(Route.Practice(PracticeMode.Review, items))
-                    }
+                    val items = SessionBuilder.reviewSession(records.reviewQueue(), includePro = true)
+                    val destination = Route.Practice(PracticeMode.Review, items)
+                    if (isPro) navigator.push(destination) else onLocked(destination)
                 }
             }
         }

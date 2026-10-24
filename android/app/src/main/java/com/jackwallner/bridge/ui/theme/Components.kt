@@ -313,9 +313,13 @@ fun navBarPadding(extra: Dp = 24.dp): PaddingValues =
  */
 @OptIn(androidx.compose.ui.ExperimentalComposeUiApi::class)
 @Composable
-fun BridgeSheet(visible: Boolean, onDismiss: () -> Unit, content: @Composable () -> Unit) {
+fun BridgeSheet(visible: Boolean, onDismiss: () -> Unit, onClosed: () -> Unit = {}, content: @Composable () -> Unit) {
     val state = remember { MutableTransitionState(false) }
     state.targetState = visible
+    val closed = rememberUpdatedState(onClosed)
+    LaunchedEffect(state.currentState, state.targetState, state.isIdle) {
+        if (!state.currentState && !state.targetState && state.isIdle) closed.value()
+    }
     if (!state.currentState && !state.targetState && state.isIdle) return
     val dismiss = rememberUpdatedState(onDismiss)
     val colors = BridgeUI.colors

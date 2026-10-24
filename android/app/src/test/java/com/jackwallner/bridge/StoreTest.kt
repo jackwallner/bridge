@@ -4,6 +4,8 @@ import com.jackwallner.bridge.content.BridgeContent
 import com.jackwallner.bridge.content.BridgeMinuteContent
 import com.jackwallner.bridge.content.DrillLibrary
 import com.jackwallner.bridge.content.PracticeSkill
+import com.jackwallner.bridge.content.SessionBuilder
+import com.jackwallner.bridge.model.DrillKind
 import com.jackwallner.bridge.data.AppClock
 import com.jackwallner.bridge.data.ConversionDiagnostics
 import com.jackwallner.bridge.data.BridgeMinuteStore
@@ -13,6 +15,10 @@ import com.jackwallner.bridge.data.ProgressStore
 import com.jackwallner.bridge.data.ReviewAccess
 import com.jackwallner.bridge.data.ReviewPromptTracker
 import com.jackwallner.bridge.data.WhatsNewTracker
+import com.jackwallner.bridge.ui.UpgradeIntent
+import com.jackwallner.bridge.ui.nav.PracticeMode
+import com.jackwallner.bridge.ui.nav.Route
+import com.jackwallner.bridge.ui.nav.SessionPurpose
 import java.security.MessageDigest
 import java.time.Clock
 import java.time.Instant
@@ -28,9 +34,69 @@ class StoreTest {
     private val defaults = InMemoryStore()
     private val clock = AppClock(Clock.fixed(Instant.parse("2026-10-16T12:00:00Z"), ZoneOffset.UTC))
     private val room = "card-room"
+    private val reviewIDs get() = SessionBuilder.reviewableItemIDs.sorted()
+    private val unsupportedIDs get() = DrillLibrary.rooms.flatMap { it.drills }.flatMap {
+        when (val kind = it.kind) {
+            is DrillKind.Play -> kind.scenarios.map { it.id }
+            is DrillKind.Flashcards -> kind.cards.filter { it.choice == null }.map { it.id }
+            else -> emptyList()
+        }
+    }
+
+    @Test
+    fun unsupportedAndStaleMistakesDoNotCountOrQueueAfterReload() {
+        val ids = unsupportedIDs + "removed-question"
+        assertTrue(unsupportedIDs.isNotEmpty())
+        val store = PracticeRecordStore(defaults, clock)
+        ids.forEach { store.record(it, room, correct = false) }
+        val reloaded = PracticeRecordStore(defaults, clock)
+        assertEquals(0, reloaded.dueCount)
+        assertTrue(reloaded.reviewQueue().isEmpty())
+        assertEquals(ids.size, reloaded.totalAttempts)
+    }
+
+    @Test
+    fun unsupportedMistakesCannotFillTheQueueAheadOfPlayableItems() {
+        val store = PracticeRecordStore(defaults, clock)
+        (unsupportedIDs + (0 until 12).map { "removed-$it" }).forEach { store.record(it, room, correct = false) }
+        advanceDays(1)
+        reviewIDs.take(13).forEach { store.record(it, room, correct = false) }
+        assertEquals(13, store.dueCount)
+        val queue = store.reviewQueue()
+        assertEquals(12, queue.size)
+        assertEquals(queue, SessionBuilder.reviewSession(queue, true).map { it.id })
+    }
 
     private fun advanceDays(days: Long) {
         clock.clock = Clock.offset(clock.clock, java.time.Duration.ofDays(days))
+    }
+
+    @Test
+    fun purchasedActionsAreConsumedOnce() {
+        val destinations = listOf(
+            Route.EndlessPicker, Route.BridgeMinute, Route.GameNightPrep,
+            Route.Practice(PracticeMode.Timed), Route.Practice(PracticeMode.Review),
+            Route.Session(emptyList(), SessionPurpose.GameNightPrep), Route.Drill("chosen-room", "chosen-drill"),
+        )
+        for (destination in destinations) {
+            val intent = UpgradeIntent<Route>()
+            intent.destination = destination
+            assertEquals(destination, intent.consume(isMember = true))
+            assertEquals(null, intent.consume(isMember = true))
+        }
+    }
+
+    @Test
+    fun cancelledActionDoesNotOpenAfterALaterUpgrade() {
+        val intent = UpgradeIntent<Route>()
+        intent.destination = Route.Drill("chosen-room", "chosen-drill")
+        assertEquals(null, intent.consume(isMember = false))
+        assertEquals(null, intent.consume(isMember = true))
+    }
+
+    @Test
+    fun genericUpgradeDoesNotInventADestination() {
+        assertEquals(null, UpgradeIntent<Route>().consume(isMember = true))
     }
 
     // MARK: - ProgressStoreTests
@@ -106,17 +172,17 @@ class StoreTest {
     @Test
     fun missedItemEntersAndLeavesTheQueueWorstFirst() {
         val store = PracticeRecordStore(defaults, clock)
-        store.record("q1", room, correct = false)
-        assertEquals(listOf("q1"), store.reviewQueue())
-        store.record("q1", room, correct = true)
+        store.record(reviewIDs[0], room, correct = false)
+        assertEquals(listOf(reviewIDs[0]), store.reviewQueue())
+        store.record(reviewIDs[0], room, correct = true)
         assertEquals("One correct answer schedules it a day out", emptyList<String>(), store.reviewQueue())
-        store.record("q1", room, correct = true)
-        assertFalse("Two in a row retires it", store.records.getValue("q1").needsReview)
+        store.record(reviewIDs[0], room, correct = true)
+        assertFalse("Two in a row retires it", store.records.getValue(reviewIDs[0]).needsReview)
 
-        repeat(3) { store.record("q2", room, correct = false) }
-        store.record("q3", room, correct = true)
-        store.record("q3", room, correct = false)
-        assertEquals("q2", store.reviewQueue().first())
+        repeat(3) { store.record(reviewIDs[1], room, correct = false) }
+        store.record(reviewIDs[2], room, correct = true)
+        store.record(reviewIDs[2], room, correct = false)
+        assertEquals(reviewIDs[1], store.reviewQueue().first())
     }
 
     @Test

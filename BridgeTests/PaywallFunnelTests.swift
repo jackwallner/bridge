@@ -339,3 +339,36 @@ final class PurchaseEntitlementTests: XCTestCase {
     }
 
 }
+
+final class UpgradeIntentTests: XCTestCase {
+    func testPurchasedTrainingActionIsConsumedOnce() {
+        let destinations: [AppDestination] = [
+            .endlessPicker, .bridgeMinute, .gameNightPrep, .timedChallenge, .review, .gameNightPrepSession
+        ]
+        for destination in destinations {
+            var intent = UpgradeIntent<AppDestination>()
+            intent.destination = destination
+            XCTAssertEqual(intent.consume(isMember: true), destination)
+            XCTAssertNil(intent.consume(isMember: true))
+        }
+    }
+
+    func testCancelledDrillDoesNotOpenAfterALaterUpgrade() {
+        var intent = UpgradeIntent<String>()
+        intent.destination = "chosen-drill"
+        XCTAssertNil(intent.consume(isMember: false))
+        XCTAssertNil(intent.consume(isMember: true))
+    }
+
+    func testPurchasedDrillPreservesTheChoice() {
+        var intent = UpgradeIntent<String>()
+        intent.destination = "chosen-drill"
+        XCTAssertEqual(intent.consume(isMember: true), "chosen-drill")
+        XCTAssertNil(intent.destination)
+    }
+
+    func testGenericUpgradeDoesNotInventADestination() {
+        var intent = UpgradeIntent<AppDestination>()
+        XCTAssertNil(intent.consume(isMember: true))
+    }
+}

@@ -70,7 +70,15 @@ struct PracticeRunView: View {
     }
 
     var body: some View {
-        if finished || items.isEmpty {
+        if items.isEmpty {
+            ContentUnavailableView {
+                Label("Nothing due", systemImage: "checkmark.circle")
+            } actions: {
+                Button("Done") { dismiss() }
+            }
+            .background(Theme.background)
+            .navigationTitle(title)
+        } else if finished {
             DrillCompleteView(drill: completedDrill, score: score, total: gradedTotal)
         } else {
             runBody

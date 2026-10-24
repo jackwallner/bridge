@@ -31,7 +31,7 @@ struct HomeView: View {
     /// False while a room, drill or deep-linked screen is pushed over Home.
     /// Room links are view-based, so `path` alone cannot tell.
     @State private var homeOnScreen = false
-    @State private var pendingAfterUpgrade: AppDestination?
+    @State private var pendingAfterUpgrade = UpgradeIntent<AppDestination>()
     @State private var highlightedRoomID: String?
     @AppStorage("bridge.skillLevel") private var skillLevel = ""
     /// Set once the primer has been read all the way through. After that it
@@ -82,6 +82,19 @@ struct HomeView: View {
                 switch destination {
                 case .gameNightPrepSession:
                     QuickSessionView(gameNightPrep: gameNightPrepItems)
+                case .endlessPicker:
+                    EndlessPickerView()
+                case .bridgeMinute:
+                    BridgeMinuteView()
+                case .gameNightPrep:
+                    GameNightPrepView()
+                case .timedChallenge:
+                    PracticeRunView(mode: .timed)
+                case .review:
+                    PracticeRunView(
+                        mode: .review,
+                        items: SessionBuilder.reviewSession(ids: records.reviewQueue(), includePro: subscriptions.isPro)
+                    )
                 }
             }
             #if DEBUG
@@ -89,7 +102,7 @@ struct HomeView: View {
                 DuoScreenshotMode.destination($0, progress: progress, subscriptions: subscriptions)
             }
             #endif
-            .sheet(isPresented: $showPaywall) { PaywallView(source: "bridge_home_sheet") }
+            .sheet(isPresented: $showPaywall, onDismiss: finishUpgrade) { PaywallView(source: "bridge_home_sheet") }
             .sheet(isPresented: $showSettings) { SettingsView() }
             .sheet(isPresented: $showWhatsNew) {
                 if let release = WhatsNew.currentRelease {
@@ -123,19 +136,12 @@ struct HomeView: View {
             .onChange(of: subscriptions.isPro) { _, _ in recordMastery() }
             .onChange(of: subscriptions.isPro) { _, isMember in
                 if isMember {
-                    if let pendingAfterUpgrade {
-                        self.pendingAfterUpgrade = nil
-                        path = [pendingAfterUpgrade]
-                    } else {
+                    if !showPaywall, pendingAfterUpgrade.destination == nil {
                         consumePendingDestination()
                     }
                 } else if settings.gameNightReminderEnabled {
                     settings.gameNightReminderEnabled = false
                 }
-            }
-            .onChange(of: showPaywall) { _, isShowing in
-                if !isShowing, !subscriptions.isPro { pendingAfterUpgrade = nil }
-                if !isShowing { homeIsBareAgain() }
             }
         }
         .tint(Theme.jade)
@@ -250,6 +256,14 @@ struct HomeView: View {
         )
     }
 
+    private func finishUpgrade() {
+        if let destination = pendingAfterUpgrade.consume(isMember: subscriptions.isPro) {
+            path = [destination]
+        } else {
+            homeIsBareAgain()
+        }
+    }
+
     private func consumePendingDestination() {
         // A member opening a notification cold has isPro false until the
         // customer record loads; wait for it rather than sell them a paywall.
@@ -266,7 +280,7 @@ struct HomeView: View {
         }
         guard let destination = router.consumePendingDestination() else { return }
         guard destination.isFree || subscriptions.isPro else {
-            pendingAfterUpgrade = destination
+            pendingAfterUpgrade.destination = destination
             showPaywall = true
             return
         }
@@ -553,34 +567,30 @@ struct HomeView: View {
             title: "Endless\nPractice",
             icon: "infinity",
             color: Theme.jade,
-            badge: nil
-        ) {
-            EndlessPickerView()
-        }
+            badge: nil,
+            destination: .endlessPicker
+        )
         trainingTile(
             title: "Bridge\nMinute",
             icon: "calendar.badge.clock",
             color: Theme.coral,
-            badge: minuteStore.result(for: Date()).map { "\($0.score)/\($0.total) today" } ?? "Daily"
-        ) {
-            BridgeMinuteView()
-        }
+            badge: minuteStore.result(for: Date()).map { "\($0.score)/\($0.total) today" } ?? "Daily",
+            destination: .bridgeMinute
+        )
         trainingTile(
             title: "Game Night\nPrep",
             icon: "person.2.fill",
             color: Theme.plum,
-            badge: settings.gameNightReminderEnabled ? settings.gameNightDay.displayName : "Weekly"
-        ) {
-            GameNightPrepView()
-        }
+            badge: settings.gameNightReminderEnabled ? settings.gameNightDay.displayName : "Weekly",
+            destination: .gameNightPrep
+        )
         trainingTile(
             title: "Timed\nChallenge",
             icon: "timer",
             color: Theme.coral,
-            badge: records.bestChallengeScore > 0 ? "Best \(records.bestChallengeScore)" : nil
-        ) {
-            PracticeRunView(mode: .timed)
-        }
+            badge: records.bestChallengeScore > 0 ? "Best \(records.bestChallengeScore)" : nil,
+            destination: .timedChallenge
+        )
         // Only offered when there is something to fix. An empty review
         // session is a dead end dressed up as a feature.
         if records.dueCount > 0 {
@@ -588,38 +598,34 @@ struct HomeView: View {
                 title: "Fix My\nMistakes",
                 icon: "arrow.trianglehead.counterclockwise",
                 color: Theme.plum,
-                badge: "\(records.dueCount) due"
-            ) {
-                PracticeRunView(
-                    mode: .review,
-                    items: SessionBuilder.reviewSession(
-                        ids: records.reviewQueue(),
-                        includePro: subscriptions.isPro
-                    )
-                )
-            }
+                badge: "\(records.dueCount) due",
+                destination: .review
+            )
         }
     }
 
     /// A compact training tile. Locked for free players: tapping opens the
     /// paywall instead of the mode, and the tile says so before it is tapped.
     @ViewBuilder
-    private func trainingTile<Destination: View>(
+    private func trainingTile(
         title: String,
         icon: String,
         color: Color,
         badge: String?,
-        @ViewBuilder destination: @escaping () -> Destination
+        destination: AppDestination
     ) -> some View {
         let locked = !subscriptions.isPro
         if locked {
-            Button { showPaywall = true } label: {
+            Button {
+                pendingAfterUpgrade.destination = destination
+                showPaywall = true
+            } label: {
                 trainingTileLabel(title: title, icon: icon, color: color, badge: badge, locked: true)
             }
             .buttonStyle(PressableCardStyle())
             .accessibilityHint("Included with \(Membership.name)")
         } else {
-            NavigationLink { destination() } label: {
+            NavigationLink(value: destination) {
                 trainingTileLabel(title: title, icon: icon, color: color, badge: badge, locked: false)
             }
             .buttonStyle(PressableCardStyle())

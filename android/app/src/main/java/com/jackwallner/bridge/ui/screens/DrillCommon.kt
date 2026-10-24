@@ -77,7 +77,7 @@ fun DrillCompleteScreen(drill: Drill, score: Int?, total: Int, onDone: () -> Uni
     LaunchedEffect(Unit) {
         celebrate = true
         confetti += 1
-        if (recorded) return@LaunchedEffect
+        if (recorded || total <= 0) return@LaunchedEffect
         recorded = true
         Haptics.success()
         SoundPlayer.play(SoundPlayer.Effect.COMPLETE)

@@ -6,6 +6,7 @@ import androidx.compose.ui.test.hasTestTag
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createEmptyComposeRule
 import androidx.compose.ui.test.onNodeWithTag
+import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.test.core.app.ActivityScenario
@@ -129,6 +130,47 @@ class AppFlowTest {
         waitFor("Restore")
         waitFor("Terms of Use")
         waitFor("Privacy Policy")
+    }
+
+    private fun confirmMembership() {
+        scenario!!.onActivity {
+            (it.application as BridgeApplication).graph.subscriptions.forceProForDebug(true)
+        }
+        compose.waitForIdle()
+    }
+
+    @Test
+    fun unlockedModeOpensAfterThePaywallCloses() {
+        launch(onboarded = true)
+        tag("tile-endless")
+        waitFor("Get Bridge+")
+        confirmMembership()
+        waitFor("skill-openings")
+        compose.onNodeWithText("Restore").assertDoesNotExist()
+    }
+
+    @Test
+    fun unlockedDrillOpensAfterThePaywallCloses() {
+        launch(onboarded = true)
+        tag("room-defense-room")
+        tag("drill-plus-defense-extras")
+        waitFor("Get Bridge+")
+        confirmMembership()
+        waitFor("card-choice-0")
+        compose.onNodeWithText("Defense: Extra Reps").assertExists()
+        compose.onNodeWithText("Restore").assertDoesNotExist()
+    }
+
+    @Test
+    fun cancelledModeDoesNotOpenWhenMembershipChangesLater() {
+        launch(onboarded = true)
+        tag("tile-endless")
+        waitFor("Get Bridge+")
+        compose.onNodeWithText("Close").performClick()
+        compose.waitForIdle()
+        confirmMembership()
+        waitFor("tile-endless")
+        compose.onNodeWithTag("skill-openings").assertDoesNotExist()
     }
 
     @Test
