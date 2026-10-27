@@ -19,6 +19,7 @@ Condensed from the deep notes below; the reasoning behind each one lives there.
 - The trial flow (onboarding trial page, paywall, purchase to tour) is structurally Mahj 1.3.2; only the button wording varies, through RevenueCat offering metadata (`TrialCTA`). Prices are always read live from StoreKit. Any other change needs Jack's go-ahead.
 - No Meta SDK and no tracking prompt (Jack 2026-10-21: Meta only in Mahj for now).
 - The daily declarer question is built from the authored `PlayScenario`s, never through `SessionBuilder.choiceItems`.
+- The app ships in 11 languages. New user-facing copy, including authored questions, needs a `Bridge/Localizable.xcstrings` entry translated into all of them (`.claude/rules/localization.md`).
 
 ## Architecture
 
@@ -50,4 +51,5 @@ These files load automatically when you read a file matching their `paths:`. Age
 | `.claude/rules/feedback-and-retention.md` | Feedback sink, churn question, weekly gain ledger, ratings policy, what was not ported | `FeedbackService`, `ReviewPromptSheet`, `MasteryLedger`, `Mastery`, `ReviewRequest` |
 | `.claude/rules/meta-ads.md` | No Meta SDK (removed), remote switches and `TrialCTA` | `RemoteConfig`, adding Meta or tracking |
 | `.claude/rules/membership-and-trial.md` | Trial flow, 3.1.2(c) price line, membership state, fit at every size, What's New mechanics | `SubscriptionService`, onboarding, paywall, primer, tour |
+| `.claude/rules/localization.md` | UI localization: the two string catalogs, content lookup by English text, plural and fragment rules, how to add copy, screenshot launch args | Any user-facing copy, `Localizable.xcstrings`, `Shared/Content`, `LocalizationTests` |
 | `.claude/rules/android.md` | Android port: package, Play products and prices, RevenueCat IDs, content export and parity, signing, Pro emulator, store assets, Play state | Anything in `android/`, `docs/android-*.html`, the Play scripts |

@@ -19,7 +19,7 @@ struct OnboardingView: View {
     @EnvironmentObject private var progress: ProgressStore
     @EnvironmentObject private var subscriptions: SubscriptionService
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    @State private var page = 0
+    @State private var page = Self.debugStartPage
     @State private var purchasing = false
     @State private var restoring = false
     @State private var showPaywallFallback = false
@@ -34,6 +34,16 @@ struct OnboardingView: View {
 
     private let lastPage = 4
     private let skillPage = 3
+
+    /// DEBUG only: `-bridge.onboardingPage 4` opens on that page, so the skill
+    /// and trial pages can be captured in every language without swiping.
+    private static var debugStartPage: Int {
+        #if DEBUG
+        UserDefaults.standard.integer(forKey: "bridge.onboardingPage")
+        #else
+        0
+        #endif
+    }
 
     var body: some View {
         Group {
@@ -58,20 +68,20 @@ struct OnboardingView: View {
             TabView(selection: $page) {
                 infoPage(
                     icon: "suit.spade.fill",
-                    title: "Make it stick between games",
-                    body: "Bridge fades fast between games. Bridge Trainer gives you five-minute drills you can run anywhere, whether you are meeting the deck or sharpening instincts you already have.",
+                    title: String(localized: "Make it stick between games"),
+                    body: String(localized: "Bridge fades fast between games. Bridge Trainer gives you five-minute drills you can run anywhere, whether you are meeting the deck or sharpening instincts you already have."),
                     cards: [.s(.ace), .h(.king), .d(.queen), .c(.jack)]
                 ).tag(0).accessibilityHidden(page != 0)
                 infoPage(
                     icon: "rectangle.stack.fill",
-                    title: "Practice, not pressure",
-                    body: "Swipe through flashcards, count points, choose opening bids, and make card-play decisions, with the why behind every answer.",
+                    title: String(localized: "Practice, not pressure"),
+                    body: String(localized: "Swipe through flashcards, count points, choose opening bids, and make card-play decisions, with the why behind every answer."),
                     cards: [.s(.ace), .s(.king), .s(.queen), .s(.jack)]
                 ).tag(1).accessibilityHidden(page != 1)
                 infoPage(
                     icon: "figure.walk",
-                    title: "Walk in confident",
-                    body: "Read an opening hand, plan a contract, and defend with purpose. Practice at your own pace, with no opponents and no pressure.",
+                    title: String(localized: "Walk in confident"),
+                    body: String(localized: "Read an opening hand, plan a contract, and defend with purpose. Practice at your own pace, with no opponents and no pressure."),
                     cards: [.h(.ace), .d(.ace), .c(.ace)]
                 ).tag(2).accessibilityHidden(page != 2)
                 skillLevelPage.tag(3).accessibilityHidden(page != 3)
@@ -206,9 +216,9 @@ struct OnboardingView: View {
     }
 
     private let skillOptions: [SkillOption] = [
-        SkillOption(id: "new", title: "Brand new", detail: "Still learning what the cards even are"),
-        SkillOption(id: "basics", title: "Know the basics", detail: "Know tricks and points, still slow in the auction"),
-        SkillOption(id: "played", title: "Played real games", detail: "Comfortable, want sharper instincts"),
+        SkillOption(id: "new", title: String(localized: "Brand new"), detail: String(localized: "Still learning what the cards even are")),
+        SkillOption(id: "basics", title: String(localized: "Know the basics"), detail: String(localized: "Know tricks and points, still slow in the auction")),
+        SkillOption(id: "played", title: String(localized: "Played real games"), detail: String(localized: "Comfortable, want sharper instincts")),
     ]
 
     /// Full page as in 1.3.2. On an iPhone SE it overflowed by a card's last
@@ -257,7 +267,7 @@ struct OnboardingView: View {
                     skillCard(option)
                 }
             }
-            Text(skillLevel.isEmpty ? "Pick one to continue." : " ")
+            Text(skillLevel.isEmpty ? String(localized: "Pick one to continue.") : " ")
                 .font(.footnote)
                 .foregroundStyle(Theme.inkSecondary)
         }
@@ -374,11 +384,11 @@ struct OnboardingView: View {
     }
 
     private static let trialBenefitLines = [
-        "Every beginner room is free, forever",
-        "Bridge Minute and a personalized Game Night Prep",
-        "Endless Practice deals a fresh hand every time",
-        "Fix My Mistakes brings back what you miss",
-        "Extra sets in all four rooms, plus the Master Tables",
+        String(localized: "Every beginner room is free, forever"),
+        String(localized: "Bridge Minute and a personalized Game Night Prep"),
+        String(localized: "Endless Practice deals a fresh hand every time"),
+        String(localized: "Fix My Mistakes brings back what you miss"),
+        String(localized: "Extra sets in all four rooms, plus the Master Tables"),
     ]
 
     private var trialBenefits: some View {
@@ -400,8 +410,8 @@ struct OnboardingView: View {
     }
 
     private var trialPageTitle: String {
-        if subscriptions.isPro { return "\(Membership.name) is on your account" }
-        return trialEligible ? "Try \(Membership.name) free" : "Get \(Membership.name) today"
+        if subscriptions.isPro { return String(localized: "\(Membership.name) is on your account") }
+        return trialEligible ? String(localized: "Try \(Membership.name) free") : String(localized: "Get \(Membership.name) today")
     }
 
     /// The plan this tap buys: monthly. The price line and disclosure below
@@ -438,8 +448,8 @@ struct OnboardingView: View {
     /// they already hold, which Apple answers with its own confusing
     /// "you're already subscribed" sheet. Recognise them and just let them in.
     private var trialCTATitle: String {
-        if subscriptions.isPro { return "Continue" }
-        return trialEligible ? subscriptions.trialCTA(.onboarding) : "Join \(Membership.name)"
+        if subscriptions.isPro { return String(localized: "Continue") }
+        return trialEligible ? subscriptions.trialCTA(.onboarding) : String(localized: "Join \(Membership.name)")
     }
 
     // MARK: - Footer (identical geometry on every page: zero-shift CTA)
@@ -478,7 +488,7 @@ struct OnboardingView: View {
                     if purchasing || restoring {
                         ProgressView().tint(Theme.onFill)
                     } else {
-                        Text(onTrialPage ? trialCTATitle : "Continue")
+                        Text(onTrialPage ? trialCTATitle : String(localized: "Continue"))
                     }
                 }
                 .primaryCTA()
@@ -620,7 +630,7 @@ struct OnboardingView: View {
                     if await subscriptions.confirmEntitlement() {
                         startTour()
                     } else {
-                        purchaseError = "Your purchase went through, but \(Membership.name) hasn't unlocked yet. Give it a moment, then tap Restore."
+                        purchaseError = String(localized: "Your purchase went through, but \(Membership.name) hasn't unlocked yet. Give it a moment, then tap Restore.")
                     }
                 case .cancelled:
                     break // They said no to Apple, not to the app. Stay put.
@@ -641,7 +651,7 @@ struct OnboardingView: View {
                 if subscriptions.isPro {
                     startTour()
                 } else {
-                    purchaseError = "No previous purchase found on this Apple Account."
+                    purchaseError = String(localized: "No previous purchase found on this Apple Account.")
                 }
             } catch {
                 purchaseError = error.localizedDescription

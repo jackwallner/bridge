@@ -12,7 +12,14 @@ enum Suit: String, Codable, CaseIterable, Sendable {
         }
     }
 
-    var displayName: String { rawValue.capitalized }
+    var displayName: String {
+        switch self {
+        case .clubs: return String(localized: "Clubs")
+        case .diamonds: return String(localized: "Diamonds")
+        case .hearts: return String(localized: "Hearts")
+        case .spades: return String(localized: "Spades")
+        }
+    }
     var isMajor: Bool { self == .hearts || self == .spades }
 
     var sortOrder: Int {
@@ -34,10 +41,10 @@ enum Rank: String, Codable, CaseIterable, Sendable {
 
     var spokenName: String {
         switch self {
-        case .jack: return "Jack"
-        case .queen: return "Queen"
-        case .king: return "King"
-        case .ace: return "Ace"
+        case .jack: return String(localized: "Jack")
+        case .queen: return String(localized: "Queen")
+        case .king: return String(localized: "King")
+        case .ace: return String(localized: "Ace")
         default: return rawValue
         }
     }
@@ -68,7 +75,15 @@ struct BridgeCard: Hashable, Codable, Sendable {
     static func s(_ rank: Rank) -> BridgeCard { BridgeCard(rank, .spades) }
 
     var shortLabel: String { "\(rank.rawValue)\(suit.symbol)" }
-    var spokenName: String { "\(rank.spokenName) of \(suit.displayName)" }
+    var spokenName: String {
+        let rank = rank.spokenName
+        switch suit {
+        case .clubs: return String(localized: "\(rank) of Clubs")
+        case .diamonds: return String(localized: "\(rank) of Diamonds")
+        case .hearts: return String(localized: "\(rank) of Hearts")
+        case .spades: return String(localized: "\(rank) of Spades")
+        }
+    }
     var highCardPoints: Int { rank.highCardPoints }
 
     var sortKey: Int {

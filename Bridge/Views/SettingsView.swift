@@ -152,8 +152,8 @@ struct SettingsView: View {
                     do {
                         try await subscriptions.restore()
                         restoreMessage = subscriptions.isPro
-                            ? "\(Membership.name) restored!"
-                            : "No previous purchase found on this Apple Account."
+                            ? String(localized: "\(Membership.name) restored!")
+                            : String(localized: "No previous purchase found on this Apple Account.")
                     } catch {
                         restoreMessage = error.localizedDescription
                     }

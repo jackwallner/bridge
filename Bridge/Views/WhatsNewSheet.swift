@@ -123,7 +123,7 @@ struct WhatsNewSheet: View {
             Button {
                 close()
             } label: {
-                Text(lockedItems.isEmpty ? "Start practicing" : "Keep practicing free")
+                Text(lockedItems.isEmpty ? String(localized: "Start practicing") : String(localized: "Keep practicing free"))
                     .font(.headline)
                     .foregroundStyle(lockedItems.isEmpty ? Theme.onFill : Theme.inkSecondary)
                     .multilineTextAlignment(.center)

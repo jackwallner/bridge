@@ -198,61 +198,75 @@ enum HandGenerator {
     static func explain(_ cards: [BridgeCard], answer: HandCategory) -> String {
         let shape = Shape(cards)
         let hcp = shape.highCardPoints
-        let points = "\(hcp) high-card point\(hcp == 1 ? "" : "s")"
+        let pattern = shape.pattern
 
         switch answer {
         case .pass:
-            return "\(points), \(shape.pattern). With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass."
+            return hcp == 1
+                ? String(localized: "1 high-card point, \(pattern). With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.")
+                : String(localized: "\(hcp) high-card points, \(pattern). With 13 or more points an ordinary one-level opening is routine. Borderline hands need judgment, and this hand has neither the strength nor a long suit for an opening. Pass.")
         case .oneNotrump:
-            return "\(points) and a balanced \(shape.pattern) with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
+            return String(localized: "\(hcp) high-card points and a balanced \(pattern) with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call.")
         case .oneHeart, .oneSpade:
-            return explainMajor(shape, answer: answer, points: points)
+            return sentences(explainMajor(shape, answer: answer))
         case .oneClub, .oneDiamond:
-            return explainMinor(shape, answer: answer, points: points)
+            return sentences(explainMinor(shape, answer: answer))
         }
+    }
+
+    /// Each part is a whole localized sentence. Japanese and Chinese run
+    /// sentences together without a space.
+    private static func sentences(_ parts: [String]) -> String {
+        let language = Bundle.main.preferredLocalizations.first ?? "en"
+        let separator = language.hasPrefix("ja") || language.hasPrefix("zh") ? "" : " "
+        return parts.joined(separator: separator)
     }
 
     /// Only a 12 needs the Rule of 20 spelled out; 13 or more is plain strength.
-    private static func strengthNote(_ shape: Shape) -> String {
-        guard shape.highCardPoints == 12 else { return "" }
-        return " Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make \(shape.ruleOfTwenty)."
+    private static func strengthNote(_ shape: Shape) -> [String] {
+        guard shape.highCardPoints == 12 else { return [] }
+        return [String(localized: "Twelve points with this shape meet the Rule of 20 guideline: points plus your two longest suits make \(shape.ruleOfTwenty).")]
     }
 
-    private static func explainMajor(_ shape: Shape, answer: HandCategory, points: String) -> String {
+    private static func explainMajor(_ shape: Shape, answer: HandCategory) -> [String] {
+        let hcp = shape.highCardPoints
         let suit: Suit = answer == .oneSpade ? .spades : .hearts
         let length = shape.length(suit)
-        var line = "\(points) with \(length) \(suit.displayName.lowercased())."
-        line += strengthNote(shape)
-        line += " Open your longest suit, a five-card major: \(answer.displayName)."
+        var lines = [suit == .spades
+            ? String(localized: "\(hcp) high-card points with \(length) spades.")
+            : String(localized: "\(hcp) high-card points with \(length) hearts.")]
+        lines += strengthNote(shape)
+        lines.append(String(localized: "Open your longest suit, a five-card major: \(answer.displayName)."))
         let spades = shape.length(.spades)
         let hearts = shape.length(.hearts)
         if spades >= 5 && hearts >= 5 {
-            line += spades == hearts
-                ? " Holding the same length in both majors, start with the higher ranking suit."
-                : " Holding both majors, start with the longer one."
+            lines.append(spades == hearts
+                ? String(localized: "Holding the same length in both majors, start with the higher ranking suit.")
+                : String(localized: "Holding both majors, start with the longer one."))
         } else if shape.longestMinorLength == length {
-            line += " With a minor of the same length, start with the higher ranking suit."
+            lines.append(String(localized: "With a minor of the same length, start with the higher ranking suit."))
         }
-        return line
+        return lines
     }
 
-    private static func explainMinor(_ shape: Shape, answer: HandCategory, points: String) -> String {
-        var line = "\(points), \(shape.pattern)"
+    private static func explainMinor(_ shape: Shape, answer: HandCategory) -> [String] {
+        let hcp = shape.highCardPoints
+        let pattern = shape.pattern
         if shape.hasFiveCardMajor {
-            line += ". Your minor is longer than your five-card major, and Standard American opens the longest suit first, so open \(answer.displayName)."
-            return line + strengthNote(shape) + " Show the major on your next bid."
+            return [String(localized: "\(hcp) high-card points, \(pattern). Your minor is longer than your five-card major, and Standard American opens the longest suit first, so open \(answer.displayName).")]
+                + strengthNote(shape)
+                + [String(localized: "Show the major on your next bid.")]
         }
-        line += ", no five-card major"
-        if shape.isBalanced && (15...17).contains(shape.highCardPoints) == false {
-            line += " and outside the 15 to 17 notrump range"
-        }
-        line += "." + strengthNote(shape)
-        line += " Open your longer minor: \(answer.displayName)."
+        var lines = [shape.isBalanced && (15...17).contains(hcp) == false
+            ? String(localized: "\(hcp) high-card points, \(pattern), no five-card major and outside the 15 to 17 notrump range.")
+            : String(localized: "\(hcp) high-card points, \(pattern), no five-card major.")]
+        lines += strengthNote(shape)
+        lines.append(String(localized: "Open your longer minor: \(answer.displayName)."))
         if shape.length(.clubs) == shape.length(.diamonds) {
-            line += shape.length(.clubs) == 3
-                ? " With three of each minor the convention is the short club."
-                : " With equal length in the minors, open the higher ranking one."
+            lines.append(shape.length(.clubs) == 3
+                ? String(localized: "With three of each minor the convention is the short club.")
+                : String(localized: "With equal length in the minors, open the higher ranking one."))
         }
-        return line
+        return lines
     }
 }

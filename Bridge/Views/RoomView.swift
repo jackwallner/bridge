@@ -139,7 +139,7 @@ struct RoomView: View {
                     .foregroundStyle(Theme.inkSecondary)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
-                Text("\(drill.kind.itemCount) \(drill.kind.unitName)")
+                Text(drill.kind.countLabel)
                     .font(.caption)
                     .foregroundStyle(Theme.inkTertiary)
             }
@@ -173,7 +173,7 @@ struct RoomView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "sparkles")
                         .foregroundStyle(Theme.gold)
-                    Text("\(lockedCount) more \(lockedCount == 1 ? "drill" : "drills") in this room")
+                    Text("\(lockedCount) more drills in this room")
                         .font(.subheadline.weight(.semibold))
                         .foregroundStyle(Theme.ink)
                     Spacer(minLength: 0)

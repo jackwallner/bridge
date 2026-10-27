@@ -195,7 +195,7 @@ enum SessionBuilder {
                         let answerIndex = question.choices.firstIndex(of: question.answer) ?? 0
                         return QuickItem(
                             id: question.id,
-                            prompt: "What is the best opening call?",
+                            prompt: String(localized: "What is the best opening call?"),
                             cards: question.cards.racked,
                             choices: labels,
                             answerIndex: answerIndex,

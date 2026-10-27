@@ -11,10 +11,10 @@ struct HowToPlayPage: Identifiable, Sendable {
     init(id: String, icon: String, title: String, body: String, cards: [BridgeCard] = [], tip: String? = nil) {
         self.id = id
         self.icon = icon
-        self.title = title
-        self.body = body
+        self.title = title.localizedContent
+        self.body = body.localizedContent
         self.cards = cards
-        self.tip = tip
+        self.tip = tip?.localizedContent
     }
 }
 
