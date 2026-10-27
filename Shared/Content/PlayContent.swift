@@ -19,14 +19,14 @@ enum PlayContent {
             frontTitle: "Lose one to win three",
             frontCards: [.s(.king), .s(.queen), .s(.jack), .s(.ten)],
             backTitle: "Establish a long suit",
-            backBody: "The ace may take the first round, but your remaining honors can become winners. Giving up one trick can create several later."
+            backBody: "The opponents' ace may take the first round, but your remaining honors can become winners. Giving up one trick can create several later."
         ),
         Flashcard(
             id: "play-finesse",
             frontTitle: "What is a finesse?",
             frontCards: [.h(.ace), .h(.queen)],
             backTitle: "Play for a missing honor to be well placed",
-            backBody: "Lead toward the A-Q and play the queen when the lower hand follows low. It wins when the missing king is before the A-Q hand."
+            backBody: "Lead toward the A-Q. If the opponent in front of it plays low, play the queen. It wins when the missing king is on the left of the A-Q hand."
         ),
         Flashcard(
             id: "play-second-hand-low",
@@ -47,7 +47,7 @@ enum PlayContent {
         ),
         PlayScenario(
             id: "play-win-cheaply",
-            situation: "In notrump, partner leads 4♣. Dummy plays 6♣ and declarer plays 9♣. Which card wins most cheaply?",
+            situation: "You are declarer in notrump. West leads 4♣, dummy plays 6♣, and East plays 9♣. You are last to play. Which card wins the trick most cheaply?",
             cards: [.c(.ten), .c(.king), .c(.ace)],
             answerIndex: 0,
             reasoning: "The 10♣ beats the 9♣. Save the king and ace for later tricks.",
@@ -71,10 +71,10 @@ enum PlayContent {
         ),
         PlayScenario(
             id: "play-discard",
-            situation: "Clubs are led in notrump and you have no clubs. Which card are you allowed to play?",
-            cards: [.s(.two), .h(.four), .d(.six)],
-            answerIndex: 0,
-            reasoning: "Any card is legal when you cannot follow suit. The 2♠ is a sensible low discard.",
+            situation: "Clubs are led in notrump and you have none, so any card is legal. You need your ace of spades and king of diamonds to win tricks later. Which card is the sensible discard?",
+            cards: [.s(.ace), .h(.four), .d(.king)],
+            answerIndex: 1,
+            reasoning: "Throw the 4♥. It is the one card you do not need, while the ace and king are tricks waiting to be taken.",
             tip: "A discard cannot win unless it is trump, and notrump has no trump suit."
         ),
     ]

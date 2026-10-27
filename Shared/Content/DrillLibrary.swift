@@ -58,7 +58,7 @@ enum DrillLibrary {
             isFree: false,
             drills: [
                 Drill(id: "competitive-bidding", title: "Competitive Bidding", subtitle: "Doubles, preempts, Stayman, and transfers", kind: .quiz(ProContent.competitiveBidding)),
-                Drill(id: "advanced-play", title: "Advanced Card Play", subtitle: "Finesses, hold-ups, and safety plays", kind: .play(ProContent.advancedPlay)),
+                Drill(id: "advanced-play", title: "Advanced Card Play", subtitle: "Finesses and hold-ups", kind: .play(ProContent.advancedPlay)),
                 Drill(id: "duplicate-bridge", title: "Duplicate Decisions", subtitle: "Game levels, vulnerability, and matchpoints", kind: .quiz(ProContent.duplicateQuiz)),
                 Drill(id: "defensive-signals", title: "Defensive Signals", subtitle: "Attitude, count, suit preference, and the uppercut", kind: .quiz(MoreContent.defensiveSignals)),
             ]

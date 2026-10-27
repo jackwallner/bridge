@@ -129,4 +129,27 @@ final class ContentValidityTests: XCTestCase {
             XCTAssertTrue(item.choices.indices.contains(item.answerIndex))
         }
     }
+
+    /// An explanation that states a point count has to state the real one.
+    /// `hand-one-spade` and two others shipped claiming 14 for a 12 or 13
+    /// count; a player who adds the hand up and gets a different number stops
+    /// trusting every other line.
+    func testHandExplanationsStateTheRealPointCount() throws {
+        let words = ["six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12,
+                     "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17]
+        let pattern = try NSRegularExpression(
+            pattern: #"(?i)\b(\d+|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen)\s+(HCP|high-card points?|points)"#)
+        var checked = 0
+        for question in allHandMatch {
+            let text = question.explanation
+            let range = NSRange(text.startIndex..., in: text)
+            guard let match = pattern.firstMatch(in: text, range: range),
+                  let numberRange = Range(match.range(at: 1), in: text) else { continue }
+            let token = String(text[numberRange]).lowercased()
+            let claimed = Int(token) ?? words[token] ?? -1
+            XCTAssertEqual(claimed, question.cards.highCardPoints, "\(question.id) explains \(claimed) points")
+            checked += 1
+        }
+        XCTAssertGreaterThan(checked, 8)
+    }
 }

@@ -80,3 +80,53 @@ extension Array where Element == BridgeCard {
     var racked: [BridgeCard] { sorted { $0.sortKey < $1.sortKey } }
     var highCardPoints: Int { reduce(0) { $0 + $1.highCardPoints } }
 }
+
+extension Rank {
+    /// The one-character form used in compact hand strings ("T" is the ten).
+    var handCharacter: Character {
+        self == .ten ? "T" : Character(rawValue)
+    }
+
+    init?(handCharacter: Character) {
+        if handCharacter == "T" { self = .ten; return }
+        guard let rank = Rank(rawValue: String(handCharacter)) else { return nil }
+        self = rank
+    }
+}
+
+extension BridgeCard {
+    /// A hand written the way bridge players write it: suits in order spades,
+    /// hearts, diamonds, clubs, separated by spaces, "T" for the ten and "-"
+    /// for a void. "AKJ52 Q84 K6 T93" is a 13-card hand. Authored challenge
+    /// content is written this way so a reader can check it against the page.
+    /// Returns nil for anything malformed, so a typo fails a test instead of
+    /// dealing a broken hand.
+    static func parseHand(_ text: String) -> [BridgeCard]? {
+        let parts = text.split(separator: " ", omittingEmptySubsequences: true)
+        guard parts.count == 4 else { return nil }
+        var cards: [BridgeCard] = []
+        for (part, suit) in zip(parts, [Suit.spades, .hearts, .diamonds, .clubs]) {
+            guard part != "-" else { continue }
+            for character in part {
+                guard let rank = Rank(handCharacter: character) else { return nil }
+                cards.append(BridgeCard(rank, suit))
+            }
+        }
+        return Set(cards).count == cards.count ? cards : nil
+    }
+
+    /// The reverse of `parseHand`, for explanations and test messages.
+    static func handString(_ cards: [BridgeCard]) -> String {
+        Suit.allCases.sorted { $0.sortOrder < $1.sortOrder }.map { suit in
+            let held = cards.filter { $0.suit == suit }.sorted { $0.rank.sortOrder > $1.rank.sortOrder }
+            return held.isEmpty ? "-" : String(held.map(\.rank.handCharacter))
+        }.joined(separator: " ")
+    }
+}
+
+extension Array where Element == BridgeCard {
+    /// Cards of one suit, highest first.
+    func cards(in suit: Suit) -> [BridgeCard] {
+        filter { $0.suit == suit }.sorted { $0.rank.sortOrder > $1.rank.sortOrder }
+    }
+}

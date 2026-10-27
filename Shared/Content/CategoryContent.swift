@@ -7,7 +7,7 @@ enum CategoryContent {
             frontTitle: "Open or pass?",
             frontSubtitle: "Count your high-card points first",
             backTitle: "Start around 13 points",
-            backBody: "In this beginner framework, pass with 0 to 12 total points and open with 13 or more. Distribution can change close decisions as you improve."
+            backBody: "In this beginner framework, open with 13 or more high-card points and pass with 10 or fewer. A hand of 11 or 12 is a judgment call that many tables open, so the practice hands leave it out."
         ),
         Flashcard(
             id: "bid-one-notrump",
@@ -32,7 +32,7 @@ enum CategoryContent {
             id: "bid-response-ranges",
             frontTitle: "Responder is captain",
             backTitle: "Place your hand in a range",
-            backBody: "After partner opens, count your points and support. A beginner framework groups responses as 0 to 7, 8 to 9, and 10 or more points."
+            backBody: "After partner opens, count your points and your support. Pass with 5 or fewer. With 6 to 9 make a minimum response, with 10 to 12 invite game, and with 13 or more you are strong enough for game."
         ),
     ]
 
@@ -46,17 +46,17 @@ enum CategoryContent {
         ),
         HandMatchQuestion(
             id: "hand-one-spade",
-            cards: [.s(.ace), .s(.king), .s(.ten), .s(.seven), .s(.three), .h(.queen), .h(.eight), .h(.four), .d(.king), .d(.six), .c(.nine), .c(.five), .c(.two)],
+            cards: [.s(.ace), .s(.king), .s(.ten), .s(.seven), .s(.three), .h(.ace), .h(.eight), .h(.four), .d(.king), .d(.six), .c(.nine), .c(.five), .c(.two)],
             choices: [.pass, .oneHeart, .oneSpade, .oneNotrump],
             answer: .oneSpade,
-            explanation: "This hand has 14 HCP and five spades. Open the five-card major, 1♠."
+            explanation: "This hand has 14 HCP and five spades. That is below the 15 to 17 notrump range, so open the five-card major, 1♠."
         ),
         HandMatchQuestion(
             id: "hand-one-heart",
-            cards: [.s(.king), .s(.seven), .s(.two), .h(.ace), .h(.queen), .h(.ten), .h(.six), .h(.three), .d(.king), .d(.eight), .d(.four), .c(.seven), .c(.three)],
+            cards: [.s(.king), .s(.seven), .s(.two), .h(.ace), .h(.queen), .h(.ten), .h(.six), .h(.three), .d(.king), .d(.queen), .d(.four), .c(.seven), .c(.three)],
             choices: [.pass, .oneHeart, .oneSpade, .oneNotrump],
             answer: .oneHeart,
-            explanation: "With 14 HCP and five hearts, open 1♥."
+            explanation: "This hand has 14 HCP and five hearts, below the 15 to 17 notrump range. Open the five-card major, 1♥."
         ),
         HandMatchQuestion(
             id: "hand-one-nt-16",

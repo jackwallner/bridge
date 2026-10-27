@@ -38,14 +38,14 @@ enum PlusContent {
             cards: [.s(.ace), .s(.king), .s(.jack), .s(.eight), .s(.five), .s(.two), .h(.queen), .h(.six), .d(.king), .d(.seven), .d(.three), .c(.eight), .c(.four)],
             choices: [.pass, .oneHeart, .oneSpade, .oneNotrump],
             answer: .oneSpade,
-            explanation: "Six spades and 14 HCP make 1♠ the clear opening."
+            explanation: "Six spades and 13 HCP make 1♠ the clear opening."
         ),
         HandMatchQuestion(
             id: "plus-open-club",
             cards: [.s(.ace), .s(.nine), .s(.four), .h(.king), .h(.seven), .h(.three), .d(.queen), .d(.six), .c(.ace), .c(.jack), .c(.eight), .c(.five), .c(.two)],
             choices: [.oneClub, .oneDiamond, .oneHeart, .oneNotrump],
             answer: .oneClub,
-            explanation: "This hand has opening strength, five clubs, and no five-card major. It is not balanced enough for 1NT, so open 1♣."
+            explanation: "This hand has 14 HCP, five clubs, and no five-card major. A balanced hand needs 15 to 17 for 1NT, so open your longer minor, 1♣."
         ),
         HandMatchQuestion(
             id: "plus-open-heart",
@@ -67,18 +67,18 @@ enum PlusContent {
         ),
         PlayScenario(
             id: "plus-play-low-second",
-            situation: "Declarer leads 4♣ from hand. You play second with these clubs and dummy has A-J behind you. What is the usual play?",
-            cards: [.c(.king), .c(.eight), .c(.two)],
-            answerIndex: 2,
+            situation: "Declarer leads a small club from hand. You hold K-2 of clubs and play second, and dummy has A-J behind you. What is the usual play?",
+            cards: [.c(.king), .c(.two)],
+            answerIndex: 1,
             reasoning: "Play low. If you rise with the king, dummy's ace wins and the jack may become good.",
             tip: "Second hand low protects honors that sit in front of dummy."
         ),
         PlayScenario(
             id: "plus-play-unblock",
-            situation: "Partner leads A♠ from A-K. You hold a singleton queen. Which card must you play?",
+            situation: "Partner leads A♠ from A-K. You hold only one spade, the queen. Which card must you play?",
             cards: [.s(.queen)],
             answerIndex: 0,
-            reasoning: "Play Q♠ because it is your only spade. It also unblocks the suit so partner can continue cleanly.",
+            reasoning: "Play Q♠, because it is your only spade. When partner continues with the king you will have no spades left, so you can ruff if a trump suit is in play.",
             tip: "Following suit comes before every defensive signal."
         ),
     ]

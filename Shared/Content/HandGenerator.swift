@@ -86,11 +86,19 @@ enum HandGenerator {
         // Strong hands open 2♣ or 2NT. Neither is an answer here.
         guard hcp < 20 else { return nil }
 
-        if hcp < 12 {
-            // 11-counts and shapely 10-counts are openable at many tables. Only
+        if hcp < 13 {
+            // The app teaches opening at 13. An 11 or 12 is a judgment call
+            // many tables open, and shapely 10-counts are openable too. Only
             // the hands nobody opens are safe to grade as Pass.
             guard hcp <= 10, shape.ruleOfTwenty < 20, shape.sortedLengths[0] <= 5 else { return nil }
             return .pass
+        }
+
+        // A five-card major with a six-card minor splits the room: some open
+        // the longer suit, some the major. Skip it.
+        if let major = shape.longestMajor, shape.length(major) == 5,
+           [Suit.clubs, .diamonds].contains(where: { shape.length($0) >= 6 }) {
+            return nil
         }
 
         if (15...17).contains(hcp) && shape.isBalanced {
@@ -184,7 +192,7 @@ enum HandGenerator {
 
         switch answer {
         case .pass:
-            return "\(points), \(shape.pattern). You need about 12 to open at the one level, so pass and wait for your partner."
+            return "\(points), \(shape.pattern). You need about 13 to open at the one level, so pass and wait for your partner."
         case .oneNotrump:
             return "\(points) and a balanced \(shape.pattern) with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
         case .oneHeart, .oneSpade:
