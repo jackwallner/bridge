@@ -1,7 +1,6 @@
 ---
 paths:
   - "Bridge/Localizable.xcstrings"
-  - "Bridge/InfoPlist.xcstrings"
   - "Shared/Models/Drill.swift"
   - "Shared/Content/**"
   - "BridgeTests/LocalizationTests.swift"
@@ -18,9 +17,10 @@ translated, so the drop happened inside the app.
 ## Setup
 
 - `Bridge/Localizable.xcstrings` holds every UI string, the onboarding, the
-  paywall, notifications, and all authored teaching content (about 790 keys).
-  `Bridge/InfoPlist.xcstrings` holds the ATT purpose string. XcodeGen derives
-  `knownRegions` from the catalogs; `project.yml` sets
+  paywall, notifications, and all authored teaching content (about 820 keys).
+  Info.plist has no user-facing strings (no tracking prompt), so there is no
+  `InfoPlist.xcstrings`; add one if a purpose string ever returns. XcodeGen
+  derives `knownRegions` from the catalog; `project.yml` sets
   `SWIFT_EMIT_LOC_STRINGS` and `LOCALIZATION_PREFERS_STRING_CATALOGS`.
 - Every entry is `extractionState: manual`. Format-only keys (`%lld`,
   `%@%lld`, `%lld/%lld`), the app name and the DEBUG-only Developer rows are
@@ -34,6 +34,9 @@ translated, so the drop happened inside the app.
   `LocalizationTests` fails when one has no entry in some language.
 - Churn chips in `ReviewPromptSheet` are sent to the feedback table in English;
   only the label is translated (`chip.localizedContent`).
+- `HandGenerator.explain` builds its coaching line from whole localized
+  sentences joined by `sentences(_:)`, which drops the space for Japanese and
+  Chinese.
 
 ## Rules
 
@@ -71,6 +74,7 @@ translated, so the drop happened inside the app.
 
 DEBUG launch args for screenshots: `-AppleLanguages (de) -AppleLocale de_DE`,
 plus `-bridge.onboardingPage 4 -bridge.skillLevel new` for the trial page or
-`-progress.hasOnboarded YES -bridge.suppressWhatsNew -bridge.showPaywall YES`
-for the paywall. RevenueCat is off on simulators, so the paywall shows the
+`-progress.hasOnboarded YES -bridge.showPaywall YES -bridge.suppressWhatsNew`
+for the paywall (keep the bare `-bridge.suppressWhatsNew` last so it is not
+read as another key's value). RevenueCat is off on simulators, so the paywall shows the
 "prices aren't available" state there.

@@ -129,7 +129,7 @@ enum BridgeMinuteContent {
         let labels = scenario.cards.map(\.spokenName)
         let item = QuickItem(
             id: "bridge-minute-declarer-\(dayKey)",
-            prompt: "\(scenario.situation) Which card do you play?",
+            prompt: String(localized: "\(scenario.situation) Which card do you play?"),
             cards: scenario.cards,
             choices: labels,
             answerIndex: scenario.answerIndex,

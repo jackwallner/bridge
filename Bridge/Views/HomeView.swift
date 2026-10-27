@@ -840,7 +840,7 @@ struct MasteryRing: View {
                 }
             }
             .frame(width: 32, height: 32)
-            Text(mastery.level == .untouched ? "New" : mastery.level.title)
+            Text(mastery.level == .untouched ? String(localized: "New") : mastery.level.title)
                 .font(.system(size: min(captionSize, 12), weight: .semibold))
                 .foregroundStyle(Theme.inkTertiary)
                 .fixedSize()

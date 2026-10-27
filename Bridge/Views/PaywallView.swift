@@ -470,7 +470,7 @@ struct PaywallView: View {
                 // A reinstalled member whose purchases are still syncing must
                 // not reach Apple's sheet as a stranger.
                 guard !subscriptions.isRecoveringMembership else {
-                    message = "Still checking what this Apple Account owns. Try again in a moment, or tap Restore."
+                    message = String(localized: "Still checking what this Apple Account owns. Try again in a moment, or tap Restore.")
                     return
                 }
                 // The sheet may have drawn before StoreKit answered. If the

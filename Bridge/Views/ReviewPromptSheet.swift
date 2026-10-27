@@ -264,9 +264,9 @@ struct ReviewPromptSheet: View {
 
     static func announcement(_ outcome: FeedbackService.Outcome) -> String {
         switch outcome {
-        case .sent: return "Sent. Thank you."
-        case .queued: return "Saved. It will send the next time you open the app with a connection."
-        case .failed: return "That didn't go through. Try again, or copy your message."
+        case .sent: return String(localized: "Sent. Thank you.")
+        case .queued: return String(localized: "Saved. It will send the next time you open the app with a connection.")
+        case .failed: return String(localized: "That didn't go through. Try again, or copy your message.")
         }
     }
 

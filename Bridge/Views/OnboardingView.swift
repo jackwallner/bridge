@@ -602,7 +602,7 @@ struct OnboardingView: View {
             // A reinstalled member whose purchases are still syncing must not
             // reach Apple's sheet as a stranger.
             guard !subscriptions.isRecoveringMembership else {
-                purchaseError = "Still checking what this Apple Account owns. Try again in a moment, or tap Restore."
+                purchaseError = String(localized: "Still checking what this Apple Account owns. Try again in a moment, or tap Restore.")
                 return
             }
             // Monthly by default, and this is deliberate. Two different people
