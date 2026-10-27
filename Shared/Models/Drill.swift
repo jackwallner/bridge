@@ -5,7 +5,8 @@ extension String {
     /// text. The content files stay plain English; each model localizes its
     /// copy once, at init, so every screen that shows it gets the translation.
     var localizedContent: String {
-        Bundle.main.localizedString(forKey: self, value: self, table: nil)
+        ContentKeyRecorder.shared.add(self)
+        return Bundle.main.localizedString(forKey: self, value: self, table: nil)
     }
 }
 
@@ -159,4 +160,12 @@ struct Room: Identifiable, Sendable {
         guard !isMember else { return false }
         return !isFree || drill.isPlus
     }
+}
+
+final class ContentKeyRecorder: @unchecked Sendable {
+    static let shared = ContentKeyRecorder()
+    private let lock = NSLock()
+    private var keys: Set<String> = []
+    func add(_ key: String) { lock.lock(); keys.insert(key); lock.unlock() }
+    var all: [String] { lock.lock(); defer { lock.unlock() }; return keys.sorted() }
 }

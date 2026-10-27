@@ -40,8 +40,23 @@ targets:
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: Bridge/Info.plist
         TARGETED_DEVICE_FAMILY: "1,2"
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
     dependencies:
       - package: RevenueCat
+    postBuildScripts:
+      - name: DumpStrings
+        basedOnDependencyAnalysis: false
+        shell: /bin/bash
+        script: |
+          set -x
+          OUT="$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH"
+          find "$OBJROOT" -name '*.stringsdata' > "$OUT/stringsdata-list.txt" || true
+          cp "$SRCROOT/Bridge/Localizable.xcstrings" "$TARGET_TEMP_DIR/synced.xcstrings"
+          ARGS=()
+          while IFS= read -r -d '' f; do ARGS+=(--stringsdata "$f"); done < <(find "$OBJROOT" -name '*.stringsdata' -print0)
+          echo "count ${#ARGS[@]}" >> "$OUT/stringsdata-list.txt"
+          xcrun xcstringstool sync "$TARGET_TEMP_DIR/synced.xcstrings" "${ARGS[@]}" >> "$OUT/stringsdata-list.txt" 2>&1 || echo "sync failed $?" >> "$OUT/stringsdata-list.txt"
+          cp "$TARGET_TEMP_DIR/synced.xcstrings" "$OUT/synced.xcstrings"
 
   BridgeTests:
     type: bundle.unit-test
