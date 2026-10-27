@@ -127,7 +127,9 @@ final class SubscriptionService: NSObject, ObservableObject {
     private var isConfigured = false
     private let defaults: UserDefaults
     private let ownsCurrentPurchase: () async -> Bool
+    #if DEBUG
     private let localOverrideKey = "subscription.localProOverride"
+    #endif
     private let snapshotKey = "membership.lastSnapshot"
     private let churnAskSpentKey = "membership.churnAskSpent"
     private let pendingChurnKey = "membership.pendingChurnMoment"
