@@ -41,7 +41,7 @@ struct HandMatchDrillView: View {
                 .tint(Theme.jade)
             VStack(spacing: 16) {
                 QuestionPager(
-                    prompt: "What is the best opening call?",
+                    prompt: String(localized: "What is the best opening call?"),
                     cards: question.cards.racked,
                     explanation: question.explanation,
                     answered: answered
@@ -84,7 +84,7 @@ struct HandMatchDrillView: View {
                 Button {
                     advance()
                 } label: {
-                    Text(index + 1 < questions.count ? "Next Hand" : "Finish").primaryCTA()
+                    Text(index + 1 < questions.count ? String(localized: "Next Hand") : String(localized: "Finish")).primaryCTA()
                 }
             } else {
                 Text("Hand \(index + 1) of \(questions.count)")

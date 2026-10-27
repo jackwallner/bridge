@@ -14,9 +14,9 @@ final class AppSettings: ObservableObject {
 
         var displayName: String {
             switch self {
-            case .light: return "Light"
-            case .dark: return "Dark"
-            case .system: return "Match Device"
+            case .light: return String(localized: "Light")
+            case .dark: return String(localized: "Dark")
+            case .system: return String(localized: "Match Device")
             }
         }
 
@@ -36,13 +36,13 @@ final class AppSettings: ObservableObject {
 
         var displayName: String {
             switch self {
-            case .sunday: return "Sunday"
-            case .monday: return "Monday"
-            case .tuesday: return "Tuesday"
-            case .wednesday: return "Wednesday"
-            case .thursday: return "Thursday"
-            case .friday: return "Friday"
-            case .saturday: return "Saturday"
+            case .sunday: return String(localized: "Sunday")
+            case .monday: return String(localized: "Monday")
+            case .tuesday: return String(localized: "Tuesday")
+            case .wednesday: return String(localized: "Wednesday")
+            case .thursday: return String(localized: "Thursday")
+            case .friday: return String(localized: "Friday")
+            case .saturday: return String(localized: "Saturday")
             }
         }
     }
@@ -155,8 +155,8 @@ final class AppSettings: ObservableObject {
     /// app. Progress counts live on Home and Your Progress, where they are
     /// always current. (Mahj's 1.4.0 baked a weekly count in and had to take
     /// it back; Bridge never shipped one.)
-    static let dailyReminderBody = "Five minutes of practice keeps your bidding clear and your card play sharp."
-    static let gameNightReminderBody = "Five personalized minutes now can make the table feel calmer later."
+    static var dailyReminderBody: String { String(localized: "Five minutes of practice keeps your bidding clear and your card play sharp.") }
+    static var gameNightReminderBody: String { String(localized: "Five personalized minutes now can make the table feel calmer later.") }
 
     // MARK: - Daily reminder
 
@@ -178,7 +178,7 @@ final class AppSettings: ObservableObject {
         center.removePendingNotificationRequests(withIdentifiers: [Self.reminderID])
 
         let content = UNMutableNotificationContent()
-        content.title = "Time for a quick drill"
+        content.title = String(localized: "Time for a quick drill")
         content.body = Self.dailyReminderBody
         content.sound = .default
 
@@ -213,7 +213,7 @@ final class AppSettings: ObservableObject {
         center.removePendingNotificationRequests(withIdentifiers: [Self.gameNightReminderID])
 
         let content = UNMutableNotificationContent()
-        content.title = "Your game night prep is ready"
+        content.title = String(localized: "Your game night prep is ready")
         content.body = Self.gameNightReminderBody
         content.sound = .default
         content.userInfo = [AppNotification.routeKey: AppNotification.gameNightPrepValue]

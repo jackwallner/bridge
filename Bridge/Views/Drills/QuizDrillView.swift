@@ -76,7 +76,7 @@ struct QuizDrillView: View {
                 Button {
                     advance()
                 } label: {
-                    Text(index + 1 < questions.count ? "Next Question" : "Finish").primaryCTA()
+                    Text(index + 1 < questions.count ? String(localized: "Next Question") : String(localized: "Finish")).primaryCTA()
                 }
             } else {
                 Text("Question \(index + 1) of \(questions.count)")

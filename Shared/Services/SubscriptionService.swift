@@ -82,9 +82,9 @@ enum PurchaseError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .productsUnavailable:
-            "The App Store isn't reachable right now. Check your connection and try again."
+            String(localized: "The App Store isn't reachable right now. Check your connection and try again.")
         case .membershipPending:
-            "We're still checking your purchases. Try again in a moment."
+            String(localized: "We're still checking your purchases. Try again in a moment.")
         }
     }
 }

@@ -67,7 +67,7 @@ struct BridgeMinuteView: View {
                         .font(.caption.weight(.heavy))
                         .kerning(1.4)
                         .foregroundStyle(Theme.inkSecondary)
-                    Text(completed >= 5 ? "Weekly goal complete" : "\(completed) of 5 practiced")
+                    Text(completed >= 5 ? String(localized: "Weekly goal complete") : String(localized: "\(completed) of 5 practiced"))
                         .font(.headline)
                         .foregroundStyle(Theme.ink)
                 }
@@ -135,7 +135,7 @@ struct BridgeMinuteView: View {
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(Theme.ink)
                 Spacer()
-                Text(result.map { "\($0.score)/\($0.total)" } ?? "Play")
+                Text(result.map { "\($0.score)/\($0.total)" } ?? String(localized: "Play"))
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(result == nil ? Theme.coral : Theme.jade)
                     .monospacedDigit()
@@ -208,7 +208,7 @@ struct BridgeMinuteResultView: View {
                         .foregroundStyle(Theme.inkSecondary)
                 }
             }
-            Text(result.score == result.total ? "Perfect minute!" : "Minute complete")
+            Text(result.score == result.total ? String(localized: "Perfect minute!") : String(localized: "Minute complete"))
                 .font(Theme.display(28))
                 .foregroundStyle(Theme.ink)
             Text("Bridge Minute \(result.shortDate)")
@@ -254,7 +254,7 @@ struct BridgeMinuteResultView: View {
                 .frame(width: 38, height: 38)
                 .background((completed >= 5 ? Theme.jade : Theme.coral).opacity(0.12), in: Circle())
             VStack(alignment: .leading, spacing: 2) {
-                Text(completed >= 5 ? "Weekly goal complete" : "\(completed) of 5 this week")
+                Text(completed >= 5 ? String(localized: "Weekly goal complete") : String(localized: "\(completed) of 5 this week"))
                     .font(.headline)
                     .foregroundStyle(Theme.ink)
                 Text("Any five days keep the rhythm going.")

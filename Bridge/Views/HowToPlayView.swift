@@ -125,7 +125,7 @@ struct HowToPlayView: View {
                 Button {
                     advance()
                 } label: {
-                    Text(isLast ? "Take your seat" : "Continue").primaryCTA()
+                    Text(isLast ? String(localized: "Take your seat") : String(localized: "Continue")).primaryCTA()
                 }
             }
             if let onSkip {
