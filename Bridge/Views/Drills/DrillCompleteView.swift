@@ -88,17 +88,17 @@ struct DrillCompleteView: View {
     }
 
     private var headline: String {
-        guard let score else { return "Deck cleared!" }
+        guard let score else { return String(localized: "Deck cleared!") }
         let fraction = Double(score) / Double(max(total, 1))
-        if fraction >= 1 { return "Perfect round!" }
-        if fraction >= 0.7 { return "Nice work!" }
-        return "Good practice!"
+        if fraction >= 1 { return String(localized: "Perfect round!") }
+        if fraction >= 0.7 { return String(localized: "Nice work!") }
+        return String(localized: "Good practice!")
     }
 
     private var subheadline: String {
         if score == nil {
-            return "All \(total) cards down. They'll stick a little better every pass."
+            return String(localized: "All \(total) cards down. They'll stick a little better every pass.")
         }
-        return "Every decision you train here is one you'll make faster at the table."
+        return String(localized: "Every decision you train here is one you'll make faster at the table.")
     }
 }

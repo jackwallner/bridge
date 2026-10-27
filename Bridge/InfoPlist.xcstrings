@@ -1,0 +1,78 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSUserTrackingUsageDescription": {
+      "comment": "App Tracking Transparency prompt",
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Så kan Meta fortælle os, hvilken Facebook- eller Instagram-annonce der førte dig til Bridge Trainer, så vi holder op med at betale for annoncer, der ikke virker. Din træning og dine fremskridt deles aldrig."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So kann Meta uns sagen, welche Facebook- oder Instagram-Anzeige dich zu Bridge Trainer gebracht hat, damit wir nicht mehr für Anzeigen zahlen, die nicht wirken. Dein Training und dein Fortschritt werden nie geteilt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Έτσι το Meta μάς λέει ποια διαφήμιση στο Facebook ή στο Instagram σάς έφερε στο Bridge Trainer, ώστε να μην πληρώνουμε για διαφημίσεις που δεν αποδίδουν. Η εξάσκηση και η πρόοδός σας δεν κοινοποιούνται ποτέ."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This lets Meta tell us which Facebook or Instagram ad brought you to Bridge Trainer, so we stop paying for ads that don't work. Your practice and progress are never shared."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meta peut ainsi nous dire quelle publicité Facebook ou Instagram vous a amené à Bridge Trainer, pour que nous cessions de payer des publicités inefficaces. Votre entraînement et vos progrès ne sont jamais partagés."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Così Meta ci dice quale annuncio di Facebook o Instagram ti ha portato su Bridge Trainer, e smettiamo di pagare gli annunci che non funzionano. I tuoi allenamenti e i tuoi progressi non vengono mai condivisi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bridge Trainerを知るきっかけになったFacebookやInstagramの広告をMetaが教えてくれるので、効果のない広告に費用をかけずに済みます。練習内容や進捗が共有されることはありません。"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zo kan Meta ons vertellen via welke Facebook- of Instagram-advertentie je bij Bridge Trainer kwam, zodat we niet meer betalen voor advertenties die niet werken. Je oefeningen en voortgang worden nooit gedeeld."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ช่วยให้ Meta บอกเราได้ว่าโฆษณาใดบน Facebook หรือ Instagram ที่พาคุณมาที่ Bridge Trainer เราจะได้เลิกจ่ายค่าโฆษณาที่ไม่ได้ผล การฝึกและความคืบหน้าของคุณจะไม่ถูกแชร์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Böylece Meta, sizi Bridge Trainer'a hangi Facebook veya Instagram reklamının getirdiğini bize söyler ve işe yaramayan reklamlara para ödemeyi bırakırız. Alıştırmalarınız ve ilerlemeniz asla paylaşılmaz."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "這可讓 Meta 告訴我們是哪則 Facebook 或 Instagram 廣告帶你來到 Bridge Trainer，我們就不再為無效的廣告付費。你的練習與進度絕不會被分享。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

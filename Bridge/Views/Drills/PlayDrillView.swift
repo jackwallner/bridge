@@ -63,7 +63,7 @@ struct PlayDrillView: View {
                 Button {
                     advance()
                 } label: {
-                    Text(index + 1 < scenarios.count ? "Next Play" : "Finish").primaryCTA()
+                    Text(index + 1 < scenarios.count ? String(localized: "Next Play") : String(localized: "Finish")).primaryCTA()
                 }
             } else {
                 Text("Play \(index + 1) of \(scenarios.count)")
@@ -84,7 +84,7 @@ struct PlayDrillView: View {
     private var coachCard: some View {
         VStack(alignment: .leading, spacing: 10) {
             Label(
-                selection == scenario.answerIndex ? "Right play" : "Coach's play",
+                selection == scenario.answerIndex ? String(localized: "Right play") : String(localized: "Coach's play"),
                 systemImage: selection == scenario.answerIndex ? "checkmark.circle.fill" : "lightbulb.fill"
             )
             .font(.headline)

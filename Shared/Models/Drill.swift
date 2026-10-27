@@ -1,5 +1,14 @@
 import Foundation
 
+extension String {
+    /// Authored teaching copy, looked up in the string catalog by its English
+    /// text. The content files stay plain English; each model localizes its
+    /// copy once, at init, so every screen that shows it gets the translation.
+    var localizedContent: String {
+        Bundle.main.localizedString(forKey: self, value: self, table: nil)
+    }
+}
+
 /// A two-option self-test on a card's front ("Keep" / "Throw"). Answering
 /// flips the card and grades the pick before the explanation lands.
 struct CardChoice: Sendable {
@@ -7,7 +16,7 @@ struct CardChoice: Sendable {
     let answerIndex: Int
 
     init(_ first: String, _ second: String, answerIndex: Int) {
-        options = [first, second]
+        options = [first.localizedContent, second.localizedContent]
         self.answerIndex = answerIndex
     }
 }
@@ -24,11 +33,11 @@ struct Flashcard: Identifiable, Sendable {
     init(id: String, frontTitle: String, frontCards: [BridgeCard] = [], frontSubtitle: String? = nil,
          backTitle: String, backBody: String, choice: CardChoice? = nil) {
         self.id = id
-        self.frontTitle = frontTitle
+        self.frontTitle = frontTitle.localizedContent
         self.frontCards = frontCards
-        self.frontSubtitle = frontSubtitle
-        self.backTitle = backTitle
-        self.backBody = backBody
+        self.frontSubtitle = frontSubtitle?.localizedContent
+        self.backTitle = backTitle.localizedContent
+        self.backBody = backBody.localizedContent
         self.choice = choice
     }
 }
@@ -44,11 +53,11 @@ struct QuizQuestion: Identifiable, Sendable {
     init(id: String, prompt: String, cards: [BridgeCard] = [], choices: [String], answerIndex: Int,
          explanation: String) {
         self.id = id
-        self.prompt = prompt
+        self.prompt = prompt.localizedContent
         self.cards = cards
-        self.choices = choices
+        self.choices = choices.map(\.localizedContent)
         self.answerIndex = answerIndex
-        self.explanation = explanation
+        self.explanation = explanation.localizedContent
     }
 }
 
@@ -58,6 +67,14 @@ struct HandMatchQuestion: Identifiable, Sendable {
     let choices: [HandCategory]
     let answer: HandCategory
     let explanation: String
+
+    init(id: String, cards: [BridgeCard], choices: [HandCategory], answer: HandCategory, explanation: String) {
+        self.id = id
+        self.cards = cards
+        self.choices = choices
+        self.answer = answer
+        self.explanation = explanation.localizedContent
+    }
 }
 
 struct PlayScenario: Identifiable, Sendable {
@@ -67,6 +84,15 @@ struct PlayScenario: Identifiable, Sendable {
     let answerIndex: Int
     let reasoning: String
     let tip: String
+
+    init(id: String, situation: String, cards: [BridgeCard], answerIndex: Int, reasoning: String, tip: String) {
+        self.id = id
+        self.situation = situation.localizedContent
+        self.cards = cards
+        self.answerIndex = answerIndex
+        self.reasoning = reasoning.localizedContent
+        self.tip = tip.localizedContent
+    }
 }
 
 enum DrillKind: Sendable {
@@ -97,8 +123,8 @@ struct Drill: Identifiable, Sendable {
 
     init(id: String, title: String, subtitle: String, kind: DrillKind, isPlus: Bool = false) {
         self.id = id
-        self.title = title
-        self.subtitle = subtitle
+        self.title = title.localizedContent
+        self.subtitle = subtitle.localizedContent
         self.kind = kind
         self.isPlus = isPlus
     }
@@ -113,6 +139,15 @@ struct Room: Identifiable, Sendable {
     /// it are the locked extras. A non-free room is locked whole.
     let isFree: Bool
     let drills: [Drill]
+
+    init(id: String, name: String, tagline: String, icon: String, isFree: Bool, drills: [Drill]) {
+        self.id = id
+        self.name = name.localizedContent
+        self.tagline = tagline.localizedContent
+        self.icon = icon
+        self.isFree = isFree
+        self.drills = drills
+    }
 
     /// Drills a member unlocks here: the whole room if it's paid, otherwise
     /// just the extra sets.

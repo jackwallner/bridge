@@ -188,34 +188,42 @@ enum HandGenerator {
     static func explain(_ cards: [BridgeCard], answer: HandCategory) -> String {
         let shape = Shape(cards)
         let hcp = shape.highCardPoints
-        let points = "\(hcp) high-card point\(hcp == 1 ? "" : "s")"
+        let pattern = shape.pattern
+        let call = answer.displayName
 
         switch answer {
         case .pass:
-            return "\(points), \(shape.pattern). You need about 13 to open at the one level, so pass and wait for your partner."
+            return hcp == 1
+                ? String(localized: "1 high-card point, \(pattern). You need about 13 to open at the one level, so pass and wait for your partner.")
+                : String(localized: "\(hcp) high-card points, \(pattern). You need about 13 to open at the one level, so pass and wait for your partner.")
         case .oneNotrump:
-            return "\(points) and a balanced \(shape.pattern) with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call."
-        case .oneHeart, .oneSpade:
-            let suit: Suit = answer == .oneSpade ? .spades : .hearts
-            let length = shape.length(suit)
-            var line = "\(points) with \(length) \(suit.displayName.lowercased()). With 12 or more and a five-card major, open the major: \(answer.displayName)."
-            if shape.length(.spades) >= 5 && shape.length(.hearts) >= 5 {
-                line += " Holding five of each major, start with the higher ranking suit."
+            return String(localized: "\(hcp) high-card points and a balanced \(pattern) with no five-card major. That is the 15 to 17 notrump range, so open 1NT and describe the whole hand in one call.")
+        case .oneHeart:
+            return String(localized: "\(hcp) high-card points with \(shape.length(.hearts)) hearts. With 12 or more and a five-card major, open the major: 1♥.")
+        case .oneSpade:
+            let length = shape.length(.spades)
+            if shape.length(.hearts) >= 5 {
+                return String(localized: "\(hcp) high-card points with \(length) spades. With 12 or more and a five-card major, open the major: 1♠. Holding five of each major, start with the higher ranking suit.")
             }
-            return line
+            return String(localized: "\(hcp) high-card points with \(length) spades. With 12 or more and a five-card major, open the major: 1♠.")
         case .oneClub, .oneDiamond:
-            let suit: Suit = answer == .oneDiamond ? .diamonds : .clubs
-            var line = "\(points), \(shape.pattern), no five-card major"
-            if shape.isBalanced && (15...17).contains(hcp) == false {
-                line += " and outside the 15 to 17 notrump range"
+            let outsideNotrump = shape.isBalanced && (15...17).contains(hcp) == false
+            let equalMinors = shape.length(.clubs) == shape.length(.diamonds)
+            let shortClub = equalMinors && shape.length(.clubs) == 3
+            switch (outsideNotrump, equalMinors, shortClub) {
+            case (true, true, true):
+                return String(localized: "\(hcp) high-card points, \(pattern), no five-card major and outside the 15 to 17 notrump range. Open your longer minor: \(call). With three of each minor the convention is the short club.")
+            case (true, true, false):
+                return String(localized: "\(hcp) high-card points, \(pattern), no five-card major and outside the 15 to 17 notrump range. Open your longer minor: \(call). With equal length in the minors, open the higher ranking one.")
+            case (true, false, _):
+                return String(localized: "\(hcp) high-card points, \(pattern), no five-card major and outside the 15 to 17 notrump range. Open your longer minor: \(call).")
+            case (false, true, true):
+                return String(localized: "\(hcp) high-card points, \(pattern), no five-card major. Open your longer minor: \(call). With three of each minor the convention is the short club.")
+            case (false, true, false):
+                return String(localized: "\(hcp) high-card points, \(pattern), no five-card major. Open your longer minor: \(call). With equal length in the minors, open the higher ranking one.")
+            case (false, false, _):
+                return String(localized: "\(hcp) high-card points, \(pattern), no five-card major. Open your longer minor: \(call).")
             }
-            line += ". Open your longer minor: \(answer.displayName)."
-            if shape.length(.clubs) == shape.length(.diamonds) {
-                line += shape.length(.clubs) == 3
-                    ? " With three of each minor the convention is the short club."
-                    : " With equal length in the minors, open the higher ranking one."
-            }
-            return line
         }
     }
 }

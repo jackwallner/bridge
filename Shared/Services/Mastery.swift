@@ -21,10 +21,10 @@ enum MasteryLevel: Int, Comparable, Sendable {
 
     var title: String {
         switch self {
-        case .untouched: return "Not started"
-        case .learning: return "Learning"
-        case .solid: return "Solid"
-        case .sharp: return "Sharp"
+        case .untouched: return String(localized: "Not started")
+        case .learning: return String(localized: "Learning")
+        case .solid: return String(localized: "Solid")
+        case .sharp: return String(localized: "Sharp")
         }
     }
 
@@ -40,10 +40,10 @@ enum MasteryLevel: Int, Comparable, Sendable {
     /// What earns the next level, phrased as the thing to go do.
     var nextStep: String {
         switch self {
-        case .untouched: return "Answer a few questions here to start tracking."
-        case .learning: return "Get each question right twice running to lock it in."
-        case .solid: return "Keep going. Sharp means nearly everything here is holding."
-        case .sharp: return "Come back now and then so it stays sharp."
+        case .untouched: return String(localized: "Answer a few questions here to start tracking.")
+        case .learning: return String(localized: "Get each question right twice running to lock it in.")
+        case .solid: return String(localized: "Keep going. Sharp means nearly everything here is holding.")
+        case .sharp: return String(localized: "Come back now and then so it stays sharp.")
         }
     }
 }

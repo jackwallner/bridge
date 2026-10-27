@@ -15,15 +15,15 @@ enum PracticeSkill: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .openings: return "Name Your Opening"
-        case .pointCount: return "Count the Points"
+        case .openings: return String(localized: "Name Your Opening")
+        case .pointCount: return String(localized: "Count the Points")
         }
     }
 
     var subtitle: String {
         switch self {
-        case .openings: return "Freshly dealt hands, unlimited reps"
-        case .pointCount: return "Add up a hand at a glance"
+        case .openings: return String(localized: "Freshly dealt hands, unlimited reps")
+        case .pointCount: return String(localized: "Add up a hand at a glance")
         }
     }
 
@@ -87,12 +87,12 @@ enum EndlessPractice {
             let answerIndex = HandCategory.allCases.firstIndex(of: hand.answer) ?? 0
             return QuickItem(
                 id: PracticeSkill.openings.itemPrefix + UUID().uuidString,
-                prompt: "What is your opening call?",
+                prompt: String(localized: "What is your opening call?"),
                 cards: hand.cards,
                 choices: labels,
                 answerIndex: answerIndex,
                 explanation: hand.explanation,
-                sourceLabel: "Endless Practice",
+                sourceLabel: String(localized: "Endless Practice"),
                 roomID: PracticeSkill.openings.roomID
             )
         }
@@ -123,12 +123,12 @@ enum EndlessPractice {
 
             items.append(QuickItem(
                 id: PracticeSkill.pointCount.itemPrefix + UUID().uuidString,
-                prompt: "How many high-card points is this hand worth?",
+                prompt: String(localized: "How many high-card points is this hand worth?"),
                 cards: cards,
                 choices: sorted.map(String.init),
                 answerIndex: answerIndex,
                 explanation: pointExplanation(cards, total: hcp),
-                sourceLabel: "Endless Practice",
+                sourceLabel: String(localized: "Endless Practice"),
                 roomID: PracticeSkill.pointCount.roomID
             ))
         }
@@ -136,13 +136,17 @@ enum EndlessPractice {
     }
 
     private static func pointExplanation(_ cards: [BridgeCard], total: Int) -> String {
-        var parts: [String] = []
-        for (rank, value) in [(Rank.ace, 4), (Rank.king, 3), (Rank.queen, 2), (Rank.jack, 1)] {
+        let lines = [(Rank.ace, 4), (Rank.king, 3), (Rank.queen, 2), (Rank.jack, 1)].compactMap { rank, value -> String? in
             let held = cards.filter { $0.rank == rank }.count
-            guard held > 0 else { continue }
-            parts.append("\(held) \(rank.spokenName.lowercased())\(held == 1 ? "" : "s") at \(value)")
+            guard held > 0 else { return nil }
+            switch rank {
+            case .ace: return String(localized: "Aces: \(held) × \(value)")
+            case .king: return String(localized: "Kings: \(held) × \(value)")
+            case .queen: return String(localized: "Queens: \(held) × \(value)")
+            default: return String(localized: "Jacks: \(held) × \(value)")
+            }
         }
-        let breakdown = parts.isEmpty ? "no honours" : parts.joined(separator: ", ")
-        return "\(breakdown). That totals \(total) high-card points. Aces 4, kings 3, queens 2, jacks 1."
+        return (lines + [String(localized: "That totals \(total) high-card points. Aces 4, kings 3, queens 2, jacks 1.")])
+            .joined(separator: "\n")
     }
 }

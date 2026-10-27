@@ -94,8 +94,8 @@ struct PracticeRunView: View {
     private var title: String {
         switch mode {
         case .endless(let skill): return skill.title
-        case .timed: return "Timed Challenge"
-        case .review: return "Fix My Mistakes"
+        case .timed: return String(localized: "Timed Challenge")
+        case .review: return String(localized: "Fix My Mistakes")
         }
     }
 
@@ -110,7 +110,7 @@ struct PracticeRunView: View {
                     cards: item.cards,
                     explanation: item.explanation,
                     answered: answered,
-                    eyebrow: item.sourceLabel.uppercased()
+                    eyebrow: item.sourceLabel.localizedUppercase
                 ) {
                     ChoiceList(labels: item.choices, selection: selection, answerIndex: item.answerIndex) { pick in
                         grade(pick)
@@ -144,7 +144,7 @@ struct PracticeRunView: View {
             // An endless run has no natural end, so it must always offer one.
             if mode != .timed {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button(mode == .review ? "Close" : "Finish") { finish() }
+                    Button(mode == .review ? String(localized: "Close") : String(localized: "Finish")) { finish() }
                         .foregroundStyle(Theme.jade)
                 }
             }
@@ -200,7 +200,7 @@ struct PracticeRunView: View {
                 Button {
                     advance()
                 } label: {
-                    Text(isLastItem ? "Finish" : "Next").primaryCTA()
+                    Text(isLastItem ? String(localized: "Finish") : String(localized: "Next")).primaryCTA()
                 }
             } else {
                 Text(counterText)
@@ -216,7 +216,7 @@ struct PracticeRunView: View {
     }
 
     private var counterText: String {
-        mode == .review ? "\(index + 1) of \(items.count)" : "Question \(index + 1)"
+        mode == .review ? String(localized: "\(index + 1) of \(items.count)") : String(localized: "Question \(index + 1)")
     }
 
     // MARK: - Clock

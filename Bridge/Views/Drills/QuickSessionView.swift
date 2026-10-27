@@ -112,7 +112,7 @@ struct QuickSessionView: View {
                     cards: item.cards,
                     explanation: item.explanation,
                     answered: answered,
-                    eyebrow: item.sourceLabel.uppercased()
+                    eyebrow: item.sourceLabel.localizedUppercase
                 ) {
                     ChoiceList(labels: item.choices, selection: selection, answerIndex: item.answerIndex) { pick in
                         grade(pick)
@@ -165,7 +165,7 @@ struct QuickSessionView: View {
                 Button {
                     advance()
                 } label: {
-                    Text(index + 1 < items.count ? "Next" : "Finish").primaryCTA()
+                    Text(index + 1 < items.count ? String(localized: "Next") : String(localized: "Finish")).primaryCTA()
                 }
             } else {
                 Text("\(index + 1) of \(items.count)")
@@ -236,7 +236,7 @@ struct QuickSessionView: View {
         streakBannerTrigger += 1
         let trigger = streakBannerTrigger
         withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-            streakBannerText = "\(streak) in a row!"
+            streakBannerText = String(localized: "\(streak) in a row!")
         }
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 1_600_000_000)

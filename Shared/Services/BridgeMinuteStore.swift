@@ -22,7 +22,8 @@ struct BridgeMinuteResult: Codable, Identifiable, Sendable {
 
     var shareText: String {
         let grid = answers.map { $0 ? "🟩" : "⬜️" }.joined()
-        return "Bridge Minute \(shortDate): \(score)/\(total)\n\(grid)\nCan you beat me? \(AppStoreLinks.productURL.absoluteString)"
+        let link = AppStoreLinks.productURL.absoluteString
+        return String(localized: "Bridge Minute \(shortDate): \(score)/\(total)\n\(grid)\nCan you beat me? \(link)")
     }
 }
 

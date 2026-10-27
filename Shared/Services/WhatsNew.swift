@@ -13,8 +13,8 @@ struct WhatsNewItem: Identifiable, Sendable {
     init(id: String, icon: String, title: String, body: String, isPlus: Bool = false) {
         self.id = id
         self.icon = icon
-        self.title = title
-        self.body = body
+        self.title = title.localizedContent
+        self.body = body.localizedContent
         self.isPlus = isPlus
     }
 }
@@ -23,6 +23,12 @@ struct WhatsNewRelease: Sendable {
     let version: String
     let headline: String
     let items: [WhatsNewItem]
+
+    init(version: String, headline: String, items: [WhatsNewItem]) {
+        self.version = version
+        self.headline = headline.localizedContent
+        self.items = items
+    }
 }
 
 /// Decides whether to show the post-update What's New sheet, and remembers

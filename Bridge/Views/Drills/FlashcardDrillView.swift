@@ -159,10 +159,10 @@ struct FlashcardDrillView: View {
     }
 
     private var swipeAccessibilityHint: String {
-        guard isFlipped else { return "Tap to reveal the answer" }
+        guard isFlipped else { return String(localized: "Tap to reveal the answer") }
         return choiceAnswered
-            ? "Tap Next to continue"
-            : "Swipe right if you knew it, left to see it again"
+            ? String(localized: "Tap Next to continue")
+            : String(localized: "Swipe right if you knew it, left to see it again")
     }
 
     /// KNEW IT / AGAIN stamps fade in with the drag so the swipe directions
@@ -171,10 +171,10 @@ struct FlashcardDrillView: View {
     private var verdictStamps: some View {
         ZStack {
             if !choiceAnswered {
-                stamp("KNEW IT", color: Theme.jade, angle: -12)
+                stamp(String(localized: "KNEW IT"), color: Theme.jade, angle: -12)
                     .opacity(isFlipped ? stampOpacity(forDirection: 1) : 0)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                stamp("AGAIN", color: Theme.coral, angle: 12)
+                stamp(String(localized: "AGAIN"), color: Theme.coral, angle: 12)
                     .opacity(isFlipped ? stampOpacity(forDirection: -1) : 0)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
             }
@@ -458,7 +458,7 @@ struct FlipCardFace: View {
     }
 
     private var back: some View {
-        BridgeCardFace(accent: accent, eyebrow: "THE CALL") {
+        BridgeCardFace(accent: accent, eyebrow: String(localized: "THE CALL")) {
             VStack(spacing: 14) {
                 if let verdict {
                     verdictBanner(verdict)
@@ -495,13 +495,13 @@ struct FlipCardFace: View {
     private var verdict: (text: String, correct: Bool)? {
         guard let choice = card.choice, let pick = choicePick else { return nil }
         let correct = pick == choice.answerIndex
-        return ("You said \"\(choice.options[pick])\"", correct)
+        return (choice.options[pick], correct)
     }
 
     private func verdictBanner(_ verdict: (text: String, correct: Bool)) -> some View {
         HStack(spacing: 8) {
             Image(systemName: verdict.correct ? "checkmark.circle.fill" : "xmark.circle.fill")
-            Text(verdict.correct ? "\(verdict.text). Right!" : "\(verdict.text). Not this time.")
+            Text(verdict.correct ? String(localized: "You said “\(verdict.text)”. Right!") : String(localized: "You said “\(verdict.text)”. Not this time."))
                 .font(.footnote.weight(.semibold))
         }
         .foregroundStyle(verdict.correct ? Theme.jade : Theme.coral)
@@ -574,7 +574,7 @@ private struct BridgeCardFace<Content: View>: View {
         }
         .overlay {
             // Watermark sits above the surface but below the frame.
-            Text("麻")
+            Text(verbatim: "麻")
                 .font(.system(size: 190, weight: .bold))
                 .foregroundStyle(accent.opacity(0.05))
                 .rotationEffect(.degrees(-10))

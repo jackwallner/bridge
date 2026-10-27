@@ -31,12 +31,12 @@ enum TrialCTA: String, CaseIterable, Sendable {
 
     func title(_ surface: Surface) -> String {
         switch (self, surface) {
-        case (.sevenDay, .onboarding): return "Start 7-day free trial"
-        case (.sevenDay, .paywall): return "Start 7-Day Free Trial"
-        case (.my, .onboarding): return "Start my free trial"
-        case (.my, .paywall): return "Start My Free Trial"
-        case (.your, .onboarding): return "Start your free trial"
-        case (.your, .paywall): return "Start Your Free Trial"
+        case (.sevenDay, .onboarding): return String(localized: "Start 7-day free trial")
+        case (.sevenDay, .paywall): return String(localized: "Start 7-Day Free Trial")
+        case (.my, .onboarding): return String(localized: "Start my free trial")
+        case (.my, .paywall): return String(localized: "Start My Free Trial")
+        case (.your, .onboarding): return String(localized: "Start your free trial")
+        case (.your, .paywall): return String(localized: "Start Your Free Trial")
         }
     }
 }
@@ -88,7 +88,7 @@ extension SubscriptionService {
 
     func trialCTA(_ surface: TrialCTA.Surface, plan: PaywallPlan? = nil) -> String {
         let plan = plan ?? (surface == .onboarding ? .monthly : .yearly)
-        return isEligibleForIntroOffer(plan) ? trialCTAArm.title(surface) : "Subscribe Now"
+        return isEligibleForIntroOffer(plan) ? trialCTAArm.title(surface) : String(localized: "Subscribe Now")
     }
 
     func isOn(_ remoteSwitch: RemoteSwitch) -> Bool { RemoteConfig.isOn(remoteSwitch, in: remoteMetadata) }

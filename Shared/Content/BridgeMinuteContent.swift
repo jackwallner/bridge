@@ -9,9 +9,9 @@ enum BridgeMinuteCategory: String, CaseIterable, Codable, Identifiable, Sendable
 
     var title: String {
         switch self {
-        case .bidding: return "Bidding"
-        case .declarerPlay: return "Declarer Play"
-        case .defense: return "Defense"
+        case .bidding: return String(localized: "Bidding")
+        case .declarerPlay: return String(localized: "Declarer Play")
+        case .defense: return String(localized: "Defense")
         }
     }
 
@@ -69,8 +69,11 @@ enum BridgeMinuteContent {
         if auction.count > 1 { questions.append(auction[1]) }
         if defense.count > 1 { questions.append(defense[1]) }
 
-        let parts = calendar.dateComponents([.month, .day], from: day)
-        let shortDate = String(format: "%02d/%02d", parts.month ?? 1, parts.day ?? 1)
+        let formatter = DateFormatter()
+        formatter.calendar = calendar
+        formatter.timeZone = calendar.timeZone
+        formatter.setLocalizedDateFormatFromTemplate("MMdd")
+        let shortDate = formatter.string(from: day)
         return BridgeMinuteChallenge(day: day, dayKey: dayKey, shortDate: shortDate, questions: questions)
     }
 
@@ -91,12 +94,12 @@ enum BridgeMinuteContent {
             let answerIndex = HandCategory.allCases.firstIndex(of: hand.answer) ?? 0
             let item = QuickItem(
                 id: PracticeSkill.openings.itemPrefix + "minute-\(dayKey)-\(index)",
-                prompt: "What is your opening call?",
+                prompt: String(localized: "What is your opening call?"),
                 cards: hand.cards,
                 choices: labels,
                 answerIndex: answerIndex,
                 explanation: hand.explanation,
-                sourceLabel: "Bridge Minute: Opening",
+                sourceLabel: String(localized: "Bridge Minute: Opening"),
                 roomID: PracticeSkill.openings.roomID,
                 trackingID: PracticeSkill.openings.rawValue,
                 isReviewable: false
@@ -131,7 +134,7 @@ enum BridgeMinuteContent {
             choices: labels,
             answerIndex: scenario.answerIndex,
             explanation: scenario.reasoning,
-            sourceLabel: "Bridge Minute: Declarer Play",
+            sourceLabel: String(localized: "Bridge Minute: Declarer Play"),
             roomID: "declarer-room",
             trackingID: "bridge-minute-declarer",
             isReviewable: false

@@ -13,7 +13,7 @@ enum HandCategory: String, Codable, CaseIterable, Identifiable, Sendable {
 
     var displayName: String {
         switch self {
-        case .pass: return "Pass"
+        case .pass: return String(localized: "Pass")
         case .oneClub: return "1♣"
         case .oneDiamond: return "1♦"
         case .oneHeart: return "1♥"

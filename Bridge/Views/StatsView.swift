@@ -71,11 +71,11 @@ struct StatsView: View {
                 .frame(width: 38, height: 38)
                 .background(Theme.plum.opacity(0.13), in: Circle())
             VStack(alignment: .leading, spacing: 2) {
-                Text("Up \(gain) question\(gain == 1 ? "" : "s") this week")
+                Text("Up \(gain) questions this week")
                     .font(.headline)
                     .foregroundStyle(Theme.ink)
-                Text(strongest.map { "Biggest jump in \($0.name). Keep that pace and it holds." }
-                     ?? "Questions you have now answered right twice running.")
+                Text(strongest.map { String(localized: "Biggest jump in \($0.name). Keep that pace and it holds.") }
+                     ?? String(localized: "Questions you have now answered right twice running."))
                     .font(.caption)
                     .foregroundStyle(Theme.inkSecondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -88,14 +88,14 @@ struct StatsView: View {
 
     private var summaryCard: some View {
         HStack(spacing: 0) {
-            metric(value: percent(records.overallAccuracy), caption: "accuracy", color: Theme.jade)
+            metric(value: percent(records.overallAccuracy), caption: String(localized: "accuracy"), color: Theme.jade)
             divider
-            metric(value: "\(records.totalAttempts)", caption: "answered", color: Theme.ink)
+            metric(value: "\(records.totalAttempts)", caption: String(localized: "answered"), color: Theme.ink)
             // A free player cannot reach the Timed Challenge, so a 0 here
             // reads as a score they failed to earn.
             if records.bestChallengeScore > 0 {
                 divider
-                metric(value: "\(records.bestChallengeScore)", caption: "best challenge", color: Theme.coral)
+                metric(value: "\(records.bestChallengeScore)", caption: String(localized: "best challenge"), color: Theme.coral)
             }
         }
         .padding(.vertical, 18)
@@ -135,7 +135,9 @@ struct StatsView: View {
                 Text("Work on \(stat.name)")
                     .font(.headline)
                     .foregroundStyle(Theme.ink)
-                Text("\(percent(stat.accuracy)) right across \(stat.attempts) questions, your lowest so far.")
+                Text(stat.attempts == 1
+                     ? String(localized: "\(percent(stat.accuracy)) right across 1 question, your lowest so far.")
+                     : String(localized: "\(percent(stat.accuracy)) right across \(stat.attempts) questions, your lowest so far."))
                     .font(.caption)
                     .foregroundStyle(Theme.inkSecondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -200,7 +202,7 @@ struct StatsView: View {
                 Text("\(progress.currentStreak())-day streak")
                     .font(.headline)
                     .foregroundStyle(Theme.ink)
-                Text("\(progress.totalSessions) drill\(progress.totalSessions == 1 ? "" : "s") finished")
+                Text("\(progress.totalSessions) drills finished")
                     .font(.caption)
                     .foregroundStyle(Theme.inkSecondary)
             }
@@ -213,7 +215,7 @@ struct StatsView: View {
     // MARK: - Helpers
 
     private func percent(_ fraction: Double) -> String {
-        "\(Int((fraction * 100).rounded()))%"
+        fraction.formatted(.percent.precision(.fractionLength(0)))
     }
 
     private func barColor(_ fraction: Double) -> Color {
