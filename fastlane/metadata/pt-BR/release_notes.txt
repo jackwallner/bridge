@@ -1,1 +1,3 @@
-Anéis de domínio em cada sala, uma tela Your Progress que diz no que trabalhar a seguir e a contagem das perguntas que você fixou nesta semana. Também novo: Send Feedback, suporte a Reduzir Movimento e termos de assinatura mais claros.
+Agora em 10 idiomas: alemão, francês, italiano, japonês, holandês, dinamarquês, grego, tailandês, turco e chinês tradicional.
+
+Os conselhos de licitação seguem mais de perto o manual do SAYC e, ao assinar o Pro, você volta direto para o que estava fazendo.

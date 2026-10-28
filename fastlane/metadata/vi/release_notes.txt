@@ -1,1 +1,3 @@
-Vòng thành thạo cho mỗi phòng, màn hình Your Progress cho biết nên luyện gì tiếp theo và số câu hỏi bạn đã nắm chắc trong tuần này. Ngoài ra: Send Feedback, hỗ trợ Giảm chuyển động và điều khoản thành viên rõ ràng hơn.
+Nay có 10 ngôn ngữ: tiếng Đức, tiếng Pháp, tiếng Ý, tiếng Nhật, tiếng Hà Lan, tiếng Đan Mạch, tiếng Hy Lạp, tiếng Thái, tiếng Thổ Nhĩ Kỳ và tiếng Trung phồn thể.
+
+Lời khuyên đấu thầu nay bám sát tập sách SAYC hơn, và khi tham gia Pro, bạn quay lại ngay nội dung đang làm dở.

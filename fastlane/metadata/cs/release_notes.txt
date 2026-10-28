@@ -1,1 +1,3 @@
-Kroužky zvládnutí u každé místnosti, přehled Your Progress, který řekne, na čem pracovat dál, a počet otázek upevněných tento týden. Navíc: Send Feedback, podpora Omezit pohyb a jasnější podmínky předplatného.
+Nově v 10 jazycích: němčina, francouzština, italština, japonština, nizozemština, dánština, řečtina, thajština, turečtina a tradiční čínština.
+
+Rady k licitaci nyní více odpovídají příručce SAYC a po aktivaci Pro se vrátíte přesně tam, kde jste skončili.

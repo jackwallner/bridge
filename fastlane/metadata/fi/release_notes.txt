@@ -1,1 +1,3 @@
-Hallintarenkaat jokaiseen huoneeseen, Your Progress -näkymä, joka kertoo mitä harjoitella seuraavaksi, ja tällä viikolla opittujen kysymysten määrä. Lisäksi: Send Feedback, Vähennä liikettä -tuki ja selkeämmät jäsenyysehdot.
+Nyt saatavilla 10 kielellä: saksa, ranska, italia, japani, hollanti, tanska, kreikka, thai, turkki ja perinteinen kiina.
+
+Tarjousneuvot noudattavat nyt tarkemmin SAYC-opasta, ja Pro-tilaukseen siirtyessäsi palaat suoraan siihen, mitä olit tekemässä.
