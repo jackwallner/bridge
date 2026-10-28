@@ -10468,13 +10468,13 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "BESTER WERT"
+            "value": "BESTES ANGEBOT"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "ΚΑΛΥΤΕΡΗ ΑΞΙΑ"
+            "value": "ΚΑΛΥΤΕΡΗ ΤΙΜΗ"
           }
         },
         "fr": {
@@ -10510,7 +10510,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "EN İYİ DEĞER"
+            "value": "EN AVANTAJLI"
           }
         },
         "zh-Hant": {
@@ -21554,7 +21554,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Neem vandaag %@"
+            "value": "Start vandaag met %@"
           }
         },
         "th": {
@@ -28931,7 +28931,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "INTET ABONNEMENT"
+            "value": "ENGANGSKØB"
           }
         },
         "de": {
@@ -28943,19 +28943,19 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "ΧΩΡΙΣ ΣΥΝΔΡΟΜΗ"
+            "value": "ΕΦΑΠΑΞ"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "SANS ABONNEMENT"
+            "value": "ACHAT UNIQUE"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "SENZA ABBONAMENTO"
+            "value": "UNA TANTUM"
           }
         },
         "ja": {
@@ -28967,13 +28967,13 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "GEEN ABONNEMENT"
+            "value": "EENMALIG"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ไม่ต้องสมัครสมาชิก"
+            "value": "ซื้อครั้งเดียว"
           }
         },
         "tr": {
