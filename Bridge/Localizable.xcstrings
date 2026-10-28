@@ -705,7 +705,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ tek seferlik. Abonelik yok, yenilenmez."
+            "value": "%@ tek seferlik. Abonelik değil, yenilenmez."
           }
         },
         "zh-Hant": {
@@ -811,7 +811,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$@ di risposte giuste su %2$lld domande, il tuo dato più basso."
+            "value": "%1$@ di risposte giuste su %2$lld domande, il tuo risultato più basso finora."
           }
         },
         "ja": {
@@ -876,7 +876,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ di risposte giuste su 1 domanda, il tuo dato più basso."
+            "value": "%@ di risposte giuste su 1 domanda, il tuo risultato più basso finora."
           }
         },
         "ja": {
@@ -2504,7 +2504,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Πρώτα %1$lld λάθη για επανάληψη, μετά επιπλέον εξάσκηση στο %2$@."
+            "value": "Πρώτα %1$lld λάθη για επανάληψη, μετά επιπλέον εξάσκηση στην αίθουσα %2$@."
           }
         },
         "fr": {
@@ -2766,13 +2766,13 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "แต้มไพ่สูง %1$lld แต้มและมือสมดุลแบบ %2$@ ที่ไม่มีเมเจอร์ห้าใบ อยู่ในช่วง 15 ถึง 17 แต้มสำหรับเปิด 1NT จึงเปิด 1NT ครั้งเดียวเพื่อบอกลักษณะมือทั้งหมด"
+            "value": "แต้มไพ่สูง %1$lld แต้มและมือสมดุลแบบ %2$@ ที่ไม่มีเมเจอร์ห้าใบ อยู่ในช่วง 15 ถึง 17 แต้มสำหรับเปิด 1NT จึงเปิด 1NT เพื่อบอกลักษณะมือทั้งหมดในคำประมูลเดียว"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld onör puanı ve beşli majörü olmayan dengeli %2$@. Bu, sanzatunun 15-17 aralığı; 1NT açın ve tüm eli tek deklarasyonla anlatın."
+            "value": "%1$lld onör puanı ve beşli majörü olmayan dengeli %2$@. Bu, 15-17 sanzatu aralığı; 1NT açın ve tüm eli tek deklarasyonla anlatın."
           }
         },
         "zh-Hant": {
@@ -3132,7 +3132,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld points H, %2$@. Votre mineure est plus longue que votre majeure cinquième, et le Standard American ouvre d'abord la couleur la plus longue : ouvrez %3$@."
+            "value": "%1$lld points H, %2$@. Votre mineure est plus longue que votre majeure cinquième, et en système américain standard on ouvre d'abord la couleur la plus longue : ouvrez %3$@."
           }
         },
         "it": {
@@ -3144,7 +3144,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ハイカードポイント%1$lld点、%2$@。マイナーが5枚のメジャーより長く、スタンダード・アメリカンでは最も長いスートから開くので、%3$@でオープンします。"
+            "value": "ハイカードポイント%1$lld点、%2$@。マイナーが5枚のメジャーより長く、スタンダード・アメリカンでは最も長いスートからビッドするので、%3$@でオープンします。"
           }
         },
         "nl": {
@@ -3577,7 +3577,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld van %2$lld gekend"
+            "value": "%1$lld van %2$lld geleerd"
           }
         },
         "th": {
@@ -3813,7 +3813,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Εξασκηθήκατε σε %lld από τις 5 ασκήσεις"
+            "value": "Εξάσκηση: %lld από 5"
           }
         },
         "fr": {
@@ -4559,7 +4559,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Πρώτα 1 λάθος για επανάληψη, μετά επιπλέον εξάσκηση στο %@."
+            "value": "Πρώτα 1 λάθος για επανάληψη, μετά επιπλέον εξάσκηση στην αίθουσα %@."
           }
         },
         "fr": {
@@ -5363,7 +5363,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nu krijg je een evenwichtige mix. Hoe meer vragen je beantwoordt, hoe gerichter deze sessie zich op je echte zwakke plekken richt."
+            "value": "Nu krijg je een evenwichtige mix. Hoe meer vragen je beantwoordt, hoe meer deze sessie zich op je echte zwakke plekken richt."
           }
         },
         "th": {
@@ -5410,7 +5410,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le palier compte les levées au-delà des six premières. Quatre signifie 6 + 4 = 10 levées. La dénomination désigne l'atout, ou NT sans atout."
+            "value": "Le palier compte les levées au-delà des six premières. Quatre signifie 6 + 4 = 10 levées. La dénomination désigne l'atout, ou NT s'il n'y a pas d'atout."
           }
         },
         "it": {
@@ -5422,7 +5422,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "コントラクトのレベルは最初の6トリックを超える数です。4なら6 + 4 = 10トリック。切り札のスートを示し、切り札なしならNTです。"
+            "value": "コントラクトのレベルは最初の6トリックを超える数です。4なら6 + 4 = 10トリック。デノミネーションは切り札のスートを示し、切り札なしならNTです。"
           }
         },
         "nl": {
@@ -5611,7 +5611,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Uno scarto non può vincere se non è atout, e il senza atout non ha atout."
+            "value": "Uno scarto non può vincere se non è un atout, e a senza atout non ci sono atout."
           }
         },
         "ja": {
@@ -5623,7 +5623,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Een afgooi kan alleen een slag winnen als die een troef is; sans atout heeft geen troefkleur."
+            "value": "Een afgooier kan alleen een slag winnen als die een troef is; sans atout heeft geen troefkleur."
           }
         },
         "th": {
@@ -5652,7 +5652,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Et femminutters mix til dit næste bord"
+            "value": "Et femminutters mix til din næste bridgeaften"
           }
         },
         "de": {
@@ -6054,13 +6054,13 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ένα ψηλό μικρό φύλλο είναι το κλασικό ενθαρρυντικό σινιάλο. Τα ζευγάρια διαφέρουν, γι' αυτό συμφωνήστε τη μέθοδο πριν καθίσετε."
+            "value": "Ένα ψηλό μικρό φύλλο είναι το κλασικό ενθαρρυντικό σινιάλο. Κάθε ζευγάρι έχει τις δικές του συμφωνίες, γι' αυτό κανονίστε τα σινιάλα στα πετάματα πριν καθίσετε."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Une grosse carte est le signal d'appel standard. Les paires diffèrent, alors convenez de votre méthode de défausse avant de jouer."
+            "value": "Une grosse carte est le signal d'appel standard. Les accords varient selon les paires, alors convenez de votre méthode de défausse avant de jouer."
           }
         },
         "it": {
@@ -6072,7 +6072,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "高めのスポットカードが標準的なアティチュードシグナルです。ペアによって違うので、座る前に捨て札の方法を決めておきましょう。"
+            "value": "高めのスポットカードが標準的なエンカレッジのシグナルです。ペアによって違うので、座る前に捨て札の方法を決めておきましょう。"
           }
         },
         "nl": {
@@ -6090,7 +6090,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yüksek bir küçük kart standart olumlu sinyal verir. Ortaklık anlaşmaları değişir; masaya oturmadan önce ıskarta yönteminizi kararlaştırın."
+            "value": "Onör dışı yüksek bir kart standart olumlu sinyal verir. Ortaklık anlaşmaları değişir; masaya oturmadan önce ıskarta yönteminizi kararlaştırın."
           }
         },
         "zh-Hant": {
@@ -6326,7 +6326,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un atout basso batte una carta alta del seme d'attacco."
+            "value": "Un atout basso batte una carta alta del seme giocato."
           }
         },
         "ja": {
@@ -6728,7 +6728,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Een singleton kan een introever opleveren als partner aan slag komt en de kleur terugspeelt."
+            "value": "Een singleton kan een introefkans opleveren als partner aan slag komt en de kleur terugspeelt."
           }
         },
         "th": {
@@ -6935,7 +6935,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bilgi kontrı, söylenmemiş renklere destek gösterir ve ortağınızdan birini seçmesini ister; ortağınızın pas geçmek için özel bir nedeni yoksa."
+            "value": "Bilgi kontrı, söylenmemiş renklere destek gösterir ve ortağınızdan, pas geçmek için özel bir nedeni yoksa, bunlardan birini seçmesini ister."
           }
         },
         "zh-Hant": {
@@ -7845,7 +7845,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "İlk lövede as oynanamaz"
+            "value": "İlk atakta as oynanamaz"
           }
         },
         "zh-Hant": {
@@ -8046,7 +8046,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "一眼算出整手牌"
+            "value": "一眼算出手牌點數"
           }
         }
       }
@@ -8063,7 +8063,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fortgeschrittenes Kartenspiel"
+            "value": "Fortgeschrittene Spieltechnik"
           }
         },
         "el": {
@@ -8122,7 +8122,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Efter en 1NT-åbning, hvilken hånd bliver typisk spilfører ved en Jacoby-transfer?"
+            "value": "Hvilken hånd bliver primært spilfører ved en Jacoby-transfer efter 1NT?"
           }
         },
         "de": {
@@ -8158,7 +8158,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Na een 1NT-opening met een Jacoby-transfer, welke hand wordt doorgaans leider?"
+            "value": "Welke hand wordt na 1NT dankzij een Jacoby-transfer vooral leider?"
           }
         },
         "th": {
@@ -8252,7 +8252,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Efter makkers 1NT-åbning, hvad spørger 2♣ Stayman om?"
+            "value": "Hvad spørger 2♣ Stayman om efter makkers 1NT-åbning?"
           }
         },
         "de": {
@@ -8731,7 +8731,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tutti e quattro i giocatori passano prima di qualsiasi licita. Qual è il punteggio della smazzata nel bridge duplicato?"
+            "value": "Tutti e quattro i giocatori passano senza aprire. Qual è il punteggio della smazzata nel bridge duplicato?"
           }
         },
         "ja": {
@@ -8997,7 +8997,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "後ろにキングのないエースは、たいてい小さいカードしか取れず、ディクレアラーのキングを勝ち札にしてしまうこともあります。エースはオナーを捕まえるために取っておきます。"
+            "value": "キングを伴わないエースは、たいてい小さいカードしか取れず、ディクレアラーのキングを勝ち札にしてしまうこともあります。エースはオナーを捕まえるために取っておきます。"
           }
         },
         "nl": {
@@ -9015,7 +9015,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Arkasında papaz olmayan bir as genellikle yalnızca küçük kartları alır ve deklaranın papazını kazanan yapabilir. Bir onörü yakalamak için ası saklayın."
+            "value": "Arkasında papaz olmayan bir as genellikle yalnızca küçük kartları alır ve deklaranın papazına löve kazandırabilir. Bir onörü yakalamak için ası saklayın."
           }
         },
         "zh-Hant": {
@@ -9032,7 +9032,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Et ubeskyttet es er ofte mere værd senere som indgang eller til at fange en honnør. Indkassér ikke automatisk esser ved udspillet."
+            "value": "Et es uden konge er ofte mere værd senere som indgang eller til at fange en honnør. Indkassér ikke automatisk esser ved udspillet."
           }
         },
         "de": {
@@ -9056,13 +9056,13 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un asso non protetto spesso è più utile in seguito, come rientro o per catturare un onore. Non incassare automaticamente gli assi all'attacco."
+            "value": "Un asso senza il re spesso è più utile in seguito, come rientro o per catturare un onore. Non incassare automaticamente gli assi all'attacco."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "サポートのないエースは、後のエントリーやオナー取りに使うほうが価値があることが多いです。オープニングリードで機械的にエースを出さないこと。"
+            "value": "キングを伴わないエースは、後のエントリーやオナー取りに使うほうが価値があることが多いです。オープニングリードで機械的にエースを出さないこと。"
           }
         },
         "nl": {
@@ -9387,7 +9387,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "週のうち好きな5日で練習できます。1日休んでも、アーカイブで追いついて今週の記録を続けられます。"
+            "value": "週のうちどの5日でもかまいません。1日休んでも、アーカイブで追いついて今週の記録を続けられます。"
           }
         },
         "nl": {
@@ -9411,7 +9411,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "任意五天都算。錯過一天？從紀錄補上，讓這週持續下去。"
+            "value": "任意五天都算。錯過一天？從紀錄補上，保住這週的進度。"
           }
         }
       }
@@ -10149,19 +10149,19 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Στάση, μέτρημα, προτίμηση χρώματος και άπερκατ"
+            "value": "Ενθάρρυνση, μέτρημα, προτίμηση χρώματος και άπερκατ"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Appel, parité, préférence et surcoupe forcée"
+            "value": "Appel, parité, préférence et uppercut"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gradimento, conto, preferenza di seme e surtaglio"
+            "value": "Gradimento, conto, preferenza di seme e promozione d'atout"
           }
         },
         "ja": {
@@ -10185,7 +10185,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tutum, sayı, renk tercihi ve üstten çakma"
+            "value": "Tutum, sayı, renk tercihi ve yüksek kozla çakma"
           }
         },
         "zh-Hant": {
@@ -10214,7 +10214,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Αποφύγετε κούπες"
+            "value": "Αποφύγετε τις κούπες"
           }
         },
         "fr": {
@@ -10226,7 +10226,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Evita i cuori"
+            "value": "Evita le cuori"
           }
         },
         "ja": {
@@ -10492,7 +10492,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "おすすめ"
+            "value": "お得"
           }
         },
         "nl": {
@@ -10640,7 +10640,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Saati yenin"
+            "value": "Zamanla yarışın"
           }
         },
         "zh-Hant": {
@@ -10675,13 +10675,13 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comme vous êtes chicane à pique, vous pouvez couper. Même le 2♥ bat toutes les cartes qui ne sont pas des atouts dans la levée."
+            "value": "Comme vous avez chicane à pique, vous pouvez couper. Même le 2♥ bat toutes les cartes qui ne sont pas des atouts dans la levée."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Essendo vuoto a picche, puoi tagliare. Anche il 2♥ batte ogni carta non d'atout nella presa."
+            "value": "Avendo il vuoto a picche, puoi tagliare. Anche il 2♥ batte ogni carta non d'atout nella presa."
           }
         },
         "ja": {
@@ -10829,7 +10829,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ก่อนคุณไป"
+            "value": "ก่อนจะไป"
           }
         },
         "tr": {
@@ -11166,7 +11166,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "不論實力都叫無王"
+            "value": "不論牌力都叫無王"
           }
         }
       }
@@ -11254,7 +11254,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Η μεγαλύτερη βελτίωση στο %@. Συνεχίστε στον ίδιο ρυθμό για να τη διατηρήσετε."
+            "value": "Η μεγαλύτερη βελτίωση στην αίθουσα %@. Συνεχίστε στον ίδιο ρυθμό για να τη διατηρήσετε."
           }
         },
         "fr": {
@@ -11266,7 +11266,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Salto più grande: %@. Mantieni il ritmo e reggerà."
+            "value": "Miglioramento più grande in %@. Mantieni questo ritmo e durerà."
           }
         },
         "ja": {
@@ -11284,7 +11284,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "พัฒนาขึ้นมากที่สุดใน %@ รักษาจังหวะนี้ไว้ แล้วจะพัฒนาต่อไป"
+            "value": "พัฒนาขึ้นมากที่สุดใน %@ รักษาจังหวะนี้ไว้ แล้วผลจะคงอยู่"
           }
         },
         "tr": {
@@ -11922,7 +11922,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bridge Minuteと、あなた専用の対局前練習"
+            "value": "Bridge Minuteと、あなた専用の対局前の練習"
           }
         },
         "nl": {
@@ -11940,7 +11940,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bridge Minute ve size özel Briç gecesi hazırlığı"
+            "value": "Bridge Minute ve size özel briç gecesi hazırlığı"
           }
         },
         "zh-Hant": {
@@ -12510,7 +12510,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "わからない"
+            "value": "特定できない"
           }
         },
         "nl": {
@@ -12912,7 +12912,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "กำลังตรวจสอบสมาชิก…"
+            "value": "กำลังตรวจสอบสถานะสมาชิก…"
           }
         },
         "tr": {
@@ -14543,7 +14543,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Rengi bekletmeden önce dağılımını sayın. Kontrat başka bir renkte hemen düşme tehlikesindeyse löveyi bilerek vermeyin."
+            "value": "Löveyi bırakmadan önce rengin dağılımını sayın. Kontrat başka bir renkte hemen düşme tehlikesindeyse löveyi bilerek vermeyin."
           }
         },
         "zh-Hant": {
@@ -14679,7 +14679,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "評估實力"
+            "value": "評估牌力"
           }
         }
       }
@@ -15470,7 +15470,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spilføreren har vist fem spar og fire hjerter, har bekendt klør de første to gange og kastet af, da klør spilles tredje gang. Hvor mange ruder har spilføreren?"
+            "value": "Spilføreren har vist fem spar og fire hjerter, har bekendt til to runder klør og kastet af i tredje runde. Hvor mange ruder har spilføreren?"
           }
         },
         "de": {
@@ -15494,7 +15494,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Il dichiarante ha mostrato cinque picche e quattro cuori, ha risposto a due giri di fiori e poi ha scartato al terzo. Quanti quadri ha?"
+            "value": "Il dichiarante ha mostrato cinque picche e quattro cuori, ha risposto a due giri di fiori e poi ha scartato al terzo. Quante carte di quadri ha?"
           }
         },
         "ja": {
@@ -15600,7 +15600,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spilføreren spiller Q♦ mod bordet. Du har K♦ og spiller som anden hånd. Hvilket kort følger retningslinjen „dæk en honnør med en honnør“?"
+            "value": "Spilføreren spiller Q♦ mod bordet. Du har K♦ og spiller som anden hånd. Hvilket kort følger retningslinjen »dæk en honnør med en honnør«?"
           }
         },
         "de": {
@@ -15648,7 +15648,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deklaran Q♦'yi yere doğru oynuyor. Elinizde K♦ var ve ikinci sırada oynuyorsunuz. Hangi kart “onörü onörle kapat” kuralına uyar?"
+            "value": "Deklaran Q♦'yu yere doğru oynuyor. Elinizde K♦ var ve ikinci sırada oynuyorsunuz. Hangi kart “onörü onörle kapat” kuralına uyar?"
           }
         },
         "zh-Hant": {
@@ -15730,7 +15730,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spilføreren spiller kontrakten. Efter udspillet lægger makkeren alle 13 kort åbent på bordet og deltager ikke selv i spillet. Spilføreren bestemmer, hvilke kort der spilles fra bordet."
+            "value": "Spilføreren spiller kontrakten. Efter udspillet bliver spilførerens makker bord, lægger alle 13 kort åbent og spiller de kort, spilføreren nævner."
           }
         },
         "de": {
@@ -15931,7 +15931,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gegenspieler: zweite Hand tief"
+            "value": "Gegenspieler: zweite Hand klein"
           }
         },
         "el": {
@@ -15949,7 +15949,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Difensore: secondo di mano basso"
+            "value": "Difensore: secondo di mano, carta bassa"
           }
         },
         "ja": {
@@ -16561,7 +16561,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kazandıran bir kartı ıskarta etmek"
+            "value": "Löve alacak bir kartı ıskarta etmek"
           }
         },
         "zh-Hant": {
@@ -16679,7 +16679,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dubbeltik om dit abonnement te kiezen"
+            "value": "Dubbeltik om deze optie te kiezen"
           }
         },
         "th": {
@@ -16927,13 +16927,13 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Liscia subito con una piccola. Vincere subito con l'asso può permettere ai difensori di incassare il seme quando riprendono la mano."
+            "value": "Liscia presto con una cartina. Prendere subito con l'asso può permettere ai difensori di incassare il seme quando riprendono la mano."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "早めに小さいカードでダックします。すぐエースで勝つと、ディフェンダーがリードを取り返したときにスートを走られかねません。"
+            "value": "早めに小さいカードでダックします。すぐエースで勝つと、ディフェンダーにリードを取り返されたとき、そのスートを取り切られかねません。"
           }
         },
         "nl": {
@@ -16951,7 +16951,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "İlk turda küçük kartı bilerek almayın. Ası hemen alırsanız, savunma eli yeniden kazandığında o rengin kalan kartlarını çekebilir."
+            "value": "İlk turda küçük kart verip löveyi bırakın. Ası hemen oynayıp löveyi alırsanız, savunmacılar eli yeniden aldığında rengin kalan kartlarını çekebilir."
           }
         },
         "zh-Hant": {
@@ -17051,7 +17051,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le mort, seul"
+            "value": "Le mort seul"
           }
         },
         "it": {
@@ -17228,7 +17228,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "De 13 kort på bordet lægges åbent. Bordet deltager ikke i spillet, og spilføreren bestemmer, hvilke kort der spilles derfra."
+            "value": "Bordets kort lægges åbent, og bordet deltager ikke i spillet. Spilføreren bestemmer, hvilke kort der spilles derfra."
           }
         },
         "de": {
@@ -17323,7 +17323,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ダミーは小さいカード。高く出す？"
+            "value": "ダミーは小さいカード。高いカードを出す？"
           }
         },
         "nl": {
@@ -17412,7 +17412,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "莊家"
+            "value": "夢家的同伴"
           }
         }
       }
@@ -17760,7 +17760,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ένας από τους αμυνόμενους"
+            "value": "Οποιοσδήποτε αμυνόμενος"
           }
         },
         "fr": {
@@ -17825,7 +17825,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ένας από τους αντιπάλους"
+            "value": "Οποιοσδήποτε αντίπαλος"
           }
         },
         "fr": {
@@ -18091,7 +18091,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "L'entraînement infini distribue des mains à volonté. Chaque salle propose des exercices bonus à débloquer, et les tables des maîtres proposent les exercices les plus avancés. Rien de ce que vous avez ne disparaît. Débloquez tout à tout moment depuis l'accueil ou les réglages."
+            "value": "L'entraînement infini distribue des mains à volonté. Chaque salle propose des exercices bonus à débloquer, et les tables des maîtres réunissent les plus avancés. Rien de ce que vous avez ne disparaît. Débloquez-les quand vous voulez depuis l'accueil ou les réglages."
           }
         },
         "it": {
@@ -18156,13 +18156,13 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Entraînement infini, sans jamais revoir la même main"
+            "value": "Entraînement infini, sans répétition"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Allenamento infinito, mai ripetitivo"
+            "value": "Allenamento infinito, senza ripetizioni"
           }
         },
         "ja": {
@@ -18806,7 +18806,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Du travail en plus : %@, puis un mélange équilibré des autres salles."
+            "value": "Un travail ciblé sur %@, puis un mélange équilibré des autres salles."
           }
         },
         "it": {
@@ -18818,7 +18818,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "追加練習：%@、その後ほかの部屋からバランスよく。"
+            "value": "%@を重点的に練習し、その後ほかの部屋からバランスよく出題します。"
           }
         },
         "nl": {
@@ -18830,7 +18830,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ฝึกเพิ่ม: %@ แล้วต่อด้วยมิกซ์สมดุลจากห้องอื่น"
+            "value": "ฝึกเพิ่มใน %@ แล้วต่อด้วยโจทย์คละจากห้องอื่นอย่างสมดุล"
           }
         },
         "tr": {
@@ -18895,7 +18895,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "เฉพาะไพ่หน้า"
+            "value": "เฉพาะไพ่ภาพ"
           }
         },
         "tr": {
@@ -18930,7 +18930,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Δεκαπέντε πόντοι, ισοκατανεμημένο 4-3-3-3, χωρίς πεντάφυλλο μείζον. Ακριβώς το εύρος του 1NT."
+            "value": "Δεκαπέντε πόντοι, ισόρροπο 4-3-3-3, χωρίς πεντάφυλλο μείζον. Ακριβώς το εύρος του 1NT."
           }
         },
         "fr": {
@@ -18954,7 +18954,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vijftien punten, verdeeld 4-3-3-3 en geen vijfkaart hoge kleur. Precies de 1NT-zone."
+            "value": "Vijftien punten, verdeeld 4-3-3-3 en geen vijfkaart hoge kleur. Precies de 1NT-marge."
           }
         },
         "th": {
@@ -19007,7 +19007,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Impasse, colpi in bianco e giocate di sicurezza"
+            "value": "Impasse, colpi in bianco e giochi di sicurezza"
           }
         },
         "ja": {
@@ -19279,7 +19279,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vijf minuten oefenen op maat geven je straks meer rust aan tafel."
+            "value": "Vijf minuten oefenen op maat geeft je straks meer rust aan tafel."
           }
         },
         "th": {
@@ -19332,7 +19332,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nobili quinte"
+            "value": "Nobili quinti"
           }
         },
         "ja": {
@@ -19409,7 +19409,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fouten\nherstellen"
+            "value": "Mijn fouten\nherstellen"
           }
         },
         "th": {
@@ -19982,7 +19982,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Rispondere al colore viene prima. Puoi tagliare solo se non hai carte nel seme giocato."
+            "value": "Prima di tutto si risponde al colore. Puoi tagliare solo se non hai carte nel seme giocato."
           }
         },
         "ja": {
@@ -20295,13 +20295,13 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Για απαντώντα που δεν έχει περάσει πάσο, σε αδιατάρακτη αγορά SAYC, μια απάντηση σε νέο χρώμα χωρίς άλμα απαιτεί τουλάχιστον 6 πόντους στο επίπεδο 1 ή τουλάχιστον 10 στο επίπεδο 2. Και οι δύο δηλώσεις είναι αναγκαστικές για έναν γύρο. Σε μαζέρ, μια απλή στήριξη δείχνει 6 έως 10 πόντους με φιτ, ενώ η οριακή στήριξη δείχνει 10 έως 11 πόντους με φιτ. Η απάντηση 1NT σε μαζέρ δείχνει 6 έως 9 πόντους και δεν είναι αναγκαστική. Αυτά είναι εύρη απαντήσεων, όχι το εύρος 15 έως 17 πόντων για άνοιγμα 1NT."
+            "value": "Για απαντώντα που δεν έχει περάσει πάσο, σε αδιατάρακτη αγορά SAYC, μια απάντηση σε νέο χρώμα χωρίς άλμα απαιτεί τουλάχιστον 6 πόντους στο επίπεδο 1 ή τουλάχιστον 10 στο επίπεδο 2. Και οι δύο δηλώσεις είναι αναγκαστικές για έναν γύρο. Σε μείζον, μια απλή στήριξη δείχνει 6 έως 10 πόντους με φιτ, ενώ η οριακή στήριξη δείχνει 10 έως 11 πόντους με φιτ. Η απάντηση 1NT σε μείζον δείχνει 6 έως 9 πόντους και δεν είναι αναγκαστική. Αυτά είναι εύρη απαντήσεων, όχι το εύρος 15 έως 17 πόντων για άνοιγμα 1NT."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pour un répondant qui n'a pas passé, dans une séquence SAYC sans intervention, une réponse à une nouvelle couleur sans saut au palier de 1 demande au moins 6 points, ou au moins 10 au palier de 2 ; dans les deux cas, elle est forcing un tour. Après une ouverture en majeure, un soutien simple montre 6 à 10 points de soutien, et un soutien limite 10 à 11 points de soutien. Une réponse de 1NT sur une majeure montre 6 à 9 points et n'est pas forcing. Ces zones de réponse sont distinctes de la zone d'ouverture de 1NT à 15 à 17 points."
+            "value": "Pour un répondant qui n'a pas passé, dans une séquence SAYC sans intervention, une réponse à une nouvelle couleur sans saut au palier de 1 demande au moins 6 points, ou au moins 10 au palier de 2 ; dans les deux cas, elle est forcing un tour. Après une ouverture en majeure, un soutien simple montre 6 à 10 points de soutien, et un soutien limite 10 à 11 points de soutien. Une réponse de 1NT sur une majeure montre 6 à 9 points et n'est pas forcing. Ces zones de réponse sont distinctes de la zone de 15 à 17 points de l'ouverture de 1NT."
           }
         },
         "it": {
@@ -20319,7 +20319,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Voor een antwoorder die nog niet heeft gepast in een ongestoorde SAYC-bieding vereist een sprongloos antwoord in een nieuwe kleur minstens 6 punten op 1-niveau of minstens 10 op 2-niveau; beide zijn één ronde forcing. Na een hoge kleur toont een enkelvoudige verhoging met steun 6 tot 10 steunpunten; een limietverhoging toont 10 tot 11 steunpunten. Een 1NT-antwoord na een hoge kleur toont 6 tot 9 punten en is niet forcing. Dit zijn puntenmarges voor antwoorden, niet de openingsmarge van 15 tot 17 punten voor 1NT."
+            "value": "Voor een antwoorder die nog niet heeft gepast, vereist in een ongestoorde SAYC-bieding een nieuwe kleur zonder sprong minstens 6 punten op 1-niveau of minstens 10 op 2-niveau; beide zijn één ronde forcing. Na een hoge kleur toont een enkelvoudige verhoging met steun 6 tot 10 steunpunten; een limietverhoging toont 10 tot 11 steunpunten. Een 1NT-antwoord na een hoge kleur toont 6 tot 9 punten en is niet forcing. Dit zijn puntenmarges voor antwoorden, niet de openingsmarge van 15 tot 17 punten voor 1NT."
           }
         },
         "th": {
@@ -20337,7 +20337,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "在沒有對手干擾的 SAYC 叫牌中，未曾派司的應叫者以非跳叫方式應叫新花色，一階至少需 6 點，二階至少需 10 點；兩種應叫都逼叫一輪。對高花開叫，簡單加叫表示有支持且有 6 到 10 個牌型點，限制性加叫表示有 10 到 11 個牌型點。高花開叫後應叫 1NT 表示 6 到 9 點，且不逼叫。這些都是應叫點力範圍，不是開叫 1NT 的 15 到 17 點範圍。"
+            "value": "在沒有對手干擾的 SAYC 叫牌中，未曾派司的應叫者以非跳叫方式應叫新花色，一階至少需 6 點，二階至少需 10 點；兩種應叫都逼叫一輪。對高花開叫，簡單加叫表示有支持且有 6 到 10 個支持點，限制性加叫表示有 10 到 11 個支持點。高花開叫後應叫 1NT 表示 6 到 9 點，且不逼叫。這些都是應叫點力範圍，不是開叫 1NT 的 15 到 17 點範圍。"
           }
         }
       }
@@ -20425,7 +20425,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Οδηγήστε τον συμπαίκτη στη μανς"
+            "value": "Αναγκάστε τον συμπαίκτη ως τη μανς"
           }
         },
         "fr": {
@@ -20490,7 +20490,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Το συμβόλαιο 4 σε μαζέρ είναι η χαμηλότερη μανς και αξίζει 120 βαθμούς λεβέ. Τα υψηλότερα συμβόλαια δίνουν επίσης μανς, αλλά απαιτούν περισσότερες λεβέ."
+            "value": "Το συμβόλαιο 4 σε μείζον είναι η χαμηλότερη μανς και αξίζει 120 βαθμούς λεβέ. Τα υψηλότερα συμβόλαια δίνουν επίσης μανς, αλλά απαιτούν περισσότερες λεβέ."
           }
         },
         "fr": {
@@ -20815,7 +20815,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Φρεσκομοιρασμένα χέρια κάθε φορά. Βρείτε το άνοιγμα ή μετρήστε πόντους όσο θέλετε, με πλήρη εξήγηση μετά από κάθε απάντηση."
+            "value": "Καινούργια χέρια κάθε φορά. Βρείτε το άνοιγμα ή μετρήστε πόντους όσο θέλετε, με πλήρη εξήγηση μετά από κάθε απάντηση."
           }
         },
         "fr": {
@@ -20880,7 +20880,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Φρέσκα χέρια, χωρίς όριο"
+            "value": "Καινούργια χέρια, χωρίς όριο"
           }
         },
         "fr": {
@@ -21258,7 +21258,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Udgangsbonusser og straf for undertræk"
+            "value": "Udgangsbonusser og strafpoint for bet"
           }
         },
         "de": {
@@ -21270,7 +21270,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Μπόνους μανς και ποινές για λεβέ κάτω"
+            "value": "Μπόνους μανς και ποινές για λεβέ μέσα"
           }
         },
         "fr": {
@@ -21294,7 +21294,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Manchepremies en straffen voor down gaan"
+            "value": "Manchepremies en strafpunten voor downslagen"
           }
         },
         "th": {
@@ -21654,7 +21654,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "„Los geht's“ stellt dir jederzeit auf dem Startbildschirm diesen Fünf-Minuten-Mix zusammen: genau das, was du als Nächstes brauchst, verpasste Fragen zuerst. Lass uns jetzt mit deinem ersten Durchlauf starten."
+            "value": "„Los geht's“ stellt dir jederzeit auf dem Startbildschirm diesen Fünf-Minuten-Mix zusammen: genau das, was du als Nächstes brauchst, falsch beantwortete Fragen zuerst. Lass uns jetzt mit deinem ersten Durchlauf starten."
           }
         },
         "el": {
@@ -21749,7 +21749,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Beantwoord elke vraag twee keer achter elkaar goed om de stof goed te onthouden."
+            "value": "Beantwoord elke vraag twee keer op rij goed, dan blijft het hangen."
           }
         },
         "th": {
@@ -21814,7 +21814,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gaat rechtstreeks naar de ontwikkelaar, een echt persoon. Geen account of e-mail nodig."
+            "value": "Gaat rechtstreeks naar de ontwikkelaar, een echte persoon. Geen account of e-mail nodig."
           }
         },
         "th": {
@@ -21944,7 +21944,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ik had wat ik nodig had"
+            "value": "Ik heb wat ik nodig had"
           }
         },
         "th": {
@@ -22387,7 +22387,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "I cuori sono atout. Si attacca a picche e tu non ne hai. Quale carta può vincere la presa?"
+            "value": "Atout cuori. Si attacca a picche e tu non ne hai. Quale carta può vincere la presa?"
           }
         },
         "ja": {
@@ -22446,7 +22446,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Aidez-nous à progresser"
+            "value": "Aidez-nous à nous améliorer"
           }
         },
         "it": {
@@ -22476,7 +22476,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gelişmemize yardım edin"
+            "value": "Geliştirmemize yardım edin"
           }
         },
         "zh-Hant": {
@@ -22582,7 +22582,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "I punti onori descrivono una mano: asso 4, re 3, donna 2, fante 1. In SAYC la forza normale per un'apertura a livello uno è intorno ai 12-13 punti, con giudizio su distribuzione e forza di gioco."
+            "value": "I punti onori descrivono una mano: asso 4, re 3, donna 2, fante 1. In SAYC la forza normale per un'apertura a livello uno è intorno ai 12-13 punti, valutando anche distribuzione e forza di gioco."
           }
         },
         "ja": {
@@ -22594,7 +22594,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Honneurpunten helpen een hand te beschrijven: aas 4, heer 3, vrouw 2, boer 1. In SAYC ligt de gewone openingskracht op 1-niveau rond 12 tot 13 punten, met oordeel over verdeling en speelkracht."
+            "value": "Honneurpunten helpen een hand te beschrijven: aas 4, heer 3, vrouw 2, boer 1. In SAYC ligt de gewone openingskracht op 1-niveau rond 12 tot 13 punten, afhankelijk van verdeling en speelkracht."
           }
         },
         "th": {
@@ -22759,13 +22759,13 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Der Startbildschirm ist die Lobby. Jeder Raum hat eigene Übungen: Regeln lernen, eine Hand reizen, das Alleinspiel planen und verteidigen. Alle vier Einsteigerräume sind für immer kostenlos."
+            "value": "Der Startbildschirm ist die Lobby. Jeder Raum hat eigene Übungen: Regeln lernen, eine Hand reizen, das Alleinspiel planen und gegenspielen. Alle vier Einsteigerräume sind für immer kostenlos."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Η Αρχική είναι το λόμπι. Κάθε αίθουσα έχει τις δικές της ασκήσεις: μάθετε τους κανόνες, κάντε αγορές σε μια διανομή, σχεδιάστε την εκτέλεση και αμυνθείτε. Και οι τέσσερις αίθουσες αρχαρίων είναι δωρεάν, για πάντα."
+            "value": "Η Αρχική είναι το λόμπι. Κάθε αίθουσα έχει τις δικές της ασκήσεις: μάθετε τους κανόνες, κάντε τις δηλώσεις μιας διανομής, σχεδιάστε την εκτέλεση και αμυνθείτε. Και οι τέσσερις αίθουσες αρχαρίων είναι δωρεάν, για πάντα."
           }
         },
         "fr": {
@@ -23279,7 +23279,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wie dein Ergebnis im Vergleich zu anderen Paaren abschneidet"
+            "value": "Dein Ergebnis im Vergleich zu anderen Paaren"
           }
         },
         "el": {
@@ -23362,7 +23362,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Se hai una carta del seme giocato, devi giocarla. Solo se sei vuoto in quel seme puoi scartare o tagliare."
+            "value": "Se hai carte del seme giocato, devi giocarne una. Solo se sei vuoto in quel seme puoi scartare o tagliare."
           }
         },
         "ja": {
@@ -23421,7 +23421,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Si votre plan ne repose pas sur la coupe des perdantes de la main courte à l'atout, faites tomber les atouts adverses pour les empêcher de couper vos gagnantes."
+            "value": "Si votre plan ne repose pas sur des coupes dans la main courte à l'atout, faites tomber les atouts adverses pour les empêcher de couper vos gagnantes."
           }
         },
         "it": {
@@ -23498,13 +23498,13 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "3NTで、あなたの手にA-3-2、ダミーに小さいカードが2枚あるスートを相手がリードしました。相手の連絡を断つには、最初の巡目にどのカードを出しますか？"
+            "value": "3NTで、あなたの手にA-3-2、ダミーに小さいカードが2枚あるスートを相手がリードしました。相手の連絡を断つには、1巡目にどのカードを出しますか？"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "In 3NT komen de tegenstanders uit in een kleur waarin jij A-3-2 hebt en de dummy twee kleintjes. Welke kaart speel je in de eerste ronde om hun communicatie te verbreken?"
+            "value": "In 3NT komen de tegenstanders uit in een kleur waarin jij A-3-2 hebt en de dummy twee kleintjes. Welke kaart speel je in de eerste ronde om hun verbindingen te verbreken?"
           }
         },
         "th": {
@@ -23663,7 +23663,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "I en trumfkontrakt, hvornår må du trumfe i stedet for at bekende?"
+            "value": "Hvornår må du i en trumfkontrakt trumfe i stedet for at bekende?"
           }
         },
         "de": {
@@ -23705,7 +23705,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ในสัญญาที่มีทรัมป์ เมื่อไหร่ลงทรัมป์แทนการตามชุดได้"
+            "value": "ในสัญญาที่มีทรัมป์ คุณลงทรัมป์แทนการตามชุดได้เมื่อไหร่"
           }
         },
         "tr": {
@@ -23799,7 +23799,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "In Sans Atout zählst du die Stiche, die du machen kannst, ohne die Führung abzugeben. Dann suchst du die Farbe, in der du die nötigen Zusatzstiche entwickeln kannst."
+            "value": "In Sans Atout zählst du die Stiche, die du ohne Abgabe machen kannst. Dann suchst du die Farbe, in der du die nötigen Zusatzstiche entwickeln kannst."
           }
         },
         "el": {
@@ -23829,7 +23829,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "In sans atout tel je de slagen die je haalt zonder de slag af te geven. Zoek dan de kleur die de extra slagen kan leveren die je nodig hebt."
+            "value": "In sans atout tel je de slagen die je kunt maken zonder de tegenstanders aan slag te laten. Zoek dan de kleur die de extra slagen kan leveren die je nodig hebt."
           }
         },
         "th": {
@@ -23929,7 +23929,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "In Sans Atout bist du nach 4♣, 6♣ und 9♣ als Vierter am Zug, in dieser Reihenfolge. Welche Karte gewinnt am billigsten?"
+            "value": "In Sans Atout wurden 4♣, 6♣ und 9♣ in dieser Reihenfolge gespielt, du bist als Vierter am Zug. Welche Karte gewinnt am billigsten?"
           }
         },
         "el": {
@@ -24053,7 +24053,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inkluderer 7 dage gratis. Fornyes automatisk, indtil du opsiger."
+            "value": "Inkluderer 7 dage gratis. Fornyes automatisk, indtil det opsiges."
           }
         },
         "de": {
@@ -24095,7 +24095,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "รวมทดลองฟรี 7 วัน ต่ออายุอัตโนมัติจนกว่าจะยกเลิก"
+            "value": "ทดลองใช้ฟรี 7 วัน ต่ออายุอัตโนมัติจนกว่าจะยกเลิก"
           }
         },
         "tr": {
@@ -24597,7 +24597,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "TIENI ACCESA LA SERIE"
+            "value": "TIENI VIVA LA SERIE"
           }
         },
         "ja": {
@@ -24627,7 +24627,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "保持連勝"
+            "value": "保持連續天數"
           }
         }
       }
@@ -24644,7 +24644,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "WUSSTE ICH!"
+            "value": "GEWUSST"
           }
         },
         "el": {
@@ -24692,7 +24692,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "我知道"
+            "value": "會了"
           }
         }
       }
@@ -25123,7 +25123,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "トリックと点数はわかるが、ビッドはまだ遅い"
+            "value": "トリックと点数はわかるが、ビッドの判断はまだ遅い"
           }
         },
         "nl": {
@@ -25832,7 +25832,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Attaccare da un singolo in un colore laterale?"
+            "value": "Attaccare con un singolo in un colore laterale?"
           }
         },
         "ja": {
@@ -25950,7 +25950,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Βγείτε γύρω από"
+            "value": "Παρακάμψτε την"
           }
         },
         "fr": {
@@ -25962,7 +25962,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Attaccare intorno"
+            "value": "Attaccare altrove"
           }
         },
         "ja": {
@@ -26382,7 +26382,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "消極首攻"
+            "value": "被動首攻"
           }
         }
       }
@@ -26730,7 +26730,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Βγάλτε το πάνω φύλλο από σεκάνς τιμών. Περιγράφει το χρώμα και δεν χαρίζει φτηνή λεβέ."
+            "value": "Βγάλτε το πάνω φύλλο από σεκάνς ονέρ. Περιγράφει το χρώμα και δεν χαρίζει φτηνή λεβέ."
           }
         },
         "fr": {
@@ -26795,7 +26795,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Βγείτε μέσα από"
+            "value": "Βγείτε μέσα από αυτήν"
           }
         },
         "fr": {
@@ -26878,7 +26878,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "強さを通してリードする？"
+            "value": "強い側を通してリードする？"
           }
         },
         "nl": {
@@ -26937,7 +26937,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gioca verso A-Q. Se il difensore successivo gioca basso, metti la donna. Vince quando il re mancante è nel difensore che gioca prima della mano con A-Q."
+            "value": "Gioca verso A-Q. Se il difensore successivo gioca basso, metti la donna. Vince quando il re mancante è in mano al difensore che gioca prima della mano con A-Q."
           }
         },
         "ja": {
@@ -27221,13 +27221,13 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yerin onörlerinin içinden oynamak, deklaranı ortağınız oynamadan karar vermeye zorlar. Eski söz: güçten geç, zayıflığa oyna."
+            "value": "Yerin onörlerinin içinden oynamak, deklaranı ortağınız oynamadan karar vermeye zorlar. Eski söz: gücün içinden, zayıflığa doğru oyna."
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "從夢家的大牌下方首攻，莊家必須在同伴出牌前決定怎麼出。俗話說：「穿過強牌，打向弱牌。」"
+            "value": "穿過夢家的大牌出牌，莊家就必須在同伴出牌前先做決定。俗話說：「穿過強牌，打向弱牌。」"
           }
         }
       }
@@ -27481,7 +27481,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Soldaki rakip 1♥ açtı. Konuşma-kontru genellikle ortaktan ne yapmasını ister?"
+            "value": "Soldaki rakip 1♥ açtı. Konuşma kontru genellikle ortaktan ne yapmasını ister?"
           }
         },
         "zh-Hant": {
@@ -27850,7 +27850,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dai un'occhiata. Ogni esercizio qui si apre con %@."
+            "value": "Dai un'occhiata. Ogni esercizio qui si sblocca con %@."
           }
         },
         "ja": {
@@ -27862,13 +27862,13 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kijk rond. Elke oefening hier begint met %@."
+            "value": "Kijk rond. Elke oefening hier is beschikbaar met %@."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ลองดูได้เลย แบบฝึกทุกข้อที่นี่เริ่มต้นด้วย %@"
+            "value": "ลองดูได้เลย แบบฝึกทุกข้อที่นี่ปลดล็อกด้วย %@"
           }
         },
         "tr": {
@@ -28033,13 +28033,13 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Αφήστε τον εκτελεστή να μαντέψει αργότερα"
+            "value": "Αναγκάστε τον εκτελεστή να μαντέψει αργότερα"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Laissez le déclarant deviner plus tard"
+            "value": "Obligez le déclarant à deviner plus tard"
           }
         },
         "it": {
@@ -28086,7 +28086,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Få det til at sidde mellem spillene"
+            "value": "Få det til at sidde fast mellem spillene"
           }
         },
         "de": {
@@ -28187,7 +28187,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kies je bieding"
+            "value": "Kies je bod"
           }
         },
         "th": {
@@ -28252,7 +28252,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kies je bieding en draai de kaart om voor het antwoord van de coach"
+            "value": "Kies je bod en draai de kaart om voor het antwoord van de coach"
           }
         },
         "th": {
@@ -28346,7 +28346,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Følg enhedens indstilling"
+            "value": "Som enheden"
           }
         },
         "de": {
@@ -29156,7 +29156,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "絶対にありません。ルールに例外はありません。"
+            "value": "一切出せない。例外はない"
           }
         },
         "nl": {
@@ -29168,7 +29168,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ไม่เคย กฎนี้ตายตัว"
+            "value": "ไม่ได้เลย กฎนี้ตายตัว"
           }
         },
         "tr": {
@@ -29274,7 +29274,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "De nouvelles questions inédites sur les enchères, le jeu du déclarant, la défense et les tables des maîtres."
+            "value": "Des questions inédites sur les enchères, le jeu du déclarant, la défense et les tables des maîtres."
           }
         },
         "it": {
@@ -29286,7 +29286,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "オークション、ディクレアラーのプレイ、ディフェンス、マスターテーブルに新しいオリジナル問題。"
+            "value": "オークション、ディクレアラーのプレイ、ディフェンス、マスターテーブルの新しいオリジナル問題。"
           }
         },
         "nl": {
@@ -29912,7 +29912,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Noch keine Übung"
+            "value": "Noch nicht geübt"
           }
         },
         "el": {
@@ -29936,7 +29936,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "まだ練習がありません"
+            "value": "まだ練習していません"
           }
         },
         "nl": {
@@ -30084,7 +30084,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Koz yok. 10♦, 3♦, K♦ olan lövede son sizsiniz. Hangi kart kazanır?"
+            "value": "Koz yok. 10♦, 3♦, K♦ oynanan lövede son oynayan sizsiniz. Hangi kart kazanır?"
           }
         },
         "zh-Hant": {
@@ -30243,7 +30243,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Δεν ξεκίνησε"
+            "value": "Δεν έχει ξεκινήσει"
           }
         },
         "fr": {
@@ -30296,7 +30296,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Intet forfalder"
+            "value": "Intet at gentage"
           }
         },
         "de": {
@@ -30344,7 +30344,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tekrar edilecek yok"
+            "value": "Tekrar edilecek soru yok"
           }
         },
         "zh-Hant": {
@@ -30515,7 +30515,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spesso vale la pena"
+            "value": "Spesso ne vale la pena"
           }
         },
         "ja": {
@@ -30533,7 +30533,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "มักควรพิจารณา"
+            "value": "มักน่าพิจารณา"
           }
         },
         "tr": {
@@ -30580,7 +30580,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nella linea che vince la licita, il giocatore che ha nominato per primo la denominazione del contratto finale diventa dichiarante. Il suo compagno scopre il morto dopo l'attacco. L'altra coppia difende."
+            "value": "Nella linea che vince la licita, il giocatore che ha dichiarato per primo la denominazione del contratto finale diventa dichiarante. Il suo compagno scopre il morto dopo l'attacco. L'altra coppia difende."
           }
         },
         "ja": {
@@ -31803,7 +31803,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Αντάμ απέναντι σε συμβόλαιο χωρίς ατού"
+            "value": "Αντάμ σε συμβόλαιο χωρίς ατού"
           }
         },
         "fr": {
@@ -31945,7 +31945,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Aperture: extra"
+            "value": "Aperture: esercizi extra"
           }
         },
         "ja": {
@@ -32376,13 +32376,13 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Makker spiller esset ud, og du har Q-8-4. Hvilket kort lægger du for at opfordre til fortsættelse med standardsignaler?"
+            "value": "Makker spiller esset ud, og du har Q-8-4. I spiller standardsignaler. Hvilket kort opfordrer til fortsættelse?"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Der Partner spielt das Ass aus und du hältst Q-8-4. Welche Karte signalisiert nach Standardmarken, dass er weiterspielen soll?"
+            "value": "Der Partner spielt das Ass aus und du hältst Q-8-4. Welche Karte ermutigt bei Standardsignalen zum Weiterspielen?"
           }
         },
         "el": {
@@ -32536,7 +32536,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "パートナーが強さを示したスートをリードするのが、通常はいちばん無難です。自分に強い理由がある場合は別です。"
+            "value": "パートナーが強さを示したスートをリードするのが、通常はいちばん無難です。ただし、自分なりの明確な理由があれば別です。"
           }
         },
         "nl": {
@@ -32589,7 +32589,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les partenaires sont assis face à face. Les 52 cartes sont distribuées également, 13 pour chacun. Nord-Sud affronte Est-Ouest."
+            "value": "Les partenaires sont assis face à face. Les 52 cartes sont distribuées équitablement, 13 pour chacun. Nord-Sud affronte Est-Ouest."
           }
         },
         "it": {
@@ -33038,7 +33038,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Σχεδιάστε το χέρι και διαλέξτε φύλλο"
+            "value": "Σχεδιάστε την εκτέλεση και διαλέξτε φύλλο"
           }
         },
         "fr": {
@@ -33422,7 +33422,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spiel K♦. Durch das Decken kann eine Figur des Partners (Bube oder Zehn) zum Stichbringer werden."
+            "value": "Spiel K♦. Durch das Decken kann der Bube oder die Zehn des Partners zum Gewinner werden."
           }
         },
         "el": {
@@ -33635,7 +33635,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Giocare cuori"
+            "value": "Giocare una cuori"
           }
         },
         "ja": {
@@ -33818,7 +33818,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Παίξτε ψηλά"
+            "value": "Παίξτε ψηλό"
           }
         },
         "fr": {
@@ -33836,7 +33836,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "高く出す"
+            "value": "高いカードを出す"
           }
         },
         "nl": {
@@ -33984,13 +33984,13 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Küçük oynayın. Papazla çıkarsanız yerin ası kazanır ve vale de alıcı hâle gelebilir."
+            "value": "Küçük oynayın. Papazı koyarsanız yerin ası kazanır ve vale de alıcı hâle gelebilir."
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "出小牌。如果你出 K，夢家的 A 會贏，J 可能就成為大牌。"
+            "value": "出小牌。如果你出 K，夢家的 A 會贏，J 就可能成為贏墩。"
           }
         }
       }
@@ -34356,7 +34356,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "2番手で低く出すと、オナーを温存して後から相手のカードを取れることがよくあります。絶対のルールではありませんが、有力な基本方針です。"
+            "value": "2番手で小さく出すと、オナーを温存して後から相手のカードを取れることがよくあります。絶対のルールではありませんが、有力な基本方針です。"
           }
         },
         "nl": {
@@ -34368,7 +34368,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "การลงใบเล็กในตำแหน่งที่สองมักช่วยเก็บออนเนอร์ไว้จับไพ่ภายหลัง เป็นแนวทาง ไม่ใช่กฎ แต่เป็นวิธีเริ่มต้นที่ดี"
+            "value": "การลงใบเล็กในตำแหน่งที่สองมักช่วยเก็บออนเนอร์ไว้จับไพ่ภายหลัง เป็นแนวทาง ไม่ใช่กฎ แต่ควรยึดเป็นหลักไว้ก่อน"
           }
         },
         "tr": {
@@ -35065,7 +35065,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Proteggi l'asso esterno. Senza un rientro i fiori affrancati sono irraggiungibili e tutto il piano crolla."
+            "value": "Proteggi l'asso esterno. Senza un rientro le fiori affrancate sono irraggiungibili e tutto il piano crolla."
           }
         },
         "ja": {
@@ -35077,7 +35077,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bescherm het aas in de bijkleur. Zonder entree zijn de vrijgespeelde klaveren onbereikbaar en valt het hele plan in duigen."
+            "value": "Bescherm de aas in de bijkleur. Zonder entree zijn de vrijgespeelde klaveren onbereikbaar en valt het hele plan in duigen."
           }
         },
         "th": {
@@ -35644,7 +35644,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Rangs, levées, contrats et rôles à table"
+            "value": "Ordre des cartes, levées, contrats et rôles à table"
           }
         },
         "it": {
@@ -35792,7 +35792,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Beoordeel je hand van 13 kaarten en kies je bieding"
+            "value": "Beoordeel je hand van 13 kaarten en kies je bod"
           }
         },
         "th": {
@@ -35821,13 +35821,13 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vurder en åbningshånd, planlæg spilføringen, og spil målrettet i modspillet."
+            "value": "Vurder en åbningshånd, planlæg spilføringen, og spil målrettet i modspillet. Øv i dit eget tempo uden modstandere og uden pres."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Werte eine Eröffnungshand aus, plane einen Kontrakt und verteidige gezielt. Übe in deinem Tempo, ohne Gegner und ohne Druck."
+            "value": "Werte eine Eröffnungshand aus, plane einen Kontrakt und spiel gezielt gegen. Übe in deinem Tempo, ohne Gegner und ohne Druck."
           }
         },
         "el": {
@@ -36666,7 +36666,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Trumf på hånden med færrest trumfer, så du stadig har nok til at trække modstandernes trumfer."
+            "value": "Trumf på den korte trumfhånd, så du stadig har nok til at trække modstandernes trumfer."
           }
         },
         "de": {
@@ -36702,7 +36702,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Introef in de hand met de minste troeven, zodat je genoeg troeven overhoudt om die van de tegenstanders te trekken."
+            "value": "Troef in met de hand die de minste troeven heeft, zodat je genoeg troeven overhoudt om die van de tegenstanders te trekken."
           }
         },
         "th": {
@@ -36767,7 +36767,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De dummy heeft geen ruiten meer, dus introef je daar een verliezer uit je hand. Zo maak je een slag, zolang geen verdediger kan overtroeven."
+            "value": "Troef in. De dummy heeft geen ruiten meer, dus een verliezer uit je hand wordt een slag in de dummy, zolang geen verdediger kan overtroeven."
           }
         },
         "th": {
@@ -36867,7 +36867,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Schnappst du mit einer Karte, die der Alleinspieler überschnappen muss, kann das einen Trumpfstich für den Partner hochspielen. Deinen Schnapper zu opfern, um einen größeren Stich zu gewinnen, ist genau die Idee."
+            "value": "Schnappst du mit einer Karte, die der Alleinspieler überschnappen muss, kann das dem Partner einen Trumpfstich verschaffen. Deinen Schnapper zu opfern, um einen größeren Stich zu gewinnen, ist genau die Idee."
           }
         },
         "el": {
@@ -36926,7 +36926,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tommelfingerregler må vige for fordelingen. Hvis det at falde fra giver spilføreren et stik, som vedkommende ellers ikke kan vinde, så spil højt i stedet."
+            "value": "Tommelfingerregler må vige for fordelingen. Hvis det at dukke giver spilføreren et stik, som vedkommende ellers ikke kunne få, så spil højt i stedet."
           }
         },
         "de": {
@@ -37003,7 +37003,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "ΕΞΟΙΚΟΝΟΜΗΣΗ %lld%%"
+            "value": "ΕΚΠΤΩΣΗ %lld%%"
           }
         },
         "fr": {
@@ -37039,7 +37039,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "%lld%% TASARRUF"
+            "value": "%%%lld TASARRUF"
           }
         },
         "zh-Hant": {
@@ -37104,7 +37104,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "DAHA FAZLASI İÇİN KAYDIRIN"
+            "value": "DAHASI İÇİN KAYDIRIN"
           }
         },
         "zh-Hant": {
@@ -37293,7 +37293,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "บันทึกแล้ว จะส่งเมื่อคุณเปิดแอปพร้อมการเชื่อมต่อครั้งถัดไป"
+            "value": "บันทึกแล้ว จะส่งให้เมื่อคุณเปิดแอปครั้งถัดไปขณะเชื่อมต่ออินเทอร์เน็ต"
           }
         },
         "tr": {
@@ -37340,7 +37340,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Il secondo di mano basso protegge gli onori che stanno davanti al morto."
+            "value": "Giocare basso da secondo di mano protegge gli onori che stanno davanti al morto."
           }
         },
         "ja": {
@@ -37907,7 +37907,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sicher"
+            "value": "Treffsicher"
           }
         },
         "el": {
@@ -37925,7 +37925,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Acuto"
+            "value": "Brillante"
           }
         },
         "ja": {
@@ -37943,7 +37943,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "คม"
+            "value": "เฉียบคม"
           }
         },
         "tr": {
@@ -38049,7 +38049,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Montrez des cœurs ou des piques"
+            "value": "Montrer des cœurs ou des piques"
           }
         },
         "it": {
@@ -38421,13 +38421,13 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spring over foreløbig"
+            "value": "Spring over indtil videre"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jetzt überspringen"
+            "value": "Vorerst überspringen"
           }
         },
         "el": {
@@ -39219,7 +39219,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lancer ma séance de préparation de 5 minutes"
+            "value": "Lancer ma séance de 5 minutes"
           }
         },
         "it": {
@@ -39497,7 +39497,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Begin troef te trekken met een hoge troef, hier de aas. Laat je de troeven van de verdedigers uitstaan, dan kan een van hen een van je winnaars introeven."
+            "value": "Begin troef te trekken met een hoge troef, hier de aas. Laat je de verdedigers hun troeven houden, dan kan een van hen een van je winnaars introeven."
           }
         },
         "th": {
@@ -39786,7 +39786,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Stayman spørger 1NT-åbneren, om der er en firkorts højfarve."
+            "value": "Stayman spørger, om 1NT-åbneren har en firkorts højfarve."
           }
         },
         "de": {
@@ -39810,7 +39810,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lo Stayman chiede a chi ha aperto 1NT se ha un nobile quarto."
+            "value": "La Stayman chiede a chi ha aperto 1NT se ha un nobile quarto."
           }
         },
         "ja": {
@@ -39981,7 +39981,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Træning på stribe får det til at sidde fast"
+            "value": "Træning på stribe får det til at hænge ved"
           }
         },
         "de": {
@@ -40029,7 +40029,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Seriler kalıcı kılar"
+            "value": "Seriler alışkanlık kazandırır"
           }
         },
         "zh-Hant": {
@@ -40631,7 +40631,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Situationer ved bordet: find det lovlige træk, der vinder"
+            "value": "Situationer ved bordet: find det lovlige kort, der vinder"
           }
         },
         "de": {
@@ -41382,7 +41382,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bedankt dat je het zegt. Het helpt meer dan je denkt."
+            "value": "Bedankt dat je het laat weten. Het helpt meer dan je denkt."
           }
         },
         "th": {
@@ -41417,7 +41417,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Danke. Es ging direkt an den Entwickler."
+            "value": "Danke. Deine Nachricht ging direkt an den Entwickler."
           }
         },
         "el": {
@@ -41447,7 +41447,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bedankt. Het ging rechtstreeks naar de ontwikkelaar."
+            "value": "Bedankt. Je bericht is rechtstreeks naar de ontwikkelaar gegaan."
           }
         },
         "th": {
@@ -41784,7 +41784,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "10♣, 9♣'yi yener. Papaz ve ası sonraki löveler için saklayın."
+            "value": "10♣ ile 9♣ yenilir. Papaz ve ası sonraki löveler için saklayın."
           }
         },
         "zh-Hant": {
@@ -41849,7 +41849,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "1NT açılışı"
+            "value": "1NT açışı"
           }
         },
         "zh-Hant": {
@@ -42487,7 +42487,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De aas blijft over als latere winnaar en ingang."
+            "value": "De aas blijft over als latere winnaar en entree."
           }
         },
         "th": {
@@ -42906,7 +42906,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Afkastet viser præcis to klør. Tretten kort i alt: 5 + 4 + 2 giver 2 ruder. At tælle hånden ud er det, der skiller gode modspillere fra heldige."
+            "value": "Afkastet viser præcis to klør. Tretten kort i alt: 5 + 4 + 2 levner 2 ruder. At tælle hånden ud er det, der skiller gode modspillere fra heldige."
           }
         },
         "de": {
@@ -42971,7 +42971,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Otteren er dit højeste overskydende kort og signalerer opmuntring. Damen er for værdifuld at kaste af, og fireren signalerer afvisning."
+            "value": "Otteren er dit højeste overskydende kort og signalerer opmuntring. Damen er for værdifuld til at kaste af, og fireren signalerer afvisning."
           }
         },
         "de": {
@@ -42983,7 +42983,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Το οκτώ είναι το ψηλότερο φύλλο που σας περισσεύει και δείχνει ενθάρρυνση. Η ντάμα είναι πολύτιμη για να την πετάξετε, ενώ το τέσσερα δείχνει αποθάρρυνση."
+            "value": "Το οκτώ είναι το ψηλότερο φύλλο που σας περισσεύει και δείχνει ενθάρρυνση. Η ντάμα είναι πολύτιμη και δεν την πετάτε, ενώ το τέσσερα δείχνει αποθάρρυνση."
           }
         },
         "fr": {
@@ -43101,7 +43101,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Første bet koster 100, de næste to 200 hver og den fjerde 300: -800. I zonen koster doblede bet 200 for det første og 300 for hvert følgende."
+            "value": "Første bet koster 100, de næste to 200 hver og den fjerde 300: -800. I zonen koster doblede bet 200 for den første og 300 for hver følgende."
           }
         },
         "de": {
@@ -43172,7 +43172,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Die fünf Honneurs sind Ass, König, Dame, Bube und Zehn. Nur die oberen vier zählen Figurenpunkte."
+            "value": "Die fünf Honneurs sind Ass, König, Dame, Bube und Zehn. Nur die oberen vier bringen Figurenpunkte."
           }
         },
         "el": {
@@ -43314,7 +43314,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le principe est le plus fort quand le partenaire peut tenir l'honneur juste en dessous."
+            "value": "Le principe vaut surtout quand le partenaire peut tenir l'honneur juste en dessous."
           }
         },
         "it": {
@@ -43444,7 +43444,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les adversaires ont forcé une manche limite"
+            "value": "Les adversaires ont poussé jusqu'à une manche limite"
           }
         },
         "it": {
@@ -43462,7 +43462,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De tegenstanders hebben zich naar een krappe manche geboden"
+            "value": "De tegenstanders hebben een krappe manche geboden"
           }
         },
         "th": {
@@ -43633,7 +43633,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Η ντάμα νικά τον βαλέ. Και τα τρία ονέρ κερδίζουν, οπότε παίξτε τη χαμηλότερη νικήτρια και κρατήστε τον άσο και τον ρήγα."
+            "value": "Η ντάμα νικά τον βαλέ. Και τα τρία ονέρ κερδίζουν, οπότε παίξτε το μικρότερο και κρατήστε τον άσο και τον ρήγα."
           }
         },
         "fr": {
@@ -43822,7 +43822,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Die starke Sans-Atout-Hand"
+            "value": "Die stärkere Sans-Atout-Hand"
           }
         },
         "el": {
@@ -43858,7 +43858,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "มือโนทรัมป์ที่แข็ง"
+            "value": "มือโนทรัมป์ที่แข็งกว่า"
           }
         },
         "tr": {
@@ -43899,7 +43899,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le gagnant de la levée entame la suivante."
+            "value": "Le gagnant de la levée joue en premier à la suivante."
           }
         },
         "it": {
@@ -44254,7 +44254,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bu elde on üç puan var, beşli majör yok ve 1NT için güç yetersiz. Daha uzun minörünüz olan 1♦'yi açın."
+            "value": "Bu elde on üç puan var, beşli majör yok ve 1NT için güç yetersiz. Daha uzun minörünüzden 1♦ açın."
           }
         },
         "zh-Hant": {
@@ -44644,7 +44644,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bu elde 14 puan ve beş sinek var, beşli majör yok. 1NT için gereken 15-17 puana ulaşmadığından, daha uzun minörünüz olan 1♣'yi açın."
+            "value": "Bu elde 14 puan ve beş sinek var, beşli majör yok. 1NT için gereken 15-17 puana ulaşmadığından, daha uzun minörünüzden 1♣ açın."
           }
         },
         "zh-Hant": {
@@ -45524,13 +45524,13 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "La séance du jour est faite"
+            "value": "La séance du jour est terminée"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "La sessione di oggi è fatta"
+            "value": "Sessione di oggi completata"
           }
         },
         "ja": {
@@ -45595,7 +45595,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "La sfida condivisa di oggi, con cinque domande"
+            "value": "La sfida condivisa di oggi da cinque domande"
           }
         },
         "ja": {
@@ -45944,7 +45944,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ ücretsiz deneyin"
+            "value": "%@ ücretsiz deneme"
           }
         },
         "zh-Hant": {
@@ -47044,7 +47044,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Heute: %1$lld/%2$lld ansehen"
+            "value": "Heute ansehen (%1$lld/%2$lld)"
           }
         },
         "el": {
@@ -47062,7 +47062,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vedi oggi: %1$lld/%2$lld"
+            "value": "Vedi il %1$lld/%2$lld di oggi"
           }
         },
         "ja": {
@@ -47074,7 +47074,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bekijk vandaag %1$lld/%2$lld"
+            "value": "Bekijk score van vandaag %1$lld/%2$lld"
           }
         },
         "th": {
@@ -47328,7 +47328,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "続けるのを妨げているもの"
+            "value": "続けない理由"
           }
         },
         "nl": {
@@ -47452,7 +47452,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Arriva al tavolo sicuro"
+            "value": "Arriva al tavolo sicuro di te"
           }
         },
         "ja": {
@@ -47564,7 +47564,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wollte mehr Inhalte"
+            "value": "Ich wollte mehr Inhalte"
           }
         },
         "el": {
@@ -48061,7 +48061,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Batı 7♥ ile atak yaptı. Bu dört kartınız var. Hangi kart kurala uygundur?"
+            "value": "Batı 7♥ ile atak yaptı. Elinizde bu dört kart var. Hangi kart kurala uygundur?"
           }
         },
         "zh-Hant": {
@@ -48132,7 +48132,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "4♠ 承諾什麼？"
+            "value": "4♠ 保證什麼？"
           }
         }
       }
@@ -48427,7 +48427,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cos'è un surtaglio forzante (uppercut) in difesa?"
+            "value": "Cos'è un uppercut in difesa?"
           }
         },
         "ja": {
@@ -48764,7 +48764,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wat zou Bridge Trainer beter maken voor jou?"
+            "value": "Wat zou Bridge Trainer voor jou beter maken?"
           }
         },
         "th": {
@@ -48776,7 +48776,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bridge Trainer'ı sizin için daha iyi hâle ne getirirdi?"
+            "value": "Bridge Trainer'ı sizin için nasıl daha iyi hâle getirebiliriz?"
           }
         },
         "zh-Hant": {
@@ -49059,7 +49059,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wenn du klein spielst und dadurch einen Singleton- oder Doubleton-Honneur im Dummy gewinnen lässt"
+            "value": "Wenn Kleinspielen einen Singleton- oder Doubleton-Honneur im Dummy gewinnen ließe"
           }
         },
         "el": {
@@ -49207,7 +49207,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quando gli avversari hanno appena la forza sufficiente, spesso hanno bisogno del tuo aiuto. Un attacco tranquillo evita di regalare loro l'unica presa che mancava."
+            "value": "Quando gli avversari hanno appena la forza sufficiente, spesso hanno bisogno del tuo aiuto. Un attacco passivo evita di regalare loro l'unica presa che mancava."
           }
         },
         "ja": {
@@ -50182,7 +50182,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Perché attaccare con un asso non protetto contro un contratto a colore è di solito una cattiva scelta?"
+            "value": "Perché attaccare con un asso senza il re contro un contratto a colore è di solito una cattiva scelta?"
           }
         },
         "ja": {
@@ -50206,13 +50206,13 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kozlu kontrata karşı, yanında K olmayan A ile atak yapmak neden genellikle kötü bir seçimdir?"
+            "value": "Kozlu kontrata karşı papazsız as ile atak yapmak neden genellikle kötü bir seçimdir?"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "為什麼有王合約通常不宜首攻缺少大牌支援的 A？"
+            "value": "為什麼對抗有王合約時，通常不宜首攻缺少大牌支援的 A？"
           }
         }
       }
@@ -50371,7 +50371,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gagner chaque contrat"
+            "value": "Réussir chaque contrat"
           }
         },
         "it": {
@@ -50489,7 +50489,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bei gleich langen Unterfarben eröffnest du die höhere."
+            "value": "Ist eine Unterfarbe gleich lang, eröffnest du die höhere Farbe."
           }
         },
         "el": {
@@ -50507,7 +50507,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Con minori di pari lunghezza, apri il seme di rango superiore."
+            "value": "Con un minore di pari lunghezza, apri il seme di rango superiore."
           }
         },
         "ja": {
@@ -50797,7 +50797,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "兩門低花各三張時，慣例是短梅花。"
+            "value": "兩門低花各三張時，慣例是開叫短梅花。"
           }
         }
       }
@@ -51039,7 +51039,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "JIJ BENT AAN DE BEURT"
+            "value": "JOUW BEURT"
           }
         },
         "th": {
@@ -51151,7 +51151,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "C'EST À VOUS"
+            "value": "DÉSORMAIS À VOUS"
           }
         },
         "it": {
@@ -51334,7 +51334,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ja, spiel durch die Stärke des Alleinspielers aus."
+            "value": "Ja, durch die Stärke spielen"
           }
         },
         "el": {
@@ -51352,19 +51352,19 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sì, attacca sotto gli onori avversari"
+            "value": "Sì, gioca attraverso la forza"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "はい、相手の強いスートに向けてリードします"
+            "value": "はい、強い手を通してリードします"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ja, kom door de sterke hand heen uit."
+            "value": "Ja, kom door de sterke hand heen uit"
           }
         },
         "th": {
@@ -51476,13 +51476,13 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vous voulez faire couper votre partenaire pour qu'il revienne dans la plus chère des deux couleurs restantes. Quelle carte entamez-vous ?"
+            "value": "Vous voulez faire couper votre partenaire pour qu'il revienne dans la plus chère des deux couleurs restantes. Quelle carte jouez-vous ?"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Stai preparando un taglio per il compagno e vuoi che poi torni nel più alto dei due semi laterali rimasti. Da quale seme attacchi?"
+            "value": "Stai preparando un taglio per il compagno e vuoi che poi torni nel più alto dei due semi laterali rimasti. Quale carta giochi per il taglio?"
           }
         },
         "ja": {
@@ -51588,7 +51588,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Du spiller 4♥ og spiller en taber i ruder fra hånden. Bordet har ingen ruder, men har stadig trumf. Hvilket kort spiller du fra bordet?"
+            "value": "Du er spilfører i 4♥ og spiller en rudertaber fra hånden. Bordet har ingen ruder, men har stadig trumf. Hvilket kort spiller du fra bordet?"
           }
         },
         "de": {
@@ -51636,7 +51636,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "4♥ oynuyorsunuz ve elinizden kaybeden bir karo oynuyorsunuz. Yerde karo yok ama hâlâ koz var. Yerden hangi kartı oynarsınız?"
+            "value": "4♥ kontratında elinizden kaybeden bir karo oynuyorsunuz. Yerde karo yok ama hâlâ koz var. Yerden hangi kartı oynarsınız?"
           }
         },
         "zh-Hant": {
@@ -51659,7 +51659,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Du fällst in einem kontrierten Kontrakt viermal und bist nicht in Gefahr. Wie lautet dein Turnierergebnis?"
+            "value": "Du machst kontriert vier Unterstiche und bist nicht in Gefahr. Wie lautet dein Turnierergebnis?"
           }
         },
         "el": {
@@ -51671,13 +51671,13 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vous chutez de quatre levées contré, non vulnérable. Quel est votre score en tournoi ?"
+            "value": "Vous chutez de quatre levées, contré et non vulnérable. Quel est votre score en tournoi ?"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vai sotto di quattro prese contrato, in prima. Qual è il tuo punteggio in torneo?"
+            "value": "Vai sotto di quattro, contrato, in prima. Qual è il tuo punteggio in torneo?"
           }
         },
         "ja": {
@@ -51902,7 +51902,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "你朝紅心 A-Q 出小牌，左手對手跟小牌。哪張牌執行飛牌？"
+            "value": "你朝紅心 A-Q 出小牌，左手對手跟小。要用哪張牌飛牌？"
           }
         }
       }
@@ -51913,7 +51913,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Du vinder 2♥ doblet med præcis det antal stik, uden for zonen. Hvad er din turneringsscore?"
+            "value": "Du vinder præcis 2♥ doblet, uden for zonen. Hvad er din turneringsscore?"
           }
         },
         "de": {
@@ -52132,7 +52132,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Devi rispondere al colore ogni volta che puoi. La carta non deve essere alta."
+            "value": "Devi rispondere al colore ogni volta che puoi. La carta non deve per forza essere alta."
           }
         },
         "ja": {
@@ -52345,7 +52345,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "คุณชนะการลีดของคู่"
+            "value": "คุณชนะทริกที่คู่ลีดเปิด"
           }
         },
         "tr": {
@@ -52605,7 +52605,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "สัปดาห์ฟรีของคุณมีฝึกไม่จำกัด ชาเลนจ์จับเวลา ชุดฝึกเพิ่มในทุกห้อง และโต๊ะมาสเตอร์แล้ว: คอนเวนชัน การเล่นขั้นสูง และการตัดสินใจแบบดูพลิเคต"
+            "value": "สัปดาห์ฟรีของคุณมีครบแล้วทั้งการฝึกไม่จำกัด ชาเลนจ์จับเวลา ชุดฝึกเพิ่มในทุกห้อง และโต๊ะมาสเตอร์: คอนเวนชัน การเล่นขั้นสูง และการตัดสินใจแบบดูพลิเคต"
           }
         },
         "tr": {
@@ -52628,7 +52628,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Din gratis uge er slut. Hvad holdt dig fra at beholde %@?"
+            "value": "Din gratis uge er slut. Hvad afholdt dig fra at beholde %@?"
           }
         },
         "de": {
@@ -52747,7 +52747,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "牌局夜練習已準備好"
+            "value": "牌局前的暖身已準備好"
           }
         }
       }
@@ -52764,7 +52764,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deine höchste Karte in der Farbe, in der du geschnappt hast"
+            "value": "Deine höchste Karte in der Farbe, die dein Partner schnappt"
           }
         },
         "el": {
@@ -52829,7 +52829,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deine niedrigste Karte in der Farbe, in der du geschnappt hast"
+            "value": "Deine niedrigste Karte in der Farbe, die dein Partner schnappt"
           }
         },
         "el": {
@@ -53302,7 +53302,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "L'acquisto è andato a buon fine, ma %@ non è ancora sbloccato. Attendi un momento, poi tocca Ripristina. Non ti verrà addebitato due volte."
+            "value": "L'acquisto è andato a buon fine, ma %@ non è ancora sbloccato. Attendi un momento, poi tocca Ripristina. Non pagherai due volte."
           }
         },
         "ja": {
@@ -53568,7 +53568,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "トライアルは更新されません。続けるのを妨げたのは何ですか？"
+            "value": "トライアルは更新されません。続けない理由は？"
           }
         },
         "nl": {
@@ -53716,7 +53716,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "cevaplandı"
+            "value": "cevaplanan"
           }
         },
         "zh-Hant": {
