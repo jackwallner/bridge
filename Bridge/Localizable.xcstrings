@@ -232,7 +232,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "年額払いで%@"
+            "value": "年額%@"
           }
         },
         "nl": {
@@ -250,7 +250,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yıllık ödemede %@"
+            "value": "Yılda %@ ödenir"
           }
         },
         "zh-Hant": {
@@ -1798,13 +1798,13 @@
               "one": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld Austeilung"
+                  "value": "%lld Board"
                 }
               },
               "other": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld Austeilungen"
+                  "value": "%lld Boards"
                 }
               }
             }
@@ -2713,7 +2713,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "%lld 手牌"
+            "value": "%lld 手"
           }
         }
       }
@@ -3595,7 +3595,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "%2$lld 張中有 %1$lld 張已熟"
+            "value": "%2$lld 張中已熟記 %1$lld 張"
           }
         }
       }
@@ -4943,7 +4943,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "50 für den Teiler"
+            "value": "50 für den Geber"
           }
         },
         "el": {
@@ -5558,7 +5558,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Een conventiekaart"
+            "value": "Een systeemkaart"
           }
         },
         "th": {
@@ -6415,7 +6415,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Net bir deklarasyon"
+            "value": "Net bir deklare"
           }
         },
         "zh-Hant": {
@@ -7165,7 +7165,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "ENCORE"
+            "value": "À REVOIR"
           }
         },
         "it": {
@@ -7715,7 +7715,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Astan ona"
+            "value": "Astan 10'a"
           }
         },
         "zh-Hant": {
@@ -8105,7 +8105,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "İleri düzey kart oyunu"
+            "value": "İleri düzey oyun tekniği"
           }
         },
         "zh-Hant": {
@@ -9487,7 +9487,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Et hvilket som helst af dem"
+            "value": "Hvilket som helst"
           }
         },
         "de": {
@@ -9759,7 +9759,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Να ρωτήσει για άσους"
+            "value": "Ρωτήστε για άσους"
           }
         },
         "fr": {
@@ -10019,7 +10019,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Επίθεση με δύναμη"
+            "value": "Επιθετική αντάμ"
           }
         },
         "fr": {
@@ -10031,7 +10031,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Attaccare con decisione"
+            "value": "Attacco aggressivo"
           }
         },
         "ja": {
@@ -10072,7 +10072,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spil aggressivt ud eller passivt?"
+            "value": "Spille aggressivt eller passivt ud?"
           }
         },
         "de": {
@@ -10084,7 +10084,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Επιθετική ή παθητική έξοδος;"
+            "value": "Επιθετική ή παθητική αντάμ;"
           }
         },
         "fr": {
@@ -10126,7 +10126,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "進攻，還是消極首攻？"
+            "value": "進攻，還是被動首攻？"
           }
         }
       }
@@ -10356,7 +10356,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Evitare tutti i contri"
+            "value": "Evitare tutti i contro"
           }
         },
         "ja": {
@@ -10882,7 +10882,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "トライアル終了の前に"
+            "value": "トライアル終了前に"
           }
         },
         "nl": {
@@ -11059,7 +11059,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Να δηλώσει αδήλωτο χρώμα"
+            "value": "Δηλώστε αδήλωτο χρώμα"
           }
         },
         "fr": {
@@ -11615,7 +11615,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yepyeni"
+            "value": "Yeni başlıyorum"
           }
         },
         "zh-Hant": {
@@ -12480,7 +12480,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kan ikke vides"
+            "value": "Umuligt at vide"
           }
         },
         "de": {
@@ -12740,7 +12740,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Indkassér det"
+            "value": "Hjemtag det"
           }
         },
         "de": {
@@ -12770,7 +12770,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "取る"
+            "value": "キャッシュする"
           }
         },
         "nl": {
@@ -12782,7 +12782,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "เก็บเลย"
+            "value": "ลงเก็บทริกเลย"
           }
         },
         "tr": {
@@ -12805,7 +12805,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Skal du indkassere esset med det samme?"
+            "value": "Skal du hjemtage esset med det samme?"
           }
         },
         "de": {
@@ -12835,7 +12835,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "すぐエースを取る？"
+            "value": "すぐエースをキャッシュする？"
           }
         },
         "nl": {
@@ -13184,7 +13184,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "選擇你平常打橋牌的晚上"
+            "value": "選擇你的牌局夜"
           }
         }
       }
@@ -13526,7 +13526,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spiel des Coachs"
+            "value": "Zug des Coachs"
           }
         },
         "el": {
@@ -13556,13 +13556,13 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Het spel van de coach"
+            "value": "Speelwijze van de coach"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "แนวทางการเล่นของโค้ช"
+            "value": "ทางเล่นของโค้ช"
           }
         },
         "tr": {
@@ -13851,7 +13851,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zieh es in Betracht"
+            "value": "In Betracht ziehen"
           }
         },
         "el": {
@@ -15311,7 +15311,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Leider en dummy"
+            "value": "Leider en blinde"
           }
         },
         "th": {
@@ -15695,7 +15695,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ディクレアラーがクロスラフを計画中"
+            "value": "ディクレアラーがクロスラフを狙う"
           }
         },
         "nl": {
@@ -15713,7 +15713,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deklaran çapraz koz çakma planlıyor"
+            "value": "Deklaran çapraz koz çakmayı planlıyor"
           }
         },
         "zh-Hant": {
@@ -15831,7 +15831,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Leider, dummy, verdedigers"
+            "value": "Leider, blinde, verdedigers"
           }
         },
         "th": {
@@ -15925,7 +15925,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Modspiller: lavt i anden hånd"
+            "value": "Modspiller: lille i anden hånd"
           }
         },
         "de": {
@@ -15967,7 +15967,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ฝ่ายป้องกัน: ผู้เล่นคนที่สองลงต่ำ"
+            "value": "ฝ่ายป้องกัน: มือสองลงต่ำ"
           }
         },
         "tr": {
@@ -16126,7 +16126,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gegenspielsignale"
+            "value": "Markierungen"
           }
         },
         "el": {
@@ -16401,7 +16401,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pas assez utilisée"
+            "value": "Je ne l'utilisais pas assez"
           }
         },
         "it": {
@@ -16519,7 +16519,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Einen Gewinner abwerfen"
+            "value": "Einen Stich abwerfen"
           }
         },
         "el": {
@@ -17004,7 +17004,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De dummy"
+            "value": "De blinde"
           }
         },
         "th": {
@@ -17069,7 +17069,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Alleen de dummy"
+            "value": "Alleen de blinde"
           }
         },
         "th": {
@@ -17134,7 +17134,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dummy en leider"
+            "value": "Blinde en leider"
           }
         },
         "th": {
@@ -17358,7 +17358,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spilfører"
+            "value": "Bordets makker"
           }
         },
         "de": {
@@ -17394,7 +17394,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De partner van de dummy"
+            "value": "De partner van de blinde"
           }
         },
         "th": {
@@ -17855,7 +17855,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "คู่แข่งคนใดคนหนึ่ง"
+            "value": "ฝ่ายตรงข้ามคนใดคนหนึ่ง"
           }
         },
         "tr": {
@@ -18316,13 +18316,13 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Uzun bir rengi sağlayın"
+            "value": "Uzun bir rengi geliştirin"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "建立長套"
+            "value": "樹立長套"
           }
         }
       }
@@ -20094,7 +20094,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bei einer Viereroberfarbe"
+            "value": "Nach einer Viereroberfarbe"
           }
         },
         "el": {
@@ -20159,7 +20159,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bei einer Minimumhand"
+            "value": "Nach einer Minimumhand"
           }
         },
         "el": {
@@ -20183,7 +20183,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ミニマムハンド向け"
+            "value": "ミニマムハンド"
           }
         },
         "nl": {
@@ -20224,7 +20224,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Für Asse"
+            "value": "Nach Assen"
           }
         },
         "el": {
@@ -20354,7 +20354,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bei Treffanschluss"
+            "value": "Nach Treffanschluss"
           }
         },
         "el": {
@@ -20396,7 +20396,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Trefl desteğini"
+            "value": "Sinek desteğini"
           }
         },
         "zh-Hant": {
@@ -20933,7 +20933,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "fredag"
+            "value": "Fredag"
           }
         },
         "de": {
@@ -20957,7 +20957,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "venerdì"
+            "value": "Venerdì"
           }
         },
         "ja": {
@@ -21093,7 +21093,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ブリッジの夜"
+            "value": "ブリッジ会"
           }
         },
         "nl": {
@@ -21158,7 +21158,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ブリッジの\n夜の準備"
+            "value": "ブリッジ会の\n準備"
           }
         },
         "nl": {
@@ -21211,7 +21211,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Préparez votre soirée bridge"
+            "value": "Prépa soirée bridge"
           }
         },
         "it": {
@@ -21223,7 +21223,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ブリッジの夜の準備"
+            "value": "ブリッジ会の準備"
           }
         },
         "nl": {
@@ -21855,25 +21855,25 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Καλή εξάσκηση!"
+            "value": "Καλή προσπάθεια!"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bon entraînement !"
+            "value": "Bel effort !"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Buon allenamento!"
+            "value": "Bell'allenamento!"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "よく練習しました！"
+            "value": "いい練習でした！"
           }
         },
         "nl": {
@@ -22151,7 +22151,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kör"
+            "value": "Kupa"
           }
         },
         "zh-Hant": {
@@ -22216,7 +22216,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kör ve karo"
+            "value": "Kupa ve karo"
           }
         },
         "zh-Hant": {
@@ -22281,7 +22281,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kör ve pik"
+            "value": "Kupa ve maça"
           }
         },
         "zh-Hant": {
@@ -24816,7 +24816,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ücretsiz alıştırma yapmaya devam edin"
+            "value": "Ücretsiz devam et"
           }
         },
         "zh-Hant": {
@@ -25028,13 +25028,13 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jeg kan det grundlæggende"
+            "value": "Kan det grundlæggende"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kenne die Grundlagen"
+            "value": "Ich kenne die Grundlagen"
           }
         },
         "el": {
@@ -25791,7 +25791,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Körden atak"
+            "value": "Kupadan atak"
           }
         },
         "zh-Hant": {
@@ -25956,19 +25956,19 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Autour"
+            "value": "Ailleurs"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Attaccare altrove"
+            "value": "Gioca altrove"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "回して出す"
+            "value": "強い側を避けてリード"
           }
         },
         "nl": {
@@ -26807,7 +26807,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Attacco attraverso"
+            "value": "Gioca attraverso"
           }
         },
         "ja": {
@@ -26854,7 +26854,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Durch sie hindurch ausspielen?"
+            "value": "Durch die Stärke spielen?"
           }
         },
         "el": {
@@ -26872,7 +26872,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Attaccare attraverso?"
+            "value": "Giocare attraverso?"
           }
         },
         "ja": {
@@ -26902,7 +26902,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "穿過去出牌？"
+            "value": "要攻穿它嗎？"
           }
         }
       }
@@ -28151,61 +28151,61 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vælg en melding"
+            "value": "Tag stilling"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gib dein Gebot ab"
+            "value": "Entscheide dich"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Κάντε τη δήλωση"
+            "value": "Αποφασίστε"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choisissez votre enchère"
+            "value": "À vous de décider"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fai la tua dichiarazione"
+            "value": "Fai la tua scelta"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "コールを決めよう"
+            "value": "判断しよう"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kies je bod"
+            "value": "Maak je keuze"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "เลือกคำประมูล"
+            "value": "ลองตัดสินใจ"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deklarenizi seçin"
+            "value": "Kararınızı verin"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "選擇叫品"
+            "value": "做出判斷"
           }
         }
       }
@@ -28606,7 +28606,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "mandag"
+            "value": "Mandag"
           }
         },
         "de": {
@@ -28630,7 +28630,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "lunedì"
+            "value": "Lunedì"
           }
         },
         "ja": {
@@ -28931,7 +28931,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "INTET ABONNEMENT"
+            "value": "ENGANGSKØB"
           }
         },
         "de": {
@@ -28943,19 +28943,19 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "ΧΩΡΙΣ ΣΥΝΔΡΟΜΗ"
+            "value": "ΕΦΑΠΑΞ"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "SANS ABONNEMENT"
+            "value": "ACHAT UNIQUE"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "SENZA ABBONAMENTO"
+            "value": "UNA TANTUM"
           }
         },
         "ja": {
@@ -28967,13 +28967,13 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "GEEN ABONNEMENT"
+            "value": "EENMALIG"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ไม่ต้องสมัครสมาชิก"
+            "value": "ซื้อครั้งเดียว"
           }
         },
         "tr": {
@@ -28988,7 +28988,8 @@
             "value": "無需訂閱"
           }
         }
-      }
+      },
+      "comment": "Paywall badge on a plan row. Short ALL-CAPS pill; must fit about 14 characters. Shown on the lifetime plan: it is a one-time purchase."
     },
     "Name Your Opening": {
       "extractionState": "manual",
@@ -29883,7 +29884,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ไม่มีเมเจอร์ห้าใบใช่ไหม"
+            "value": "ถ้าไม่มีเมเจอร์ห้าใบ"
           }
         },
         "tr": {
@@ -29948,7 +29949,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ยังไม่มีการฝึก"
+            "value": "ยังไม่ได้ฝึก"
           }
         },
         "tr": {
@@ -30196,7 +30197,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "最近、練習が足りていない"
+            "value": "あまり練習しなくなった"
           }
         },
         "nl": {
@@ -30651,7 +30652,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "1枚"
+            "value": "1"
           }
         },
         "nl": {
@@ -30675,7 +30676,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "一張"
+            "value": "1"
           }
         }
       }
@@ -30769,7 +30770,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Une passe"
+            "value": "Un passe"
           }
         },
         "it": {
@@ -30805,7 +30806,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "一次不叫"
+            "value": "一個派司"
           }
         }
       }
@@ -31514,7 +31515,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Açmak mı, pas mı?"
+            "value": "Açış mı, pas mı?"
           }
         },
         "zh-Hant": {
@@ -31815,7 +31816,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Attacco contro senza atout"
+            "value": "Attacco contro il senza atout"
           }
         },
         "ja": {
@@ -31921,13 +31922,13 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Åbninger: ekstra øvelser"
+            "value": "Åbninger: ekstra runder"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eröffnungen: Zusätzliche Übungen"
+            "value": "Eröffnungen: Extrarunden"
           }
         },
         "el": {
@@ -31963,7 +31964,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "การเปิด: ฝึกเพิ่ม"
+            "value": "การเปิดประมูล: ฝึกเพิ่ม"
           }
         },
         "tr": {
@@ -32985,7 +32986,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pianifica prima della prima presa"
+            "value": "Pianifica prima di giocare"
           }
         },
         "ja": {
@@ -33198,7 +33199,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "เล่น %1$lld จาก %2$lld"
+            "value": "ทางเล่นที่ %1$lld จาก %2$lld"
           }
         },
         "tr": {
@@ -33611,7 +33612,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spille hjerter"
+            "value": "Spil hjerter"
           }
         },
         "de": {
@@ -33659,7 +33660,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kör oynamak"
+            "value": "Kupa oynamak"
           }
         },
         "zh-Hant": {
@@ -33676,7 +33677,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Trumfe"
+            "value": "Spil en trumf"
           }
         },
         "de": {
@@ -34102,7 +34103,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Je op een na hoogste spelen"
+            "value": "Je op één na hoogste spelen"
           }
         },
         "th": {
@@ -34770,7 +34771,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "已排定準備"
+            "value": "已設定準備提醒"
           }
         }
       }
@@ -36519,7 +36520,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Geri oynayın"
+            "value": "Renge dönün"
           }
         },
         "zh-Hant": {
@@ -36643,7 +36644,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "การเล่นที่ถูกต้อง"
+            "value": "ทางเล่นที่ถูกต้อง"
           }
         },
         "tr": {
@@ -37056,7 +37057,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "STRYG FOR AT SE MERE"
+            "value": "STRYG FOR MERE"
           }
         },
         "de": {
@@ -37080,7 +37081,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "SCORRI PER VEDERE ALTRO"
+            "value": "SCORRI PER ALTRO"
           }
         },
         "ja": {
@@ -37121,7 +37122,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "lørdag"
+            "value": "Lørdag"
           }
         },
         "de": {
@@ -37145,7 +37146,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "sabato"
+            "value": "Sabato"
           }
         },
         "ja": {
@@ -37417,13 +37418,13 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gekozen abonnement"
+            "value": "Gekozen optie"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "แผนที่เลือก"
+            "value": "แพ็กเกจที่เลือก"
           }
         },
         "tr": {
@@ -37913,7 +37914,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Κοφτερό"
+            "value": "Άριστο"
           }
         },
         "fr": {
@@ -37931,7 +37932,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "鋭い"
+            "value": "得意"
           }
         },
         "nl": {
@@ -38150,7 +38151,7 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "看看"
+            "value": "帶我看看"
           }
         }
       }
@@ -39071,7 +39072,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Start en gratis 7-dages prøveperiode"
+            "value": "Start 7 dages gratis prøveperiode"
           }
         },
         "de": {
@@ -39136,7 +39137,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Start en gratis 7-dages prøveperiode"
+            "value": "Start 7 dages gratis prøveperiode"
           }
         },
         "de": {
@@ -39225,7 +39226,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inizia la mia preparazione di 5 minuti"
+            "value": "Inizia la preparazione di 5 minuti"
           }
         },
         "ja": {
@@ -40111,7 +40112,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "søndag"
+            "value": "Søndag"
           }
         },
         "de": {
@@ -40135,7 +40136,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "domenica"
+            "value": "Domenica"
           }
         },
         "ja": {
@@ -40383,7 +40384,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Αλλαγή χρώματος"
+            "value": "Αλλάξτε χρώμα"
           }
         },
         "fr": {
@@ -40436,61 +40437,61 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "MELDINGEN"
+            "value": "DIT VALG"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "DAS GEBOT"
+            "value": "ENTSCHEIDUNG"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Η ΔΗΛΩΣΗ"
+            "value": "Η ΑΠΟΦΑΣΗ"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "L'ENCHÈRE"
+            "value": "LA DÉCISION"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "LA DICHIARAZIONE"
+            "value": "LA SCELTA"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ビッド"
+            "value": "判断"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "HET BOD"
+            "value": "DE KEUZE"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "บิด"
+            "value": "คำตอบ"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "DEKLARE"
+            "value": "KARAR"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "叫品"
+            "value": "判斷"
           }
         }
       }
@@ -43846,7 +43847,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "強いノートランプの手"
+            "value": "強いほうのノートランプハンド"
           }
         },
         "nl": {
@@ -44118,7 +44119,7 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ผู้เล่นคนที่สามลงสูง"
+            "value": "มือสามลงสูง"
           }
         },
         "tr": {
@@ -44939,7 +44940,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Trois passes consécutives"
+            "value": "Trois passes consécutifs"
           }
         },
         "it": {
@@ -45051,7 +45052,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "torsdag"
+            "value": "Torsdag"
           }
         },
         "de": {
@@ -45075,7 +45076,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "giovedì"
+            "value": "Giovedì"
           }
         },
         "ja": {
@@ -46026,7 +46027,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "tirsdag"
+            "value": "Tirsdag"
           }
         },
         "de": {
@@ -46050,7 +46051,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "martedì"
+            "value": "Martedì"
           }
         },
         "ja": {
@@ -46713,7 +46714,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Som regel spiller jeg farven tilbage"
+            "value": "Spil som regel farven tilbage"
           }
         },
         "de": {
@@ -46761,7 +46762,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Genelde geri oynayın"
+            "value": "Genelde renge dönün"
           }
         },
         "zh-Hant": {
@@ -46778,7 +46779,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Som regel gemmer jeg kortet"
+            "value": "Gem som regel kortet"
           }
         },
         "de": {
@@ -46873,7 +46874,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "通常はそう"
+            "value": "基本はイエス"
           }
         },
         "nl": {
@@ -47074,7 +47075,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bekijk score van vandaag %1$lld/%2$lld"
+            "value": "Bekijk je %1$lld/%2$lld van vandaag"
           }
         },
         "th": {
@@ -47298,13 +47299,13 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "HVAD DU HAR PÅ HÅNDEN"
+            "value": "DET, DER SIDDER FAST"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "KARTENHALTUNG"
+            "value": "WAS SITZT"
           }
         },
         "el": {
@@ -47328,7 +47329,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "続けない理由"
+            "value": "定着している項目"
           }
         },
         "nl": {
@@ -47346,7 +47347,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "ELDEKİ KARTLAR"
+            "value": "KALICI OLANLAR"
           }
         },
         "zh-Hant": {
@@ -47753,7 +47754,7 @@
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "onsdag"
+            "value": "Onsdag"
           }
         },
         "de": {
@@ -47777,7 +47778,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "mercoledì"
+            "value": "Mercoledì"
           }
         },
         "ja": {
@@ -47889,7 +47890,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wöchentliche Erinnerung an den Bridgeabend"
+            "value": "Wöchentliche Erinnerung an den Spielabend"
           }
         },
         "el": {
@@ -48108,7 +48109,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "4♠の約束は？"
+            "value": "4♠で約束するのは？"
           }
         },
         "nl": {
@@ -48126,7 +48127,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "4♠ neyi vaat eder?"
+            "value": "4♠ neyi gösterir?"
           }
         },
         "zh-Hant": {
@@ -48711,7 +48712,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bugünün hazırlığının hedefi"
+            "value": "Bugünkü hazırlığın hedefi"
           }
         },
         "zh-Hant": {
@@ -48829,7 +48830,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nieuw"
+            "value": "Wat is er nieuw"
           }
         },
         "th": {
@@ -49426,7 +49427,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Hangi deklare 1♠'den daha yüksektir?"
+            "value": "Hangi deklare 1♠'dan daha yüksektir?"
           }
         },
         "zh-Hant": {
@@ -50944,7 +50945,7 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Daran arbeiten: %@"
+            "value": "%@ üben"
           }
         },
         "el": {
@@ -51346,7 +51347,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oui, entamez à travers les honneurs"
+            "value": "Oui, jouez à travers les honneurs"
           }
         },
         "it": {
@@ -51358,13 +51359,13 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "はい、強い手を通してリードします"
+            "value": "はい、強い側を通してリード"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ja, kom door de sterke hand heen uit"
+            "value": "Ja, speel door de kracht heen"
           }
         },
         "th": {
@@ -51376,7 +51377,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Evet, güçlü elin üzerinden atak yapın"
+            "value": "Evet, güçlü elin içinden atak yapın"
           }
         },
         "zh-Hant": {
@@ -51423,7 +51424,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "はい、できるときに"
+            "value": "はい、出せるときは"
           }
         },
         "nl": {
