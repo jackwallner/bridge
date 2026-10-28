@@ -1,0 +1,46 @@
+{
+ "en": {
+  "name": "Bridge Trainer: Learn & Bid",
+  "subtitle": "Bridge Bidding & Card Practice"
+ },
+ "tr": {
+  "name": "Bridge Trainer: Briç Öğren",
+  "subtitle": "Briç konuşma ve kart pratiği"
+ },
+ "nl": {
+  "name": "Bridge Trainer: Leren & Bieden",
+  "subtitle": "Bridge bieden en oefenen"
+ },
+ "th": {
+  "name": "Bridge Trainer: ฝึกเล่นบริดจ์",
+  "subtitle": "ฝึกประมูลและเล่นไพ่บริดจ์"
+ },
+ "fr": {
+  "name": "Bridge Trainer: Enchères",
+  "subtitle": "Enchères et jeu de bridge"
+ },
+ "de": {
+  "name": "Bridge Trainer: Reizen & Spiel",
+  "subtitle": "Reizung und Brücke Karten üben"
+ },
+ "zh-Hant": {
+  "name": "Bridge Trainer: 橋牌學習叫牌打牌",
+  "subtitle": "針對初學者的無壓力合約橋牌叫牌與打牌防守核心特訓"
+ },
+ "da": {
+  "name": "Bridge Trainer: Lær at melde",
+  "subtitle": "Bridge meldinger og træning"
+ },
+ "ja": {
+  "name": "Bridge Trainer: コントラクトブリッジ練習",
+  "subtitle": "初心者向けコントラクトブリッジ叫牌とカードの実戦練習"
+ },
+ "el": {
+  "name": "Bridge Trainer: Μάθε Μπριτζ",
+  "subtitle": "Εξάσκηση και εκμάθηση Μπριτζ"
+ },
+ "it": {
+  "name": "Bridge Trainer: Licita e Gioca",
+  "subtitle": "Pratica di licita del bridge"
+ }
+}

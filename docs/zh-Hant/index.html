@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="256x256" href="../icon_256.png">
+<link rel="apple-touch-icon" href="../icon_256.png">
+<title>橋牌叫牌練習 App（iPhone）| Bridge Trainer</title>
+<meta name="description" content="Bridge Trainer 是適用於 iPhone 和 iPad 的免費橋牌叫牌練習 App。五分鐘練習叫牌、打牌與防守，輕鬆學會合約橋牌，免註冊帳號。">
+<link rel="canonical" href="https://jackwallner.com/ios/bridge/zh-Hant/">
+    <link rel="alternate" hreflang="en" href="https://jackwallner.com/ios/bridge/">
+    <link rel="alternate" hreflang="tr" href="https://jackwallner.com/ios/bridge/tr/">
+    <link rel="alternate" hreflang="nl" href="https://jackwallner.com/ios/bridge/nl/">
+    <link rel="alternate" hreflang="th" href="https://jackwallner.com/ios/bridge/th/">
+    <link rel="alternate" hreflang="fr" href="https://jackwallner.com/ios/bridge/fr/">
+    <link rel="alternate" hreflang="de" href="https://jackwallner.com/ios/bridge/de/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://jackwallner.com/ios/bridge/zh-Hant/">
+    <link rel="alternate" hreflang="da" href="https://jackwallner.com/ios/bridge/da/">
+    <link rel="alternate" hreflang="ja" href="https://jackwallner.com/ios/bridge/ja/">
+    <link rel="alternate" hreflang="el" href="https://jackwallner.com/ios/bridge/el/">
+    <link rel="alternate" hreflang="it" href="https://jackwallner.com/ios/bridge/it/">
+    <link rel="alternate" hreflang="x-default" href="https://jackwallner.com/ios/bridge/">
+<script>if(location.hostname==="jackwallner.github.io"){var c=document.querySelector('link[rel="canonical"]');if(c&&c.href.indexOf("https://jackwallner.com/")===0)location.replace(c.href)}</script>
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="apple-itunes-app" content="app-id=6791026407">
+
+<meta property="og:title" content="橋牌叫牌練習 App：Bridge Trainer">
+<meta property="og:description" content="五分鐘橋牌練習，涵蓋叫牌、莊家打牌與防守。每一個叫品和出牌都告訴你原因。免費，免註冊帳號。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jackwallner.com/ios/bridge/zh-Hant/">
+<meta property="og:image" content="https://jackwallner.github.io/bridge/og-preview.png">
+<meta property="og:video" content="https://jackwallner.github.io/bridge/preview.mp4">
+<meta property="og:video:secure_url" content="https://jackwallner.github.io/bridge/preview.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1080">
+<meta property="og:video:height" content="1080">
+<meta property="og:site_name" content="Jack Wallner">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="橋牌叫牌練習 App：Bridge Trainer">
+<meta name="twitter:description" content="五分鐘橋牌練習，涵蓋叫牌、莊家打牌與防守。每一個叫品和出牌都告訴你原因。免費，免註冊帳號。">
+<meta name="twitter:image" content="https://jackwallner.github.io/bridge/appstore-screenshot-01.png">
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "MobileApplication",
+            "dateModified": "2026-10-28",
+            "@id": "https://jackwallner.com/ios/bridge/zh-Hant/#app",
+            "name": "Bridge Trainer: Learn & Bid",
+            "description": "Bridge Trainer 是適用於 iPhone 和 iPad 的免費橋牌叫牌練習 App。它幫助初學者用五分鐘練習學習合約橋牌，分成四個練習室：牌的基礎、適合初學者的 Standard American 叫牌、莊家打牌與防守。每個答案都說明推理，不需要帳號，可離線使用。",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "iOS 17+",
+            "url": "https://jackwallner.com/ios/bridge/zh-Hant/",
+            "downloadUrl": "https://apps.apple.com/tw/app/id6791026407",
+            "installUrl": "https://apps.apple.com/tw/app/id6791026407",
+            "sameAs": "https://apps.apple.com/tw/app/id6791026407",
+            "screenshot": [
+                "https://jackwallner.github.io/bridge/appstore-screenshot-01.png",
+                "https://jackwallner.github.io/bridge/appstore-screenshot-02.png",
+                "https://jackwallner.github.io/bridge/appstore-screenshot-03.png",
+                "https://jackwallner.github.io/bridge/appstore-screenshot-04.png"
+            ],
+            "featureList": [
+                "牌室：大小、點力、墩數與合約",
+                "叫牌室：選擇開叫",
+                "莊家室：規劃打牌",
+                "防守室：首攻與回攻",
+                "每日練習，帶回答錯的題目",
+                "說明每個叫品的教練卡片",
+                "離線可用，免帳號"
+            ],
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "ratingCount": "2",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Jack Wallner",
+                "url": "https://jackwallner.com/"
+            },
+            "publisher": {
+                "@type": "Person",
+                "name": "Jack Wallner",
+                "url": "https://jackwallner.com/"
+            },
+            "alternateName": "Bridge Trainer"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "有練習橋牌叫牌的 App 嗎？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "有。Bridge Trainer 是免費的 iPhone 和 iPad App，內建叫牌室，讓你閱讀 13 張牌，在適合初學者的 Standard American 體系下選擇開叫。每個答案都說明推理。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "初學者學合約橋牌，最好的 App 是什麼？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bridge Trainer 專為正在學習或重新學習合約橋牌的初學者設計。它用五分鐘練習涵蓋牌的基礎、叫牌、莊家打牌與防守，每個叫品背後都有教練卡片。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Bridge Trainer 免費嗎？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "是的，下載免費，四個初學者練習室、教練卡片和連續天數都包含在內。選用的 Bridge+ 升級提供額外練習組和 Master Tables，價格會在購買前顯示於 App 內。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "需要帳號或網路連線嗎？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "不需要。不用註冊，每個練習都能離線使用。你的進度保存在你的裝置上。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "怎麼學橋牌叫牌？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "先從計算大牌點力開始，再用真實的 13 張牌練習選擇開叫。Bridge Trainer 的叫牌室練習 Pass、花色開叫與 1NT，並說明每個叫品為什麼正確。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "可以在手機上練習莊家打牌與防守嗎？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "可以。莊家室涵蓋計算贏墩、清王牌、建立長套與飛牌，防守室涵蓋首攻、連續牌、第三家打法與回攻花色。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "會跟對手對打嗎？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "不會。Bridge Trainer 是練習，不是牌桌。沒有對手，也沒有機器人，所以你可以在牌局之間按自己的步調練習牌例。"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Jack Wallner",
+                    "item": "https://jackwallner.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "iOS App",
+                    "item": "https://jackwallner.com/ios/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Bridge Trainer: 橋牌學習叫牌打牌",
+                    "item": "https://jackwallner.com/ios/bridge/zh-Hant/"
+                }
+            ]
+        }
+    ]
+}</script>
+<style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+            color: #1d1d1f;
+            background: #fafafa;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Nav */
+        nav {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            background: rgba(250,250,250,0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #1d1d1f;
+        }
+
+        .nav-brand img {
+            width: 32px;
+            height: 32px;
+            border-radius: 7px;
+        }
+
+        .nav-brand span {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            text-decoration: none;
+            background: #1d1d1f;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 980px;
+            font-weight: 500;
+            transition: opacity 0.15s;
+        }
+
+        .nav-link:hover { opacity: 0.85; }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 100px 24px 64px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            line-height: 1.08;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 span {
+            color: #087866;
+        }
+
+        .hero .tagline {
+            font-size: 19px;
+            color: #6e6e73;
+            line-height: 1.5;
+            max-width: 440px;
+            margin: 0 auto 12px;
+        }
+
+        .hero .platforms {
+            font-size: 13px;
+            color: #6e6e73;
+            letter-spacing: 0.3px;
+            margin-bottom: 36px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #1d1d1f;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 14px 36px;
+            border-radius: 980px;
+            text-decoration: none;
+            transition: opacity 0.15s;
+        }
+
+        .download-btn:hover { opacity: 0.85; }
+
+        /* Screenshot showcase */
+        .showcase {
+            padding: 0 0 80px;
+        }
+
+        .showcase-scroll {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 0 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            scrollbar-width: none;
+        }
+
+        .showcase-scroll::-webkit-scrollbar { display: none; }
+
+        .showcase-card {
+            flex-shrink: 0;
+            scroll-snap-align: center;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 16px 48px rgba(0,0,0,0.08);
+        }
+
+        .showcase-card img {
+            width: auto;
+            height: 540px;
+            display: block;
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 0;
+            background: #fff;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .features-header h2 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .features-header p {
+            font-size: 17px;
+            color: #6e6e73;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: rgba(0,0,0,0.06);
+            border-top: 1px solid rgba(0,0,0,0.06);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 36px 32px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #6e6e73;
+            line-height: 1.55;
+        }
+
+        /* Privacy */
+        .privacy {
+            padding: 80px 0;
+        }
+
+        .privacy .container {
+            max-width: 640px;
+            text-align: center;
+        }
+
+        .privacy .lockup {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: #f5f5f7;
+            margin-bottom: 20px;
+        }
+
+        .privacy .lockup svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: #1d1d1f;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .privacy h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .privacy p {
+            font-size: 17px;
+            color: #6e6e73;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .privacy a {
+            font-size: 15px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .privacy a:hover { text-decoration: underline; }
+
+        /* More Info */
+        .more-info {
+            padding: 64px 24px;
+            background: #fff;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .more-info-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .more-info-header h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .more-info-header p {
+            font-size: 17px;
+            color: #6e6e73;
+        }
+
+        .more-info-content {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .more-info-section {
+            margin-bottom: 40px;
+        }
+
+        .more-info-section h3 {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #6e6e73;
+            margin-bottom: 12px;
+        }
+
+        .more-info-section p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+
+        .more-info-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .more-info-section strong {
+            font-weight: 600;
+        }
+
+        .specs-table {
+            width: 100%;
+            font-size: 14px;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .specs-table td {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .specs-table td:first-child {
+            color: #6e6e73;
+            width: 140px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            padding: 40px 24px 0;
+        }
+
+        .disclaimer .container {
+            max-width: 720px;
+        }
+
+        .disclaimer p {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #6e6e73;
+            text-align: center;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 64px 24px 80px;
+            background: #fff;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .cta h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .cta p {
+            font-size: 15px;
+            color: #6e6e73;
+            margin-bottom: 28px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 24px;
+            font-size: 12px;
+            color: #6e6e73;
+        }
+
+        footer a { display: inline-block; padding: 6px 0;
+            color: #6e6e73;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover { color: #1d1d1f; }
+
+        footer .divider { margin: 4px 0; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { padding: 72px 20px 48px; }
+            .hero h1 { font-size: 36px; letter-spacing: -1px; }
+            .hero .tagline { font-size: 17px; }
+
+            .showcase-card img { height: 400px; }
+
+            .features-grid { grid-template-columns: 1fr; }
+
+            .features-header h2 { font-size: 28px; }
+            .privacy h2, .cta h2 { font-size: 26px; }
+        }
+
+        @media (max-width: 480px) {
+            .showcase-card img { height: 360px; }
+        }
+        .feature-card .tier {
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #087866;
+        }
+            #faq .more-info-section h2.faq-q { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; color: #6e6e73; margin-bottom: 12px; }
+</style>
+</head>
+<body>
+<nav>
+<div class="container">
+<a class="nav-brand" href="./" aria-label="Bridge Trainer">
+<img src="../icon_64.webp" alt="" width="32" height="32">
+<span>Bridge Trainer</span>
+</a>
+<a class="nav-link" href="https://apps.apple.com/tw/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-zh-hant&amp;mt=8">下載</a>
+</div>
+</nav>
+<section class="hero">
+<h1>橋牌，<span>每天五分鐘</span></h1>
+<p class="tagline">Bridge Trainer 是適用於 iPhone 和 iPad 的橋牌叫牌練習 App。叫牌、莊家打牌與防守都是簡短練習，每個答案都附上背後的推理。</p>
+<p class="platforms">iPhone · 四個練習室 · 可離線使用</p>
+<a class="download-btn" href="https://apps.apple.com/tw/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-zh-hant&amp;mt=8">免費下載</a>
+</section>
+<section class="showcase">
+<div class="showcase-scroll">
+<div class="showcase-card">
+<img src="../appstore-screenshot-01.webp" srcset="../appstore-screenshot-01-360.webp 360w, ../appstore-screenshot-01-540.webp 540w, ../appstore-screenshot-01.webp 720w" sizes="(max-width: 480px) 166px, (max-width: 768px) 184px, 249px" alt="輕鬆練習，沒有壓力。主畫面上的四個橋牌練習室" loading="lazy" decoding="async" width="720" height="1564">
+</div>
+<div class="showcase-card">
+<img src="../appstore-screenshot-02.webp" srcset="../appstore-screenshot-02-360.webp 360w, ../appstore-screenshot-02-540.webp 540w, ../appstore-screenshot-02.webp 720w" sizes="(max-width: 480px) 166px, (max-width: 768px) 184px, 249px" alt="五分鐘一回合。正在進行的練習，手上是 13 張牌" loading="lazy" decoding="async" width="720" height="1564">
+</div>
+<div class="showcase-card">
+<img src="../appstore-screenshot-03.webp" srcset="../appstore-screenshot-03-360.webp 360w, ../appstore-screenshot-03-540.webp 540w, ../appstore-screenshot-03.webp 720w" sizes="(max-width: 480px) 166px, (max-width: 768px) 184px, 249px" alt="知道為什麼。教練解答說明正確的叫品" loading="lazy" decoding="async" width="720" height="1564">
+</div>
+<div class="showcase-card">
+<img src="../appstore-screenshot-04.webp" srcset="../appstore-screenshot-04-360.webp 360w, ../appstore-screenshot-04-540.webp 540w, ../appstore-screenshot-04.webp 720w" sizes="(max-width: 480px) 166px, (max-width: 768px) 184px, 249px" alt="更進一步。Bridge+ 與 Master Tables" loading="lazy" decoding="async" width="720" height="1564">
+</div>
+</div>
+</section>
+<section class="features">
+<div class="container">
+<div class="features-header">
+<h2>Bridge Trainer 教什麼？</h2>
+<p>牌的基礎、叫牌、莊家打牌與防守，分成四個練習室，每次五分鐘。以下全部免費。Bridge+ 提供更多內容。</p>
+</div>
+</div>
+<div class="features-grid">
+<div class="feature-card">
+<h3>大小、點力、墩數</h3>
+<p>牌的大小、大牌點力、墩數、王牌、合約，以及牌桌上每個位置的職責。</p>
+</div>
+<div class="feature-card">
+<h3>選擇開叫</h3>
+<p>閱讀一手 13 張牌，在適合初學者的 Standard American 體系下，決定要 Pass、開叫一個花色，還是開叫 1NT。</p>
+</div>
+<div class="feature-card">
+<h3>規劃打牌</h3>
+<p>計算贏墩、清王牌、建立長套、做飛牌，並在真實牌桌情境中選出正確的牌。</p>
+</div>
+<div class="feature-card">
+<h3>打好首攻與跟牌</h3>
+<p>首攻、連續牌、第三家打法、回攻花色，以及讓搭檔好配合的默契習慣。</p>
+</div>
+<div class="feature-card">
+<h3>答錯的題目會再回來</h3>
+<p>每日綜合練習會把你答錯的內容重新帶回來，答錯的題目會一直出現，直到你答對為止。</p>
+</div>
+<div class="feature-card">
+<h3>背面就是原因</h3>
+<p>每個叫品和出牌背後都有可滑動的說明，讓答對也能學到東西。</p>
+</div>
+<div class="feature-card">
+<h3>每個練習室更多題目</h3>
+<p>每個初學者練習室都有第二組練習，全年陸續加入新的牌例與題目。</p>
+<p class="tier">Bridge+ 內含</p>
+</div>
+<div class="feature-card">
+<h3>約定叫與雙人複式</h3>
+<p>約定叫、進階打牌技巧與雙人複式策略，適合想超越基礎的玩家。</p>
+<p class="tier">Bridge+ 內含</p>
+</div>
+<div class="feature-card">
+<h3>牌局之間的練習</h3>
+<p>連續天數與各練習室的進度，讓你在週二牌局之間也能維持習慣。</p>
+</div>
+</div>
+</section>
+<section class="privacy">
+<div class="container">
+<div class="lockup">
+<svg viewbox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+</div>
+<h2>Bridge Trainer 需要帳號嗎？</h2>
+<p>不需要。Bridge Trainer 把練習進度和偏好設定保存在你的 iPhone 上。不用註冊、沒有廣告，也不出售任何資料。提醒在你的裝置上本機排程。Apple 處理購買，RevenueCat 只接收解鎖與還原 Bridge+ 所需的識別碼。</p>
+<a href="../privacy-policy.html">隱私權政策 →</a>
+</div>
+</section>
+<section class="more-info">
+<div class="container">
+<div class="more-info-header">
+<h2>更多資訊</h2>
+<p>它是怎麼做的。</p>
+</div>
+<div class="more-info-content">
+<div class="more-info-section">
+<h3>設計初衷</h3>
+<p>多數人在每週的牌局或初學者課程中學橋牌，之後到下一次聚會前都無法練習。課程內容逐漸淡忘，叫牌變得可怕，同樣的錯誤又回來了。</p>
+<p>Bridge Trainer 把初學者最需要的部分變成簡短練習，排隊時就能做：數點力、選叫品、規劃打牌、挑選首攻。沒有對手，每個答案都有說明。</p>
+</div>
+<div class="more-info-section">
+<h3>Bridge+</h3>
+<p>四個初學者練習室維持免費。Bridge+ 適合想要更多練習量與更深內容的玩家：月訂或年訂（皆含 1 週免費試用），或一次買斷永久使用。價格會在購買前顯示於 App 內，各地區不同。</p>
+<p><strong>額外練習組。</strong>每個初學者練習室多一組牌例與題目，沿用你已熟悉的練習方式。</p>
+<p><strong>Master Tables。</strong>約定叫、進階莊家打牌與防守、雙人複式策略，全年持續增加。</p>
+</div>
+<div class="more-info-section">
+<h3>規格</h3>
+<table class="specs-table">
+<tr><td>平台</td><td>iOS 17+</td></tr>
+<tr><td>語言</td><td>Swift 6，嚴格並行檢查</td></tr>
+<tr><td>框架</td><td>SwiftUI · StoreKit 2 · RevenueCat</td></tr>
+<tr><td>資料</td><td>免帳號；進度儲存在裝置上</td></tr>
+<tr><td>儲存空間</td><td>本機偏好設定、內建練習內容</td></tr>
+<tr><td>離線</td><td>每個練習都不需要網路</td></tr>
+</table>
+</div>
+<div class="more-info-section">
+<h3>重點在哪</h3>
+<p><strong>短時段。</strong>一回合短到水燒開的時間就能完成。App 裡沒有任何內容要求你坐下來一個小時。</p>
+<p><strong>推理勝過分數。</strong>每個答案都說明橋牌的邏輯，因為知道自己為什麼錯的初學者，進步得比只看到分數的人更快。</p>
+<p><strong>真實的 13 張牌。</strong>練習使用完整牌局，而不是抽象謎題，讓判斷力能直接帶到牌桌上。</p>
+<p><strong>哪些免費。</strong>四個初學者練習室不用付費就很完整。Bridge+ 增加題量與進階內容；基礎永遠不會被鎖住。</p>
+</div>
+</div>
+</div>
+</section>
+<section class="more-info" id="faq" style="border-top:none;padding-top:0">
+<div class="container">
+<div class="more-info-header">
+<h2>常見問題</h2>
+</div>
+<div class="more-info-content">
+<div class="more-info-section">
+<h2 class="faq-q">有練習橋牌叫牌的 App 嗎？</h2>
+<p>有。Bridge Trainer 是免費的 iPhone 和 iPad App，內建叫牌室，讓你閱讀 13 張牌，在適合初學者的 Standard American 體系下選擇開叫。每個答案都說明推理。</p>
+</div>
+<div class="more-info-section">
+<h2 class="faq-q">初學者學合約橋牌，最好的 App 是什麼？</h2>
+<p>Bridge Trainer 專為正在學習或重新學習合約橋牌的初學者設計。它用五分鐘練習涵蓋牌的基礎、叫牌、莊家打牌與防守，每個叫品背後都有教練卡片。</p>
+</div>
+<div class="more-info-section">
+<h2 class="faq-q">Bridge Trainer 免費嗎？</h2>
+<p>是的，下載免費，四個初學者練習室、教練卡片和連續天數都包含在內。選用的 Bridge+ 升級提供額外練習組和 Master Tables，價格會在購買前顯示於 App 內。</p>
+</div>
+<div class="more-info-section">
+<h2 class="faq-q">需要帳號或網路連線嗎？</h2>
+<p>不需要。不用註冊，每個練習都能離線使用。你的進度保存在你的裝置上。</p>
+</div>
+<div class="more-info-section">
+<h2 class="faq-q">怎麼學橋牌叫牌？</h2>
+<p>先從計算大牌點力開始，再用真實的 13 張牌練習選擇開叫。Bridge Trainer 的叫牌室練習 Pass、花色開叫與 1NT，並說明每個叫品為什麼正確。</p>
+</div>
+<div class="more-info-section">
+<h2 class="faq-q">可以在手機上練習莊家打牌與防守嗎？</h2>
+<p>可以。莊家室涵蓋計算贏墩、清王牌、建立長套與飛牌，防守室涵蓋首攻、連續牌、第三家打法與回攻花色。</p>
+</div>
+<div class="more-info-section">
+<h2 class="faq-q">會跟對手對打嗎？</h2>
+<p>不會。Bridge Trainer 是練習，不是牌桌。沒有對手，也沒有機器人，所以你可以在牌局之間按自己的步調練習牌例。</p>
+</div>
+</div>
+</div>
+</section>
+<section class="disclaimer">
+<div class="container">
+<p>Bridge Trainer 教的是適合初學者的 Standard American 體系。搭檔之間的約定和約定叫各有不同，請與你的搭檔確認你們打的是哪一種。</p>
+</div>
+</section>
+<section class="cta">
+<h2>準備好再入座</h2>
+<p>在 App Store 免費下載。四個練習室，免註冊帳號。Bridge+ 為選用。</p>
+<a class="download-btn" href="https://apps.apple.com/tw/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-zh-hant&amp;mt=8">免費下載</a>
+</section>
+<footer>
+<div class="divider">© 2026 Jack Wallner · 最後更新 <time datetime="2026-10-28" data-updated>2026年10月28日</time></div>
+<div>
+<a href="../bridge-bidding-for-beginners.html">初學者橋牌叫牌</a>
+<a href="best-bridge-app-for-beginners.html">最適合初學者的橋牌 App</a>
+<a href="../support.html">支援</a>
+<a href="../privacy-policy.html">隱私權</a>
+<a href="https://jackwallner.com/ios/">Jack Wallner 的更多 App</a>
+</div>
+<div class="related-apps">Jack 的其他作品： <a href="https://jackwallner.com/ios/mahj/">Mahj Trainer</a> <a href="https://jackwallner.com/ios/cribbage/">Cribbage Trainer</a> <a href="https://jackwallner.com/ios/skat/">Skat Trainer</a></div>
+        <div class="lang-switch"><a href="../" hreflang="en" lang="en">English</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <span lang="zh-Hant">繁體中文</span> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../it/" hreflang="it" lang="it">Italiano</a></div>
+</footer>
+</body>
+</html>
