@@ -6,7 +6,7 @@ import XCTest
 /// it. A question added without a catalog entry would silently show English
 /// to every non-English player; this catches it.
 final class LocalizationTests: XCTestCase {
-    private let languages = ["da", "de", "el", "fr", "it", "ja", "nl", "th", "tr", "zh-Hant"]
+    private let languages = ["da", "de", "el", "es", "fr", "it", "ja", "ko", "nb", "nl", "ru", "sv", "th", "tr", "zh-Hant"]
     private let missing = "__missing__"
 
     private var authoredCopy: [String] {
@@ -44,5 +44,28 @@ final class LocalizationTests: XCTestCase {
                 XCTAssertNotEqual(translated, missing, "\(language) has no translation for: \(text)")
             }
         }
+    }
+
+    func testRussianPluralCategoriesResolve() throws {
+        let path = try XCTUnwrap(Bundle.main.path(forResource: "ru", ofType: "lproj"), "ru.lproj is missing")
+        let russian = try XCTUnwrap(Bundle(path: path))
+        let locale = Locale(identifier: "ru")
+
+        XCTAssertEqual(String(localized: "\(1) cards", bundle: russian, locale: locale), "1 карта")
+        XCTAssertEqual(String(localized: "\(3) cards", bundle: russian, locale: locale), "3 карты")
+        XCTAssertEqual(String(localized: "\(5) cards", bundle: russian, locale: locale), "5 карт")
+
+        XCTAssertEqual(
+            String(localized: "All \(1) cards down. They'll stick a little better every pass.", bundle: russian, locale: locale),
+            "Ты повторил 1 карточку. С каждым повторением она будет запоминаться лучше."
+        )
+        XCTAssertEqual(
+            String(localized: "All \(3) cards down. They'll stick a little better every pass.", bundle: russian, locale: locale),
+            "Ты повторил 3 карточки. С каждым повторением они будут запоминаться лучше."
+        )
+        XCTAssertEqual(
+            String(localized: "All \(5) cards down. They'll stick a little better every pass.", bundle: russian, locale: locale),
+            "Ты повторил 5 карточек. С каждым повторением они будут запоминаться лучше."
+        )
     }
 }
