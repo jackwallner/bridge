@@ -1,1 +1,1 @@
-bridž,licitácia,karty,učenie,lektor,začiatočník,lekcia,cvičenie,obrana,hlavný hráč,tréning,kvíz,hra
+bridž,učenie,lektor,začiatočník,lekcia,cvičenie,obrana,hlavný hráč,tréning,kvíz,hra

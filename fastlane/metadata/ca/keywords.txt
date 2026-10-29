@@ -1,1 +1,1 @@
-bridge,licitació,cartes,aprendre,tutor,principiant,lliçó,exercici,defensa,declarant,pràctica,joc
+aprendre,tutor,principiant,lliçó,exercici,defensa,declarant,joc

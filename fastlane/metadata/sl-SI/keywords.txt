@@ -1,1 +1,1 @@
-briž,licitacija,karte,učenje,tutor,začetnik,lekcija,vaja,obramba,izvajalec,trening,igra,točke,adut
+briž,licitacija,karte,tutor,začetnik,lekcija,vaja,obramba,izvajalec,igra,točke,adut

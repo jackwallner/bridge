@@ -1,1 +1,1 @@
-bridge,bidding,kartu,belajar,tutor,pemula,pelajaran,latihan,pertahanan,deklarer,praktik,game,skor
+tutor,pemula,pelajaran,pertahanan,deklarer,praktik,game,skor
