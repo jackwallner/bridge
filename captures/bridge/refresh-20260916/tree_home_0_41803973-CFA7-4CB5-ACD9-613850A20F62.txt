@@ -1,0 +1,109 @@
+Optional(Attributes: Application, 0x10d26e300, pid: 63641, label: 'Bridge Trainer'
+Element subtree:
+ →Application, 0x10d26e300, pid: 63641, label: 'Bridge Trainer'
+    Window (Main), 0x10d26e440, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x10d26e580, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x10d26e6c0, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x10d26e800, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x10d26e940, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x10d26ea80, {{0.0, 0.0}, {402.0, 874.0}}
+                NavigationBar, 0x10d26ebc0, {{0.0, 62.0}, {402.0, 54.0}}, identifier: '_TtGC7SwiftUI32NavigationStackHosting'
+                  Other, 0x10d26ed00, {{346.0, 66.0}, {36.0, 36.0}}, identifier: 'gearshape', label: 'Settings'
+                    Other, 0x10d26ee40, {{346.0, 66.0}, {36.0, 36.0}}
+                      Button, 0x10d26ef80, {{348.3, 66.0}, {31.3, 36.0}}, identifier: 'gearshape', label: 'Settings'
+                Other, 0x10d26f0c0, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x10d26f200, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x10d26f340, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x10d26f480, {{0.0, 0.0}, {402.0, 874.0}}
+                        ScrollView, 0x10d26f5c0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x10d26f700, {{0.0, 0.0}, {402.0, 874.0}}
+                            Other, 0x10d26f840, {{0.0, 0.0}, {402.0, 170.8}}
+                          Other, 0x10d26f980, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x10d26fac0, {{0.0, 116.0}, {402.0, 981.7}}
+                            StaticText, 0x10d26fc00, {{16.0, 118.0}, {227.7, 38.3}}, label: 'Bridge Trainer'
+                            Button, 0x10d26fd40, {{284.0, 122.0}, {102.0, 30.0}}, label: '0 day streak, 0 drills done'
+                              Other, 0x10d26fe80, {{284.0, 122.0}, {45.0, 30.0}}, label: '0 day streak'
+                                Image, 0x10721f340, {{294.0, 130.7}, {10.0, 13.0}}, identifier: 'flame.fill', label: 'Flame'
+                                StaticText, 0x10d31c000, {{310.0, 128.0}, {10.0, 18.0}}, label: '0'
+                              Other, 0x10d31c140, {{337.0, 122.0}, {49.0, 30.0}}, label: '0 drills done'
+                                Image, 0x10d31c280, {{347.0, 130.0}, {14.0, 14.0}}, identifier: 'checkmark.seal.fill', label: 'Verified', Selected
+                                StaticText, 0x10d31c3c0, {{367.0, 128.0}, {10.0, 18.0}}, label: '0'
+                            StaticText, 0x10d31c500, {{16.0, 160.3}, {150.0, 18.0}}, label: 'Your seat at the table.'
+                            Button, 0x10d31c640, {{16.0, 192.3}, {370.0, 110.7}}, label: 'Get Started, A five-minute mix of what you need next'
+                              StaticText, 0x10d31c780, {{36.0, 212.3}, {133.0, 28.7}}, label: 'Get Started'
+                              StaticText, 0x10d31c8c0, {{36.0, 245.0}, {208.0, 38.0}}, label: 'A five-minute mix of what you need next'
+                              Image, 0x10d31ca00, {{318.0, 225.7}, {44.0, 44.0}}, identifier: 'play.circle.fill', label: 'Play'
+                            StaticText, 0x10d31cb40, {{20.0, 317.0}, {73.3, 14.3}}, label: 'TRAINING'
+                            ScrollView, 0x10d31cc80, {{16.0, 339.3}, {370.0, 122.0}}
+                              Other, 0x10d31cdc0, {{16.0, 339.3}, {688.0, 122.0}}
+                                Button, 0x10d31cf00, {{20.0, 341.3}, {128.0, 118.0}}, label: 'Endless
+Practice,  '
+                                  Image, 0x10d31d040, {{33.7, 355.0}, {27.0, 12.7}}, identifier: 'infinity', label: 'infinity'
+                                  StaticText, 0x10d31d180, {{32.0, 388.0}, {60.7, 38.0}}, label: 'Endless
+Practice'
+                                  StaticText, 0x10d31d2c0, {{32.0, 434.0}, {3.0, 13.3}}, label: ' '
+                                Button, 0x10d31d400, {{158.0, 341.3}, {128.0, 118.0}}, label: 'Bridge
+Minute, Daily'
+                                  Image, 0x10d31d540, {{172.3, 352.0}, {25.7, 21.7}}, identifier: 'calendar.badge.clock', label: 'Date And Time'
+                                  StaticText, 0x10d31d680, {{170.0, 391.2}, {50.7, 38.0}}, label: 'Bridge
+Minute'
+                                  StaticText, 0x10d31d7c0, {{170.0, 437.2}, {27.3, 13.3}}, label: 'Daily'
+                                Button, 0x10d31d900, {{296.0, 341.3}, {128.0, 118.0}}, label: 'Game Night
+Prep, Weekly'
+                                  Image, 0x10d31da40, {{310.3, 353.0}, {28.3, 19.3}}, identifier: 'person.2.fill', label: 'person.2.fill'
+                                  StaticText, 0x10d31db80, {{308.0, 390.0}, {86.0, 38.0}}, label: 'Game Night
+Prep'
+                                  StaticText, 0x10d31dcc0, {{308.0, 436.0}, {39.7, 13.3}}, label: 'Weekly'
+                                Button, 0x10d31de00, {{434.0, 341.3}, {128.0, 118.0}}, label: 'Timed
+Challenge,  '
+                                  Image, 0x10d31df40, {{447.7, 352.3}, {20.7, 20.7}}, identifier: 'timer', label: 'Timer'
+                                  StaticText, 0x10d31e080, {{446.0, 390.7}, {73.3, 38.0}}, label: 'Timed
+Challenge'
+                                  StaticText, 0x10d31e1c0, {{446.0, 436.7}, {3.0, 13.3}}, label: ' '
+                                Button, 0x10d31e300, {{572.0, 341.3}, {128.0, 118.0}}, label: 'Fix My
+Mistakes, 4 due'
+                                  Image, 0x10d31e440, {{585.7, 351.3}, {20.7, 22.7}}, identifier: 'arrow.trianglehead.counterclockwise', label: 'arrow.trianglehead.counterclockwise'
+                                  StaticText, 0x10d31e580, {{584.0, 391.7}, {65.7, 38.0}}, label: 'Fix My
+Mistakes'
+                                  StaticText, 0x10d31e6c0, {{584.0, 437.7}, {31.0, 13.3}}, label: '4 due'
+                            StaticText, 0x10d31e800, {{20.0, 481.3}, {88.3, 14.3}}, label: 'THE ROOMS'
+                            Button, 0x10d31e940, {{16.0, 509.7}, {370.0, 89.3}}, label: 'The Card Room, Ranks, tricks, contracts, and table roles'
+                              Image, 0x10d31ea80, {{44.3, 544.3}, {19.3, 20.0}}, identifier: 'suit.spade.fill', label: 'Spade'
+                              StaticText, 0x10d31ebc0, {{92.0, 523.7}, {122.7, 20.3}}, label: 'The Card Room'
+                              StaticText, 0x10d31ed00, {{92.0, 547.0}, {198.3, 38.0}}, label: 'Ranks, tricks, contracts, and table roles'
+                              StaticText, 0x10d31ee40, {{338.5, 536.8}, {35.0, 35.0}}, label: '0/3'
+                            Button, 0x10d31ef80, {{16.0, 613.0}, {370.0, 89.3}}, label: 'The Auction Room, Count points and find your opening call'
+                              Image, 0x10d31f0c0, {{43.0, 647.3}, {22.3, 21.0}}, identifier: 'quote.bubble.fill', label: 'Bubble'
+                              StaticText, 0x10d31f200, {{92.0, 627.0}, {145.3, 20.3}}, label: 'The Auction Room'
+                              StaticText, 0x10d31f340, {{92.0, 650.3}, {185.7, 38.0}}, label: 'Count points and find your opening call'
+                              StaticText, 0x10d31f480, {{338.5, 640.2}, {35.0, 35.0}}, label: '0/3'
+                            Button, 0x10d31f5c0, {{16.0, 716.3}, {370.0, 89.3}}, label: 'The Declarer Room, Plan the hand and choose the card'
+                              Image, 0x10d31f700, {{45.3, 751.0}, {18.7, 19.7}}, identifier: 'hand.point.up.left.fill', label: 'hand.point.up.left.fill'
+                              StaticText, 0x10d31f840, {{92.0, 730.3}, {151.7, 20.3}}, label: 'The Declarer Room'
+                              StaticText, 0x10d31f980, {{92.0, 753.7}, {181.3, 38.0}}, label: 'Plan the hand and choose the card'
+                              StaticText, 0x10d31fac0, {{338.5, 743.5}, {35.0, 35.0}}, label: '0/3'
+                            Button, 0x10d31fc00, {{16.0, 819.7}, {370.0, 89.3}}, label: 'The Defense Room, Opening leads and partnership habits'
+                              Image, 0x10d31fd40, {{45.7, 854.3}, {17.0, 20.0}}, identifier: 'shield.lefthalf.filled', label: 'shield.lefthalf.filled'
+                              StaticText, 0x10d31fe80, {{92.0, 833.7}, {150.0, 20.3}}, label: 'The Defense Room'
+                              StaticText, 0x10d320000, {{92.0, 857.0}, {132.3, 38.0}}, label: 'Opening leads and partnership habits'
+                              StaticText, 0x10d320140, {{338.5, 846.8}, {35.0, 35.0}}, label: '0/3'
+                            Button, 0x10d320280, {{16.0, 923.0}, {370.0, 89.3}}, label: 'The Master Tables, Conventions, advanced card play, and duplicate'
+                              Image, 0x10d3203c0, {{41.0, 957.3}, {26.0, 20.3}}, identifier: 'crown.fill', label: 'crown.fill'
+                              StaticText, 0x10d320500, {{92.0, 937.0}, {145.7, 20.3}}, label: 'The Master Tables'
+                              StaticText, 0x10d320640, {{92.0, 960.3}, {198.7, 38.0}}, label: 'Conventions, advanced card play, and duplicate'
+                              StaticText, 0x10d320780, {{338.5, 950.2}, {35.0, 35.0}}, label: '0/4'
+                            StaticText, 0x10d3208c0, {{34.3, 1034.3}, {333.3, 39.3}}, label: 'Bridge Trainer uses a beginner Standard American framework. Partnership agreements vary, so confirm conventions with your partner.'
+                          Other, 0x10d320a00, {{369.0, 116.0}, {30.0, 696.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                            Other, 0x10d320b40, {{396.0, 119.0}, {3.0, 533.0}}
+                          Other, 0x10d320c80, {{369.0, 116.0}, {30.0, 696.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                            Other, 0x10d320dc0, {{396.0, 119.0}, {3.0, 533.0}}
+                Other, 0x10d320f00, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x10d321040, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x10d26e300, pid: 63641, label: 'Bridge Trainer'
+Query chain:
+ →Find: Target Application 'com.jackwallner.bridge'
+  Output: {
+    Application, 0x10d321180, pid: 63641, label: 'Bridge Trainer'
+  }
+)
