@@ -419,7 +419,8 @@ struct FlipCardFace: View {
         }
         .shine(trigger: shineTrigger, corner: Theme.deckCorner)
         .accessibilityElement(children: isFlipped && onAdvance == nil ? .combine : .contain)
-        .accessibilityLabel(isFlipped ? "\(card.backTitle). \(card.backBody)" : card.frontTitle)
+        .accessibilityLabel(isFlipped ? card.backTitle : card.frontTitle)
+        .accessibilityValue(isFlipped ? card.backBody : "")
         .task(id: isFlipped) {
             // A correct call earns the slot-machine gleam once the flip lands.
             guard isFlipped, verdict?.correct == true else { return }
