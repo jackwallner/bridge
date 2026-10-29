@@ -19,15 +19,28 @@ FIELD_LIMITS = {
     "description": 4000,
 }
 FIELDS = tuple(FIELD_LIMITS)
-TOKEN_PATTERN = re.compile(r"[^\W_]+", re.UNICODE)
+
 
 def normalize(value: str) -> str:
-    decomposed = unicodedata.normalize("NFKD", value.casefold())
-    return "".join(char for char in decomposed if not unicodedata.combining(char))
+    return unicodedata.normalize("NFC", value.casefold())
+
+
+def words(value: str) -> list[str]:
+    tokens: list[str] = []
+    current = ""
+    for char in value:
+        if unicodedata.category(char)[0] in "LMN":
+            current += char
+        elif current:
+            tokens.append(normalize(current))
+            current = ""
+    if current:
+        tokens.append(normalize(current))
+    return tokens
 
 
 def visible_tokens(value: str) -> set[str]:
-    return {normalize(token) for token in TOKEN_PATTERN.findall(value)}
+    return set(words(value))
 
 
 def keyword_tokens(value: str) -> list[str]:
@@ -36,7 +49,7 @@ def keyword_tokens(value: str) -> list[str]:
         if contains_no_space_script(phrase):
             tokens.append(normalize(phrase.strip()))
         else:
-            tokens.extend(normalize(token) for token in TOKEN_PATTERN.findall(phrase))
+            tokens.extend(words(phrase))
     return tokens
 
 
@@ -84,6 +97,11 @@ def validate_locale(locale: str) -> list[str]:
     if keywords is None or name is None or subtitle is None:
         return errors
 
+    if any(not part for part in keywords.split(",")):
+        errors.append(f"{locale}/keywords: empty comma-separated term")
+    if re.search(r",\s", keywords):
+        errors.append(f"{locale}/keywords: whitespace after comma")
+
     tokens = keyword_tokens(keywords)
     seen: set[str] = set()
     for token in tokens:
@@ -104,12 +122,19 @@ def validate_locale(locale: str) -> list[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    choices = sorted(path.name for path in (ROOT / "fastlane/metadata").iterdir() if path.is_dir())
-    parser.add_argument("locales", nargs="+", choices=choices)
+    choices = sorted(
+        path.name for path in (ROOT / "fastlane/metadata").iterdir()
+        if path.is_dir() and path.name != "review_information"
+    )
+    parser.add_argument("locales", nargs="*")
     args = parser.parse_args()
 
+    unknown = set(args.locales) - set(choices)
+    if unknown:
+        parser.error(f"unknown locales: {', '.join(sorted(unknown))}")
+
     failures = 0
-    for locale in args.locales:
+    for locale in args.locales or choices:
         errors = validate_locale(locale)
         if errors:
             failures += len(errors)

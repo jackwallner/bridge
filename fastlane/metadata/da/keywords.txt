@@ -1,1 +1,1 @@
-kort,lære,tutor,begynder,lektion,drill,forsvar,spilfører,quiz,kontrakt,stik
+kort,lære,tutor,begynder,lektion,drill,forsvar,spilfører,quiz,kontrakt
