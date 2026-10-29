@@ -14,6 +14,7 @@ String(localized:). Interpolations are compared loosely (%@ and %lld match
 each other), because the type of an interpolated expression is not visible
 without the compiler.
 """
+from collections import Counter
 import json
 import os
 import re
@@ -131,6 +132,12 @@ def specs(value, subs=None):
     return sorted(set(found))
 
 
+def card_notation(value):
+    # Card and contract symbols convey answers, not decorative text.
+    return Counter(re.sub(r'\s+', '', match) for match in
+                   re.findall(r'(?:10|[AKQJ1-9])\s*[♠♥♦♣]', value))
+
+
 def main():
     catalog = json.load(open(os.path.join(ROOT, 'Bridge', 'Localizable.xcstrings')))['strings']
     by_loose = {loose(k): k for k in catalog}
@@ -164,6 +171,10 @@ def main():
                 bad = [] if specs(loc['stringUnit']['value'], loc.get('substitutions')) == want else [loc['stringUnit']['value']]
             for v in bad:
                 problems.append(f'"{key}" [{lang}]: format specifiers differ in "{v}"')
+            if 'stringUnit' in loc:
+                value = loc['stringUnit']['value']
+                if card_notation(key) != card_notation(value):
+                    problems.append(f'"{key}" [{lang}]: card notation differs in "{value}"')
     for p in problems:
         print(p)
     print(f'{len(catalog)} keys, {len(LANGS)} languages, {len(problems)} problems')

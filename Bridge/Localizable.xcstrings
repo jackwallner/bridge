@@ -144,7 +144,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%2$lld 전반에 걸쳐 %1$@ 답변됨"
+            "value": "%2$lld문제 중 정답률 %1$@"
           }
         },
         "nb": {
@@ -524,7 +524,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@가 열려 있습니다.\n클럽의"
+            "value": "%@ 이용 가능"
           }
         },
         "nb": {
@@ -619,7 +619,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@\n다이아몬드의"
+            "value": "클럽 %@"
           }
         },
         "nb": {
@@ -714,7 +714,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@\n스페이드의"
+            "value": "다이아몬드 %@"
           }
         },
         "nb": {
@@ -732,7 +732,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ алмазов"
+            "value": "%@ бубен"
           }
         },
         "sv": {
@@ -904,7 +904,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@"
+            "value": "스페이드 %@"
           }
         },
         "nb": {
@@ -922,7 +922,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ Пик"
+            "value": "%@ пик"
           }
         },
         "sv": {
@@ -1189,7 +1189,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$@ %2$lld 질문에 걸쳐 지금까지 가장 낮은 질문입니다."
+            "value": "%2$lld문제에서 정답률 %1$@로, 지금까지 가장 낮습니다."
           }
         },
         "nb": {
@@ -1284,7 +1284,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ 1개의 질문이 바로 정답입니다. 지금까지 최저치입니다."
+            "value": "1문제에서 정답률 %@로, 지금까지 가장 낮습니다."
           }
         },
         "nb": {
@@ -1667,7 +1667,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$@. %3$lld의 %2$lld 질문 솔리드"
+            "value": "%1$@. %3$lld문제 중 %2$lld문제를 익힘"
           }
         },
         "nb": {
@@ -2313,7 +2313,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%lld 정확함"
+            "value": "%lld개 정답"
           }
         },
         "nb": {
@@ -3442,7 +3442,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%lld 기한"
+            "value": "복습할 문제 %lld개"
           }
         },
         "nb": {
@@ -3800,7 +3800,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld 먼저 실수를 저지른 다음 %2$@에서 추가 작업을 수행합니다."
+            "value": "복습할 오답 %1$lld개를 먼저 풀고 %2$@을 추가로 연습합니다."
           }
         },
         "nb": {
@@ -4253,7 +4253,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld %2$lld 하트가 포함된 하이카드 포인트입니다."
+            "value": "하이카드 포인트 %1$lld점과 하트 %2$lld장입니다."
           }
         },
         "nb": {
@@ -4348,7 +4348,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld %2$lld 스페이드가 포함된 하이카드 포인트."
+            "value": "하이카드 포인트 %1$lld점과 스페이드 %2$lld장입니다."
           }
         },
         "nb": {
@@ -5181,7 +5181,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld\n%2$lld의"
+            "value": "%2$lld개 중 %1$lld개"
           }
         },
         "nb": {
@@ -5276,7 +5276,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld 올바른\n%2$lld의"
+            "value": "%2$lld개 중 %1$lld개 정답"
           }
         },
         "nb": {
@@ -5466,7 +5466,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld %2$lld 질문을 보유하고 있습니다. %3$@\n의"
+            "value": "%2$lld문제 중 %1$lld문제를 익혔어요. %3$@"
           }
         },
         "nb": {
@@ -5561,7 +5561,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%1$lld 질문 솔리드\n%2$lld 오른쪽의"
+            "value": "%2$lld문제 중 %1$lld문제를 익힘"
           }
         },
         "nb": {
@@ -5751,7 +5751,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%lld 5개 연습 완료\n이번 주 5개 중"
+            "value": "5개 중 %lld개 연습 완료"
           }
         },
         "nb": {
@@ -5846,7 +5846,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%lld"
+            "value": "이번 주 5개 중 %lld개"
           }
         },
         "nb": {
@@ -6905,7 +6905,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "1 먼저 실수를 한 다음 %@에서 추가 작업을 수행합니다."
+            "value": "복습할 오답 1개를 먼저 풀고 %@을 추가로 연습합니다."
           }
         },
         "nb": {
@@ -7380,7 +7380,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "3NT는 게임입니다. 다른 일반적인 게임 레벨은 4♥, 4♣, 5♣ 및 5︎입니다."
+            "value": "3NT는 게임입니다. 다른 일반적인 게임 계약은 4♥, 4♠, 5♣, 5♦입니다."
           }
         },
         "nb": {
@@ -8235,7 +8235,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "4♣ 계약은 스페이드를 트럼프로 사용하여 10가지 트릭을 약속합니다."
+            "value": "4♠ 계약은 스페이드를 트럼프로 10트릭을 따겠다는 약속입니다."
           }
         },
         "nb": {
@@ -8900,7 +8900,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "마음은 이끌리고 마음은 붙잡는다. 당신은 무엇을 해야 합니까?"
+            "value": "하트가 리드되었고 당신에게 하트가 있습니다. 어떻게 해야 하나요?"
           }
         },
         "nb": {
@@ -9280,7 +9280,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "긴 양복은 손에 닿지 않으면 아무 가치도 없습니다."
+            "value": "롱 수트에 도달할 수 없다면 가치가 없습니다."
           }
         },
         "nb": {
@@ -10135,7 +10135,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "어떤 옷에도 어울리는 싱글톤"
+            "value": "어느 수트든 한 장만 보유"
           }
         },
         "nb": {
@@ -11940,7 +11940,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "한눈에 손을 더하다"
+            "value": "패의 포인트를 한눈에 계산하세요"
           }
         },
         "nb": {
@@ -12510,7 +12510,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "수트계약 반대"
+            "value": "수트 계약을 상대로"
           }
         },
         "nb": {
@@ -12605,7 +12605,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "트럼프 반대"
+            "value": "노트럼프를 상대로"
           }
         },
         "nb": {
@@ -14026,7 +14026,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "수트을 따를 수 없는 경우 모든 카드는 합법적입니다. 가장 필요한 카드(여기에 2︎)를 던지고 에이스와 킹을 유지하세요."
+            "value": "리드된 수트가 없으면 아무 카드나 낼 수 있습니다. 가장 필요 없는 2♦를 버리고 에이스와 킹을 남기세요."
           }
         },
         "nb": {
@@ -16686,7 +16686,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "어떠한 강점에도 트럼프 비드 없음"
+            "value": "포인트에 관계없이 노트럼프를 비드"
           }
         },
         "nb": {
@@ -19444,7 +19444,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "카드 선택: 추가 담당자"
+            "value": "카드 선택: 추가 연습"
           }
         },
         "nb": {
@@ -21154,7 +21154,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "규칙, 고급 카드 플레이 및 복제"
+            "value": "컨벤션, 고급 카드 플레이와 듀플리케이트"
           }
         },
         "nb": {
@@ -23244,7 +23244,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Declarer가 QCheck를 더미 방향으로 유도합니다. K 를 들고 두 번째로 플레이하세요. \"명예를 명예로 덮다\"라는 지침을 따르는 카드는 무엇입니까?"
+            "value": "선언자가 더미를 향해 Q♦를 리드합니다. 두 번째 차례인 당신은 K♦를 갖고 있습니다. 오너를 오너로 덮는 원칙에 맞는 카드는 무엇인가요?"
           }
         },
         "nb": {
@@ -23719,7 +23719,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "수비수: 초침 낮음"
+            "value": "수비: 두 번째 플레이어는 낮은 카드"
           }
         },
         "nb": {
@@ -23909,7 +23909,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "방어: 추가 담당자"
+            "value": "수비: 추가 연습"
           }
         },
         "nb": {
@@ -24862,7 +24862,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "복식, 선점, 스테이맨, 이적"
+            "value": "더블, 프리엠트, 스테이맨과 트랜스퍼"
           }
         },
         "nb": {
@@ -24957,7 +24957,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "슬램을 두 배로 늘리기"
+            "value": "슬램에 더블"
           }
         },
         "nb": {
@@ -25171,7 +25171,7 @@
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ducka ett litet kort tidigt. Att vinna ess omedelbart kan låta försvarare köra färgen när de återtar ledningen.\nEnbart"
+            "value": "Ducka ett litet kort tidigt. Att vinna ess omedelbart kan låta försvarare köra färgen när de återtar ledningen."
           }
         },
         "th": {
@@ -25717,7 +25717,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "더미가 낮게 재생됩니다. 높이 플레이 하시겠습니까?"
+            "value": "더미가 낮은 카드를 냅니다. 높은 카드를 낼까요?"
           }
         },
         "nb": {
@@ -27908,7 +27908,7 @@
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ekstraarbeid i %@, etterfulgt av en balansert blanding fra de andre rommene.\nKun"
+            "value": "Ekstraarbeid i %@, etterfulgt av en balansert blanding fra de andre rommene."
           }
         },
         "nl": {
@@ -27926,7 +27926,7 @@
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Extraarbete i %@, följt av en balanserad mix från de andra rummen.\nEndast"
+            "value": "Extraarbete i %@, följt av en balanserad mix från de andra rummen."
           }
         },
         "th": {
@@ -29517,7 +29517,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다음 수트는 모든 방어 신호보다 먼저 나타납니다."
+            "value": "수비 신호보다 리드된 수트를 따르는 것이 우선입니다."
           }
         },
         "nb": {
@@ -29707,7 +29707,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다음 슈트는 필수입니다. 트릭에서 승리하는 것은 아닙니다."
+            "value": "리드된 수트를 따라야 하지만 트릭에서 이길 필요는 없습니다."
           }
         },
         "nb": {
@@ -30752,7 +30752,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "네 벌"
+            "value": "네 가지 수트"
           }
         },
         "nb": {
@@ -32177,7 +32177,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "각 질문을 두 번 실행하여 고정하세요."
+            "value": "각 문제를 두 번 연속으로 맞혀 익혀 보세요."
           }
         },
         "nb": {
@@ -32557,7 +32557,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%2$lld의 손 %1$lld"
+            "value": "%2$lld개 중 %1$lld번째 패"
           }
         },
         "nb": {
@@ -33507,7 +33507,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "두 전공을 모두 보유하고 더 긴 전공부터 시작하세요."
+            "value": "두 메이저를 모두 갖고 있다면 더 긴 수트부터 시작하세요."
           }
         },
         "nb": {
@@ -35122,7 +35122,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "트럼프 카운트 승자가 없습니다. 정장 계약에서는 패자를 계산합니다."
+            "value": "노트럼프에서는 위너를, 수트 계약에서는 루저를 세세요."
           }
         },
         "nb": {
@@ -35953,7 +35953,7 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Va en contra de las reglas\nConectores"
+            "value": "Va en contra de las reglas"
           }
         },
         "fr": {
@@ -37402,7 +37402,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "리드 5︎"
+            "value": "5♦ 리드"
           }
         },
         "nb": {
@@ -37497,7 +37497,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "리드 6♣"
+            "value": "6♠ 리드"
           }
         },
         "nb": {
@@ -37782,7 +37782,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "리드K│"
+            "value": "K♠ 리드"
           }
         },
         "nb": {
@@ -37972,7 +37972,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "리드 QCheck"
+            "value": "Q♦ 리드"
           }
         },
         "nb": {
@@ -38067,7 +38067,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "마음을 이끌다"
+            "value": "하트를 리드"
           }
         },
         "nb": {
@@ -38447,7 +38447,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "8-3 리드\nK-J-10-6의"
+            "value": "8-3에서 리드"
           }
         },
         "nb": {
@@ -38542,7 +38542,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "리드\nQ-J-10-5의"
+            "value": "K-J-10-6에서 리드"
           }
         },
         "nb": {
@@ -38637,7 +38637,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "리드"
+            "value": "Q-J-10-5에서 리드"
           }
         },
         "nb": {
@@ -39207,7 +39207,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "8인승"
+            "value": "8을 리드"
           }
         },
         "nb": {
@@ -39397,7 +39397,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "여왕을 이끌어라"
+            "value": "퀸을 리드"
           }
         },
         "nb": {
@@ -40727,7 +40727,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "수명"
+            "value": "평생 이용"
           }
         },
         "nb": {
@@ -41015,7 +41015,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "가 잠겼습니다. %1$lld 드릴, %2$@에 포함됨"
+            "value": "잠김. 연습 %1$lld개가 %2$@에 포함됩니다"
           }
         },
         "nb": {
@@ -42155,7 +42155,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "분 완료"
+            "value": "오늘의 연습 완료"
           }
         },
         "nb": {
@@ -43581,7 +43581,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다음 재생"
+            "value": "다음 플레이"
           }
         },
         "nb": {
@@ -44341,7 +44341,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "트럼프는 플레이되지 않습니다. 당신은 10︎, 3︎, K︎의 트릭에 마지막으로 성공했습니다. 어떤 카드가 승리하나요?"
+            "value": "노트럼프에서 10♦, 3♦, K♦가 나온 트릭의 마지막 차례입니다. 어느 카드가 이기나요?"
           }
         },
         "nb": {
@@ -44721,7 +44721,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "마감일 없음"
+            "value": "복습할 문제 없음"
           }
         },
         "nb": {
@@ -45766,7 +45766,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "트럼프 없이만"
+            "value": "노트럼프에서만"
           }
         },
         "nb": {
@@ -46431,7 +46431,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "공개 또는 통과?"
+            "value": "오픈할까요, 패스할까요?"
           }
         },
         "nb": {
@@ -46906,7 +46906,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "트럼프 없음에 대한 오프닝 선두"
+            "value": "노트럼프 상대 첫 리드"
           }
         },
         "nb": {
@@ -47096,7 +47096,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오프닝: 추가 담당자"
+            "value": "오프닝: 추가 연습"
           }
         },
         "nb": {
@@ -47476,7 +47476,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "파트너가 A-K에서 A를 리드합니다. 당신은 싱글톤 퀸을 보유하고 있습니다. 어떤 카드를 플레이해야 합니까?"
+            "value": "파트너가 A-K에서 A♠를 리드합니다. 당신에게는 스페이드 퀸 한 장뿐입니다. 어떤 카드를 내야 하나요?"
           }
         },
         "nb": {
@@ -48901,7 +48901,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%2$lld의 %1$lld 재생"
+            "value": "%2$lld개 중 %1$lld번째 플레이"
           }
         },
         "nb": {
@@ -49281,7 +49281,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "플레이 K . 커버링은 파트너의 잭 또는 10을 승자로 승격시킬 수 있습니다."
+            "value": "K♦를 내세요. 커버하면 파트너의 잭이나 10이 이기는 카드가 될 수 있습니다."
           }
         },
         "nb": {
@@ -49376,7 +49376,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Q를 플레이하세요. 유일한 스페이드이기 때문입니다. 또한 파트너가 깔끔하게 계속할 수 있도록 슈트의 차단을 해제합니다."
+            "value": "유일한 스페이드인 Q♠를 내세요. 수트의 막힘도 풀려 파트너가 계속 플레이할 수 있습니다."
           }
         },
         "nb": {
@@ -49661,7 +49661,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "트럼프를 연주하다"
+            "value": "트럼프를 내세요"
           }
         },
         "nb": {
@@ -51941,7 +51941,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "퀸즈: %1$lld × %2$lld\n의"
+            "value": "퀸: %1$lld × %2$lld"
           }
         },
         "nb": {
@@ -53556,7 +53556,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "복원 구매"
+            "value": "구매 복원"
           }
         },
         "nb": {
@@ -53746,7 +53746,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "반품하세요"
+            "value": "같은 수트를 다시 내세요"
           }
         },
         "nb": {
@@ -53841,7 +53841,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "같은 옷을 반품하시겠습니까?"
+            "value": "같은 수트를 다시 낼까요?"
           }
         },
         "nb": {
@@ -53936,7 +53936,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오른쪽 플레이"
+            "value": "정답 플레이"
           }
         },
         "nb": {
@@ -54506,7 +54506,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "저장 %lld%%"
+            "value": "%lld%% 할인"
           }
         },
         "nb": {
@@ -54791,7 +54791,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "저장하세요"
+            "value": "남겨 두세요"
           }
         },
         "nb": {
@@ -56216,7 +56216,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다음 비드 시 전공을 표시하세요."
+            "value": "다음 비드에서 메이저를 보여 주세요."
           }
         },
         "nb": {
@@ -56501,7 +56501,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "6개의 스페이드와 13개의 HCP로 1♣이 확실한 오프닝을 만듭니다."
+            "value": "스페이드 6장과 13 HCP이므로 1♠로 오픈합니다."
           }
         },
         "nb": {
@@ -58876,7 +58876,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "줄무늬로 인해 달라붙습니다."
+            "value": "연속 연습으로 실력을 다져요"
           }
         },
         "nb": {
@@ -62296,7 +62296,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "여기서 킹을 이길 수 있는 유일한 카드는 에이스입니다. 트릭을이기려면 A 를 플레이하세요."
+            "value": "여기서 킹을 이길 수 있는 카드는 에이스뿐입니다. A♦를 내서 트릭을 따세요."
           }
         },
         "nb": {
@@ -64481,7 +64481,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "더 강한 트럼프 손 없음"
+            "value": "더 강한 노트럼프 패"
           }
         },
         "nb": {
@@ -65051,7 +65051,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "13포인트이고 5카드 메이저는 없지만 1NT에는 너무 약합니다. 더 긴 부전공을 엽니다. 1.."
+            "value": "13점이고 5장 메이저가 없으며 1NT에는 부족합니다. 더 긴 마이너인 1♦로 오픈하세요."
           }
         },
         "nb": {
@@ -65526,7 +65526,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "이 핸드에는 HCP 14개와 스페이드 5개가 있습니다. 5장의 메이저인 1│을 엽니다."
+            "value": "이 패는 14 HCP와 스페이드 5장을 갖고 있습니다. 5장 메이저인 1♠로 오픈하세요."
           }
         },
         "nb": {
@@ -65811,7 +65811,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "이 핸드에는 오프닝 강도, 5개의 다이아몬드, 5개의 카드 메이저가 없습니다. 더 긴 마이너인 1을 엽니다."
+            "value": "이 패는 오픈할 힘과 다이아몬드 5장을 갖고 있으며 5장 메이저는 없습니다. 더 긴 마이너인 1♦로 오픈하세요."
           }
         },
         "nb": {
@@ -67996,7 +67996,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "전공 2개, 부전공 2개"
+            "value": "메이저 두 개, 마이너 두 개"
           }
         },
         "nb": {
@@ -68734,7 +68734,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "보통 반품합니다"
+            "value": "보통 같은 수트를 다시 냅니다"
           }
         },
         "nb": {
@@ -68829,7 +68829,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "보통 저장해두세요"
+            "value": "보통 남겨 둡니다"
           }
         },
         "nb": {
@@ -70729,7 +70729,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "4│은 무엇을 약속하나요?"
+            "value": "4♠는 무엇을 약속하나요?"
           }
         },
         "nb": {
@@ -71014,7 +71014,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "기교란 무엇입니까?"
+            "value": "피네스란 무엇인가요?"
           }
         },
         "nb": {
@@ -72249,7 +72249,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "선언자는 언제 트럼프를 그려야 합니까?"
+            "value": "선언자는 언제 트럼프를 제거해야 하나요?"
           }
         },
         "nb": {
@@ -72629,7 +72629,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "어느 입찰가가 1♥보다 높습니까?"
+            "value": "어떤 비드가 1♠보다 높나요?"
           }
         },
         "nb": {
@@ -72819,7 +72819,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "슈트의 영예는 어떤 카드인가요?"
+            "value": "한 수트에서 오너 카드는 무엇인가요?"
           }
         },
         "nb": {
@@ -73199,7 +73199,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "어떤 쌍이 주요 정장입니까?"
+            "value": "메이저 수트는 어느 두 가지인가요?"
           }
         },
         "nb": {
@@ -73484,7 +73484,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오프닝 선두는 누구?"
+            "value": "첫 리드는 누가 하나요?"
           }
         },
         "nb": {
@@ -74434,7 +74434,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오프닝 강도는 있지만 5장의 메이저가 없으면 더 긴 마이너를 엽니다. 3개의 클럽과 3개의 다이아몬드로 1♣을 엽니다. 각각 4개를 가지고 1을 엽니다."
+            "value": "오픈할 힘은 있지만 5장 메이저가 없다면 더 긴 마이너로 오픈하세요. 클럽과 다이아몬드가 각각 3장이면 1♣, 각각 4장이면 1♦로 오픈하세요."
           }
         },
         "nb": {
@@ -75764,7 +75764,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "당신은 사이드 수트 부족 없이 4│에 있고 수비수들은 여전히 ​​트럼프를 쥐고 있습니다. 당신은 보통 무엇을 먼저 이끌나요?"
+            "value": "4♠ 계약에서 다른 수트가 짧지 않고 수비수들에게 트럼프가 남아 있습니다. 보통 무엇을 먼저 리드하나요?"
           }
         },
         "nb": {
@@ -76144,7 +76144,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "두 마음을 품으면 마음이 이끌립니다. 당신은 무엇을 해야 합니까?"
+            "value": "하트 두 장을 갖고 있는데 하트가 리드되었습니다. 어떻게 해야 하나요?"
           }
         },
         "nb": {
@@ -76809,7 +76809,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "\"%@\"라고 말씀하셨습니다. 오른쪽!"
+            "value": "“%@”라고 답했어요. 정답입니다!"
           }
         },
         "nb": {
@@ -77094,7 +77094,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "당신의 업무 이력"
+            "value": "연습 기록"
           }
         },
         "nb": {
@@ -79089,7 +79089,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오른쪽"
+            "value": "정답"
           }
         },
         "nb": {
