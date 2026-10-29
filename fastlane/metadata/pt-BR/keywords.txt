@@ -1,1 +1,1 @@
-bridge,licitação,cartas,aprender,tutor,iniciante,lição,exercício,defensa,declarante,prática,play
+cartas,aprender,tutor,iniciante,lição,exercício,defesa,declarante,prática,play
