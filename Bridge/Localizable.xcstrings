@@ -6810,7 +6810,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%llds"
+            "value": "%lld초"
           }
         },
         "nb": {
@@ -8995,7 +8995,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "하이 원"
+            "value": "높은 카드"
           }
         },
         "nb": {
@@ -9375,7 +9375,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "A 낮은 것"
+            "value": "낮은 카드"
           }
         },
         "nb": {
@@ -28187,7 +28187,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "기교, 홀드업 및 안전 플레이"
+            "value": "피네스, 홀드업과 안전 플레이"
           }
         },
         "nb": {
@@ -30182,7 +30182,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "클럽 후원"
+            "value": "클럽 지지를 위해"
           }
         },
         "nb": {
@@ -30562,7 +30562,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "4명의 플레이어, 2개의 파트너십"
+            "value": "플레이어 4명, 파트너십 2팀"
           }
         },
         "nb": {
@@ -30942,7 +30942,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "갓 처리된 핸드, 무제한 반복"
+            "value": "새로 배분된 패로 무제한 연습"
           }
         },
         "nb": {
@@ -38827,7 +38827,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "선두로 갈 것인가, 아니면 보류할 것인가?"
+            "value": "리드할까요, 기다릴까요?"
           }
         },
         "nb": {
@@ -39682,7 +39682,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "그것을 통해 리드?"
+            "value": "강한 패를 향해 리드할까요?"
           }
         },
         "nb": {
@@ -42630,7 +42630,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "당신도 따라야 합니까?"
+            "value": "리드된 수트를 따라야 하나요?"
           }
         },
         "nb": {
@@ -42821,7 +42821,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오프닝 이름 지정"
+            "value": "오프닝 비드 맞히기"
           }
         },
         "nb": {
@@ -45576,7 +45576,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "한 명의 플레이어가 두 손을 제어합니다."
+            "value": "한 플레이어가 두 패를 플레이합니다"
           }
         },
         "nb": {
@@ -46526,7 +46526,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "더 긴 마이너 열기"
+            "value": "더 긴 마이너로 오픈"
           }
         },
         "nb": {
@@ -46621,7 +46621,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "더 긴 마이너: %@를 엽니다."
+            "value": "더 긴 마이너인 %@로 오픈하세요."
           }
         },
         "nb": {
@@ -46716,7 +46716,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "가장 긴 슈트인 5장의 카드 메이저 %@를 엽니다."
+            "value": "가장 긴 수트이자 5장 메이저인 %@로 오픈하세요."
           }
         },
         "nb": {
@@ -48521,7 +48521,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "범위에 손을 넣어보세요"
+            "value": "패의 포인트 범위를 파악하세요"
           }
         },
         "nb": {
@@ -49756,7 +49756,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "누락된 명예를 잘 배치하기 위한 플레이"
+            "value": "빠진 오너가 유리한 위치에 있다고 가정하고 플레이"
           }
         },
         "nb": {
@@ -50231,7 +50231,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "두 번째로 높은 플레이"
+            "value": "두 번째로 높은 카드를 내세요"
           }
         },
         "nb": {
@@ -53176,7 +53176,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "재설정 진행"
+            "value": "진행 상황 초기화"
           }
         },
         "nb": {
@@ -55931,7 +55931,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "균형 잡힌 손을 보여주세요"
+            "value": "균형 잡힌 패를 보여 주세요"
           }
         },
         "nb": {
@@ -62771,7 +62771,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "경매 기록"
+            "value": "비딩 기록"
           }
         },
         "nb": {
@@ -63816,7 +63816,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오프닝 주연"
+            "value": "첫 리드"
           }
         },
         "nb": {
@@ -67426,7 +67426,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "트럼프 주문 및 비드 순서"
+            "value": "트럼프 순서와 비드 순서"
           }
         },
         "nb": {
@@ -69874,7 +69874,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "워크인 준비 완료"
+            "value": "준비하고 자리에 앉으세요"
           }
         },
         "nb": {
@@ -71394,7 +71394,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "선제개방의 주요 목적은 무엇입니까?"
+            "value": "프리엠트 오프닝의 주된 목적은 무엇인가요?"
           }
         },
         "nb": {
@@ -71869,7 +71869,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "초침이 낮은 것보다 오른쪽이 높은 때는 언제인가요?"
+            "value": "두 번째 플레이어가 낮은 카드 대신 높은 카드를 내는 것이 맞는 경우는 언제인가요?"
           }
         },
         "nb": {
@@ -73389,7 +73389,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다음 트릭의 주인공은 누구일까요?"
+            "value": "다음 트릭을 누가 리드하나요?"
           }
         },
         "nb": {
@@ -75479,7 +75479,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "네, 힘차게 이끌어주세요"
+            "value": "네, 강한 패를 향해 리드하세요"
           }
         },
         "nb": {
@@ -76904,7 +76904,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "파트너의 첫 선두를 차지했습니다."
+            "value": "파트너의 첫 리드에서 이겼습니다"
           }
         },
         "nb": {
@@ -77474,7 +77474,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "게임 밤 준비가 준비되었습니다"
+            "value": "게임 준비 연습이 준비되었습니다"
           }
         },
         "nb": {
