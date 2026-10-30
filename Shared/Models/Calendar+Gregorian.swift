@@ -9,9 +9,12 @@ extension Calendar {
     /// everyone else, orphan their saved results, or stretch the challenge
     /// archive back thousands of "months". Months and days still turn over at
     /// local midnight.
+    ///
+    /// The zone comes from `Calendar.current`, which follows a time-zone
+    /// change; `TimeZone.current` stays cached at the zone the process saw first.
     static var gregorianLocal: Calendar {
         var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = .current
+        calendar.timeZone = Calendar.current.timeZone
         return calendar
     }
 }

@@ -5,6 +5,7 @@ import XCTest
 final class ProgressStoreTests: XCTestCase {
     private var defaults: UserDefaults!
     private var store: ProgressStore!
+    private let originalTimeZone = NSTimeZone.default
 
     override func setUp() {
         super.setUp()
@@ -14,6 +15,7 @@ final class ProgressStoreTests: XCTestCase {
     }
 
     override func tearDown() {
+        NSTimeZone.default = originalTimeZone
         defaults.removePersistentDomain(forName: "ProgressStoreTests")
         super.tearDown()
     }
@@ -90,6 +92,46 @@ final class ProgressStoreTests: XCTestCase {
         store.recordSession(drillID: "a", now: day1)
         store.recordSession(drillID: "a", now: day1.addingTimeInterval(86_400))
         XCTAssertEqual(store.streakCount, 2, "Returning to the real date must not count the same day twice")
+    }
+
+    private func iso(_ text: String) -> Date { ISO8601DateFormatter().date(from: text)! }
+
+    /// BR-03: the last day was stored as an instant (New York midnight), which
+    /// is the evening before in Chicago, so a westward trip read as a missed day.
+    func testWestwardTravelKeepsTheStreak() {
+        NSTimeZone.default = TimeZone(identifier: "America/New_York")!
+        store.recordSession(drillID: "a", now: iso("2026-10-28T20:00:00-04:00"))
+        store.recordSession(drillID: "a", now: iso("2026-10-29T20:00:00-04:00"))
+        NSTimeZone.default = TimeZone(identifier: "America/Chicago")!
+        let friday = iso("2026-10-30T09:00:00-05:00")
+        XCTAssertEqual(store.currentStreak(now: friday), 2)
+        store.recordSession(drillID: "a", now: friday)
+        XCTAssertEqual(store.streakCount, 3)
+    }
+
+    func testWestwardTravelDoesNotCountTheSameDayTwice() {
+        NSTimeZone.default = TimeZone(identifier: "America/New_York")!
+        store.recordSession(drillID: "a", now: iso("2026-10-29T09:00:00-04:00"))
+        NSTimeZone.default = TimeZone(identifier: "America/Los_Angeles")!
+        store.recordSession(drillID: "a", now: iso("2026-10-29T20:00:00-07:00"))
+        XCTAssertEqual(store.streakCount, 1)
+    }
+
+    func testWestwardTravelKeepsGetStartedDoneForTheDay() {
+        NSTimeZone.default = TimeZone(identifier: "America/New_York")!
+        store.markQuickSessionCompleted(now: iso("2026-10-29T09:00:00-04:00"))
+        NSTimeZone.default = TimeZone(identifier: "America/Los_Angeles")!
+        XCTAssertTrue(store.quickSessionCompletedToday(now: iso("2026-10-29T20:00:00-07:00")))
+    }
+
+    /// Builds before the fix stored an instant; it must still read.
+    func testLegacyStoredInstantStillReads() {
+        defaults.set(Calendar.current.startOfDay(for: Date().addingTimeInterval(-86_400)), forKey: "progress.lastActiveDay")
+        defaults.set(4, forKey: "progress.streakCount")
+        store = ProgressStore(defaults: defaults)
+        XCTAssertEqual(store.currentStreak(), 4)
+        store.recordSession(drillID: "a")
+        XCTAssertEqual(store.streakCount, 5)
     }
 
     func testRoomProgress() {

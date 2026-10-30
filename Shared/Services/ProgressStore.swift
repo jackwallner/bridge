@@ -73,23 +73,14 @@ final class ProgressStore: ObservableObject {
     /// drill is finished, so after a missed day it still held the old number
     /// and Home showed a streak the player had already lost.
     func currentStreak(now: Date = Date()) -> Int {
-        guard let last = defaults.object(forKey: Keys.lastActiveDay) as? Date else { return streakCount }
-        let calendar = Calendar.current
-        let gap = calendar.dateComponents(
-            [.day], from: calendar.startOfDay(for: last), to: calendar.startOfDay(for: now)
-        ).day ?? 0
-        return gap > 1 ? 0 : streakCount
+        guard let last = storedDay(Keys.lastActiveDay) else { return streakCount }
+        return dayGap(from: last, to: now) > 1 ? 0 : streakCount
     }
 
     /// Streak counts consecutive calendar days with at least one finished drill.
     private func bumpStreak(now: Date) {
-        let calendar = Calendar.current
-        let today = calendar.startOfDay(for: now)
-        let last = defaults.object(forKey: Keys.lastActiveDay) as? Date
-
-        if let last {
-            let lastDay = calendar.startOfDay(for: last)
-            let gap = calendar.dateComponents([.day], from: lastDay, to: today).day ?? 0
+        if let last = storedDay(Keys.lastActiveDay) {
+            let gap = dayGap(from: last, to: now)
             if gap == 1 {
                 streakCount += 1
             } else if gap > 1 {
@@ -102,8 +93,27 @@ final class ProgressStore: ObservableObject {
         } else {
             streakCount = 1
         }
-        defaults.set(today, forKey: Keys.lastActiveDay)
+        defaults.set(MasteryLedger.dayKey(now), forKey: Keys.lastActiveDay)
         defaults.set(streakCount, forKey: Keys.streakCount)
+    }
+
+    /// Days are stored as local calendar day keys, not instants: an instant
+    /// saved at New York midnight is the evening before in Chicago, so a
+    /// westward trip read as a missed day. Older builds stored the
+    /// instant, which still reads the old way.
+    private func storedDay(_ key: String) -> Date? {
+        let calendar = Calendar.gregorianLocal
+        if let dayKey = defaults.string(forKey: key) {
+            let parts = dayKey.split(separator: "-").compactMap { Int($0) }
+            guard parts.count == 3 else { return nil }
+            return calendar.date(from: DateComponents(year: parts[0], month: parts[1], day: parts[2]))
+        }
+        return (defaults.object(forKey: key) as? Date).map(calendar.startOfDay)
+    }
+
+    private func dayGap(from day: Date, to now: Date) -> Int {
+        let calendar = Calendar.gregorianLocal
+        return calendar.dateComponents([.day], from: day, to: calendar.startOfDay(for: now)).day ?? 0
     }
 
     /// Item-level memory that feeds the Get Started mix: anything answered wrong
@@ -126,12 +136,12 @@ final class ProgressStore: ObservableObject {
     /// back the same questions (repeating a question you just answered teaches
     /// nothing). Missed items still return on later days as spaced repetition.
     func quickSessionCompletedToday(now: Date = Date()) -> Bool {
-        guard let last = defaults.object(forKey: Keys.lastQuickSessionDay) as? Date else { return false }
-        return Calendar.current.isDate(last, inSameDayAs: now)
+        guard let last = storedDay(Keys.lastQuickSessionDay) else { return false }
+        return dayGap(from: last, to: now) == 0
     }
 
     func markQuickSessionCompleted(now: Date = Date()) {
-        defaults.set(Calendar.current.startOfDay(for: now), forKey: Keys.lastQuickSessionDay)
+        defaults.set(MasteryLedger.dayKey(now), forKey: Keys.lastQuickSessionDay)
     }
 
     /// Clears every practice stat. Leaves onboarding and purchases alone.
