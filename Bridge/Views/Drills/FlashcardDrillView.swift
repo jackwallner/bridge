@@ -12,6 +12,7 @@ struct FlashcardDrillView: View {
     var accent: Color = Theme.jade
 
     @EnvironmentObject private var progress: ProgressStore
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @State private var queue: [Flashcard] = []
     @State private var isFlipped = false
@@ -242,7 +243,7 @@ struct FlashcardDrillView: View {
             Haptics.wrongAnswer()
             SoundPlayer.play(.miss)
         }
-        withAnimation(.spring(response: 0.55, dampingFraction: 0.8)) {
+        withAnimation(reduceMotion ? nil : .spring(response: 0.55, dampingFraction: 0.8)) {
             isFlipped = true
         }
         maybeHintSwipe()
@@ -253,7 +254,7 @@ struct FlashcardDrillView: View {
     private func flip() {
         guard !isFlinging, !choiceAnswered else { return }
         Haptics.impact(.soft, intensity: 0.5)
-        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
+        withAnimation(reduceMotion ? nil : .spring(response: 0.5, dampingFraction: 0.8)) {
             isFlipped.toggle()
         }
         if isFlipped { maybeHintSwipe() }
@@ -376,7 +377,7 @@ struct FlashcardDrillView: View {
     /// One-time teaching beat: after the first-ever flip the card eases toward
     /// the edge and springs back, previewing the swipe and the rise behind it.
     private func maybeHintSwipe() {
-        guard !hasSwipedDeck, !didHint, queue.count > 1 else { return }
+        guard !reduceMotion, !hasSwipedDeck, !didHint, queue.count > 1 else { return }
         didHint = true
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 700_000_000)
