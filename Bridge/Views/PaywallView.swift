@@ -117,7 +117,7 @@ struct PaywallContent: View {
                                 .padding(.horizontal, 6)
                                 .padding(.vertical, 2)
                                 .background(Theme.gold.opacity(0.18), in: Capsule())
-                                .foregroundStyle(Theme.gold)
+                                .foregroundStyle(Theme.goldText)
                         }
                     }
                     Text(detail)
