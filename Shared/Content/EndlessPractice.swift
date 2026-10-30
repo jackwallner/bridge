@@ -113,13 +113,11 @@ enum EndlessPractice {
             // A hand with no honors at all is a trick question, not a drill.
             guard hcp >= 3 else { continue }
 
-            let offsets = [-2, -1, 1, 2].shuffled().prefix(3)
-            var values = Set([hcp])
-            for offset in offsets where hcp + offset >= 0 {
-                values.insert(hcp + offset)
-            }
-            let sorted = values.sorted()
-            guard let answerIndex = sorted.firstIndex(of: hcp) else { continue }
+            // Four consecutive totals with the answer at a random position, so
+            // its place among the sorted choices gives nothing away.
+            let start = max(0, hcp - Int.random(in: 0...3))
+            let sorted = Array(start..<start + 4)
+            let answerIndex = hcp - start
 
             items.append(QuickItem(
                 id: PracticeSkill.pointCount.itemPrefix + UUID().uuidString,

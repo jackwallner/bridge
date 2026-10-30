@@ -166,6 +166,20 @@ final class ContentValidityTests: XCTestCase {
         }
     }
 
+    /// The answer's place among the sorted choices must not give it away:
+    /// with the old window it was never first or last.
+    func testPointCountAnswerCanSitAnywhereInTheChoices() {
+        let items = EndlessPractice.items(for: .pointCount, count: 400)
+        var positions = [Int](repeating: 0, count: 4)
+        for item in items {
+            XCTAssertEqual(item.choices.count, 4)
+            positions[item.answerIndex] += 1
+        }
+        for count in positions {
+            XCTAssertGreaterThan(count, items.count / 8, "\(positions)")
+        }
+    }
+
     func testNoEmDashesInPlayerFacingContent() {
         var copy: [String] = []
         for room in DrillLibrary.rooms {
