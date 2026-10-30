@@ -62,6 +62,9 @@ struct BridgeHandView: View {
             }
             .offset(y: selected ? -8 : 0)
             .onTapGesture { onTap?(index) }
+            // A display-only hand must let taps through: the flashcard's drag
+            // gesture behind it is what flips the card.
+            .allowsHitTesting(onTap != nil)
             .animation(.spring(duration: 0.25), value: selected)
     }
 }
