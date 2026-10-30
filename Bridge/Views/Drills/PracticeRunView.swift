@@ -10,6 +10,12 @@ enum PracticeMode: Equatable {
     case review
 
     var isGenerated: Bool { self != .review }
+
+    /// What a run that ends now is scored out of, or nil when it should just
+    /// close: a run quit before any answer is not an achievement.
+    func completionTotal(attempted: Int) -> Int? {
+        attempted > 0 ? attempted : nil
+    }
 }
 
 /// The runner behind Endless Practice, the Timed Challenge, and Fix My
@@ -79,7 +85,7 @@ struct PracticeRunView: View {
             .background(Theme.background)
             .navigationTitle(title)
         } else if finished {
-            DrillCompleteView(drill: completedDrill, score: score, total: gradedTotal)
+            DrillCompleteView(drill: completedDrill, score: score, total: completionTotal ?? 0)
         } else {
             runBody
         }
@@ -87,9 +93,7 @@ struct PracticeRunView: View {
 
     private var item: QuickItem { items[min(index, items.count - 1)] }
     private var answered: Bool { selection != nil }
-    /// Endless and timed runs are scored out of what was actually attempted,
-    /// not out of a deck size that does not exist.
-    private var gradedTotal: Int { mode == .review ? items.count : attempted }
+    private var completionTotal: Int? { mode.completionTotal(attempted: attempted) }
 
     private var completedDrill: Drill {
         switch mode {
@@ -314,9 +318,7 @@ struct PracticeRunView: View {
         if mode == .timed {
             records.recordChallengeScore(score)
         }
-        // A run the player quit before answering anything is not an
-        // achievement; sending it to the completion screen would fake one.
-        guard attempted > 0 || mode == .review else {
+        guard completionTotal != nil else {
             dismiss()
             return
         }
