@@ -331,6 +331,9 @@ final class SubscriptionService: NSObject, ObservableObject {
 
     func loadOfferings() async {
         guard isConfigured else { return }
+        // A launch fetch that failed leaves both purchase buttons disabled
+        // until a record lands; every price load is a chance to read it again.
+        if !membershipResolved { await refreshCustomerInfo() }
         introEligibility = [:]
         currentOffering = try? await client.paywallOffering(forceRefresh: false)
         let identifiers = currentOffering?.availablePackages.map(\.storeProduct.productIdentifier) ?? []
@@ -391,6 +394,7 @@ final class SubscriptionService: NSObject, ObservableObject {
     func ensureOfferings() async -> Bool {
         guard isConfigured else { return false }
         await recoverReinstalledMembershipIfNeeded()
+        if !membershipResolved { await refreshCustomerInfo() }
         if currentOffering != nil { return true }
         await loadOfferings()
         return currentOffering != nil

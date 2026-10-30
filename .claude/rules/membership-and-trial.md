@@ -53,6 +53,9 @@ read (cache or network); nothing may treat "not a member" as a lapse or sell a
 trial before it. A reinstall is a new anonymous RevenueCat user:
 `recoverReinstalledMembershipIfNeeded` syncs once per install when StoreKit owns
 an entitlement, and `ensureOfferings` (so every purchase) waits for it (3s cap).
+Both purchase buttons stay disabled until `membershipResolved`, so
+`ensureOfferings` and `loadOfferings` re-read the customer record while it is
+false (a failed launch fetch used to leave them dead for the session).
 `startedTrial` comes from the purchased entitlement's `periodType`, not the
 product. `confirmEntitlement` fetches a fresh record. Simulators keep the
 early-return in `configureIfNeeded`: never configure the production `appl_` key

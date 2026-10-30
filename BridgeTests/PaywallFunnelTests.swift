@@ -321,6 +321,35 @@ final class PurchaseEntitlementTests: XCTestCase {
         XCTAssertFalse(service.isCheckingEntitlements)
     }
 
+    /// BR-01: a launch fetch that failed left `membershipResolved` false, and
+    /// both purchase buttons are disabled until it turns true. Loading prices
+    /// again must also read the customer record again.
+    func testFailedFirstFetchRecoversWhenPricesLoadAgain() async {
+        let mock = MockPurchases()
+        mock.offering = Offering(identifier: "default", serverDescription: "Test", paywall: nil,
+                                 availablePackages: [makePackage()], webCheckoutUrl: nil)
+        mock.fetchError = URLError(.notConnectedToInternet)
+        let service = SubscriptionService(client: mock, defaults: UserDefaults(suiteName: UUID().uuidString)!)
+        await service.refreshCustomerInfo()
+        await service.loadOfferings()
+        XCTAssertFalse(service.isCheckingEntitlements)
+        XCTAssertFalse(service.membershipResolved)
+        mock.fetchError = nil
+        await service.ensureOfferings()
+        XCTAssertNotNil(service.paywallPrice(for: .monthly))
+        XCTAssertTrue(service.membershipResolved)
+    }
+
+    func testFailedFirstFetchRecoversOnTheFirstOfferingsLoad() async {
+        let mock = MockPurchases()
+        mock.fetchError = URLError(.notConnectedToInternet)
+        let service = SubscriptionService(client: mock, defaults: UserDefaults(suiteName: UUID().uuidString)!)
+        await service.refreshCustomerInfo()
+        mock.fetchError = nil
+        await service.loadOfferings()
+        XCTAssertTrue(service.membershipResolved)
+    }
+
     func testUnknownOrIneligibleAccountIsNeverPromisedAFreeTrial() async {
         let mock = MockPurchases()
         mock.offering = Offering(identifier: "default", serverDescription: "Test", paywall: nil,
