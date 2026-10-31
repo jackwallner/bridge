@@ -319,7 +319,10 @@ struct HomeView: View {
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 400_000_000)
             withAnimation(.spring(response: 0.5, dampingFraction: 0.85)) {
-                proxy.scrollTo(roomID, anchor: .center)
+                // No anchor: scroll only as far as needed, so a card that is
+                // already on screen stays put instead of being centred. Centring
+                // pushed Get Started under the toolbar after "Skip for now".
+                proxy.scrollTo(roomID, anchor: nil)
                 highlightedRoomID = roomID
             }
             try? await Task.sleep(nanoseconds: 2_200_000_000)
