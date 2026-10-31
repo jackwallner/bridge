@@ -41,6 +41,9 @@ sealed interface PracticeMode {
     data object Review : PracticeMode
 
     val isGenerated: Boolean get() = this != Review
+
+    /** What a run that ends now is scored out of, or null when it should just close. */
+    fun completionTotal(attempted: Int): Int? = if (attempted > 0) attempted else null
 }
 
 /** Every pushed destination in the app. */
