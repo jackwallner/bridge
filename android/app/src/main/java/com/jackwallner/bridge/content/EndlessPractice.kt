@@ -8,6 +8,7 @@ import com.jackwallner.bridge.model.Rank
 import com.jackwallner.bridge.model.highCardPoints
 import com.jackwallner.bridge.model.racked
 import java.util.UUID
+import kotlin.random.Random
 
 /** Generated practice skills. Each one becomes the same QuickItem shape as authored drills. */
 enum class PracticeSkill(val raw: String, val title: String, val subtitle: String, val icon: String, val roomID: String) {
@@ -64,17 +65,16 @@ object EndlessPractice {
             val hcp = cards.highCardPoints
             // A hand with no honors at all is a trick question, not a drill.
             if (hcp < 3) continue
-            val values = sortedSetOf(hcp)
-            for (offset in listOf(-2, -1, 1, 2).shuffled().take(3)) {
-                if (hcp + offset >= 0) values += hcp + offset
-            }
-            val sorted = values.toList()
+            // Four consecutive totals with the answer at a random position, so
+            // its place among the sorted choices gives nothing away.
+            val start = maxOf(0, hcp - Random.nextInt(4))
+            val sorted = (start until start + 4).toList()
             items += QuickItem(
                 id = newID(PracticeSkill.POINT_COUNT),
                 prompt = "How many high-card points is this hand worth?",
                 cards = cards,
                 choices = sorted.map { it.toString() },
-                answerIndex = sorted.indexOf(hcp),
+                answerIndex = hcp - start,
                 explanation = pointExplanation(cards, hcp),
                 sourceLabel = "Endless Practice",
                 roomID = PracticeSkill.POINT_COUNT.roomID,
