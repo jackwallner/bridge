@@ -63,8 +63,19 @@ class InMemoryStore : KeyValueStore {
     override fun remove(key: String) { values.remove(key) }
 }
 
+/**
+ * The system clock in the device's current zone. `Clock.systemDefaultZone()`
+ * keeps the zone it saw first, so a trip west in a running process left
+ * "today" a day ahead until the app was killed.
+ */
+private object DeviceZoneClock : Clock() {
+    override fun getZone(): java.time.ZoneId = java.time.ZoneId.systemDefault()
+    override fun withZone(zone: java.time.ZoneId): Clock = system(zone)
+    override fun instant(): java.time.Instant = java.time.Instant.now()
+}
+
 /** A replaceable clock, so day boundaries can be tested. */
-class AppClock(var clock: Clock = Clock.systemDefaultZone()) {
+class AppClock(var clock: Clock = DeviceZoneClock) {
     fun millis(): Long = clock.millis()
     fun today(): java.time.LocalDate = java.time.LocalDate.now(clock)
     val zone: java.time.ZoneId get() = clock.zone
