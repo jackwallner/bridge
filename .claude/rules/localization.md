@@ -7,9 +7,9 @@ paths:
   - "project.yml"
 ---
 
-# Bridge Trainer: UI localization (2026-10-27)
+# Bridge Trainer: UI localization (2026-10-30)
 
-The app ships in en plus da, de, el, fr, it, ja, nl, th, tr and zh-Hant. Why:
+The app ships in en plus da, de, el, es, fr, it, ja, ko, nb, nl, ru, sv, th, tr and zh-Hant. Why:
 RevenueCat showed non-English rich markets trialing at about 6% against 15 to
 19% for US/UK/CA/AU at the same price, while the App Store pages were already
 translated, so the drop happened inside the app.
@@ -63,7 +63,7 @@ translated, so the drop happened inside the app.
 
 1. Write the English in code (`Text`, `String(localized:)`, or a content
    model init).
-2. Add the key to the catalog with all ten translations. For compiler keys you
+2. Add the key to the catalog with all fifteen translations. For compiler keys you
    can build once and run `xcrun xcstringstool sync Bridge/Localizable.xcstrings
    --stringsdata <DerivedData>/**/Bridge.build/**/*.stringsdata`; content keys
    must be added by hand.

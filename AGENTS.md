@@ -19,7 +19,7 @@ Condensed from the deep notes below; the reasoning behind each one lives there.
 - The trial flow (onboarding trial page, paywall, purchase to tour) is structurally Mahj 1.3.2; only the button wording varies, through RevenueCat offering metadata (`TrialCTA`). Prices are always read live from StoreKit. Any other change needs Jack's go-ahead.
 - No Meta SDK and no tracking prompt (Jack 2026-10-21: Meta only in Mahj for now).
 - The daily declarer question is built from the authored `PlayScenario`s, never through `SessionBuilder.choiceItems`.
-- The app ships in 11 languages. New user-facing copy, including authored questions, needs a `Bridge/Localizable.xcstrings` entry translated into all of them (`.claude/rules/localization.md`).
+- The app ships in 16 languages. New user-facing copy, including authored questions, needs a `Bridge/Localizable.xcstrings` entry translated into all of them (`.claude/rules/localization.md`).
 
 ## Architecture
 

@@ -6,7 +6,7 @@ import XCTest
 /// it. A question added without a catalog entry would silently show English
 /// to every non-English player; this catches it.
 final class LocalizationTests: XCTestCase {
-    private let languages = ["da", "de", "el", "fr", "it", "ja", "nl", "th", "tr", "zh-Hant"]
+    private let languages = ["da", "de", "el", "es", "fr", "it", "ja", "ko", "nb", "nl", "ru", "sv", "th", "tr", "zh-Hant"]
     private let missing = "__missing__"
 
     private var authoredCopy: [String] {
