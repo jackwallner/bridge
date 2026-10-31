@@ -1,40 +1,33 @@
-Build real contract bridge instincts in five-minute sessions.
-
-Bridge Trainer turns the parts that beginners need most into quick, focused drills. There are no opponents and no pressure. Count points, choose an opening bid, plan the play, and learn defensive habits with the reason behind every answer.
+Bridge Trainer is a contract bridge practice app for beginners, with short drills on card basics, opening bids, declarer play and defense. There are no opponents, and every answer explains why. Four practice rooms are free, with no account.
 
 FOUR FREE PRACTICE ROOMS
+• The Card Room: card rank, high-card points, tricks, trump, contracts and table roles
+• The Auction Room: read a 13-card hand and choose pass, a suit opening or 1NT, using a beginner Standard American framework
+• The Declarer Room: count winners, draw trump, set up long suits, finesse and pick the right card
+• The Defense Room: opening leads, sequences, third-hand play, suit returns and partnership habits
 
-THE CARD ROOM
-Learn card rank, high-card points, tricks, trump, contracts, and table roles.
+HOW YOU PRACTICE
+• Swipeable coaching cards, quick quizzes, realistic 13-card hands and card-play scenarios
+• Get Started builds a short mixed session in one tap, bringing back what you missed
+• Streaks, progress for each room, and an optional daily reminder
 
-THE AUCTION ROOM
-Practice a beginner Standard American framework. Read 13-card hands and choose between pass, a suit opening, and 1NT.
+PRIVACY
+• No account, no ads and no cross-app tracking
+• Your progress is stored on your iPhone
 
-THE DECLARER ROOM
-Count winners, draw trump, establish long suits, finesse, and choose the right card in table situations.
+FREE AND BRIDGE+
+The four rooms above are free and do not expire. Bridge+ is an optional upgrade, as a monthly or yearly subscription or a one-time lifetime purchase. Subscriptions include a free trial for eligible new subscribers, and the app shows its length before you start. Bridge+ adds:
+• Endless Practice: a newly dealt 13-card hand every time for opening-bid drills
+• Fix My Mistakes: the questions you got wrong come back on a spaced schedule
+• Timed Challenge: a timed round of mixed questions with a personal best
+• Bridge Minute: a daily five-question challenge
+• Game Night Prep: a short mix for your next game, led by your mistakes and weakest room, with an optional weekly reminder
+• Extra practice sets in each of the four rooms
+• The Master Tables: competitive bidding (doubles, preempts, Stayman and transfers), advanced card play and duplicate decisions
 
-THE DEFENSE ROOM
-Train opening leads, sequences, third-hand play, suit returns, and partnership habits.
-
-BRIDGE+ (OPTIONAL)
-Everything above stays free. Bridge+ adds practice that never runs out:
-
-ENDLESS PRACTICE deals a freshly generated 13-card hand every time, so opening-bid drills never repeat and never run dry.
-
-FIX MY MISTAKES remembers what you got wrong and brings it back on a spaced schedule, so weak spots actually close.
-
-TIMED CHALLENGE gives you ninety seconds of mixed questions and a personal best to chase.
-
-EXTRA PRACTICE SETS in each of the four beginner rooms, with fresh questions and hands in the same drills you already use.
-
-THE MASTER TABLES, with conventions, advanced card play, and duplicate strategy.
-
-New drills are added all year.
-
-BUILT FOR LEARNING
-Swipeable coaching cards, quick quizzes, realistic 13-card hands, card-play scenarios, streaks, and a daily mixed session that brings missed material back.
+Prices appear in the app before you buy and vary by region. Subscriptions renew automatically unless canceled at least 24 hours before the current period ends. Manage or cancel in Settings > Apple ID > Subscriptions.
 
 Bridge Trainer uses a beginner Standard American framework. Partnership agreements vary, so confirm conventions with your partner.
 
-SUBSCRIPTIONS
-Bridge+ is available as an auto-renewing subscription (Monthly or Yearly, both with a 7-day free trial) or as a one-time Lifetime purchase. Prices are shown in the app before you buy and vary by region. Payment is charged to your Apple ID at confirmation. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in Settings → Apple ID → Subscriptions. Terms of Use (Apple's standard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Privacy Policy: https://jackwallner.github.io/bridge/privacy-policy.
+Terms (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy: https://jackwallner.com/ios/bridge/privacy-policy.html
