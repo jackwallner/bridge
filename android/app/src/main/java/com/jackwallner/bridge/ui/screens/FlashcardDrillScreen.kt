@@ -84,6 +84,14 @@ import kotlinx.coroutines.launch
 
 private const val HAS_SWIPED_DECK = "bridge.hasSwipedDeck"
 
+/** The one-time swipe preview: not with animations off, only before the first swipe, once, and with more than one card. */
+internal fun shouldHintSwipe(reduceMotion: Boolean, hasSwipedDeck: Boolean, didHint: Boolean, queueSize: Int): Boolean =
+    !reduceMotion && !hasSwipedDeck && !didHint && queueSize > 1
+
+/** Android's Reduce Motion: "Remove animations" or the animator scale set to zero. */
+private fun animationsOff(context: android.content.Context): Boolean =
+    android.provider.Settings.Global.getFloat(context.contentResolver, android.provider.Settings.Global.ANIMATOR_DURATION_SCALE, 1f) == 0f
+
 private data class SwipeRecord(val card: Flashcard, val gotIt: Boolean)
 
 /**
@@ -120,7 +128,7 @@ fun FlashcardDrillScreen(drill: Drill, cards: List<Flashcard>, accent: Color) {
     val choiceAnswered = queue.firstOrNull()?.choice != null && choicePick != null
 
     fun maybeHint() {
-        if (graph.defaults.getBoolean(HAS_SWIPED_DECK) || didHint || queue.size <= 1) return
+        if (!shouldHintSwipe(animationsOff(graph.appContext), graph.defaults.getBoolean(HAS_SWIPED_DECK), didHint, queue.size)) return
         didHint = true
         scope.launch {
             delay(700)
