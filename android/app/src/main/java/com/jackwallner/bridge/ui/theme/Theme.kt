@@ -52,6 +52,8 @@ data class BridgeColors(
     /** Suit inks are fixed: a card face is ivory in both appearances. */
     val cardRed: Color get() = Color(0.72f, 0.17f, 0.16f)
     val cardBlack: Color get() = Color(0.12f, 0.11f, 0.10f)
+    /** Gold for text: `gold` is too pale to read as small type on the light surfaces. */
+    val goldText: Color get() = if (isDark) gold else rgb(0.52, 0.37, 0.08)
     val cardEdge: Color get() = tileEdge
     val crakRed: Color get() = cardRed
     val bamGreen: Color get() = Color(0.12f, 0.47f, 0.29f)

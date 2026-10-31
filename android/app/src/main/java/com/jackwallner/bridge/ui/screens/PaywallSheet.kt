@@ -268,7 +268,7 @@ private fun PlanCard(
                     Text(
                         badge,
                         style = BridgeType.caption2.copy(fontWeight = FontWeight.Bold),
-                        color = colors.gold,
+                        color = colors.goldText,
                         modifier = Modifier.background(colors.gold.copy(alpha = 0.18f), CircleShape).padding(horizontal = 6.dp, vertical = 2.dp),
                     )
                 }
