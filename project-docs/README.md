@@ -12,3 +12,7 @@ Developer notes and historical audits for this repository. The published site re
 ## ASO
 
 - [ASO](aso/README.md): Dated App Store metadata research and updates
+
+## Marketing
+
+- [tiktok-kit](marketing/tiktok-kit/): Bridge TikTok slideshow kit (42 posts, 14 days), rendered to iCloud `Bridge TikTok Kit` by `build_kit.py`; `docs.py` prints the checklist and posting guide
