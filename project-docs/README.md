@@ -15,4 +15,4 @@ Developer notes and historical audits for this repository. The published site re
 
 ## Marketing
 
-- [tiktok-kit](marketing/tiktok-kit/): Bridge TikTok slideshow kit (42 posts, 14 days), rendered to iCloud `Bridge TikTok Kit` by `build_kit.py`; `docs.py` prints the checklist and posting guide
+- [tiktok-kit](marketing/tiktok-kit/): Bridge TikTok kit, rendered to iCloud `Bridge TikTok Kit`: `build_kit.py` (42 slideshows, 14 days), `shorts.py` (8 animated shorts on the Mahj shorts engine), `extras.py` (extra carousels, More like A1, Instagram 3:4), `docs.py` (checklist and posting guide PDFs)
