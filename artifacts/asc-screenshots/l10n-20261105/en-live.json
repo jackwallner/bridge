@@ -1,0 +1,96 @@
+{
+ "phone": {
+  "display_type": "APP_IPHONE_67",
+  "frames": [
+   {
+    "file": "01-choose-an-opening-call.png",
+    "md5": "fa35e5cf044c6a39c26194a1673eca5c",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/2BUXFtASsBP3inpx9p9kZA/1320x2868bb.png",
+    "w": 1320,
+    "h": 2868
+   },
+   {
+    "file": "02-choose-the-opening-lead.png",
+    "md5": "e8f3bda6170b10b1580f6a98e32fba37",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/kwocTooUXogSlK0Ov3Rd8g/1320x2868bb.png",
+    "w": 1320,
+    "h": 2868
+   },
+   {
+    "file": "03-plan-the-play.png",
+    "md5": "80c3da2a8ace9b57dd56682d812144fb",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/v5fY8TlL-v0wEtODhe9EeQ/1320x2868bb.png",
+    "w": 1320,
+    "h": 2868
+   },
+   {
+    "file": "04-work-through-a-bridge-hand.png",
+    "md5": "779c4e4d1a625ff25551d55a7f5ff0fd",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/N5hp91oH9dUxQOdXEZ_yag/1320x2868bb.png",
+    "w": 1320,
+    "h": 2868
+   },
+   {
+    "file": "05-choose-a-bridge-room.png",
+    "md5": "647778b1cd3995d90ab76ba775abaf90",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/YMQxz1C77I4vOxxLRYagTw/1320x2868bb.png",
+    "w": 1320,
+    "h": 2868
+   },
+   {
+    "file": "06-choose-a-card-room-drill.png",
+    "md5": "dfe0408a3cb6fb3c2dd03d554c0f3e9d",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/xQrVFaSXG6RYXUvBKoIAZQ/1320x2868bb.png",
+    "w": 1320,
+    "h": 2868
+   }
+  ]
+ },
+ "ipad": {
+  "display_type": "APP_IPAD_PRO_3GEN_129",
+  "frames": [
+   {
+    "file": "ipad_01_quick_session.png",
+    "md5": "fc16b8a2522ceca337dc472ea4bbb222",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/k4smTf10Ou7DwIJxgs9G6g/2064x2752bb.png",
+    "w": 2064,
+    "h": 2752
+   },
+   {
+    "file": "ipad_02_opening.png",
+    "md5": "df712fd4789c00af424a81cc6bee8a65",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/5xcSG_6xTld2ABjAozTLlQ/2064x2752bb.png",
+    "w": 2064,
+    "h": 2752
+   },
+   {
+    "file": "ipad_03_lead_or_hold.png",
+    "md5": "8acfb263376f2926e1dbbee456c9ba23",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Lt9PzxI8zEKBR3DqYqzI5Q/2064x2752bb.png",
+    "w": 2064,
+    "h": 2752
+   },
+   {
+    "file": "ipad_04_declarer.png",
+    "md5": "63014a3a57577e6950b24b6f74497a0d",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/oMi6KLYlh6eXtiMVW4LQrg/2064x2752bb.png",
+    "w": 2064,
+    "h": 2752
+   },
+   {
+    "file": "ipad_05_home.png",
+    "md5": "4af1e55cf75e2775a42889a50a895e7f",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/7nqdXHG5NlyQ6U5L6DsEHQ/2064x2752bb.png",
+    "w": 2064,
+    "h": 2752
+   },
+   {
+    "file": "ipad_06_card_room.png",
+    "md5": "7ac97e837880f789d24cbad5b846b452",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Pwupc-h0RxoOjI0oq8EMdQ/2064x2752bb.png",
+    "w": 2064,
+    "h": 2752
+   }
+  ]
+ }
+}
