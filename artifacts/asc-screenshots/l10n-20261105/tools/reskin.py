@@ -26,13 +26,14 @@ def main() -> None:
     plans = []
     for key, group in sets.items():
         frames = group['frames']
-        jobs = [header_job(f, headers[f['file']], args.locale) for f in frames]
-        results = headline(jobs)
-        size = min(r['size'] for r in results)
-        cause = frames[min(range(len(results)), key=lambda i: results[i]['size'])]
-        for f, result in zip(frames, results):
+        with_headers = [f for f in frames if f.get('header', True)]
+        jobs = [header_job(f, headers[f['file']], args.locale) for f in with_headers]
+        results = headline(jobs) if jobs else []
+        size = min((r['size'] for r in results), default=0)
+        for f, result in zip(with_headers, results):
             if not result['fits'] or size < f['min_size']:
-                raise ValueError(f"{key}/{cause['file']}: size {size:g} below required minimum; text={headers[cause['file']]!r}")
+                raise ValueError(f"{key}/{f['file']}: size {size:g} below required minimum; text={headers[f['file']]!r}")
+        for f in frames:
             for target in destinations(f):
                 if not raw_path(args.raw_root, args.locale, key, target['raw']).is_file():
                     raise ValueError(f"missing raw {key}/{target['raw']}")
@@ -42,12 +43,13 @@ def main() -> None:
             frames = group['frames']
             for i, job in enumerate(jobs):
                 job.update(size=size, out=str(Path(tmp) / f'{i}.png'))
-            rendered = headline(jobs)
+            rendered = headline(jobs) if jobs else []
             if not all(r['fits'] for r in rendered):
                 raise ValueError(f'{key}: uniform header size does not fit')
             output = args.out / args.locale / key
             output.mkdir(parents=True, exist_ok=True)
-            for frame, job in zip(frames, jobs):
+            job_index = 0
+            for frame in frames:
                 with Image.open(source(data, frame['base'])) as im:
                     canvas = im.convert('RGB')
                 if canvas.size != tuple(group['canvas']):
@@ -56,12 +58,15 @@ def main() -> None:
                 if frame.get('plate'):
                     with Image.open(source(data, frame['plate'])) as im:
                         plate = im.convert('RGB')
-                erase_header(canvas, frame['header_box'], plate)
+                if frame.get('header', True):
+                    erase_header(canvas, frame['header_box'], plate)
                 for target in destinations(frame):
                     with Image.open(raw_path(args.raw_root, args.locale, key, target['raw'])) as raw:
                         paste_screen(canvas, raw, target['rect'], target.get('radius', 0))
-                with Image.open(job['out']) as overlay:
-                    canvas.paste(overlay, tuple(frame['header_box'][:2]), overlay)
+                if frame.get('header', True):
+                    with Image.open(jobs[job_index]['out']) as overlay:
+                        canvas.paste(overlay, tuple(frame['header_box'][:2]), overlay)
+                    job_index += 1
                 canvas.save(output / frame['file'], format='PNG', optimize=True)
             print(f'{args.locale}/{key}: {len(frames)} frames size={size:g}')
 

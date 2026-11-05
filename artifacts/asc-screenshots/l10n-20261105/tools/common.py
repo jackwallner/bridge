@@ -97,6 +97,7 @@ def headline(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 
 def header_job(frame: Dict[str, Any], text: str, locale: str) -> Dict[str, Any]:
-    return {"text": text, "locale": locale, "font": frame["font"], "color": frame["color"],
+    font = frame.get("locale_fonts", {}).get(locale, frame["font"])
+    return {"text": text, "locale": locale, "font": font, "color": frame["color"],
             "box": frame["header_box"][2:], "maxSize": frame["max_size"], "minSize": 1,
             "align": frame.get("align", "center")}

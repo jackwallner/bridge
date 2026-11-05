@@ -3,9 +3,23 @@ paths:
   - "scripts/capture-screenshots.sh"
   - "scripts/with-ipad-sim.sh"
   - "BridgeScreenshots/*"
+  - "artifacts/asc-screenshots/l10n-20261105/**"
+  - "fastlane/screenshots/**"
 ---
 
 # Bridge Trainer: screenshots
+
+## Localized store sets
+
+The kit is `artifacts/asc-screenshots/l10n-20261105`. Run
+`tools/capture.sh [store-locale ...]` from the kit to capture English and the
+selected locales on GitHub Macs, then `tools/compose.sh [store-locale ...]`.
+Review every sheet in `sheets/`, then run `tools/install.py` to copy the PNGs
+into `fastlane/screenshots/<locale>/`. The UI test uses translated catalog
+labels to navigate and answer the three phone drills. The iPad images are full-screen
+captures; the live iPad paywall frame is excluded because its localized prices
+have not been verified. Phone captures are fitted to the inner bezels because
+the live artwork stretches the screen images.
 
 Moved verbatim from AGENTS.md. Loads when a matching file is read; update it here.
 

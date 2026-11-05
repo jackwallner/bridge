@@ -1,0 +1,290 @@
+{
+  "english_locale": "en-US",
+  "sets": {
+    "phone": {
+      "canvas": [
+        1320,
+        2868
+      ],
+      "frames": [
+        {
+          "file": "01-choose-an-opening-call.png",
+          "base": "en-live/phone/01-choose-an-opening-call.png",
+          "raw": "opening_answered",
+          "screen": [
+            69,
+            592,
+            1181,
+            2215
+          ],
+          "radius": 112,
+          "header_box": [
+            28,
+            100,
+            1264,
+            370
+          ],
+          "font": "Didot",
+          "color": [
+            26,
+            24,
+            22
+          ],
+          "max_size": 180,
+          "min_size": 90,
+          "align": "center",
+          "locale_fonts": {
+            "el": "Georgia",
+            "ru": "Georgia",
+            "th": "Thonburi",
+            "zh-Hant": "STSongti-TC-Regular",
+            "ja": "HiraMinProN-W3"
+          }
+        },
+        {
+          "file": "02-choose-the-opening-lead.png",
+          "base": "en-live/phone/02-choose-the-opening-lead.png",
+          "raw": "lead_answered",
+          "screen": [
+            69,
+            592,
+            1181,
+            2215
+          ],
+          "radius": 112,
+          "header_box": [
+            28,
+            100,
+            1264,
+            370
+          ],
+          "font": "Didot",
+          "color": [
+            26,
+            24,
+            22
+          ],
+          "max_size": 180,
+          "min_size": 90,
+          "align": "center",
+          "locale_fonts": {
+            "el": "Georgia",
+            "ru": "Georgia",
+            "th": "Thonburi",
+            "zh-Hant": "STSongti-TC-Regular",
+            "ja": "HiraMinProN-W3"
+          }
+        },
+        {
+          "file": "03-plan-the-play.png",
+          "base": "en-live/phone/03-plan-the-play.png",
+          "raw": "play_answered",
+          "screen": [
+            69,
+            592,
+            1181,
+            2215
+          ],
+          "radius": 112,
+          "header_box": [
+            28,
+            100,
+            1264,
+            370
+          ],
+          "font": "Didot",
+          "color": [
+            26,
+            24,
+            22
+          ],
+          "max_size": 180,
+          "min_size": 90,
+          "align": "center",
+          "locale_fonts": {
+            "el": "Georgia",
+            "ru": "Georgia",
+            "th": "Thonburi",
+            "zh-Hant": "STSongti-TC-Regular",
+            "ja": "HiraMinProN-W3"
+          }
+        },
+        {
+          "file": "04-work-through-a-bridge-hand.png",
+          "base": "en-live/phone/04-work-through-a-bridge-hand.png",
+          "raw": "declarer_room",
+          "screen": [
+            110,
+            590,
+            1100,
+            2063
+          ],
+          "radius": 105,
+          "header_box": [
+            28,
+            100,
+            1264,
+            370
+          ],
+          "font": "Didot",
+          "color": [
+            26,
+            24,
+            22
+          ],
+          "max_size": 180,
+          "min_size": 90,
+          "align": "center",
+          "locale_fonts": {
+            "el": "Georgia",
+            "ru": "Georgia",
+            "th": "Thonburi",
+            "zh-Hant": "STSongti-TC-Regular",
+            "ja": "HiraMinProN-W3"
+          }
+        },
+        {
+          "file": "05-choose-a-bridge-room.png",
+          "base": "en-live/phone/05-choose-a-bridge-room.png",
+          "raw": "defense_room",
+          "screen": [
+            110,
+            590,
+            1100,
+            2063
+          ],
+          "radius": 105,
+          "header_box": [
+            28,
+            100,
+            1264,
+            370
+          ],
+          "font": "Didot",
+          "color": [
+            26,
+            24,
+            22
+          ],
+          "max_size": 180,
+          "min_size": 90,
+          "align": "center",
+          "locale_fonts": {
+            "el": "Georgia",
+            "ru": "Georgia",
+            "th": "Thonburi",
+            "zh-Hant": "STSongti-TC-Regular",
+            "ja": "HiraMinProN-W3"
+          }
+        },
+        {
+          "file": "06-choose-a-card-room-drill.png",
+          "base": "en-live/phone/06-choose-a-card-room-drill.png",
+          "raw": "card_room",
+          "screen": [
+            69,
+            592,
+            1181,
+            2215
+          ],
+          "radius": 112,
+          "header_box": [
+            28,
+            100,
+            1264,
+            370
+          ],
+          "font": "Didot",
+          "color": [
+            26,
+            24,
+            22
+          ],
+          "max_size": 180,
+          "min_size": 90,
+          "align": "center",
+          "locale_fonts": {
+            "el": "Georgia",
+            "ru": "Georgia",
+            "th": "Thonburi",
+            "zh-Hant": "STSongti-TC-Regular",
+            "ja": "HiraMinProN-W3"
+          }
+        }
+      ]
+    },
+    "ipad": {
+      "canvas": [
+        2064,
+        2752
+      ],
+      "frames": [
+        {
+          "file": "ipad_01_quick_session.png",
+          "base": "en-live/ipad/01_ipad_01_quick_session.png",
+          "raw": "quick",
+          "screen": [
+            0,
+            0,
+            2064,
+            2752
+          ],
+          "radius": 0,
+          "header": false
+        },
+        {
+          "file": "ipad_02_opening.png",
+          "base": "en-live/ipad/02_ipad_02_opening.png",
+          "raw": "opening",
+          "screen": [
+            0,
+            0,
+            2064,
+            2752
+          ],
+          "radius": 0,
+          "header": false
+        },
+        {
+          "file": "ipad_03_lead_or_hold.png",
+          "base": "en-live/ipad/03_ipad_03_lead_or_hold.png",
+          "raw": "lead",
+          "screen": [
+            0,
+            0,
+            2064,
+            2752
+          ],
+          "radius": 0,
+          "header": false
+        },
+        {
+          "file": "ipad_05_home.png",
+          "base": "en-live/ipad/05_ipad_05_home.png",
+          "raw": "home",
+          "screen": [
+            0,
+            0,
+            2064,
+            2752
+          ],
+          "radius": 0,
+          "header": false
+        },
+        {
+          "file": "ipad_06_card_room.png",
+          "base": "en-live/ipad/06_ipad_06_card_room.png",
+          "raw": "card_room",
+          "screen": [
+            0,
+            0,
+            2064,
+            2752
+          ],
+          "radius": 0,
+          "header": false
+        }
+      ]
+    }
+  }
+}

@@ -118,6 +118,125 @@ final class ScreenshotTests: XCTestCase {
         }
     }
 
+    private struct CaptureLocale: Decodable {
+        let store_locale: String
+        let lang: String
+        let apple_locale: String
+        let strings: [String: String]
+
+        func text(_ key: String) -> String { strings[key] ?? key }
+    }
+
+    func testCaptureLocalizedSet() throws {
+        let url = try XCTUnwrap(Bundle(for: Self.self).url(forResource: "LocalizedCaptureLocales", withExtension: "json"))
+        let locales = try JSONDecoder().decode([CaptureLocale].self, from: Data(contentsOf: url))
+        _ = app.windows.firstMatch.waitForExistence(timeout: 15)
+        let frame = app.windows.firstMatch.frame
+        let isPad = frame.width / max(frame.height, 1) > 0.6
+        for locale in locales {
+            app.terminate()
+            app.launchArguments = [
+                "-AppleLanguages", "(\(locale.lang))", "-AppleLocale", locale.apple_locale,
+                "-progress.hasOnboarded", "YES", "-bridge.hasReadPrimer", "YES",
+                "-bridge.skillLevel", "some", "-subscription.localProOverride", "YES",
+                "-bridge.suppressWhatsNew",
+            ]
+            app.launch()
+            settle(2)
+            func shot(_ name: String) { capture("\(locale.store_locale)__\(name)") }
+            if isPad {
+                shot("home")
+                if localizedOpen("Get Started", locale) { shot("quick") }
+                localizedHome(locale)
+            }
+            if localizedOpen("The Auction Room", locale), localizedOpen("Name Your Opening", locale) {
+                if isPad {
+                    shot("opening")
+                } else if tapLocalizedChoice("1NT", locale) {
+                    shot("opening_answered")
+                }
+            }
+            localizedHome(locale)
+            if localizedOpen("The Defense Room", locale) {
+                if !isPad { shot("defense_room") }
+                if localizedOpen("Lead or Hold?", locale) {
+                    if isPad { shot("lead") }
+                    else if tapLocalizedChoice("Lead 6♠", locale) { shot("lead_answered") }
+                }
+            }
+            localizedHome(locale)
+            if !isPad, localizedOpen("The Declarer Room", locale) {
+                shot("declarer_room")
+                if localizedOpen("Choose the Card", locale) {
+                    let width = app.windows.firstMatch.frame.width
+                    let cards = app.buttons.allElementsBoundByIndex.filter {
+                        $0.frame.width > 20 && $0.frame.width < width * 0.3 && $0.frame.midY > 150
+                    }.sorted { $0.frame.minX < $1.frame.minX }
+                    if cards.count >= 4 {
+                        cards[0].tap()
+                        settle()
+                        shot("play_answered")
+                    } else { problems.append("\(locale.store_locale): missing cards") }
+                }
+            }
+            localizedHome(locale)
+            if localizedOpen("The Card Room", locale) { shot("card_room") }
+        }
+        if !problems.isEmpty {
+            let note = XCTAttachment(string: problems.joined(separator: "\n"))
+            note.name = "localized_capture_problems"
+            note.lifetime = .keepAlways
+            add(note)
+        }
+    }
+
+    private func localizedOpen(_ key: String, _ locale: CaptureLocale) -> Bool {
+        let label = locale.text(key)
+        let predicate = NSPredicate(format: "label CONTAINS %@", label)
+        for attempt in 0..<3 {
+            for query in [app.buttons, app.staticTexts] {
+                let match = query.matching(predicate).firstMatch
+                guard match.exists else { continue }
+                let visible = app.windows.firstMatch.frame.contains(CGPoint(x: match.frame.midX, y: match.frame.midY))
+                if match.isHittable || (attempt > 0 && visible) {
+                    match.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
+                    settle()
+                    return true
+                }
+            }
+            if attempt < 2 { app.swipeUp(); settle(0.6) }
+        }
+        problems.append("\(locale.store_locale): could not open \(key)")
+        return false
+    }
+
+    private func localizedHome(_ locale: CaptureLocale) {
+        for _ in 0..<4 {
+            let rooms = app.staticTexts.matching(NSPredicate(format: "label == %@", locale.text("THE ROOMS"))).firstMatch
+            if rooms.exists {
+                app.swipeDown()
+                app.swipeDown()
+                settle(0.5)
+                return
+            }
+            let back = app.navigationBars.buttons.element(boundBy: 0)
+            guard back.exists, back.identifier != "gearshape" else { return }
+            back.tap()
+            settle(0.6)
+        }
+    }
+
+    private func tapLocalizedChoice(_ key: String, _ locale: CaptureLocale) -> Bool {
+        let choice = app.buttons[locale.text(key)].firstMatch
+        guard choice.waitForExistence(timeout: 5) else {
+            problems.append("\(locale.store_locale): missing choice \(key)")
+            return false
+        }
+        choice.tap()
+        settle()
+        return true
+    }
+
     // MARK: - Navigation
 
     /// The What's New sheet fires on the first launch after a version bump and

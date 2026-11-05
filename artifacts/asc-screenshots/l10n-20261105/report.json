@@ -1,0 +1,36 @@
+{
+  "locales": [
+    "tr",
+    "nl-NL",
+    "th",
+    "de-DE",
+    "el",
+    "fr-FR",
+    "da",
+    "ru",
+    "zh-Hant",
+    "ja",
+    "it"
+  ],
+  "frames": 11,
+  "gate": {
+    "tr": "PASS",
+    "nl-NL": "PASS",
+    "th": "PASS",
+    "de-DE": "PASS",
+    "el": "PASS",
+    "fr-FR": "PASS",
+    "da": "PASS",
+    "ru": "PASS",
+    "zh-Hant": "PASS",
+    "ja": "PASS",
+    "it": "PASS"
+  },
+  "gh_sim_jobs": 6,
+  "app_code_changed": [],
+  "defects": [],
+  "left_out": [
+    "ipad_04_declarer.png: live image contains a paywall with prices that were not verified for each locale"
+  ],
+  "adapter": "xcuitest"
+}

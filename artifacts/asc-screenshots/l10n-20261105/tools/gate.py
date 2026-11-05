@@ -109,7 +109,7 @@ def main() -> int:
         for frame in group['frames']:
             name = f"{key}/{frame['file']}"
             text = headers.get(args.locale, {}).get(frame['file'], '')
-            if not text.strip():
+            if frame.get('header', True) and not text.strip():
                 failures.append(f'HEADER {name}: empty')
             if len(text.split('\n')) > 2:
                 failures.append(f'HEADER {name}: more than 2 lines')
@@ -117,7 +117,7 @@ def main() -> int:
                 failures.append(f'HEADER {name}: period')
             if normalize(text) and normalize(text) == normalize(english.get(frame['file'], '')):
                 failures.append(f'HEADER {name}: unchanged English')
-            if frame['file'] not in english:
+            if frame.get('header', True) and frame['file'] not in english:
                 failures.append(f'HEADER {name}: missing English reference ({english_locale})')
             path = output / frame['file']
             if path.is_file():
