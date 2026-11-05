@@ -134,7 +134,11 @@ final class ScreenshotTests: XCTestCase {
         let frame = app.windows.firstMatch.frame
         let isPad = frame.width / max(frame.height, 1) > 0.6
         for locale in locales {
-            app.terminate()
+            // iOS can exit after a screenshot. Avoid terminating a stale handle.
+            if app.state != .notRunning {
+                app.terminate()
+                _ = app.wait(for: .notRunning, timeout: 10)
+            }
             app.launchArguments = [
                 "-AppleLanguages", "(\(locale.lang))", "-AppleLocale", locale.apple_locale,
                 "-progress.hasOnboarded", "YES", "-bridge.hasReadPrimer", "YES",
