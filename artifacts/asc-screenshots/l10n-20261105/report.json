@@ -26,11 +26,35 @@
     "ja": "PASS",
     "it": "PASS"
   },
-  "gh_sim_jobs": 6,
-  "app_code_changed": [],
-  "defects": [],
-  "left_out": [
-    "ipad_04_declarer.png: live image contains a paywall with prices that were not verified for each locale"
+  "gh_sim_jobs": 10,
+  "app_code_changed": [
+    "Bridge/Localizable.xcstrings"
   ],
-  "adapter": "xcuitest"
+  "defects": [],
+  "left_out": [],
+  "adapter": "xcuitest",
+  "capture_code_changed": [
+    "BridgeScreenshots/ScreenshotTests.swift",
+    "artifacts/asc-screenshots/l10n-20261105/tools/capture.sh"
+  ],
+  "unit_tests": "PASS, 168 passed, 0 failed, including LocalizationTests",
+  "capture_test": "PASS, Japanese and en-US on iPhone",
+  "fixed_ui_defects": [
+    {
+      "issue": "iPad status bar date and AM text",
+      "frames": 55,
+      "fix": "The iPad compositor replaces the date and AM area with row samples from the same status bar background, preserving 9:41."
+    },
+    {
+      "locale": "ja",
+      "frame": "03-plan-the-play.png",
+      "fix": "Shortened the catalog question; the final two-line prompt has no orphan character."
+    }
+  ],
+  "excluded": [
+    {
+      "frame": "ipad_04_declarer.png",
+      "reason": "The live image contains paywall prices that were not verified for every locale."
+    }
+  ]
 }

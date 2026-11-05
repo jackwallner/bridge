@@ -85,6 +85,20 @@ def erase_header(base: Image.Image, box: List[int], plate: Image.Image = None) -
     base.paste(Image.fromarray(patch, "RGB"), (x, y))
 
 
+def erase_status_bar_text(image: Image.Image, cleanup: Dict[str, List[int]]) -> None:
+    x, y, w, h = rect(cleanup["erase_box"])
+    sx, sy, sw, sh = rect(cleanup["background_sample"])
+    if x + w > image.width or y + h > image.height:
+        raise ValueError("status_bar_cleanup erase_box is outside the raw capture")
+    if sx + sw > image.width or sy + sh > image.height or sh != h:
+        raise ValueError("status_bar_cleanup background_sample is invalid")
+    pixels = np.asarray(image.convert("RGB"))
+    samples = pixels[sy:sy + sh, sx:sx + sw].astype(np.float32)
+    colors = np.median(samples, axis=1).clip(0, 255).astype(np.uint8)
+    patch = np.broadcast_to(colors[:, None, :], (h, w, 3)).copy()
+    image.paste(Image.fromarray(patch, "RGB"), (x, y))
+
+
 def headline(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     binary = HERE / "headline"
     if not binary.exists():

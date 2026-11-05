@@ -9,7 +9,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from common import config, destinations, erase_header, header_job, headline, paste_screen, raw_path, read_json, source
+from common import config, destinations, erase_header, erase_status_bar_text, header_job, headline, paste_screen, raw_path, read_json, source
 
 
 def main() -> None:
@@ -62,7 +62,10 @@ def main() -> None:
                     erase_header(canvas, frame['header_box'], plate)
                 for target in destinations(frame):
                     with Image.open(raw_path(args.raw_root, args.locale, key, target['raw'])) as raw:
-                        paste_screen(canvas, raw, target['rect'], target.get('radius', 0))
+                        capture = raw.convert('RGB')
+                        if cleanup := group.get('status_bar_cleanup'):
+                            erase_status_bar_text(capture, cleanup)
+                        paste_screen(canvas, capture, target['rect'], target.get('radius', 0))
                 if frame.get('header', True):
                     with Image.open(jobs[job_index]['out']) as overlay:
                         canvas.paste(overlay, tuple(frame['header_box'][:2]), overlay)

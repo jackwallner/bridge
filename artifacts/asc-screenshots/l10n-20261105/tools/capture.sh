@@ -1,8 +1,16 @@
 #!/bin/bash
 set -euo pipefail
+# Usage: capture.sh [--phone|--ipad] [store-locale ...]
 kit=$(cd "$(dirname "$0")/.." && pwd)
 repo=$(git -C "$kit" rev-parse --show-toplevel)
 locales="$repo/BridgeScreenshots/LocalizedCaptureLocales.json"
+device_filter=all
+case "${1:-}" in
+  --phone|--ipad)
+    device_filter=${1#--}
+    shift
+    ;;
+esac
 backup=$(mktemp)
 idfile=$(mktemp)
 cp "$locales" "$backup"
@@ -23,6 +31,9 @@ failed=0
 for spec in 'phone|iPhone 17 Pro Max' 'ipad|iPad Pro 13-inch (M5)'; do
   set_name=${spec%%|*}
   device=${spec#*|}
+  if [ "$device_filter" != all ] && [ "$device_filter" != "$set_name" ]; then
+    continue
+  fi
   : > "$idfile"
   gh-sim -C "$repo" test --scheme Screenshots --device "$device" \
     --only BridgeScreenshots/ScreenshotTests/testCaptureLocalizedSet --id-file "$idfile" || failed=1

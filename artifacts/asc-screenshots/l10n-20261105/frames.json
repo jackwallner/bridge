@@ -218,6 +218,20 @@
         2064,
         2752
       ],
+      "status_bar_cleanup": {
+        "erase_box": [
+          108,
+          0,
+          214,
+          50
+        ],
+        "background_sample": [
+          8,
+          0,
+          32,
+          50
+        ]
+      },
       "frames": [
         {
           "file": "ipad_01_quick_session.png",
