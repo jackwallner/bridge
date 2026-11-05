@@ -1,0 +1,474 @@
+{
+  "verdict": "FIX",
+  "header_fixes": [
+    {
+      "locale": "tr",
+      "file": "01-choose-an-opening-call.png",
+      "before": "Açış deklarasyonunu\nseçin",
+      "after": "Açışınızı\nbelirleyin",
+      "why": "Use the catalog opening term açış naturally and replace the very uneven 20-character/5-character line split"
+    },
+    {
+      "locale": "tr",
+      "file": "03-plan-the-play.png",
+      "before": "Tek bir kararı\nhızla çalışın",
+      "after": "Tek bir karar için\nkısa bir alıştırma",
+      "why": "Kararı çalışmak is an awkward literal translation; describe a short exercise for one decision"
+    },
+    {
+      "locale": "nl-NL",
+      "file": "02-choose-the-opening-lead.png",
+      "before": "Kies de\nopeningsuitkomst",
+      "after": "Kies de eerste\nuitkomst",
+      "why": "Use the catalog term uitkomst and balance the lines without isolating the long compound openingsuitkomst"
+    },
+    {
+      "locale": "nl-NL",
+      "file": "03-plan-the-play.png",
+      "before": "Oefen snel\néén beslissing",
+      "after": "Oefen een spelkeuze\nin korte tijd",
+      "why": "Oefen een beslissing is unnatural; a game choice is the concrete object of this short drill"
+    },
+    {
+      "locale": "de-DE",
+      "file": "03-plan-the-play.png",
+      "before": "Übe schnell eine\nEntscheidung",
+      "after": "Eine Spielentscheidung\nkurz durchspielen",
+      "why": "Übe schnell eine Entscheidung is not idiomatic German; describe briefly working through a game decision"
+    },
+    {
+      "locale": "de-DE",
+      "file": "06-choose-a-card-room-drill.png",
+      "before": "Übungen im\nKartenraum",
+      "after": "Wähle eine Übung\nim Kartenraum",
+      "why": "Restore the invitation to choose a drill while preserving the catalog room name Kartenraum"
+    },
+    {
+      "locale": "el",
+      "file": "06-choose-a-card-room-drill.png",
+      "before": "Ασκήσεις στην\nαίθουσα φύλλων",
+      "after": "Επίλεξε άσκηση\nστην αίθουσα των φύλλων",
+      "why": "Restore choosing a drill and the article in the catalog room name Η αίθουσα των φύλλων"
+    },
+    {
+      "locale": "fr-FR",
+      "file": "03-plan-the-play.png",
+      "before": "Entraînez-vous\nsur une décision",
+      "after": "Une décision à travailler\nen quelques instants",
+      "why": "Restore the brief-practice meaning and replace the stiff entraînez-vous sur une décision construction"
+    },
+    {
+      "locale": "fr-FR",
+      "file": "06-choose-a-card-room-drill.png",
+      "before": "Exercez le jeu\nde la carte",
+      "after": "Choisissez un exercice\nde jeu de la carte",
+      "why": "Exercez le jeu is not idiomatic French; restore selecting an exercise and retain the catalog term jeu de la carte"
+    },
+    {
+      "locale": "da",
+      "file": "03-plan-the-play.png",
+      "before": "Øv én beslutning\npå kort tid",
+      "after": "Et valg i spillet\ni en kort øvelse",
+      "why": "Øv én beslutning is a literal construction; describe one game choice in a short exercise with balanced lines"
+    },
+    {
+      "locale": "ru",
+      "file": "03-plan-the-play.png",
+      "before": "Тренируйте решение\nза пару минут",
+      "after": "Одно игровое решение\nза короткую тренировку",
+      "why": "Тренируйте решение is unnatural Russian; name the game decision and avoid introducing a specific two-minute duration"
+    },
+    {
+      "locale": "ru",
+      "file": "06-choose-a-card-room-drill.png",
+      "before": "Практика в\nкарточном разделе",
+      "after": "Выберите упражнение\nв карточном разделе",
+      "why": "Restore selecting a drill and retain the catalog room name Карточный раздел"
+    },
+    {
+      "locale": "zh-Hant",
+      "file": "06-choose-a-card-room-drill.png",
+      "before": "選擇牌技室\n練習",
+      "after": "在牌技室\n選擇練習",
+      "why": "Put the catalog location 牌技室 before the verb phrase; the original compresses room and exercise into an awkward noun stack"
+    },
+    {
+      "locale": "ja",
+      "file": "06-choose-a-card-room-drill.png",
+      "before": "カードの部屋で\n練習を選ぼう",
+      "after": "カードの部屋で\n練習問題を選ぼう",
+      "why": "Use 練習問題 for the selectable drill rather than asking users to choose abstract practice; retain カードの部屋"
+    },
+    {
+      "locale": "it",
+      "file": "02-choose-the-opening-lead.png",
+      "before": "Scegli\nl’attacco iniziale",
+      "after": "Scegli l’attacco\niniziale",
+      "why": "Keep the bridge term attacco iniziale together in meaning while balancing the original short/long line split"
+    },
+    {
+      "locale": "it",
+      "file": "03-plan-the-play.png",
+      "before": "Allena una\ndecisione",
+      "after": "Una scelta di gioco\nin un esercizio rapido",
+      "why": "Allena una decisione is not idiomatic Italian and omits the quick-practice meaning; describe a game choice in a short drill"
+    },
+    {
+      "locale": "it",
+      "file": "06-choose-a-card-room-drill.png",
+      "before": "Esercizi nella\nsala delle carte",
+      "after": "Scegli un esercizio\nnella sala delle carte",
+      "why": "Restore the invitation to choose a drill while preserving the catalog room name sala delle carte"
+    }
+  ],
+  "ui_defects": [
+    {
+      "locale": "tr",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "tr",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "tr",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "tr",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "tr",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "nl-NL",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "nl-NL",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "nl-NL",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "nl-NL",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "nl-NL",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "th",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "th",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "th",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "th",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "th",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "de-DE",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "de-DE",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "de-DE",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "de-DE",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "de-DE",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "el",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "el",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "el",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "el",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "el",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "fr-FR",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "fr-FR",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "fr-FR",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "fr-FR",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "fr-FR",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "da",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "da",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "da",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "da",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "da",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ru",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ru",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ru",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ru",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ru",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "zh-Hant",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "zh-Hant",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "zh-Hant",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "zh-Hant",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "zh-Hant",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ja",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ja",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ja",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ja",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ja",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "it",
+      "file": "ipad_01_quick_session.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "it",
+      "file": "ipad_02_opening.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "it",
+      "file": "ipad_03_lead_or_hold.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "it",
+      "file": "ipad_05_home.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "it",
+      "file": "ipad_06_card_room.png",
+      "what": "The iPad status bar shows the English date \"Thu Nov 5\" and the US-style time \"9:41 AM\" instead of the target locale format. Confirmed on the Turkish Home full frame; the date/time pixel region is identical in all 55 localized iPad frames. Correct the status-bar locale in a future capture.",
+      "severity": "minor"
+    },
+    {
+      "locale": "ja",
+      "file": "03-plan-the-play.png",
+      "what": "The question splits カード across lines and leaves only ド？ on its third line. Confirmed on the full frame. Reflow or shorten the localized question in a future app/capture pass.",
+      "severity": "minor"
+    }
+  ],
+  "unsure": [
+    {
+      "locale": "*",
+      "file": "copy/headers.json",
+      "what": "All 17 header corrections are saved in the source JSON only. tools/reskin.py requires every raw capture and has no existing-screen reuse option, so the installed PNGs still contain the before text. The orchestrator must recompose all six phone frames for each of the 10 affected locales with the uniform set font size, then check the new fit, line balance and seams. The Thai headers need no changes. No app code or screenshot pixels were changed."
+    },
+    {
+      "locale": "*",
+      "file": "frames.json",
+      "what": "Raw-capture checks were intentionally skipped because raws are absent. Reviewed all 22 English/localized comparison sheets, covering all 121 configured installed frames. sheets were made with tools/sheet.py and frames.json, using Pillow only for sheet labels because Swift/CoreText is unavailable. English reference art was fetched with tools/fetch_live.py. The excluded iPad paywall was not reviewed."
+    }
+  ]
+}

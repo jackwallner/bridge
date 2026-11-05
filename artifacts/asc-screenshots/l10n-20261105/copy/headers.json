@@ -8,17 +8,17 @@
     "06-choose-a-card-room-drill.png": "Choose a card\nroom drill"
   },
   "tr": {
-    "01-choose-an-opening-call.png": "Açış deklarasyonunu\nseçin",
+    "01-choose-an-opening-call.png": "Açışınızı\nbelirleyin",
     "02-choose-the-opening-lead.png": "İlk atağı\nseçin",
-    "03-plan-the-play.png": "Tek bir kararı\nhızla çalışın",
+    "03-plan-the-play.png": "Tek bir karar için\nkısa bir alıştırma",
     "04-work-through-a-bridge-hand.png": "Bir briç elini\nadım adım oynayın",
     "05-choose-a-bridge-room.png": "Bir briç odası\nseçin",
     "06-choose-a-card-room-drill.png": "Kart odasında\nbir alıştırma seçin"
   },
   "nl-NL": {
     "01-choose-an-opening-call.png": "Kies een\nopeningsbod",
-    "02-choose-the-opening-lead.png": "Kies de\nopeningsuitkomst",
-    "03-plan-the-play.png": "Oefen snel\néén beslissing",
+    "02-choose-the-opening-lead.png": "Kies de eerste\nuitkomst",
+    "03-plan-the-play.png": "Oefen een spelkeuze\nin korte tijd",
     "04-work-through-a-bridge-hand.png": "Speel een\nbridgespel uit",
     "05-choose-a-bridge-room.png": "Kies een\nbridgekamer",
     "06-choose-a-card-room-drill.png": "Kies een oefening\nin de kaartenkamer"
@@ -34,10 +34,10 @@
   "de-DE": {
     "01-choose-an-opening-call.png": "Wähle ein\nEröffnungsgebot",
     "02-choose-the-opening-lead.png": "Wähle das\nAusspiel",
-    "03-plan-the-play.png": "Übe schnell eine\nEntscheidung",
+    "03-plan-the-play.png": "Eine Spielentscheidung\nkurz durchspielen",
     "04-work-through-a-bridge-hand.png": "Spiele eine\nBridgehand durch",
     "05-choose-a-bridge-room.png": "Wähle einen\nBridge-Raum",
-    "06-choose-a-card-room-drill.png": "Übungen im\nKartenraum"
+    "06-choose-a-card-room-drill.png": "Wähle eine Übung\nim Kartenraum"
   },
   "el": {
     "01-choose-an-opening-call.png": "Επίλεξε δήλωση\nανοίγματος",
@@ -45,20 +45,20 @@
     "03-plan-the-play.png": "Εξασκήσου γρήγορα\nσε μία απόφαση",
     "04-work-through-a-bridge-hand.png": "Παίξε μια διανομή\nβήμα προς βήμα",
     "05-choose-a-bridge-room.png": "Επίλεξε αίθουσα\nμπριτζ",
-    "06-choose-a-card-room-drill.png": "Ασκήσεις στην\nαίθουσα φύλλων"
+    "06-choose-a-card-room-drill.png": "Επίλεξε άσκηση\nστην αίθουσα των φύλλων"
   },
   "fr-FR": {
     "01-choose-an-opening-call.png": "Choisissez une\nouverture",
     "02-choose-the-opening-lead.png": "Choisissez\nl’entame",
-    "03-plan-the-play.png": "Entraînez-vous\nsur une décision",
+    "03-plan-the-play.png": "Une décision à travailler\nen quelques instants",
     "04-work-through-a-bridge-hand.png": "Jouez une donne\nde bout en bout",
     "05-choose-a-bridge-room.png": "Choisissez une\nsalle de bridge",
-    "06-choose-a-card-room-drill.png": "Exercez le jeu\nde la carte"
+    "06-choose-a-card-room-drill.png": "Choisissez un exercice\nde jeu de la carte"
   },
   "da": {
     "01-choose-an-opening-call.png": "Vælg en\nåbningsmelding",
     "02-choose-the-opening-lead.png": "Vælg det\nførste udspil",
-    "03-plan-the-play.png": "Øv én beslutning\npå kort tid",
+    "03-plan-the-play.png": "Et valg i spillet\ni en kort øvelse",
     "04-work-through-a-bridge-hand.png": "Spil en bridgehånd\ntrin for trin",
     "05-choose-a-bridge-room.png": "Vælg et\nbridgerum",
     "06-choose-a-card-room-drill.png": "Vælg en øvelse\ni kortrummet"
@@ -66,10 +66,10 @@
   "ru": {
     "01-choose-an-opening-call.png": "Выберите заявку\nна открытие",
     "02-choose-the-opening-lead.png": "Выберите карту\nпервого хода",
-    "03-plan-the-play.png": "Тренируйте решение\nза пару минут",
+    "03-plan-the-play.png": "Одно игровое решение\nза короткую тренировку",
     "04-work-through-a-bridge-hand.png": "Разыграйте сдачу\nшаг за шагом",
     "05-choose-a-bridge-room.png": "Выберите раздел\nдля игры в бридж",
-    "06-choose-a-card-room-drill.png": "Практика в\nкарточном разделе"
+    "06-choose-a-card-room-drill.png": "Выберите упражнение\nв карточном разделе"
   },
   "zh-Hant": {
     "01-choose-an-opening-call.png": "選擇\n開叫",
@@ -77,7 +77,7 @@
     "03-plan-the-play.png": "快速練習\n一個決策",
     "04-work-through-a-bridge-hand.png": "一步步練習\n打完一手牌",
     "05-choose-a-bridge-room.png": "選擇橋牌\n練習室",
-    "06-choose-a-card-room-drill.png": "選擇牌技室\n練習"
+    "06-choose-a-card-room-drill.png": "在牌技室\n選擇練習"
   },
   "ja": {
     "01-choose-an-opening-call.png": "オープニングの\nビッドを選ぼう",
@@ -85,14 +85,14 @@
     "03-plan-the-play.png": "一つの判断を\n手早く練習",
     "04-work-through-a-bridge-hand.png": "ブリッジのハンドを\n順を追って練習",
     "05-choose-a-bridge-room.png": "ブリッジの\nルームを選ぼう",
-    "06-choose-a-card-room-drill.png": "カードの部屋で\n練習を選ぼう"
+    "06-choose-a-card-room-drill.png": "カードの部屋で\n練習問題を選ぼう"
   },
   "it": {
     "01-choose-an-opening-call.png": "Scegli\nl’apertura",
-    "02-choose-the-opening-lead.png": "Scegli\nl’attacco iniziale",
-    "03-plan-the-play.png": "Allena una\ndecisione",
+    "02-choose-the-opening-lead.png": "Scegli l’attacco\niniziale",
+    "03-plan-the-play.png": "Una scelta di gioco\nin un esercizio rapido",
     "04-work-through-a-bridge-hand.png": "Gioca una mano\ndi bridge",
     "05-choose-a-bridge-room.png": "Scegli una\nsala di bridge",
-    "06-choose-a-card-room-drill.png": "Esercizi nella\nsala delle carte"
+    "06-choose-a-card-room-drill.png": "Scegli un esercizio\nnella sala delle carte"
   }
 }
