@@ -8,6 +8,7 @@ Developer notes and historical audits for this repository. The published site re
 - [audit823.md](audits/audit823.md): Bridge Trainer audit
 - [ios27Bridge.md](audits/ios27Bridge.md): iOS 27 compatibility audit: Bridge
 - [mahj-parity-audit-1020.md](audits/mahj-parity-audit-1020.md): Bridge vs Mahj feature audit and mastery UI
+- [state-machines-2026-11-06.md](audits/state-machines-2026-11-06.md): State machine audit: reminders, flashcard undo, Game Night lapse, weekly gain (repro suite alongside)
 
 ## ASO
 
