@@ -2,6 +2,15 @@ import SwiftUI
 import UIKit
 
 struct SettingsView: View {
+    /// The language the app is running in, named in that language, as iOS
+    /// Settings names it ("Deutsch", "Español").
+    private static var currentLanguageName: String {
+        let code = Bundle.main.preferredLocalizations.first ?? "en"
+        let locale = Locale(identifier: code)
+        guard let name = locale.localizedString(forLanguageCode: code) else { return code }
+        return name.prefix(1).uppercased(with: locale) + name.dropFirst()
+    }
+
     @EnvironmentObject private var subscriptions: SubscriptionService
     @EnvironmentObject private var settings: AppSettings
     @EnvironmentObject private var progress: ProgressStore
@@ -91,6 +100,27 @@ struct SettingsView: View {
                     Text(appearance.displayName).tag(appearance)
                 }
             }
+            // iOS keeps the per-app language on the app's own Settings page, where
+            // few people think to look. This row only points there.
+            Button {
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(url)
+                }
+            } label: {
+                LabeledContent {
+                    HStack(spacing: 6) {
+                        Text(Self.currentLanguageName).foregroundStyle(Theme.inkSecondary)
+                        // Leaves the app, so the outward arrow rather than a chevron.
+                        Image(systemName: "arrow.up.forward")
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(Theme.inkTertiary)
+                            .accessibilityHidden(true)
+                    }
+                } label: {
+                    Text("Language").foregroundStyle(Theme.ink)
+                }
+            }
+            .accessibilityHint("Opens iOS Settings")
         }
     }
 

@@ -78,3 +78,12 @@ plus `-bridge.onboardingPage 4 -bridge.skillLevel new` for the trial page or
 for the paywall (keep the bare `-bridge.suppressWhatsNew` last so it is not
 read as another key's value). RevenueCat is off on simulators, so the paywall shows the
 "prices aren't available" state there.
+
+## Language row
+
+Settings has a Language row that names the running localization in itself
+(`Bundle.main.preferredLocalizations`) and opens `openSettingsURLString`, Apple's
+route for a per-app language change. iOS hides the app's Language option on a
+device with one preferred language unless `UIPrefersShowingLanguageSettings` is
+YES in `Info.plist`, so keep that key. The simulator's Settings opens at its root
+for this link; check the landing on a real iPhone.
