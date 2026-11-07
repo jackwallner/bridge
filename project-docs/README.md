@@ -11,7 +11,7 @@ Developer notes and historical audits for this repository. The published site re
 - [state-machines-2026-11-06.md](audits/state-machines-2026-11-06.md): State machine audit: reminders, flashcard undo, Game Night lapse, weekly gain (repro suite alongside)
 - [state-machines-2026-11-06-review.md](audits/state-machines-2026-11-06-review.md): Independent review of that audit: 1 confirmed, 3 minor, Game Night lapse ranked first
 - [state-machines-2026-11-06-fixes.md](audits/state-machines-2026-11-06-fixes.md): Fixes for the reviewed claims: 5 fixed, 0 skipped, 4 held for Jack (P1, P2, P4, and P6 after its UI test passed on 4b81122)
-- [state-machines-2026-11-06-verify.md](audits/state-machines-2026-11-06-verify.md): Regression check of the reworked fixes: all 5 work, failed only because P6, an unverified item, was skipped instead of held for Jack
+- [state-machines-2026-11-06-verify.md](audits/state-machines-2026-11-06-verify.md): Third-pass regression check: PASS, all 5 fixes work, 184 tests pass, SM-1 and SM-2 tests left as device checks
 
 ## ASO
 
