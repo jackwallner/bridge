@@ -107,11 +107,13 @@ final class SubscriptionService: NSObject, ObservableObject {
     /// that for members too, so nothing may treat "not a member" as a lapse,
     /// or sell a member a trial, until this is true.
     @Published private(set) var membershipResolved = false
-    /// True once this launch has heard RevenueCat itself (not only the
-    /// on-device cache) and any reinstall sync is done, so "not a member" is
-    /// the real answer. A cached record more than three days old is judged
-    /// against today and can read as lapsed from the first frame, with no
-    /// `isPro` change for anything to observe.
+    /// True once this launch holds a record RevenueCat answered within the
+    /// last few minutes and no reinstall sync is still owed, so "not a
+    /// member" is the real answer. A cached record more than three days old
+    /// is judged against today and can read as lapsed from the first frame,
+    /// for a lapsed member and for a renewed one alike. `.cachedOrFetched`
+    /// hands that stale record back even online, so it never confirms.
+    /// Offline with a stale cache this stays false.
     @Published private(set) var membershipConfirmed = false
     /// The active entitlement is the free week (RevenueCat `periodType`), not a
     /// paid or lifetime membership.
@@ -140,6 +142,9 @@ final class SubscriptionService: NSObject, ObservableObject {
     private let churnAskSpentKey = "membership.churnAskSpent"
     private let pendingChurnKey = "membership.pendingChurnMoment"
     private let reinstallSyncKey = "membership.reinstallSyncDone"
+    /// StoreKit holds a current purchase that a failed sync never reported to
+    /// RevenueCat, so its "not a member" is not an answer yet.
+    private var reinstallSyncOwed = false
     /// How old a customer record may be and still serve as the first baseline.
     static let freshBaselineAge: TimeInterval = 300
     @Published private var membershipRecovery: Task<Void, Never>?
@@ -196,8 +201,18 @@ final class SubscriptionService: NSObject, ObservableObject {
             async let recovered: Void = recoverReinstalledMembershipIfNeeded()
             await loadOfferings()
             await recovered
-            if membershipResolved, !entitlementCheckFailed { membershipConfirmed = true }
+            await confirmMembership()
         }
+    }
+
+    /// The launch read above may be the stale cache, so confirm on a record
+    /// that is fresh (RevenueCat refetches a stale one). A failed fetch or an
+    /// owed reinstall sync leaves the answer unconfirmed.
+    private func confirmMembership() async {
+        guard membershipResolved, !reinstallSyncOwed,
+              let info = try? await client.customerInfo(fetchPolicy: .notStaleCachedOrFetched) else { return }
+        apply(info)
+        membershipConfirmed = true
     }
 
     /// A reinstall is a new anonymous RevenueCat user, and iOS does not bring
@@ -235,7 +250,11 @@ final class SubscriptionService: NSObject, ObservableObject {
 
     private func recoverReinstalledMembership() async {
         guard await ownsCurrentPurchase() else { return }
-        guard let info = try? await client.syncPurchases() else { return }
+        guard let info = try? await client.syncPurchases() else {
+            reinstallSyncOwed = true
+            return
+        }
+        reinstallSyncOwed = false
         defaults.set(true, forKey: reinstallSyncKey)
         apply(info)
     }

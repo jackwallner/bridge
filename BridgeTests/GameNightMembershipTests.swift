@@ -94,6 +94,22 @@ final class GameNightMembershipTests: XCTestCase {
         XCTAssertTrue(settings.gameNightReminderEnabled, "a reinstalled member lost the reminder before the sync answered")
     }
 
+    func testReinstalledMemberKeepsTheReminderWhenTheSyncFails() async throws {
+        let settings = settingsWithGameNightOn()
+        let client = GameNightPurchases()
+        client.info = gameNightInfo(active: false, date: Date())
+        client.syncError = URLError(.timedOut)
+        let service = SubscriptionService(client: client, defaults: defaults(), ownsCurrentPurchase: { true })
+
+        let hook = launch(service, settings: settings)
+        defer { hook.cancel() }
+        try await Task.sleep(nanoseconds: 1_000_000_000)
+
+        XCTAssertTrue(service.membershipResolved, "PRECONDITION: RevenueCat answered")
+        XCTAssertFalse(service.membershipConfirmed, "a failed reinstall sync counted as confirmed")
+        XCTAssertTrue(settings.gameNightReminderEnabled, "a member lost the reminder to a failed sync")
+    }
+
     func testOfflineLaunchOnAStaleCacheLeavesTheReminderAlone() async throws {
         let settings = settingsWithGameNightOn()
         let client = GameNightPurchases()
@@ -111,22 +127,50 @@ final class GameNightMembershipTests: XCTestCase {
     }
 }
 
+/// Honours the fetch policy as RevenueCat 5.80.3 does
+/// (`CustomerInfoManager.swift:157-176`): `.cachedOrFetched` returns any
+/// cached record, stale or not, without waiting for the network, and
+/// `.notStaleCachedOrFetched` refetches a stale one. A network answer or a
+/// sync replaces the cache.
 @MainActor
 private final class GameNightPurchases: RevenueCatClient {
     var cachedCustomerInfo: CustomerInfo?
     var info = gameNightInfo(active: false, date: .now)
     var synced: CustomerInfo?
     var fetchError: Error?
+    var syncError: Error?
 
     func customerInfo(fetchPolicy: CacheFetchPolicy) async throws -> CustomerInfo {
+        let cacheIsFresh = cachedCustomerInfo.map {
+            Date().timeIntervalSince($0.requestDate) < SubscriptionService.freshBaselineAge
+        } ?? false
+        switch fetchPolicy {
+        case .fromCacheOnly:
+            if let cachedCustomerInfo { return cachedCustomerInfo }
+            throw URLError(.resourceUnavailable)
+        case .cachedOrFetched:
+            if let cachedCustomerInfo { return cachedCustomerInfo }
+        case .notStaleCachedOrFetched:
+            if cacheIsFresh, let cachedCustomerInfo { return cachedCustomerInfo }
+        case .fetchCurrent:
+            break
+        @unknown default:
+            break
+        }
         if let fetchError { throw fetchError }
+        cachedCustomerInfo = info
         return info
     }
     func paywallOffering(forceRefresh: Bool) async throws -> Offering? { nil }
     func purchase(package: Package) async throws -> PurchaseResultData { (nil, info, false) }
     func restorePurchases() async throws -> CustomerInfo { info }
     func introEligibility(productIdentifiers: [String]) async -> [String: IntroEligibilityStatus] { [:] }
-    func syncPurchases() async throws -> CustomerInfo { synced ?? info }
+    func syncPurchases() async throws -> CustomerInfo {
+        if let syncError { throw syncError }
+        let result = synced ?? info
+        cachedCustomerInfo = result
+        return result
+    }
     func setSubscriberAttributes(_ attributes: [String: String]) {}
     func recordImpression(_ params: CustomPaywallImpressionParams) {}
 }
