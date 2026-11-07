@@ -10,6 +10,7 @@ Developer notes and historical audits for this repository. The published site re
 - [mahj-parity-audit-1020.md](audits/mahj-parity-audit-1020.md): Bridge vs Mahj feature audit and mastery UI
 - [state-machines-2026-11-06.md](audits/state-machines-2026-11-06.md): State machine audit: reminders, flashcard undo, Game Night lapse, weekly gain (repro suite alongside)
 - [state-machines-2026-11-06-review.md](audits/state-machines-2026-11-06-review.md): Independent review of that audit: 1 confirmed, 3 minor, Game Night lapse ranked first
+- [state-machines-2026-11-06-fixes.md](audits/state-machines-2026-11-06-fixes.md): Fixes for the reviewed claims: 5 fixed, 0 held, 0 skipped, 3 product calls held for Jack
 
 ## ASO
 
