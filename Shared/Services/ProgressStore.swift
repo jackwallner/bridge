@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 @MainActor
 final class ProgressStore: ObservableObject {
@@ -32,6 +33,15 @@ final class ProgressStore: ObservableObject {
         completions = (defaults.dictionary(forKey: Keys.completions) as? [String: Int]) ?? [:]
         seenItems = Set(defaults.stringArray(forKey: Keys.seenItems) ?? [])
         missedItems = Set(defaults.stringArray(forKey: Keys.missedItems) ?? [])
+        // "Done today" and the streak are read against the clock, and nothing
+        // published changes at midnight, so an app left open overnight kept
+        // telling the player a fresh mix lands tomorrow. iOS queues this for
+        // a suspended app and delivers it on return.
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.significantTimeChangeNotification, object: nil, queue: .main
+        ) { [weak self] _ in
+            MainActor.assumeIsolated { self?.objectWillChange.send() }
+        }
     }
 
     var hasOnboarded: Bool {
