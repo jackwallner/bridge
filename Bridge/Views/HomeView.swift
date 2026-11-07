@@ -143,8 +143,8 @@ struct HomeView: View {
                     if !showPaywall, pendingAfterUpgrade.destination == nil {
                         consumePendingDestination()
                     }
-                } else if settings.gameNightReminderEnabled {
-                    settings.gameNightReminderEnabled = false
+                } else {
+                    settings.enforceGameNightMembership(isMember: false)
                 }
             }
         }

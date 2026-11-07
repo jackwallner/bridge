@@ -107,6 +107,12 @@ final class SubscriptionService: NSObject, ObservableObject {
     /// that for members too, so nothing may treat "not a member" as a lapse,
     /// or sell a member a trial, until this is true.
     @Published private(set) var membershipResolved = false
+    /// True once this launch has heard RevenueCat itself (not only the
+    /// on-device cache) and any reinstall sync is done, so "not a member" is
+    /// the real answer. A cached record more than three days old is judged
+    /// against today and can read as lapsed from the first frame, with no
+    /// `isPro` change for anything to observe.
+    @Published private(set) var membershipConfirmed = false
     /// The active entitlement is the free week (RevenueCat `periodType`), not a
     /// paid or lifetime membership.
     @Published private(set) var isTrialing = false
@@ -177,6 +183,7 @@ final class SubscriptionService: NSObject, ObservableObject {
             // No store at all (simulator, screenshots): nothing will ever
             // load, so what we have is the answer.
             membershipResolved = true
+            membershipConfirmed = true
             return
         }
         // The last record RevenueCat saw, from the first frame: a member is a
@@ -189,6 +196,7 @@ final class SubscriptionService: NSObject, ObservableObject {
             async let recovered: Void = recoverReinstalledMembershipIfNeeded()
             await loadOfferings()
             await recovered
+            if membershipResolved, !entitlementCheckFailed { membershipConfirmed = true }
         }
     }
 

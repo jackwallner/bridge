@@ -31,6 +31,12 @@ struct BridgeApp: App {
                     guard phase == .active else { return }
                     Task { await FeedbackService.shared.flushPending() }
                 }
+                .onChange(of: subscriptions.membershipConfirmed) { _, confirmed in
+                    // Level, not edge: a lapsed member's first record can
+                    // already say "not a member", so isPro never changes.
+                    guard confirmed else { return }
+                    settings.enforceGameNightMembership(isMember: subscriptions.isPro)
+                }
                 .onAppear {
                     subscriptions.start()
                     ConversionDiagnostics.recordAppOpen()

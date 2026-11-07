@@ -228,6 +228,13 @@ final class AppSettings: ObservableObject {
         center.add(UNNotificationRequest(identifier: Self.gameNightReminderID, content: content, trigger: trigger))
     }
 
+    /// Game Night is Bridge+ only and its switch is unreachable without it,
+    /// so a non-member's weekly reminder goes off rather than firing forever
+    /// into a paywall.
+    func enforceGameNightMembership(isMember: Bool) {
+        if !isMember, gameNightReminderEnabled { gameNightReminderEnabled = false }
+    }
+
     func cancelGameNightReminder() {
         UNUserNotificationCenter.current()
             .removePendingNotificationRequests(withIdentifiers: [Self.gameNightReminderID])
