@@ -223,7 +223,7 @@ struct HomeView: View {
         // Before RevenueCat answers, a member reads as free and the day's
         // entry would drop every Bridge+ item, faking a gain the next day.
         guard subscriptions.membershipResolved else { return }
-        ledger.record(records.masteryByRoom(isMember: subscriptions.isPro))
+        ledger.record(records.masteryByRoom(isMember: subscriptions.isPro), isMember: subscriptions.isPro)
     }
 
     /// The one question asked when a membership turns toward the exit. Waits
