@@ -30,6 +30,7 @@ struct BridgeApp: App {
                     // offline also retries every time the app comes back.
                     guard phase == .active else { return }
                     Task { await FeedbackService.shared.flushPending() }
+                    settings.reconcileReminders()
                 }
                 .onChange(of: subscriptions.membershipConfirmed) { _, confirmed in
                     // Level, not edge: a lapsed member's first record can
@@ -39,6 +40,7 @@ struct BridgeApp: App {
                 }
                 .onAppear {
                     subscriptions.start()
+                    settings.reconcileReminders()
                     ConversionDiagnostics.recordAppOpen()
                     Task { await FeedbackService.shared.flushPending() }
                     #if DEBUG

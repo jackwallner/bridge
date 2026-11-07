@@ -158,6 +158,56 @@ final class AppSettings: ObservableObject {
     static var dailyReminderBody: String { String(localized: "Five minutes of practice keeps your bidding clear and your card play sharp.") }
     static var gameNightReminderBody: String { String(localized: "Five personalized minutes now can make the table feel calmer later.") }
 
+    // MARK: - Launch reconcile
+
+    /// What a switched-on reminder needs, given iOS's current answer. The
+    /// toggles are only saved intent: a kill while the permission alert is
+    /// up leaves one on with nothing scheduled, and nothing asked again.
+    enum ReminderRepair: Equatable {
+        case schedule, ask, wait
+    }
+
+    nonisolated static func reminderRepair(for status: UNAuthorizationStatus) -> ReminderRepair {
+        switch status {
+        case .authorized, .provisional, .ephemeral: return .schedule
+        case .notDetermined: return .ask
+        case .denied: return .wait
+        @unknown default: return .wait
+        }
+    }
+
+    /// Run at launch and whenever the app comes back: puts back any request
+    /// a switched-on toggle is missing, and finishes an interrupted ask.
+    func reconcileReminders() {
+        guard reminderEnabled || gameNightReminderEnabled else { return }
+        UNUserNotificationCenter.current().getNotificationSettings { notificationSettings in
+            let status = notificationSettings.authorizationStatus
+            Task { @MainActor in self.repairReminders(Self.reminderRepair(for: status)) }
+        }
+    }
+
+    private func repairReminders(_ repair: ReminderRepair) {
+        switch repair {
+        case .schedule:
+            if reminderEnabled { scheduleReminder() }
+            if gameNightReminderEnabled { scheduleGameNightReminder() }
+        case .ask:
+            guard reminderEnabled || gameNightReminderEnabled else { return }
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
+                Task { @MainActor in
+                    if granted {
+                        self.repairReminders(.schedule)
+                    } else {
+                        self.reminderEnabled = false
+                        self.gameNightReminderEnabled = false
+                    }
+                }
+            }
+        case .wait:
+            break
+        }
+    }
+
     // MARK: - Daily reminder
 
     private func requestPermissionAndSchedule() {
