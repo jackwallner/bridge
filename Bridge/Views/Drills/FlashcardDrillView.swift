@@ -35,6 +35,18 @@ struct FlashcardDrillView: View {
     private struct SwipeRecord {
         let card: Flashcard
         let gotIt: Bool
+        /// A choice card's pick. It was graded before the answer showed, so
+        /// Undo brings the card back answered rather than open to a re-pick.
+        var pick: Int?
+        /// A plain card's state before its swipe graded it, so Undo retracts
+        /// the grade and the next swipe is the only one counted.
+        var before: GradeSnapshot?
+    }
+
+    private struct GradeSnapshot {
+        let record: PracticeRecord?
+        let seen: Bool
+        let missed: Bool
     }
 
     var body: some View {
@@ -341,14 +353,20 @@ struct FlashcardDrillView: View {
         // the graded answer (not the swipe direction) decides whether the
         // card comes back. Plain cards grade by swipe.
         let knewIt: Bool
+        var before: GradeSnapshot?
         if let choice = card.choice, let pick = choicePick {
             knewIt = pick == choice.answerIndex
         } else {
             knewIt = gotIt
+            before = GradeSnapshot(
+                record: PracticeRecordStore.shared.snapshot(itemID: card.id),
+                seen: progress.seenItems.contains(card.id),
+                missed: progress.missedItems.contains(card.id)
+            )
             progress.recordItem(id: card.id, correct: gotIt)
             PracticeRecordStore.shared.record(itemID: card.id, roomID: DrillLibrary.roomID(forDrillID: drill.id), correct: gotIt)
         }
-        lastSwipe = SwipeRecord(card: card, gotIt: knewIt)
+        lastSwipe = SwipeRecord(card: card, gotIt: knewIt, pick: choicePick, before: before)
         choicePick = nil
         queue.removeFirst()
         if !knewIt {
@@ -364,13 +382,17 @@ struct FlashcardDrillView: View {
         guard let record = lastSwipe, !isFlinging else { return }
         Haptics.impact(.light)
         lastSwipe = nil
-        choicePick = nil
+        if let before = record.before {
+            progress.restoreItem(id: record.card.id, seen: before.seen, missed: before.missed)
+            PracticeRecordStore.shared.restore(itemID: record.card.id, to: before.record)
+        }
+        choicePick = record.pick
         withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
             if !record.gotIt, queue.last?.id == record.card.id {
                 queue.removeLast()
             }
             queue.insert(record.card, at: 0)
-            isFlipped = false
+            isFlipped = record.pick != nil
         }
     }
 

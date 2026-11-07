@@ -96,6 +96,17 @@ final class PracticeRecordStore: ObservableObject {
         persist()
     }
 
+    /// The row an answer to `itemID` would change, so Undo can put it back.
+    func snapshot(itemID: String) -> PracticeRecord? {
+        records[PracticeSkill.skill(forItemID: itemID).map(\.rawValue) ?? itemID]
+    }
+
+    /// Puts back a row taken with `snapshot(itemID:)`; nil removes it.
+    func restore(itemID: String, to snapshot: PracticeRecord?) {
+        records[PracticeSkill.skill(forItemID: itemID).map(\.rawValue) ?? itemID] = snapshot
+        persist()
+    }
+
     /// SM-2, trimmed to what a drill app needs: a miss resets the interval and
     /// costs ease, a hit multiplies the interval by the current ease.
     private func schedule(_ record: inout PracticeRecord, correct: Bool, now: Date) {
