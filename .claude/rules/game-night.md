@@ -44,8 +44,10 @@ The reminder toggles are saved intent, not proof of a pending request.
 the foreground: allowed puts any missing request back, an unanswered ask is
 asked again, denied keeps the choice so the request returns once iOS allows
 it. The Game Night reminder is turned off for a non-member level-triggered,
-when `SubscriptionService.membershipConfirmed` turns true (RevenueCat itself
-answered this launch and any reinstall sync is done), because a stale cached
-record of a lapsed member reads as lapsed from the first frame and `isPro`
-never changes. Never act on the cache alone: a renewed member's old cache
-can read as lapsed too.
+when `SubscriptionService.membershipConfirmed` turns true, because a stale
+cached record of a lapsed member reads as lapsed from the first frame and
+`isPro` never changes. Confirmation needs a `.notStaleCachedOrFetched` read
+and no failed reinstall sync. `.cachedOrFetched` returns a stale cache even
+online and never counts: a renewed member's old cache reads as lapsed too.
+Offline on a stale cache nothing is confirmed. Test fakes must honour the
+fetch policy as the SDK does, or a cache-only answer passes as fresh.
