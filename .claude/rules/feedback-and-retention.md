@@ -71,3 +71,8 @@ game night card on Home, per-question report link, and the monthly challenge
 (`MasteryRing`), the "What is holding" list and the "Work on" card (a link into
 the room) shipped 2026-10-20 in `HomeView` and `StatsView`. Confetti, shine and
 the wrong-answer shake skip under Reduce Motion.
+
+Each ledger day also stores whether it counted Bridge+ items
+(`mastery.ledger.scopes`); the baseline is the oldest day in the window
+measured the same way, so a membership change never fakes a gain. Days
+saved before 2026-11-06 have no scope and compare with any day.

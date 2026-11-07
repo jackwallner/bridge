@@ -36,3 +36,16 @@ four-question challenge with no declarer play in it at all.
 local notification, and opens directly into `SessionBuilder.gameNightPrep`,
 which prioritizes due mistakes, misses, the weakest room, and unseen member
 content in that order. Both features are entirely Bridge+ gated.
+
+## Reminder state (2026-11-06, state machine audit fixes)
+
+The reminder toggles are saved intent, not proof of a pending request.
+`AppSettings.reconcileReminders()` runs at launch and on every return to
+the foreground: allowed puts any missing request back, an unanswered ask is
+asked again, denied keeps the choice so the request returns once iOS allows
+it. The Game Night reminder is turned off for a non-member level-triggered,
+when `SubscriptionService.membershipConfirmed` turns true (RevenueCat itself
+answered this launch and any reinstall sync is done), because a stale cached
+record of a lapsed member reads as lapsed from the first frame and `isPro`
+never changes. Never act on the cache alone: a renewed member's old cache
+can read as lapsed too.
