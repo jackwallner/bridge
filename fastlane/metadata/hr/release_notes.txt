@@ -1,3 +1,1 @@
-Sada na 10 jezika: njemački, francuski, talijanski, japanski, nizozemski, danski, grčki, tajlandski, turski i tradicionalni kineski.
-
-Savjeti za licitiranje sada bliže prate SAYC priručnik, a nakon prelaska na Pro odmah se vraćaš na ono što si radio.
+Sada možete promijeniti jezik aplikacije u Postavkama. Ovo ažuriranje donosi i ispravke i poboljšanja.

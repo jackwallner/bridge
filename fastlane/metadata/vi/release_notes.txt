@@ -1,3 +1,1 @@
-Nay có 10 ngôn ngữ: tiếng Đức, tiếng Pháp, tiếng Ý, tiếng Nhật, tiếng Hà Lan, tiếng Đan Mạch, tiếng Hy Lạp, tiếng Thái, tiếng Thổ Nhĩ Kỳ và tiếng Trung phồn thể.
-
-Lời khuyên đấu thầu nay bám sát tập sách SAYC hơn, và khi tham gia Pro, bạn quay lại ngay nội dung đang làm dở.
+Giờ đây bạn có thể đổi ngôn ngữ của ứng dụng trong Cài đặt. Bản cập nhật này cũng có các bản sửa lỗi và cải tiến.

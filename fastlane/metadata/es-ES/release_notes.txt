@@ -1,3 +1,1 @@
-Ahora en 10 idiomas: alemán, francés, italiano, japonés, neerlandés, danés, griego, tailandés, turco y chino tradicional.
-
-Los consejos de puja siguen ahora más de cerca el manual SAYC, y al unirte a Pro vuelves directamente a lo que estabas haciendo.
+Ahora puedes cambiar el idioma de la app desde Ajustes. Esta actualización también incluye correcciones y mejoras.

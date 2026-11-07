@@ -1,3 +1,1 @@
-Artık 10 dilde: Almanca, Fransızca, İtalyanca, Japonca, Hollandaca, Danca, Yunanca, Tayca, Türkçe ve Geleneksel Çince.
-
-Konuşma önerileri artık SAYC kitapçığını daha yakından izliyor ve Pro'ya katıldığında doğrudan kaldığın yere dönüyorsun.
+Artık uygulamanın dilini Ayarlar'dan değiştirebilirsiniz. Bu güncelleme düzeltmeler ve iyileştirmeler de içeriyor.

@@ -1,3 +1,1 @@
-Now in 10 languages: German, French, Italian, Japanese, Dutch, Danish, Greek, Thai, Turkish and Traditional Chinese.
-
-Bidding advice now follows the SAYC booklet more closely, and joining Pro takes you straight back to what you were doing.
+You can now change the app's language from Settings. This update also includes fixes and improvements.

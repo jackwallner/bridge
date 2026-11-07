@@ -1,3 +1,1 @@
-Teraz v 10 jazykoch: nemčina, francúzština, taliančina, japončina, holandčina, dánčina, gréčtina, thajčina, turečtina a tradičná čínština.
-
-Rady k licitácii teraz presnejšie vychádzajú z brožúry SAYC a po prechode na Pro sa vrátite presne k tomu, čo ste robili.
+Jazyk aplikácie môžete teraz zmeniť v Nastaveniach. Táto aktualizácia prináša aj opravy a vylepšenia.

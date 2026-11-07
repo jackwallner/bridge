@@ -1,3 +1,1 @@
-Mostantól 10 nyelven: német, francia, olasz, japán, holland, dán, görög, thai, török és hagyományos kínai.
-
-A licittanácsok mostantól jobban követik a SAYC-füzetet, és a Pro-ra váltás után rögtön oda térsz vissza, ahol tartottál.
+Az app nyelvét mostantól a Beállításokban módosíthatod. A frissítés javításokat és fejlesztéseket is tartalmaz.

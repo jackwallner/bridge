@@ -1,3 +1,1 @@
-Nyt saatavilla 10 kielellä: saksa, ranska, italia, japani, hollanti, tanska, kreikka, thai, turkki ja perinteinen kiina.
-
-Tarjousneuvot noudattavat nyt tarkemmin SAYC-opasta, ja Pro-tilaukseen siirtyessäsi palaat suoraan siihen, mitä olit tekemässä.
+Voit nyt vaihtaa sovelluksen kielen asetuksista. Tämä päivitys sisältää myös korjauksia ja parannuksia.
