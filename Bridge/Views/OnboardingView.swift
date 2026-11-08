@@ -317,8 +317,7 @@ struct OnboardingView: View {
     /// Frozen at 1.3.2. Below the accessibility sizes this is 1.3.2's page
     /// exactly: same stack, same spacers, benefit lines on one line each.
     /// Only at accessibility sizes, where 1.3.2 pushed the heading off the
-    /// screen and squeezed the CTA, does the page scroll and carry the price,
-    /// the free exit and the legal links.
+    /// screen and squeezed the CTA, do the benefits and legal links scroll.
     @ViewBuilder
     private var trialPage: some View {
         if dynamicTypeSize.isAccessibilitySize {
@@ -326,8 +325,6 @@ struct OnboardingView: View {
                 trialHeader
                 trialBenefits
                 if !subscriptions.isPro {
-                    priceSlot
-                    softExit
                     legalRow
                 }
             }
@@ -457,9 +454,8 @@ struct OnboardingView: View {
     private var footer: some View {
         let onTrialPage = page == lastPage
         // The empty trial slots are reserved on every page so the CTA never
-        // moves. At accessibility sizes they grew to a third of the screen
-        // of invisible text and squeezed the page above into a sliver, so
-        // there they move into the trial page's own scrolling content.
+        // moves. At accessibility sizes, keep the billed price and free exit
+        // with the purchase button only on the trial page.
         let reservesTrialSlots = !dynamicTypeSize.isAccessibilitySize
         return VStack(spacing: 8) {
             pageDots
@@ -468,7 +464,7 @@ struct OnboardingView: View {
             // matching the approved fleet apps: it's the free way in, worded so
             // it doesn't read as a loud "escape the offer" button. Height
             // reserved on every page.
-            if reservesTrialSlots {
+            if reservesTrialSlots || (onTrialPage && !subscriptions.isPro) {
                 softExit
                     .opacity(onTrialPage && !subscriptions.isPro ? 1 : 0)
                     .accessibilityHidden(!onTrialPage || subscriptions.isPro)

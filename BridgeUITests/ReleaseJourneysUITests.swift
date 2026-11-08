@@ -117,6 +117,14 @@ final class ReleaseJourneysUITests: XCTestCase {
         let close = app.buttons[L("Close")]
         XCTAssertTrue(close.waitForExistence(timeout: 15))
         XCTAssertTrue(app.buttons[L("Restore")].waitForExistence(timeout: 10))
+        if QA.persona == "accessibility" {
+            let price = app.staticTexts["paywall-billed-price"]
+            let scroll = app.scrollViews.firstMatch
+            for _ in 0..<10 where !price.isHittable {
+                scroll.swipeUp()
+            }
+            XCTAssertTrue(price.isHittable, "The billed amount must be reachable at accessibility sizes")
+        }
         QA.checkpoint(app, "paywall-shown", paywall: true)
 
         close.tap()

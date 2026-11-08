@@ -390,6 +390,7 @@ struct PaywallView: View {
             // clearly and conspicuously displayed.
             if priceReady {
                 Text(PaywallPricing.priceText(subscriptions, selectedPlan))
+                    .accessibilityIdentifier("paywall-billed-price")
                     .font(Theme.display(22))
                     .foregroundStyle(Theme.ink)
             }

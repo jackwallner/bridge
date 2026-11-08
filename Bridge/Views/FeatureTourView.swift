@@ -76,7 +76,7 @@ struct FeatureTourView: View {
             Text(page.eyebrow)
                 .font(.caption.weight(.heavy))
                 .kerning(2)
-                .foregroundStyle(page.accentGold ? Theme.gold : Theme.jade)
+                .foregroundStyle(page.accentGold ? Theme.goldText : Theme.jade)
             page.hero
             Text(page.title)
                 .font(Theme.display(27))
