@@ -380,7 +380,8 @@ struct PaywallView: View {
     }
 
     private var purchaseFooter: some View {
-        VStack(spacing: 8) {
+        let terms = PaywallPricing.terms(subscriptions, selectedPlan, trial: trialEligible)
+        return VStack(spacing: 8) {
             if priceLoadAttempted && !priceReady && !loadingPrices {
                 Text("Prices aren't available right now. Check your connection and try again.")
                     .font(.caption)
@@ -400,12 +401,14 @@ struct PaywallView: View {
                     .accessibilityIdentifier("paywall-billed-price")
                     .font(Theme.display(22))
                     .foregroundStyle(Theme.ink)
+                    .accessibilityLabel(terms)
             }
-            Text(PaywallPricing.terms(subscriptions, selectedPlan, trial: trialEligible))
+            Text(terms)
                 .font(.caption)
                 .foregroundStyle(Theme.inkSecondary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
+                .accessibilityHidden(priceReady)
             Button {
                 purchase()
             } label: {

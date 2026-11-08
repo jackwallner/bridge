@@ -532,11 +532,13 @@ struct OnboardingView: View {
             Text(trialPrice)
                 .font(Theme.display(22))
                 .foregroundStyle(Theme.ink)
+                .accessibilityLabel(trialDisclosure)
             Text(trialDisclosure)
                 .font(.caption2)
                 .foregroundStyle(Theme.inkTertiary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
+                .accessibilityHidden(true)
         }
         .frame(minHeight: 48)
     }

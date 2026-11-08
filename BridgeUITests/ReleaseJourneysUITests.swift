@@ -81,9 +81,19 @@ final class ReleaseJourneysUITests: XCTestCase {
         }
         XCTAssertTrue(app.staticTexts[L("Where are you starting from?")].waitForExistence(timeout: 10))
         QA.checkpoint(app, "onboarding-skill")
-        tap(app.buttons.matching(NSPredicate(format: "label CONTAINS %@", L("Know the basics"))).firstMatch,
-            name: "Know the basics")
-        tap(app.buttons[L("Continue")], name: "Continue")
+        let skill = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", L("Know the basics"))).firstMatch
+        let next = app.buttons[L("Continue")]
+        if QA.persona == "accessibility" {
+            let window = app.windows.firstMatch
+            let start = window.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.75))
+            let end = window.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.50))
+            for _ in 0..<3 where skill.frame.maxY > next.frame.minY {
+                start.press(forDuration: 0.1, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.1)
+            }
+            XCTAssertLessThan(skill.frame.maxY, next.frame.minY)
+        }
+        tap(skill, name: "Know the basics")
+        tap(next, name: "Continue")
 
         // The free way in sits above the trial button; it is not on any other page.
         let freeExit = app.buttons[L("Get Started")]
