@@ -243,7 +243,7 @@ struct OnboardingView: View {
             // The bar flashes as the page arrives: a cut-off last choice
             // is the only other sign that there is more below.
             ScrollView {
-                skillContent(compact: false).padding(.vertical, 24)
+                skillContent(compact: dynamicTypeSize.isAccessibilitySize).padding(.vertical, 24)
             }
             .scrollIndicatorsFlash(trigger: page)
         }

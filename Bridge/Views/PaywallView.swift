@@ -35,6 +35,7 @@ enum PaywallLinks {
 /// of those lives in this file; don't trim them for layout.
 struct PaywallContent: View {
     @EnvironmentObject private var subscriptions: SubscriptionService
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Binding var selectedPlan: PaywallPlan
     /// False once StoreKit says this Apple Account already had its free week:
     /// the cards then state the billing and promise no trial.
@@ -101,13 +102,16 @@ struct PaywallContent: View {
     private func planCard(_ plan: PaywallPlan, title: String, price: String, perMonth: String?,
                           anchor: String?, detail: String, badge: String?) -> some View {
         let isSelected = selectedPlan == plan
+        let stacks = dynamicTypeSize.isAccessibilitySize
+        let cardLayout = stacks ? AnyLayout(VStackLayout(alignment: .leading, spacing: 8)) : AnyLayout(HStackLayout())
+        let titleLayout = stacks ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4)) : AnyLayout(HStackLayout(spacing: 8))
         return Button {
             selectedPlan = plan
             Haptics.impact(.light, intensity: 0.6)
         } label: {
-            HStack {
+            cardLayout {
                 VStack(alignment: .leading, spacing: 3) {
-                    HStack(spacing: 8) {
+                    titleLayout {
                         Text(title)
                             .font(.headline)
                             .foregroundStyle(Theme.ink)
@@ -118,15 +122,17 @@ struct PaywallContent: View {
                                 .padding(.vertical, 2)
                                 .background(Theme.gold.opacity(0.18), in: Capsule())
                                 .foregroundStyle(Theme.goldText)
+                                .fixedSize(horizontal: false, vertical: stacks)
                         }
                     }
                     Text(detail)
                         .font(.caption)
                         .foregroundStyle(Theme.inkSecondary)
                         .multilineTextAlignment(.leading)
+                        .fixedSize(horizontal: false, vertical: stacks)
                 }
-                Spacer(minLength: 8)
-                VStack(alignment: .trailing, spacing: 1) {
+                if !stacks { Spacer(minLength: 8) }
+                VStack(alignment: stacks ? .leading : .trailing, spacing: 1) {
                     Text(price)
                         .font(.subheadline.weight(.semibold))
                         .foregroundStyle(Theme.ink)
@@ -149,6 +155,7 @@ struct PaywallContent: View {
                     }
                 }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(14)
             .background(
                 isSelected ? Theme.jade.opacity(0.08) : Theme.card,
