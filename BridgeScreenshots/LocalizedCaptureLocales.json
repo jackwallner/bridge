@@ -202,5 +202,73 @@
       "THE ROOMS": "LE SALE",
       "Lead 6♠": "Attacca 6♠"
     }
+  },
+  {
+    "store_locale": "ko",
+    "lang": "ko",
+    "apple_locale": "ko_KR",
+    "strings": {
+      "Get Started": "시작하기",
+      "The Auction Room": "비딩 연습",
+      "The Defense Room": "수비",
+      "The Declarer Room": "선언자 플레이",
+      "The Card Room": "카드 기초",
+      "Name Your Opening": "오프닝 비드 맞히기",
+      "Lead or Hold?": "리드할까, 아낄까?",
+      "Choose the Card": "카드를 고르세요",
+      "THE ROOMS": "연습 영역",
+      "Lead 6♠": "6♠ 리드"
+    }
+  },
+  {
+    "store_locale": "no",
+    "lang": "nb",
+    "apple_locale": "nb_NO",
+    "strings": {
+      "Get Started": "Kom i gang",
+      "The Auction Room": "Meldingsrommet",
+      "The Defense Room": "Motspillsrommet",
+      "The Declarer Room": "Spilleføringsrommet",
+      "The Card Room": "Kortrommet",
+      "Name Your Opening": "Navngi åpningsmeldingen",
+      "Lead or Hold?": "Spille ut eller holde igjen?",
+      "Choose the Card": "Velg et kort",
+      "THE ROOMS": "ROMMENE",
+      "Lead 6♠": "Spill ut 6♠"
+    }
+  },
+  {
+    "store_locale": "sv",
+    "lang": "sv",
+    "apple_locale": "sv_SE",
+    "strings": {
+      "Get Started": "Kom igång",
+      "The Auction Room": "Budgivning",
+      "The Defense Room": "Motspel",
+      "The Declarer Room": "Spelföring",
+      "The Card Room": "Kortkunskap",
+      "Name Your Opening": "Välj ditt öppningsbud",
+      "Lead or Hold?": "Spela ut eller hålla upp?",
+      "Choose the Card": "Välj ett kort",
+      "THE ROOMS": "ÖVNINGSOMRÅDENA",
+      "Lead 6♠": "Spela ut 6♠"
+    }
+  },
+  {
+    "store_locale": "es-MX",
+    "lang": "es",
+    "apple_locale": "es_MX",
+    "strings": {
+      "Get Started": "Empezar",
+      "The Auction Room": "Subasta",
+      "The Defense Room": "Defensa",
+      "The Declarer Room": "Juego del declarante",
+      "The Card Room": "Cartas",
+      "Name Your Opening": "Elige tu canto inicial",
+      "Lead or Hold?": "¿Salir o dejar pasar?",
+      "Choose the Card": "Elige la carta",
+      "THE ROOMS": "LAS ÁREAS",
+      "Lead 6♠": "Sal de 6♠"
+    }
   }
 ]
