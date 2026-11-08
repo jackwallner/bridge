@@ -199,6 +199,7 @@ struct ChoiceList: View {
             .animation(.spring(response: 0.3, dampingFraction: 0.8), value: answered)
         }
         .buttonStyle(.plain)
+        .accessibilityIdentifier("drill-answer-\(index)")
         .allowsHitTesting(!answered)
     }
 

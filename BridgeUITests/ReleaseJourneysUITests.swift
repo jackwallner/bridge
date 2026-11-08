@@ -170,12 +170,8 @@ final class ReleaseJourneysUITests: XCTestCase {
         element.tap()
     }
 
-    /// An answer row in a session. The only other buttons on that screen are the
-    /// navigation bar's, Next or Finish, and Close.
     private func firstChoice(in app: XCUIApplication) -> XCUIElement {
-        let chrome = Set(app.navigationBars.buttons.allElementsBoundByIndex.map(\.label))
-            .union([L("Next"), L("Finish"), L("Close")])
-        return app.buttons.matching(NSPredicate(format: "NOT (label IN %@)", Array(chrome))).firstMatch
+        app.buttons["drill-answer-0"]
     }
 
     private func advanceButton(in app: XCUIApplication) -> XCUIElement {
