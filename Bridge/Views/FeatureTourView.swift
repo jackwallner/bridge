@@ -110,17 +110,28 @@ struct FeatureTourView: View {
             Button {
                 advance(pageCount: pageCount)
             } label: {
-                Text(isLast ? String(localized: "Start my first session") : String(localized: "Show me")).primaryCTA()
+                ZStack {
+                    if dynamicTypeSize.isAccessibilitySize {
+                        Text("Start my first session").hidden().accessibilityHidden(true)
+                    }
+                    Text(isLast ? String(localized: "Start my first session") : String(localized: "Show me"))
+                }
+                .primaryCTA()
             }
             Button {
                 Haptics.impact(.light, intensity: 0.6)
                 onDone()
             } label: {
-                Text(isLast ? String(localized: "Skip it, take me to the app") : String(localized: "Skip the tour"))
-                    .font(.subheadline.weight(.medium))
-                    .foregroundStyle(Theme.inkSecondary)
-                    .frame(minHeight: 44)
-                    .contentShape(Rectangle())
+                ZStack {
+                    if dynamicTypeSize.isAccessibilitySize {
+                        Text("Skip it, take me to the app").hidden().accessibilityHidden(true)
+                    }
+                    Text(isLast ? String(localized: "Skip it, take me to the app") : String(localized: "Skip the tour"))
+                }
+                .font(.subheadline.weight(.medium))
+                .foregroundStyle(Theme.inkSecondary)
+                .frame(minHeight: 44)
+                .contentShape(Rectangle())
             }
         }
     }
