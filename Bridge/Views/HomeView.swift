@@ -661,7 +661,7 @@ struct HomeView: View {
             if let badge {
                 Text(badge)
                     .font(.caption2.weight(.semibold))
-                    .foregroundStyle(color)
+                    .foregroundStyle(Theme.inkSecondary)
             } else {
                 Text(locked ? Membership.name : " ")
                     .font(.caption2.weight(.semibold))
@@ -845,7 +845,7 @@ struct MasteryRing: View {
             .frame(width: 32, height: 32)
             Text(mastery.level == .untouched ? String(localized: "New") : mastery.level.title)
                 .font(.system(size: min(captionSize, 12), weight: .semibold))
-                .foregroundStyle(Theme.inkTertiary)
+                .foregroundStyle(Theme.inkSecondary)
                 .fixedSize()
         }
         .frame(minWidth: 46)
