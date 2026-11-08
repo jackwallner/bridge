@@ -1,5 +1,5 @@
 {
-  "project": "BridgeUITests.xcodeproj",
+  "project": "Bridge.xcodeproj",
   "scheme": "BridgeUITests",
   "uitests_dir": "BridgeUITests",
   "journeys": [
