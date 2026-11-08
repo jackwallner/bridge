@@ -94,5 +94,37 @@
     "04-work-through-a-bridge-hand.png": "Gioca una mano\ndi bridge",
     "05-choose-a-bridge-room.png": "Scegli una\nsala di bridge",
     "06-choose-a-card-room-drill.png": "Scegli un esercizio\nnella sala delle carte"
+  },
+  "ko": {
+    "01-choose-an-opening-call.png": "오프닝 비드를\n골라 보세요",
+    "02-choose-the-opening-lead.png": "오프닝 리드를\n골라 보세요",
+    "03-plan-the-play.png": "카드 플레이를\n미리 계획해 보세요",
+    "04-work-through-a-bridge-hand.png": "브리지 핸드를\n차근차근 풀어 보세요",
+    "05-choose-a-bridge-room.png": "브리지 연습 영역을\n골라 보세요",
+    "06-choose-a-card-room-drill.png": "카드 기초 연습을\n골라 보세요"
+  },
+  "no": {
+    "01-choose-an-opening-call.png": "Velg en\nåpningsmelding",
+    "02-choose-the-opening-lead.png": "Velg første\nutspill",
+    "03-plan-the-play.png": "Planlegg spillet\nmed en kort øvelse",
+    "04-work-through-a-bridge-hand.png": "Gå gjennom en\nbridgehånd",
+    "05-choose-a-bridge-room.png": "Velg et\nbridgerom",
+    "06-choose-a-card-room-drill.png": "Velg en øvelse\ni kortrommet"
+  },
+  "sv": {
+    "01-choose-an-opening-call.png": "Välj ett\nöppningsbud",
+    "02-choose-the-opening-lead.png": "Välj ditt\nöppningsutspel",
+    "03-plan-the-play.png": "Planera spelet\nmed en kort övning",
+    "04-work-through-a-bridge-hand.png": "Gå igenom en\nbridgehand",
+    "05-choose-a-bridge-room.png": "Välj ett\növningsområde",
+    "06-choose-a-card-room-drill.png": "Välj en övning\ni Kortkunskap"
+  },
+  "es-MX": {
+    "01-choose-an-opening-call.png": "Elige tu\ncanto inicial",
+    "02-choose-the-opening-lead.png": "Elige la\nsalida inicial",
+    "03-plan-the-play.png": "Planea la jugada\ncon un ejercicio corto",
+    "04-work-through-a-bridge-hand.png": "Recorre una\nmano de bridge",
+    "05-choose-a-bridge-room.png": "Elige un área\nde bridge",
+    "06-choose-a-card-room-drill.png": "Elige un ejercicio\nde Cartas"
   }
 }
