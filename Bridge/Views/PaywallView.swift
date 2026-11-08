@@ -458,10 +458,16 @@ struct PaywallView: View {
             ? AnyLayout(VStackLayout(spacing: 10))
             : AnyLayout(HStackLayout(spacing: 16))
         return layout {
-            Button("Restore") { restore() }
+            Button { restore() } label: {
+                Text("Restore").frame(minHeight: 44).contentShape(Rectangle())
+            }
                 .disabled(restoring || purchasing)
-            Link("Terms of Use", destination: PaywallLinks.terms)
-            Link("Privacy Policy", destination: PaywallLinks.privacy)
+            Link(destination: PaywallLinks.terms) {
+                Text("Terms of Use").frame(minHeight: 44).contentShape(Rectangle())
+            }
+            Link(destination: PaywallLinks.privacy) {
+                Text("Privacy Policy").frame(minHeight: 44).contentShape(Rectangle())
+            }
         }
         .font(.caption)
         .foregroundStyle(Theme.inkSecondary)

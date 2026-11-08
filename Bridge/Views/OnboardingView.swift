@@ -453,6 +453,7 @@ struct OnboardingView: View {
 
     private var footer: some View {
         let onTrialPage = page == lastPage
+        let needsSkill = page == skillPage && skillLevel.isEmpty
         // The empty trial slots are reserved on every page so the CTA never
         // moves. At accessibility sizes, keep the billed price and free exit
         // with the purchase button only on the trial page.
@@ -487,15 +488,16 @@ struct OnboardingView: View {
                         Text(onTrialPage ? trialCTATitle : String(localized: "Continue"))
                     }
                 }
-                .primaryCTA()
+                .primaryCTA(color: needsSkill ? Theme.inkSecondary : Theme.jade)
             }
-            .disabled(purchasing || restoring || (page == skillPage && skillLevel.isEmpty) || (onTrialPage && !subscriptions.membershipResolved))
-            .opacity(page == skillPage && skillLevel.isEmpty ? 0.5 : 1)
+            .disabled(purchasing || restoring || needsSkill || (onTrialPage && !subscriptions.membershipResolved))
             // Legal footer slot, reserved on every page.
             if reservesTrialSlots {
-                legalRow
-                    .opacity(onTrialPage && !subscriptions.isPro ? 1 : 0)
-                    .accessibilityHidden(!onTrialPage || subscriptions.isPro)
+                if onTrialPage && !subscriptions.isPro {
+                    legalRow
+                } else {
+                    Color.clear.frame(height: 20)
+                }
             }
         }
         .padding(.horizontal, 24)

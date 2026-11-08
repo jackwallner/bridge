@@ -10,6 +10,7 @@ struct FeatureTourView: View {
     @EnvironmentObject private var subscriptions: SubscriptionService
     @EnvironmentObject private var progress: ProgressStore
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var index = 0
     @State private var shineTrigger = 0
     @State private var confettiTrigger = 0
@@ -34,7 +35,7 @@ struct FeatureTourView: View {
                     Capsule()
                         .fill(dot == index ? Theme.jade : Theme.jade.opacity(0.22))
                         .frame(width: dot == index ? 20 : 7, height: 7)
-                        .animation(.snappy(duration: 0.22), value: index)
+                        .animation(reduceMotion ? nil : .snappy(duration: 0.22), value: index)
                 }
             }
             .padding(.top, 10)
@@ -64,7 +65,9 @@ struct FeatureTourView: View {
         .frame(maxWidth: Theme.readableContentWidth)
         .frame(maxWidth: .infinity)
         .background(Theme.background)
-        .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.35)) }
+        .overlay {
+            if !reduceMotion { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.35)) }
+        }
         .fullScreenCover(isPresented: $showQuickSession, onDismiss: onDone) {
             quickSession
         }
@@ -93,7 +96,7 @@ struct FeatureTourView: View {
         .themedCard(corner: 22)
         .shine(trigger: shineTrigger, corner: 22)
         .id(index)
-        .transition(.asymmetric(
+        .transition(reduceMotion ? .identity : .asymmetric(
             insertion: .move(edge: .trailing).combined(with: .opacity),
             removal: .move(edge: .leading).combined(with: .opacity)
         ))
@@ -116,6 +119,8 @@ struct FeatureTourView: View {
                 Text(isLast ? String(localized: "Skip it, take me to the app") : String(localized: "Skip the tour"))
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(Theme.inkSecondary)
+                    .frame(minHeight: 44)
+                    .contentShape(Rectangle())
             }
         }
     }
@@ -195,6 +200,7 @@ struct FeatureTourView: View {
                     Text("A five-minute mix of what you need next")
                         .font(.caption)
                         .foregroundStyle(Theme.onFill.opacity(0.9))
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer(minLength: 4)
                 Image(systemName: "play.circle.fill")
@@ -300,7 +306,7 @@ struct FeatureTourView: View {
             return
         }
         Haptics.impact(.soft, intensity: 0.6)
-        withAnimation(.spring(response: 0.4, dampingFraction: 0.85)) {
+        withAnimation(reduceMotion ? nil : .spring(response: 0.4, dampingFraction: 0.85)) {
             index += 1
         }
         if tourPages[index].accentGold {
@@ -311,6 +317,7 @@ struct FeatureTourView: View {
     }
 
     private func fireShine() {
+        guard !reduceMotion else { return }
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 350_000_000)
             shineTrigger += 1

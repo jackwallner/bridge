@@ -179,6 +179,7 @@ struct StatsView: View {
                                     .font(.caption2)
                                 Text(mastery.level.title)
                                     .font(.caption.weight(.bold))
+                                    .foregroundStyle(Theme.inkSecondary)
                             }
                             .foregroundStyle(levelColor(mastery.level))
                         }
@@ -273,7 +274,7 @@ struct StatsView: View {
                         Spacer()
                         Text(percent(stat.accuracy))
                             .font(.subheadline.weight(.bold))
-                            .foregroundStyle(barColor(stat.accuracy))
+                            .foregroundStyle(Theme.inkSecondary)
                             .monospacedDigit()
                     }
                     accuracyBar(stat.accuracy)
