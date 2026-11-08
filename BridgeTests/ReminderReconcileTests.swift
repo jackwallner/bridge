@@ -25,4 +25,19 @@ final class ReminderReconcileTests: XCTestCase {
     func testADeniedPermissionKeepsTheToggleAndWaits() {
         XCTAssertEqual(AppSettings.reminderRepair(for: .denied), .wait)
     }
+
+    /// The reconcile reads iOS's answer in a completion handler formed on the
+    /// main actor, which iOS calls on its own queue. Under Swift 6 a closure
+    /// wrongly inferred main-actor isolated traps there, which would crash
+    /// every launch with a reminder on. Running the real call proves it does not.
+    func testReconcileReadsTheSettingsWithoutAnIsolationTrap() {
+        let store = UserDefaults(suiteName: "ReminderReconcileTests.\(UUID().uuidString)")!
+        store.set(true, forKey: "settings.reminderEnabled")
+        let settings = AppSettings(defaults: store)
+        settings.reconcileReminders()
+        let answered = expectation(description: "iOS answered")
+        UNUserNotificationCenter.current().getNotificationSettings { _ in answered.fulfill() }
+        wait(for: [answered], timeout: 10)
+        RunLoop.main.run(until: Date().addingTimeInterval(0.5))
+    }
 }
