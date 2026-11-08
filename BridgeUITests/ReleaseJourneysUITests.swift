@@ -4,14 +4,15 @@ import XCTest
 /// assertions here only prove a screen is reachable, except the core loop, which
 /// also proves a finished Get Started session is counted and survives a relaunch.
 ///
-/// The simulator has no store (RevenueCat is not configured there), so the
-/// paywall screens draw without prices. Nothing here configures a RevenueCat key.
+/// The paywall reads prices from the RevenueCat Test Store in these journeys.
 ///
 /// Tests run in name order on one install: the core loop goes first so Home's
 /// daily Get Started card is still unspent when it looks for it, and no other
 /// journey finishes a daily session.
 @MainActor
 final class ReleaseJourneysUITests: XCTestCase {
+    private static let testCustomer = ["RC_PROBE_USER": "qa-ios-journeys-bridge", "RC_PROBE_SURFACE": "qa_gate"]
+
     /// Skips onboarding and the primer and keeps What's New off Home. The
     /// `-key value` form lands in the argument domain, so nothing is persisted.
     private static let seeded = [
@@ -155,7 +156,7 @@ final class ReleaseJourneysUITests: XCTestCase {
     /// the implicit initialiser cannot resolve.
     private func launchApp(seeded: Bool) -> XCUIApplication {
         let app = XCUIApplication(bundleIdentifier: "com.jackwallner.bridge")
-        QA.launch(app, arguments: seeded ? Self.seeded : [])
+        QA.launch(app, environment: Self.testCustomer, arguments: ["-rcfunnelprobe"] + (seeded ? Self.seeded : []))
         return app
     }
 
