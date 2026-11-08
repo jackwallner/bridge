@@ -1,0 +1,17 @@
+{
+  "project": "BridgeUITests.xcodeproj",
+  "scheme": "BridgeUITests",
+  "uitests_dir": "BridgeUITests",
+  "journeys": [
+    "BridgeUITests/ReleaseJourneysUITests"
+  ],
+  "personas": [
+    "newcomer",
+    "accessibility",
+    "reduce-motion",
+    "german",
+    "duo"
+  ],
+  "persona_overrides": {},
+  "slot": null
+}
