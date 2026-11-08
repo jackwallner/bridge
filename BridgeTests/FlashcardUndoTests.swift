@@ -64,4 +64,38 @@ final class FlashcardUndoTests: XCTestCase {
         XCTAssertEqual(records.records[id]?.attempts, 2)
         XCTAssertEqual(records.records[id]?.streak, 2, "an undone miss broke the streak")
     }
+    private var choiceCardID: String {
+        DrillLibrary.rooms.flatMap(\.drills).compactMap { drill -> String? in
+            guard case .flashcards(let cards) = drill.kind else { return nil }
+            return cards.first { $0.choice != nil }?.id
+        }.first!
+    }
+
+    /// Answering a choice card, then Undo (which rewinds the card before it),
+    /// dropped the pick but kept its grade, so the card came back unanswered
+    /// and its next pick was a second graded attempt. The pick's grade is now
+    /// snapshotted at pick time and retracted with it.
+    func testUndoAfterAChoicePickCountsOnlyTheRepick() {
+        let suite = defaults()
+        let records = PracticeRecordStore(defaults: suite)
+        let progress = ProgressStore(defaults: suite)
+        let id = choiceCardID
+
+        // Pick on the front choice card (wrong), after the previous card's swipe.
+        let before = records.snapshot(itemID: id)
+        let wasSeen = progress.seenItems.contains(id)
+        let wasMissed = progress.missedItems.contains(id)
+        progress.recordItem(id: id, correct: false)
+        records.record(itemID: id, roomID: "card-room", correct: false)
+        // Undo the previous card: the pick is dropped, so its grade goes too.
+        progress.restoreItem(id: id, seen: wasSeen, missed: wasMissed)
+        records.restore(itemID: id, to: before)
+        // The card comes back up unanswered and is picked again (right).
+        progress.recordItem(id: id, correct: true)
+        records.record(itemID: id, roomID: "card-room", correct: true)
+
+        XCTAssertEqual(records.records[id]?.attempts, 1, "the dropped pick still counted")
+        XCTAssertEqual(records.records[id]?.correct, 1)
+        XCTAssertFalse(progress.missedItems.contains(id), "the dropped wrong pick still marks the card missed")
+    }
 }
