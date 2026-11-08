@@ -134,7 +134,7 @@ final class ReleaseJourneysUITests: XCTestCase {
         tap(statsLink(in: app), name: "progress chips")
         XCTAssertTrue(app.navigationBars[L("Your Progress")].waitForExistence(timeout: 10))
         QA.checkpoint(app, "progress")
-        tap(app.navigationBars.buttons.firstMatch, name: "back")
+        tap(backButton(in: app), name: "back")
         home("home-after-progress", in: app)
 
         tap(app.buttons[L("Settings")], name: "Settings")
@@ -180,6 +180,14 @@ final class ReleaseJourneysUITests: XCTestCase {
 
     private func advanceButton(in app: XCUIApplication) -> XCUIElement {
         app.buttons.matching(NSPredicate(format: "label IN %@", [L("Next"), L("Finish")])).firstMatch
+    }
+
+    /// The system back button. On the unfolded Duo it is drawn beside the
+    /// status area, outside the navigation bar's element tree, so the bar's own
+    /// buttons are not enough there.
+    private func backButton(in app: XCUIApplication) -> XCUIElement {
+        let inBar = app.navigationBars.buttons.firstMatch
+        return inBar.waitForExistence(timeout: 3) ? inBar : app.buttons["BackButton"]
     }
 
     private func statsLink(in app: XCUIApplication) -> XCUIElement {
