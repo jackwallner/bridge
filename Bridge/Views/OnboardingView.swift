@@ -517,9 +517,11 @@ struct OnboardingView: View {
                 .font(.subheadline.weight(.medium))
                 .foregroundStyle(Theme.inkSecondary)
                 .multilineTextAlignment(.center)
+                .frame(minHeight: 44)
+                .contentShape(Rectangle())
         }
-        // 30pt, as shipped in 1.3.2: the trial page's geometry is the proven
-        // one. Only the accessibility-size layout, where it scrolls, grows it.
+        // Keep the 30pt slot at standard sizes and use the adjacent gaps for
+        // the larger hit target.
         .frame(minHeight: dynamicTypeSize.isAccessibilitySize ? 44 : 30)
         .frame(height: dynamicTypeSize.isAccessibilitySize ? nil : 30)
         .disabled(!onTrialPageNow || subscriptions.isPro || purchasing || restoring)
@@ -544,16 +546,24 @@ struct OnboardingView: View {
             ? AnyLayout(VStackLayout(spacing: 8))
             : AnyLayout(HStackLayout(spacing: 14))
         return layout {
-            Link("Terms", destination: PaywallLinks.terms)
-            Link("Privacy", destination: PaywallLinks.privacy)
-            Button("Restore") {
+            Link(destination: PaywallLinks.terms) { legalLabel("Terms") }
+            Link(destination: PaywallLinks.privacy) { legalLabel("Privacy") }
+            Button {
                 restorePurchases()
+            } label: {
+                legalLabel("Restore")
             }
         }
         .font(.caption2)
         .foregroundStyle(Theme.inkTertiary)
-        .frame(minHeight: 20)
+        .frame(height: dynamicTypeSize.isAccessibilitySize ? nil : 20, alignment: .top)
         .disabled(!onTrialPageNow || subscriptions.isPro || purchasing || restoring)
+    }
+
+    private func legalLabel(_ title: LocalizedStringKey) -> some View {
+        Text(title)
+            .frame(minHeight: 44, alignment: dynamicTypeSize.isAccessibilitySize ? .center : .top)
+            .contentShape(Rectangle())
     }
 
     private var pageDots: some View {

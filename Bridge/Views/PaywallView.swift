@@ -121,7 +121,7 @@ struct PaywallContent: View {
                                 .padding(.horizontal, 6)
                                 .padding(.vertical, 2)
                                 .background(Theme.gold.opacity(0.18), in: Capsule())
-                                .foregroundStyle(Theme.goldText)
+                                .foregroundStyle(Theme.inkSecondary)
                                 .fixedSize(horizontal: false, vertical: stacks)
                         }
                     }
@@ -145,8 +145,8 @@ struct PaywallContent: View {
                             if let anchor {
                                 Text(anchor)
                                     .font(.caption2)
-                                    .foregroundStyle(Theme.inkTertiary)
-                                    .strikethrough(true, color: Theme.inkTertiary)
+                                    .foregroundStyle(Theme.inkSecondary)
+                                    .strikethrough(true, color: Theme.inkSecondary)
                             }
                             Text(perMonth)
                                 .font(.caption2)
