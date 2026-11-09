@@ -29,7 +29,8 @@ final class ReleaseJourneysUITests: XCTestCase {
     // MARK: - Journeys
 
     func testCoreLoopQuickSessionCountsAndSurvivesRelaunch() {
-        let app = launchApp(seeded: true)
+        // The missed item comes first and exercises the long answer after grading.
+        let app = launchApp(seeded: true, arguments: ["-progress.missedItems", "(more-defense-count)"])
         home("home-before-session", in: app)
         let before = drillsDone(in: app)
         XCTAssertFalse(app.staticTexts[L("Today's session is done")].exists)
@@ -172,9 +173,10 @@ final class ReleaseJourneysUITests: XCTestCase {
 
     /// Addressed by bundle id: PRODUCT_NAME differs from the target name, which
     /// the implicit initialiser cannot resolve.
-    private func launchApp(seeded: Bool) -> XCUIApplication {
+    private func launchApp(seeded: Bool, arguments: [String] = []) -> XCUIApplication {
         let app = XCUIApplication(bundleIdentifier: "com.jackwallner.bridge")
-        QA.launch(app, environment: Self.testCustomer, arguments: ["-rcfunnelprobe"] + (seeded ? Self.seeded : []))
+        QA.launch(app, environment: Self.testCustomer,
+                  arguments: ["-rcfunnelprobe"] + (seeded ? Self.seeded : []) + arguments)
         return app
     }
 

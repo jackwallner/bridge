@@ -34,6 +34,8 @@ private let questionExplanationID = "question-explanation"
 /// Shared question scaffolding: prompt + cards + choices + explanation, the
 /// shape every choice-based drill uses (Quiz, Hand Match, Quick Session).
 struct QuestionPager<Choices: View>: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     let prompt: String
     let cards: [BridgeCard]
     let explanation: String
@@ -93,7 +95,7 @@ struct QuestionPager<Choices: View>: View {
                 guard isAnswered else { return }
                 // Bring the coaching note into view rather than leaving it
                 // parked below the fold behind the Next button.
-                withAnimation(.easeOut(duration: 0.35)) {
+                withAnimation(reduceMotion ? nil : .easeOut(duration: 0.35)) {
                     proxy.scrollTo(questionExplanationID, anchor: .bottom)
                 }
             }
@@ -136,9 +138,10 @@ struct ChoiceList: View {
                 shakes = 0
                 return
             }
-            withAnimation(.spring(response: 0.35, dampingFraction: 0.5).delay(0.05)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.35, dampingFraction: 0.5).delay(0.05)) {
                 landed = true
             }
+            guard !reduceMotion else { return }
             shineTrigger += 1
             if selection != answerIndex {
                 withAnimation(.linear(duration: 0.4)) { shakes = 2 }
@@ -161,13 +164,14 @@ struct ChoiceList: View {
                     .font(.body.weight(answered && isAnswer ? .semibold : .medium))
                     .foregroundStyle(Theme.ink)
                     .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
                 Spacer()
                 if answered {
                     if isAnswer {
                         Image(systemName: "checkmark.circle.fill")
                             .font(.body.weight(.bold))
                             .foregroundStyle(Theme.bamGreen)
-                            .scaleEffect(landed ? 1.2 : 0.4)
+                            .scaleEffect(reduceMotion ? 1 : (landed ? 1.2 : 0.4))
                     } else if isMiss {
                         Image(systemName: "xmark.circle.fill").foregroundStyle(Theme.crakRed)
                     }
@@ -193,10 +197,10 @@ struct ChoiceList: View {
             }
             .shine(trigger: answered && isAnswer ? shineTrigger : 0)
             .winGlow(Theme.bamGreen, active: answered && isAnswer && landed)
-            .scaleEffect(answered && isAnswer && landed ? 1.035 : 1)
+            .scaleEffect(answered && isAnswer && landed && !reduceMotion ? 1.035 : 1)
             .modifier(ShakeEffect(travels: isMiss && !reduceMotion ? shakes : 0))
             .opacity(recedes ? 0.72 : 1)
-            .animation(.spring(response: 0.3, dampingFraction: 0.8), value: answered)
+            .animation(reduceMotion ? nil : .spring(response: 0.3, dampingFraction: 0.8), value: answered)
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("drill-answer-\(index)")

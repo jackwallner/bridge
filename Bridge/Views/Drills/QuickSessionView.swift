@@ -60,6 +60,7 @@ struct QuickSessionView: View {
     }
 
     @EnvironmentObject private var progress: ProgressStore
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @StateObject private var minuteStore = BridgeMinuteStore.shared
 
     @State private var index = 0
@@ -210,13 +211,15 @@ struct QuickSessionView: View {
     /// with a full-screen glow flash and a stronger haptic + banner at streak
     /// milestones. A miss keeps the existing gentle feedback in `grade`.
     private func landCorrect() {
-        confettiParticleCount = particleCount(forStreak: streak)
-        confettiTrigger += 1
         Haptics.correctAnswer()
         SoundPlayer.play(.success)
 
-        flashOpacity = 0.14
-        withAnimation(.easeOut(duration: 0.5)) { flashOpacity = 0 }
+        if !reduceMotion {
+            confettiParticleCount = particleCount(forStreak: streak)
+            confettiTrigger += 1
+            flashOpacity = 0.14
+            withAnimation(.easeOut(duration: 0.5)) { flashOpacity = 0 }
+        }
 
         guard Self.streakMilestones.contains(streak) else { return }
         Haptics.impact(.rigid, intensity: 1.0)
@@ -235,13 +238,13 @@ struct QuickSessionView: View {
     private func announceStreak(_ streak: Int) {
         streakBannerTrigger += 1
         let trigger = streakBannerTrigger
-        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+        withAnimation(reduceMotion ? nil : .spring(response: 0.4, dampingFraction: 0.7)) {
             streakBannerText = String(localized: "\(streak) in a row!")
         }
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 1_600_000_000)
             guard trigger == streakBannerTrigger else { return }
-            withAnimation(.easeOut(duration: 0.3)) { streakBannerText = nil }
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.3)) { streakBannerText = nil }
         }
     }
 
@@ -254,12 +257,12 @@ struct QuickSessionView: View {
         case .gameNightPrep:
             break
         }
-        withAnimation(.easeInOut(duration: 0.3)) { finished = true }
+        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.3)) { finished = true }
     }
 
     private func advance() {
         if index + 1 < items.count {
-            withAnimation(.spring(response: 0.4, dampingFraction: 0.85)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.4, dampingFraction: 0.85)) {
                 selection = nil
                 index += 1
             }

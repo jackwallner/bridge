@@ -10,6 +10,7 @@ struct DrillCompleteView: View {
 
     @EnvironmentObject private var progress: ProgressStore
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var reviewMoment = 0
     @State private var recorded = false
     @State private var celebrate = false
@@ -22,7 +23,7 @@ struct DrillCompleteView: View {
                 Circle()
                     .fill(Theme.jade.opacity(0.12))
                     .frame(width: 132, height: 132)
-                    .scaleEffect(celebrate ? 1 : 0.6)
+                    .scaleEffect(celebrate || reduceMotion ? 1 : 0.6)
                 if let score {
                     VStack(spacing: 2) {
                         Text("\(score)/\(total)")
@@ -39,7 +40,7 @@ struct DrillCompleteView: View {
                         .foregroundStyle(Theme.jade)
                 }
             }
-            .animation(.spring(response: 0.5, dampingFraction: 0.6), value: celebrate)
+            .animation(reduceMotion ? nil : .spring(response: 0.5, dampingFraction: 0.6), value: celebrate)
             VStack(spacing: 8) {
                 Text(headline)
                     .font(Theme.display(30))
