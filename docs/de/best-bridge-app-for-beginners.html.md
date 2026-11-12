@@ -1,32 +1,32 @@
 # Beste Bridge-App für Einsteiger (2026): 12 im Vergleich
 
-> Die besten Bridge-Apps für Einsteiger auf iPhone und iPad im Oktober 2026 verglichen: Kurse, Spiele gegen Bots, Online-Duplicate, Übungen.
+> Die besten Bridge-Apps für Einsteiger auf iPhone und iPad im November 2026 verglichen: Kurse, Spiele gegen Bots, Online-Duplicate, Übungen.
 
 Web page: https://jackwallner.com/ios/bridge/de/best-bridge-app-for-beginners.html
 
 ## Beste Bridge-App für Einsteiger
 
-Von Jack Wallner · Zuletzt aktualisiert am 28. Oktober 2026
+Von Jack Wallner · Zuletzt aktualisiert am 12. November 2026
 
 **Am besten für einen kostenlosen Kurs von null an:** Tricky Bridge: Learn & Play, eine erzählerisch geführte Reihe mit 57 Lektionen. **Am besten zum Lernen mit einem Kurs wie aus dem Lehrbuch:** LearnBridge, mit über 2.000 Übungsfragen und der Wahl zwischen Standard American und Two-Over-One. **Am besten, um Blätter gegen den Computer zu spielen, mit jedem erklärten Gebot:** Bridge Mentor. **Am besten für Online-Duplicate mit Ranglisten:** Fun Bridge. **Am besten für kurze Übungen zu Punktezählen, Eröffnungen und Kartenspiel:** Bridge Trainer, die App, die ich selbst mache.
 
 Diese Apps erfüllen unterschiedliche Aufgaben. Zwei bringen etwas bei, zwei lassen Sie spielen, und eine übt, daher hängt die richtige Wahl davon ab, ob Sie die Regeln lernen, Blätter spielen oder zwischen den Sitzungen Gewohnheiten aufbauen wollen.
 
-**So haben wir verglichen (Oktober 2026):** Ich habe Tricky Bridge, LearnBridge und Bridge Mentor auf einem Mac laufen lassen und den App-Store-Eintrag samt einer Auswahl aktueller Bewertungen von Fun Bridge gelesen, das ich nicht laufen ließ. Bei allen fünf habe ich Bewertungen, Aktualisierungsdaten, Geräte und Kaufarten anhand der Lookup-Daten von Apple geprüft. Sieben weitere Apps, darunter BBO, werden weiter unten anhand ihrer App-Store-Einträge verglichen, mit den US-Preisen vom 28. Oktober 2026.
+**So haben wir verglichen (November 2026):** Ich habe Tricky Bridge, LearnBridge und Bridge Mentor auf einem Mac laufen lassen und den App-Store-Eintrag samt einer Auswahl aktueller Bewertungen von Fun Bridge gelesen, das ich nicht laufen ließ. Bei allen fünf habe ich Bewertungen, Aktualisierungsdaten, Geräte und Kaufarten anhand der Lookup-Daten von Apple geprüft. Sieben weitere Apps, darunter BBO, werden weiter unten anhand ihrer App-Store-Einträge verglichen, mit den US-Preisen vom 12. November 2026.
 
 **Hinweis:** Jack Wallner macht Bridge Trainer, eine der Apps unten. Ich habe versucht, jede Beschreibung mit dem zu beginnen, was die App gut kann.
 
 ## Wie schneiden die besten Bridge-Apps für Einsteiger im Vergleich ab?
 
-Bewertungen und Anzahlen sind die Zahlen des US-App-Stores im Oktober 2026. Zuletzt aktualisiert ist das Datum der aktuellen Version.
+Bewertungen und Anzahlen sind die Zahlen des US-App-Stores im November 2026. Zuletzt aktualisiert ist das Datum der aktuellen Version.
 
 | App | Am besten für | Preismodell | Apple Watch | iPad | Konto | Bewertung (Anzahl) | Zuletzt aktualisiert |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Fun Bridge** | Online-Duplicate mit Ranglisten | Kostenlos + Abo und Blätterpakete | Nein | Ja | Erforderlich (laut Bewertungen) | 4.59 (13,887) | 2026-10-19 |
-| **Tricky Bridge: Learn & Play** | Ein kostenloser, erzählerisch geführter Kurs | Kostenlos + Abo und Blätterpakete | Nein | Ja | Keine gesehen | 4.87 (4,492) | 2025-08-19 |
+| **Fun Bridge** | Online-Duplicate mit Ranglisten | Kostenlos + Abo und Blätterpakete | Nein | Ja | Erforderlich (laut Bewertungen) | 4.59 (13,920) | 2026-10-19 |
+| **Tricky Bridge: Learn & Play** | Ein kostenloser, erzählerisch geführter Kurs | Kostenlos + Abo und Blätterpakete | Nein | Ja | Keine gesehen | 4.86 (4,543) | 2026-11-09 |
 | **LearnBridge** | Ein strukturierter Kurs wie aus dem Lehrbuch | Kostenlos + kostenpflichtige Lektionspakete | Nein | Ja | Keine | 4.95 (62) | 2024-04-09 |
-| **Bridge Mentor** | Blätter spielen, mit jedem erklärten Gebot | Kostenlos (5 Blätter pro Tag) + Abo | Nein | Ja | Keine (Game Center für Duplicate) | 4.35 (678) | 2025-06-13 |
-| **Bridge Trainer** | Kurze Übungen mit dem Warum zu jeder Antwort | Kostenlos + Abo oder lebenslanger Kauf | Nein | Ja | Keine | Noch keine Bewertungen | 2026-10-10 |
+| **Bridge Mentor** | Blätter spielen, mit jedem erklärten Gebot | Kostenlos (5 Blätter pro Tag) + Abo | Nein | Ja | Keine (Game Center für Duplicate) | 4.35 (682) | 2025-06-13 |
+| **Bridge Trainer** | Kurze Übungen mit dem Warum zu jeder Antwort | Kostenlos + Abo oder lebenslanger Kauf | Nein | Ja | Keine | 4.50 (2) | 2026-11-10 |
 
 ## Worin ist jede Bridge-App am besten?
 
@@ -34,7 +34,7 @@ Fun Bridge ist zum Wettbewerb im Duplicate da, Tricky Bridge und LearnBridge bri
 
 ### Fun Bridge
 
-Fun Bridge ist die am häufigsten bewertete Bridge-App hier und für Duplicate gebaut: Sie spielen Süd mit demselben KI-Partner und denselben Gegnern wie alle anderen und vergleichen dann die Ergebnisse in Ranglisten, Ligen und Tagesturnieren. Der Eintrag bietet außerdem interaktive Lektionen, kommentierte Blätter von Meistern, Wiedergabe und Analyse sowie einstellbare Konventionen. Die Nachteile für Einsteiger: Die besten Funktionen stehen hinter einem Abo, ein Konto ist nötig, und ein großer Teil der aktuellen Ein-Stern-Bewertungen betrifft Konto- und Serverprobleme oder den Roboterpartner.
+Fun Bridge ist die am häufigsten bewertete Bridge-App hier und für Duplicate gebaut: Sie spielen Süd mit demselben KI-Partner und denselben Gegnern wie alle anderen und vergleichen dann die Ergebnisse in Ranglisten, Ligen und Tagesturnieren. Der Eintrag bietet außerdem interaktive Lektionen, kommentierte Blätter von Meistern, Wiedergabe und Analyse sowie einstellbare Konventionen. Die Nachteile für Einsteiger: Viele Funktionen erfordern ein Abo oder Blätterpakete, ein Konto ist nötig, und einige Bewertungen mit wenigen Sternen erwähnen Anmelde- oder Serverfehler und das Reizen des Roboterpartners.
 
 ### Tricky Bridge: Learn & Play
 
@@ -50,21 +50,21 @@ Bridge Mentor teilt ein volles Rubber-Bridge-Blatt aus, sobald Sie die App öffn
 
 ### Bridge Trainer (meine App)
 
-Bridge Trainer hat vier kostenlose Räume: Karten, Reizen, Alleinspieler und Abwehr. Die Übungen decken das Zählen der Figurenpunkte, die Wahl einer Eröffnung aus einem 13-Karten-Blatt, die Spielplanung und die Wahl des Ausspiels ab, und der Grund für jede Antwort erscheint nach dem Antworten. Es gibt keine Gegner und kein Konto. Die Grenzen sind echt. Die kostenlosen Reiz-Übungen enden bei der Eröffnung (Passen, eine Farbe oder 1NT). Antworten und Wettbewerbsreizen erscheinen nur als kurze Quizfragen in den Bridge+ Master Tables, die Stayman, Transfers, Informationskontras und Sperrgebote abdecken, Sie spielen also keine vollständigen Reizungen aus. Fragen zu Alleinspiel und Abwehr sind Einzelentscheidungen, kein ganzes Blatt. Es nutzt nur Standard American für Einsteiger, und es ist neu und noch ohne Bewertungen. Endloses Üben, Fix My Mistakes und die Challenge mit Zeitlimit brauchen Bridge+.
+Bridge Trainer hat vier kostenlose Räume: Karten, Reizen, Alleinspieler und Abwehr. Die Übungen decken das Zählen der Figurenpunkte, die Wahl einer Eröffnung aus einem 13-Karten-Blatt, die Spielplanung und die Wahl des Ausspiels ab, und der Grund für jede Antwort erscheint nach dem Antworten. Es gibt keine Gegner und kein Konto. Die Grenzen sind echt. Die kostenlosen Reiz-Übungen enden bei der Eröffnung (Passen, eine Farbe oder 1NT). Antworten und Wettbewerbsreizen erscheinen nur als kurze Quizfragen in den Bridge+ Master Tables, die Stayman, Transfers, Informationskontras und Sperrgebote abdecken, Sie spielen also keine vollständigen Reizungen aus. Fragen zu Alleinspiel und Abwehr sind Einzelentscheidungen, kein ganzes Blatt. Es nutzt nur Standard American für Einsteiger, und es ist neu und hat bisher nur zwei Bewertungen. Endloses Üben, Fix My Mistakes und die Challenge mit Zeitlimit brauchen Bridge+.
 
 ## Und was ist mit BBO und anderen Bridge-Apps?
 
-BBO ist der größte Ort, um online mit echten Menschen Bridge zu spielen, hat aber keine Lektionen und passt daher zu Spielern, die bereits reizen können. Für Einsteiger sind die stärksten der übrigen Audrey Grants Better Bridge für einen kostenpflichtigen Kurs und Bridge by NeuralPlay für Offline-Spiele gegen Roboter in dem Reizsystem, das Ihr Club nutzt. Ich habe diese sieben nicht laufen lassen; die Tabelle stammt aus ihren US-App-Store-Einträgen vom 28. Oktober 2026.
+BBO ist der größte Ort, um online mit echten Menschen Bridge zu spielen, hat aber keine Lektionen und passt daher zu Spielern, die bereits reizen können. Für Einsteiger sind die stärksten der übrigen Audrey Grants Better Bridge für einen kostenpflichtigen Kurs und Bridge by NeuralPlay für Offline-Spiele gegen Roboter in dem Reizsystem, das Ihr Club nutzt. Ich habe diese sieben nicht laufen lassen; die Tabelle stammt aus ihren US-App-Store-Einträgen vom 12. November 2026.
 
 | App | Preis (US-Eintrag) | Roboterpartner | Lektionen für Einsteiger | Reizsysteme | Offline | Bewertung (Anzahl) |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Bridge Base Online (BBO)** | Kostenlos; Premium 9,99 $, werbefrei 3,99 $ pro Monat | Ja (Übungsroboter, mehr mit Premium) | Nein (verweist auf BBO Trainer) | 2/1, Precision, einfache 5er-Oberfarben | Nicht angegeben | 4.54 (2,233) |
-| **BBO Trainer** | Kostenlose Stufe (Tagesaufgabe, Mini Bridge, 4 Blätter pro Tag); danach etwa 9,99 $ pro Monat nach einem kostenlosen Monat | KI-Gegner | Mini Bridge, ein vereinfachter Einstieg | Nicht angegeben | Nein (Internet erforderlich) | 4.65 (492) |
-| **Audrey Grant's Better Bridge** | Kostenlos; Kurs Bridge Basics 1 für 34,99 $ (iPad), Tageskolumne 9,99 $ pro Monat | Ja, Übungsblätter im Kurs | Ja, Bridge Basics 1 für absolute Einsteiger | Nicht angegeben | Teilweise | 4.73 (6,433) |
-| **Bridge by NeuralPlay** | Kostenlos mit Werbung; Werbung entfernen einmalig 12,99 $ | Ja, 6 Stufen | Nein; auf ein Gebot tippen für seine Bedeutung | SAYC, 2/1, Acol, Precision | Ja | 4.61 (7,005) |
-| **Shark Bridge** | Kostenlos; einmalig 29,99 $ oder VIP 34,99 $ pro Jahr | Ja, vom Einsteiger bis zum Experten | Nein; Unterrichtsblätter mit VIP | Standard American, 2/1 | Ja (Turniere online) | 4.63 (1,183) |
-| **Bridge V+** | Kostenlos; Upgrade 7,99 $ | Ja | Nein; Reizratgeber und Hinweise | Eigene Engine, 2/1-Option | Ja (Turniere online) | 4.54 (6,501) |
-| **Bridge Baron** | Kostenlos + Monatsabo | Ja, 6 Stufen | Nein; Gebotserklärungen und Hinweise | Nicht angegeben | Nicht angegeben | 4.50 (1,821) |
+| **Bridge Base Online (BBO)** | Kostenlos; Premium 9,99 $, werbefrei 3,99 $ pro Monat | Ja (Übungsroboter) | Nein (BBO Trainer ist die separate Übungs-App) | Nicht im Eintrag angegeben | Nicht angegeben | 4.53 (2,237) |
+| **BBO Trainer** | Kostenlose Stufe (Tagesaufgabe, Mini Bridge, 4 Blätter pro Tag); danach 9,99 $ pro Monat nach einem kostenlosen Monat | KI-Gegner | Mini Bridge, ein vereinfachter Einstieg | Nicht angegeben | Nein (Internet erforderlich) | 4.65 (502) |
+| **Audrey Grant's Better Bridge** | Kostenlos; Kurs Bridge Basics 1 für 34,99 $ (iPad), Tageskolumne 9,99 $ pro Monat | Ja, Übungsblätter im Kurs | Ja, Bridge Basics 1 für absolute Einsteiger | Nicht angegeben | Nicht im Eintrag angegeben | 4.73 (6,455) |
+| **Bridge by NeuralPlay** | Kostenlos mit Werbung; Werbung entfernen einmalig 12,99 $ | Ja, 6 Stufen | Nein; auf ein Gebot tippen für seine Bedeutung | SAYC, 2/1, Acol, Precision | Ja | 4.60 (7,053) |
+| **Shark Bridge** | Kostenlos; einmalig 29,99 $ oder VIP 34,99 $ pro Jahr | Ja, vom Einsteiger bis zum Experten | Nein; spielt die Unterrichtsblätter Ihres Lehrers | Standard American, 2/1 | Ja (Turniere online) | 4.63 (1,192) |
+| **Bridge V+** | Kostenlos; Upgrade 7,99 $ | Ja | Nein; Reizratgeber und Hinweise | Nicht im Eintrag angegeben | Nicht im Eintrag angegeben | 4.54 (6,507) |
+| **Bridge Baron** | Kostenlos; Abo 7,90 $ pro Monat | Ja, einstellbare Schwierigkeit | Nein; Gebotserklärungen und Hinweise | Nicht angegeben | Nicht angegeben | 4.50 (1,830) |
 
 Zwei davon füllen Lücken der fünf oben. NeuralPlay ist die einzige, mit der Sie zwischen SAYC, 2/1, Acol und Precision wechseln können, was zählt, wenn Ihr Club oder Ihr Land Acol spielt. Audrey Grants Kurs kommt einem Klassenzimmer am nächsten, ist aber der teuerste Einstieg und nur für iPad.
 
@@ -137,4 +137,4 @@ Die Seite Learn Bridge der ACBL listet einen kostenlosen einstündigen Trickstar
 - [Bridge V+](https://apps.apple.com/de/app/bridge-v-bridge-card-game/id479242966) (App Store)
 - [Bridge Baron](https://apps.apple.com/de/app/bridge-baron-improve-play/id1465176932) (App Store)
 
-Bridge Trainer ist eine unabhängige App und nicht mit der ACBL oder einer hier verglichenen App verbunden. App-Details wurden im Oktober 2026 geprüft und können sich ändern.
+Bridge Trainer ist eine unabhängige App und nicht mit der ACBL oder einer hier verglichenen App verbunden. App-Details wurden im November 2026 geprüft und können sich ändern.

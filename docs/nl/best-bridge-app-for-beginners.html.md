@@ -1,32 +1,32 @@
 # Beste bridge-app voor beginners (2026): 12 vergeleken
 
-> De beste bridge-apps voor beginners op iPhone en iPad vergeleken in oktober 2026: lescursussen, botspellen, online parenwedstrijden en oefeningen, eerlijk.
+> De beste bridge-apps voor beginners op iPhone en iPad vergeleken in november 2026: lescursussen, botspellen, online parenwedstrijden en oefeningen, eerlijk.
 
 Web page: https://jackwallner.com/ios/bridge/nl/best-bridge-app-for-beginners.html
 
 ## Beste bridge-app voor beginners
 
-Door Jack Wallner · Laatst bijgewerkt 28-10-2026
+Door Jack Wallner · Laatst bijgewerkt 12-11-2026
 
 **Beste voor een gratis cursus vanaf nul:** Tricky Bridge: Learn & Play, een verhalende reeks van 57 lessen. **Beste om te leren met een cursus in boekstijl:** LearnBridge, met meer dan 2.000 oefenvragen en de keuze tussen Standard American of Two-Over-One. **Beste om handen tegen de computer te spelen met elk bod uitgelegd:** Bridge Mentor. **Beste voor online parenwedstrijden met ranglijsten:** Fun Bridge. **Beste voor korte oefeningen over punten tellen, openingsbiedingen en kaartspel:** Bridge Trainer, de app die ik maak.
 
 Deze apps doen verschillend werk. Twee leren je het spel, twee laten je spelen en één oefent, dus de juiste keuze hangt af van of je de regels wilt leren, handen wilt spelen of gewoontes wilt opbouwen tussen sessies door.
 
-**Hoe we vergeleken (oktober 2026):** Ik heb Tricky Bridge, LearnBridge en Bridge Mentor op een Mac gedraaid en de App Store-pagina en een selectie recente reviews van Fun Bridge gelezen, die ik niet heb gedraaid. Voor alle vijf heb ik beoordelingen, updatedatums, apparaten en aankooptypes gecontroleerd in de opzoekgegevens van Apple. Zeven andere apps, waaronder BBO, worden hieronder vergeleken op basis van hun App Store-pagina's, met Amerikaanse prijzen zoals vermeld op 28 oktober 2026.
+**Hoe we vergeleken (november 2026):** Ik heb Tricky Bridge, LearnBridge en Bridge Mentor op een Mac gedraaid en de App Store-pagina en een selectie recente reviews van Fun Bridge gelezen, die ik niet heb gedraaid. Voor alle vijf heb ik beoordelingen, updatedatums, apparaten en aankooptypes gecontroleerd in de opzoekgegevens van Apple. Zeven andere apps, waaronder BBO, worden hieronder vergeleken op basis van hun App Store-pagina's, met Amerikaanse prijzen zoals vermeld op 12 november 2026.
 
 **Openheid:** Jack Wallner maakt Bridge Trainer, een van de apps hieronder. Ik heb geprobeerd elke beschrijving te beginnen met wat de app goed doet.
 
 ## Hoe verhouden de beste bridge-apps voor beginners zich tot elkaar?
 
-Beoordelingen en aantallen zijn de cijfers van de Amerikaanse App Store per oktober 2026. Laatst bijgewerkt is de datum van de huidige versie.
+Beoordelingen en aantallen zijn de cijfers van de Amerikaanse App Store per november 2026. Laatst bijgewerkt is de datum van de huidige versie.
 
 | App | Het beste voor | Prijsmodel | Apple Watch | iPad | Account | Beoordeling (aantal) | Laatst bijgewerkt |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Fun Bridge** | Online parenwedstrijden met ranglijst | Gratis + abonnement en spelpakketten | Nee | Ja | Vereist (volgens reviews) | 4.59 (13,887) | 2026-10-19 |
-| **Tricky Bridge: Learn & Play** | Een gratis, verhalende cursus | Gratis + abonnement en spelpakketten | Nee | Ja | Niet gezien | 4.87 (4,492) | 2025-08-19 |
+| **Fun Bridge** | Online parenwedstrijden met ranglijst | Gratis + abonnement en spelpakketten | Nee | Ja | Vereist (volgens reviews) | 4.59 (13,920) | 2026-10-19 |
+| **Tricky Bridge: Learn & Play** | Een gratis, verhalende cursus | Gratis + abonnement en spelpakketten | Nee | Ja | Niet gezien | 4.86 (4,543) | 2026-11-09 |
 | **LearnBridge** | Een gestructureerde cursus in boekstijl | Gratis + betaalde lespakketten | Nee | Ja | Geen | 4.95 (62) | 2024-04-09 |
-| **Bridge Mentor** | Handen spelen met elk bod uitgelegd | Gratis (5 handen per dag) + abonnement | Nee | Ja | Geen (Game Center voor parenwedstrijden) | 4.35 (678) | 2025-06-13 |
-| **Bridge Trainer** | Korte oefeningen met het waarom bij elk antwoord | Gratis + abonnement of levenslange aankoop | Nee | Ja | Geen | Nog geen beoordelingen | 2026-10-10 |
+| **Bridge Mentor** | Handen spelen met elk bod uitgelegd | Gratis (5 handen per dag) + abonnement | Nee | Ja | Geen (Game Center voor parenwedstrijden) | 4.35 (682) | 2025-06-13 |
+| **Bridge Trainer** | Korte oefeningen met het waarom bij elk antwoord | Gratis + abonnement of levenslange aankoop | Nee | Ja | Geen | 4.50 (2) | 2026-11-10 |
 
 ## Waar is elke bridge-app het beste in?
 
@@ -34,7 +34,7 @@ Fun Bridge is voor wedstrijden in parenwedstrijden, Tricky Bridge en LearnBridge
 
 ### Fun Bridge
 
-Fun Bridge is de meest beoordeelde bridge-app hier en is gebouwd voor parenwedstrijden: je speelt Zuid met dezelfde AI-partner en tegenstanders als iedereen, en vergelijkt daarna scores in ranglijsten, competities en dagelijkse toernooien. De pagina biedt ook interactieve lessen, becommentarieerde spellen van kampioenen, herhaling en analyse, en instelbare conventies. De nadelen voor een beginner: de beste functies zitten achter een abonnement, er is een account nodig en een groot deel van de recente reviews met één ster gaat over account- en serverproblemen of de robotpartner.
+Fun Bridge is de meest beoordeelde bridge-app hier en is gebouwd voor parenwedstrijden: je speelt Zuid met dezelfde AI-partner en tegenstanders als iedereen, en vergelijkt daarna scores in ranglijsten, competities en dagelijkse toernooien. De pagina biedt ook interactieve lessen, becommentarieerde spellen van kampioenen, herhaling en analyse, en instelbare conventies. De nadelen voor een beginner: veel functies vereisen een abonnement of spelpakketten, er is een account nodig en sommige reviews met weinig sterren noemen inlog- of serverfouten en het bieden van de robotpartner.
 
 ### Tricky Bridge: Learn & Play
 
@@ -50,21 +50,21 @@ Bridge Mentor deelt een volledige rubberbridgehand zodra je de app opent. De Hin
 
 ### Bridge Trainer (mijn app)
 
-Bridge Trainer heeft vier gratis ruimtes: Kaart, Bieden, Leider en Verdediging. De oefeningen gaan over honneurpunten tellen, een openingsbod kiezen uit een hand van 13 kaarten, het spel plannen en een uitkomst kiezen, en de reden voor elk antwoord verschijnt nadat je hebt geantwoord. Er zijn geen tegenstanders en geen account. De beperkingen zijn echt. De gratis biedoefeningen stoppen bij het openingsbod (pas, een kleur of 1NT). Antwoorden en concurrerende biedingen verschijnen alleen als korte quizvragen in de Mastertafels van Bridge+, die Stayman, transfers, informatiedoubletten en preëmpts behandelen, dus je speelt geen volledige biedingen uit. Vragen over leider en verdediging zijn losse beslissingen, geen volledig spel. De app gebruikt alleen Standard American voor beginners en is nieuw zonder beoordelingen. Eindeloos oefenen, Fix My Mistakes en de uitdaging op tijd vereisen Bridge+.
+Bridge Trainer heeft vier gratis ruimtes: Kaart, Bieden, Leider en Verdediging. De oefeningen gaan over honneurpunten tellen, een openingsbod kiezen uit een hand van 13 kaarten, het spel plannen en een uitkomst kiezen, en de reden voor elk antwoord verschijnt nadat je hebt geantwoord. Er zijn geen tegenstanders en geen account. De beperkingen zijn echt. De gratis biedoefeningen stoppen bij het openingsbod (pas, een kleur of 1NT). Antwoorden en concurrerende biedingen verschijnen alleen als korte quizvragen in de Mastertafels van Bridge+, die Stayman, transfers, informatiedoubletten en preëmpts behandelen, dus je speelt geen volledige biedingen uit. Vragen over leider en verdediging zijn losse beslissingen, geen volledig spel. De app gebruikt alleen Standard American voor beginners en is nieuw met slechts twee beoordelingen tot nu toe. Eindeloos oefenen, Fix My Mistakes en de uitdaging op tijd vereisen Bridge+.
 
 ## En BBO en andere bridge-apps?
 
-BBO is de grootste plek om online bridge te spelen met echte mensen, maar heeft geen lessen, dus het past bij spelers die al kunnen bieden. Voor beginners zijn de sterkste van de rest Audrey Grant's Better Bridge voor een betaalde cursus en Bridge van NeuralPlay voor offline robotspellen in het biedsysteem dat je club gebruikt. Ik heb deze zeven niet gedraaid; de tabel komt uit hun Amerikaanse App Store-pagina's van 28 oktober 2026.
+BBO is de grootste plek om online bridge te spelen met echte mensen, maar heeft geen lessen, dus het past bij spelers die al kunnen bieden. Voor beginners zijn de sterkste van de rest Audrey Grant's Better Bridge voor een betaalde cursus en Bridge by NeuralPlay voor offline robotspellen in het biedsysteem dat je club gebruikt. Ik heb deze zeven niet gedraaid; de tabel komt uit hun Amerikaanse App Store-pagina's van 12 november 2026.
 
 | App | Prijs (Amerikaanse vermelding) | Robotpartner | Beginnerslessen | Biedsystemen | Offline | Beoordeling (aantal) |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Bridge Base Online (BBO)** | Gratis; Premium $9.99, advertentievrij $3.99 per maand | Ja (oefenrobots, meer met Premium) | Nee (verwijst naar BBO Trainer) | 2/1, Precision, eenvoudige 5-kaart hoge kleuren | Niet vermeld | 4.54 (2,233) |
-| **BBO Trainer** | Gratis niveau (dagelijkse uitdaging, Mini Bridge, 4 handen per dag); daarna ongeveer $9.99 per maand na een gratis maand | AI-tegenstanders | Mini Bridge, een vereenvoudigde start | Niet vermeld | Nee (internet vereist) | 4.65 (492) |
-| **Audrey Grant's Better Bridge** | Gratis; cursus Bridge Basics 1 $34.99 (iPad), dagelijkse column $9.99 per maand | Ja, oefenspellen in de cursus | Ja, Bridge Basics 1 voor absolute beginners | Niet vermeld | Gedeeltelijk | 4.73 (6,433) |
-| **Bridge by NeuralPlay** | Gratis met advertenties; advertenties verwijderen eenmalig $12.99 | Ja, 6 niveaus | Nee; tik op een bod voor de betekenis | SAYC, 2/1, Acol, Precision | Ja | 4.61 (7,005) |
-| **Shark Bridge** | Gratis; eenmalig $29.99 of VIP $34.99 per jaar | Ja, van beginner tot expert | Nee; klashanden met VIP | Standard American, 2/1 | Ja (online toernooien) | 4.63 (1,183) |
-| **Bridge V+** | Gratis; upgrade $7.99 | Ja | Nee; biedgids en hints | Eigen engine, 2/1-optie | Ja (online toernooien) | 4.54 (6,501) |
-| **Bridge Baron** | Gratis + maandabonnement | Ja, 6 niveaus | Nee; biduitleg en hints | Niet vermeld | Niet vermeld | 4.50 (1,821) |
+| **Bridge Base Online (BBO)** | Gratis; Premium $9.99, advertentievrij $3.99 per maand | Ja (oefenrobots) | Nee (BBO Trainer is de aparte oefenapp) | Niet vermeld in de vermelding | Niet vermeld | 4.53 (2,237) |
+| **BBO Trainer** | Gratis niveau (dagelijkse uitdaging, Mini Bridge, 4 handen per dag); daarna $9.99 per maand na een gratis maand | AI-tegenstanders | Mini Bridge, een vereenvoudigde start | Niet vermeld | Nee (internet vereist) | 4.65 (502) |
+| **Audrey Grant's Better Bridge** | Gratis; cursus Bridge Basics 1 $34.99 (iPad), dagelijkse column $9.99 per maand | Ja, oefenspellen in de cursus | Ja, Bridge Basics 1 voor absolute beginners | Niet vermeld | Niet vermeld in de vermelding | 4.73 (6,455) |
+| **Bridge by NeuralPlay** | Gratis met advertenties; advertenties verwijderen eenmalig $12.99 | Ja, 6 niveaus | Nee; tik op een bod voor de betekenis | SAYC, 2/1, Acol, Precision | Ja | 4.60 (7,053) |
+| **Shark Bridge** | Gratis; eenmalig $29.99 of VIP $34.99 per jaar | Ja, van beginner tot expert | Nee; speelt de klashanden van je leraar | Standard American, 2/1 | Ja (online toernooien) | 4.63 (1,192) |
+| **Bridge V+** | Gratis; upgrade $7.99 | Ja | Nee; biedgids en hints | Niet vermeld in de vermelding | Niet vermeld in de vermelding | 4.54 (6,507) |
+| **Bridge Baron** | Gratis; abonnement $7.90 per maand | Ja, instelbare moeilijkheid | Nee; biduitleg en hints | Niet vermeld | Niet vermeld | 4.50 (1,830) |
 
 Twee hiervan vullen gaten in de bovenstaande vijf. NeuralPlay is de enige waarmee je kunt wisselen tussen SAYC, 2/1, Acol en Precision, wat telt als je club of land Acol speelt. De cursus van Audrey Grant komt het dichtst bij een klaslokaal, maar is de duurste start en alleen voor iPad.
 
@@ -78,7 +78,7 @@ Begin als complete beginner met de gratis lessen van Tricky Bridge. Volg je al e
 - **Je wilt strijden op dezelfde spellen als andere spelers:** Fun Bridge, zodra je je prettig voelt met bieden.
 - **Je volgt een cursus en wilt korte herhalingen tussen de lessen:** Bridge Trainer. De [biedgids voor bridge](https://jackwallner.com/ios/bridge/bridge-bidding-for-beginners.html) behandelt dezelfde openingsregels met uitgewerkte handen.
 - **Je wilt online tegen echte mensen spelen zodra je kunt bieden:** BBO.
-- **Je club speelt Acol, of je wilt offline robotspellen:** Bridge van NeuralPlay.
+- **Je club speelt Acol, of je wilt offline robotspellen:** Bridge by NeuralPlay.
 - **Je wilt geen robotpartner:** Bridge Trainer en LearnBridge hebben er geen.
 
 ## Kun je bridge oefenen zonder partner?
@@ -137,4 +137,4 @@ De pagina Learn Bridge van de ACBL vermeldt een gratis cursus Trickstarter van e
 - [Bridge V+](https://apps.apple.com/nl/app/bridge-v-bridge-card-game/id479242966) (App Store)
 - [Bridge Baron](https://apps.apple.com/nl/app/bridge-baron-improve-play/id1465176932) (App Store)
 
-Bridge Trainer is een onafhankelijke app en is niet gelieerd aan de ACBL of aan een van de hier vergeleken apps. De appgegevens zijn gecontroleerd in oktober 2026 en kunnen veranderen.
+Bridge Trainer is een onafhankelijke app en is niet gelieerd aan de ACBL of aan een van de hier vergeleken apps. De appgegevens zijn gecontroleerd in november 2026 en kunnen veranderen.

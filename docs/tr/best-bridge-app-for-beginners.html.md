@@ -1,32 +1,32 @@
 # Yeni Başlayanlar İçin En İyi Briç Uygulaması (2026)
 
-> Yeni başlayanlar için iPhone ve iPad'in en iyi briç uygulamaları, Ekim 2026: ders kursları, bot oyunları, çevrimiçi duplicate ve alıştırmalar.
+> Yeni başlayanlar için iPhone ve iPad'in en iyi briç uygulamaları, Kasım 2026: ders kursları, bot oyunları, çevrimiçi duplicate ve alıştırmalar.
 
 Web page: https://jackwallner.com/ios/bridge/tr/best-bridge-app-for-beginners.html
 
 ## Yeni başlayanlar için en iyi briç uygulaması
 
-Yazan: Jack Wallner · Son güncelleme 28.10.2026
+Yazan: Jack Wallner · Son güncelleme 12.11.2026
 
 **Sıfırdan ücretsiz bir kurs için en iyisi:** Tricky Bridge: Learn & Play, hikâye odaklı 57 derslik bir seri. **Kitap tarzı bir kursla öğrenmek için en iyisi:** LearnBridge, 2.000'den fazla alıştırma sorusu ve Standard American ya da Two-Over-One seçeneğiyle. **Bilgisayara karşı el oynamak ve her ihalenin açıklamasını görmek için en iyisi:** Bridge Mentor. **Sıralamalı çevrimiçi duplicate için en iyisi:** Fun Bridge. **Puan sayma, açılış ihaleleri ve kart oyunu üzerine kısa alıştırmalar için en iyisi:** Bridge Trainer, benim yaptığım uygulama.
 
 Bu uygulamalar farklı işler yapar. İkisi öğretir, ikisi oynatır, biri alıştırma yaptırır; bu yüzden doğru seçim kuralları öğrenmeniz, el oynamanız ya da oturumlar arasında alışkanlık kazanmanız gerekip gerekmediğine bağlıdır.
 
-**Nasıl karşılaştırdık (Ekim 2026):** Tricky Bridge, LearnBridge ve Bridge Mentor'ı bir Mac'te çalıştırdım; çalıştırmadığım Fun Bridge için App Store sayfasını ve son yorumlardan bir örneklemi okudum. Beşi için de puanları, güncelleme tarihlerini, cihazları ve satın alma türlerini Apple'ın arama verilerinden kontrol ettim. BBO dahil yedi uygulama daha aşağıda App Store sayfalarından karşılaştırıldı; ABD fiyatları 28 Ekim 2026 itibarıyla listelendiği gibidir.
+**Nasıl karşılaştırdık (Kasım 2026):** Tricky Bridge, LearnBridge ve Bridge Mentor'ı bir Mac'te çalıştırdım; çalıştırmadığım Fun Bridge için App Store sayfasını ve son yorumlardan bir örneklemi okudum. Beşi için de puanları, güncelleme tarihlerini, cihazları ve satın alma türlerini Apple'ın arama verilerinden kontrol ettim. BBO dahil yedi uygulama daha aşağıda App Store sayfalarından karşılaştırıldı; ABD fiyatları 12 Kasım 2026 itibarıyla listelendiği gibidir.
 
 **Açıklama:** Jack Wallner, aşağıdaki uygulamalardan biri olan Bridge Trainer'ı yapıyor. Her açıklamaya uygulamanın iyi yaptığı şeyle başlamaya çalıştım.
 
 ## Yeni başlayanlar için en iyi briç uygulamaları nasıl karşılaştırılır?
 
-Puanlar ve sayılar Ekim 2026 itibarıyla ABD App Store rakamlarıdır. Son güncelleme, mevcut sürümün tarihidir.
+Puanlar ve sayılar Kasım 2026 itibarıyla ABD App Store rakamlarıdır. Son güncelleme, mevcut sürümün tarihidir.
 
 | Uygulama | En uygun olduğu alan | Fiyat modeli | Apple Watch | iPad | Hesap | Puan (sayı) | Son güncelleme |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Fun Bridge** | Sıralamalı çevrimiçi duplicate | Ücretsiz + abonelik ve el paketleri | Hayır | Evet | Gerekli (yorumlara göre) | 4.59 (13,887) | 2026-10-19 |
-| **Tricky Bridge: Learn & Play** | Ücretsiz, hikâye odaklı bir kurs | Ücretsiz + abonelik ve el paketleri | Hayır | Evet | Görülmedi | 4.87 (4,492) | 2025-08-19 |
+| **Fun Bridge** | Sıralamalı çevrimiçi duplicate | Ücretsiz + abonelik ve el paketleri | Hayır | Evet | Gerekli (yorumlara göre) | 4.59 (13,920) | 2026-10-19 |
+| **Tricky Bridge: Learn & Play** | Ücretsiz, hikâye odaklı bir kurs | Ücretsiz + abonelik ve el paketleri | Hayır | Evet | Görülmedi | 4.86 (4,543) | 2026-11-09 |
 | **LearnBridge** | Yapılandırılmış, kitap tarzı bir kurs | Ücretsiz + ücretli ders paketleri | Hayır | Evet | Yok | 4.95 (62) | 2024-04-09 |
-| **Bridge Mentor** | Her ihalenin açıklamasıyla el oynama | Ücretsiz (günde 5 el) + abonelik | Hayır | Evet | Yok (duplicate için Game Center) | 4.35 (678) | 2025-06-13 |
-| **Bridge Trainer** | Her cevabın nedenini veren kısa alıştırmalar | Ücretsiz + abonelik ya da ömür boyu satın alma | Hayır | Evet | Yok | Henüz puan yok | 2026-10-10 |
+| **Bridge Mentor** | Her ihalenin açıklamasıyla el oynama | Ücretsiz (günde 5 el) + abonelik | Hayır | Evet | Yok (duplicate için Game Center) | 4.35 (682) | 2025-06-13 |
+| **Bridge Trainer** | Her cevabın nedenini veren kısa alıştırmalar | Ücretsiz + abonelik ya da ömür boyu satın alma | Hayır | Evet | Yok | 4.50 (2) | 2026-11-10 |
 
 ## Her briç uygulaması neyde en iyi?
 
@@ -34,7 +34,7 @@ Fun Bridge duplicate'te yarışmak içindir, Tricky Bridge ve LearnBridge oyunu 
 
 ### Fun Bridge
 
-Fun Bridge buradaki en çok puanlanan briç uygulamasıdır ve duplicate için yapılmıştır: herkesle aynı yapay zekâ ortak ve rakiplere karşı Güney'i oynar, sonra puanları sıralamalarda, liglerde ve günlük turnuvalarda karşılaştırırsınız. Sayfada ayrıca etkileşimli dersler, şampiyonlardan yorumlu eller, tekrar ve analiz ile yapılandırılabilir konvansiyonlar da sunuluyor. Yeni başlayan için artı ve eksiler: en iyi özellikler aboneliğin arkasında, hesap gerekiyor ve son tek yıldızlı yorumların büyük bir kısmı hesap ve sunucu sorunlarını ya da robot ortağı konu alıyor.
+Fun Bridge buradaki en çok puanlanan briç uygulamasıdır ve duplicate için yapılmıştır: herkesle aynı yapay zekâ ortak ve rakiplere karşı Güney'i oynar, sonra puanları sıralamalarda, liglerde ve günlük turnuvalarda karşılaştırırsınız. Sayfada ayrıca etkileşimli dersler, şampiyonlardan yorumlu eller, tekrar ve analiz ile yapılandırılabilir konvansiyonlar da sunuluyor. Yeni başlayan için artı ve eksiler: birçok özellik abonelik ya da el paketi gerektiriyor, hesap gerekiyor ve düşük yıldızlı bazı yorumlar giriş ya da sunucu hatalarını ve robot ortağın ihalelerini anıyor.
 
 ### Tricky Bridge: Learn & Play
 
@@ -50,21 +50,21 @@ Bridge Mentor, açtığınız anda tam bir rubber briç eli dağıtır. İpucu d
 
 ### Bridge Trainer (benim uygulamam)
 
-Bridge Trainer'ın dört ücretsiz odası var: Kart, İhale, Deklaratör ve Savunma. Alıştırmalar honör puanı saymayı, 13 kartlık bir elden açılış ihalesi seçmeyi, oyunu planlamayı ve açılış atağı seçmeyi kapsar; her cevabın nedeni cevap verdikten sonra görünür. Rakip ve hesap yok. Sınırları gerçek. Ücretsiz ihale alıştırmaları açılış ihalesinde (pas, bir renk ya da 1NT) durur. Karşılıklar ve rekabetli ihaleler yalnızca Bridge+ Usta Masaları'nda kısa sınav soruları olarak görünür; bunlar Stayman, transferler, takeout dubleler ve preemptleri kapsar, yani tam ihaleleri oynamazsınız. Deklaratör ve savunma soruları tam bir dağıtım değil, tek tek kararlardır. Yalnızca başlangıç düzeyi Standard American kullanır ve yeni olduğu için henüz puanı yok. Sınırsız alıştırma, Hatalarımı Düzelt ve süreli meydan okuma Bridge+ gerektirir.
+Bridge Trainer'ın dört ücretsiz odası var: Kart, İhale, Deklaratör ve Savunma. Alıştırmalar honör puanı saymayı, 13 kartlık bir elden açılış ihalesi seçmeyi, oyunu planlamayı ve açılış atağı seçmeyi kapsar; her cevabın nedeni cevap verdikten sonra görünür. Rakip ve hesap yok. Sınırları gerçek. Ücretsiz ihale alıştırmaları açılış ihalesinde (pas, bir renk ya da 1NT) durur. Karşılıklar ve rekabetli ihaleler yalnızca Bridge+ Usta Masaları'nda kısa sınav soruları olarak görünür; bunlar Stayman, transferler, takeout dubleler ve preemptleri kapsar, yani tam ihaleleri oynamazsınız. Deklaratör ve savunma soruları tam bir dağıtım değil, tek tek kararlardır. Yalnızca başlangıç düzeyi Standard American kullanır ve yeni olduğu için şimdilik yalnızca iki puanı var. Sınırsız alıştırma, Hatalarımı Düzelt ve süreli meydan okuma Bridge+ gerektirir.
 
 ## BBO ve diğer briç uygulamaları ne olacak?
 
-BBO, gerçek insanlarla çevrimiçi briç oynamak için en büyük yerdir ama ders sunmaz, bu yüzden zaten ihale yapabilen oyunculara uygundur. Yeni başlayanlar için kalanların en güçlüleri, ücretli bir kurs için Audrey Grant'in Better Bridge'i ve kulübünüzün kullandığı ihale sisteminde çevrimdışı robot oyunları için NeuralPlay'in Bridge'idir. Bu yediyi çalıştırmadım; tablo, 28 Ekim 2026 tarihli ABD App Store sayfalarından alınmıştır.
+BBO, gerçek insanlarla çevrimiçi briç oynamak için en büyük yerdir ama ders sunmaz, bu yüzden zaten ihale yapabilen oyunculara uygundur. Yeni başlayanlar için kalanların en güçlüleri, ücretli bir kurs için Audrey Grant'in Better Bridge'i ve kulübünüzün kullandığı ihale sisteminde çevrimdışı robot oyunları için Bridge by NeuralPlay'dir. Bu yediyi çalıştırmadım; tablo, 12 Kasım 2026 tarihli ABD App Store sayfalarından alınmıştır.
 
 | Uygulama | Fiyat (ABD listesi) | Robot ortak | Yeni başlayan dersleri | İhale sistemleri | Çevrimdışı | Puan (sayı) |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Bridge Base Online (BBO)** | Ücretsiz; Premium $9.99, reklamsız ayda $3.99 | Evet (alıştırma robotları, Premium ile daha fazlası) | Hayır (BBO Trainer'a yönlendirir) | 2/1, Precision, basit 5'li majör | Belirtilmemiş | 4.54 (2,233) |
-| **BBO Trainer** | Ücretsiz katman (günlük meydan okuma, Mini Bridge, günde 4 el); sonra bir ücretsiz aydan sonra ayda yaklaşık $9.99 | Yapay zekâ rakipler | Mini Bridge, basitleştirilmiş bir başlangıç | Belirtilmemiş | Hayır (internet gerekir) | 4.65 (492) |
-| **Audrey Grant's Better Bridge** | Ücretsiz; Bridge Basics 1 kursu $34.99 (iPad), günlük köşe yazısı ayda $9.99 | Evet, kurs içi alıştırma elleri | Evet, kesinlikle yeni başlayanlar için Bridge Basics 1 | Belirtilmemiş | Kısmen | 4.73 (6,433) |
-| **Bridge by NeuralPlay** | Reklamlarla ücretsiz; reklamları kaldırmak bir kez $12.99 | Evet, 6 seviye | Hayır; herhangi bir ihaleye dokunarak anlamını görün | SAYC, 2/1, Acol, Precision | Evet | 4.61 (7,005) |
-| **Shark Bridge** | Ücretsiz; tek seferlik $29.99 ya da VIP yılda $34.99 | Evet, başlangıçtan uzmana | Hayır; VIP ile sınıf elleri | Standard American, 2/1 | Evet (çevrimiçi turnuvalar) | 4.63 (1,183) |
-| **Bridge V+** | Ücretsiz; yükseltme $7.99 | Evet | Hayır; ihale rehberi ve ipuçları | Kendi motoru, 2/1 seçeneği | Evet (çevrimiçi turnuvalar) | 4.54 (6,501) |
-| **Bridge Baron** | Ücretsiz + aylık abonelik | Evet, 6 seviye | Hayır; ihale açıklamaları ve ipuçları | Belirtilmemiş | Belirtilmemiş | 4.50 (1,821) |
+| **Bridge Base Online (BBO)** | Ücretsiz; Premium $9.99, reklamsız ayda $3.99 | Evet (alıştırma robotları) | Hayır (BBO Trainer ayrı alıştırma uygulamasıdır) | Listede belirtilmemiş | Belirtilmemiş | 4.53 (2,237) |
+| **BBO Trainer** | Ücretsiz katman (günlük meydan okuma, Mini Bridge, günde 4 el); sonra bir ücretsiz aydan sonra ayda $9.99 | Yapay zekâ rakipler | Mini Bridge, basitleştirilmiş bir başlangıç | Belirtilmemiş | Hayır (internet gerekir) | 4.65 (502) |
+| **Audrey Grant's Better Bridge** | Ücretsiz; Bridge Basics 1 kursu $34.99 (iPad), günlük köşe yazısı ayda $9.99 | Evet, kurs içi alıştırma elleri | Evet, kesinlikle yeni başlayanlar için Bridge Basics 1 | Belirtilmemiş | Listede belirtilmemiş | 4.73 (6,455) |
+| **Bridge by NeuralPlay** | Reklamlarla ücretsiz; reklamları kaldırmak bir kez $12.99 | Evet, 6 seviye | Hayır; herhangi bir ihaleye dokunarak anlamını görün | SAYC, 2/1, Acol, Precision | Evet | 4.60 (7,053) |
+| **Shark Bridge** | Ücretsiz; tek seferlik $29.99 ya da VIP yılda $34.99 | Evet, başlangıçtan uzmana | Hayır; öğretmeninizin sınıf ellerini oynatır | Standard American, 2/1 | Evet (çevrimiçi turnuvalar) | 4.63 (1,192) |
+| **Bridge V+** | Ücretsiz; yükseltme $7.99 | Evet | Hayır; ihale rehberi ve ipuçları | Listede belirtilmemiş | Listede belirtilmemiş | 4.54 (6,507) |
+| **Bridge Baron** | Ücretsiz; abonelik ayda $7.90 | Evet, ayarlanabilir zorluk | Hayır; ihale açıklamaları ve ipuçları | Belirtilmemiş | Belirtilmemiş | 4.50 (1,830) |
 
 Bunlardan ikisi yukarıdaki beş uygulamanın boşluklarını dolduruyor. NeuralPlay, SAYC, 2/1, Acol ve Precision arasında geçiş yapmanıza izin veren tek uygulamadır; kulübünüz ya da ülkeniz Acol oynuyorsa bu önemlidir. Audrey Grant'in kursu bir sınıfa en yakın olanıdır, ama en pahalı başlangıçtır ve yalnızca iPad'dedir.
 
@@ -137,4 +137,4 @@ ACBL'nin Learn Bridge sayfası ücretsiz bir saatlik Trickstarter kursunu listel
 - [Bridge V+](https://apps.apple.com/tr/app/bridge-v-bridge-card-game/id479242966) (App Store)
 - [Bridge Baron](https://apps.apple.com/tr/app/bridge-baron-improve-play/id1465176932) (App Store)
 
-Bridge Trainer bağımsız bir uygulamadır ve ACBL ile ya da burada karşılaştırılan hiçbir uygulamayla bağlantılı değildir. Uygulama ayrıntıları Ekim 2026'da kontrol edilmiştir ve değişebilir.
+Bridge Trainer bağımsız bir uygulamadır ve ACBL ile ya da burada karşılaştırılan hiçbir uygulamayla bağlantılı değildir. Uygulama ayrıntıları Kasım 2026'da kontrol edilmiştir ve değişebilir.

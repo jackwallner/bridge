@@ -1,32 +1,32 @@
 # Bedste bridge-app til begyndere (2026): 12 sammenlignet
 
-> De bedste bridge-apps til begyndere på iPhone og iPad sammenlignet i oktober 2026: kurser, spil mod bots, online duplicate og øvelser.
+> De bedste bridge-apps til begyndere på iPhone og iPad sammenlignet i november 2026: kurser, spil mod bots, online duplicate og øvelser.
 
 Web page: https://jackwallner.com/ios/bridge/da/best-bridge-app-for-beginners.html
 
 ## Bedste bridge-app til begyndere
 
-Af Jack Wallner · Sidst opdateret 28.10.2026
+Af Jack Wallner · Sidst opdateret 12.11.2026
 
 **Bedst til et gratis kursus fra bunden:** Tricky Bridge: Learn & Play, en fortællende serie med 57 lektioner. **Bedst til at lære med et kursus som en lærebog:** LearnBridge, med over 2.000 øvespørgsmål og valg mellem Standard American og Two-Over-One. **Bedst til at spille hænder mod computeren med hver melding forklaret:** Bridge Mentor. **Bedst til online duplicate med rangliste:** Fun Bridge. **Bedst til korte øvelser i pointtælling, åbningsmeldinger og kortspil:** Bridge Trainer, den app jeg selv laver.
 
 Disse apps gør forskellige ting. To underviser, to lader dig spille, og én øver, så det rigtige valg afhænger af, om du skal lære reglerne, spille spil eller opbygge vaner mellem sessionerne.
 
-**Sådan sammenlignede vi (oktober 2026):** Jeg kørte Tricky Bridge, LearnBridge og Bridge Mentor på en Mac og læste App Store-siden og et udvalg af nylige anmeldelser for Fun Bridge, som jeg ikke kørte. For alle fem tjekkede jeg vurderinger, opdateringsdatoer, enheder og købstyper i Apples opslagsdata. Syv andre apps, blandt dem BBO, sammenlignes længere nede ud fra deres App Store-sider, med amerikanske priser som vist den 28. oktober 2026.
+**Sådan sammenlignede vi (november 2026):** Jeg kørte Tricky Bridge, LearnBridge og Bridge Mentor på en Mac og læste App Store-siden og et udvalg af nylige anmeldelser for Fun Bridge, som jeg ikke kørte. For alle fem tjekkede jeg vurderinger, opdateringsdatoer, enheder og købstyper i Apples opslagsdata. Syv andre apps, blandt dem BBO, sammenlignes længere nede ud fra deres App Store-sider, med amerikanske priser som vist den 12. november 2026.
 
 **Oplysning:** Jack Wallner laver Bridge Trainer, en af de apps, der er nævnt nedenfor. Jeg har forsøgt at starte hver beskrivelse med det, appen gør godt.
 
 ## Hvordan sammenlignes de bedste bridge-apps til begyndere?
 
-Vurderinger og antal er tal fra den amerikanske App Store i oktober 2026. Sidst opdateret er datoen for den nuværende version.
+Vurderinger og antal er tal fra den amerikanske App Store i november 2026. Sidst opdateret er datoen for den nuværende version.
 
 | App | Bedst til | Prismodel | Apple Watch | iPad | Konto | Vurdering (antal) | Sidst opdateret |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Fun Bridge** | Online duplicate med rangliste | Gratis + abonnement og spilpakker | Nej | Ja | Påkrævet (ifølge anmeldelser) | 4.59 (13,887) | 2026-10-19 |
-| **Tricky Bridge: Learn & Play** | Et gratis, fortællende kursus | Gratis + abonnement og spilpakker | Nej | Ja | Ingen set | 4.87 (4,492) | 2025-08-19 |
+| **Fun Bridge** | Online duplicate med rangliste | Gratis + abonnement og spilpakker | Nej | Ja | Påkrævet (ifølge anmeldelser) | 4.59 (13,920) | 2026-10-19 |
+| **Tricky Bridge: Learn & Play** | Et gratis, fortællende kursus | Gratis + abonnement og spilpakker | Nej | Ja | Ingen set | 4.86 (4,543) | 2026-11-09 |
 | **LearnBridge** | Et struktureret kursus som en lærebog | Gratis + betalte lektionspakker | Nej | Ja | Ingen | 4.95 (62) | 2024-04-09 |
-| **Bridge Mentor** | At spille hænder med hver melding forklaret | Gratis (5 spil om dagen) + abonnement | Nej | Ja | Ingen (Game Center til duplicate) | 4.35 (678) | 2025-06-13 |
-| **Bridge Trainer** | Korte øvelser med hvorfor på hvert svar | Gratis + abonnement eller engangskøb for livet | Nej | Ja | Ingen | Ingen vurderinger endnu | 2026-10-10 |
+| **Bridge Mentor** | At spille hænder med hver melding forklaret | Gratis (5 spil om dagen) + abonnement | Nej | Ja | Ingen (Game Center til duplicate) | 4.35 (682) | 2025-06-13 |
+| **Bridge Trainer** | Korte øvelser med hvorfor på hvert svar | Gratis + abonnement eller engangskøb for livet | Nej | Ja | Ingen | 4.50 (2) | 2026-11-10 |
 
 ## Hvad er hver bridge-app bedst til?
 
@@ -34,7 +34,7 @@ Fun Bridge er til at konkurrere i duplicate, Tricky Bridge og LearnBridge lærer
 
 ### Fun Bridge
 
-Fun Bridge er den mest vurderede bridge-app her og er bygget til duplicate: du spiller Syd med den samme AI-makker og de samme modstandere som alle andre og sammenligner derefter scorer i ranglister, ligaer og daglige turneringer. Siden tilbyder også interaktive lektioner, kommenterede spil fra mestre, genafspilning og analyse samt konfigurerbare konventioner. Ulemperne for en begynder: de bedste funktioner ligger bag et abonnement, der kræves en konto, og en stor del af de nylige énstjernede anmeldelser handler om konto- og serverproblemer eller robotmakkeren.
+Fun Bridge er den mest vurderede bridge-app her og er bygget til duplicate: du spiller Syd med den samme AI-makker og de samme modstandere som alle andre og sammenligner derefter scorer i ranglister, ligaer og daglige turneringer. Siden tilbyder også interaktive lektioner, kommenterede spil fra mestre, genafspilning og analyse samt konfigurerbare konventioner. Ulemperne for en begynder: mange funktioner kræver et abonnement eller spilpakker, der kræves en konto, og nogle anmeldelser med få stjerner nævner login- eller serverfejl og robotmakkerens meldinger.
 
 ### Tricky Bridge: Learn & Play
 
@@ -50,21 +50,21 @@ Bridge Mentor giver en fuld hånd rubberbridge, så snart du åbner den. Hint-kn
 
 ### Bridge Trainer (min app)
 
-Bridge Trainer har fire gratis rum: Kort, Melding, Spilfører og Forsvar. Øvelserne dækker optælling af højkortpoint, valg af åbningsmelding ud fra en hånd på 13 kort, planlægning af spillet og valg af udspil, og grunden til hvert svar vises, efter du har svaret. Der er ingen modstandere og ingen konto. Begrænsningerne er reelle. De gratis meldeøvelser stopper ved åbningsmeldingen (pas, en farve eller 1NT). Svar og konkurrencemelding vises kun som korte quizspørgsmål i Master Tables i Bridge+, som dækker Stayman, transfers, informationsdobling og spærremeldinger, så du spiller ikke hele meldeforløb. Spørgsmål om spilfører og forsvar er enkelte beslutninger, ikke et helt spil. Den bruger kun Standard American for begyndere, og den er ny uden vurderinger endnu. Uendelig øvelse, Fix My Mistakes og den tidsbestemte udfordring kræver Bridge+.
+Bridge Trainer har fire gratis rum: Kort, Melding, Spilfører og Forsvar. Øvelserne dækker optælling af højkortpoint, valg af åbningsmelding ud fra en hånd på 13 kort, planlægning af spillet og valg af udspil, og grunden til hvert svar vises, efter du har svaret. Der er ingen modstandere og ingen konto. Begrænsningerne er reelle. De gratis meldeøvelser stopper ved åbningsmeldingen (pas, en farve eller 1NT). Svar og konkurrencemelding vises kun som korte quizspørgsmål i Master Tables i Bridge+, som dækker Stayman, transfers, informationsdobling og spærremeldinger, så du spiller ikke hele meldeforløb. Spørgsmål om spilfører og forsvar er enkelte beslutninger, ikke et helt spil. Den bruger kun Standard American for begyndere, og den er ny med kun to vurderinger indtil videre. Uendelig øvelse, Fix My Mistakes og den tidsbestemte udfordring kræver Bridge+.
 
 ## Hvad med BBO og andre bridge-apps?
 
-BBO er det største sted at spille bridge online med rigtige mennesker, men har ingen lektioner, så det passer til spillere, der allerede kan melde. For begyndere er de stærkeste af de øvrige Audrey Grants Better Bridge til et betalt kursus og Bridge by NeuralPlay til offlinespil mod robotter i det meldesystem, din klub bruger. Jeg kørte ikke disse syv; tabellen er fra deres amerikanske App Store-sider den 28. oktober 2026.
+BBO er det største sted at spille bridge online med rigtige mennesker, men har ingen lektioner, så det passer til spillere, der allerede kan melde. For begyndere er de stærkeste af de øvrige Audrey Grants Better Bridge til et betalt kursus og Bridge by NeuralPlay til offlinespil mod robotter i det meldesystem, din klub bruger. Jeg kørte ikke disse syv; tabellen er fra deres amerikanske App Store-sider den 12. november 2026.
 
 | App | Pris (amerikansk side) | Robotmakker | Lektioner for begyndere | Meldesystemer | Offline | Vurdering (antal) |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Bridge Base Online (BBO)** | Gratis; Premium 9,99 $, uden reklamer 3,99 $ om måneden | Ja (træningsrobotter, flere med Premium) | Nej (henviser til BBO Trainer) | 2/1, Precision, enkle femkorts majorfarver | Ikke angivet | 4.54 (2,233) |
-| **BBO Trainer** | Gratis niveau (daglig udfordring, Mini Bridge, 4 spil om dagen); derefter ca. 9,99 $ om måneden efter en gratis måned | AI-modstandere | Mini Bridge, en forenklet start | Ikke oplyst | Nej (kræver internet) | 4.65 (492) |
-| **Audrey Grant's Better Bridge** | Gratis; kurset Bridge Basics 1 34,99 $ (iPad), daglig klumme 9,99 $ om måneden | Ja, øvespil i kurset | Ja, Bridge Basics 1 til helt nye begyndere | Ikke oplyst | Delvist | 4.73 (6,433) |
-| **Bridge by NeuralPlay** | Gratis med reklamer; fjern reklamer 12,99 $ én gang | Ja, 6 niveauer | Nej; tryk på en melding for dens betydning | SAYC, 2/1, Acol, Precision | Ja | 4.61 (7,005) |
-| **Shark Bridge** | Gratis; engangskøb 29,99 $ eller VIP 34,99 $ om året | Ja, fra begynder til ekspert | Nej; undervisningsspil med VIP | Standard American, 2/1 | Ja (turneringer online) | 4.63 (1,183) |
-| **Bridge V+** | Gratis; opgradering 7,99 $ | Ja | Nej; meldeguide og hints | Egen motor, 2/1 som valg | Ja (turneringer online) | 4.54 (6,501) |
-| **Bridge Baron** | Gratis + månedligt abonnement | Ja, 6 niveauer | Nej; forklaringer af meldinger og hints | Ikke oplyst | Ikke angivet | 4.50 (1,821) |
+| **Bridge Base Online (BBO)** | Gratis; Premium 9,99 $, uden reklamer 3,99 $ om måneden | Ja (træningsrobotter) | Nej (BBO Trainer er dens separate øve-app) | Ikke oplyst på siden | Ikke angivet | 4.53 (2,237) |
+| **BBO Trainer** | Gratis niveau (daglig udfordring, Mini Bridge, 4 spil om dagen); derefter 9,99 $ om måneden efter en gratis måned | AI-modstandere | Mini Bridge, en forenklet start | Ikke oplyst | Nej (kræver internet) | 4.65 (502) |
+| **Audrey Grant's Better Bridge** | Gratis; kurset Bridge Basics 1 34,99 $ (iPad), daglig klumme 9,99 $ om måneden | Ja, øvespil i kurset | Ja, Bridge Basics 1 til helt nye begyndere | Ikke oplyst | Ikke oplyst på siden | 4.73 (6,455) |
+| **Bridge by NeuralPlay** | Gratis med reklamer; fjern reklamer 12,99 $ én gang | Ja, 6 niveauer | Nej; tryk på en melding for dens betydning | SAYC, 2/1, Acol, Precision | Ja | 4.60 (7,053) |
+| **Shark Bridge** | Gratis; engangskøb 29,99 $ eller VIP 34,99 $ om året | Ja, fra begynder til ekspert | Nej; spiller din lærers undervisningsspil | Standard American, 2/1 | Ja (turneringer online) | 4.63 (1,192) |
+| **Bridge V+** | Gratis; opgradering 7,99 $ | Ja | Nej; meldeguide og hints | Ikke oplyst på siden | Ikke oplyst på siden | 4.54 (6,507) |
+| **Bridge Baron** | Gratis; abonnement 7,90 $ om måneden | Ja, justerbar sværhedsgrad | Nej; forklaringer af meldinger og hints | Ikke oplyst | Ikke angivet | 4.50 (1,830) |
 
 To af dem fylder huller i de fem ovenfor. NeuralPlay er den eneste, der lader dig skifte mellem SAYC, 2/1, Acol og Precision, hvilket betyder noget, hvis din klub eller dit land spiller Acol. Audrey Grants kursus ligger tættest på et klasseværelse, men det er den dyreste start og kun til iPad.
 
@@ -137,4 +137,4 @@ ACBL's side Learn Bridge opregner et gratis Trickstarter-kursus på en time og h
 - [Bridge V+](https://apps.apple.com/dk/app/bridge-v-bridge-card-game/id479242966) (App Store)
 - [Bridge Baron](https://apps.apple.com/dk/app/bridge-baron-improve-play/id1465176932) (App Store)
 
-Bridge Trainer er en uafhængig app og er ikke tilknyttet ACBL eller nogen af de apps, der sammenlignes her. App-oplysninger blev tjekket i oktober 2026 og kan ændre sig.
+Bridge Trainer er en uafhængig app og er ikke tilknyttet ACBL eller nogen af de apps, der sammenlignes her. App-oplysninger blev tjekket i november 2026 og kan ændre sig.
