@@ -12,7 +12,7 @@ By Jack Wallner · Last updated November 12, 2026
 
 These apps do different jobs. Two teach, two let you play, and one drills, so the right pick depends on whether you need to learn the rules, play deals, or build habits between sessions.
 
-**How we compared (November 2026):** I ran Tricky Bridge, LearnBridge and Bridge Mentor on a Mac, and read the App Store listing and a sample of recent reviews for Fun Bridge, which I did not run. For all five I checked ratings, update dates, devices and purchase types from Apple's lookup data. Seven more apps, including BBO, are compared from their App Store listings further down, with US prices as listed on November 12, 2026.
+**How we compared (November 2026):** I ran Tricky Bridge, LearnBridge and Bridge Mentor on a Mac, and read the App Store listing and a sample of recent reviews for Fun Bridge, which I did not run. For all five I checked ratings, update dates, devices and purchase types from Apple's lookup data. Seven more apps, including BBO, are compared from their App Store listings further down, with US prices as listed on November 12, 2026. Everything here is the iPhone and iPad version; where an app is also on Android, its price and features there can differ.
 
 **Disclosure:** Jack Wallner makes Bridge Trainer, one of the apps below. I tried to start every description with what the app does well.
 
