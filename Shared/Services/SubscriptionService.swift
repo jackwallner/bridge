@@ -139,6 +139,7 @@ final class SubscriptionService: NSObject, ObservableObject {
     private let localOverrideKey = "subscription.localProOverride"
     #endif
     private let snapshotKey = "membership.lastSnapshot"
+    private let snapshotOwnerKey = "membership.lastSnapshotOwner"
     private let churnAskSpentKey = "membership.churnAskSpent"
     private let pendingChurnKey = "membership.pendingChurnMoment"
     private let reinstallSyncKey = "membership.reinstallSyncDone"
@@ -495,7 +496,7 @@ final class SubscriptionService: NSObject, ObservableObject {
             // leave: Apple is still retrying, so it is not a churn moment.
             willRenew: entitlement?.willRenew == true || entitlement?.billingIssueDetectedAt != nil,
             expirationDate: entitlement?.expirationDate
-        ), answeredAt: info.requestDate, defaults: defaults)
+        ), answeredAt: info.requestDate, owner: info.originalAppUserId, defaults: defaults)
     }
 
     /// Compares this customer record with the last one seen and remembers a
@@ -507,18 +508,35 @@ final class SubscriptionService: NSObject, ObservableObject {
     /// can be months old: a member who lapsed on an older build read as
     /// active there, then lapsed a second later, and was asked why they were
     /// leaving about a departure the app never watched.
+    ///
+    /// The snapshot belongs to the RevenueCat customer it was read from. A
+    /// record for a different customer starts a new baseline: comparing a
+    /// member's snapshot with a stranger's record showed "Your membership
+    /// ended" to someone who never had one. A snapshot saved before owners
+    /// were stored has none and still counts.
     func observe(
         _ current: MembershipSnapshot,
         answeredAt: Date = Date(),
         now: Date = Date(),
+        owner: String? = nil,
         defaults: UserDefaults = .standard
     ) {
-        let previous = (defaults.data(forKey: snapshotKey))
+        let storedOwner = defaults.string(forKey: snapshotOwnerKey)
+        let sameOwner = owner == nil || storedOwner == nil || storedOwner == owner
+        let previous = (sameOwner ? defaults.data(forKey: snapshotKey) : nil)
             .flatMap { try? JSONDecoder().decode(MembershipSnapshot.self, from: $0) }
+        if !sameOwner {
+            defaults.removeObject(forKey: snapshotKey)
+            defaults.removeObject(forKey: churnAskSpentKey)
+            defaults.removeObject(forKey: snapshotOwnerKey)
+            defaults.removeObject(forKey: pendingChurnKey)
+            pendingChurnMoment = nil
+        }
         if previous == nil, now.timeIntervalSince(answeredAt) > Self.freshBaselineAge { return }
         defer {
             if let data = try? JSONEncoder().encode(current) {
                 defaults.set(data, forKey: snapshotKey)
+                if let owner { defaults.set(owner, forKey: snapshotOwnerKey) }
             }
         }
         if MembershipTransitions.resetsAsk(from: previous, to: current) {

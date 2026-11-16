@@ -117,6 +117,26 @@ final class MembershipTransitionsTests: XCTestCase {
         service.consumeChurnMoment()
     }
 
+    /// One RevenueCat customer's snapshot must not judge another's record:
+    /// a member's "active" against a newcomer's "nothing" read as a lapse.
+    @MainActor
+    func testAnotherCustomersRecordIsNotADeparture() {
+        let defaults = UserDefaults(suiteName: "MembershipTransitionsOwner")!
+        defaults.removePersistentDomain(forName: "MembershipTransitionsOwner")
+        let service = SubscriptionService.shared
+        service.consumeChurnMoment()
+
+        service.observe(paidOn, owner: "member", defaults: defaults)
+        service.observe(gone, owner: "newcomer", defaults: defaults)
+        XCTAssertNil(service.pendingChurnMoment, "a different customer's record read as the member leaving")
+
+        // The newcomer's own later departure is still caught.
+        service.observe(trialOn, owner: "newcomer", defaults: defaults)
+        service.observe(trialOff, owner: "newcomer", defaults: defaults)
+        XCTAssertEqual(service.pendingChurnMoment, .trialRenewalOff)
+        service.consumeChurnMoment()
+    }
+
     /// Monthly to lifetime is an upgrade, not a departure. Lifetime reports
     /// willRenew false with no expiration date.
     func testUpgradingToLifetimeIsNotAChurnMoment() {
