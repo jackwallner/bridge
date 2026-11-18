@@ -22,6 +22,8 @@ enum QA {
     static let persona = env["QA_PERSONA"] ?? "local"
     static let outputDir: URL? = env["QA_OUTPUT_DIR"].map { URL(fileURLWithPath: $0) }
     static let strict = env["QA_STRICT"] == "1"
+    /// "portrait" or "landscape" on the iPad personas; nil on every phone persona.
+    static let orientation = env["QA_ORIENTATION"]
     /// Findings of the most recent checkpoint, for FleetQA's own tests.
     static var lastFindings: [(oracle: String, severity: String, detail: String)] = []
 
@@ -33,7 +35,19 @@ enum QA {
         for (key, value) in decode([String: String].self, env["QA_LAUNCH_ENVIRONMENT"]) ?? [:] {
             app.launchEnvironment[key] = value
         }
+        rotate()
         system("launch", journey: journey) { app.launch() }
+    }
+
+    /// Turns the device to the persona's orientation (the iPad personas). Done
+    /// before every launch so the app starts in it, as a user holding the iPad
+    /// that way would see it.
+    static func rotate() {
+        guard let orientation else { return }
+        let target: UIDeviceOrientation = orientation == "landscape" ? .landscapeLeft : .portrait
+        guard XCUIDevice.shared.orientation != target else { return }
+        XCUIDevice.shared.orientation = target
+        sleep(2)  // the rotation animation outlasts the property write
     }
 
     /// Marks a span the OS animates (launch, home, relaunch) so the runner does
@@ -89,7 +103,7 @@ enum QA {
                 Paywall.check(app, leaves, rendered, context: context)
             }
             // Apple's audit re-renders the app at other text sizes; its motion is not the app's.
-            system("audit", journey: context.journey) { Audit.run(app, shot: shot, leaves: leaves, context: context) }
+            system("audit", journey: context.journey) { Audit.run(app, shot: shot, leaves: leaves, rendered: rendered, context: context) }
             Idle.check(app, first: shot, ambient: leaves.filter { ambient.contains($0.label) || ambient.contains($0.identifier) },
                        context: context)
             // Data that lands a few seconds late still jumps under the user's eye, so
@@ -147,6 +161,7 @@ enum QA {
     static func relaunch(_ app: XCUIApplication, journey: String = #function) {
         system("relaunch", journey: journey) {
             app.terminate()
+            rotate()
             app.launch()
         }
     }
@@ -197,14 +212,34 @@ enum QA {
         let image: UIImage
         if let inner = XCUIScreen.screens.first(where: { $0 != XCUIScreen.main }) {
             image = inner.screenshot().image
+        } else if orientation == "landscape" {
+            // On a landscape iPad `app.screenshot()` is turned 90 degrees and clips the
+            // right quarter of the screen; the screen's own capture is whole, turned.
+            image = XCUIScreen.main.screenshot().image
         } else {
             image = app?.screenshot().image ?? XCUIScreen.main.screenshot().image
         }
+        if orientation == "landscape", let cg = image.cgImage, cg.height > cg.width { return turnedUpright(cg, scale: image.scale) }
         guard image.imageOrientation != .up else { return image }
         let format = UIGraphicsImageRendererFormat()
         format.scale = image.scale
         return UIGraphicsImageRenderer(size: image.size, format: format).image { _ in
             image.draw(in: CGRect(origin: .zero, size: image.size))
+        }
+    }
+
+    /// The simulator's landscape iPad capture comes turned 90 degrees clockwise (the
+    /// device's top edge on the right). Turned back a quarter counter-clockwise it
+    /// matches the element frames, which are in the upright landscape space.
+    static func turnedUpright(_ cg: CGImage, scale: CGFloat) -> UIImage {
+        let source = UIImage(cgImage: cg, scale: scale, orientation: .up)
+        let size = CGSize(width: source.size.height, height: source.size.width)
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = scale
+        return UIGraphicsImageRenderer(size: size, format: format).image { context in
+            context.cgContext.translateBy(x: 0, y: size.height)
+            context.cgContext.rotate(by: -.pi / 2)
+            source.draw(at: .zero)
         }
     }
 
@@ -410,6 +445,14 @@ enum Layout {
     static func overlaps(_ app: XCUIApplication, _ leaves: [Leaf], _ rendered: [Render.Line], context: QA.Context) {
         let candidates = leaves.filter { $0.type == .staticText || $0.type == .button }
         var reported = Set<String>()
+        // One live lookup per element: a leaf that overlaps many others is asked about once, not once per pair.
+        var shown: [String: Bool] = [:]
+        func isShown(_ leaf: Leaf) -> Bool {
+            if let known = shown[leaf.key] { return known }
+            let value = visible(app, leaf)
+            shown[leaf.key] = value
+            return value
+        }
         for (i, a) in candidates.enumerated() {
             for b in candidates[(i + 1)...] where a.type == b.type {
                 let overlap = a.frame.intersection(b.frame)
@@ -433,8 +476,12 @@ enum Layout {
                 let ownA = Render.presence(a, rendered, excluding: b.label)
                 let ownB = Render.presence(b, rendered, excluding: a.label)
                 let partly = ownA >= 0.3 && ownB >= 0.3 && min(readA, readB) < 0.9
+                // Stacked text that reads as one garbled line still carries letters of both labels; text
+                // of a hidden tab under an unrelated visible line does not, and asking the app whether
+                // each of those is shown costs seconds per element.
                 let garbled = max(readA, readB) < 0.9 && Render.unexplained(in: overlap, rendered, leaves: leaves)
-                guard partly || garbled, visible(app, a), visible(app, b) else { continue }
+                    && Render.related(overlap, rendered, a, b)
+                guard partly || garbled, isShown(a), isShown(b) else { continue }
                 reported.insert(pair)
                 QA.record(context, "overlap", "P1", pair,
                           String(format: "%@ \"%@\" overlaps \"%@\" by %.0f%%", typeName(a.type), a.name, b.name,
@@ -445,7 +492,7 @@ enum Layout {
 
     /// Resolves a snapshot leaf back to a live element and asks whether a tap
     /// would reach it: false for hidden tabs, covered views and clipped scroll content.
-    static func visible(_ app: XCUIApplication, _ leaf: Leaf) -> Bool {
+    static func visible(_ app: XCUIApplication, _ leaf: Leaf, tolerant: Bool = true) -> Bool {
         let parts = leaf.key.split(separator: "#")
         let index = Int(parts.last ?? "0") ?? 0
         let query = leaf.identifier.isEmpty
@@ -458,7 +505,27 @@ enum Layout {
                 && abs(frame.width - leaf.frame.width) < 1 && abs(frame.height - leaf.frame.height) < 1
         }
         let element = query.allElementsBoundByIndex.first { near($0.frame) } ?? query.element(boundBy: index)
-        return element.exists && element.isHittable
+        return tappable(app, element, tolerant: tolerant)
+    }
+
+    /// isHittable records a test failure when an element has no valid activation
+    /// point (a date chip scrolled half out of a narrow strip), so anything whose
+    /// centre is outside the screen is answered here without asking.
+    static func tappable(_ app: XCUIApplication, _ element: XCUIElement, tolerant: Bool = true) -> Bool {
+        guard element.exists else { return false }
+        // A main button that overhangs the screen is still the main button: ask it plainly.
+        guard tolerant else { return element.isHittable }
+        let frame = element.frame
+        guard !frame.isEmpty, app.frame.contains(CGPoint(x: frame.midX, y: frame.midY)) else { return false }
+        // A hidden tab's chip can sit mid-frame yet have no activation point; the
+        // answer is then "no", not a failed test.
+        var hittable = false
+        let options = XCTExpectedFailure.Options()
+        options.isStrict = false
+        XCTExpectFailure("an element with no activation point is not hittable", options: options) {
+            hittable = element.isHittable
+        }
+        return hittable
     }
 
     static func typeName(_ type: XCUIElement.ElementType) -> String {
@@ -522,51 +589,64 @@ enum Audit {
         }
     }
 
-    static func run(_ app: XCUIApplication, shot: UIImage, leaves: [Leaf] = [], context: QA.Context) {
+    static func run(_ app: XCUIApplication, shot: UIImage, leaves: [Leaf] = [], rendered: [Render.Line] = [],
+                    context: QA.Context) {
         let pixels = Idle.pixels(shot)
         do {
             var checked = 0
             // Dynamic Type and clipped-text checks re-render the app at other text
             // sizes, which shows on video and moves the layout under the other
             // oracles. The accessibility persona measures what AX3 really draws instead.
-            // On the unfolded Duo the contrast check outlives the audit's timeout on a
-            // dense split screen and keeps running in testmanagerd until the sim stalls.
-            // The phone personas check the same colors.
-            var types = XCUIAccessibilityAuditType.all.subtracting([.dynamicType, .textClipped])
-            if QA.persona == "duo" { types.remove(.contrast) }
+            // Contrast is measured from the settled tree and the screenshot below, not by the audit:
+            // the audit reports every text element it walks (hidden tabs, off-screen rows) and each
+            // report costs several element queries, which stretched a dense iPad screen to an hour.
+            let types = XCUIAccessibilityAuditType.all.subtracting([.dynamicType, .textClipped, .contrast])
             try app.performAccessibilityAudit(for: types) { issue in
                 // The audit walks hidden tabs too. Skip what nobody can see,
                 // within a budget so a long screen cannot stall the gate.
-                if let target = issue.element, checked < 40 {
-                    checked += 1
-                    if !(target.exists && target.isHittable) { return true }
+                if let target = issue.element {
+                    if checked < 40 {
+                        checked += 1
+                        if !Layout.tappable(app, target) { return true }
+                    } else if !leaves.contains(where: { $0.label == target.label && $0.type == target.elementType }) {
+                        return true
+                    }
                 }
                 let element = issue.element.map { $0.identifier.isEmpty ? $0.label : $0.identifier } ?? ""
-                var measured = ""
-                if issue.auditType == .contrast, let target = issue.element, let pixels {
-                    // The audit flags text that passes (white on a dark brand color, iOS's own
-                    // headers); a finding stands only when the drawn pixels fail WCAG too.
-                    // The audit scrolls and re-renders as it goes, so the live frame can sit
-                    // elsewhere than the screenshot drew the element; take the frame the
-                    // tree had when the screenshot was taken.
-                    let label = target.label, type = target.elementType
-                    let frame = leaves.first { $0.label == label && $0.type == type }?.frame ?? target.frame
-                    guard let ratio = contrast(in: frame, pixels, scale: CGFloat(pixels.width) / shot.size.width)
-                    else { return true }
-                    if ratio >= (frame.height >= 24 ? 3 : 4.5) { return true }
-                    measured = String(format: " (measured %.1f:1)", ratio)
-                }
                 QA.record(context, "a11y-" + name(issue.auditType), severity(issue.auditType), element,
-                          "\(issue.compactDescription)\(measured)\(element.isEmpty ? "" : ": \"\(element)\"")")
+                          "\(issue.compactDescription)\(element.isEmpty ? "" : ": \"\(element)\"")")
                 return true
             }
         } catch {
             QA.record(context, "a11y-audit", "P3", "", "audit could not run: \(error.localizedDescription)")
         }
+        // On the unfolded Duo the pixel pass over a dense split screen is skipped; the phone personas check the same colors.
+        if QA.persona != "duo", let pixels { contrastPass(leaves, pixels, rendered, width: shot.size.width, context: context) }
     }
 }
 
 extension Audit {
+    /// WCAG contrast of every visible text leaf, read from the screenshot with no element queries. A
+    /// finding stands only when the drawn pixels fail, so white on a dark brand color passes.
+    static func contrastPass(_ leaves: [Leaf], _ pixels: (data: [UInt8], width: Int, height: Int),
+                             _ rendered: [Render.Line], width: CGFloat, context: QA.Context) {
+        let scale = CGFloat(pixels.width) / width
+        for leaf in leaves where !leaf.label.isEmpty {
+            let isText = leaf.type == .staticText || (leaf.type == .button && leaf.frame.height <= 56)
+            guard isText, leaf.frame.width >= 4, leaf.frame.height >= 4 else { continue }
+            // A hidden tab keeps its elements in the tree under the visible one, so only text the
+            // screenshot really shows in the element's frame is judged.
+            let near = rendered.filter { leaf.frame.insetBy(dx: -4, dy: -4).intersects($0.frame) }
+            let drawn = near.map { $0.text.lowercased() }.joined(separator: " ")
+            guard drawn.contains(leaf.label.lowercased()) || Render.presence(leaf, near) >= 0.5 && !Render.words(leaf.label).isEmpty
+            else { continue }
+            guard let ratio = contrast(in: leaf.frame, pixels, scale: scale),
+                  ratio < (leaf.frame.height >= 24 ? 3 : 4.5) else { continue }
+            QA.record(context, "a11y-contrast", "P2", leaf.name,
+                      String(format: "Contrast failed (measured %.1f:1): \"%@\"", ratio, leaf.name))
+        }
+    }
+
     /// WCAG contrast of the text drawn in `frame` (points): the commonest color is the
     /// background, and the text is what stands furthest from it among the pixels that
     /// differ (98th percentile: thin glyphs are mostly antialiased edge). Nil when nothing
@@ -707,6 +787,23 @@ enum Render {
         return Double(wanted.filter { drawn.contains($0) }.count) / Double(wanted.count)
     }
 
+    /// True when text drawn in `region` shares at least two three-letter runs with either label.
+    static func related(_ region: CGRect, _ lines: [Line], _ a: Leaf, _ b: Leaf) -> Bool {
+        func grams(_ text: String) -> Set<String> {
+            var out = Set<String>()
+            for word in text.lowercased().split(whereSeparator: { !$0.isLetter && !$0.isNumber }) {
+                let chars = Array(word)
+                guard chars.count >= 3 else { continue }
+                for i in 0...(chars.count - 3) { out.insert(String(chars[i..<(i + 3)])) }
+            }
+            return out
+        }
+        let wanted = grams(a.label).union(grams(b.label))
+        guard !wanted.isEmpty else { return true }
+        let drawn = lines.filter { $0.frame.intersects(region) }.reduce(into: Set<String>()) { $0.formUnion(grams($1.text)) }
+        return drawn.intersection(wanted).count >= 2
+    }
+
     /// True when OCR drew text in `region` that no element reading cleanly
     /// there accounts for (a hidden TabView tab sits under a visible one that does).
     static func unexplained(in region: CGRect, _ lines: [Line], leaves: [Leaf]) -> Bool {
@@ -829,9 +926,13 @@ enum Anchor {
     static var last: (journey: String, checkpoint: String, frame: CGRect)?
 
     /// The largest button in the bottom 40% of the screen, at least half the screen wide.
-    static func primary(_ leaves: [Leaf], width: CGFloat, height: CGFloat) -> Leaf? {
-        leaves.filter { $0.type == .button && !$0.inScroll && $0.frame.width >= width * 0.5 && $0.frame.midY >= height * 0.6 }
-            .max { $0.frame.width * $0.frame.height < $1.frame.width * $1.frame.height }
+    /// Only a button a tap would reach counts: a hidden tab keeps its own
+    /// call to action in the tree, drawn at opacity 0 under the visible screen.
+    static func primary(_ app: XCUIApplication, _ leaves: [Leaf], width: CGFloat, height: CGFloat) -> Leaf? {
+        let candidates = leaves
+            .filter { $0.type == .button && !$0.inScroll && $0.frame.width >= width * 0.5 && $0.frame.midY >= height * 0.6 }
+            .sorted { $0.frame.width * $0.frame.height > $1.frame.width * $1.frame.height }
+        return candidates.prefix(6).first { Layout.visible(app, $0, tolerant: false) }
     }
 
     /// Onboarding and paywall steps share one call to action. When it jumps
@@ -839,7 +940,7 @@ enum Anchor {
     /// thumb misses and the flow feels unfinished.
     static func check(_ app: XCUIApplication, _ leaves: [Leaf], width: CGFloat, height: CGFloat, context: QA.Context) {
         // A keyboard lifts the button on purpose.
-        guard app.keyboards.count == 0, let button = primary(leaves, width: width, height: height) else {
+        guard app.keyboards.count == 0, let button = primary(app, leaves, width: width, height: height) else {
             last = nil
             return
         }
