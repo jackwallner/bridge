@@ -1,1 +1,1 @@
-lernen,lehrer,anfänger,lektion,übung,verteidigung,alleinspieler,praxis,tipp,kartenspiel
+spielen,kartenspiel,anfänger,alleinspieler,kontrakt,trumpf,stich,verteidigung,figurenpunkte,quiz

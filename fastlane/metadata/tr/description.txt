@@ -1,41 +1,33 @@
-Yeni başlayanlar için beş dakikalık kısa briç seansları.
+Bridge Trainer, yeni başlayanlar için bir briç alıştırma uygulamasıdır: kart temelleri, açılış ihaleleri, deklaran oyunu ve savunma üzerine kısa alıştırmalar. Rakip yok, her cevap nedenini açıklar. Dört alıştırma odası ücretsiz, hesap gerekmez.
 
-Rakip yok, baskı yok. Açış ihalelerini seçin, oyunu planlayın ve savunmayı çalışın. Her cevap seçimin arkasındaki nedeni açıklar.
+DÖRT ÜCRETSİZ ALIŞTIRMA ODASI
+• Kart Odası: kart sırası, onör puanları, löveler, koz, kontratlar ve masadaki roller
+• İhale Odası: 13 kartlık bir eli okuyun, yeni başlayanlara uygun Standard American sistemiyle pas, renk açışı ya da 1NT seçin
+• Deklaran Odası: kazanan löveleri sayın, koz çekin, uzun renkleri kurun, empas yapın ve doğru kartı seçin
+• Savunma Odası: ilk atak, sekanslar, üçüncü el oyunu, renk dönüşleri ve ortaklık alışkanlıkları
 
-DÖRT ÜCRETSİZ PRATİK ODASI
+NASIL ÇALIŞIRSINIZ
+• Kaydırmalı ders kartları, hızlı testler, gerçekçi 13 kartlık eller ve kart oyunu senaryoları
+• Başlayın düğmesi tek dokunuşla kısa, karışık bir seans hazırlar ve kaçırdıklarınızı geri getirir
+• Seriler, her oda için ilerleme ve isteğe bağlı günlük hatırlatma
 
-KART ODASI
-Kart değerlerini, onör puanlarını, löveleri, kozları, kontratları ve masa rollerini öğrenin.
+GİZLİLİK
+• Hesap yok, reklam yok, uygulamalar arası takip yok
+• İlerlemeniz iPhone'unuzda saklanır
 
-DEKLARASYON ODASI
-Yeni başlayanlar için Standard American sistemini çalışın. 13 kartlık elleri okuyun ve pas, renk açışı veya 1NT arasından seçim yapın.
+ÜCRETSİZ VE BRIDGE+
+Yukarıdaki dört oda ücretsizdir ve süresi dolmaz. Bridge+ isteğe bağlı bir yükseltmedir: aylık ya da yıllık abonelik veya tek seferlik ömür boyu satın alma olarak sunulur. Aboneliklerde uygun yeni aboneler için ücretsiz deneme bulunur ve süresi başlamadan önce uygulamada gösterilir. Bridge+ şunları ekler:
+• Sonsuz alıştırma: açılış ihalesi alıştırmaları için her seferinde yeni dağıtılmış 13 kartlık bir el
+• Hatalarımı düzelt: yanlış yaptığınız sorular aralıklı bir programla geri gelir
+• Zamana karşı: karışık sorulardan oluşan süreli bir tur ve kişisel rekor
+• Bridge Minute: günlük beş soruluk bir meydan okuma
+• Briç gecesi hazırlığı: bir sonraki oyununuz için hatalarınızın ve en zayıf odanızın öne çıktığı kısa bir karışım, isteğe bağlı haftalık hatırlatmayla
+• Dört odanın her birinde ek alıştırma setleri
+• Usta Masaları: rekabetçi ihale (kontrlar, barajlar, Stayman ve transferler), ileri düzey oyun tekniği ve düplike kararları
 
-DEKLARAN ODASI
-Alıcı löveleri sayın, koz çekin, uzun renkleri sağlayın, empas yapın ve oyun durumlarında doğru kartı seçin.
+Fiyatlar satın almadan önce uygulamada gösterilir ve bölgeye göre değişir. Abonelikler, geçerli dönemin bitiminden en az 24 saat önce iptal edilmedikçe otomatik olarak yenilenir. Ayarlar > Apple Kimliği > Abonelikler bölümünden yönetebilir veya iptal edebilirsiniz.
 
-SAVUNMA ODASI
-Atakları, sekansları, üçüncü el oyununu, renk dönüşlerini ve ortaklık alışkanlıklarını çalışın.
+Bridge Trainer, yeni başlayanlar için Standard American sistemini kullanır. Ortaklık anlaşmaları değişebilir, bu yüzden konvansiyonları ortağınızla teyit edin.
 
-BRIDGE+ (OPSİYONEL)
-Yukarıdaki her şey ücretsiz kalır. Bridge+ hiç bitmeyen alıştırma ekler:
-
-ENDLESS PRACTICE her seferinde anında üretilen 13 kartlık yeni bir el dağıtır, böylece açılış deklarasyonu alıştırmaları ne tekrarlanır ne de tükenir.
-
-FIX MY MISTAKES yanlış yaptıklarını hatırlar ve aralıklı bir programla geri getirir, böylece zayıf noktalar gerçekten kapanır.
-
-TIMED CHALLENGE sana doksan saniyelik karışık sorular ve kovalayacağın bir kişisel rekor verir.
-
-EK ALIŞTIRMA SETLERİ dört başlangıç odasının her birinde; hâlihazırda kullandığın aynı alıştırmalarda yeni sorular ve eller.
-
-THE MASTER TABLES, konvansiyonlar, ileri kart oyunu ve turnuva stratejisi ile.
-
-Yıl boyunca yeni alıştırmalar ekleniyor.
-
-ÖĞRENMEK İÇİN TASARLANDI
-Kaydırılabilir koçluk kartları, hızlı testler, gerçekçi 13 kartlık eller, kart oyunu senaryoları, seriler ve kaçırılan materyalleri geri getiren günlük karışık pratikler.
-
-Bridge Trainer, yeni başlayanlar için Standard American sistemini kullanır. Ortaklık anlaşmaları değişebilir, bu nedenle konvansiyonları ortağınızla teyit edin.
-
-ABONELİKLER
-Bridge+, otomatik yenilenen abonelik (Aylık veya Yıllık, ikisinde de 7 günlük ücretsiz deneme) ya da tek seferlik Lifetime satın alma olarak sunulur. Fiyatlar satın almadan önce uygulamada gösterilir ve bölgeye göre değişir. Ödeme, onay sırasında Apple Kimliğinizden tahsil edilir. Geçerli dönemin bitiminden en az 24 saat önce iptal edilmediği sürece abonelikler otomatik olarak yenilenir. Ayarlar → Apple Kimliği → Abonelikler bölümünden istediğiniz zaman yönetin veya iptal edin. Kullanım Koşulları (Apple'ın standart EULA'sı): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Gizlilik Politikası: https://jackwallner.github.io/bridge/privacy-policy.
-Gizlilik Politikası: https://jackwallner.github.io/bridge/privacy-policy
+Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Gizlilik: https://jackwallner.com/ios/bridge/privacy-policy.html

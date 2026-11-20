@@ -1,1 +1,1 @@
-cartes,apprendre,tuteur,débutant,leçon,exercice,défense,déclarant,pratique,contrat
+jouer,gratuit,débutant,entraînement,cours,carte,contrat,déclarant,leçon,exercice,quiz,atout,levée

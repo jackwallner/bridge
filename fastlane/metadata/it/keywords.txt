@@ -1,1 +1,1 @@
-carte,imparare,tutor,principiante,lezione,esercizio,difesa,dichiarante,tiro
+carte,giocare,gratis,principiante,lezione,esercizio,contratto,atout,quiz,allenamento,attacco,presa

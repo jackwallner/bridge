@@ -1,40 +1,33 @@
-Sviluppa veri istinti per il bridge di contratto in sessioni di cinque minuti.
+Bridge Trainer è un'app di allenamento al bridge per principianti, con esercizi brevi sulle basi delle carte, le aperture, il gioco del dichiarante e la difesa. Non ci sono avversari e ogni risposta spiega il perché. Quattro stanze di allenamento sono gratis, senza account.
 
-Bridge Trainer trasforma le parti di cui i principianti hanno più bisogno in esercizi rapidi e mirati. Non ci sono avversari né pressioni. Conta i punti, scegli una licita di apertura, pianifica il gioco e impara le regole della difesa con la spiegazione dietro ogni risposta.
+QUATTRO STANZE GRATIS
+• La sala delle carte: valore delle carte, punti onori, prese, atout, contratti e ruoli al tavolo
+• La sala della licita: leggi una mano di 13 carte e scegli tra passo, apertura a colore o 1NT, con un sistema Standard American per principianti
+• La sala del dichiarante: conta le vincenti, batti gli atout, sviluppa i semi lunghi, fai l'impasse e scegli la carta giusta
+• La sala della difesa: attacchi, sequenze, gioco in terza mano, ritorni e accordi di coppia
 
-QUATTRO STANZE DI PRATICA GRATUITE
+COME TI ALLENI
+• Schede di coaching da scorrere, quiz veloci, mani realistiche da 13 carte e situazioni di gioco
+• Inizia prepara con un tocco una breve sessione mista che riporta ciò che hai sbagliato
+• Serie, progressi per ogni sala e promemoria giornaliero facoltativo
 
-LA STANZA DELLE CARTE
-Impara il rango delle carte, i punti onore, le prese, l'atout, i contratti e i ruoli al tavolo.
+PRIVACY
+• Nessun account, nessuna pubblicità e nessun tracciamento tra app
+• I tuoi progressi restano sul tuo iPhone
 
-LA STANZA DELLA LICITA
-Esercitati con il sistema Standard American per principianti. Leggi mani di 13 carte e scegli tra passo, apertura a colore o 1NT.
+GRATIS E BRIDGE+
+Le quattro sale qui sopra sono gratis e non scadono. Bridge+ è un upgrade facoltativo, come abbonamento mensile o annuale o come acquisto unico a vita. Gli abbonamenti includono una prova gratuita per i nuovi abbonati idonei, e l'app ne mostra la durata prima di iniziare. Bridge+ aggiunge:
+• Allenamento infinito: una mano da 13 carte nuova ogni volta per gli esercizi sulle aperture
+• Correggi gli errori: le domande sbagliate tornano con un calendario distanziato
+• Sfida a tempo: un giro di domande miste a tempo, con record personale
+• Bridge Minute: una sfida quotidiana da cinque domande
+• Prepara la serata: un mix breve per la tua prossima partita, guidato dai tuoi errori e dalla sala più debole, con promemoria settimanale facoltativo
+• Set di esercizi extra in ciascuna delle quattro sale
+• I tavoli dei maestri: licita competitiva (contri, sbarramenti, Stayman e transfer), gioco avanzato e decisioni nel bridge duplicato
 
-LA STANZA DEL DICHIARANTE
-Conta le vincenti, muovi l'atout, affranca i semi lunghi, effettua sorpassi e scegli la carta giusta in gioco.
+I prezzi sono mostrati nell'app prima dell'acquisto e variano in base alla regione. Gli abbonamenti si rinnovano automaticamente, a meno che non vengano annullati almeno 24 ore prima della fine del periodo in corso. Gestisci o annulla da Impostazioni > ID Apple > Abbonamenti.
 
-LA STANZA DELLA DIFESA
-Allenati con gli attacchi, le sequenze, il gioco in terza, i ritorni e le abitudini del flanc.
+Bridge Trainer usa un sistema Standard American per principianti. Gli accordi di coppia variano, quindi conferma le convenzioni con il tuo compagno.
 
-BRIDGE+ (OPZIONALE)
-Tutto quello che c'è sopra resta gratuito. Bridge+ aggiunge pratica che non finisce mai:
-
-ENDLESS PRACTICE distribuisce ogni volta una mano di 13 carte generata al momento, così gli esercizi di apertura non si ripetono mai e non si esauriscono mai.
-
-FIX MY MISTAKES ricorda che cosa hai sbagliato e te lo ripropone secondo un calendario distribuito, così i punti deboli si chiudono davvero.
-
-TIMED CHALLENGE ti dà novanta secondi di domande miste e un record personale da battere.
-
-SET DI PRATICA EXTRA in ognuna delle quattro stanze per principianti, con nuove domande e nuove mani negli stessi esercizi che già usi.
-
-THE MASTER TABLES, con convenzioni, gioco della carta avanzato e strategia di duplicato.
-
-Nuovi esercizi vengono aggiunti tutto l'anno.
-
-PROGETTATO PER L'APPRENDIMENTO
-Schede di coaching interattive, quiz rapidi, mani reali da 13 carte, scenari di gioco, strisce vincenti e una sessione mista giornaliera che ripropone il materiale errato.
-
-Bridge Trainer utilizza il sistema Standard American per principianti. Le convenzioni di coppia variano, quindi conferma gli accordi con il tuo partner.
-
-ABONNAMENTI
-Bridge+ è disponibile con abbonamento a rinnovo automatico (mensile o annuale, entrambi con 7 giorni di prova gratuita) o con acquisto singolo Lifetime. I prezzi sono mostrati nell'app prima dell'acquisto e variano in base alla regione. Il pagamento viene addebitato sul tuo ID Apple alla conferma. Gli abbonamenti si rinnovano automaticamente salvo disdetta almeno 24 ore prima della fine del periodo in corso. Puoi gestirli o disdirli quando vuoi in Impostazioni → ID Apple → Abbonamenti. Termini d'uso (EULA standard di Apple): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Informativa sulla privacy: https://jackwallner.github.io/bridge/privacy-policy.
+Termini di utilizzo (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy: https://jackwallner.com/ios/bridge/privacy-policy.html

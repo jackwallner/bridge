@@ -1,1 +1,1 @@
-kartlar,tutor,yeni başlayan,ders,drill,savunma,deklaran,pratik,oyun,kontrat,bilgi,bidding,practice
+oyna,oyunu,iskambil,kağıt,kart,ders,başlangıç,kontrat,deklaran,koz,löve,atak,sanzatu,quiz,eğitim

@@ -1,1 +1,1 @@
-kaarten,kaartspel,tutor,beginner,les,oefening,verdediging,leider,praktijk,speel,troef
+oefenen,spelen,kaartspel,beginners,cursus,les,troef,leider,contract,quiz,honneurpunten,uitkomst,slag

@@ -1,40 +1,33 @@
-Lær kontraktbridge for begyndere i korte sessioner på fem minutter.
+Bridge Trainer er en øve-app til begyndere i bridge, med korte øvelser i kortenes rækkefølge, meldinger, spilførerspil og modspil. Der er ingen modstandere, og hvert svar forklarer hvorfor. Fire øverum er gratis, uden konto.
 
-Uden modstandere og uden pres. Tæl point, vælg en åbningsmelding, planlæg spillet, og lær forsvarsvaner med forklaringen bag hvert svar.
+FIRE GRATIS ØVERUM
+• Kortrummet: kortenes rang, honnørpoint, stik, trumf, kontrakter og rollerne ved bordet
+• Meldingsrummet: læs en hånd med 13 kort og vælg pas, en åbning i en farve eller 1NT med Standard American for begyndere
+• Spilførerrummet: tæl vindere, træk trumf, etablér lange farver, tag en knibning og vælg det rigtige kort
+• Modspilsrummet: udspil, sekvenser, tredjehåndsspil, returneringer og makkeraftaler
 
-FIRE GRATIS TRÆNINGSRUM
+SÅDAN ØVER DU
+• Kort du kan swipe, hurtige quizzer, realistiske hænder med 13 kort og spilsituationer
+• Kom i gang samler en kort blandet omgang med ét tryk, så det du missede, kommer igen
+• Dage i træk, fremgang for hvert rum og en valgfri daglig påmindelse
 
-KORTRUMMET
-Lær kortrang, honnørpoint, stik, trumf, kontrakter og roller ved bordet.
+PRIVATLIV
+• Ingen konto, ingen reklamer og ingen sporing på tværs af apps
+• Din fremgang gemmes på din iPhone
 
-MELDERUMMET
-Træn det grundlæggende Standard American-system. Læs hænder med 13 kort, og vælg mellem pas, en farveåbning eller 1NT.
+GRATIS OG BRIDGE+
+De fire rum ovenfor er gratis og udløber aldrig. Bridge+ er en valgfri opgradering som månedligt eller årligt abonnement eller som et enkeltkøb på livstid. Abonnementer har en gratis prøveperiode til nye abonnenter, der er berettiget, og appen viser længden, før du starter. Bridge+ tilføjer:
+• Endeløs træning: en nyudstedt hånd med 13 kort hver gang til øvelser i åbningsmeldinger
+• Ret mine fejl: spørgsmål, du svarede forkert på, kommer igen efter en fast tidsplan
+• På tid: en tidsbegrænset runde med blandede spørgsmål og en personlig rekord
+• Bridge Minute: en daglig udfordring med fem spørgsmål
+• Klar til bridgeaften: en kort blanding til din næste aften, styret af dine fejl og dit svageste rum, med en valgfri ugentlig påmindelse
+• Ekstra øvesæt i hvert af de fire rum
+• Mesterbordene: konkurrencemeldinger (doblinger, spærremeldinger, Stayman og transfer), avanceret spilføring og turneringsvalg
 
-SPILFØRERRUMMET
-Tæl vindere, træk trumf, etabler lange farver, tag knibe, og vælg det rigtige kort i spilsituationer.
+Priser vises i appen, før du køber, og varierer fra region til region. Abonnementer fornyes automatisk, medmindre de opsiges mindst 24 timer før den nuværende periodes udløb. Administrér eller opsig under Indstillinger > Apple-id > Abonnementer.
 
-FORSVARSRUMMET
-Træn udspil, sekvenser, spil som tredjemand, returer og partnerskabsvaner.
+Bridge Trainer bruger Standard American for begyndere. Makkeraftaler varierer, så afstem konventioner med din makker.
 
-BRIDGE+ (VALGFRIT)
-Alt ovenfor forbliver gratis. Bridge+ tilføjer træning, der aldrig slipper op:
-
-ENDLESS PRACTICE giver hver gang en nygenereret hånd med 13 kort, så øvelser i åbningsmeldinger aldrig gentages og aldrig slipper op.
-
-FIX MY MISTAKES husker, hvad du svarede forkert, og bringer det tilbage efter en spredt plan, så svage punkter faktisk lukkes.
-
-TIMED CHALLENGE giver dig halvfems sekunder med blandede spørgsmål og en personlig rekord at jagte.
-
-EKSTRA ØVELSESSÆT i hvert af de fire begynderrum, med nye spørgsmål og hænder i de samme øvelser, du allerede bruger.
-
-THE MASTER TABLES, med konventioner, avanceret kortspil og turneringsstrategi.
-
-Der kommer nye øvelser hele året.
-
-BYGGET TIL LÆRING
-Læringskort, hurtige quizzer, realistiske 13-korthænder, spilszenarier, serier og en daglig blandet session, der gentager det glemte materiale.
-
-Bridge Trainer bruger det grundlæggende Standard American-system. Partnerskabsforståelser varierer, så aftal konventioner med din partner.
-
-ABONNEMENTER
-Bridge+ fås som et abonnement med automatisk fornyelse (månedligt eller årligt, begge med 7 dages gratis prøveperiode) eller som et engangskøb af Lifetime. Priserne vises i appen, inden du køber, og varierer fra region til region. Betalingen trækkes på dit Apple ID ved bekræftelse. Abonnementer fornyes automatisk, medmindre de opsiges mindst 24 timer før den aktuelle periode slutter. Administrer eller opsig når som helst i Indstillinger → Apple ID → Abonnementer. Vilkår for brug (Apples standard-EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Privatlivspolitik: https://jackwallner.github.io/bridge/privacy-policy.
+Vilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privatliv: https://jackwallner.com/ios/bridge/privacy-policy.html
