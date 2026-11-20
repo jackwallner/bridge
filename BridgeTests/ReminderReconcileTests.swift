@@ -40,4 +40,31 @@ final class ReminderReconcileTests: XCTestCase {
         wait(for: [answered], timeout: 10)
         RunLoop.main.run(until: Date().addingTimeInterval(0.5))
     }
+
+    /// Bug catalog 2026-11-20 B1: a 9:00 reminder set in New York was
+    /// rescheduled at 6:03 after the zone moved to Los Angeles with the app
+    /// still in memory.
+    func testRemindersKeepTheirWallTimeAfterAZoneChange() {
+        let original = NSTimeZone.default
+        defer { NSTimeZone.default = original }
+        NSTimeZone.default = TimeZone(identifier: "America/New_York")!
+        let store = UserDefaults(suiteName: "ReminderZoneTests.\(UUID().uuidString)")!
+        let settings = AppSettings(defaults: store)
+        settings.reminderTime = Calendar.current.date(from: DateComponents(hour: 9, minute: 0))!
+        settings.gameNightReminderTime = Calendar.current.date(from: DateComponents(hour: 19, minute: 30))!
+
+        NSTimeZone.default = TimeZone(identifier: "America/Los_Angeles")!
+        XCTAssertEqual(settings.dailyReminderTriggerParts.hour, 9)
+        XCTAssertEqual(settings.dailyReminderTriggerParts.minute, 0)
+        XCTAssertEqual(settings.gameNightTriggerParts.hour, 19)
+        XCTAssertEqual(settings.gameNightTriggerParts.minute, 30)
+
+        settings.refreshWallTimesForCurrentZone()
+        let shown = Calendar.current.dateComponents([.hour, .minute], from: settings.reminderTime)
+        XCTAssertEqual(shown.hour, 9)
+        XCTAssertEqual(shown.minute, 0)
+        let shownGame = Calendar.current.dateComponents([.hour, .minute], from: settings.gameNightReminderTime)
+        XCTAssertEqual(shownGame.hour, 19)
+        XCTAssertEqual(shownGame.minute, 30)
+    }
 }

@@ -179,6 +179,7 @@ final class AppSettings: ObservableObject {
     /// Run at launch and whenever the app comes back: puts back any request
     /// a switched-on toggle is missing, and finishes an interrupted ask.
     func reconcileReminders() {
+        refreshWallTimesForCurrentZone()
         guard reminderEnabled || gameNightReminderEnabled else { return }
         UNUserNotificationCenter.current().getNotificationSettings { notificationSettings in
             let status = notificationSettings.authorizationStatus
@@ -223,6 +224,50 @@ final class AppSettings: ObservableObject {
         }
     }
 
+    // MARK: - Wall-clock times
+
+    /// The saved hour and minute are the reminder times. `reminderTime` and
+    /// `gameNightReminderTime` are Dates built in the zone the app launched
+    /// in, so after the zone changes with the app in memory they read as a
+    /// different wall time (9:00 in New York reads 6:03 in Los Angeles).
+    private var savedReminderHourMinute: (hour: Int, minute: Int) {
+        (defaults.object(forKey: Keys.reminderHour) as? Int ?? 9, defaults.object(forKey: Keys.reminderMinute) as? Int ?? 0)
+    }
+
+    private var savedGameNightHourMinute: (hour: Int, minute: Int) {
+        (defaults.object(forKey: Keys.gameNightHour) as? Int ?? 17, defaults.object(forKey: Keys.gameNightMinute) as? Int ?? 0)
+    }
+
+    var dailyReminderTriggerParts: DateComponents {
+        let time = savedReminderHourMinute
+        return DateComponents(hour: time.hour, minute: time.minute, second: 0)
+    }
+
+    var gameNightTriggerParts: DateComponents {
+        let time = savedGameNightHourMinute
+        var parts = DateComponents(hour: time.hour, minute: time.minute, second: 0)
+        parts.weekday = gameNightDay.rawValue
+        return parts
+    }
+
+    /// Rebuilds the picker Dates from the saved hour and minute when the
+    /// zone has moved under them, so Settings shows the time the player set.
+    func refreshWallTimesForCurrentZone() {
+        let calendar = Calendar.current
+        let daily = savedReminderHourMinute
+        let shown = calendar.dateComponents([.hour, .minute], from: reminderTime)
+        if shown.hour != daily.hour || shown.minute != daily.minute,
+           let rebuilt = calendar.date(from: DateComponents(hour: daily.hour, minute: daily.minute)) {
+            reminderTime = rebuilt
+        }
+        let game = savedGameNightHourMinute
+        let shownGame = calendar.dateComponents([.hour, .minute], from: gameNightReminderTime)
+        if shownGame.hour != game.hour || shownGame.minute != game.minute,
+           let rebuilt = calendar.date(from: DateComponents(hour: game.hour, minute: game.minute)) {
+            gameNightReminderTime = rebuilt
+        }
+    }
+
     private func scheduleReminder() {
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: [Self.reminderID])
@@ -232,9 +277,7 @@ final class AppSettings: ObservableObject {
         content.body = Self.dailyReminderBody
         content.sound = .default
 
-        var parts = Calendar.current.dateComponents([.hour, .minute], from: reminderTime)
-        parts.second = 0
-        let trigger = UNCalendarNotificationTrigger(dateMatching: parts, repeats: true)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dailyReminderTriggerParts, repeats: true)
         center.add(UNNotificationRequest(identifier: Self.reminderID, content: content, trigger: trigger))
     }
 
@@ -268,13 +311,7 @@ final class AppSettings: ObservableObject {
         content.sound = .default
         content.userInfo = [AppNotification.routeKey: AppNotification.gameNightPrepValue]
 
-        let time = Calendar.current.dateComponents([.hour, .minute], from: gameNightReminderTime)
-        var parts = DateComponents()
-        parts.weekday = gameNightDay.rawValue
-        parts.hour = time.hour
-        parts.minute = time.minute
-        parts.second = 0
-        let trigger = UNCalendarNotificationTrigger(dateMatching: parts, repeats: true)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: gameNightTriggerParts, repeats: true)
         center.add(UNNotificationRequest(identifier: Self.gameNightReminderID, content: content, trigger: trigger))
     }
 

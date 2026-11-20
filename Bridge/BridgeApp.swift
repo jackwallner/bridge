@@ -32,6 +32,9 @@ struct BridgeApp: App {
                     Task { await FeedbackService.shared.flushPending() }
                     settings.reconcileReminders()
                 }
+                .onReceive(NotificationCenter.default.publisher(for: .NSSystemTimeZoneDidChange)) { _ in
+                    settings.reconcileReminders()
+                }
                 .onChange(of: subscriptions.membershipConfirmed) { _, confirmed in
                     // Level, not edge: a lapsed member's first record can
                     // already say "not a member", so isPro never changes.
