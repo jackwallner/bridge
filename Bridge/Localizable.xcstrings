@@ -9474,7 +9474,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Een preëmptief bod toont een lange kleur en een beperkte hand en dwingt de tegenstanders hun bieding hoger te beginnen."
+            "value": "Een sperbieding toont een lange kleur en een beperkte hand en dwingt de tegenstanders hun bieding hoger te beginnen."
           }
         },
         "ru": {
@@ -10139,7 +10139,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Een informatiedoublet toont steun voor de ongeboden kleuren en vraagt partner er een te kiezen, tenzij partner een speciale reden heeft om te passen."
+            "value": "Een informatiecontra toont steun voor de ongeboden kleuren en vraagt partner er een te kiezen, tenzij partner een speciale reden heeft om te passen."
           }
         },
         "ru": {
@@ -10163,7 +10163,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bilgi kontrı, söylenmemiş renklere destek gösterir ve ortağınızdan, pas geçmek için özel bir nedeni yoksa, bunlardan birini seçmesini ister."
+            "value": "Bilgi kontrası, söylenmemiş renklere destek gösterir ve ortağınızdan, pas geçmek için özel bir nedeni yoksa, bunlardan birini seçmesini ister."
           }
         },
         "zh-Hant": {
@@ -15240,7 +15240,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Alle doubletten vermijden"
+            "value": "Alle contra's vermijden"
           }
         },
         "ru": {
@@ -15264,7 +15264,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tüm kontrlardan kaçınmak"
+            "value": "Tüm kontralardan kaçınmak"
           }
         },
         "zh-Hant": {
@@ -20767,7 +20767,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De contractslagen leveren 2 × 30 × 2 = 120 op, genoeg voor de manchepremie van 300. Tel 50 op voor een gemaakt gedoubleerd contract: 470. Overslagen bepalen niet of het contract de manchepremie oplevert."
+            "value": "De contractslagen leveren 2 × 30 × 2 = 120 op, genoeg voor de manchepremie van 300. Tel 50 op voor een gemaakt gecontreerd contract: 470. Overslagen bepalen niet of het contract de manchepremie oplevert."
           }
         },
         "ru": {
@@ -20791,7 +20791,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kontrat löveleri 2 × 30 × 2 = 120 puan eder, bu da 300 puanlık manş bonusu için yeterlidir. Kontrlu kontratı yaptığınız için 50 puan ekleyin: 470. Fazla löveler kontratın manş bonusu kazanıp kazanmadığını belirlemez."
+            "value": "Kontrat löveleri 2 × 30 × 2 = 120 puan eder, bu da 300 puanlık manş bonusu için yeterlidir. Kontralı kontratı yaptığınız için 50 puan ekleyin: 470. Fazla löveler kontratın manş bonusu kazanıp kazanmadığını belirlemez."
           }
         },
         "zh-Hant": {
@@ -24584,7 +24584,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Doubletten, preëmptieve biedingen, Stayman en transfers"
+            "value": "Contra's, sperbiedingen, Stayman en transfers"
           }
         },
         "ru": {
@@ -24608,7 +24608,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kontrlar, barajlar, Stayman ve transferler"
+            "value": "Kontralar, barajlar, Stayman ve transferler"
           }
         },
         "zh-Hant": {
@@ -24679,7 +24679,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Een slem doubleren"
+            "value": "Een slem contreren"
           }
         },
         "ru": {
@@ -24703,7 +24703,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bir şleme kontr vermek"
+            "value": "Bir şleme kontra vermek"
           }
         },
         "zh-Hant": {
@@ -24774,7 +24774,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Doubleren voor straf"
+            "value": "Contreren voor straf"
           }
         },
         "ru": {
@@ -24798,7 +24798,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ceza kontrı vermek"
+            "value": "Ceza kontrası vermek"
           }
         },
         "zh-Hant": {
@@ -30189,7 +30189,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vier passen op rij beëindigen de bieding zonder contract. Een uitgepast spel levert nul punten op. Na een bod, doublet of redoublet beëindigen drie opeenvolgende passen de bieding."
+            "value": "Vier passen op rij beëindigen de bieding zonder contract. Een uitgepast spel levert nul punten op. Na een bod, contra of recontra beëindigen drie opeenvolgende passen de bieding."
           }
         },
         "ru": {
@@ -30213,7 +30213,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "İlk turda dört pas, ihaleyi kontratsız bitirir. Pasla geçilen dağıtımda puan alınmaz. Bir deklare, kontr veya sürkontrdan sonra art arda üç pas ihaleyi bitirir."
+            "value": "İlk turda dört pas, ihaleyi kontratsız bitirir. Pasla geçilen dağıtımda puan alınmaz. Bir deklare, kontra veya sürkontradan sonra art arda üç pas ihaleyi bitirir."
           }
         },
         "zh-Hant": {
@@ -34559,7 +34559,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "In SAYC beginnen gewone openingen op 1-niveau meestal rond 12 tot 13 honneurpunten. Verdeling en speelkracht tellen mee. Pas niet automatisch met 12 punten, en denk aan een zwak preëmptief bod met een geschikte lange kleur."
+            "value": "In SAYC beginnen gewone openingen op 1-niveau meestal rond 12 tot 13 honneurpunten. Verdeling en speelkracht tellen mee. Pas niet automatisch met 12 punten, en denk aan een zwakke sperbieding met een geschikte lange kleur."
           }
         },
         "ru": {
@@ -40354,7 +40354,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De linkertegenstander opent 1♥. Wat vraagt een informatiedoublet meestal van partner?"
+            "value": "De linkertegenstander opent 1♥. Wat vraagt een informatiecontra meestal van partner?"
           }
         },
         "ru": {
@@ -40378,7 +40378,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Soldaki rakip 1♥ açtı. Konuşma kontru genellikle ortaktan ne yapmasını ister?"
+            "value": "Soldaki rakip 1♥ açtı. Bilgi kontrası genellikle ortaktan ne yapmasını ister?"
           }
         },
         "zh-Hant": {
@@ -63362,7 +63362,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De eerste down kost 100, de volgende twee elk 200 en de vierde 300: -800. Bij kwetsbaarheid kost de eerste gedoubleerde down 200 en elke volgende 300."
+            "value": "De eerste down kost 100, de volgende twee elk 200 en de vierde 300: -800. Bij kwetsbaarheid kost de eerste gecontreerde down 200 en elke volgende 300."
           }
         },
         "ru": {
@@ -63386,7 +63386,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "İlk batan löve 100, sonraki ikisi 200'er, dördüncüsü 300 tutar: -800. Zonda kontrlu cezalar ilk batan löve için 200, sonrakilerin her biri için 300'dür."
+            "value": "İlk batan löve 100, sonraki ikisi 200'er, dördüncüsü 300 tutar: -800. Zonda kontralı cezalar ilk batan löve için 200, sonrakilerin her biri için 300'dür."
           }
         },
         "zh-Hant": {
@@ -65642,7 +65642,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deze hand heeft 6 punten: Q=2, K=3 en J=1. Ze zit onder de gewone openingskracht en heeft geen lange kleur voor een preëmptief bod, dus pas."
+            "value": "Deze hand heeft 6 punten: Q=2, K=3 en J=1. Ze zit onder de gewone openingskracht en heeft geen lange kleur voor een sperbieding, dus pas."
           }
         },
         "ru": {
@@ -71302,7 +71302,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wat is het hoofddoel van een preëmptieve opening?"
+            "value": "Wat is het hoofddoel van een sperbieding?"
           }
         },
         "ru": {
@@ -73012,7 +73012,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wat is het laagste ongedoubleerde hartencontract dat de manchepremie oplevert als je het maakt?"
+            "value": "Wat is het laagste ongecontreerde hartencontract dat de manchepremie oplevert als je het maakt?"
           }
         },
         "ru": {
@@ -73036,7 +73036,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yapıldığında manş bonusu kazandıran en düşük kontrsuz kupa kontratı hangisidir?"
+            "value": "Yapıldığında manş bonusu kazandıran en düşük kontrasız kupa kontratı hangisidir?"
           }
         },
         "zh-Hant": {
@@ -75862,7 +75862,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Je gaat vier down, gedoubleerd en niet kwetsbaar. Wat is je wedstrijdscore?"
+            "value": "Je gaat vier down, gecontreerd en niet kwetsbaar. Wat is je wedstrijdscore?"
           }
         },
         "ru": {
@@ -75886,7 +75886,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zon dışında kontrlu dört löve batıyorsunuz. Düplike skorunuz nedir?"
+            "value": "Zon dışında kontralı dört löve batıyorsunuz. Düplike skorunuz nedir?"
           }
         },
         "zh-Hant": {
@@ -76242,7 +76242,7 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Je maakt precies 2♥ gedoubleerd, niet kwetsbaar. Wat is je wedstrijdscore?"
+            "value": "Je maakt precies 2♥ gecontreerd, niet kwetsbaar. Wat is je wedstrijdscore?"
           }
         },
         "ru": {
@@ -76266,7 +76266,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zon dışında kontrlu 2♥'yi tam yapıyorsunuz. Düplike skorunuz nedir?"
+            "value": "Zon dışında kontralı 2♥'yi tam yapıyorsunuz. Düplike skorunuz nedir?"
           }
         },
         "zh-Hant": {
