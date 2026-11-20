@@ -13,6 +13,7 @@ Developer notes and historical audits for this repository. The published site re
 - [state-machines-2026-11-06-fixes.md](audits/state-machines-2026-11-06-fixes.md): Fixes for the reviewed claims: 5 fixed, 0 skipped, 4 held for Jack (P1, P2, P4, and P6 after its UI test passed on 4b81122)
 - [state-machines-2026-11-06-verify.md](audits/state-machines-2026-11-06-verify.md): Third-pass regression check: PASS, all 5 fixes work, 184 tests pass, SM-1 and SM-2 tests left as device checks
 - [presubmit-review-2026-11-07.md](audits/presubmit-review-2026-11-07.md): Pre-submit review of 1.2.8 against live 1.2.7: 1 P1 fixed (choice card Undo double grade), 1 P2 risk, tests not run (GitHub Macs stalled)
+- [2026-11-20-bug-ux.html](audits/2026-11-20-bug-ux.html): Bug and UX catalog, 2026-11-20: 9 bugs (1 medium, 8 low; 6 confirmed), 15 UX items, October audit items rechecked. Catalog only, nothing fixed.
 
 ## ASO
 
