@@ -1,1 +1,1 @@
-cartas,aprender,tutor,iniciante,lição,exercício,defesa,declarante,prática,play,defensa
+cartas,aprender,tutor,iniciante,lição,exercício,defesa,declarante,prática,play

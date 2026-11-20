@@ -13,7 +13,7 @@ Procvičujte základy systému Standard American. Přečtěte 13karetní listy a
 MÍSTNOST SEHRÁVKY
 Počítejte vítězné zdvihy, vytrumfujte, vypracujte dlouhé barvy, provádějte impasy a vybírejte správné karty.
 
-OBRANNOÁ MÍSTNOST
+OBRANNÁ MÍSTNOST
 Trénujte výnosy, sekvence, hru třetího hráče, vracení barvy a partnerské návyky.
 
 BRIDGE+ (VOLITELNÉ)
@@ -21,11 +21,11 @@ Všechno výše zůstává zdarma. Bridge+ přidává cvičení, které nikdy ne
 
 ENDLESS PRACTICE pokaždé rozdá čerstvě vygenerovaný list třinácti karet, takže se cvičení na zahajovací dražbu nikdy neopakují ani nedojdou.
 
-FIX MY MISTAKES si pamatuje, co jsi měl špatně, a vrací to podle rozloženého rozvrhu, aby se slabá místa opravdu zacelila.
+FIX MY MISTAKES si pamatuje, co jste měli špatně, a vrací to podle rozloženého rozvrhu, aby se slabá místa opravdu zacelila.
 
-TIMED CHALLENGE ti dá devadesát sekund smíšených otázek a osobní rekord, který můžeš překonávat.
+TIMED CHALLENGE vám dá devadesát sekund smíšených otázek a osobní rekord, který můžete překonávat.
 
-EXTRA SADY CVIČENÍ v každé ze čtyř místností pro začátečníky, s novými otázkami a listy ve stejných cvičeních, která už používáš.
+EXTRA SADY CVIČENÍ v každé ze čtyř místností pro začátečníky, s novými otázkami a listy ve stejných cvičeních, která už používáte.
 
 THE MASTER TABLES, s konvencemi, pokročilou hrou a turnajovou strategií.
 
@@ -34,7 +34,7 @@ Nová cvičení přibývají po celý rok.
 NAVRŽENO PRO VÝUKU
 Interaktivní výukové karty, rychlé kvízy, realistické 13karetní listy, herní scénáře, série a denní mix, který se vrací k chybám.
 
-Bridge Trainer využíva základy systému Standard American. Partnerské dohody se liší, proto si konvence vždy ověřte se svým partnerem.
+Bridge Trainer využívá základy systému Standard American. Partnerské dohody se liší, proto si konvence vždy ověřte se svým partnerem.
 
 PŘEDPLATNÉ
 Bridge+ je k dispozici jako automaticky obnovované předplatné (měsíční nebo roční, obojí se 7denní bezplatnou zkušební verzí) nebo jako jednorázový nákup Lifetime. Ceny se zobrazují v aplikaci před nákupem a liší se podle regionu. Platba se strhne z vašeho Apple ID při potvrzení. Předplatné se automaticky obnovuje, pokud ho nezrušíte alespoň 24 hodin před koncem aktuálního období. Spravovat nebo zrušit můžete kdykoli v Nastavení → Apple ID → Předplatné. Podmínky použití (standardní EULA Applu): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. Zásady ochrany osobních údajů: https://jackwallner.github.io/bridge/privacy-policy.

@@ -1,22 +1,22 @@
-Build real contract bridge instincts in five-minute sessions.
+পাঁচ মিনিটের সেশনে আসল কনট্র্যাক্ট ব্রিজের সহজাত বোধ গড়ে তুলুন।
 
-Bridge Trainer turns the parts that beginners need most into quick, focused drills. There are no opponents and no pressure. Count points, choose an opening bid, plan the play, and learn defensive habits with the reason behind every answer.
+Bridge Trainer নতুনদের সবচেয়ে প্রয়োজনীয় বিষয়গুলোকে দ্রুত, মনোযোগী ড্রিলে রূপ দেয়। কোনো প্রতিপক্ষ নেই, কোনো চাপও নেই। পয়েন্ট গুনুন, ওপেনিং বিড বেছে নিন, খেলার পরিকল্পনা করুন এবং প্রতিটি উত্তরের পেছনের কারণসহ ডিফেন্সের অভ্যাস শিখুন।
 
-FOUR FREE PRACTICE ROOMS
+চারটি বিনামূল্যের অনুশীলন রুম
 
-THE CARD ROOM
-Learn card rank, high-card points, tricks, trump, contracts, and table roles.
+কার্ড রুম
+কার্ডের ক্রম, হাই-কার্ড পয়েন্ট, ট্রিক, ট্রাম্প, কনট্র্যাক্ট এবং টেবিলের ভূমিকা শিখুন।
 
-THE AUCTION ROOM
-Practice a beginner Standard American framework. Read 13-card hands and choose between pass, a suit opening, and 1NT.
+অকশন রুম
+নতুনদের জন্য Standard American কাঠামো অনুশীলন করুন। ১৩ কার্ডের হাত পড়ুন এবং পাস, স্যুট ওপেনিং ও 1NT-এর মধ্যে বেছে নিন।
 
-THE DECLARER ROOM
-Count winners, draw trump, establish long suits, finesse, and choose the right card in table situations.
+ডিক্লেয়ারার রুম
+উইনার গুনুন, ট্রাম্প টানুন, লম্বা স্যুট প্রতিষ্ঠা করুন, ফিনেস করুন এবং খেলার পরিস্থিতিতে সঠিক কার্ড বেছে নিন।
 
-THE DEFENSE ROOM
-Train opening leads, sequences, third-hand play, suit returns, and partnership habits.
+ডিফেন্স রুম
+ওপেনিং লিড, সিকোয়েন্স, থার্ড-হ্যান্ড প্লে, স্যুট রিটার্ন এবং পার্টনারশিপের অভ্যাস অনুশীলন করুন।
 
-BRIDGE+ (OPTIONAL)
+BRIDGE+ (ঐচ্ছিক)
 উপরের সবকিছু বিনামূল্যে থাকে। Bridge+ যোগ করে এমন অনুশীলন যা কখনও ফুরায় না:
 
 ENDLESS PRACTICE প্রতিবার তাৎক্ষণিকভাবে তৈরি ১৩ কার্ডের নতুন হাত দেয়, তাই ওপেনিং বিড অনুশীলন কখনও পুনরাবৃত্তি হয় না, কখনও ফুরায়ও না।
@@ -31,10 +31,10 @@ THE MASTER TABLES, যেখানে কনভেনশন, উন্নত ক
 
 সারা বছর নতুন ড্রিল যোগ করা হয়।
 
-BUILT FOR LEARNING
-Swipeable coaching cards, quick quizzes, realistic 13-card hands, card-play scenarios, streaks, and a daily mixed session that brings missed material back.
+শেখার জন্য তৈরি
+সোয়াইপ করা যায় এমন কোচিং কার্ড, দ্রুত কুইজ, বাস্তবসম্মত ১৩ কার্ডের হাত, কার্ড-প্লে পরিস্থিতি, স্ট্রিক এবং ছুটে যাওয়া বিষয় ফিরিয়ে আনে এমন দৈনিক মিশ্র সেশন।
 
-Bridge Trainer uses a beginner Standard American framework. Partnership agreements vary, so confirm conventions with your partner.
+Bridge Trainer নতুনদের জন্য Standard American কাঠামো ব্যবহার করে। পার্টনারশিপের চুক্তি ভিন্ন হতে পারে, তাই পার্টনারের সঙ্গে কনভেনশন নিশ্চিত করে নিন।
 
-SUBSCRIPTIONS
+সাবস্ক্রিপশন
 Bridge+ স্বয়ংক্রিয়ভাবে নবায়নযোগ্য সাবস্ক্রিপশন (মাসিক বা বার্ষিক, দুটোতেই ৭ দিনের ফ্রি ট্রায়াল) অথবা একবারের Lifetime কেনার মাধ্যমে পাওয়া যায়। দাম কেনার আগে অ্যাপে দেখানো হয় এবং অঞ্চলভেদে আলাদা হয়। নিশ্চিত করার সময় আপনার Apple ID থেকে টাকা কাটা হয়। চলতি মেয়াদ শেষ হওয়ার অন্তত ২৪ ঘণ্টা আগে বাতিল না করলে সাবস্ক্রিপশন স্বয়ংক্রিয়ভাবে নবায়ন হয়। যেকোনো সময় Settings → Apple ID → Subscriptions থেকে পরিচালনা বা বাতিল করুন। ব্যবহারের শর্তাবলী (Apple-এর স্ট্যান্ডার্ড EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/। গোপনীয়তা নীতি: https://jackwallner.github.io/bridge/privacy-policy।

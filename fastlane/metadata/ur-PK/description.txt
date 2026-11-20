@@ -1,22 +1,22 @@
-Build real contract bridge instincts in five-minute sessions.
+پانچ منٹ کے سیشنز میں حقیقی کنٹریکٹ برج کی سوجھ بوجھ پیدا کریں۔
 
-Bridge Trainer turns the parts that beginners need most into quick, focused drills. There are no opponents and no pressure. Count points, choose an opening bid, plan the play, and learn defensive habits with the reason behind every answer.
+Bridge Trainer نئے سیکھنے والوں کے لیے سب سے ضروری حصوں کو تیز اور مرکوز ڈرلز میں بدل دیتا ہے۔ کوئی حریف نہیں اور کوئی دباؤ نہیں۔ پوائنٹس گنیں، اوپننگ بولی چنیں، کھیل کی منصوبہ بندی کریں اور ہر جواب کے پیچھے کی وجہ کے ساتھ دفاعی عادتیں سیکھیں۔
 
-FOUR FREE PRACTICE ROOMS
+چار مفت پریکٹس روم
 
-THE CARD ROOM
-Learn card rank, high-card points, tricks, trump, contracts, and table roles.
+کارڈ روم
+پتوں کی ترتیب، ہائی کارڈ پوائنٹس، ٹرکس، ٹرمپ، کنٹریکٹس اور میز پر کرداروں کے بارے میں سیکھیں۔
 
-THE AUCTION ROOM
-Practice a beginner Standard American framework. Read 13-card hands and choose between pass, a suit opening, and 1NT.
+بولی روم
+ابتدائی Standard American فریم ورک کی مشق کریں۔ 13 پتوں کے ہاتھ پڑھیں اور پاس، سوٹ اوپننگ یا 1NT میں سے انتخاب کریں۔
 
-THE DECLARER ROOM
-Count winners, draw trump, establish long suits, finesse, and choose the right card in table situations.
+ڈیکلیئرر روم
+جیتنے والی ٹرکس گنیں، ٹرمپ نکالیں، لمبے سوٹ قائم کریں، فنیس کھیلیں اور کھیل کی صورتحال میں درست پتا منتخب کریں۔
 
-THE DEFENSE ROOM
-Train opening leads, sequences, third-hand play, suit returns, and partnership habits.
+ڈیفنس روم
+اوپننگ لیڈ، سیکوئنس، تھرڈ ہینڈ پلے، سوٹ ریٹرن اور پارٹنرشپ کی عادتوں کی مشق کریں۔
 
-BRIDGE+ (OPTIONAL)
+BRIDGE+ (اختیاری)
 اوپر کی ہر چیز مفت رہتی ہے۔ Bridge+ ایسی مشق کا اضافہ کرتا ہے جو کبھی ختم نہیں ہوتی:
 
 ENDLESS PRACTICE ہر بار فوری طور پر تیار کیا گیا 13 پتوں کا نیا ہاتھ دیتا ہے، اس لیے اوپننگ بولی کی مشقیں کبھی نہیں دہراتیں اور کبھی ختم نہیں ہوتیں۔
@@ -31,10 +31,10 @@ THE MASTER TABLES، جس میں کنونشنز، جدید کارڈ پلے اور
 
 سال بھر نئی ڈرلز شامل کی جاتی ہیں۔
 
-BUILT FOR LEARNING
-Swipeable coaching cards, quick quizzes, realistic 13-card hands, card-play scenarios, streaks, and a daily mixed session that brings missed material back.
+سیکھنے کے لیے بنایا گیا
+سوائپ کیے جا سکنے والے کوچنگ کارڈز، فوری کوئز، حقیقت پسندانہ 13 پتوں کے ہاتھ، کارڈ پلے کے منظرنامے، اسٹریکس اور چھوٹے ہوئے مواد کو واپس لانے والا روزانہ کا ملا جلا سیشن۔
 
-Bridge Trainer uses a beginner Standard American framework. Partnership agreements vary, so confirm conventions with your partner.
+Bridge Trainer ابتدائی Standard American فریم ورک استعمال کرتا ہے۔ پارٹنرشپ کے معاہدے مختلف ہو سکتے ہیں، اس لیے اپنے پارٹنر کے ساتھ کنونشنز کی تصدیق کر لیں۔
 
-SUBSCRIPTIONS
+سبسکرپشنز
 ‏Bridge+ خودکار تجدید ہونے والی سبسکرپشن کے طور پر (ماہانہ یا سالانہ، دونوں میں 7 دن کی مفت آزمائش) یا ایک بار کی Lifetime خریداری کے طور پر دستیاب ہے۔ قیمتیں خریدنے سے پہلے ایپ میں دکھائی جاتی ہیں اور خطے کے مطابق مختلف ہوتی ہیں۔ تصدیق کے وقت آپ کے Apple ID سے ادائیگی لی جاتی ہے۔ موجودہ مدت ختم ہونے سے کم از کم 24 گھنٹے پہلے منسوخ نہ کرنے پر سبسکرپشن خودکار طور پر تجدید ہو جاتی ہے۔ کسی بھی وقت Settings → Apple ID → Subscriptions میں انتظام کریں یا منسوخ کریں۔ استعمال کی شرائط (Apple کا معیاری EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/۔ پرائیویسی پالیسی: https://jackwallner.github.io/bridge/privacy-policy۔
