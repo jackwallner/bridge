@@ -7,8 +7,8 @@ VIER KOSTENLOSE ÜBUNGSRÄUME
 • Der Gegenspielraum: Ausspiele, Sequenzen, Spiel in dritter Hand, Rückspiele und Absprachen mit dem Partner
 
 SO ÜBST DU
-• Wischbare Lernkarten, schnelle Quizze, realistische Hände mit 13 Karten und Spielsituationen
-• Mit "Los geht's" entsteht per Tipp eine kurze gemischte Runde, in der wiederkommt, was du verpasst hast
+• Lernkarten zum Durchwischen, schnelle Quizze, realistische Hände mit 13 Karten und Spielsituationen
+• Mit "Los geht's" entsteht mit einem Tipp eine kurze gemischte Runde, in der wiederkommt, was du verpasst hast
 • Serien, Fortschritt für jeden Raum und eine optionale tägliche Erinnerung
 
 DATENSCHUTZ
@@ -16,7 +16,7 @@ DATENSCHUTZ
 • Dein Fortschritt bleibt auf deinem iPhone
 
 KOSTENLOS UND BRIDGE+
-Die vier Räume oben sind kostenlos und laufen nicht ab. Bridge+ ist ein optionales Upgrade als Monats- oder Jahresabo oder als einmaliger Kauf für immer. Abos enthalten für berechtigte neue Abonnenten eine kostenlose Testphase, deren Dauer die App vor dem Start anzeigt. Bridge+ bietet zusätzlich:
+Die vier Räume oben sind kostenlos und laufen nicht ab. Bridge+ ist ein optionales Upgrade als Monats- oder Jahresabo oder als einmaliger Kauf mit lebenslangem Zugriff. Abos enthalten für berechtigte neue Abonnenten eine kostenlose Testphase, deren Dauer die App vor dem Start anzeigt. Bridge+ bietet zusätzlich:
 • Endlos-Training: jedes Mal eine neu gegebene Hand mit 13 Karten für Übungen zur Eröffnung
 • Fehler beheben: falsch beantwortete Fragen kommen in einem festen Rhythmus wieder
 • Zeit-Challenge: eine Runde gemischter Fragen auf Zeit mit persönlicher Bestleistung
@@ -27,7 +27,7 @@ Die vier Räume oben sind kostenlos und laufen nicht ab. Bridge+ ist ein optiona
 
 Preise zeigt die App vor dem Kauf an, sie unterscheiden sich je nach Region. Abos verlängern sich automatisch, wenn sie nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums gekündigt werden. Verwalten oder kündigen unter Einstellungen > Apple-ID > Abonnements.
 
-Bridge Trainer nutzt ein Standard-American-System für Anfänger. Absprachen im Turnier und am Tisch unterscheiden sich, bestätige Konventionen deshalb mit deinem Partner.
+Bridge Trainer nutzt ein Standard-American-System für Anfänger. Partnerabsprachen unterscheiden sich, sprich Konventionen deshalb mit deinem Partner ab.
 
 Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 Datenschutz: https://jackwallner.com/ios/bridge/privacy-policy.html

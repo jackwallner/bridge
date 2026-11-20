@@ -1,1 +1,1 @@
-oyna,oyunu,iskambil,kağıt,kart,ders,başlangıç,kontrat,deklaran,koz,löve,atak,sanzatu,quiz,eğitim
+oyna,oyunu,iskambil,kağıt,kart,ders,başlangıç,kontrat,deklaran,koz,löve,atak,ücretsiz,quiz,eğitim

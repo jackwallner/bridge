@@ -1,14 +1,14 @@
-Bridge Trainer è un'app di allenamento al bridge per principianti, con esercizi brevi sulle basi delle carte, le aperture, il gioco del dichiarante e la difesa. Non ci sono avversari e ogni risposta spiega il perché. Quattro stanze di allenamento sono gratis, senza account.
+Bridge Trainer è un'app di allenamento al bridge per principianti, con esercizi brevi sulle basi delle carte, le aperture, il gioco del dichiarante e la difesa. Non ci sono avversari e ogni risposta spiega il perché. Quattro sale di allenamento sono gratis, senza account.
 
-QUATTRO STANZE GRATIS
+QUATTRO SALE GRATIS
 • La sala delle carte: valore delle carte, punti onori, prese, atout, contratti e ruoli al tavolo
 • La sala della licita: leggi una mano di 13 carte e scegli tra passo, apertura a colore o 1NT, con un sistema Standard American per principianti
 • La sala del dichiarante: conta le vincenti, batti gli atout, sviluppa i semi lunghi, fai l'impasse e scegli la carta giusta
 • La sala della difesa: attacchi, sequenze, gioco in terza mano, ritorni e accordi di coppia
 
 COME TI ALLENI
-• Schede di coaching da scorrere, quiz veloci, mani realistiche da 13 carte e situazioni di gioco
-• Inizia prepara con un tocco una breve sessione mista che riporta ciò che hai sbagliato
+• Schede didattiche da scorrere, quiz veloci, mani realistiche da 13 carte e situazioni di gioco
+• «Inizia» prepara con un tocco una breve sessione mista che riporta ciò che hai sbagliato
 • Serie, progressi per ogni sala e promemoria giornaliero facoltativo
 
 PRIVACY
@@ -18,7 +18,7 @@ PRIVACY
 GRATIS E BRIDGE+
 Le quattro sale qui sopra sono gratis e non scadono. Bridge+ è un upgrade facoltativo, come abbonamento mensile o annuale o come acquisto unico a vita. Gli abbonamenti includono una prova gratuita per i nuovi abbonati idonei, e l'app ne mostra la durata prima di iniziare. Bridge+ aggiunge:
 • Allenamento infinito: una mano da 13 carte nuova ogni volta per gli esercizi sulle aperture
-• Correggi gli errori: le domande sbagliate tornano con un calendario distanziato
+• Correggi gli errori: le domande sbagliate tornano a intervalli sempre più lunghi
 • Sfida a tempo: un giro di domande miste a tempo, con record personale
 • Bridge Minute: una sfida quotidiana da cinque domande
 • Prepara la serata: un mix breve per la tua prossima partita, guidato dai tuoi errori e dalla sala più debole, con promemoria settimanale facoltativo

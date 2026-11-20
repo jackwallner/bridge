@@ -3,11 +3,11 @@ Bridge Trainer est une application d'entraînement au bridge pour débutants : d
 QUATRE SALLES GRATUITES
 • La salle du jeu de la carte : valeur des cartes, points d'honneur, levées, atout, contrats et rôles à la table
 • La salle des enchères : lisez une main de 13 cartes et choisissez entre passe, une ouverture à la couleur ou 1SA, dans un cadre Standard American pour débutants
-• La salle du déclarant : comptez vos levées, tirez les atouts, établissez les longues, tentez l'impasse et choisissez la bonne carte
+• La salle du déclarant : comptez vos levées, tirez les atouts, établissez les couleurs longues, tentez l'impasse et choisissez la bonne carte
 • La salle de la défense : entames, séquences, jeu en troisième main, retours et habitudes de paire
 
 COMMENT VOUS VOUS ENTRAÎNEZ
-• Cartes de cours à faire défiler, quiz rapides, mains réalistes de 13 cartes et situations de jeu
+• Cartes pédagogiques à faire défiler, quiz rapides, mains réalistes de 13 cartes et situations de jeu
 • « C'est parti » compose en un geste une courte séance variée qui ramène ce que vous avez manqué
 • Séries, progression par salle et rappel quotidien facultatif
 

@@ -23,7 +23,7 @@ Yukarıdaki dört oda ücretsizdir ve süresi dolmaz. Bridge+ isteğe bağlı bi
 • Bridge Minute: günlük beş soruluk bir meydan okuma
 • Briç gecesi hazırlığı: bir sonraki oyununuz için hatalarınızın ve en zayıf odanızın öne çıktığı kısa bir karışım, isteğe bağlı haftalık hatırlatmayla
 • Dört odanın her birinde ek alıştırma setleri
-• Usta Masaları: rekabetçi ihale (kontrlar, barajlar, Stayman ve transferler), ileri düzey oyun tekniği ve düplike kararları
+• Usta Masaları: rekabetçi ihale (kontralar, barajlar, Stayman ve transferler), ileri düzey oyun tekniği ve düplike kararları
 
 Fiyatlar satın almadan önce uygulamada gösterilir ve bölgeye göre değişir. Abonelikler, geçerli dönemin bitiminden en az 24 saat önce iptal edilmedikçe otomatik olarak yenilenir. Ayarlar > Apple Kimliği > Abonelikler bölümünden yönetebilir veya iptal edebilirsiniz.
 
