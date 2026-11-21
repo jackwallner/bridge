@@ -56,6 +56,13 @@ an entitlement, and `ensureOfferings` (so every purchase) waits for it (3s cap).
 Both purchase buttons stay disabled until `membershipResolved`, so
 `ensureOfferings` and `loadOfferings` re-read the customer record while it is
 false (a failed launch fetch used to leave them dead for the session).
+A failed launch fetch with no connection still leaves them dead for as long as the
+page is open, so the onboarding trial page calls
+`resolveMembershipWhenReachable` (re-asks every 5s while the check is failing,
+stops with the page) and `PaywallView` offers Retry whenever prices loaded but
+`membershipResolved` did not. An Ask to Buy purchase (RevenueCat
+`paymentPendingError`) throws `PurchaseError.awaitingApproval`, so both surfaces
+show a localized waiting line instead of RevenueCat's English text.
 `startedTrial` comes from the purchased entitlement's `periodType`, not the
 product. `confirmEntitlement` fetches a fresh record. Simulators keep the
 early-return in `configureIfNeeded`: never configure the production `appl_` key

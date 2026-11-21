@@ -24,7 +24,10 @@ Moved verbatim from AGENTS.md. Loads when a matching file is read; update it her
 Bridge+ owns two recurring rituals. `BridgeMinuteContent` deterministically
 builds the same five questions for every member on a local calendar day: two
 generated opening calls, one declarer decision, and two defensive judgments.
-Results and a 30-day archive stay on device in `BridgeMinuteStore`; sharing uses
+The day key and seed use `Calendar.gregorianLocal`, never `.current`, so a Thai
+or Japanese-era calendar gets the same questions; `BridgeMinuteStore.init` moves
+results saved under an older non-Gregorian key to the Gregorian one. Results and
+a 30-day archive stay on device in `BridgeMinuteStore`; sharing uses
 the system share sheet and needs no account or leaderboard.
 
 The declarer question is built straight from the authored `PlayScenario`s, NOT
