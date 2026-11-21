@@ -45,4 +45,29 @@ final class LocalizationTests: XCTestCase {
             }
         }
     }
+
+    /// English had no catalog entry for the counted strings, so the key itself
+    /// rendered and "1 drills done" shipped. Every counted string must agree
+    /// with its number in the source language too.
+    func testEnglishCountsAgreeWithTheirNumber() {
+        let one = 1
+        let many = 3
+        XCTAssertEqual(String(localized: "\(one) more drills in this room"), "1 more drill in this room")
+        XCTAssertEqual(String(localized: "\(many) more drills in this room"), "3 more drills in this room")
+        XCTAssertEqual(String(localized: "Up \(one) questions this week"), "Up 1 question this week")
+        XCTAssertEqual(String(localized: "Up \(many) questions this week"), "Up 3 questions this week")
+        XCTAssertEqual(String(localized: "\(one) questions locked in this week"), "1 question locked in this week")
+        XCTAssertEqual(String(localized: "\(many) questions locked in this week"), "3 questions locked in this week")
+        XCTAssertEqual(String(localized: "\(one) drills done"), "1 drill done")
+        XCTAssertEqual(String(localized: "\(many) drills done"), "3 drills done")
+        XCTAssertEqual(String(localized: "\(one) drills finished"), "1 drill finished")
+        XCTAssertEqual(String(localized: "\(many) drills finished"), "3 drills finished")
+        XCTAssertEqual(String(localized: "\(one) cards"), "1 card")
+        XCTAssertEqual(String(localized: "\(many) cards"), "3 cards")
+        XCTAssertEqual(String(localized: "\(one) questions"), "1 question")
+        XCTAssertEqual(String(localized: "\(one) hands"), "1 hand")
+        XCTAssertEqual(String(localized: "\(one) deals"), "1 deal")
+        XCTAssertEqual(String(localized: "\(one) due mistakes first, followed by material you have not seen yet."),
+                       "1 due mistake first, followed by material you have not seen yet.")
+    }
 }
