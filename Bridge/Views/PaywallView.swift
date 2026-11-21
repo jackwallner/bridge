@@ -191,6 +191,13 @@ enum PaywallPricing {
     /// Shown in the amount's place until StoreKit answers.
     static var placeholder: String { String(localized: "Loading price…") }
 
+    /// True while something the purchase button needs is missing: a price, or
+    /// the customer record that tells a member from a stranger. Prices can load
+    /// on a flaky connection while the record does not.
+    static func needsReload(priceReady: Bool, membershipResolved: Bool) -> Bool {
+        !priceReady || !membershipResolved
+    }
+
     /// The localized billed amount, or nil while the product is still in flight.
     static func price(_ subscriptions: SubscriptionService, _ plan: PaywallPlan) -> String? {
         guard let base = subscriptions.paywallPrice(for: plan)?.localized else {
@@ -373,7 +380,9 @@ struct PaywallView: View {
             }
             .task {
                 subscriptions.trackPaywallImpression(id: source)
-                if !priceReady { await loadPrices() }
+                if PaywallPricing.needsReload(priceReady: priceReady, membershipResolved: subscriptions.membershipResolved) {
+                    await loadPrices()
+                }
                 trialEligible = await currentTrialEligibility()
             }
         }
@@ -382,11 +391,13 @@ struct PaywallView: View {
     private var purchaseFooter: some View {
         let terms = PaywallPricing.terms(subscriptions, selectedPlan, trial: trialEligible)
         return VStack(spacing: 8) {
-            if priceLoadAttempted && !priceReady && !loadingPrices {
-                Text("Prices aren't available right now. Check your connection and try again.")
-                    .font(.caption)
-                    .foregroundStyle(Theme.inkSecondary)
-                    .multilineTextAlignment(.center)
+            if showsRetry {
+                if !priceReady {
+                    Text("Prices aren't available right now. Check your connection and try again.")
+                        .font(.caption)
+                        .foregroundStyle(Theme.inkSecondary)
+                        .multilineTextAlignment(.center)
+                }
                 Button("Retry loading prices") {
                     Task { await loadPrices() }
                 }
@@ -431,6 +442,14 @@ struct PaywallView: View {
             .accessibilityHint(priceReady ? "" : String(localized: "Waiting for the App Store to return prices"))
             footerLinks
         }
+    }
+
+    /// The purchase button is dead until there is a price and a customer
+    /// record, so either one missing is a reason to offer Retry. Not while a
+    /// read is still in flight.
+    private var showsRetry: Bool {
+        guard priceLoadAttempted, !loadingPrices, !subscriptions.isCheckingEntitlements else { return false }
+        return PaywallPricing.needsReload(priceReady: priceReady, membershipResolved: subscriptions.membershipResolved)
     }
 
     /// Whether the selected plan has a real amount to charge. 3.1.2 wants the

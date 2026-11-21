@@ -388,6 +388,15 @@ final class PurchaseEntitlementTests: XCTestCase {
         }
     }
 
+    /// Prices can be on screen while no customer record was ever read, which
+    /// keeps the purchase button dead. The paywall asks again and offers Retry.
+    func testPaywallReloadsWhenPricesLoadedButMembershipDidNot() {
+        XCTAssertTrue(PaywallPricing.needsReload(priceReady: true, membershipResolved: false))
+        XCTAssertTrue(PaywallPricing.needsReload(priceReady: false, membershipResolved: true))
+        XCTAssertTrue(PaywallPricing.needsReload(priceReady: false, membershipResolved: false))
+        XCTAssertFalse(PaywallPricing.needsReload(priceReady: true, membershipResolved: true))
+    }
+
     func testUnknownOrIneligibleAccountIsNeverPromisedAFreeTrial() async {
         let mock = MockPurchases()
         mock.offering = Offering(identifier: "default", serverDescription: "Test", paywall: nil,
