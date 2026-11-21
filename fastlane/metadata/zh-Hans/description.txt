@@ -37,5 +37,5 @@ THE MASTER TABLES 收录约定叫、进阶打牌技巧和复式桥牌策略。
 Bridge Trainer 采用初学者美国标准叫牌体系。由于同伴间的约定可能各有不同，请与你的搭档确认具体的约定叫。
 
 订阅服务
-Bridge+ 提供自动续期订阅（每月或每年，两者均含 7 天免费试用）或一次性买断 Lifetime。价格会在购买前显示于 App 内，并因地区而异。确认购买时将从你的 Apple ID 扣款。除非在当前周期结束前至少 24 小时取消，否则订阅会自动续期。你可随时在“设置 → Apple ID → 订阅”中管理或取消。 使用条款（Apple 标准 EULA）：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ 隐私政策：https://jackwallner.github.io/bridge/privacy-policy
+Bridge+ 提供自动续期订阅（每月或每年；符合条件的新订阅者可享免费试用，开始前 App 会显示试用时长）或一次性买断 Lifetime。价格会在购买前显示于 App 内，并因地区而异。确认购买时将从你的 Apple ID 扣款。除非在当前周期结束前至少 24 小时取消，否则订阅会自动续期。你可随时在“设置 → Apple ID → 订阅”中管理或取消。 使用条款（Apple 标准 EULA）：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ 隐私政策：https://jackwallner.github.io/bridge/privacy-policy
 隐私政策：https://jackwallner.github.io/bridge/privacy-policy
