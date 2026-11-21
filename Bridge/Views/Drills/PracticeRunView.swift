@@ -48,6 +48,8 @@ struct PracticeRunView: View {
     @State private var selection: Int?
 
     @State private var secondsRemaining = Self.challengeSeconds
+    /// Set once when the clock first runs and kept if the task restarts.
+    @State private var deadline: Date?
     @State private var confettiTrigger = 0
     @State private var confettiParticleCount = 30
     @State private var flashOpacity: Double = 0
@@ -233,12 +235,24 @@ struct PracticeRunView: View {
 
     // MARK: - Clock
 
+    /// Whole seconds until `deadline`, rounded up so the clock reads 90 at the
+    /// start and 0 only once time is truly up.
+    static func secondsLeft(until deadline: Date, now: Date = Date()) -> Int {
+        max(0, Int(deadline.timeIntervalSince(now).rounded(.up)))
+    }
+
+    /// The challenge ends at a wall-clock deadline, not after ninety sleeps:
+    /// time in another app or on a call counts, so every run is the same 90
+    /// seconds and a best score is comparable.
     private func runClock() async {
         guard mode == .timed else { return }
-        while secondsRemaining > 0 && !finished {
+        let end = deadline ?? Date().addingTimeInterval(TimeInterval(Self.challengeSeconds))
+        deadline = end
+        while !finished {
+            secondsRemaining = Self.secondsLeft(until: end)
+            if secondsRemaining == 0 { break }
             try? await Task.sleep(nanoseconds: 1_000_000_000)
             guard !Task.isCancelled else { return }
-            secondsRemaining -= 1
         }
         guard !finished else { return }
         Haptics.impact(.rigid)
