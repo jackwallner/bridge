@@ -369,6 +369,18 @@ final class SubscriptionService: NSObject, ObservableObject {
         }
     }
 
+    /// A first launch with no connection reads no customer record, and both
+    /// purchase buttons stay dead until one lands. Keeps asking, quietly, while
+    /// the check is failing; stops when it resolves or the caller goes away.
+    func resolveMembershipWhenReachable(retryAfter seconds: TimeInterval = 5) async {
+        await ensureOfferings()
+        while entitlementCheckFailed && !membershipResolved {
+            try? await Task.sleep(nanoseconds: UInt64(seconds * 1_000_000_000))
+            guard !Task.isCancelled else { return }
+            await ensureOfferings()
+        }
+    }
+
     func loadOfferings() async {
         guard isConfigured else { return }
         // A launch fetch that failed leaves both purchase buttons disabled

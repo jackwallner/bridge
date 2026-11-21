@@ -397,6 +397,36 @@ final class PurchaseEntitlementTests: XCTestCase {
         XCTAssertFalse(PaywallPricing.needsReload(priceReady: true, membershipResolved: true))
     }
 
+    /// First launch with no connection: the trial button is dead until a
+    /// customer record is read, and nothing else asks again.
+    func testTrialPageKeepsAskingUntilAFirstCustomerRecordLands() async {
+        let mock = MockPurchases()
+        mock.offering = Offering(identifier: "default", serverDescription: "Test", paywall: nil,
+                                 availablePackages: [makePackage()], webCheckoutUrl: nil)
+        mock.fetchError = URLError(.notConnectedToInternet)
+        let service = SubscriptionService(client: mock, defaults: UserDefaults(suiteName: UUID().uuidString)!)
+        let waiting = Task { await service.resolveMembershipWhenReachable(retryAfter: 0.05) }
+        for _ in 0..<100 where !service.entitlementCheckFailed { try? await Task.sleep(nanoseconds: 20_000_000) }
+        XCTAssertTrue(service.entitlementCheckFailed)
+        XCTAssertFalse(service.membershipResolved)
+        mock.fetchError = nil
+        for _ in 0..<100 where !service.membershipResolved { try? await Task.sleep(nanoseconds: 20_000_000) }
+        XCTAssertTrue(service.membershipResolved)
+        XCTAssertNotNil(service.paywallPrice(for: .monthly))
+        await waiting.value
+    }
+
+    func testTrialPageStopsAskingWhenLeft() async {
+        let mock = MockPurchases()
+        mock.fetchError = URLError(.notConnectedToInternet)
+        let service = SubscriptionService(client: mock, defaults: UserDefaults(suiteName: UUID().uuidString)!)
+        let waiting = Task { await service.resolveMembershipWhenReachable(retryAfter: 0.05) }
+        for _ in 0..<100 where !service.entitlementCheckFailed { try? await Task.sleep(nanoseconds: 20_000_000) }
+        waiting.cancel()
+        await waiting.value
+        XCTAssertFalse(service.membershipResolved)
+    }
+
     func testUnknownOrIneligibleAccountIsNeverPromisedAFreeTrial() async {
         let mock = MockPurchases()
         mock.offering = Offering(identifier: "default", serverDescription: "Test", paywall: nil,

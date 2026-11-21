@@ -98,7 +98,9 @@ struct OnboardingView: View {
         // Offerings are normally in by the trial page; the answer needs them.
         .task(id: page) {
             guard page == lastPage else { return }
-            await subscriptions.ensureOfferings()
+            // A first launch with no connection reads no customer record, which
+            // keeps the trial button dead. Keep asking while this page is up.
+            await subscriptions.resolveMembershipWhenReachable()
             trialEligible = await subscriptions.isTrialEligible(for: onboardingPlan)
         }
         .onChange(of: subscriptions.introEligibility) { _, _ in
