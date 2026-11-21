@@ -78,9 +78,21 @@ enum PurchaseOutcome: Sendable {
 enum PurchaseError: LocalizedError {
     case productsUnavailable
     case membershipPending
+    /// Ask to Buy: the request went to a parent and the purchase is not done.
+    case awaitingApproval
+
+    /// RevenueCat reports a deferred (Ask to Buy) purchase as this error.
+    static func isPaymentPending(_ error: Error) -> Bool {
+        if let code = error as? ErrorCode { return code == .paymentPendingError }
+        let pending = ErrorCode.paymentPendingError as NSError
+        let other = error as NSError
+        return other.domain == pending.domain && other.code == pending.code
+    }
 
     var errorDescription: String? {
         switch self {
+        case .awaitingApproval:
+            String(localized: "Waiting for approval. \(Membership.name) unlocks as soon as it is approved.")
         case .productsUnavailable:
             String(localized: "The App Store isn't reachable right now. Check your connection and try again.")
         case .membershipPending:
@@ -435,7 +447,12 @@ final class SubscriptionService: NSObject, ObservableObject {
         guard membershipRecovery == nil else { throw PurchaseError.membershipPending }
         guard membershipResolved else { throw PurchaseError.productsUnavailable }
         guard let package else { throw PurchaseError.productsUnavailable }
-        let result = try await client.purchase(package: package)
+        let result: PurchaseResultData
+        do {
+            result = try await client.purchase(package: package)
+        } catch where PurchaseError.isPaymentPending(error) {
+            throw PurchaseError.awaitingApproval
+        }
         // RevenueCat reports a user backing out of Apple's sheet as a normal
         // result, not an error. Treating it as a failure is what used to shove
         // a second paywall in front of someone who just said "not now".

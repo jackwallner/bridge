@@ -135,6 +135,7 @@ private final class MockPurchases: RevenueCatClient {
     var purchaseCalls = 0
     var restoreCalls = 0
     var cancelPurchase = false
+    var purchaseError: Error?
     var syncHandler: (() async throws -> CustomerInfo)?
     var policies: [CacheFetchPolicy] = []
     var eligibility: [String: IntroEligibilityStatus] = [:]
@@ -152,6 +153,7 @@ private final class MockPurchases: RevenueCatClient {
     }
     func purchase(package: Package) async throws -> PurchaseResultData {
         purchaseCalls += 1
+        if let purchaseError { throw purchaseError }
         return (nil, info, cancelPurchase)
     }
     func restorePurchases() async throws -> CustomerInfo {
@@ -348,6 +350,42 @@ final class PurchaseEntitlementTests: XCTestCase {
         mock.fetchError = nil
         await service.loadOfferings()
         XCTAssertTrue(service.membershipResolved)
+    }
+
+    /// Ask to Buy: the request went to a parent. RevenueCat's own English
+    /// sentence read as a failure in every language.
+    func testAskToBuySaysItIsWaitingForApproval() async {
+        let waiting = String(localized: "Waiting for approval. \(Membership.name) unlocks as soon as it is approved.")
+        let pending: [Error] = [
+            ErrorCode.paymentPendingError,
+            ErrorCode.paymentPendingError as NSError,
+        ]
+        for error in pending {
+            let mock = MockPurchases()
+            mock.purchaseError = error
+            let service = SubscriptionService(client: mock, defaults: UserDefaults(suiteName: UUID().uuidString)!)
+            await service.refreshCustomerInfo()
+            do {
+                _ = try await service.purchase(makePackage())
+                XCTFail("A pending purchase is not a sale")
+            } catch {
+                XCTAssertEqual(error.localizedDescription, waiting)
+            }
+            XCTAssertFalse(service.isPro)
+        }
+    }
+
+    func testOtherPurchaseErrorsKeepTheirOwnMessage() async {
+        let mock = MockPurchases()
+        mock.purchaseError = ErrorCode.networkError
+        let service = SubscriptionService(client: mock, defaults: UserDefaults(suiteName: UUID().uuidString)!)
+        await service.refreshCustomerInfo()
+        do {
+            _ = try await service.purchase(makePackage())
+            XCTFail("A network error is not a sale")
+        } catch {
+            XCTAssertNotEqual(error.localizedDescription, String(localized: "Waiting for approval. \(Membership.name) unlocks as soon as it is approved."))
+        }
     }
 
     func testUnknownOrIneligibleAccountIsNeverPromisedAFreeTrial() async {

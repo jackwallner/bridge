@@ -79229,6 +79229,101 @@
           }
         }
       }
+    },
+    "Waiting for approval. %@ unlocks as soon as it is approved.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Venter på godkendelse. %@ låses op, så snart købet er godkendt."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warte auf Freigabe. %@ wird freigeschaltet, sobald der Kauf genehmigt ist."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αναμονή έγκρισης. Το %@ ξεκλειδώνει μόλις εγκριθεί η αγορά."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esperando aprobación. %@ se desbloquea en cuanto se apruebe la compra."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En attente d'approbation. %@ se débloque dès que l'achat est approuvé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In attesa di approvazione. %@ si sblocca appena l'acquisto viene approvato."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "承認待ちです。承認されると%@が使えるようになります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "승인을 기다리는 중이에요. 승인되면 바로 %@ 기능이 열려요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Venter på godkjenning. %@ låses opp så snart kjøpet er godkjent."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wacht op goedkeuring. %@ wordt ontgrendeld zodra de aankoop is goedgekeurd."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ожидает одобрения. %@ откроется, как только покупка будет одобрена."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Väntar på godkännande. %@ låses upp så snart köpet är godkänt."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รอการอนุมัติ %@ จะปลดล็อกทันทีที่การซื้อได้รับการอนุมัติ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Onay bekleniyor. Satın alma onaylanır onaylanmaz %@ açılır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在等待核准。購買獲得核准後，%@ 會立即解鎖。"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
