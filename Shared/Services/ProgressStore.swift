@@ -116,14 +116,22 @@ final class ProgressStore: ObservableObject {
         if let dayKey = defaults.string(forKey: key) {
             let parts = dayKey.split(separator: "-").compactMap { Int($0) }
             guard parts.count == 3 else { return nil }
-            return calendar.date(from: DateComponents(year: parts[0], month: parts[1], day: parts[2]))
+            return calendar.date(from: DateComponents(year: parts[0], month: parts[1], day: parts[2], hour: 12))
         }
-        return (defaults.object(forKey: key) as? Date).map(calendar.startOfDay)
+        return (defaults.object(forKey: key) as? Date).map { noon(of: $0, calendar: calendar) }
+    }
+
+    /// Days are compared at noon, which every zone has. Where the clocks jump
+    /// at midnight (Chile, Cuba, Egypt, Lebanon) 00:00 does not exist on the
+    /// change day, so start-of-day instants of consecutive days are 23 hours
+    /// apart and read as the same day.
+    private func noon(of date: Date, calendar: Calendar) -> Date {
+        calendar.date(bySettingHour: 12, minute: 0, second: 0, of: date) ?? calendar.startOfDay(for: date)
     }
 
     private func dayGap(from day: Date, to now: Date) -> Int {
         let calendar = Calendar.gregorianLocal
-        return calendar.dateComponents([.day], from: day, to: calendar.startOfDay(for: now)).day ?? 0
+        return calendar.dateComponents([.day], from: day, to: noon(of: now, calendar: calendar)).day ?? 0
     }
 
     /// Item-level memory that feeds the Get Started mix: anything answered wrong

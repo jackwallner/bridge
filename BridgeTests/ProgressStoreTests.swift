@@ -124,6 +124,35 @@ final class ProgressStoreTests: XCTestCase {
         XCTAssertTrue(store.quickSessionCompletedToday(now: iso("2026-10-29T20:00:00-07:00")))
     }
 
+    /// Chile moves its clocks forward at midnight, so Sunday 2026-09-06 has no
+    /// 00:00 (it is 01:00). The day after read as the same day: the streak lost
+    /// a day and Get Started stayed done.
+    func testStreakGrowsAcrossAMidnightThatDoesNotExist() {
+        NSTimeZone.default = TimeZone(identifier: "America/Santiago")!
+        store.recordSession(drillID: "a", now: iso("2026-09-05T12:00:00-04:00"))
+        store.recordSession(drillID: "a", now: iso("2026-09-06T12:00:00-03:00"))
+        XCTAssertEqual(store.streakCount, 2)
+        store.recordSession(drillID: "a", now: iso("2026-09-07T12:00:00-03:00"))
+        XCTAssertEqual(store.streakCount, 3)
+        XCTAssertEqual(store.currentStreak(now: iso("2026-09-07T20:00:00-03:00")), 3)
+        XCTAssertEqual(store.currentStreak(now: iso("2026-09-08T20:00:00-03:00")), 3)
+        XCTAssertEqual(store.currentStreak(now: iso("2026-09-09T20:00:00-03:00")), 0)
+    }
+
+    func testGetStartedResetsAfterAMidnightThatDoesNotExist() {
+        NSTimeZone.default = TimeZone(identifier: "America/Santiago")!
+        store.markQuickSessionCompleted(now: iso("2026-09-06T12:00:00-03:00"))
+        XCTAssertTrue(store.quickSessionCompletedToday(now: iso("2026-09-06T22:00:00-03:00")))
+        XCTAssertFalse(store.quickSessionCompletedToday(now: iso("2026-09-07T08:00:00-03:00")))
+    }
+
+    func testStreakGrowsAcrossAMidnightThatDoesNotExistInTheLastHourOfTheDay() {
+        NSTimeZone.default = TimeZone(identifier: "America/Santiago")!
+        store.recordSession(drillID: "a", now: iso("2026-09-06T23:30:00-03:00"))
+        store.recordSession(drillID: "a", now: iso("2026-09-07T00:10:00-03:00"))
+        XCTAssertEqual(store.streakCount, 2)
+    }
+
     /// Builds before the fix stored an instant; it must still read.
     func testLegacyStoredInstantStillReads() {
         defaults.set(Calendar.current.startOfDay(for: Date().addingTimeInterval(-86_400)), forKey: "progress.lastActiveDay")
