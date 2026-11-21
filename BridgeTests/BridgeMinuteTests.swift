@@ -95,4 +95,47 @@ final class BridgeMinuteContentTests: XCTestCase {
         XCTAssertEqual(store.record(challenge: challenge, answers: [true, true, true, true, true]).score, 3)
         store.resetAll()
     }
+
+    /// A player on a Buddhist, Hebrew or Japanese system calendar saved results
+    /// under that calendar's day key ("2569-11-20"). Those results must read
+    /// under today's Gregorian key and be stored there, not orphaned.
+    @MainActor
+    func testResultsSavedUnderANonGregorianKeyAreAdopted() throws {
+        let original = NSTimeZone.default
+        defer { NSTimeZone.default = original }
+        NSTimeZone.default = TimeZone(secondsFromGMT: 0)!
+
+        let suite = UserDefaults(suiteName: "bridge.minute.legacy.\(UUID().uuidString)")!
+        let finished = date(2026, 11, 20)
+        let legacy = BridgeMinuteResult(
+            dayKey: "2569-11-20", shortDate: "11/20", completedAt: finished,
+            answers: [true, false, true, true, false], correctByCategory: [:], totalByCategory: [:]
+        )
+        let gregorian = BridgeMinuteResult(
+            dayKey: "2026-11-19", shortDate: "11/19", completedAt: finished.addingTimeInterval(-86_400),
+            answers: [true, true, true, true, true], correctByCategory: [:], totalByCategory: [:]
+        )
+        suite.set(try JSONEncoder().encode([legacy.dayKey: legacy, gregorian.dayKey: gregorian]),
+                  forKey: "bridgeMinute.results")
+
+        let store = BridgeMinuteStore(defaults: suite)
+
+        let adopted = try XCTUnwrap(store.result(for: finished, calendar: calendar))
+        XCTAssertEqual(adopted.dayKey, "2026-11-20")
+        XCTAssertEqual(adopted.score, 3)
+        XCTAssertNil(store.results["2569-11-20"])
+        XCTAssertEqual(store.result(for: date(2026, 11, 19), calendar: calendar)?.score, 5)
+        // The move is what a relaunch reads, not only what is in memory.
+        let reloaded = BridgeMinuteStore(defaults: suite)
+        XCTAssertEqual(reloaded.result(for: finished, calendar: calendar)?.score, 3)
+        XCTAssertEqual(reloaded.results.count, 2)
+    }
+
+    /// Shared identities use the Gregorian calendar unless a test passes one.
+    func testDayKeyDefaultsToTheGregorianCalendar() {
+        let day = date(2026, 11, 20)
+        XCTAssertEqual(BridgeMinuteContent.key(for: day), BridgeMinuteContent.key(for: day, calendar: Calendar.gregorianLocal))
+        XCTAssertEqual(BridgeMinuteContent.challenge(for: day).dayKey,
+                       BridgeMinuteContent.challenge(for: day, calendar: Calendar.gregorianLocal).dayKey)
+    }
 }

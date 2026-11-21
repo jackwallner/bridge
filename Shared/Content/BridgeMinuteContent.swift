@@ -55,7 +55,7 @@ enum BridgeMinuteContent {
         isPlus: true
     )
 
-    static func challenge(for day: Date = Date(), calendar: Calendar = .current) -> BridgeMinuteChallenge {
+    static func challenge(for day: Date = Date(), calendar: Calendar = .gregorianLocal) -> BridgeMinuteChallenge {
         let dayKey = key(for: day, calendar: calendar)
         let auction = auctionQuestions(dayKey: dayKey)
         let declarer = declarerQuestion(dayKey: dayKey).map { [$0] } ?? []
@@ -69,15 +69,18 @@ enum BridgeMinuteContent {
         if auction.count > 1 { questions.append(auction[1]) }
         if defense.count > 1 { questions.append(defense[1]) }
 
+        return BridgeMinuteChallenge(day: day, dayKey: dayKey, shortDate: shortDate(for: day, calendar: calendar), questions: questions)
+    }
+
+    static func shortDate(for day: Date, calendar: Calendar = .gregorianLocal) -> String {
         let formatter = DateFormatter()
         formatter.calendar = calendar
         formatter.timeZone = calendar.timeZone
         formatter.setLocalizedDateFormatFromTemplate("MMdd")
-        let shortDate = formatter.string(from: day)
-        return BridgeMinuteChallenge(day: day, dayKey: dayKey, shortDate: shortDate, questions: questions)
+        return formatter.string(from: day)
     }
 
-    static func key(for day: Date, calendar: Calendar = .current) -> String {
+    static func key(for day: Date, calendar: Calendar = .gregorianLocal) -> String {
         let parts = calendar.dateComponents([.year, .month, .day], from: day)
         return String(
             format: "%04d-%02d-%02d",

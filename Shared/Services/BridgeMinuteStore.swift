@@ -44,9 +44,38 @@ final class BridgeMinuteStore: ObservableObject {
         } else {
             results = [:]
         }
+        adoptNonGregorianKeys()
     }
 
-    func result(for day: Date, calendar: Calendar = .current) -> BridgeMinuteResult? {
+    /// Older builds keyed a day by the system calendar, so a Buddhist, Hebrew
+    /// or Japanese-era phone saved "2569-11-20". A Gregorian key's year is
+    /// always within one of the year the result was finished, which a
+    /// non-Gregorian one never is, so those move to the Gregorian key of the
+    /// day they were finished.
+    private func adoptNonGregorianKeys() {
+        let calendar = Calendar.gregorianLocal
+        var moved = false
+        for (key, result) in results {
+            let year = Int(key.split(separator: "-").first ?? "") ?? 0
+            let finished = calendar.component(.year, from: result.completedAt)
+            guard abs(year - finished) > 1 else { continue }
+            let adopted = BridgeMinuteContent.key(for: result.completedAt, calendar: calendar)
+            results[key] = nil
+            guard results[adopted] == nil else { moved = true; continue }
+            results[adopted] = BridgeMinuteResult(
+                dayKey: adopted,
+                shortDate: BridgeMinuteContent.shortDate(for: result.completedAt, calendar: calendar),
+                completedAt: result.completedAt,
+                answers: result.answers,
+                correctByCategory: result.correctByCategory,
+                totalByCategory: result.totalByCategory
+            )
+            moved = true
+        }
+        if moved { persist() }
+    }
+
+    func result(for day: Date, calendar: Calendar = .gregorianLocal) -> BridgeMinuteResult? {
         results[BridgeMinuteContent.key(for: day, calendar: calendar)]
     }
 
