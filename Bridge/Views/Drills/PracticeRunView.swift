@@ -154,6 +154,11 @@ struct PracticeRunView: View {
 
     private var item: QuickItem { items[min(index, items.count - 1)] }
     private var answered: Bool { selection != nil }
+
+    private var missNote: MissNote? {
+        guard let selection, let reason = item.note(forPick: selection) else { return nil }
+        return MissNote(pickedLabel: item.choices[selection], reason: reason)
+    }
     private var completionTotal: Int? { mode.completionTotal(attempted: attempted) }
 
     private var completedDrill: Drill {
@@ -183,7 +188,8 @@ struct PracticeRunView: View {
                     cards: item.cards,
                     explanation: item.explanation,
                     answered: answered,
-                    eyebrow: item.sourceLabel.localizedUppercase
+                    eyebrow: item.sourceLabel.localizedUppercase,
+                    missNote: missNote
                 ) {
                     ChoiceList(labels: item.choices, selection: selection, answerIndex: item.answerIndex) { pick in
                         grade(pick)

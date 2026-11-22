@@ -101,7 +101,8 @@ enum EndlessPractice {
                 answerIndex: answerIndex,
                 explanation: hand.explanation,
                 sourceLabel: String(localized: "Endless Practice"),
-                roomID: PracticeSkill.openings.roomID
+                roomID: PracticeSkill.openings.roomID,
+                choiceNotes: HandGenerator.missNotes(choices: HandCategory.allCases, answer: hand.answer)
             )
         }
     }

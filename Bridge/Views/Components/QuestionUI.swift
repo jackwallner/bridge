@@ -44,6 +44,10 @@ struct QuestionPager<Choices: View>: View {
     /// the question: pinned above it on an iPad, the eyebrow sat alone at the
     /// top with a hand's width of empty cream between it and the prompt.
     var eyebrow: String? = nil
+    /// Set only for a wrong pick that has something specific to say. The gold
+    /// card says what is right; this says why the player's read was wrong,
+    /// the half that changes the next answer.
+    var missNote: MissNote? = nil
     @ViewBuilder let choices: () -> Choices
 
     var body: some View {
@@ -69,16 +73,21 @@ struct QuestionPager<Choices: View>: View {
                 }
                 choices()
                 if answered {
-                    HStack(alignment: .top, spacing: 10) {
-                        Image(systemName: "lightbulb.fill")
-                            .foregroundStyle(Theme.gold)
-                        Text(explanation)
-                            .font(.subheadline)
-                            .fixedSize(horizontal: false, vertical: true)
+                    VStack(spacing: 12) {
+                        HStack(alignment: .top, spacing: 10) {
+                            Image(systemName: "lightbulb.fill")
+                                .foregroundStyle(Theme.gold)
+                            Text(explanation)
+                                .font(.subheadline)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        .padding(14)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(Theme.gold.opacity(0.12), in: RoundedRectangle(cornerRadius: 14))
+                        if let missNote {
+                            MissNoteCard(note: missNote)
+                        }
                     }
-                    .padding(14)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(Theme.gold.opacity(0.12), in: RoundedRectangle(cornerRadius: 14))
                     .id(questionExplanationID)
                 }
             }
@@ -101,6 +110,42 @@ struct QuestionPager<Choices: View>: View {
             }
             }
         }
+    }
+}
+
+/// What the player picked, and why it was not the answer.
+struct MissNote: Equatable, Sendable {
+    let pickedLabel: String
+    let reason: String
+}
+
+/// The second half of a wrong answer, always open: a player who has just
+/// missed should not have to ask twice to find out why.
+struct MissNoteCard: View {
+    let note: MissNote
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(spacing: 8) {
+                Image(systemName: "questionmark.circle.fill")
+                    .foregroundStyle(Theme.gradeWrong)
+                    .accessibilityHidden(true)
+                Text("Why not \(note.pickedLabel)?")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Theme.ink)
+                    .multilineTextAlignment(.leading)
+                Spacer(minLength: 0)
+            }
+            Text(note.reason)
+                .font(.subheadline)
+                .foregroundStyle(Theme.inkSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Theme.gradeWrong.opacity(0.09), in: RoundedRectangle(cornerRadius: 14))
+        .accessibilityElement(children: .combine)
     }
 }
 

@@ -103,6 +103,11 @@ struct QuickSessionView: View {
     private var item: QuickItem { items[index] }
     private var answered: Bool { selection != nil }
 
+    private var missNote: MissNote? {
+        guard let selection, let reason = item.note(forPick: selection) else { return nil }
+        return MissNote(pickedLabel: item.choices[selection], reason: reason)
+    }
+
     private var drillBody: some View {
         VStack(spacing: 16) {
             ProgressView(value: Double(index), total: Double(items.count))
@@ -113,7 +118,8 @@ struct QuickSessionView: View {
                     cards: item.cards,
                     explanation: item.explanation,
                     answered: answered,
-                    eyebrow: item.sourceLabel.localizedUppercase
+                    eyebrow: item.sourceLabel.localizedUppercase,
+                    missNote: missNote
                 ) {
                     ChoiceList(labels: item.choices, selection: selection, answerIndex: item.answerIndex) { pick in
                         grade(pick)

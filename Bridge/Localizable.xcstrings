@@ -84834,6 +84834,861 @@
           }
         }
       }
+    },
+    "Why not %@?": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvorfor ikke %@?"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warum nicht %@?"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Γιατί όχι %@;"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Por qué no %@?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pourquoi pas %@ ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perché non %@?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なぜ%@ではないのでしょう？"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@은(는) 왜 안 될까요?"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvorfor ikke %@?"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waarom niet %@?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Почему не %@?"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varför inte %@?"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทำไมไม่ใช่ %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neden %@ değil?"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "為什麼不是 %@？"
+          }
+        }
+      }
+    },
+    "An opening bid needs 13 or more high-card points, or 12 that pass the Rule of 20.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En åbning kræver mindst 13 honnørpoint eller 12, der opfylder 20-reglen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für eine Eröffnung brauchst du 13 oder mehr Figurenpunkte oder 12, die die Zwanzigerregel erfüllen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το άνοιγμα απαιτεί 13 ή περισσότερους πόντους τιμής, ή 12 που πληρούν τον κανόνα του 20."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para abrir hacen falta 13 o más puntos de honor, o 12 que cumplan la regla del 20."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une ouverture demande 13 points H ou plus, ou 12 qui respectent la règle des 20."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per aprire servono 13 o più punti onori, oppure 12 che rispettino la regola del 20."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オープンには、ハイカードポイント13点以上、または「20のルール」を満たす12点が必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오프닝에는 HCP 13점 이상, 또는 20 규칙을 만족하는 12점이 필요해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En åpning krever 13 eller flere honnørpoeng, eller 12 som oppfyller regelen om 20."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om te openen heb je 13 of meer honneurpunten nodig, of 12 die aan de regel van 20 voldoen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для открытия нужно 13 или больше очков за старшие карты, или 12, подходящих по Правилу 20."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En öppning kräver 13 eller fler honnörspoäng, eller 12 som uppfyller 20-regeln."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การเปิดต้องมีแต้มไพ่สูง 13 แต้มขึ้นไป หรือ 12 แต้มที่ผ่านกฎ 20"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Açış için 13 veya daha fazla onör puanı ya da 20 kuralını karşılayan 12 puan gerekir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開叫需要 13 個以上的大牌點，或是符合二十法則的 12 個。"
+          }
+        }
+      }
+    },
+    "This hand is strong enough to open: 13 or more high-card points, or 12 that pass the Rule of 20.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hånden er stærk nok til at åbne: mindst 13 honnørpoint eller 12, der opfylder 20-reglen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Hand ist stark genug zum Eröffnen: 13 oder mehr Figurenpunkte oder 12, die die Zwanzigerregel erfüllen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αυτό το χέρι είναι αρκετά δυνατό για άνοιγμα: 13 ή περισσότεροι πόντοι τιμής, ή 12 που πληρούν τον κανόνα του 20."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta mano es lo bastante fuerte para abrir: 13 o más puntos de honor, o 12 que cumplan la regla del 20."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette main est assez forte pour ouvrir : 13 points H ou plus, ou 12 qui respectent la règle des 20."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questa mano è abbastanza forte per aprire: 13 o più punti onori, oppure 12 che rispettino la regola del 20."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このハンドはオープンできる強さです。ハイカードポイント13点以上、または「20のルール」を満たす12点があります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 손은 오프닝할 만큼 강해요. HCP 13점 이상, 또는 20 규칙을 만족하는 12점이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denne hånden er sterk nok til å åpne: 13 eller flere honnørpoeng, eller 12 som oppfyller regelen om 20."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deze hand is sterk genoeg om te openen: 13 of meer honneurpunten, of 12 die aan de regel van 20 voldoen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Эта рука достаточно сильна для открытия: 13 или больше очков за старшие карты, или 12, подходящих по Правилу 20."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den här handen är stark nog att öppna: 13 eller fler honnörspoäng, eller 12 som uppfyller 20-regeln."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "มือนี้แข็งพอที่จะเปิดได้ คือมีแต้มไพ่สูง 13 แต้มขึ้นไป หรือ 12 แต้มที่ผ่านกฎ 20"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu el açmaya yetecek kadar güçlü: 13 veya daha fazla onör puanı ya da 20 kuralını karşılayan 12 puan."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "這手牌夠強，可以開叫：13 個以上的大牌點，或是符合二十法則的 12 個。"
+          }
+        }
+      }
+    },
+    "A balanced hand with 15 to 17 high-card points opens 1NT, not a suit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En jævn hånd med 15 til 17 honnørpoint åbner 1NT, ikke en farve."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine ausgeglichene Hand mit 15 bis 17 Figurenpunkten eröffnet 1NT, nicht eine Farbe."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ένα ισοκατανεμημένο χέρι με 15 έως 17 πόντους τιμής ανοίγει 1NT, όχι με χρώμα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una mano equilibrada con 15 a 17 puntos de honor abre 1NT, no un palo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une main régulière de 15 à 17 points H ouvre de 1NT, pas d'une couleur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una mano bilanciata con 15-17 punti onori apre 1NT, non un seme."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハイカードポイント15〜17点のバランス型の手は、スートではなく1NTでオープンします。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HCP 15~17점의 균형형 손은 수트가 아니라 1NT로 오프닝해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En balansert hånd med 15 til 17 honnørpoeng åpner med 1NT, ikke med en farge."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een evenwichtige hand met 15 tot 17 honneurpunten opent 1NT, niet met een kleur."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сбалансированная рука с 15–17 очками за старшие карты открывается 1NT, а не мастью."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En balanserad hand med 15 till 17 honnörspoäng öppnar 1NT, inte en färg."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "มือสมดุลที่มีแต้มไพ่สูง 15 ถึง 17 แต้มเปิด 1NT ไม่ใช่เปิดเป็นชุด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15-17 onör puanlı dengeli bir el renkle değil, 1NT ile açar."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15 到 17 個大牌點的平均牌型要開 1NT，而不是開花色。"
+          }
+        }
+      }
+    },
+    "1NT shows a balanced hand with 15 to 17 high-card points.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT viser en jævn hånd med 15 til 17 honnørpoint."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT zeigt eine ausgeglichene Hand mit 15 bis 17 Figurenpunkten."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1NT δείχνει ισοκατανεμημένο χέρι με 15 έως 17 πόντους τιμής."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT muestra una mano equilibrada con 15 a 17 puntos de honor."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT montre une main régulière de 15 à 17 points H."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT mostra una mano bilanciata con 15-17 punti onori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NTは、ハイカードポイント15〜17点のバランス型の手を示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT는 HCP 15~17점의 균형형 손을 나타내요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT viser en balansert hånd med 15 til 17 honnørpoeng."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT laat een evenwichtige hand met 15 tot 17 honneurpunten zien."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT показывает сбалансированную руку с 15–17 очками за старшие карты."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT visar en balanserad hand med 15 till 17 honnörspoäng."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT แสดงมือสมดุลที่มีแต้มไพ่สูง 15 ถึง 17 แต้ม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT, 15-17 onör puanlı dengeli bir eli gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT 表示 15 到 17 個大牌點的平均牌型。"
+          }
+        }
+      }
+    },
+    "1♣ needs clubs longer than any five-card major, and more clubs than diamonds or three of each.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ kræver klør, der er længere end en eventuel femkorts højfarve, og flere klør end ruder eller tre af hver."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ braucht Treff, die länger sind als jede Fünferoberfarbe, und mehr Treff als Karo oder je drei in beiden Farben."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1♣ απαιτεί σπαθιά μακρύτερα από οποιοδήποτε πεντάφυλλο μείζον, και περισσότερα σπαθιά από καρά ή τρία από το καθένα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ exige tréboles más largos que cualquier palo mayor de cinco cartas, y más tréboles que diamantes o tres de cada uno."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ demande des trèfles plus longs que n'importe quelle majeure cinquième, et plus de trèfles que de carreaux, ou trois de chaque."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ richiede fiori più lunghi di qualsiasi nobile quinto, e più fiori che quadri oppure tre per ciascuno."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣には、5枚のメジャーより長いクラブがあり、クラブがダイヤより多いか、どちらも3枚ずつであることが必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣에는 5장 메이저 수트보다 긴 클럽이 있고, 클럽이 다이아몬드보다 많거나 각각 3장이어야 해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ krever kløver som er lengre enn en eventuell majorfarge med fem kort, og flere kløver enn ruter eller tre av hver."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ vraagt om klaveren die langer zijn dan elke vijfkaart hoog, en meer klaveren dan ruiten, of drie van elk."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ требует треф длиннее любой пятикарточной старшей масти и треф больше, чем бубен, или по три в каждой."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ kräver klöver som är längre än någon femkortshögfärg, och fler klöver än ruter eller tre av varje."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ ต้องมีดอกจิกยาวกว่าเมเจอร์ห้าใบใดๆ และมีดอกจิกมากกว่าข้าวหลามตัด หรือมีชุดละสามใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ için herhangi bir beşli majörden uzun sinek gerekir; ayrıca karodan fazla sinek ya da ikisinden de üçer kart olmalıdır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♣ 需要梅花比任何五張高花都長，而且梅花比方塊多，或是兩門各三張。"
+          }
+        }
+      }
+    },
+    "1♦ needs diamonds longer than any five-card major, and more diamonds than clubs or four or more of each.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ kræver ruder, der er længere end en eventuel femkorts højfarve, og flere ruder end klør eller fire eller flere af hver."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ braucht Karo, die länger sind als jede Fünferoberfarbe, und mehr Karo als Treff oder je vier oder mehr in beiden Farben."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1♦ απαιτεί καρά μακρύτερα από οποιοδήποτε πεντάφυλλο μείζον, και περισσότερα καρά από σπαθιά ή τέσσερα ή περισσότερα από το καθένα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ exige diamantes más largos que cualquier palo mayor de cinco cartas, y más diamantes que tréboles o cuatro o más de cada uno."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ demande des carreaux plus longs que n'importe quelle majeure cinquième, et plus de carreaux que de trèfles, ou quatre ou plus de chaque."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ richiede quadri più lunghi di qualsiasi nobile quinto, e più quadri che fiori oppure quattro o più per ciascuno."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦には、5枚のメジャーより長いダイヤがあり、ダイヤがクラブより多いか、どちらも4枚以上であることが必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦에는 5장 메이저 수트보다 긴 다이아몬드가 있고, 다이아몬드가 클럽보다 많거나 각각 4장 이상이어야 해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ krever ruter som er lengre enn en eventuell majorfarge med fem kort, og flere ruter enn kløver eller fire eller flere av hver."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ vraagt om ruiten die langer zijn dan elke vijfkaart hoog, en meer ruiten dan klaveren, of vier of meer van elk."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ требует бубен длиннее любой пятикарточной старшей масти и бубен больше, чем треф, или по четыре и больше в каждой."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ kräver ruter som är längre än någon femkortshögfärg, och fler ruter än klöver eller fyra eller fler av varje."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ ต้องมีข้าวหลามตัดยาวกว่าเมเจอร์ห้าใบใดๆ และมีข้าวหลามตัดมากกว่าดอกจิก หรือมีชุดละสี่ใบขึ้นไป"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ için herhangi bir beşli majörden uzun karo gerekir; ayrıca sinekten fazla karo ya da ikisinden de dörder veya daha fazla kart olmalıdır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♦ 需要方塊比任何五張高花都長，而且方塊比梅花多，或是兩門各四張以上。"
+          }
+        }
+      }
+    },
+    "1♥ needs five or more hearts, more hearts than spades, and no longer minor.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ kræver fem eller flere hjerter, flere hjerter end spar og ingen længere lavfarve."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ braucht fünf oder mehr Coeur, mehr Coeur als Pik und keine längere Unterfarbe."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1♥ απαιτεί πέντε ή περισσότερες κούπες, περισσότερες κούπες από πίκες και κανένα μακρύτερο ελάσσον."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ exige cinco o más corazones, más corazones que picas y ningún palo menor más largo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ demande cinq cœurs ou plus, plus de cœurs que de piques et aucune mineure plus longue."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ richiede cinque o più cuori, più cuori che picche e nessun minore più lungo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥には、ハートが5枚以上あり、ハートがスペードより多く、より長いマイナーがないことが必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥에는 하트가 5장 이상이고, 하트가 스페이드보다 많고, 더 긴 마이너 수트가 없어야 해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ krever fem eller flere hjerter, flere hjerter enn spar og ingen lengre minorfarge."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ vraagt om vijf of meer harten, meer harten dan schoppen en geen langere lage kleur."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ требует пять или больше червей, червей больше, чем пик, и нет более длинной младшей масти."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ kräver fem eller fler hjärter, fler hjärter än spader och ingen längre lågfärg."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ ต้องมีโพแดงห้าใบขึ้นไป มีโพแดงมากกว่าโพดำ และไม่มีไมเนอร์ที่ยาวกว่า"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ için beş veya daha fazla kupa, maçadan fazla kupa ve daha uzun minör olmaması gerekir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ 需要五張以上紅心、紅心比黑桃多，而且沒有更長的低花。"
+          }
+        }
+      }
+    },
+    "1♠ needs five or more spades, at least as many spades as hearts, and no longer minor.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ kræver fem eller flere spar, mindst lige så mange spar som hjerter og ingen længere lavfarve."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ braucht fünf oder mehr Pik, mindestens so viele Pik wie Coeur und keine längere Unterfarbe."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1♠ απαιτεί πέντε ή περισσότερες πίκες, τουλάχιστον τόσες πίκες όσες κούπες και κανένα μακρύτερο ελάσσον."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ exige cinco o más picas, al menos tantas picas como corazones y ningún palo menor más largo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ demande cinq piques ou plus, au moins autant de piques que de cœurs et aucune mineure plus longue."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ richiede cinque o più picche, almeno tante picche quanti cuori e nessun minore più lungo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠には、スペードが5枚以上あり、スペードがハート以上の枚数で、より長いマイナーがないことが必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠에는 스페이드가 5장 이상이고, 스페이드가 하트와 같거나 많고, 더 긴 마이너 수트가 없어야 해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ krever fem eller flere spar, minst like mange spar som hjerter og ingen lengre minorfarge."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ vraagt om vijf of meer schoppen, minstens evenveel schoppen als harten en geen langere lage kleur."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ требует пять или больше пик, пик не меньше, чем червей, и нет более длинной младшей масти."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ kräver fem eller fler spader, minst lika många spader som hjärter och ingen längre lågfärg."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ ต้องมีโพดำห้าใบขึ้นไป มีโพดำไม่น้อยกว่าโพแดง และไม่มีไมเนอร์ที่ยาวกว่า"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ için beş veya daha fazla maça, en az kupa kadar maça ve daha uzun minör olmaması gerekir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ 需要五張以上黑桃、黑桃不少於紅心，而且沒有更長的低花。"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

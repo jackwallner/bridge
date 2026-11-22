@@ -35,6 +35,13 @@ struct HandMatchDrillView: View {
         return (categories, answerIndex)
     }
 
+    /// Derived from the opening rules, so every hand coaches the miss.
+    private var missNote: MissNote? {
+        guard let selection, selection != question.answer,
+              let reason = HandGenerator.missNote(picked: selection, answer: question.answer) else { return nil }
+        return MissNote(pickedLabel: selection.displayName, reason: reason)
+    }
+
     private var drillBody: some View {
         VStack(spacing: 16) {
             ProgressView(value: Double(index), total: Double(questions.count))
@@ -44,7 +51,8 @@ struct HandMatchDrillView: View {
                     prompt: String(localized: "What is the best opening call?"),
                     cards: question.cards.racked,
                     explanation: question.explanation,
-                    answered: answered
+                    answered: answered,
+                    missNote: missNote
                 ) {
                     ChoiceList(
                         labels: shuffled.categories.map(\.displayName),

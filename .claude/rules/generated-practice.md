@@ -90,3 +90,15 @@ Bridge+ skills (`responses`, `rebids`); the Timed Challenge mixes them in.
 A Sonnet teacher review (2026-11-22) drove the guards above; its one claim
 that 1♠-1NT-2♥ is a reverse was wrong (hearts rank below spades) and was
 not applied.
+
+## Miss notes on opening questions (2026-11-22)
+
+Ported from Mahj's `MissNoteCard`: a wrong opening pick shows "Why not X?"
+under the gold explanation. `HandGenerator.missNote(picked:answer:)` derives the
+line from the same rules `opening` grades by (pass versus open, 1NT versus a
+suit, then the picked suit's length rule), so no hand needs authoring. It covers
+Name Your Opening, Endless and Timed openings, the Quick Session and the Bridge
+Minute. `QuickItem.choiceNotes` carries the notes and `SessionBuilder.prepared`
+shuffles them with the labels. `MissNoteTests` checks every suit note against
+the cards directly: a note that states a rule the hand actually meets would teach
+the wrong thing. Responding and rebid questions have no notes yet.
