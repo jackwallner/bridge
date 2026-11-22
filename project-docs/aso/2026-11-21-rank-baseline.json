@@ -1,0 +1,6885 @@
+{
+ "app_id": 6791026407,
+ "base": "1696308",
+ "taken": "2026-11-22 03:18",
+ "locales": {
+  "tr": [
+   {
+    "term": "Bridge Trainer: Briç Öğren",
+    "kind": "name",
+    "store": "tr",
+    "rank": "1/1"
+   },
+   {
+    "term": "İhale ve savunma alıştırmaları",
+    "kind": "subtitle",
+    "store": "tr",
+    "rank": "-/0"
+   },
+   {
+    "term": "Briç konuşma ve kart pratiği",
+    "kind": "old subtitle",
+    "store": "tr",
+    "rank": "1/1"
+   },
+   {
+    "term": "oyna",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/152"
+   },
+   {
+    "term": "oyunu",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/167"
+   },
+   {
+    "term": "iskambil",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/189"
+   },
+   {
+    "term": "kağıt",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/181"
+   },
+   {
+    "term": "kart",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/191"
+   },
+   {
+    "term": "ders",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/195"
+   },
+   {
+    "term": "başlangıç",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/170"
+   },
+   {
+    "term": "kontrat",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "9/44"
+   },
+   {
+    "term": "deklaran",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "1/1"
+   },
+   {
+    "term": "koz",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/174"
+   },
+   {
+    "term": "löve",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/196"
+   },
+   {
+    "term": "atak",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/189"
+   },
+   {
+    "term": "ücretsiz",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/148"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/188"
+   },
+   {
+    "term": "eğitim",
+    "kind": "keyword",
+    "store": "tr",
+    "rank": "-/162"
+   },
+   {
+    "term": "kartlar",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/191"
+   },
+   {
+    "term": "tutor",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/187"
+   },
+   {
+    "term": "yeni başlayan",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/190"
+   },
+   {
+    "term": "drill",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/192"
+   },
+   {
+    "term": "savunma",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/176"
+   },
+   {
+    "term": "pratik",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/183"
+   },
+   {
+    "term": "oyun",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/166"
+   },
+   {
+    "term": "bilgi",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/190"
+   },
+   {
+    "term": "bidding",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "74/161"
+   },
+   {
+    "term": "practice",
+    "kind": "dropped keyword",
+    "store": "tr",
+    "rank": "-/188"
+   }
+  ],
+  "nl-NL": [
+   {
+    "term": "Bridge Trainer: Leren & Bieden",
+    "kind": "name",
+    "store": "nl",
+    "rank": "-/1"
+   },
+   {
+    "term": "Bridgen: afspel en verdediging",
+    "kind": "subtitle",
+    "store": "nl",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge bieden en oefenen",
+    "kind": "old subtitle",
+    "store": "nl",
+    "rank": "-/2"
+   },
+   {
+    "term": "oefenen",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/179"
+   },
+   {
+    "term": "spelen",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/188"
+   },
+   {
+    "term": "kaartspel",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/187"
+   },
+   {
+    "term": "beginners",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/194"
+   },
+   {
+    "term": "cursus",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/148"
+   },
+   {
+    "term": "les",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/162"
+   },
+   {
+    "term": "troef",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/57"
+   },
+   {
+    "term": "leider",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/114"
+   },
+   {
+    "term": "contract",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/161"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/173"
+   },
+   {
+    "term": "honneurpunten",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/0"
+   },
+   {
+    "term": "uitkomst",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/5"
+   },
+   {
+    "term": "slag",
+    "kind": "keyword",
+    "store": "nl",
+    "rank": "-/155"
+   },
+   {
+    "term": "kaarten",
+    "kind": "dropped keyword",
+    "store": "nl",
+    "rank": "-/177"
+   },
+   {
+    "term": "tutor",
+    "kind": "dropped keyword",
+    "store": "nl",
+    "rank": "-/180"
+   },
+   {
+    "term": "beginner",
+    "kind": "dropped keyword",
+    "store": "nl",
+    "rank": "-/191"
+   },
+   {
+    "term": "oefening",
+    "kind": "dropped keyword",
+    "store": "nl",
+    "rank": "-/184"
+   },
+   {
+    "term": "verdediging",
+    "kind": "dropped keyword",
+    "store": "nl",
+    "rank": "-/131"
+   },
+   {
+    "term": "praktijk",
+    "kind": "dropped keyword",
+    "store": "nl",
+    "rank": "-/127"
+   },
+   {
+    "term": "speel",
+    "kind": "dropped keyword",
+    "store": "nl",
+    "rank": "-/188"
+   }
+  ],
+  "th": [
+   {
+    "term": "Bridge Trainer: ฝึกเล่นบริดจ์",
+    "kind": "name",
+    "store": "th",
+    "rank": "1/1"
+   },
+   {
+    "term": "ฝึกประมูลและเล่นไพ่บริดจ์",
+    "kind": "subtitle",
+    "store": "th",
+    "rank": "1/1"
+   },
+   {
+    "term": "เกมไพ่",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/172"
+   },
+   {
+    "term": "ทริก",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/165"
+   },
+   {
+    "term": "ออฟไลน์",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/168"
+   },
+   {
+    "term": "มือใหม่",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/189"
+   },
+   {
+    "term": "เรียน",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/187"
+   },
+   {
+    "term": "บทเรียน",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/186"
+   },
+   {
+    "term": "แบบฝึกหัด",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/190"
+   },
+   {
+    "term": "ดีแคลร์เรอร์",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/0"
+   },
+   {
+    "term": "ทรัมป์",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/11"
+   },
+   {
+    "term": "สัญญา",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/177"
+   },
+   {
+    "term": "แต้ม",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/167"
+   },
+   {
+    "term": "ควิซ",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/195"
+   },
+   {
+    "term": "สอน",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/171"
+   },
+   {
+    "term": "ฝ่ายรับ",
+    "kind": "keyword",
+    "store": "th",
+    "rank": "-/0"
+   },
+   {
+    "term": "ผู้สอน",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "8/19"
+   },
+   {
+    "term": "ผู้เริ่มต้น",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "-/189"
+   },
+   {
+    "term": "ฝึกหัด",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "127/182"
+   },
+   {
+    "term": "ป้องกัน",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "-/175"
+   },
+   {
+    "term": "ผู้เล่น",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "-/166"
+   },
+   {
+    "term": "ฝึกซ้อม",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "136/186"
+   },
+   {
+    "term": "เกม",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "-/191"
+   },
+   {
+    "term": "คะแนน",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "-/192"
+   },
+   {
+    "term": "กฎ",
+    "kind": "dropped keyword",
+    "store": "th",
+    "rank": "56/165"
+   }
+  ],
+  "da": [
+   {
+    "term": "Bridge Trainer: Lær at melde",
+    "kind": "name",
+    "store": "dk",
+    "rank": "-/0"
+   },
+   {
+    "term": "Meldinger, spil og modspil",
+    "kind": "subtitle",
+    "store": "dk",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge meldinger og træning",
+    "kind": "old subtitle",
+    "store": "dk",
+    "rank": "-/0"
+   },
+   {
+    "term": "lære",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/183"
+   },
+   {
+    "term": "træning",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/189"
+   },
+   {
+    "term": "kortspil",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/182"
+   },
+   {
+    "term": "begynder",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/190"
+   },
+   {
+    "term": "kontrakt",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/169"
+   },
+   {
+    "term": "lektion",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/151"
+   },
+   {
+    "term": "øvelse",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/184"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/171"
+   },
+   {
+    "term": "kort",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/174"
+   },
+   {
+    "term": "spilfører",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/0"
+   },
+   {
+    "term": "trumf",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/23"
+   },
+   {
+    "term": "stik",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/164"
+   },
+   {
+    "term": "udspil",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/2"
+   },
+   {
+    "term": "gratis",
+    "kind": "keyword",
+    "store": "dk",
+    "rank": "-/155"
+   },
+   {
+    "term": "tutor",
+    "kind": "dropped keyword",
+    "store": "dk",
+    "rank": "-/177"
+   },
+   {
+    "term": "drill",
+    "kind": "dropped keyword",
+    "store": "dk",
+    "rank": "-/179"
+   },
+   {
+    "term": "forsvar",
+    "kind": "dropped keyword",
+    "store": "dk",
+    "rank": "-/141"
+   }
+  ],
+  "de-DE": [
+   {
+    "term": "Bridge Trainer: Lernen & Üben",
+    "kind": "name",
+    "store": "de",
+    "rank": "-/194"
+   },
+   {
+    "term": "Reizung, Spiel und Gegenspiel",
+    "kind": "subtitle",
+    "store": "de",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: Reizen & Spiel",
+    "kind": "old name",
+    "store": "de",
+    "rank": "-/11"
+   },
+   {
+    "term": "Reizung und Brücke Karten üben",
+    "kind": "old subtitle",
+    "store": "de",
+    "rank": "-/0"
+   },
+   {
+    "term": "spielen",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/169"
+   },
+   {
+    "term": "kartenspiel",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/188"
+   },
+   {
+    "term": "anfänger",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/158"
+   },
+   {
+    "term": "alleinspieler",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/0"
+   },
+   {
+    "term": "kontrakt",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/173"
+   },
+   {
+    "term": "trumpf",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/130"
+   },
+   {
+    "term": "stich",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/184"
+   },
+   {
+    "term": "verteidigung",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/159"
+   },
+   {
+    "term": "figurenpunkte",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/0"
+   },
+   {
+    "term": "gratis",
+    "kind": "keyword",
+    "store": "de",
+    "rank": "-/158"
+   },
+   {
+    "term": "lernen",
+    "kind": "dropped keyword",
+    "store": "de",
+    "rank": "-/152"
+   },
+   {
+    "term": "lehrer",
+    "kind": "dropped keyword",
+    "store": "de",
+    "rank": "-/181"
+   },
+   {
+    "term": "lektion",
+    "kind": "dropped keyword",
+    "store": "de",
+    "rank": "-/148"
+   },
+   {
+    "term": "übung",
+    "kind": "dropped keyword",
+    "store": "de",
+    "rank": "-/185"
+   },
+   {
+    "term": "praxis",
+    "kind": "dropped keyword",
+    "store": "de",
+    "rank": "-/179"
+   },
+   {
+    "term": "tipp",
+    "kind": "dropped keyword",
+    "store": "de",
+    "rank": "-/169"
+   }
+  ],
+  "fr-FR": [
+   {
+    "term": "Bridge Trainer: Apprendre",
+    "kind": "name",
+    "store": "fr",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: Apprendre",
+    "kind": "name",
+    "store": "us",
+    "rank": "57/160"
+   },
+   {
+    "term": "Enchères, jeu et défense",
+    "kind": "subtitle",
+    "store": "fr",
+    "rank": "-/0"
+   },
+   {
+    "term": "Enchères, jeu et défense",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "98/148"
+   },
+   {
+    "term": "Bridge Trainer: Enchères",
+    "kind": "old name",
+    "store": "fr",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: Enchères",
+    "kind": "old name",
+    "store": "us",
+    "rank": "1/163"
+   },
+   {
+    "term": "Enchères et jeu de bridge",
+    "kind": "old subtitle",
+    "store": "fr",
+    "rank": "-/10"
+   },
+   {
+    "term": "Enchères et jeu de bridge",
+    "kind": "old subtitle",
+    "store": "us",
+    "rank": "62/161"
+   },
+   {
+    "term": "jouer",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/159"
+   },
+   {
+    "term": "jouer",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/171"
+   },
+   {
+    "term": "gratuit",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/195"
+   },
+   {
+    "term": "gratuit",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/180"
+   },
+   {
+    "term": "débutant",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/168"
+   },
+   {
+    "term": "débutant",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/178"
+   },
+   {
+    "term": "entraînement",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/187"
+   },
+   {
+    "term": "entraînement",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/187"
+   },
+   {
+    "term": "cours",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/181"
+   },
+   {
+    "term": "cours",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/181"
+   },
+   {
+    "term": "carte",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/188"
+   },
+   {
+    "term": "carte",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/186"
+   },
+   {
+    "term": "contrat",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/174"
+   },
+   {
+    "term": "contrat",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/169"
+   },
+   {
+    "term": "déclarant",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/159"
+   },
+   {
+    "term": "déclarant",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/157"
+   },
+   {
+    "term": "leçon",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/183"
+   },
+   {
+    "term": "leçon",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/188"
+   },
+   {
+    "term": "exercice",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/177"
+   },
+   {
+    "term": "exercice",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/175"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/164"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/187"
+   },
+   {
+    "term": "atout",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/153"
+   },
+   {
+    "term": "atout",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/140"
+   },
+   {
+    "term": "levée",
+    "kind": "keyword",
+    "store": "fr",
+    "rank": "-/128"
+   },
+   {
+    "term": "levée",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/161"
+   },
+   {
+    "term": "cartes",
+    "kind": "dropped keyword",
+    "store": "fr",
+    "rank": "-/171"
+   },
+   {
+    "term": "cartes",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/180"
+   },
+   {
+    "term": "apprendre",
+    "kind": "dropped keyword",
+    "store": "fr",
+    "rank": "-/163"
+   },
+   {
+    "term": "apprendre",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/167"
+   },
+   {
+    "term": "tuteur",
+    "kind": "dropped keyword",
+    "store": "fr",
+    "rank": "-/166"
+   },
+   {
+    "term": "tuteur",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/167"
+   },
+   {
+    "term": "défense",
+    "kind": "dropped keyword",
+    "store": "fr",
+    "rank": "-/191"
+   },
+   {
+    "term": "défense",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/193"
+   },
+   {
+    "term": "pratique",
+    "kind": "dropped keyword",
+    "store": "fr",
+    "rank": "-/161"
+   },
+   {
+    "term": "pratique",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/168"
+   }
+  ],
+  "el": [
+   {
+    "term": "Bridge Trainer: Μάθε Μπριτζ",
+    "kind": "name",
+    "store": "gr",
+    "rank": "-/0"
+   },
+   {
+    "term": "Δηλώσεις, εκτέλεση και άμυνα",
+    "kind": "subtitle",
+    "store": "gr",
+    "rank": "-/0"
+   },
+   {
+    "term": "Εξάσκηση και εκμάθηση Μπριτζ",
+    "kind": "old subtitle",
+    "store": "gr",
+    "rank": "-/0"
+   },
+   {
+    "term": "εξάσκηση",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/189"
+   },
+   {
+    "term": "χαρτιά",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/125"
+   },
+   {
+    "term": "παιχνίδι",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/182"
+   },
+   {
+    "term": "τράπουλα",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/117"
+   },
+   {
+    "term": "αρχάριος",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/192"
+   },
+   {
+    "term": "μάθημα",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/180"
+   },
+   {
+    "term": "δωρεάν",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/166"
+   },
+   {
+    "term": "κουίζ",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/185"
+   },
+   {
+    "term": "ατού",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/18"
+   },
+   {
+    "term": "συμβόλαιο",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/63"
+   },
+   {
+    "term": "πόντοι",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/195"
+   },
+   {
+    "term": "προπόνηση",
+    "kind": "keyword",
+    "store": "gr",
+    "rank": "-/168"
+   },
+   {
+    "term": "μάθηση",
+    "kind": "dropped keyword",
+    "store": "gr",
+    "rank": "-/178"
+   },
+   {
+    "term": "τραπουλόχαρτα",
+    "kind": "dropped keyword",
+    "store": "gr",
+    "rank": "-/4"
+   },
+   {
+    "term": "άσκηση",
+    "kind": "dropped keyword",
+    "store": "gr",
+    "rank": "-/176"
+   },
+   {
+    "term": "άμυνα",
+    "kind": "dropped keyword",
+    "store": "gr",
+    "rank": "-/139"
+   },
+   {
+    "term": "εκτελεστής",
+    "kind": "dropped keyword",
+    "store": "gr",
+    "rank": "-/5"
+   },
+   {
+    "term": "κόντρα",
+    "kind": "dropped keyword",
+    "store": "gr",
+    "rank": "-/24"
+   }
+  ],
+  "zh-Hant": [
+   {
+    "term": "Bridge Trainer: 橋牌教學",
+    "kind": "name",
+    "store": "tw",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: 橋牌教學",
+    "kind": "name",
+    "store": "us",
+    "rank": "-/0"
+   },
+   {
+    "term": "叫牌、打牌與防守的新手練習",
+    "kind": "subtitle",
+    "store": "tw",
+    "rank": "1/1"
+   },
+   {
+    "term": "叫牌、打牌與防守的新手練習",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "Bridge Trainer: 橋牌學習叫牌打牌",
+    "kind": "old name",
+    "store": "tw",
+    "rank": "1/2"
+   },
+   {
+    "term": "Bridge Trainer: 橋牌學習叫牌打牌",
+    "kind": "old name",
+    "store": "us",
+    "rank": "1/2"
+   },
+   {
+    "term": "針對初學者的無壓力合約橋牌叫牌與打牌防守核心特訓",
+    "kind": "old subtitle",
+    "store": "tw",
+    "rank": "1/1"
+   },
+   {
+    "term": "針對初學者的無壓力合約橋牌叫牌與打牌防守核心特訓",
+    "kind": "old subtitle",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "合約橋牌",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "3/6"
+   },
+   {
+    "term": "合約橋牌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "2/6"
+   },
+   {
+    "term": "莊家",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "96/159"
+   },
+   {
+    "term": "莊家",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "149/161"
+   },
+   {
+    "term": "夢家",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/175"
+   },
+   {
+    "term": "夢家",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/178"
+   },
+   {
+    "term": "首攻",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/170"
+   },
+   {
+    "term": "首攻",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "5/180"
+   },
+   {
+    "term": "墩數",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/175"
+   },
+   {
+    "term": "墩數",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/6"
+   },
+   {
+    "term": "大牌點",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "4/67"
+   },
+   {
+    "term": "大牌點",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "3/14"
+   },
+   {
+    "term": "王牌",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/151"
+   },
+   {
+    "term": "王牌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/175"
+   },
+   {
+    "term": "撲克牌",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/191"
+   },
+   {
+    "term": "撲克牌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/192"
+   },
+   {
+    "term": "紙牌",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/196"
+   },
+   {
+    "term": "紙牌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/197"
+   },
+   {
+    "term": "遊戲",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/183"
+   },
+   {
+    "term": "遊戲",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/168"
+   },
+   {
+    "term": "離線",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/191"
+   },
+   {
+    "term": "離線",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/186"
+   },
+   {
+    "term": "規則",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "102/179"
+   },
+   {
+    "term": "規則",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/175"
+   },
+   {
+    "term": "課程",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/188"
+   },
+   {
+    "term": "課程",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/186"
+   },
+   {
+    "term": "測驗",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/191"
+   },
+   {
+    "term": "測驗",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/190"
+   },
+   {
+    "term": "競叫",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/160"
+   },
+   {
+    "term": "競叫",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/22"
+   },
+   {
+    "term": "複式賽",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/14"
+   },
+   {
+    "term": "複式賽",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/1"
+   },
+   {
+    "term": "初學者",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/192"
+   },
+   {
+    "term": "初學者",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/184"
+   },
+   {
+    "term": "入門",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/180"
+   },
+   {
+    "term": "入門",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/187"
+   },
+   {
+    "term": "技巧",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/142"
+   },
+   {
+    "term": "技巧",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/166"
+   },
+   {
+    "term": "訓練",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/192"
+   },
+   {
+    "term": "訓練",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/193"
+   },
+   {
+    "term": "牌局",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "44/172"
+   },
+   {
+    "term": "牌局",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "67/182"
+   },
+   {
+    "term": "開叫",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/163"
+   },
+   {
+    "term": "開叫",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/83"
+   },
+   {
+    "term": "加倍",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/133"
+   },
+   {
+    "term": "加倍",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/145"
+   },
+   {
+    "term": "阻塞叫",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/0"
+   },
+   {
+    "term": "阻塞叫",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/0"
+   },
+   {
+    "term": "轉移叫",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/9"
+   },
+   {
+    "term": "轉移叫",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/1"
+   },
+   {
+    "term": "新手",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "-/166"
+   },
+   {
+    "term": "新手",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/176"
+   },
+   {
+    "term": "練習",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "-/189"
+   },
+   {
+    "term": "練習",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/189"
+   },
+   {
+    "term": "得分",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "-/175"
+   },
+   {
+    "term": "得分",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/177"
+   },
+   {
+    "term": "黃卡",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "8/72"
+   },
+   {
+    "term": "黃卡",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "10/67"
+   },
+   {
+    "term": "超墩",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "2/96"
+   },
+   {
+    "term": "超墩",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "1/5"
+   },
+   {
+    "term": "雙人賽",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "10/128"
+   },
+   {
+    "term": "雙人賽",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "14/127"
+   },
+   {
+    "term": "防守首攻",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "1/21"
+   },
+   {
+    "term": "防守首攻",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "1/3"
+   },
+   {
+    "term": "飛牌",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "27/171"
+   },
+   {
+    "term": "飛牌",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "4/138"
+   },
+   {
+    "term": "橋藝",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "15/159"
+   },
+   {
+    "term": "橋藝",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "1/5"
+   },
+   {
+    "term": "定約",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "10/188"
+   },
+   {
+    "term": "定約",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "4/183"
+   },
+   {
+    "term": "跟牌",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "1/169"
+   },
+   {
+    "term": "跟牌",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "1/64"
+   },
+   {
+    "term": "叫牌室",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "2/165"
+   },
+   {
+    "term": "叫牌室",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "1/2"
+   },
+   {
+    "term": "贏墩",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "7/155"
+   },
+   {
+    "term": "贏墩",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "2/11"
+   },
+   {
+    "term": "黑桃",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "11/48"
+   },
+   {
+    "term": "黑桃",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "41/70"
+   },
+   {
+    "term": "紅心",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "43/154"
+   },
+   {
+    "term": "紅心",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "65/169"
+   },
+   {
+    "term": "points",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "-/181"
+   },
+   {
+    "term": "points",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/179"
+   },
+   {
+    "term": "撲克",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "-/195"
+   },
+   {
+    "term": "撲克",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/194"
+   },
+   {
+    "term": "庄家",
+    "kind": "dropped keyword",
+    "store": "tw",
+    "rank": "72/162"
+   },
+   {
+    "term": "庄家",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "99/168"
+   },
+   {
+    "term": "做莊",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/155"
+   },
+   {
+    "term": "做莊",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/19"
+   },
+   {
+    "term": "免費",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/189"
+   },
+   {
+    "term": "免費",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/197"
+   },
+   {
+    "term": "出牌",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/161"
+   },
+   {
+    "term": "出牌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/167"
+   },
+   {
+    "term": "清王",
+    "kind": "keyword",
+    "store": "tw",
+    "rank": "-/167"
+   },
+   {
+    "term": "清王",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/167"
+   }
+  ],
+  "it": [
+   {
+    "term": "Bridge Trainer: Impara e Gioca",
+    "kind": "name",
+    "store": "it",
+    "rank": "-/52"
+   },
+   {
+    "term": "Licita, dichiarante e difesa",
+    "kind": "subtitle",
+    "store": "it",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: Licita e Gioca",
+    "kind": "old name",
+    "store": "it",
+    "rank": "-/0"
+   },
+   {
+    "term": "Pratica di licita del bridge",
+    "kind": "old subtitle",
+    "store": "it",
+    "rank": "-/0"
+   },
+   {
+    "term": "carte",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/186"
+   },
+   {
+    "term": "giocare",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/190"
+   },
+   {
+    "term": "gratis",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/166"
+   },
+   {
+    "term": "principiante",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/182"
+   },
+   {
+    "term": "lezione",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/173"
+   },
+   {
+    "term": "esercizio",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/172"
+   },
+   {
+    "term": "contratto",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/176"
+   },
+   {
+    "term": "atout",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/118"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/177"
+   },
+   {
+    "term": "allenamento",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/170"
+   },
+   {
+    "term": "attacco",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/125"
+   },
+   {
+    "term": "presa",
+    "kind": "keyword",
+    "store": "it",
+    "rank": "-/171"
+   },
+   {
+    "term": "imparare",
+    "kind": "dropped keyword",
+    "store": "it",
+    "rank": "-/188"
+   },
+   {
+    "term": "tutor",
+    "kind": "dropped keyword",
+    "store": "it",
+    "rank": "-/178"
+   },
+   {
+    "term": "difesa",
+    "kind": "dropped keyword",
+    "store": "it",
+    "rank": "-/153"
+   },
+   {
+    "term": "dichiarante",
+    "kind": "dropped keyword",
+    "store": "it",
+    "rank": "-/0"
+   },
+   {
+    "term": "tiro",
+    "kind": "dropped keyword",
+    "store": "it",
+    "rank": "-/184"
+   }
+  ],
+  "en-GB": [
+   {
+    "term": "Bridge Trainer: Learn & Bid",
+    "kind": "name",
+    "store": "gb",
+    "rank": "1/169"
+   },
+   {
+    "term": "Bidding & Card Play Practice",
+    "kind": "subtitle",
+    "store": "gb",
+    "rank": "-/183"
+   },
+   {
+    "term": "Bridge Bidding & Card Practice",
+    "kind": "old subtitle",
+    "store": "gb",
+    "rank": "146/175"
+   },
+   {
+    "term": "contract",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/170"
+   },
+   {
+    "term": "lesson",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/181"
+   },
+   {
+    "term": "beginner",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/192"
+   },
+   {
+    "term": "training",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/190"
+   },
+   {
+    "term": "game",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/191"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/191"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/193"
+   },
+   {
+    "term": "defence",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/193"
+   },
+   {
+    "term": "declarer",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "148/151"
+   },
+   {
+    "term": "course",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/184"
+   },
+   {
+    "term": "duplicate",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/190"
+   },
+   {
+    "term": "hand",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/177"
+   },
+   {
+    "term": "drill",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/174"
+   },
+   {
+    "term": "trump",
+    "kind": "keyword",
+    "store": "gb",
+    "rank": "-/137"
+   },
+   {
+    "term": "play",
+    "kind": "dropped keyword",
+    "store": "gb",
+    "rank": "-/191"
+   },
+   {
+    "term": "score",
+    "kind": "dropped keyword",
+    "store": "gb",
+    "rank": "-/186"
+   }
+  ],
+  "ar-SA": [
+   {
+    "term": "Bridge Trainer: تعلم البلاي",
+    "kind": "name",
+    "store": "sa",
+    "rank": "1/1"
+   },
+   {
+    "term": "Bridge Trainer: تعلم البلاي",
+    "kind": "name",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "تدريبات مزايدة ولعب بريدج",
+    "kind": "subtitle",
+    "store": "sa",
+    "rank": "1/1"
+   },
+   {
+    "term": "تدريبات مزايدة ولعب بريدج",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "ورق",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/190"
+   },
+   {
+    "term": "ورق",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/181"
+   },
+   {
+    "term": "معلم",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/192"
+   },
+   {
+    "term": "معلم",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/190"
+   },
+   {
+    "term": "مبتدئ",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/197"
+   },
+   {
+    "term": "مبتدئ",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/193"
+   },
+   {
+    "term": "درس",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/195"
+   },
+   {
+    "term": "درس",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/176"
+   },
+   {
+    "term": "تدريب",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/198"
+   },
+   {
+    "term": "تدريب",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/185"
+   },
+   {
+    "term": "دفاع",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/184"
+   },
+   {
+    "term": "دفاع",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/196"
+   },
+   {
+    "term": "ممارسة",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/189"
+   },
+   {
+    "term": "ممارسة",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/192"
+   },
+   {
+    "term": "مسابقة",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/185"
+   },
+   {
+    "term": "مسابقة",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/191"
+   },
+   {
+    "term": "أوراق",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/183"
+   },
+   {
+    "term": "أوراق",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/189"
+   },
+   {
+    "term": "نقاط",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/188"
+   },
+   {
+    "term": "نقاط",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/191"
+   },
+   {
+    "term": "العاب",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/170"
+   },
+   {
+    "term": "العاب",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/170"
+   },
+   {
+    "term": "تسجيل",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/187"
+   },
+   {
+    "term": "تسجيل",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/183"
+   },
+   {
+    "term": "تفكير",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/189"
+   },
+   {
+    "term": "تفكير",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/194"
+   },
+   {
+    "term": "ذكاء",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/162"
+   },
+   {
+    "term": "ذكاء",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/161"
+   },
+   {
+    "term": "عقد",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/192"
+   },
+   {
+    "term": "عقد",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/189"
+   },
+   {
+    "term": "اختبار",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/193"
+   },
+   {
+    "term": "اختبار",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/196"
+   },
+   {
+    "term": "اوفلاين",
+    "kind": "keyword",
+    "store": "sa",
+    "rank": "-/176"
+   },
+   {
+    "term": "اوفلاين",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/174"
+   }
+  ],
+  "bn-BD": [
+   {
+    "term": "Bridge Trainer: ব্রিজ শিখুন",
+    "kind": "name",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "ব্রিজ বিডিং ও তাস প্র্যাকটিস",
+    "kind": "subtitle",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "শেখা",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "টিউটর",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "শিক্ষানবিস",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "পাঠ",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "ড্রিল",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "ডিফেন্স",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "ডিক্লেয়ারার",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "অনুশীলন",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "খেলা",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "পয়েন্ট",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "স্কোর",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "মজা",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "কনট্রাক্ট",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   },
+   {
+    "term": "কার্ড",
+    "kind": "keyword",
+    "store": "bd",
+    "rank": "-/0"
+   }
+  ],
+  "ca": [
+   {
+    "term": "Bridge Trainer: Aprèn i Licita",
+    "kind": "name",
+    "store": "es",
+    "rank": "-/0"
+   },
+   {
+    "term": "Pràctica de licitació i cartes",
+    "kind": "subtitle",
+    "store": "es",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: Aprèn i Lícita",
+    "kind": "old name",
+    "store": "es",
+    "rank": "-/0"
+   },
+   {
+    "term": "aprendre",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/182"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/178"
+   },
+   {
+    "term": "principiant",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/169"
+   },
+   {
+    "term": "lliçó",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/61"
+   },
+   {
+    "term": "exercici",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/171"
+   },
+   {
+    "term": "defensa",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/188"
+   },
+   {
+    "term": "declarant",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/143"
+   },
+   {
+    "term": "joc",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/169"
+   },
+   {
+    "term": "contracte",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/109"
+   },
+   {
+    "term": "triomf",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/4"
+   },
+   {
+    "term": "jugar",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/188"
+   },
+   {
+    "term": "gratis",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/175"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/179"
+   }
+  ],
+  "cs": [
+   {
+    "term": "Bridge Trainer: Výuka a hry",
+    "kind": "name",
+    "store": "cz",
+    "rank": "-/0"
+   },
+   {
+    "term": "Procvičování licitace a karet",
+    "kind": "subtitle",
+    "store": "cz",
+    "rank": "-/0"
+   },
+   {
+    "term": "bridž",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/10"
+   },
+   {
+    "term": "karty",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/180"
+   },
+   {
+    "term": "učení",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/183"
+   },
+   {
+    "term": "lektor",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/131"
+   },
+   {
+    "term": "začátečník",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/195"
+   },
+   {
+    "term": "lekce",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/192"
+   },
+   {
+    "term": "cvičení",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/193"
+   },
+   {
+    "term": "obrana",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/171"
+   },
+   {
+    "term": "hlavní hráč",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/0"
+   },
+   {
+    "term": "trénink",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/187"
+   },
+   {
+    "term": "kvíz",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/182"
+   },
+   {
+    "term": "hra",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/153"
+   },
+   {
+    "term": "list",
+    "kind": "keyword",
+    "store": "cz",
+    "rank": "-/184"
+   },
+   {
+    "term": "brydž",
+    "kind": "dropped keyword",
+    "store": "cz",
+    "rank": "-/5"
+   }
+  ],
+  "en-AU": [
+   {
+    "term": "Bridge Trainer: Learn & Bid",
+    "kind": "name",
+    "store": "au",
+    "rank": "1/170"
+   },
+   {
+    "term": "Bridge Bidding & Card Practice",
+    "kind": "subtitle",
+    "store": "au",
+    "rank": "-/177"
+   },
+   {
+    "term": "contract",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/167"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/191"
+   },
+   {
+    "term": "beginner",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/192"
+   },
+   {
+    "term": "lesson",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/183"
+   },
+   {
+    "term": "drill",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/187"
+   },
+   {
+    "term": "defence",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/195"
+   },
+   {
+    "term": "declarer",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/152"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/193"
+   },
+   {
+    "term": "play",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/190"
+   },
+   {
+    "term": "game",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/184"
+   },
+   {
+    "term": "trump",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/154"
+   },
+   {
+    "term": "hand",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/185"
+   },
+   {
+    "term": "score",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/193"
+   },
+   {
+    "term": "duplicate",
+    "kind": "keyword",
+    "store": "au",
+    "rank": "-/191"
+   }
+  ],
+  "en-CA": [
+   {
+    "term": "Bridge Trainer: Learn & Bid",
+    "kind": "name",
+    "store": "ca",
+    "rank": "1/166"
+   },
+   {
+    "term": "Bridge Bidding & Card Practice",
+    "kind": "subtitle",
+    "store": "ca",
+    "rank": "19/176"
+   },
+   {
+    "term": "contract",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/181"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/195"
+   },
+   {
+    "term": "beginner",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/188"
+   },
+   {
+    "term": "lesson",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/183"
+   },
+   {
+    "term": "drill",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/185"
+   },
+   {
+    "term": "defense",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/194"
+   },
+   {
+    "term": "declarer",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "97/159"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/195"
+   },
+   {
+    "term": "play",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/190"
+   },
+   {
+    "term": "game",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/189"
+   },
+   {
+    "term": "trump",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/156"
+   },
+   {
+    "term": "hand",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/189"
+   },
+   {
+    "term": "score",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/189"
+   },
+   {
+    "term": "duplicate",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/194"
+   }
+  ],
+  "es-ES": [
+   {
+    "term": "Bridge Trainer: Aprende y Puja",
+    "kind": "name",
+    "store": "es",
+    "rank": "-/0"
+   },
+   {
+    "term": "Práctica de bridge y subastas",
+    "kind": "subtitle",
+    "store": "es",
+    "rank": "-/1"
+   },
+   {
+    "term": "cartas",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/188"
+   },
+   {
+    "term": "aprender",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/157"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/178"
+   },
+   {
+    "term": "principiante",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/179"
+   },
+   {
+    "term": "lección",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/185"
+   },
+   {
+    "term": "ejercicio",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/182"
+   },
+   {
+    "term": "defensa",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/188"
+   },
+   {
+    "term": "declarante",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/1"
+   },
+   {
+    "term": "contrato",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/164"
+   },
+   {
+    "term": "triunfo",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/114"
+   },
+   {
+    "term": "gratis",
+    "kind": "keyword",
+    "store": "es",
+    "rank": "-/175"
+   }
+  ],
+  "es-MX": [
+   {
+    "term": "Bridge Trainer: Aprende y Puja",
+    "kind": "name",
+    "store": "mx",
+    "rank": "1/1"
+   },
+   {
+    "term": "Bridge Trainer: Aprende y Puja",
+    "kind": "name",
+    "store": "us",
+    "rank": "1/147"
+   },
+   {
+    "term": "Práctica de bridge y subastas",
+    "kind": "subtitle",
+    "store": "mx",
+    "rank": "3/3"
+   },
+   {
+    "term": "Práctica de bridge y subastas",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "19/136"
+   },
+   {
+    "term": "cartas",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/194"
+   },
+   {
+    "term": "cartas",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/187"
+   },
+   {
+    "term": "aprender",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/175"
+   },
+   {
+    "term": "aprender",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/170"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/187"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/190"
+   },
+   {
+    "term": "principiante",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/182"
+   },
+   {
+    "term": "principiante",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/179"
+   },
+   {
+    "term": "lección",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/184"
+   },
+   {
+    "term": "lección",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/183"
+   },
+   {
+    "term": "ejercicio",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/185"
+   },
+   {
+    "term": "ejercicio",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/181"
+   },
+   {
+    "term": "defensa",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/193"
+   },
+   {
+    "term": "defensa",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/176"
+   },
+   {
+    "term": "declarante",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "1/2"
+   },
+   {
+    "term": "declarante",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "2/4"
+   },
+   {
+    "term": "contrato",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/182"
+   },
+   {
+    "term": "contrato",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/180"
+   },
+   {
+    "term": "triunfo",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/116"
+   },
+   {
+    "term": "triunfo",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/118"
+   },
+   {
+    "term": "gratis",
+    "kind": "keyword",
+    "store": "mx",
+    "rank": "-/183"
+   },
+   {
+    "term": "gratis",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/195"
+   }
+  ],
+  "fi": [
+   {
+    "term": "Bridge Trainer: Opi tarjoamaan",
+    "kind": "name",
+    "store": "fi",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridgen tarjoukset ja treeni",
+    "kind": "subtitle",
+    "store": "fi",
+    "rank": "-/0"
+   },
+   {
+    "term": "kortit",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/190"
+   },
+   {
+    "term": "oppia",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/156"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/177"
+   },
+   {
+    "term": "aloittelija",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/191"
+   },
+   {
+    "term": "oppitunti",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/115"
+   },
+   {
+    "term": "harjoitus",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/180"
+   },
+   {
+    "term": "puolustus",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/150"
+   },
+   {
+    "term": "pelinviejä",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/0"
+   },
+   {
+    "term": "korttipeli",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/179"
+   },
+   {
+    "term": "sopimus",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/178"
+   },
+   {
+    "term": "valtti",
+    "kind": "keyword",
+    "store": "fi",
+    "rank": "-/143"
+   }
+  ],
+  "fr-CA": [
+   {
+    "term": "Bridge Trainer: Enchères",
+    "kind": "name",
+    "store": "ca",
+    "rank": "1/162"
+   },
+   {
+    "term": "Enchères et jeu de bridge",
+    "kind": "subtitle",
+    "store": "ca",
+    "rank": "149/167"
+   },
+   {
+    "term": "cartes",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/185"
+   },
+   {
+    "term": "apprendre",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/181"
+   },
+   {
+    "term": "tuteur",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/176"
+   },
+   {
+    "term": "débutant",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/175"
+   },
+   {
+    "term": "leçon",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/187"
+   },
+   {
+    "term": "exercice",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/176"
+   },
+   {
+    "term": "défense",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/198"
+   },
+   {
+    "term": "déclarant",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/149"
+   },
+   {
+    "term": "pratique",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/186"
+   },
+   {
+    "term": "contrat",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/179"
+   },
+   {
+    "term": "jouer",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/180"
+   },
+   {
+    "term": "gratuit",
+    "kind": "keyword",
+    "store": "ca",
+    "rank": "-/190"
+   }
+  ],
+  "gu-IN": [
+   {
+    "term": "Bridge Trainer: બ્રિજ શીખો",
+    "kind": "name",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "બ્રિજ બિડિંગ અને અભ્યાસ રમત",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "પત્તા",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ટ્યુટર",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "શરૂઆતી",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "પાઠ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/2"
+   },
+   {
+    "term": "ડ્રિલ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ડિફેન્સ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ડિક્લેરર",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "પોઇન્ટ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "સ્કોર",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "મજા",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ખેલ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "કોન્ટ્રાક્ટ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "તુરુપ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ક્વિઝ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ઓફલાઇન",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/2"
+   }
+  ],
+  "he": [
+   {
+    "term": "Bridge Trainer: ללמוד ברידג׳",
+    "kind": "name",
+    "store": "il",
+    "rank": "1/1"
+   },
+   {
+    "term": "תרגול הכרזות ומשחק ברידג׳",
+    "kind": "subtitle",
+    "store": "il",
+    "rank": "1/1"
+   },
+   {
+    "term": "קלפים",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/190"
+   },
+   {
+    "term": "למידה",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/183"
+   },
+   {
+    "term": "מורה",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/189"
+   },
+   {
+    "term": "מתחיל",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "161/165"
+   },
+   {
+    "term": "שיעור",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/174"
+   },
+   {
+    "term": "הגנה",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/187"
+   },
+   {
+    "term": "כרוז",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/177"
+   },
+   {
+    "term": "אימון",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/185"
+   },
+   {
+    "term": "חידון",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/179"
+   },
+   {
+    "term": "משחק",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/161"
+   },
+   {
+    "term": "קלף",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/153"
+   },
+   {
+    "term": "חוזה",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/183"
+   },
+   {
+    "term": "תחרות",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "165/170"
+   },
+   {
+    "term": "חשיבה",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/181"
+   },
+   {
+    "term": "שחק",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "106/117"
+   },
+   {
+    "term": "שליט",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/154"
+   },
+   {
+    "term": "חינם",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/179"
+   },
+   {
+    "term": "אופליין",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/192"
+   },
+   {
+    "term": "מבחן",
+    "kind": "keyword",
+    "store": "il",
+    "rank": "-/191"
+   }
+  ],
+  "hi": [
+   {
+    "term": "Bridge Trainer: ब्रिज सीखें",
+    "kind": "name",
+    "store": "in",
+    "rank": "1/1"
+   },
+   {
+    "term": "ब्रिज बिडिंग और प्ले अभ्यास",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "1/1"
+   },
+   {
+    "term": "पत्ते",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "86/192"
+   },
+   {
+    "term": "ट्यूटर",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "74/198"
+   },
+   {
+    "term": "शुरुआती",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "188/195"
+   },
+   {
+    "term": "पाठ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/191"
+   },
+   {
+    "term": "ड्रिल",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "28/81"
+   },
+   {
+    "term": "डिफेंस",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "12/58"
+   },
+   {
+    "term": "डिक्लेयरर",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "1/1"
+   },
+   {
+    "term": "खेल",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/197"
+   },
+   {
+    "term": "पत्ती",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/158"
+   },
+   {
+    "term": "स्कोर",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/195"
+   },
+   {
+    "term": "मजेदार",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/192"
+   },
+   {
+    "term": "ताश",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/166"
+   },
+   {
+    "term": "कॉन्ट्रैक्ट",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/23"
+   },
+   {
+    "term": "तुरूप",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/15"
+   },
+   {
+    "term": "क्विज़",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/196"
+   },
+   {
+    "term": "गेम",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/193"
+   }
+  ],
+  "hr": [
+   {
+    "term": "Bridge Trainer: Učenje i licit",
+    "kind": "name",
+    "store": "hr",
+    "rank": "-/0"
+   },
+   {
+    "term": "Trening licitacije u bridžu",
+    "kind": "subtitle",
+    "store": "hr",
+    "rank": "-/0"
+   },
+   {
+    "term": "Trening licitacije u brižu",
+    "kind": "old subtitle",
+    "store": "hr",
+    "rank": "-/0"
+   },
+   {
+    "term": "bridž",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/8"
+   },
+   {
+    "term": "licitacija",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/8"
+   },
+   {
+    "term": "karte",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/171"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/195"
+   },
+   {
+    "term": "početnik",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/186"
+   },
+   {
+    "term": "lekcija",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/120"
+   },
+   {
+    "term": "vježba",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/183"
+   },
+   {
+    "term": "obrana",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/131"
+   },
+   {
+    "term": "izvođač",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/65"
+   },
+   {
+    "term": "igra",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/165"
+   },
+   {
+    "term": "ugovor",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/133"
+   },
+   {
+    "term": "adut",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/166"
+   },
+   {
+    "term": "kviz",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/177"
+   },
+   {
+    "term": "kontra",
+    "kind": "keyword",
+    "store": "hr",
+    "rank": "-/159"
+   }
+  ],
+  "hu": [
+   {
+    "term": "Bridge Trainer: Licit és játék",
+    "kind": "name",
+    "store": "hu",
+    "rank": "-/0"
+   },
+   {
+    "term": "Licit és kártyajáték edzés",
+    "kind": "subtitle",
+    "store": "hu",
+    "rank": "-/0"
+   },
+   {
+    "term": "bridzs",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/8"
+   },
+   {
+    "term": "kártya",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/190"
+   },
+   {
+    "term": "tanulás",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/187"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/183"
+   },
+   {
+    "term": "kezdő",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/192"
+   },
+   {
+    "term": "lecke",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/153"
+   },
+   {
+    "term": "gyakorlat",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/181"
+   },
+   {
+    "term": "védekezés",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/19"
+   },
+   {
+    "term": "felvevő",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/110"
+   },
+   {
+    "term": "osztás",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/130"
+   },
+   {
+    "term": "lap",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/177"
+   },
+   {
+    "term": "szerződés",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/132"
+   },
+   {
+    "term": "adu",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/162"
+   },
+   {
+    "term": "kvíz",
+    "kind": "keyword",
+    "store": "hu",
+    "rank": "-/178"
+   }
+  ],
+  "id": [
+   {
+    "term": "Bridge Trainer: Belajar Bridge",
+    "kind": "name",
+    "store": "id",
+    "rank": "1/1"
+   },
+   {
+    "term": "Latihan bidding & kartu bridge",
+    "kind": "subtitle",
+    "store": "id",
+    "rank": "74/148"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/185"
+   },
+   {
+    "term": "pemula",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/183"
+   },
+   {
+    "term": "pelajaran",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/194"
+   },
+   {
+    "term": "pertahanan",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/168"
+   },
+   {
+    "term": "deklarer",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "3/3"
+   },
+   {
+    "term": "praktik",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "155/166"
+   },
+   {
+    "term": "game",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/193"
+   },
+   {
+    "term": "skor",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/194"
+   },
+   {
+    "term": "offline",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/171"
+   },
+   {
+    "term": "kontrak",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/185"
+   },
+   {
+    "term": "truf",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/31"
+   },
+   {
+    "term": "kuis",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/193"
+   },
+   {
+    "term": "gratis",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/155"
+   },
+   {
+    "term": "main",
+    "kind": "keyword",
+    "store": "id",
+    "rank": "-/178"
+   }
+  ],
+  "ja": [
+   {
+    "term": "Bridge Trainer: コントラクトブリッジ練習",
+    "kind": "name",
+    "store": "jp",
+    "rank": "2/2"
+   },
+   {
+    "term": "初心者向けコントラクトブリッジのビッドとカードの実戦練習",
+    "kind": "subtitle",
+    "store": "jp",
+    "rank": "-/0"
+   },
+   {
+    "term": "初心者向けコントラクトブリッジ叫牌とカードの実戦練習",
+    "kind": "old subtitle",
+    "store": "jp",
+    "rank": "1/1"
+   },
+   {
+    "term": "トランプ",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/173"
+   },
+   {
+    "term": "学習",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/167"
+   },
+   {
+    "term": "レッスン",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/171"
+   },
+   {
+    "term": "ドリル",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/190"
+   },
+   {
+    "term": "防衛",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/195"
+   },
+   {
+    "term": "宣言者",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "1/2"
+   },
+   {
+    "term": "ゲーム",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/189"
+   },
+   {
+    "term": "スコア",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/194"
+   },
+   {
+    "term": "ルール",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/179"
+   },
+   {
+    "term": "上達",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/169"
+   },
+   {
+    "term": "必勝",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "40/87"
+   },
+   {
+    "term": "問題集",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/194"
+   },
+   {
+    "term": "入門",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/184"
+   },
+   {
+    "term": "対戦",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/174"
+   },
+   {
+    "term": "勝率",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "190/194"
+   },
+   {
+    "term": "解説",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/186"
+   },
+   {
+    "term": "コツ",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/188"
+   },
+   {
+    "term": "満点",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/177"
+   },
+   {
+    "term": "基本",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/170"
+   },
+   {
+    "term": "攻略",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/164"
+   },
+   {
+    "term": "カードゲーム",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/195"
+   },
+   {
+    "term": "無料",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/195"
+   },
+   {
+    "term": "オフライン",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/193"
+   },
+   {
+    "term": "切り札",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/28"
+   },
+   {
+    "term": "クイズ",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/155"
+   },
+   {
+    "term": "ダミー",
+    "kind": "keyword",
+    "store": "jp",
+    "rank": "-/151"
+   }
+  ],
+  "kn-IN": [
+   {
+    "term": "Bridge: ಬ್ರಿಡ್ಜ್ ಕಲಿಯಿರಿ",
+    "kind": "name",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಬ್ರಿಡ್ಜ್ ಬಿಡ್ಡಿಂಗ್ ಅಭ್ಯಾಸ",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಎಲೆಗಳು",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಬೋಧಕ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಆರಂಭಿಕ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಪಾಠ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/1"
+   },
+   {
+    "term": "ರಕ್ಷಣೆ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಘೋಷಕ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ತರಬೇತಿ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಆಟ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/1"
+   },
+   {
+    "term": "ಅಂಕಗಳು",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಸ್ಕೋರ್",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಖೇಲ್",
+    "kind": "dropped keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಕಾರ್ಡ್",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಕಾಂಟ್ರಾಕ್ಟ್",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ತುರುಪು",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಕ್ವಿಜ್",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ಉಚಿತ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   }
+  ],
+  "ko": [
+   {
+    "term": "Bridge Trainer: 브리지 비딩 연습",
+    "kind": "name",
+    "store": "kr",
+    "rank": "1/2"
+   },
+   {
+    "term": "Bridge Trainer: 브리지 비딩 연습",
+    "kind": "name",
+    "store": "us",
+    "rank": "-/1"
+   },
+   {
+    "term": "초보자를 위한 실전 브리지 비딩 및 카드 게임 연습",
+    "kind": "subtitle",
+    "store": "kr",
+    "rank": "1/1"
+   },
+   {
+    "term": "초보자를 위한 실전 브리지 비딩 및 카드 게임 연습",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: 브릿지 비딩 연습",
+    "kind": "old name",
+    "store": "kr",
+    "rank": "1/1"
+   },
+   {
+    "term": "Bridge Trainer: 브릿지 비딩 연습",
+    "kind": "old name",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "초보자를 위한 실전 브릿지 비딩 및 카드 게임 연습",
+    "kind": "old subtitle",
+    "store": "kr",
+    "rank": "1/1"
+   },
+   {
+    "term": "초보자를 위한 실전 브릿지 비딩 및 카드 게임 연습",
+    "kind": "old subtitle",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "트럼프",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/182"
+   },
+   {
+    "term": "트럼프",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "97/156"
+   },
+   {
+    "term": "학습",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/184"
+   },
+   {
+    "term": "학습",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/196"
+   },
+   {
+    "term": "레슨",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/191"
+   },
+   {
+    "term": "레슨",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/173"
+   },
+   {
+    "term": "드릴",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/187"
+   },
+   {
+    "term": "드릴",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/195"
+   },
+   {
+    "term": "수비",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "93/98"
+   },
+   {
+    "term": "수비",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "54/97"
+   },
+   {
+    "term": "디클레어러",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "1/1"
+   },
+   {
+    "term": "디클레어러",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "콘트랙트",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/170"
+   },
+   {
+    "term": "콘트랙트",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "룰",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/129"
+   },
+   {
+    "term": "룰",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "101/142"
+   },
+   {
+    "term": "점수",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/191"
+   },
+   {
+    "term": "점수",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/198"
+   },
+   {
+    "term": "강좌",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/146"
+   },
+   {
+    "term": "강좌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/181"
+   },
+   {
+    "term": "전략",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/195"
+   },
+   {
+    "term": "전략",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/186"
+   },
+   {
+    "term": "문제",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/188"
+   },
+   {
+    "term": "문제",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/193"
+   },
+   {
+    "term": "도우미",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/191"
+   },
+   {
+    "term": "도우미",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/193"
+   },
+   {
+    "term": "특강",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "31/33"
+   },
+   {
+    "term": "특강",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "8/31"
+   },
+   {
+    "term": "공략",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/151"
+   },
+   {
+    "term": "공략",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "131/169"
+   },
+   {
+    "term": "퀴즈",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/183"
+   },
+   {
+    "term": "퀴즈",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/186"
+   },
+   {
+    "term": "기초",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/163"
+   },
+   {
+    "term": "기초",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/165"
+   },
+   {
+    "term": "해설",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/198"
+   },
+   {
+    "term": "해설",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/195"
+   },
+   {
+    "term": "공부",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/170"
+   },
+   {
+    "term": "공부",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/161"
+   },
+   {
+    "term": "비법",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "28/31"
+   },
+   {
+    "term": "비법",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "20/27"
+   },
+   {
+    "term": "가이드",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/192"
+   },
+   {
+    "term": "가이드",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/196"
+   },
+   {
+    "term": "놀이",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/172"
+   },
+   {
+    "term": "놀이",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/195"
+   },
+   {
+    "term": "상식",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/162"
+   },
+   {
+    "term": "상식",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/189"
+   },
+   {
+    "term": "훈련",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/196"
+   },
+   {
+    "term": "훈련",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/196"
+   },
+   {
+    "term": "bidding",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/158"
+   },
+   {
+    "term": "bidding",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/187"
+   },
+   {
+    "term": "practice",
+    "kind": "keyword",
+    "store": "kr",
+    "rank": "-/186"
+   },
+   {
+    "term": "practice",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/190"
+   }
+  ],
+  "ml-IN": [
+   {
+    "term": "ബ്രിഡ്ജ് ട്രെയിനർ: പഠിക്കാം",
+    "kind": "name",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ബ്രിഡ്ജ് ബിഡ്ഡിംഗ് പരിശീലനം",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "കാർഡുകൾ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ട്യൂട്ടർ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "തുടക്കക്കാരൻ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "പാഠം",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "പ്രതിരോധം",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "കളിക്കാരൻ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "സ്കോർ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ചീട്ടുകളി",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ക്വിസ്",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ഡ്രിൽ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ഗെയിം",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "തുരുപ്പ്",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   }
+  ],
+  "mr-IN": [
+   {
+    "term": "Bridge Trainer: ब्रिज शिका",
+    "kind": "name",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ब्रिज बिडिंग व पत्ते सराव",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ट्यूटर",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "74/198"
+   },
+   {
+    "term": "नवशिक्या",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "पाठ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/191"
+   },
+   {
+    "term": "डिफेन्स",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/1"
+   },
+   {
+    "term": "डिक्लेयरर",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "1/1"
+   },
+   {
+    "term": "चाचणी",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "खेळ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/1"
+   },
+   {
+    "term": "गुण",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/192"
+   },
+   {
+    "term": "गुणसंख्या",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "मजा",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/183"
+   },
+   {
+    "term": "कॉन्ट्रॅक्ट",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/23"
+   },
+   {
+    "term": "तुरुप",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/15"
+   },
+   {
+    "term": "क्विझ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ऑफलाइन",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/195"
+   }
+  ],
+  "ms": [
+   {
+    "term": "Bridge Trainer: Belajar Bridge",
+    "kind": "name",
+    "store": "my",
+    "rank": "1/1"
+   },
+   {
+    "term": "Latihan bidding & kad bridge",
+    "kind": "subtitle",
+    "store": "my",
+    "rank": "26/92"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/189"
+   },
+   {
+    "term": "pemula",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/189"
+   },
+   {
+    "term": "pelajaran",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/187"
+   },
+   {
+    "term": "pertahanan",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/143"
+   },
+   {
+    "term": "deklarer",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "2/3"
+   },
+   {
+    "term": "praktik",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "69/96"
+   },
+   {
+    "term": "game",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/194"
+   },
+   {
+    "term": "skor",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/195"
+   },
+   {
+    "term": "main",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/183"
+   },
+   {
+    "term": "offline",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/176"
+   },
+   {
+    "term": "kontrak",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/183"
+   },
+   {
+    "term": "truf",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/11"
+   },
+   {
+    "term": "kuiz",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/196"
+   },
+   {
+    "term": "percuma",
+    "kind": "keyword",
+    "store": "my",
+    "rank": "-/144"
+   }
+  ],
+  "no": [
+   {
+    "term": "Bridge Trainer: Lær meldinger",
+    "kind": "name",
+    "store": "no",
+    "rank": "1/1"
+   },
+   {
+    "term": "Bridge meldinger og trening",
+    "kind": "subtitle",
+    "store": "no",
+    "rank": "1/1"
+   },
+   {
+    "term": "kort",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/181"
+   },
+   {
+    "term": "lære",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/197"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/180"
+   },
+   {
+    "term": "nybegynner",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/189"
+   },
+   {
+    "term": "leksjon",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/164"
+   },
+   {
+    "term": "drill",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/188"
+   },
+   {
+    "term": "forsvar",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/126"
+   },
+   {
+    "term": "spillefører",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "1/1"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/181"
+   },
+   {
+    "term": "kontrakt",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/180"
+   },
+   {
+    "term": "kortspill",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/184"
+   },
+   {
+    "term": "trumf",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/54"
+   },
+   {
+    "term": "stikk",
+    "kind": "keyword",
+    "store": "no",
+    "rank": "-/147"
+   }
+  ],
+  "or-IN": [
+   {
+    "term": "Bridge Trainer: ବ୍ରିଜ୍ ଶିଖନ୍ତୁ",
+    "kind": "name",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ବ୍ରିଜ୍ ବିଡିଂ ଏବଂ ତାସ ଅଭ୍ୟାସ",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ଟ୍ୟୁଟର",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ଶିକ୍ଷାନବିସ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ପାଠ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/2"
+   },
+   {
+    "term": "ଡ୍ରିଲ୍",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ଡିଫେନ୍ସ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ଡିକ୍ଲେୟରର",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "କ୍ଵିଜ୍",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ଖେଳ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ସ୍କୋର",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ରୁମ୍",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ମଜା",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "କାର୍ଡ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "କଣ୍ଟ୍ରାକ୍ଟ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ତୁରୁପ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   }
+  ],
+  "pa-IN": [
+   {
+    "term": "Bridge Trainer: ਬ੍ਰਿਜ ਸਿੱਖੋ",
+    "kind": "name",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਬ੍ਰਿਜ ਬੋਲੀ ਅਤੇ ਕਾਰਡ ਅਭਿਆਸ",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਪੱਤੇ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਟਿਊਟਰ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਸ਼ੁਰੂਆਤੀ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਪਾਠ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/2"
+   },
+   {
+    "term": "ਡ੍ਰਿਲ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਡਿਫੈਂਸ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਡਿਕਲੇਅਰਰ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਖੇਡ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/1"
+   },
+   {
+    "term": "ਸਕੋਰ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਪੁਆਇੰਟ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਮਜ਼ੇਦਾਰ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਖੇਲ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਤਾਸ਼",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਕੰਟਰੈਕਟ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਤੁਰਪ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ਕੁਇਜ਼",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   }
+  ],
+  "pl": [
+   {
+    "term": "Bridge Trainer: Licytacja",
+    "kind": "name",
+    "store": "pl",
+    "rank": "-/0"
+   },
+   {
+    "term": "Trening licytacji w brydżu",
+    "kind": "subtitle",
+    "store": "pl",
+    "rank": "-/0"
+   },
+   {
+    "term": "brydż",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/185"
+   },
+   {
+    "term": "karty",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/183"
+   },
+   {
+    "term": "nauka",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/157"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/185"
+   },
+   {
+    "term": "początkujący",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/196"
+   },
+   {
+    "term": "lekcja",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/173"
+   },
+   {
+    "term": "ćwiczenie",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/179"
+   },
+   {
+    "term": "obrona",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/177"
+   },
+   {
+    "term": "rozgrywający",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/8"
+   },
+   {
+    "term": "praktyka",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/190"
+   },
+   {
+    "term": "gra",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/153"
+   },
+   {
+    "term": "kontrakt",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/169"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "pl",
+    "rank": "-/174"
+   }
+  ],
+  "pt-BR": [
+   {
+    "term": "Bridge Trainer: Licitação",
+    "kind": "name",
+    "store": "br",
+    "rank": "1/1"
+   },
+   {
+    "term": "Bridge Trainer: Licitação",
+    "kind": "name",
+    "store": "us",
+    "rank": "15/139"
+   },
+   {
+    "term": "Pratique licitação de bridge",
+    "kind": "subtitle",
+    "store": "br",
+    "rank": "1/1"
+   },
+   {
+    "term": "Pratique licitação de bridge",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "7/151"
+   },
+   {
+    "term": "Bridge Trainer: Licitación",
+    "kind": "old name",
+    "store": "br",
+    "rank": "1/1"
+   },
+   {
+    "term": "Bridge Trainer: Licitación",
+    "kind": "old name",
+    "store": "us",
+    "rank": "1/157"
+   },
+   {
+    "term": "cartas",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/188"
+   },
+   {
+    "term": "cartas",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/187"
+   },
+   {
+    "term": "aprender",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/177"
+   },
+   {
+    "term": "aprender",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/170"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/188"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/190"
+   },
+   {
+    "term": "iniciante",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/168"
+   },
+   {
+    "term": "iniciante",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/167"
+   },
+   {
+    "term": "lição",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/176"
+   },
+   {
+    "term": "lição",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/178"
+   },
+   {
+    "term": "exercício",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/186"
+   },
+   {
+    "term": "exercício",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/180"
+   },
+   {
+    "term": "defesa",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/190"
+   },
+   {
+    "term": "defesa",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/192"
+   },
+   {
+    "term": "declarante",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "1/1"
+   },
+   {
+    "term": "declarante",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "2/4"
+   },
+   {
+    "term": "prática",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/186"
+   },
+   {
+    "term": "prática",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/170"
+   },
+   {
+    "term": "play",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/188"
+   },
+   {
+    "term": "play",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/187"
+   },
+   {
+    "term": "defensa",
+    "kind": "dropped keyword",
+    "store": "br",
+    "rank": "-/191"
+   },
+   {
+    "term": "defensa",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/176"
+   },
+   {
+    "term": "contrato",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/174"
+   },
+   {
+    "term": "contrato",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/180"
+   },
+   {
+    "term": "trunfo",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/55"
+   },
+   {
+    "term": "trunfo",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/69"
+   },
+   {
+    "term": "jogo",
+    "kind": "keyword",
+    "store": "br",
+    "rank": "-/176"
+   },
+   {
+    "term": "jogo",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/167"
+   }
+  ],
+  "pt-PT": [
+   {
+    "term": "Bridge Trainer: Licitação",
+    "kind": "name",
+    "store": "pt",
+    "rank": "-/0"
+   },
+   {
+    "term": "Pratique licitação de bridge",
+    "kind": "subtitle",
+    "store": "pt",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: Licitación",
+    "kind": "old name",
+    "store": "pt",
+    "rank": "-/0"
+   },
+   {
+    "term": "cartas",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/192"
+   },
+   {
+    "term": "aprender",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/178"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/185"
+   },
+   {
+    "term": "iniciante",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/181"
+   },
+   {
+    "term": "lição",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/174"
+   },
+   {
+    "term": "exercício",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/183"
+   },
+   {
+    "term": "defesa",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/182"
+   },
+   {
+    "term": "declarante",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/2"
+   },
+   {
+    "term": "prática",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/162"
+   },
+   {
+    "term": "play",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/182"
+   },
+   {
+    "term": "defensa",
+    "kind": "dropped keyword",
+    "store": "pt",
+    "rank": "-/184"
+   },
+   {
+    "term": "contrato",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/161"
+   },
+   {
+    "term": "trunfo",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/44"
+   },
+   {
+    "term": "jogo",
+    "kind": "keyword",
+    "store": "pt",
+    "rank": "-/153"
+   }
+  ],
+  "ro": [
+   {
+    "term": "Bridge Trainer: Licitație",
+    "kind": "name",
+    "store": "ro",
+    "rank": "-/0"
+   },
+   {
+    "term": "Exerciții de licitație bridge",
+    "kind": "subtitle",
+    "store": "ro",
+    "rank": "-/0"
+   },
+   {
+    "term": "cărți",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/193"
+   },
+   {
+    "term": "învățare",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/177"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/185"
+   },
+   {
+    "term": "începător",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/192"
+   },
+   {
+    "term": "lecție",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/153"
+   },
+   {
+    "term": "exercițiu",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/180"
+   },
+   {
+    "term": "apărare",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/180"
+   },
+   {
+    "term": "declarant",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/145"
+   },
+   {
+    "term": "practică",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/185"
+   },
+   {
+    "term": "joc",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/148"
+   },
+   {
+    "term": "contract",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/164"
+   },
+   {
+    "term": "atu",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/197"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "ro",
+    "rank": "-/180"
+   }
+  ],
+  "ru": [
+   {
+    "term": "Bridge Trainer: Бридж обучение",
+    "kind": "name",
+    "store": "ru",
+    "rank": "1/1"
+   },
+   {
+    "term": "Bridge Trainer: Бридж обучение",
+    "kind": "name",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "Практика бриджа и торговли",
+    "kind": "subtitle",
+    "store": "ru",
+    "rank": "1/2"
+   },
+   {
+    "term": "Практика бриджа и торговли",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "1/2"
+   },
+   {
+    "term": "карты",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/178"
+   },
+   {
+    "term": "карты",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/185"
+   },
+   {
+    "term": "торговля",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/168"
+   },
+   {
+    "term": "торговля",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "149/165"
+   },
+   {
+    "term": "новичок",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/187"
+   },
+   {
+    "term": "новичок",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/182"
+   },
+   {
+    "term": "урок",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/180"
+   },
+   {
+    "term": "урок",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/180"
+   },
+   {
+    "term": "тренировка",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/180"
+   },
+   {
+    "term": "тренировка",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/181"
+   },
+   {
+    "term": "защита",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/170"
+   },
+   {
+    "term": "защита",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/181"
+   },
+   {
+    "term": "разыгрывающий",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "1/1"
+   },
+   {
+    "term": "разыгрывающий",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "игра",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/186"
+   },
+   {
+    "term": "игра",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/177"
+   },
+   {
+    "term": "контракт",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/154"
+   },
+   {
+    "term": "контракт",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "75/117"
+   },
+   {
+    "term": "карточные",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/181"
+   },
+   {
+    "term": "карточные",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/181"
+   },
+   {
+    "term": "офлайн",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/168"
+   },
+   {
+    "term": "офлайн",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/180"
+   },
+   {
+    "term": "заявки",
+    "kind": "keyword",
+    "store": "ru",
+    "rank": "-/179"
+   },
+   {
+    "term": "заявки",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/183"
+   }
+  ],
+  "sk": [
+   {
+    "term": "Bridge Trainer: Výuka a hry",
+    "kind": "name",
+    "store": "sk",
+    "rank": "-/0"
+   },
+   {
+    "term": "Licitácia a karty v bridži",
+    "kind": "subtitle",
+    "store": "sk",
+    "rank": "-/0"
+   },
+   {
+    "term": "Licitácia a karty v brydži",
+    "kind": "old subtitle",
+    "store": "sk",
+    "rank": "-/0"
+   },
+   {
+    "term": "bridž",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/10"
+   },
+   {
+    "term": "učenie",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/187"
+   },
+   {
+    "term": "lektor",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/86"
+   },
+   {
+    "term": "začiatočník",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/193"
+   },
+   {
+    "term": "lekcia",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/71"
+   },
+   {
+    "term": "cvičenie",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/189"
+   },
+   {
+    "term": "obrana",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/141"
+   },
+   {
+    "term": "hlavný hráč",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/0"
+   },
+   {
+    "term": "tréning",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/187"
+   },
+   {
+    "term": "kvíz",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/183"
+   },
+   {
+    "term": "hra",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/166"
+   },
+   {
+    "term": "kontrakt",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/164"
+   },
+   {
+    "term": "tromf",
+    "kind": "keyword",
+    "store": "sk",
+    "rank": "-/8"
+   }
+  ],
+  "sl-SI": [
+   {
+    "term": "Bridge Trainer: Učenje bridža",
+    "kind": "name",
+    "store": "si",
+    "rank": "-/0"
+   },
+   {
+    "term": "Trening licitacije bridža",
+    "kind": "subtitle",
+    "store": "si",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridge Trainer: Učenje briža",
+    "kind": "old name",
+    "store": "si",
+    "rank": "-/0"
+   },
+   {
+    "term": "Trening licitacije briža",
+    "kind": "old subtitle",
+    "store": "si",
+    "rank": "-/0"
+   },
+   {
+    "term": "bridž",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/4"
+   },
+   {
+    "term": "licitacija",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/0"
+   },
+   {
+    "term": "karte",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/171"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/189"
+   },
+   {
+    "term": "začetnik",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/0"
+   },
+   {
+    "term": "lekcija",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/4"
+   },
+   {
+    "term": "vaja",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/4"
+   },
+   {
+    "term": "obramba",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/0"
+   },
+   {
+    "term": "izvajalec",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/1"
+   },
+   {
+    "term": "igra",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/171"
+   },
+   {
+    "term": "točke",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/153"
+   },
+   {
+    "term": "adut",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/156"
+   },
+   {
+    "term": "briž",
+    "kind": "dropped keyword",
+    "store": "si",
+    "rank": "-/9"
+   },
+   {
+    "term": "kontrakt",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/171"
+   },
+   {
+    "term": "kviz",
+    "kind": "keyword",
+    "store": "si",
+    "rank": "-/179"
+   }
+  ],
+  "sv": [
+   {
+    "term": "Bridge Trainer: Lär dig bjuda",
+    "kind": "name",
+    "store": "se",
+    "rank": "-/0"
+   },
+   {
+    "term": "Bridgebud och kortträning",
+    "kind": "subtitle",
+    "store": "se",
+    "rank": "-/0"
+   },
+   {
+    "term": "budgivning",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/23"
+   },
+   {
+    "term": "kort",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/184"
+   },
+   {
+    "term": "lära",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/160"
+   },
+   {
+    "term": "tutor",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/181"
+   },
+   {
+    "term": "nybörjare",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/191"
+   },
+   {
+    "term": "lektion",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/170"
+   },
+   {
+    "term": "drill",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/178"
+   },
+   {
+    "term": "försvar",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/136"
+   },
+   {
+    "term": "spelförare",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/0"
+   },
+   {
+    "term": "träning",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/171"
+   },
+   {
+    "term": "quiz",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/172"
+   },
+   {
+    "term": "kontrakt",
+    "kind": "keyword",
+    "store": "se",
+    "rank": "-/169"
+   }
+  ],
+  "ta-IN": [
+   {
+    "term": "Bridge Trainer: பிரிட்ஜ் கற்க",
+    "kind": "name",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "பிரிட்ஜ் ஏலம் & அட்டை பயிற்சி",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "அட்டைகள்",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ஆசிரியர்",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "தொடக்கநிலை",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "பாடம்",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/2"
+   },
+   {
+    "term": "பாதுகாப்பு",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "டிக்ளேரர்",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "விளையாட",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/1"
+   },
+   {
+    "term": "வினாடிவினா",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ஏலதாரர்",
+    "kind": "dropped keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "சீட்டு",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "துருப்பு",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ஒப்பந்தம்",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   }
+  ],
+  "te-IN": [
+   {
+    "term": "బ్రిడ్జ్ ట్రైనర్: నేర్చుకోండి",
+    "kind": "name",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "బ్రిడ్జ్ బిడ్డింగ్ ప్రాక్టీస్",
+    "kind": "subtitle",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "కార్డులు",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ట్యూటర్",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ప్రారంభకులు",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "పాఠం",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "రక్షణ",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "డిక్లేరర్",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ఆటలు",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ఆట",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "కాంట్రాక్ట్",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "తురుపు",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "క్విజ్",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/1"
+   },
+   {
+    "term": "డ్రిల్",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "స్కోర్",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   },
+   {
+    "term": "ఉచితం",
+    "kind": "keyword",
+    "store": "in",
+    "rank": "-/0"
+   }
+  ],
+  "uk": [
+   {
+    "term": "Bridge Trainer: Бридж навчання",
+    "kind": "name",
+    "store": "ua",
+    "rank": "1/1"
+   },
+   {
+    "term": "Практика бриджу та торгівлі",
+    "kind": "subtitle",
+    "store": "ua",
+    "rank": "1/1"
+   },
+   {
+    "term": "торгівля",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "167/170"
+   },
+   {
+    "term": "карти",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/187"
+   },
+   {
+    "term": "новачок",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/146"
+   },
+   {
+    "term": "урок",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/183"
+   },
+   {
+    "term": "тренування",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/191"
+   },
+   {
+    "term": "захист",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/181"
+   },
+   {
+    "term": "розігруючий",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "1/1"
+   },
+   {
+    "term": "гра",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/156"
+   },
+   {
+    "term": "контракт",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "122/129"
+   },
+   {
+    "term": "карткові",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/48"
+   },
+   {
+    "term": "офлайн",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/156"
+   },
+   {
+    "term": "козир",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/32"
+   },
+   {
+    "term": "квіз",
+    "kind": "keyword",
+    "store": "ua",
+    "rank": "-/192"
+   }
+  ],
+  "ur-PK": [
+   {
+    "term": "Bridge Trainer: برج سیکھیں",
+    "kind": "name",
+    "store": "pk",
+    "rank": "-/4"
+   },
+   {
+    "term": "برج کی بولیاں اور تاش کی مشق",
+    "kind": "subtitle",
+    "store": "pk",
+    "rank": "-/0"
+   },
+   {
+    "term": "ٹیوٹر",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/199"
+   },
+   {
+    "term": "مبتدی",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/17"
+   },
+   {
+    "term": "سبق",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/182"
+   },
+   {
+    "term": "دفاع",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/152"
+   },
+   {
+    "term": "اعلان کنندہ",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/0"
+   },
+   {
+    "term": "پریکٹس",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/197"
+   },
+   {
+    "term": "کوئز",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/193"
+   },
+   {
+    "term": "کھیل",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/196"
+   },
+   {
+    "term": "پوائنٹ",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/198"
+   },
+   {
+    "term": "اسکور",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/198"
+   },
+   {
+    "term": "کارڈ",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/199"
+   },
+   {
+    "term": "مذا",
+    "kind": "dropped keyword",
+    "store": "pk",
+    "rank": "-/195"
+   },
+   {
+    "term": "کنٹریکٹ",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/186"
+   },
+   {
+    "term": "ترپ",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/192"
+   },
+   {
+    "term": "آف لائن",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/191"
+   },
+   {
+    "term": "مفت",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/196"
+   },
+   {
+    "term": "گیم",
+    "kind": "keyword",
+    "store": "pk",
+    "rank": "-/176"
+   }
+  ],
+  "vi": [
+   {
+    "term": "Bridge Trainer: Học chơi bài",
+    "kind": "name",
+    "store": "vn",
+    "rank": "1/177"
+   },
+   {
+    "term": "Bridge Trainer: Học chơi bài",
+    "kind": "name",
+    "store": "us",
+    "rank": "1/179"
+   },
+   {
+    "term": "Luyện tập đấu thầu Bridge",
+    "kind": "subtitle",
+    "store": "vn",
+    "rank": "2/2"
+   },
+   {
+    "term": "Luyện tập đấu thầu Bridge",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "1/2"
+   },
+   {
+    "term": "người mới",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/175"
+   },
+   {
+    "term": "người mới",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/170"
+   },
+   {
+    "term": "hướng dẫn",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/190"
+   },
+   {
+    "term": "hướng dẫn",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/198"
+   },
+   {
+    "term": "phòng thủ",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/176"
+   },
+   {
+    "term": "phòng thủ",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/182"
+   },
+   {
+    "term": "thực hành",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/152"
+   },
+   {
+    "term": "thực hành",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/152"
+   },
+   {
+    "term": "đi",
+    "kind": "dropped keyword",
+    "store": "vn",
+    "rank": "-/168"
+   },
+   {
+    "term": "đi",
+    "kind": "dropped keyword",
+    "store": "us",
+    "rank": "-/164"
+   },
+   {
+    "term": "offline",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/144"
+   },
+   {
+    "term": "offline",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/191"
+   },
+   {
+    "term": "game",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/141"
+   },
+   {
+    "term": "game",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/188"
+   },
+   {
+    "term": "miễn phí",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/174"
+   },
+   {
+    "term": "miễn phí",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/146"
+   },
+   {
+    "term": "hợp đồng",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/177"
+   },
+   {
+    "term": "hợp đồng",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/178"
+   },
+   {
+    "term": "trắc nghiệm",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/184"
+   },
+   {
+    "term": "trắc nghiệm",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/169"
+   },
+   {
+    "term": "cơ bản",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/183"
+   },
+   {
+    "term": "cơ bản",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/192"
+   },
+   {
+    "term": "nâng cao",
+    "kind": "keyword",
+    "store": "vn",
+    "rank": "-/166"
+   },
+   {
+    "term": "nâng cao",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/156"
+   }
+  ],
+  "zh-Hans": [
+   {
+    "term": "Bridge Trainer: 桥牌学习叫牌打牌",
+    "kind": "name",
+    "store": "cn",
+    "rank": "-/2"
+   },
+   {
+    "term": "Bridge Trainer: 桥牌学习叫牌打牌",
+    "kind": "name",
+    "store": "us",
+    "rank": "1/8"
+   },
+   {
+    "term": "针对初学者的无压力合约桥牌叫牌与打牌防守核心特训",
+    "kind": "subtitle",
+    "store": "cn",
+    "rank": "-/0"
+   },
+   {
+    "term": "针对初学者的无压力合约桥牌叫牌与打牌防守核心特训",
+    "kind": "subtitle",
+    "store": "us",
+    "rank": "1/1"
+   },
+   {
+    "term": "新手",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/168"
+   },
+   {
+    "term": "新手",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/176"
+   },
+   {
+    "term": "课程",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/180"
+   },
+   {
+    "term": "课程",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/188"
+   },
+   {
+    "term": "庄家",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/155"
+   },
+   {
+    "term": "庄家",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "99/168"
+   },
+   {
+    "term": "练习",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/181"
+   },
+   {
+    "term": "练习",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/171"
+   },
+   {
+    "term": "游戏",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/184"
+   },
+   {
+    "term": "游戏",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/173"
+   },
+   {
+    "term": "得分",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/137"
+   },
+   {
+    "term": "得分",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/177"
+   },
+   {
+    "term": "规则",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/148"
+   },
+   {
+    "term": "规则",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/168"
+   },
+   {
+    "term": "黄卡",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/4"
+   },
+   {
+    "term": "黄卡",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "4/8"
+   },
+   {
+    "term": "大牌点",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/45"
+   },
+   {
+    "term": "大牌点",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "4/14"
+   },
+   {
+    "term": "超墩",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/56"
+   },
+   {
+    "term": "超墩",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "1/5"
+   },
+   {
+    "term": "双人赛",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/28"
+   },
+   {
+    "term": "双人赛",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "10/127"
+   },
+   {
+    "term": "防守首攻",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/5"
+   },
+   {
+    "term": "防守首攻",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "1/3"
+   },
+   {
+    "term": "飞牌",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/161"
+   },
+   {
+    "term": "飞牌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "3/140"
+   },
+   {
+    "term": "桥艺",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/144"
+   },
+   {
+    "term": "桥艺",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "1/35"
+   },
+   {
+    "term": "定约",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/155"
+   },
+   {
+    "term": "定约",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "11/187"
+   },
+   {
+    "term": "牌局",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/182"
+   },
+   {
+    "term": "牌局",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "67/182"
+   },
+   {
+    "term": "首攻",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/162"
+   },
+   {
+    "term": "首攻",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "5/180"
+   },
+   {
+    "term": "跟牌",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/166"
+   },
+   {
+    "term": "跟牌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "1/64"
+   },
+   {
+    "term": "叫牌室",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/143"
+   },
+   {
+    "term": "叫牌室",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "1/2"
+   },
+   {
+    "term": "赢墩",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/151"
+   },
+   {
+    "term": "赢墩",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "2/11"
+   },
+   {
+    "term": "黑桃",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/194"
+   },
+   {
+    "term": "黑桃",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "41/70"
+   },
+   {
+    "term": "红心",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/79"
+   },
+   {
+    "term": "红心",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "58/115"
+   },
+   {
+    "term": "训练",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/168"
+   },
+   {
+    "term": "训练",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/169"
+   },
+   {
+    "term": "cards",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/166"
+   },
+   {
+    "term": "cards",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/196"
+   },
+   {
+    "term": "扑克",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/153"
+   },
+   {
+    "term": "扑克",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/190"
+   },
+   {
+    "term": "做庄",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/124"
+   },
+   {
+    "term": "做庄",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/19"
+   },
+   {
+    "term": "入门",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/175"
+   },
+   {
+    "term": "入门",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/198"
+   },
+   {
+    "term": "教学",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/175"
+   },
+   {
+    "term": "教学",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/169"
+   },
+   {
+    "term": "单机",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/178"
+   },
+   {
+    "term": "单机",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/192"
+   },
+   {
+    "term": "离线",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/165"
+   },
+   {
+    "term": "离线",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/184"
+   },
+   {
+    "term": "将牌",
+    "kind": "keyword",
+    "store": "cn",
+    "rank": "-/164"
+   },
+   {
+    "term": "将牌",
+    "kind": "keyword",
+    "store": "us",
+    "rank": "-/176"
+   }
+  ]
+ }
+}
