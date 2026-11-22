@@ -1,1 +1,1 @@
-tutor,pemula,pelajaran,pertahanan,deklarer,praktik,game,skor,main
+tutor,pemula,pelajaran,pertahanan,deklarer,praktik,game,skor,main,offline,kontrak,truf,kuiz,percuma

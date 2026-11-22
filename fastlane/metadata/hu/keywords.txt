@@ -1,1 +1,1 @@
-bridzs,kártya,tanulás,tutor,kezdő,lecke,gyakorlat,védekezés,felvevő,osztás,lap
+bridzs,kártya,tanulás,tutor,kezdő,lecke,gyakorlat,védekezés,felvevő,osztás,lap,szerződés,adu,kvíz

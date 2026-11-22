@@ -1,1 +1,1 @@
-cărți,învățare,tutor,începător,lecție,exercițiu,apărare,declarant,practică,joc
+cărți,învățare,tutor,începător,lecție,exercițiu,apărare,declarant,practică,joc,contract,atu,quiz
