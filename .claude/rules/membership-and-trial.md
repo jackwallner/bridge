@@ -81,4 +81,4 @@ system background. Dark mode uses `Theme.onFill` on filled buttons and
 **What's New mechanics.** `WhatsNew.currentRelease` is the newest entry at or
 below the running version, so a build with no entry of its own still carries the
 last notes once to a player who skipped a version. `shownThisLaunch` delays ATT.
-There is no 1.3.0 entry yet: phase 2 writes it with the real feature list.
+1.3.0's entry names the responding and rebid drills (2026-11-22).

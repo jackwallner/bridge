@@ -17,12 +17,14 @@ enum DrillLibrary {
         Room(
             id: "auction-room",
             name: "The Auction Room",
-            tagline: "Count points and find your opening call",
+            tagline: "Openings, responses, and rebids",
             icon: "quote.bubble.fill",
             isFree: true,
             drills: [
                 Drill(id: "opening-playbook", title: "Opening Playbook", subtitle: "Flashcards: pass, suits, and 1NT", kind: .flashcards(CategoryContent.openingCards)),
                 Drill(id: "opening-bid", title: "Name Your Opening", subtitle: "Read 13 cards and choose the call", kind: .handMatch(CategoryContent.openingHands)),
+                Drill(id: "respond-to-partner", title: "Respond to Partner", subtitle: "Partner opens a major: raise, new suit, or 1NT", kind: .quiz(BiddingContent.responses.map(\.quiz))),
+                Drill(id: "opener-rebid", title: "Your Second Bid", subtitle: "You opened: pass, raise, or show more", kind: .quiz(BiddingContent.rebids.map(\.quiz))),
                 Drill(id: "plus-opening-extras", title: "Openings: Extra Reps", subtitle: "More five-card majors, minors, and shapes", kind: .handMatch(PlusContent.extraOpeningHands + MoreContent.openingHands), isPlus: true),
             ]
         ),

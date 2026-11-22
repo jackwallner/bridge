@@ -9,6 +9,8 @@ import Foundation
 /// player finishes, generated skills are a machine that keeps going.
 enum PracticeSkill: String, CaseIterable, Identifiable, Sendable {
     case openings
+    case responses
+    case rebids
     case pointCount
 
     var id: String { rawValue }
@@ -16,13 +18,15 @@ enum PracticeSkill: String, CaseIterable, Identifiable, Sendable {
     var title: String {
         switch self {
         case .openings: return String(localized: "Name Your Opening")
+        case .responses: return String(localized: "Respond to Partner")
+        case .rebids: return String(localized: "Your Second Bid")
         case .pointCount: return String(localized: "Count the Points")
         }
     }
 
     var subtitle: String {
         switch self {
-        case .openings: return String(localized: "Freshly dealt hands, unlimited reps")
+        case .openings, .responses, .rebids: return String(localized: "Freshly dealt hands, unlimited reps")
         case .pointCount: return String(localized: "Add up a hand at a glance")
         }
     }
@@ -30,6 +34,8 @@ enum PracticeSkill: String, CaseIterable, Identifiable, Sendable {
     var icon: String {
         switch self {
         case .openings: return "quote.bubble.fill"
+        case .responses: return "arrowshape.turn.up.left.fill"
+        case .rebids: return "arrow.triangle.2.circlepath"
         case .pointCount: return "number.circle.fill"
         }
     }
@@ -37,7 +43,7 @@ enum PracticeSkill: String, CaseIterable, Identifiable, Sendable {
     /// The room this skill practises, for the stats breakdown.
     var roomID: String {
         switch self {
-        case .openings, .pointCount: return "auction-room"
+        case .openings, .responses, .rebids, .pointCount: return "auction-room"
         }
     }
 
@@ -68,6 +74,8 @@ enum EndlessPractice {
     static func items(for skill: PracticeSkill, count: Int) -> [QuickItem] {
         switch skill {
         case .openings: return openingItems(count: count)
+        case .responses: return biddingItems(.responses, count: count)
+        case .rebids: return biddingItems(.rebids, count: count)
         case .pointCount: return pointCountItems(count: count)
         }
     }
@@ -94,6 +102,24 @@ enum EndlessPractice {
                 explanation: hand.explanation,
                 sourceLabel: String(localized: "Endless Practice"),
                 roomID: PracticeSkill.openings.roomID
+            )
+        }
+    }
+
+    // MARK: - Responses and rebids
+
+    private static func biddingItems(_ skill: PracticeSkill, count: Int) -> [QuickItem] {
+        var generator = SystemRandomNumberGenerator()
+        return BiddingEngine.batch(responses: skill == .responses, count: count, using: &generator).map { question in
+            QuickItem(
+                id: skill.itemPrefix + UUID().uuidString,
+                prompt: question.situation.prompt,
+                cards: question.cards,
+                choices: question.choices.map(\.displayName),
+                answerIndex: question.choices.firstIndex(of: question.answer) ?? 0,
+                explanation: question.explanation,
+                sourceLabel: String(localized: "Endless Practice"),
+                roomID: skill.roomID
             )
         }
     }

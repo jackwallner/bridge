@@ -16,6 +16,7 @@ RevenueCat is deliberately disabled in simulator builds. The public SDK key live
 ## Rules that hold everywhere
 Condensed from the deep notes below; the reasoning behind each one lives there.
 - A generated hand only reaches a player when exactly one of the six `HandCategory` answers is right. Keep `HandGeneratorTests.testAuthoredHandsMatchTheClassifier`: authored opening drills must agree with the engine that grades Endless Practice.
+- Authored responding and rebid questions must agree with `BiddingEngine` (`BiddingEngineTests`), for the same reason.
 - The trial flow (onboarding trial page, paywall, purchase to tour) is structurally Mahj 1.3.2; only the button wording varies, through RevenueCat offering metadata (`TrialCTA`). Prices are always read live from StoreKit. Any other change needs Jack's go-ahead.
 - No Meta SDK and no tracking prompt (Jack 2026-10-21: Meta only in Mahj for now).
 - The daily declarer question is built from the authored `PlayScenario`s, never through `SessionBuilder.choiceItems`.

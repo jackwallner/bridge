@@ -1,6 +1,9 @@
 ---
 paths:
   - "Shared/Content/HandGenerator.swift"
+  - "Shared/Content/BiddingEngine.swift"
+  - "Shared/Content/BiddingContent.swift"
+  - "BridgeTests/BiddingEngineTests.swift"
   - "Shared/Content/EndlessPractice.swift"
   - "Shared/Services/PracticeRecordStore.swift"
   - "Shared/Services/WhatsNew.swift"
@@ -63,3 +66,27 @@ launch after an update. A FRESH install never sees it: onboarding calls
 is an upgrader from a pre-1.1 build and does get it. `currentRelease` is the newest entry at or below the running version (see `membership-and-trial.md`). The sheet raises
 `onUpgrade` rather than presenting `PaywallView` itself, because a sheet cannot
 present another sheet while dismissing.
+
+## Responses and opener's rebid (1.3.0, 2026-11-22)
+
+A paying member asked how to get past the first three Auction Room lessons:
+the room only taught the opening bid. `BiddingEngine` grades the next two
+calls after a 1♥/1♠ opening, uncontested, unpassed responder, beginner SAYC:
+responder's first call (pass, simple raise, limit raise, 1♠ over 1♥, 1NT,
+two-level new suit) and opener's rebid after a raise, after 1♥-1♠ and after
+1♠-1NT (minimum hands only outside the raise). Like `HandGenerator`, it
+returns nil for anything a SAYC teacher would argue about: 13+ responding
+hands, a 10-count without support, 3 hearts beside 4 spades, limit raises
+on three trumps, four hearts beside a four-card minor over 1♠, opener's
+raise of 1♠ with shortness (support points reach a jump raise), seven-card
+or six-plus-singleton minimums after a raise, and any rebid where plain
+high-card points, length points and shortness points land in different
+ranges. A rebid question also requires the hand to open that major by
+`HandGenerator.opening`, so a rebid never rests on an opening the app would
+not grade. Two free quiz drills (`respond-to-partner`, `opener-rebid`) come
+from `BiddingContent`, and `BiddingEngineTests.testAuthoredQuestionsMatchTheEngine`
+holds every authored answer to the engine. Endless Practice gained two
+Bridge+ skills (`responses`, `rebids`); the Timed Challenge mixes them in.
+A Sonnet teacher review (2026-11-22) drove the guards above; its one claim
+that 1♠-1NT-2♥ is a reverse was wrong (hearts rank below spades) and was
+not applied.

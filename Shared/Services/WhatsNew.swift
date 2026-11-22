@@ -47,6 +47,25 @@ enum WhatsNew {
 
     static let releases: [WhatsNewRelease] = [
         WhatsNewRelease(
+            version: "1.3.0",
+            headline: "Bidding past the opening",
+            items: [
+                WhatsNewItem(
+                    id: "responses-rebids",
+                    icon: "quote.bubble.fill",
+                    title: "Respond and rebid",
+                    body: "Two new free drills in the Auction Room: answer partner's opening, then choose your second bid."
+                ),
+                WhatsNewItem(
+                    id: "endless-bidding",
+                    icon: "infinity",
+                    title: "Endless bidding practice",
+                    body: "Freshly dealt hands for responses and rebids, as many as you want.",
+                    isPlus: true
+                ),
+            ]
+        ),
+        WhatsNewRelease(
             version: "1.2.0",
             headline: "A smarter rhythm for the table",
             items: [
