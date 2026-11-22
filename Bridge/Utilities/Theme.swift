@@ -14,6 +14,11 @@ enum Theme {
     static let coral = Color(light: (0.86, 0.42, 0.31), dark: (0.94, 0.56, 0.45))
     /// Soft gold — locks, "best value", coach highlights.
     static let gold = Color(light: (0.76, 0.57, 0.18), dark: (0.88, 0.72, 0.38))
+    /// Grade marks (the check and cross on an answer row). The card suit
+    /// colours are fixed for card faces, and on a dark tinted row they read
+    /// near 2:1. These keep the light look and lift dark to about 6:1.
+    static let gradeCorrect = Color(light: (0.12, 0.47, 0.29), dark: (0.45, 0.80, 0.58))
+    static let gradeWrong = Color(light: (0.72, 0.17, 0.16), dark: (0.98, 0.52, 0.48))
     /// Gold for TEXT. The fill gold is about 2.5:1 on cream, under AA for the
     /// small badge and caption text it was used for; this one clears 4.5:1 on
     /// cream and on a gold-tinted pill.

@@ -71,7 +71,8 @@ struct HandMatchDrillView: View {
             ConfettiBurst(
                 trigger: confettiTrigger,
                 origin: .init(x: 0.5, y: 0.35),
-                sourceRect: answerRect
+                sourceRect: answerRect,
+                scope: index
             )
         }
         .navigationTitle(drill.title)

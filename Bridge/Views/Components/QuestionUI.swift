@@ -170,10 +170,10 @@ struct ChoiceList: View {
                     if isAnswer {
                         Image(systemName: "checkmark.circle.fill")
                             .font(.body.weight(.bold))
-                            .foregroundStyle(Theme.bamGreen)
-                            .scaleEffect(reduceMotion ? 1 : (landed ? 1.2 : 0.4))
+                            .foregroundStyle(Theme.gradeCorrect)
+                            .scaleEffect(reduceMotion ? 1 : (landed ? 1.2 : 1))
                     } else if isMiss {
-                        Image(systemName: "xmark.circle.fill").foregroundStyle(Theme.crakRed)
+                        Image(systemName: "xmark.circle.fill").foregroundStyle(Theme.gradeWrong)
                     }
                 }
             }

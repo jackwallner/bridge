@@ -145,9 +145,11 @@ struct FlashcardDrillView: View {
                 )
                 .scaleEffect(scale(forSlot: slot))
                 .offset(y: yOffset(forSlot: slot))
+                // Inside the moving layer, so the stamp leaves with the card
+                // it grades instead of staying behind on the one that rises.
+                .overlay { if slot == 0 { verdictStamps } }
                 .offset(slot == 0 ? effectiveDrag : .zero)
                 .rotationEffect(slot == 0 ? topRotation : .zero, anchor: .bottom)
-                .overlay { if slot == 0 { verdictStamps } }
                 .opacity(slot == 0 ? flingOpacity : 1)
                 .zIndex(Double(3 - slot))
                 .allowsHitTesting(slot == 0)
@@ -239,7 +241,10 @@ struct FlashcardDrillView: View {
     }
 
     private var topRotation: Angle {
-        .degrees(Double(max(-12, min(12, effectiveDrag.width / 14))))
+        // Reduce Motion: a released card fades where the finger left it,
+        // upright, instead of hanging tilted off the side.
+        guard !reduceMotion else { return .zero }
+        return .degrees(Double(max(-12, min(12, effectiveDrag.width / 14))))
     }
 
     // MARK: - Choice self-test

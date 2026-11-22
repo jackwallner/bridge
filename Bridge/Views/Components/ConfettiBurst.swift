@@ -1,7 +1,9 @@
 import SwiftUI
 
-/// A one-shot confetti burst. Bump `trigger` to fire. Drawn with Canvas so a
-/// burst costs nothing once it ends.
+/// A one-shot confetti burst. Bump `trigger` to fire. Drawn with Canvas, and
+/// the animation timeline is removed when the burst ends, so a finished burst
+/// costs nothing. With Reduce Motion on it never fires: the haptic, sound and
+/// the graded row already say "right".
 ///
 /// It launches from `sourceRect` when the host knows what was celebrated (the
 /// correct answer row, say), otherwise from `origin`. Firing from the winning
@@ -20,6 +22,11 @@ struct ConfettiBurst: View {
     var particleCount: Int = 26
     /// The celebrated element, in the same coordinate space this view fills.
     var sourceRect: CGRect?
+    /// What the burst celebrates (the question on screen). A change cancels a
+    /// burst still waiting to launch: the answer row always reports its
+    /// frame, so a Next inside the wait would fire from the next question's
+    /// right answer and give it away.
+    var scope: AnyHashable? = nil
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var firedAt: Date?
@@ -27,14 +34,21 @@ struct ConfettiBurst: View {
     /// Snapshotted at fire time: the source can move (or vanish) mid-flight,
     /// and the burst should keep the geometry it launched with.
     @State private var launchRect: CGRect?
+    /// The source as it is now, not as the struct captured it at the tap:
+    /// after the settle delay the row has moved with the grade.
+    @State private var currentSource: CGRect?
+    @State private var latestShot = 0
 
     private static let colors: [Color] = [
         Theme.jade, Theme.coral, Theme.gold, Theme.plum, Theme.bamGreen, Theme.tileIvory,
     ]
     private static let duration: Double = 2.0
+    /// The answer row's grade spring and the scroll to the note (0.35s).
+    private static let settleDelay: UInt64 = 350_000_000
     /// Air drag. Higher = the initial burst dies back faster into the drift.
     private static let drag: Double = 1.9
-    private static let gravity: Double = 1100
+    /// Sets the terminal fall, gravity / drag: about 340 pt/s.
+    private static let gravity: Double = 650
 
     var body: some View {
         Group {
@@ -49,13 +63,28 @@ struct ConfettiBurst: View {
             }
         }
         .allowsHitTesting(false)
+        .onChange(of: sourceRect, initial: true) { _, rect in currentSource = rect }
+        .onChange(of: scope) { _, _ in latestShot = 0 }
         .onChange(of: trigger) { _, _ in
-            // Reduce Motion: the burst is decoration, the result text and
-            // haptics already say the answer was right.
             guard trigger > 0, !reduceMotion else { return }
-            seed = trigger
-            launchRect = sourceRect
-            firedAt = Date()
+            let shot = trigger
+            latestShot = shot
+            let fromRow = sourceRect != nil
+            Task { @MainActor in
+                // A burst from an answer row waits for the row to settle, so
+                // the grade reads first and the burst leaves its final frame.
+                if fromRow {
+                    try? await Task.sleep(nanoseconds: Self.settleDelay)
+                    guard latestShot == shot else { return }
+                }
+                let fired = Date()
+                seed = shot
+                launchRect = fromRow ? currentSource : nil
+                firedAt = fired
+                try? await Task.sleep(nanoseconds: UInt64(Self.duration * 1_000_000_000))
+                // A newer burst owns the timeline now; leave it running.
+                if firedAt == fired { firedAt = nil }
+            }
         }
     }
 
@@ -90,28 +119,34 @@ struct ConfettiBurst: View {
             let vx = cos(angle) * speed
             let vy = sin(angle) * speed
 
+            // Every random value is drawn before any piece is culled, so a
+            // piece leaving the canvas never shifts the draws of the pieces
+            // after it (which made their paths jump mid-flight).
+            let swayPhase = random.next(in: 0, 6.28)
+            let swaySpeed = random.next(in: 3.5, 7.0)
+            let swayWidth = random.next(in: 4, 14)
+            let spinSpeed = random.next(in: 4, 11) * (index.isMultiple(of: 3) ? -1 : 1)
+            let tiltBase = random.next(in: -0.5, 0.5)
+            let isRibbon = index % 5 == 0
+            let w = isRibbon ? random.next(in: 3, 5) : random.next(in: 6, 11)
+            let h = isRibbon ? random.next(in: 14, 22) : random.next(in: 6, 11)
+
+            // Canvas y grows downward, so gravity is +g: the kick decays and
+            // the piece settles into a g/k terminal fall.
             var x = start.x + CGFloat(vx * decay)
-            let y = start.y + CGFloat((vy + g / k) * decay - g * time / k)
+            let y = start.y + CGFloat((vy - g / k) * decay + g * time / k)
             guard y < size.height + 30, y > -60 else { continue }
 
             // Flutter: the piece sways as it tumbles, and slows its sway as it
             // falls, which is what makes paper look like paper.
-            let swayPhase = random.next(in: 0, 6.28)
-            let swaySpeed = random.next(in: 3.5, 7.0)
-            let swayWidth = random.next(in: 4, 14)
             x += CGFloat(sin(time * swaySpeed + swayPhase) * swayWidth)
 
             let life = time / Self.duration
             let fade = life < 0.72 ? 1.0 : max(0, 1 - (life - 0.72) / 0.28)
 
             // End-over-end tumble. |cos| squashes the width to fake the flip.
-            let spinSpeed = random.next(in: 4, 11) * (index.isMultiple(of: 3) ? -1 : 1)
             let spin = spinSpeed * time + swayPhase
-            let tilt = random.next(in: -0.5, 0.5) + spin * 0.12
-
-            let isRibbon = index % 5 == 0
-            let w = isRibbon ? random.next(in: 3, 5) : random.next(in: 6, 11)
-            let h = isRibbon ? random.next(in: 14, 22) : random.next(in: 6, 11)
+            let tilt = tiltBase + spin * 0.12
             let squash = max(0.15, abs(cos(spin)))
 
             var piece = canvas

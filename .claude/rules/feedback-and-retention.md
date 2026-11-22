@@ -76,3 +76,15 @@ Each ledger day also stores whether it counted Bridge+ items
 (`mastery.ledger.scopes`); the baseline is the oldest day in the window
 measured the same way, so a membership change never fakes a gain. Days
 saved before 2026-11-06 have no scope and compare with any day.
+
+## Mahj parity batch (2026-11-22)
+
+Ported from Mahj's 2026-11-20 experience audit (`~/mahj` commit `dc083f5`):
+confetti falls under real gravity, waits 0.35s for the graded row and is
+cancelled by Next (`ConfettiBurst.scope`); grade marks use `Theme.gradeCorrect`
+/ `gradeWrong`, readable on dark rows, at full size from the first graded
+frame; the swipe stamp rides the outgoing card; under Reduce Motion a
+released card fades upright; a timed run with nothing answered ends on a
+Time's up screen (Try again, Done) and a tap after the deadline does not
+score. Parity
+matrix: `~/bridge/project-docs/research/2026-11-22-mahj-parity.md`.
