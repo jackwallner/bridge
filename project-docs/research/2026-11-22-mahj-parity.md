@@ -66,13 +66,16 @@ Shipped to TestFlight on 2026-11-22:
 | Cribbage | 1.3.3 (48) | Audit fixes; mastery rings on Home; a tappable work-on card. |
 | Bridge | 1.3.0 (50) | Build 49 plus another session's icon change (Icon A). This build passes the release gate. |
 | Bridge | 1.3.0 (51) | Adds "Why not X?" notes on every missed opening question, derived from the opening rules (9 strings in 16 languages). |
-| Skat | 1.3.4, gate running | Adds the Glossar (28 terms, ISkO 2022) from Home and Settings, plus Reduce Motion fixes in the primer, the tour, the shine sweep and Home. |
+| Skat | 1.3.4 (51) | Adds the Glossar (28 terms, ISkO 2022) from Home and Settings, plus Reduce Motion fixes in the primer, the tour, the shine sweep and Home. |
+| Bridge | 1.3.0 (52) | Adds "Why not X?" notes on every wrong call in responding and rebid questions (Endless, Timed, both authored quizzes, the quick session), each checked against a predicate over dealt hands; 21 strings in 16 languages. Submitted for review 2026-11-22 (manual release). |
+| Bridge | 1.3.0, 53 gating | Another session's narrow-screen fix: hands shrink to fit 320pt screens. TestFlight only, not attached to 1.3.0. |
+| Skat | 1.3.4, gate running | Warum-nicht notes in the Skat-Minute's dealt hands and the quick session. |
 
-Built, waiting to merge: the Cribbage glossary (29 terms, every quoted point value checked against `HandScoring`) is on branch `feat/glossary`. It merges once another session's gate on Cribbage main finishes.
+Built, waiting to merge: branch `feat/miss-notes` in Cribbage carries the glossary (29 terms, every quoted point value checked against `HandScoring`) and "Why not X?" notes (an absent pattern in Name the Pattern, go and the reset in legal play, and the gap in Count the Hand, stated as what it matches, never as what the player missed). 246 tests pass. It merges once another session's gate on Cribbage main finishes, then gates and ships with the narrow-screen card fix.
 
 The audit fixes are: confetti under real gravity that waits for the graded row and stops on Next; `gradeCorrect`/`gradeWrong` marks readable in dark mode; the swipe stamp rides the outgoing card, and the flashcard stays upright under Reduce Motion; a Time's up screen when a timed run ends with nothing answered, and late answers are refused.
 
 Not done in this pass:
-- Miss notes on Bridge's responding and rebid questions: next. Skat already shows its generated notes in Practice runs (the matrix row above understated it).
+- Miss notes on Cribbage's Pegging Points questions (numeric answers where several scoring paths reach the same total; no note says something true and useful for every wrong total).
 - The Bridge glossary needs 15 translations of about 30 entries, so it is a batch of its own. Saved runs and the iPhone Duo Home come after it.
 - Daily round going free, the monthly challenge, PostHog, the trial offer sheet, localizing Cribbage and a play-a-hand mode: each one needs Jack's decision (see the matrix notes).
