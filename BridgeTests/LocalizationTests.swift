@@ -28,6 +28,7 @@ final class LocalizationTests: XCTestCase {
             }
         }
         copy += HowToPlayContent.pages.flatMap { [$0.title, $0.body] + [$0.tip].compactMap { $0 } }
+        copy += ReferenceContent.glossary.flatMap { [$0.term, $0.definition] }
         copy += HandPlayContent.deals.flatMap { deal in
             [deal.title] + deal.decisions.flatMap { [$0.reason] + Array($0.cardNotes.values) + Array($0.suitNotes.values) }
         }
