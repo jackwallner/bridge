@@ -22,6 +22,9 @@ struct QuickItem: Identifiable, Sendable {
     /// False for one-off generated prompts that can never be scheduled back
     /// into Fix My Mistakes.
     let isReviewable: Bool
+    /// Parallel to `choices`: why that answer is wrong, shown only when the
+    /// player picks it. Nil entries show nothing.
+    let choiceNotes: [String?]
 
     init(
         id: String,
@@ -33,7 +36,8 @@ struct QuickItem: Identifiable, Sendable {
         sourceLabel: String,
         roomID: String,
         trackingID: String? = nil,
-        isReviewable: Bool = true
+        isReviewable: Bool = true,
+        choiceNotes: [String?] = []
     ) {
         self.id = id
         self.prompt = prompt
@@ -45,6 +49,15 @@ struct QuickItem: Identifiable, Sendable {
         self.roomID = roomID
         self.trackingID = trackingID ?? id
         self.isReviewable = isReviewable
+        // Padded so a caller can never index past the end of a short list.
+        self.choiceNotes = choices.indices.map { $0 < choiceNotes.count ? choiceNotes[$0] : nil }
+    }
+
+    /// The coaching line for a wrong pick, if there is one.
+    func note(forPick pick: Int) -> String? {
+        guard pick != answerIndex, choiceNotes.indices.contains(pick) else { return nil }
+        guard let note = choiceNotes[pick], !note.isEmpty else { return nil }
+        return note
     }
 }
 
@@ -154,18 +167,19 @@ enum SessionBuilder {
     /// by its own id so the order is stable across re-render/undo but not
     /// always the authored slot.
     static func prepared(_ item: QuickItem) -> QuickItem {
-        let shuffled = ChoiceShuffle.shuffledChoices(labels: item.choices, answerIndex: item.answerIndex, seed: item.id)
+        let perm = ChoiceShuffle.permutation(count: item.choices.count, seed: item.id)
         return QuickItem(
             id: item.id,
             prompt: item.prompt,
             cards: item.cards,
-            choices: shuffled.labels,
-            answerIndex: shuffled.answerIndex,
+            choices: perm.map { item.choices[$0] },
+            answerIndex: perm.firstIndex(of: item.answerIndex) ?? item.answerIndex,
             explanation: item.explanation,
             sourceLabel: item.sourceLabel,
             roomID: item.roomID,
             trackingID: item.trackingID,
-            isReviewable: item.isReviewable
+            isReviewable: item.isReviewable,
+            choiceNotes: perm.map { item.choiceNotes[$0] }
         )
     }
 
@@ -201,7 +215,8 @@ enum SessionBuilder {
                             answerIndex: answerIndex,
                             explanation: question.explanation,
                             sourceLabel: room.name,
-                            roomID: room.id
+                            roomID: room.id,
+                            choiceNotes: HandGenerator.missNotes(choices: question.choices, answer: question.answer)
                         )
                     }
                 case .flashcards(let cards):

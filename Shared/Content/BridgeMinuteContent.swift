@@ -105,7 +105,8 @@ enum BridgeMinuteContent {
                 sourceLabel: String(localized: "Bridge Minute: Opening"),
                 roomID: PracticeSkill.openings.roomID,
                 trackingID: PracticeSkill.openings.rawValue,
-                isReviewable: false
+                isReviewable: false,
+                choiceNotes: HandGenerator.missNotes(choices: HandCategory.allCases, answer: hand.answer)
             )
             return BridgeMinuteQuestion(category: .bidding, item: SessionBuilder.prepared(item))
         }

@@ -269,4 +269,42 @@ enum HandGenerator {
         }
         return lines
     }
+
+    // MARK: - Miss notes
+
+    /// Why the player's pick was wrong, from the same rules `opening` grades
+    /// by, so every opening question coaches the miss without authoring. Each
+    /// line states what the picked call needs; the hand fails it, since the
+    /// graded answer is the one call whose rule it meets.
+    static func missNote(picked: HandCategory, answer: HandCategory) -> String? {
+        guard picked != answer else { return nil }
+        if picked == .pass {
+            return String(localized: "This hand is strong enough to open: 13 or more high-card points, or 12 that pass the Rule of 20.")
+        }
+        if answer == .pass {
+            return String(localized: "An opening bid needs 13 or more high-card points, or 12 that pass the Rule of 20.")
+        }
+        if answer == .oneNotrump {
+            return String(localized: "A balanced hand with 15 to 17 high-card points opens 1NT, not a suit.")
+        }
+        switch picked {
+        case .oneNotrump:
+            return String(localized: "1NT shows a balanced hand with 15 to 17 high-card points.")
+        case .oneClub:
+            return String(localized: "1♣ needs clubs longer than any five-card major, and more clubs than diamonds or three of each.")
+        case .oneDiamond:
+            return String(localized: "1♦ needs diamonds longer than any five-card major, and more diamonds than clubs or four or more of each.")
+        case .oneHeart:
+            return String(localized: "1♥ needs five or more hearts, more hearts than spades, and no longer minor.")
+        case .oneSpade:
+            return String(localized: "1♠ needs five or more spades, at least as many spades as hearts, and no longer minor.")
+        case .pass:
+            return nil
+        }
+    }
+
+    /// Parallel to `choices`: the note for each wrong call, nil for the answer.
+    static func missNotes(choices: [HandCategory], answer: HandCategory) -> [String?] {
+        choices.map { missNote(picked: $0, answer: answer) }
+    }
 }
