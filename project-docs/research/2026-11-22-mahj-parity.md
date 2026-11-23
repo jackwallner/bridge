@@ -25,7 +25,7 @@ final report at the end).
 | Daily round (Minute) | Part: Bridge Minute, Bridge+ only | Part: Skat Minute, Skat+ only | Part: Cribbage Minute, Cribbage+ only | In Mahj the Minute went free as the challenge's daily round. Here the Minute is a paid trial-page benefit row, so making it free changes the frozen trial page (decision for Jack). |
 | Free monthly challenge + App Store in-app events | Lacks | Lacks | Lacks | Only the `challenge` remote switch exists. Needs: the Minute to go free (frozen trial page), authored defensible closers per month, a standing RPC, monthly event art and nomination. Decision for Jack. |
 | Coached play-a-hand mode | Lacks | Lacks | Lacks | Fits all three, large: Bridge needs a full declarer hand with a play engine, Skat a 10-trick game against two defenders, Cribbage a discard-peg-count hand. Mahj avoids bots; card games cannot (tricks need opponents' cards). Not started; proposal below. |
-| Reference glossary (searchable, toolbar book icon) | Lacks | Has (Glossar, 28 terms) | Has (29 terms) | Fits all three. Content is per game and must be checked against its rules; Bridge also needs 15 translations. |
+| Reference glossary (searchable, toolbar book icon) | Has (39 terms, 16 languages) | Has (Glossar, 28 terms) | Has (29 terms) | Fits all three. Content is per game and must be checked against its rules; Bridge also needs 15 translations. |
 | Saved and resumable runs (`OrdinaryRunStore`, one per drill) | Lacks | Lacks | Lacks | Fits all three, medium code; Mahj spent four review rounds on edge cases. |
 | What's New sheet | Has | Has | Has | |
 | Rating ask with no gate (5.6.1) | Has | Has | Has | Shared code. |
@@ -68,13 +68,14 @@ Shipped to TestFlight on 2026-11-22 and 2026-11-23:
 | Bridge | 1.3.0 (51) | Adds "Why not X?" notes on every missed opening question, derived from the opening rules (9 strings in 16 languages). |
 | Skat | 1.3.4 (51) | Adds the Glossar (28 terms, ISkO 2022) from Home and Settings, plus Reduce Motion fixes in the primer, the tour, the shine sweep and Home. |
 | Bridge | 1.3.0 (52) | Adds "Why not X?" notes on every wrong call in responding and rebid questions (Endless, Timed, both authored quizzes, the quick session), each checked against a predicate over dealt hands; 21 strings in 16 languages. Submitted for review 2026-11-22 (manual release). |
-| Bridge | 1.3.0 (53) | Another session's narrow-screen fix: hands shrink to fit 320pt screens; the correct answer's pop stays inside the side headroom on the Duo. TestFlight only, not attached to 1.3.0 (build 52 is in review without the narrow-screen fix). |
+| Bridge | 1.3.0 (53) | Another session's narrow-screen fix: hands shrink to fit 320pt screens; the correct answer's pop stays inside the side headroom on the Duo. On 2026-11-23 the build 52 submission was canceled and 1.3.0 resubmitted with build 53 (manual release). |
 | Skat | 1.3.4 (52) | Warum-nicht notes in the Skat-Minute's dealt hands and the quick session; Reduce Motion in the quick session and onboarding; the card back's text scrolls at the largest text sizes so Weiter stays on the card. |
-| Cribbage | 1.3.3 (49) | The glossary (29 terms, every quoted point value checked against `HandScoring`); "Why not X?" notes in Name the Pattern, legal play and Count the Hand; another session's narrow-screen card fix and long-answer wrapping. 248 tests pass. |
+| Cribbage | 1.3.3 (49) | The glossary (29 terms, every quoted point value checked against `HandScoring`); "Why not X?" notes in Name the Pattern, legal play and Count the Hand; another session's narrow-screen card fix and long-answer wrapping. 248 tests pass. Submitted for review 2026-11-23 with a What's New in all 50 store locales (manual release). |
+| Bridge | 1.3.1 (54) | The glossary: 39 terms in four groups, searchable, from the Home toolbar and Settings, in all 16 languages; every quoted number checked against `BridgeRules.score`, `HandGenerator` and the HCP table. Ships together with the play-a-hand session's Play a Hand, which runs the gate and the upload. |
 
 The audit fixes are: confetti under real gravity that waits for the graded row and stops on Next; `gradeCorrect`/`gradeWrong` marks readable in dark mode; the swipe stamp rides the outgoing card, and the flashcard stays upright under Reduce Motion; a Time's up screen when a timed run ends with nothing answered, and late answers are refused.
 
 Not done in this pass:
 - Miss notes on Cribbage's Pegging Points questions (numeric answers where several scoring paths reach the same total; no note says something true and useful for every wrong total).
-- The Bridge glossary needs 15 translations of about 30 entries, so it is a batch of its own. Saved runs and the iPhone Duo Home come after it.
-- Daily round going free, the monthly challenge, PostHog, the trial offer sheet, localizing Cribbage and a play-a-hand mode: each one needs Jack's decision (see the matrix notes).
+- Saved runs and the iPhone Duo Home are the next batches.
+- Jack's decisions on 2026-11-23: the daily round stays as it is, nothing is added to the trial page, Cribbage is not localized, and PostHog and the trial offer sheet are not approved. Play a Hand is under way in its own session.
