@@ -40,17 +40,17 @@ enum HandPlayContent {
         decisions: [
             PlayDecision(
                 trick: 0,
-                reason: "Duck. You can afford to lose two spades and the ♣A and still take ten tricks, and every spade you let go is one fewer the defenders can lead back later.",
-                cardNotes: ["♠A": "Win now and a defender who gets in with the ♣A may still have a spade to lead to partner's winners."]
+                reason: "Duck. You can afford to lose two spades and the A♣ and still take ten tricks, and every spade you let go is one fewer the defenders can lead back later.",
+                cardNotes: ["♠A": "Win now and a defender who gets in with the A♣ may still have a spade to lead to partner's winners."]
             ),
             PlayDecision(
                 trick: 1,
                 reason: "Duck again. A second duck still costs nothing, and it leaves East with no spade if East started with two.",
-                cardNotes: ["♠A": "Win now and East may still hold a spade to lead back after taking the ♣A."]
+                cardNotes: ["♠A": "Win now and East may still hold a spade to lead back after taking the A♣."]
             ),
             PlayDecision(
                 trick: 3,
-                reason: "Lead a club. Knocking out the ♣A turns dummy's clubs into three tricks while you still hold every other suit.",
+                reason: "Lead a club. Knocking out the A♣ turns dummy's clubs into three tricks while you still hold every other suit.",
                 suitNotes: [
                     .hearts: "Cashing hearts wins nothing extra and can set up the defenders' long hearts. The tricks you need are in clubs.",
                     .diamonds: "Cashing diamonds wins nothing extra and can set up the defenders' long diamonds. The tricks you need are in clubs.",
@@ -88,14 +88,14 @@ enum HandPlayContent {
         decisions: [
             PlayDecision(
                 trick: 0,
-                reason: "Win the ♦A. Your diamond losers can go away later on dummy's long hearts, so ducking only gives the defenders a trick."
+                reason: "Win the A♦. Your diamond losers can go away later on dummy's long hearts, so ducking only gives the defenders a trick."
             ),
             PlayDecision(
                 trick: 1,
                 reason: "Draw trumps. Once the defenders have none, your hearts and dummy's long hearts are safe from a ruff.",
                 cardNotes: [
-                    "♠6": "Lead from the top. The ♠A, K and Q draw trumps without letting a defender's ♠10 or 9 win a trick.",
-                    "♠4": "Lead from the top. The ♠A, K and Q draw trumps without letting a defender's ♠10 or 9 win a trick.",
+                    "♠6": "Lead from the top. The A♠, K and Q draw trumps without letting a defender's 10♠ or 9 win a trick.",
+                    "♠4": "Lead from the top. The A♠, K and Q draw trumps without letting a defender's 10♠ or 9 win a trick.",
                 ],
                 suitNotes: [
                     .hearts: "Hearts before trumps lets a defender with two hearts ruff the third round. Draw trumps first.",
@@ -107,8 +107,8 @@ enum HandPlayContent {
                 trick: 2,
                 reason: "Keep drawing trumps until the defenders have none.",
                 cardNotes: [
-                    "♠6": "Lead from the top. The ♠A, K and Q draw trumps without letting a defender's ♠10 or 9 win a trick.",
-                    "♠4": "Lead from the top. The ♠A, K and Q draw trumps without letting a defender's ♠10 or 9 win a trick.",
+                    "♠6": "Lead from the top. The A♠, K and Q draw trumps without letting a defender's 10♠ or 9 win a trick.",
+                    "♠4": "Lead from the top. The A♠, K and Q draw trumps without letting a defender's 10♠ or 9 win a trick.",
                 ],
                 suitNotes: [
                     .hearts: "The defenders still hold trumps, and one of them can ruff a heart. Draw trumps first.",
@@ -118,10 +118,10 @@ enum HandPlayContent {
             ),
             PlayDecision(
                 trick: 3,
-                reason: "West still holds the ♠10. Draw it before you run the hearts.",
+                reason: "West still holds the 10♠. Draw it before you run the hearts.",
                 cardNotes: [
-                    "♠6": "Lead the ♠Q. A low spade lets West's ♠10 win a trick it never had to.",
-                    "♠4": "Lead the ♠Q. A low spade lets West's ♠10 win a trick it never had to.",
+                    "♠6": "Lead the Q♠. A low spade lets West's 10♠ win a trick it never had to.",
+                    "♠4": "Lead the Q♠. A low spade lets West's 10♠ win a trick it never had to.",
                 ],
                 suitNotes: [
                     .hearts: "West's last trump would ruff dummy's long hearts. Draw it first.",
@@ -161,8 +161,8 @@ enum HandPlayContent {
         decisions: [
             PlayDecision(
                 trick: 1,
-                reason: "Play the ♠A and then another spade. You have one spade too many, and dummy's trumps are what will ruff it.",
-                cardNotes: ["♦3": "The ♦3 gives the defenders a diamond trick and the lead, and they will lead trumps. Start the spades."],
+                reason: "Play the A♠ and then another spade. You have one spade too many, and dummy's trumps are what will ruff it.",
+                cardNotes: ["♦3": "The 3♦ gives the defenders a diamond trick and the lead, and they will lead trumps. Start the spades."],
                 suitNotes: [
                     .hearts: "Each round of trumps takes one from dummy, and the defenders will lead more when they get in. Start the spades before you touch trumps.",
                 ],
@@ -171,7 +171,7 @@ enum HandPlayContent {
             PlayDecision(
                 trick: 2,
                 reason: "Give up a spade now. Dummy is out of spades, so the next one can be ruffed.",
-                cardNotes: ["♦3": "The ♦3 gives up a diamond trick you do not have to lose. Give up the spade instead."],
+                cardNotes: ["♦3": "The 3♦ gives up a diamond trick you do not have to lose. Give up the spade instead."],
                 suitNotes: [
                     .hearts: "Each round of trumps takes one from dummy, and the defenders will lead more when they get in. Give up the spade first.",
                 ],
@@ -181,19 +181,19 @@ enum HandPlayContent {
                 trick: 5,
                 reason: "Lead your last spade and ruff it in dummy. That ruff is the tenth trick.",
                 suitNotes: [
-                    .hearts: "Dummy's last trump is the ♥Q, and a round of trumps now would take it. Ruff the spade first.",
-                    .diamonds: "Ruff the spade while dummy still has the ♥Q. That ruff is the tenth trick.",
-                    .clubs: "Ruff the spade while dummy still has the ♥Q. That ruff is the tenth trick.",
+                    .hearts: "Dummy's last trump is the Q♥, and a round of trumps now would take it. Ruff the spade first.",
+                    .diamonds: "Ruff the spade while dummy still has the Q♥. That ruff is the tenth trick.",
+                    .clubs: "Ruff the spade while dummy still has the Q♥. That ruff is the tenth trick.",
                 ],
                 alsoFine: ["♦K"]
             ),
             PlayDecision(
                 trick: 5,
                 seat: .north,
-                reason: "Ruff with the ♥Q. That ruff is the trick the whole plan was built for.",
+                reason: "Ruff with the Q♥. That ruff is the trick the whole plan was built for.",
                 suitNotes: [
-                    .diamonds: "A discard throws away the extra trick. Ruff with the ♥Q.",
-                    .clubs: "A discard throws away the extra trick. Ruff with the ♥Q.",
+                    .diamonds: "A discard throws away the extra trick. Ruff with the Q♥.",
+                    .clubs: "A discard throws away the extra trick. Ruff with the Q♥.",
                 ]
             ),
         ]
@@ -228,9 +228,9 @@ enum HandPlayContent {
         decisions: [
             PlayDecision(
                 trick: 3,
-                reason: "Lead the ♠K. Your K-Q-J knock out the ace and draw the defenders' trumps.",
+                reason: "Lead the K♠. Your K-Q-J knock out the ace and draw the defenders' trumps.",
                 cardNotes: [
-                    "♠7": "Lead the ♠K. A low spade can lose to a defender's 10 or 8 for nothing.",
+                    "♠7": "Lead the K♠. A low spade can lose to a defender's 10 or 8 for nothing.",
                 ],
                 suitNotes: [
                     .hearts: "Lead hearts from dummy, toward your A-Q, so East has to play before you.",
@@ -240,18 +240,18 @@ enum HandPlayContent {
             PlayDecision(
                 trick: 5,
                 seat: .north,
-                reason: "Lead a heart from dummy toward your A-Q. If East holds the ♥K, the ♥Q wins.",
+                reason: "Lead a heart from dummy toward your A-Q. If East holds the K♥, the Q♥ wins.",
                 suitNotes: [
-                    .diamonds: "The ♦A is dummy's last way in. Use this lead for the heart finesse.",
+                    .diamonds: "The A♦ is dummy's last way in. Use this lead for the heart finesse.",
                 ],
                 alsoFine: ["♠9", "♠6"]
             ),
             PlayDecision(
                 trick: 5,
-                reason: "Play the ♥Q. East played before you, so the queen wins whenever East holds the king.",
+                reason: "Play the Q♥. East played before you, so the queen wins whenever East holds the king.",
                 cardNotes: [
-                    "♥A": "The ♥A wins now, but East's ♥K then beats your ♥Q later. The queen wins two heart tricks whenever East holds the king.",
-                    "♥3": "Ducking gives up a heart trick for nothing. Try the ♥Q: it wins whenever East holds the king.",
+                    "♥A": "The A♥ wins now, but East's K♥ then beats your Q♥ later. The queen wins two heart tricks whenever East holds the king.",
+                    "♥3": "Ducking gives up a heart trick for nothing. Try the Q♥: it wins whenever East holds the king.",
                 ]
             ),
         ]

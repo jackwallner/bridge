@@ -18,6 +18,7 @@ struct HomeView: View {
     @State private var membershipWaitOver = false
     @StateObject private var records = PracticeRecordStore.shared
     @StateObject private var minuteStore = BridgeMinuteStore.shared
+    @StateObject private var handPlayStore = HandPlayStore.shared
     @StateObject private var ledger = MasteryLedger.shared
     @State private var path: [AppDestination] = []
     @State private var showPaywall = false
@@ -94,6 +95,8 @@ struct HomeView: View {
                     GameNightPrepView()
                 case .timedChallenge:
                     PracticeRunView(mode: .timed)
+                case .playHand:
+                    HandPlayView()
                 case .review:
                     PracticeRunView(
                         mode: .review,
@@ -570,6 +573,15 @@ struct HomeView: View {
 
     @ViewBuilder
     private var trainingTiles: some View {
+        // First, and open to free players: one whole hand a day.
+        trainingTile(
+            title: String(localized: "Play a\nHand"),
+            icon: "suit.spade.fill",
+            color: Theme.jade,
+            badge: nil,
+            destination: .playHand,
+            locked: !handPlayStore.canPlay(isMember: subscriptions.isPro)
+        )
         trainingTile(
             title: String(localized: "Endless\nPractice"),
             icon: "infinity",
@@ -619,9 +631,10 @@ struct HomeView: View {
         icon: String,
         color: Color,
         badge: String?,
-        destination: AppDestination
+        destination: AppDestination,
+        locked: Bool? = nil
     ) -> some View {
-        let locked = !subscriptions.isPro
+        let locked = locked ?? !subscriptions.isPro
         if locked {
             Button {
                 pendingAfterUpgrade.destination = destination

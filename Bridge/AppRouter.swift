@@ -9,10 +9,11 @@ enum AppDestination: Hashable {
     case gameNightPrep
     case timedChallenge
     case review
+    case playHand
 
     /// Free destinations open for everyone; the rest wait behind the paywall.
-    /// Phase 2's challenge is the first free one.
-    var isFree: Bool { false }
+    /// Play a Hand enforces its own one free hand a day.
+    var isFree: Bool { self == .playHand }
 }
 
 /// A locked action survives the paywall, then is consumed once on dismissal.

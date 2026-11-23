@@ -87684,6 +87684,5516 @@
           }
         }
       }
+    },
+    "N": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Β"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "北"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "북"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "С"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "北"
+          }
+        }
+      }
+    },
+    "E": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ø"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Α"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "東"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "동"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ø"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ö"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "東"
+          }
+        }
+      }
+    },
+    "S": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ν"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "南"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ю"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "南"
+          }
+        }
+      }
+    },
+    "W": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "西"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "З"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "西"
+          }
+        }
+      }
+    },
+    "Play a Hand": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil en hånd"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Hand spielen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε ένα χέρι"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juega una mano"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouer une donne"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca una mano"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハンドをプレイ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 판 플레이"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill en hånd"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel een hand"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сыграть раздачу"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela en giv"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่นหนึ่งมือ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir el oyna"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打一手牌"
+          }
+        }
+      }
+    },
+    "Play a\nHand": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil en\nhånd"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Hand\nspielen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε ένα\nχέρι"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juega una\nmano"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouer une\ndonne"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca una\nmano"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハンドを\nプレイ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 판\n플레이"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill en\nhånd"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel een\nhand"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сыграть\nраздачу"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela en\ngiv"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่น\nหนึ่งมือ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir el\noyna"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "實戰\n一副牌"
+          }
+        }
+      }
+    },
+    "Your hand": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Din hånd"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Hand"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το χέρι σας"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu mano"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre main"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua mano"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたのハンド"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내 핸드"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Din hånd"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouw hand"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши карты"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Din hand"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไพ่ในมือคุณ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliniz"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的手牌"
+          }
+        }
+      }
+    },
+    "Tricks %lld/%lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stik %lld/%lld"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stiche %lld/%lld"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Λεβέ %lld/%lld"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bazas %lld/%lld"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Levées %lld/%lld"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prese %lld/%lld"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "トリック %lld/%lld"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "트릭 %lld/%lld"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stikk %lld/%lld"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slagen %lld/%lld"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Взятки %lld/%lld"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stick %lld/%lld"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทริก %lld/%lld"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löve %lld/%lld"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "墩數 %lld/%lld"
+          }
+        }
+      }
+    },
+    "Also good. Coach's play: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Også godt. Trænerens spil: %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auch gut. Zug des Coachs: %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κι αυτό καλό. Η κίνηση του προπονητή: %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "También vale. Jugada modelo: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bien aussi. Le coup du coach : %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Va bene anche così. La giocata del coach: %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "これも良い手です。コーチのプレイ：%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이것도 좋아요. 코치가 고른 카드: %@"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Også bra. Trenerens valg: %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ook goed. Speelwijze van de coach: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тоже хорошо. Ход тренера: %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Också bra. Tränarens val: %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ก็ดีเหมือนกัน ทางเล่นของโค้ช: %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu da iyi. Koçun oyunu: %@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "這樣也好。教練的打法：%@"
+          }
+        }
+      }
+    },
+    "Coach's play: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trænerens spil: %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zug des Coachs: %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η κίνηση του προπονητή: %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jugada modelo: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le coup du coach : %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La giocata del coach: %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コーチのプレイ：%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "코치가 고른 카드: %@"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trenerens valg: %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speelwijze van de coach: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ход тренера: %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tränarens val: %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทางเล่นของโค้ช: %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koçun oyunu: %@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "教練的打法：%@"
+          }
+        }
+      }
+    },
+    "Made %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vundet"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ erfüllt"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Έγινε %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ cumplido"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ réalisé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ mantenuto"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ メイク"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 성공"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vunnet"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gemaakt"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ выполнен"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ klarat"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทำ %@ สำเร็จ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ tuttu"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 完成"
+          }
+        }
+      }
+    },
+    "Down in %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ned i %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gefallen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πτώση στο %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ no cumplido"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ chuté"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ non mantenuto"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ダウン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 실패"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ned i %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ down"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ не выполнен"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bet"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ไม่สำเร็จ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ battı"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 失敗"
+          }
+        }
+      }
+    },
+    "%lld tricks, %lld points": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld stik, %lld point"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Stiche, %lld Punkte"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld λεβέ, %lld πόντοι"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bazas, %lld puntos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld levées, %lld points"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld prese, %lld punti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lldトリック、%lld点"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld트릭, %lld점"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld stikk, %lld poeng"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld slagen, %lld punten"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Взяток: %lld, очков: %lld"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld stick, %lld poäng"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld ทริก %lld แต้ม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld löve, %lld puan"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld 墩，%lld 分"
+          }
+        }
+      }
+    },
+    "%lld of %lld decisions right": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld af %lld valg rigtige"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld von %lld Entscheidungen richtig"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld από %lld αποφάσεις σωστές"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld de %lld decisiones correctas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld décisions justes sur %lld"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld decisioni giuste su %lld"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正しい判断：%lld / %lld"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "맞은 결정 %lld/%lld"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld av %lld valg riktige"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld van %lld beslissingen goed"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Верных решений: %lld из %lld"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld av %lld beslut rätt"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตัดสินใจถูก %lld จาก %lld"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doğru karar: %lld / %lld"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "做對 %lld / %lld 個決定"
+          }
+        }
+      }
+    },
+    "Today's free hand is played.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dagens gratis hånd er spillet."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die heutige Gratis-Hand ist gespielt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το σημερινό δωρεάν χέρι έχει παιχτεί."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mano gratis de hoy ya está jugada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La donne gratuite du jour est jouée."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mano gratuita di oggi è stata giocata."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日の無料ハンドはプレイ済みです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘의 무료 핸드를 플레이했어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dagens gratis hånd er spilt."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De gratis hand van vandaag is gespeeld."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бесплатная раздача на сегодня сыграна."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dagens gratisgiv är spelad."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่นมือฟรีของวันนี้แล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bugünkü ücretsiz el oynandı."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今天的免費手牌已打完。"
+          }
+        }
+      }
+    },
+    "Play More with %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil mere med %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr spielen mit %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε περισσότερο με %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juega más con %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouer plus avec %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca di più con %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@でもっとプレイ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@로 더 플레이하기"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill mer med %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel meer met %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Играть больше с %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela mer med %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่นต่อด้วย %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ile daha fazla oyna"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用 %@ 玩更多"
+          }
+        }
+      }
+    },
+    "A discard throws away the extra trick. Ruff with the Q♥.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et afkast kaster det ekstra stik væk. Trumf med Q♥."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Abwurf verschenkt den Extrastich. Schnapp mit der Q♥."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η ρίψη χάνει την έξτρα λεβέ. Κόψτε με το Q♥."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descartarte tira la baza extra. Falla con la Q♥."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se défausser gâche la levée supplémentaire. Coupez avec la Q♥."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uno scarto butta via la presa in più. Taglia con la Q♥."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "捨てると余分なトリックを逃します。Q♥でラフしましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "버리면 추가 트릭을 놓쳐요. Q♥로 자르세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et avkast kaster bort det ekstra stikket. Stjel med Q♥."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afgooien verspilt de extra slag. Introef met de Q♥."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сброс отдаёт лишнюю взятку. Убейте козырем Q♥."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ett sakande kastar bort det extra sticket. Stjäl med Q♥."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การทิ้งไพ่ทำให้เสียทริกเพิ่ม ตัดด้วย Q♥"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iskarta fazladan löveyi boşa harcar. Q♥ ile koz çakın."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "墊牌會丟掉多出來的一墩。用 Q♥ 王吃。"
+          }
+        }
+      }
+    },
+    "Cashing diamonds wins nothing extra and can set up the defenders' long diamonds. The tricks you need are in clubs.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At tage ruderne hjem vinder intet ekstra og kan etablere forsvarernes lange ruder. De stik, du skal bruge, ligger i klør."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karo abzuziehen bringt nichts extra und kann die langen Karo der Verteidiger aufbauen. Die Stiche, die du brauchst, liegen in Treff."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν παίξετε τα καρά σας, δεν κερδίζετε τίποτα έξτρα και μπορεί να δημιουργήσετε τα μακριά καρά των αμυνομένων. Οι λεβέ που χρειάζεστε είναι στα σπαθιά."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cobrar los diamantes no gana nada extra y puede establecer los diamantes largos de los defensores. Las bazas que necesitas están en tréboles."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encaisser les carreaux ne rapporte rien de plus et peut établir les longs carreaux des défenseurs. Les levées dont vous avez besoin sont à trèfle."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incassare le quadri non porta nulla in più e può rendere vincenti le quadri lunghe dei difensori. Le prese che ti servono sono a fiori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダイヤを先に取っても得はなく、ディフェンダーの長いダイヤを確立させるおそれがあります。必要なトリックはクラブにあります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다이아몬드를 먼저 따도 얻는 게 없고 수비측의 긴 다이아몬드를 만들어 줄 수 있어요. 필요한 트릭은 클럽에 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Å ta ut ruter gir ingenting ekstra og kan etablere forsvarernes lange ruter. Stikkene du trenger, ligger i kløver."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ruiten afhalen levert niets extra op en kan de lange ruiten van de verdedigers vrijspelen. De slagen die je nodig hebt, zitten in klaveren."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если выиграть бубны, ничего лишнего не получится, а длинные бубны защитников могут стать выигрышными. Нужные вам взятки в трефах."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Att ta hem ruter ger inget extra och kan etablera försvararnas långa ruter. Sticken du behöver finns i klöver."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การเคลียร์ข้าวหลามตัดไม่ได้ทริกเพิ่ม และอาจทำให้ข้าวหลามตัดยาวของฝ่ายรับกลายเป็นไพ่ชนะ ทริกที่คุณต้องการอยู่ในดอกจิก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karoları çekmek fazladan bir şey kazandırmaz ve savunmanın uzun karolarını kurabilir. İhtiyacınız olan löveler sinekte."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先打方塊不會多贏墩，還可能讓防守方的長方塊成為贏墩。你需要的墩在梅花。"
+          }
+        }
+      }
+    },
+    "Cashing hearts wins nothing extra and can set up the defenders' long hearts. The tricks you need are in clubs.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At tage hjerterne hjem vinder intet ekstra og kan etablere forsvarernes lange hjerter. De stik, du skal bruge, ligger i klør."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coeur abzuziehen bringt nichts extra und kann die langen Coeur der Verteidiger aufbauen. Die Stiche, die du brauchst, liegen in Treff."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν παίξετε τις κούπες σας, δεν κερδίζετε τίποτα έξτρα και μπορεί να δημιουργήσετε τις μακριές κούπες των αμυνομένων. Οι λεβέ που χρειάζεστε είναι στα σπαθιά."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cobrar los corazones no gana nada extra y puede establecer los corazones largos de los defensores. Las bazas que necesitas están en tréboles."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encaisser les cœurs ne rapporte rien de plus et peut établir les longs cœurs des défenseurs. Les levées dont vous avez besoin sont à trèfle."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incassare le cuori non porta nulla in più e può rendere vincenti le cuori lunghe dei difensori. Le prese che ti servono sono a fiori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハートを先に取っても得はなく、ディフェンダーの長いハートを確立させるおそれがあります。必要なトリックはクラブにあります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하트를 먼저 따도 얻는 게 없고 수비측의 긴 하트를 만들어 줄 수 있어요. 필요한 트릭은 클럽에 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Å ta ut hjerter gir ingenting ekstra og kan etablere forsvarernes lange hjerter. Stikkene du trenger, ligger i kløver."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harten afhalen levert niets extra op en kan de lange harten van de verdedigers vrijspelen. De slagen die je nodig hebt, zitten in klaveren."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если выиграть червы, ничего лишнего не получится, а длинные червы защитников могут стать выигрышными. Нужные вам взятки в трефах."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Att ta hem hjärter ger inget extra och kan etablera försvararnas långa hjärter. Sticken du behöver finns i klöver."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การเคลียร์โพแดงไม่ได้ทริกเพิ่ม และอาจทำให้โพแดงยาวของฝ่ายรับกลายเป็นไพ่ชนะ ทริกที่คุณต้องการอยู่ในดอกจิก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kupaları çekmek fazladan bir şey kazandırmaz ve savunmanın uzun kupalarını kurabilir. İhtiyacınız olan löveler sinekte."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先打紅心不會多贏墩，還可能讓防守方的長紅心成為贏墩。你需要的墩在梅花。"
+          }
+        }
+      }
+    },
+    "Draw Trumps First": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Træk trumferne først"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zuerst Trümpfe ziehen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τραβήξτε πρώτα τα ατού"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saca primero los triunfos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tirer d'abord les atouts"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Togli prima gli atout"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まず切り札を引く"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "먼저 트럼프를 빼세요"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trekk trumfen først"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eerst troeven eruit halen"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сначала вытяните козыри"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dra trumf först"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดึงทรัมป์ก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önce kozları çekin"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先拔王牌"
+          }
+        }
+      }
+    },
+    "Draw trumps. Once the defenders have none, your hearts and dummy's long hearts are safe from a ruff.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Træk trumferne. Når forsvarerne ikke har flere, er dine hjerter og bordets lange hjerter sikre mod trumfning."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zieh die Trümpfe. Haben die Verteidiger keine mehr, sind deine Coeur und die langen Coeur des Dummys vor dem Schnappen sicher."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τραβήξτε τα ατού. Όταν οι αμυνόμενοι δεν έχουν άλλα, οι κούπες σας και οι μακριές κούπες του μορ είναι ασφαλείς από κόψιμο."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saca los triunfos. Cuando los defensores se queden sin ellos, tus corazones y los corazones largos del muerto estarán a salvo de un fallo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tirez les atouts. Quand les défenseurs n'en ont plus, vos cœurs et les longs cœurs du mort sont à l'abri d'une coupe."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Togli gli atout. Quando i difensori non ne hanno più, le tue cuori e le cuori lunghe del morto sono al sicuro da un taglio."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切り札を引きましょう。ディフェンダーの切り札がなくなれば、あなたのハートとダミーの長いハートはラフされません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "트럼프를 먼저 빼세요. 수비측에 트럼프가 없어지면 내 하트와 더미의 긴 하트는 잘릴 걱정이 없어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trekk trumfen. Når forsvarerne ikke har flere, er hjertene dine og blindemanns lange hjerter trygge mot stjeling."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haal de troeven eruit. Als de verdedigers er geen meer hebben, zijn jouw harten en de lange harten van de dummy veilig voor introeven."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вытяните козыри. Когда у защитников их не останется, ваши червы и длинные червы болвана будут в безопасности от убитки."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dra trumf. När försvararna inte har någon kvar är dina hjärter och träkarlens långa hjärter säkra från stöld."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดึงทรัมป์ เมื่อฝ่ายรับไม่เหลือทรัมป์แล้ว โพแดงของคุณและโพแดงยาวของดัมมี่จะปลอดภัยจากการถูกตัด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kozları çekin. Savunmada koz kalmayınca kupalarınız ve yerin uzun kupaları koz çakılmaktan güvende olur."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先拔王牌。防守方沒有王牌後，你的紅心和夢家的長紅心就不會被王吃。"
+          }
+        }
+      }
+    },
+    "Duck again. A second duck still costs nothing, and it leaves East with no spade if East started with two.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duk igen. Et nyt duk koster stadig ingenting, og det efterlader Øst uden spar, hvis Øst startede med to."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duck noch einmal. Ein zweites Ducken kostet immer noch nichts, und Ost hat danach kein Pik mehr, wenn er mit zweien angefangen hat."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αφήστε ξανά τη λεβέ. Και η δεύτερη φορά δεν κοστίζει τίποτα και η Ανατολή μένει χωρίς πίκα, αν ξεκίνησε με δύο."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deja pasar otra vez. Una segunda vez sigue sin costar nada y deja a Este sin picas si empezó con dos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laissez passer encore. Un second refus ne coûte toujours rien et laisse Est sans pique s'il en avait deux au départ."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liscia ancora. Una seconda lisciata non costa ancora nulla e lascia Est senza picche se ne aveva due."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう一度ダックしましょう。2回目のダックもまだ損はなく、イーストが最初に2枚持っていたなら、イーストのスペードはなくなります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 번 더 낮은 카드를 내세요. 두 번째로 내도 손해는 없고, 동이 스페이드 두 장으로 시작했다면 동에게 스페이드가 남지 않아요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vent igjen. Å vente en gang til koster fortsatt ingenting, og da har Øst ingen spar igjen hvis Øst startet med to."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duik nog een keer. Een tweede keer duiken kost nog steeds niets, en dan heeft Oost geen schoppen meer als Oost er twee had."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ещё раз не берите. Второй пропуск по-прежнему ничего не стоит, и у Востока не останется пик, если их было две."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Släpp sticket igen. Ett andra släpp kostar fortfarande ingenting, och då har Öst inga spader kvar om Öst startade med två."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปล่อยผ่านอีกครั้ง การปล่อยครั้งที่สองยังไม่เสียอะไร และถ้าตะวันออกเริ่มด้วยสองใบ ตะวันออกจะไม่เหลือโพดำ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yine löveyi bırakın. İkinci kez bırakmak da bir şey kaybettirmez ve Doğu ikiyle başladıysa elinde maça kalmaz."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再忍讓一次。第二次忍讓仍然沒有損失，如果東家一開始只有兩張黑桃，他就沒有黑桃了。"
+          }
+        }
+      }
+    },
+    "Duck. You can afford to lose two spades and the A♣ and still take ten tricks, and every spade you let go is one fewer the defenders can lead back later.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duk. Du har råd til at tabe to spar og A♣ og stadig tage ti stik, og hver spar, du slipper, er én færre, forsvarerne kan spille tilbage senere."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duck. Du kannst dir leisten, zwei Pik und das A♣ abzugeben und trotzdem zehn Stiche zu machen, und jedes Pik, das du abgibst, ist eines weniger, das die Verteidiger später zurückspielen können."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αφήστε τη λεβέ. Μπορείτε να χάσετε δύο πίκες και το A♣ και πάλι να κάνετε δέκα λεβέ, και κάθε πίκα που αφήνετε είναι μία λιγότερη που μπορούν να επιστρέψουν οι αμυνόμενοι αργότερα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deja pasar. Puedes permitirte perder dos picas y el A♣ y aun así hacer diez bazas, y cada pica que sueltas es una menos que los defensores pueden devolver después."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laissez passer. Vous pouvez vous permettre de perdre deux piques et le A♣ et faire quand même dix levées, et chaque pique que vous abandonnez est une de moins que les défenseurs pourront rejouer plus tard."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liscia. Puoi permetterti di perdere due picche e il A♣ e fare comunque dieci prese, e ogni picche che lasci andare è una in meno che i difensori potranno rigiocare più tardi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダックしましょう。スペード2回とA♣を失っても10トリックは取れますし、スペードを譲るたびに、ディフェンダーが後で返せるスペードが1枚減ります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "낮은 카드를 내세요. 스페이드 두 번과 A♣를 내줘도 열 트릭을 딸 수 있고, 스페이드를 내줄 때마다 수비측이 나중에 되돌릴 수 있는 스페이드가 한 장씩 줄어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vent. Du har råd til å tape to spar og A♣ og likevel ta ti stikk, og hver spar du slipper, er én færre forsvarerne kan spille tilbake senere."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duik. Je kunt het je veroorloven twee schoppen en de A♣ te verliezen en toch tien slagen te maken, en elke schoppenkaart die je laat gaan, is er één minder die de verdedigers later kunnen terugspelen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отдайте взятку. Можно потерять две пики и A♣ и всё равно взять десять взяток, а каждая отданная пика означает, что защитники смогут вернуть на одну пику меньше."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Släpp sticket. Du har råd att förlora två spader och A♣ och ändå ta tio stick, och varje spaderkort du släpper är ett färre som försvararna kan spela tillbaka senare."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปล่อยผ่าน คุณเสียโพดำสองใบและ A♣ ได้ แต่ยังได้สิบทริก และโพดำทุกใบที่ปล่อยไปคือโพดำที่ฝ่ายรับกลับมาเล่นได้น้อยลงหนึ่งใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löveyi bırakın. İki maça ve A♣ kaybetseniz bile yine on löve alırsınız ve bıraktığınız her maça, savunmanın sonradan geri oynayabileceği bir maça eksilmesi demektir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "忍讓。你輸掉兩墩黑桃和 A♣，仍然能拿到十墩，而且你每讓出一張黑桃，防守方之後能回攻的黑桃就少一張。"
+          }
+        }
+      }
+    },
+    "Ducking gives up a heart trick for nothing. Try the Q♥: it wins whenever East holds the king.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At dukke afgiver et hjertestik for ingenting. Prøv Q♥: Den vinder, når Øst har kongen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ducken gibt umsonst einen Coeur-Stich ab. Probier die Q♥: Sie gewinnt immer, wenn Ost den König hat."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν δώσετε τη λεβέ, χάνετε μια λεβέ στις κούπες χωρίς λόγο. Δοκιμάστε το Q♥: κερδίζει όποτε η Ανατολή έχει τον ρήγα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dejar pasar regala una baza de corazones. Prueba la Q♥: gana siempre que Este tenga el rey."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laisser passer abandonne une levée de cœur pour rien. Essayez la Q♥ : elle gagne chaque fois qu'Est détient le roi."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisciare regala una presa di cuori per niente. Prova la Q♥: vince ogni volta che Est ha il re."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダックするとハートのトリックを無駄に手放します。Q♥を試しましょう。イーストがキングを持っていれば勝ちます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "낮게 내면 하트 트릭을 공짜로 내주게 돼요. Q♥를 내 보세요. 동이 킹을 갖고 있으면 이겨요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Å vente gir bort et hjertestikk for ingenting. Prøv Q♥: Den vinner når Øst har kongen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duiken geeft een hartenslag weg voor niets. Probeer de Q♥: die wint als Oost de heer heeft."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если не брать, вы зря отдаёте взятку в червах. Попробуйте Q♥: она выигрывает, когда король у Востока."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Att släppa sticket ger bort ett hjärterstick helt i onödan. Prova Q♥: den vinner när Öst har kungen."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปล่อยผ่านทำให้เสียทริกโพแดงไปฟรีๆ ลอง Q♥ ดู จะชนะเมื่อตะวันออกถือคิง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löveyi bırakmak kupada boşuna bir löve vermektir. Q♥ deneyin: Doğu'da papaz varsa kazanır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "忍讓會白白丟掉一墩紅心。試試 Q♥：只要東家有 K 就會贏。"
+          }
+        }
+      }
+    },
+    "Dummy's last trump is the Q♥, and a round of trumps now would take it. Ruff the spade first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bordets sidste trumf er Q♥, og en runde trumf nu ville tage den. Trumf først spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der letzte Trumpf des Dummys ist die Q♥, und eine Trumpfrunde würde sie jetzt abräumen. Schnapp zuerst das Pik."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το τελευταίο ατού του μορ είναι το Q♥ και ένας γύρος ατού τώρα θα το έπαιρνε. Κόψτε πρώτα την πίκα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El último triunfo del muerto es la Q♥, y una ronda de triunfos ahora se la llevaría. Falla primero la pica."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le dernier atout du mort est la Q♥, et un tour d'atout maintenant la prendrait. Coupez d'abord le pique."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'ultimo atout del morto è la Q♥, e un giro di atout ora la porterebbe via. Taglia prima a picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダミーに残った切り札はQ♥だけで、今切り札を引くとそれを失います。先にスペードをラフしましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더미의 마지막 트럼프는 Q♥인데, 지금 트럼프를 돌리면 그 카드를 잃어요. 먼저 스페이드를 자르세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blindemanns siste trumf er Q♥, og en runde trumf nå ville tatt den. Stjel sparen først."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De laatste troef van de dummy is de Q♥, en een ronde troef nu zou die wegnemen. Introef eerst de schoppen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Последний козырь болвана это Q♥, и круг козырей сейчас унесёт его. Сначала убейте козырем пику."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Träkarlens sista trumf är Q♥, och en trumfrunda nu skulle ta den. Stjäl spadern först."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทรัมป์ใบสุดท้ายของดัมมี่คือ Q♥ และการดึงทรัมป์ตอนนี้จะเอาใบนั้นไป ตัดโพดำก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yerin son kozu Q♥ ve şimdi koz çekmek onu alır. Önce maçayı çakın."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夢家最後一張王牌是 Q♥，現在拔王牌會把它拔掉。先王吃黑桃。"
+          }
+        }
+      }
+    },
+    "Each round of trumps takes one from dummy, and the defenders will lead more when they get in. Give up the spade first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hver runde trumf tager en fra bordet, og forsvarerne spiller flere, når de kommer ind. Afgiv først spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede Trumpfrunde nimmt dem Dummy einen Trumpf ab, und die Verteidiger spielen weitere, sobald sie am Spiel sind. Gib zuerst das Pik ab."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κάθε γύρος ατού παίρνει ένα από τον μορ και οι αμυνόμενοι θα παίξουν κι άλλα όταν μπουν. Δώστε πρώτα την πίκα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada ronda de triunfos le quita uno al muerto, y los defensores saldrán con más cuando entren. Cede primero la pica."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque tour d'atout en prend un au mort, et les défenseurs en rejoueront dès qu'ils auront la main. Abandonnez d'abord le pique."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni giro di atout ne toglie uno al morto, e i difensori ne giocheranno altri quando prenderanno la mano. Cedi prima a picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切り札を引くたびにダミーの切り札が1枚減り、ディフェンダーも入ればさらに切り札をリードします。先にスペードを譲りましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "트럼프를 돌릴 때마다 더미에서 한 장씩 빠지고, 수비측은 리드를 잡으면 트럼프를 더 낼 거예요. 먼저 스페이드를 내주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hver runde trumf tar én fra blindemann, og forsvarerne spiller mer når de kommer inn. Gi bort sparen først."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elke troefronde neemt er een van de dummy af, en de verdedigers spelen er meer als ze aan slag komen. Geef eerst de schoppen af."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Каждый круг козырей забирает по козырю у болвана, а защитники будут ходить козырями ещё, когда получат ход. Сначала отдайте пику."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varje trumfrunda tar en från träkarlen, och försvararna spelar fler när de kommer in. Ge bort spadern först."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การดึงทรัมป์แต่ละรอบทำให้ดัมมี่เสียทรัมป์หนึ่งใบ และฝ่ายรับจะลีดทรัมป์อีกเมื่อได้เข้ามา ปล่อยโพดำก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her koz turu yerden bir koz alır ve savunma ele geçince daha fazlasını oynar. Önce maçayı verin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每拔一輪王牌，夢家就少一張，而防守方上手後還會再領出王牌。先讓出黑桃。"
+          }
+        }
+      }
+    },
+    "Each round of trumps takes one from dummy, and the defenders will lead more when they get in. Start the spades before you touch trumps.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hver runde trumf tager en fra bordet, og forsvarerne spiller flere, når de kommer ind. Start med spar, før du rører trumf."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede Trumpfrunde nimmt dem Dummy einen Trumpf ab, und die Verteidiger spielen weitere, sobald sie am Spiel sind. Spiel zuerst die Pik, bevor du Trumpf anrührst."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κάθε γύρος ατού παίρνει ένα από τον μορ και οι αμυνόμενοι θα παίξουν κι άλλα όταν μπουν. Ξεκινήστε τις πίκες πριν αγγίξετε τα ατού."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada ronda de triunfos le quita uno al muerto, y los defensores saldrán con más cuando entren. Empieza por las picas antes de tocar los triunfos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque tour d'atout en prend un au mort, et les défenseurs en rejoueront dès qu'ils auront la main. Commencez par les piques avant de toucher aux atouts."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni giro di atout ne toglie uno al morto, e i difensori ne giocheranno altri quando prenderanno la mano. Inizia dalle picche prima di toccare gli atout."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切り札を引くたびにダミーの切り札が1枚減り、ディフェンダーも入ればさらに切り札をリードします。切り札に手を付ける前に、スペードから始めましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "트럼프를 돌릴 때마다 더미에서 한 장씩 빠지고, 수비측은 리드를 잡으면 트럼프를 더 낼 거예요. 트럼프에 손대기 전에 스페이드부터 시작하세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hver runde trumf tar én fra blindemann, og forsvarerne spiller mer når de kommer inn. Start med spar før du rører trumf."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elke troefronde neemt er een van de dummy af, en de verdedigers spelen er meer als ze aan slag komen. Begin met de schoppen voordat je aan troef komt."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Каждый круг козырей забирает по козырю у болвана, а защитники будут ходить козырями ещё, когда получат ход. Начните с пик, прежде чем трогать козыри."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varje trumfrunda tar en från träkarlen, och försvararna spelar fler när de kommer in. Börja med spadern innan du rör trumfen."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การดึงทรัมป์แต่ละรอบทำให้ดัมมี่เสียทรัมป์หนึ่งใบ และฝ่ายรับจะลีดทรัมป์อีกเมื่อได้เข้ามา เริ่มเล่นโพดำก่อนแตะทรัมป์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her koz turu yerden bir koz alır ve savunma ele geçince daha fazlasını oynar. Kozlara dokunmadan önce maçalara başlayın."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每拔一輪王牌，夢家就少一張，而防守方上手後還會再領出王牌。先打黑桃，再動王牌。"
+          }
+        }
+      }
+    },
+    "Give up a spade now. Dummy is out of spades, so the next one can be ruffed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afgiv en spar nu. Bordet har ikke flere spar, så den næste kan trumfes."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gib jetzt ein Pik ab. Der Dummy hat kein Pik mehr, also kann das nächste geschnappt werden."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δώστε τώρα μια πίκα. Ο μορ δεν έχει άλλες πίκες, άρα η επόμενη μπορεί να κοπεί."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cede ahora una pica. El muerto se quedó sin picas, así que la siguiente se podrá fallar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abandonnez un pique maintenant. Le mort n'a plus de pique, donc le suivant pourra être coupé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cedi ora una picche. Il morto è senza picche, quindi la prossima si potrà tagliare."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今スペードを1枚譲りましょう。ダミーにスペードはもうないので、次はラフできます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 스페이드 한 장을 내주세요. 더미에 스페이드가 없으니 다음 스페이드는 자를 수 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gi bort en spar nå. Blindemann har ikke flere spar, så den neste kan stjeles."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geef nu een schoppenkaart af. De dummy heeft geen schoppen meer, dus de volgende kan worden geïntroefd."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отдайте сейчас одну пику. У болвана пик нет, поэтому следующую можно убить козырем."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ge bort en spader nu. Träkarlen har inga spader kvar, så nästa kan stjälas."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปล่อยโพดำหนึ่งใบตอนนี้ ดัมมี่หมดโพดำแล้ว ใบถัดไปจึงตัดได้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi bir maça verin. Yerde maça kalmadı, bu yüzden sonraki çakılabilir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在讓出一張黑桃。夢家已經沒有黑桃，下一張就能王吃。"
+          }
+        }
+      }
+    },
+    "Hearts before trumps lets a defender with two hearts ruff the third round. Draw trumps first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hjerter før trumf lader en forsvarer med to hjerter trumfe tredje runde. Træk trumferne først."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coeur vor Trumpf lässt einen Verteidiger mit zwei Coeur die dritte Runde schnappen. Zieh zuerst die Trümpfe."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν παίξετε κούπες πριν τα ατού, ένας αμυνόμενος με δύο κούπες μπορεί να κόψει τον τρίτο γύρο. Τραβήξτε πρώτα τα ατού."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jugar corazones antes que triunfos deja que un defensor con dos corazones falle la tercera ronda. Saca primero los triunfos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouer les cœurs avant les atouts permet à un défenseur qui a deux cœurs de couper au troisième tour. Tirez d'abord les atouts."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giocare le cuori prima degli atout permette a un difensore con due cuori di tagliare il terzo giro. Togli prima gli atout."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切り札より先にハートを回すと、ハート2枚のディフェンダーが3回目にラフできます。先に切り札を引きましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "트럼프보다 하트를 먼저 내면 하트가 두 장인 수비측이 세 번째 라운드를 자를 수 있어요. 트럼프를 먼저 빼세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hjerter før trumf lar en forsvarer med to hjerter stjele tredje runde. Trekk trumfen først."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harten voor troef laat een verdediger met twee harten de derde ronde introeven. Haal eerst de troeven eruit."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если играть червы до козырей, защитник с двумя червами убьёт третий круг козырем. Сначала вытяните козыри."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hjärter före trumf låter en försvarare med två hjärter stjäla tredje ronden. Dra trumf först."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การเล่นโพแดงก่อนทรัมป์ทำให้ฝ่ายรับที่มีโพแดงสองใบตัดรอบที่สามได้ ดึงทรัมป์ก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kozdan önce kupa oynarsanız, iki kupası olan bir savunmacı üçüncü turda koz çakabilir. Önce kozları çekin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先打紅心再拔王牌，會讓只有兩張紅心的防守方在第三輪王吃。先拔王牌。"
+          }
+        }
+      }
+    },
+    "Hold Up the Ace": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold esset tilbage"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Ass zurückhalten"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κρατήστε τον άσο"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deja pasar el as"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laisser passer l'as"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisciare l'asso"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エースをホールドアップ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "에이스 보류"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold igjen esset"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Houd de aas in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Задержите туза"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Håll upp esset"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โฮลด์อัปเอซ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ası bırakın"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "忍讓 A"
+          }
+        }
+      }
+    },
+    "Keep drawing trumps until the defenders have none.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bliv ved at trække trumf, til forsvarerne ikke har flere."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zieh weiter Trümpfe, bis die Verteidiger keine mehr haben."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνεχίστε να τραβάτε ατού μέχρι να μην έχουν άλλα οι αμυνόμενοι."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sigue sacando triunfos hasta que los defensores se queden sin ellos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuez à tirer les atouts jusqu'à ce que les défenseurs n'en aient plus."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continua a togliere gli atout finché i difensori non ne hanno più."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディフェンダーの切り札がなくなるまで引き続けましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수비측에 트럼프가 없어질 때까지 계속 빼세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsett å trekke trumf til forsvarerne ikke har flere."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blijf troeven eruit halen tot de verdedigers er geen meer hebben."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Продолжайте вытягивать козыри, пока у защитников их не останется."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsätt dra trumf tills försvararna inte har någon kvar."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดึงทรัมป์ต่อไปจนกว่าฝ่ายรับจะไม่เหลือทรัมป์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Savunmada koz kalmayana kadar kozları çekmeye devam edin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "繼續拔王牌，直到防守方沒有王牌為止。"
+          }
+        }
+      }
+    },
+    "Lead a club. Knocking out the A♣ turns dummy's clubs into three tricks while you still hold every other suit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil en klør. Når A♣ er drevet ud, bliver bordets klør til tre stik, mens du stadig holder alle andre farver."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel ein Treff. Wenn das A♣ herausgespielt ist, werden die Treff des Dummys zu drei Stichen, während du alle anderen Farben noch kontrollierst."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε σπαθί. Αν διώξετε το A♣, τα σπαθιά του μορ γίνονται τρεις λεβέ, ενώ εσείς κρατάτε ακόμα όλα τα άλλα χρώματα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sal con un trébol. Al sacar el A♣, los tréboles del muerto se convierten en tres bazas mientras sigues controlando todos los demás palos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez un trèfle. Une fois le A♣ chassé, les trèfles du mort valent trois levées pendant que vous tenez encore toutes les autres couleurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca un fiori. Una volta scacciato il A♣, i fiori del morto valgono tre prese mentre tu controlli ancora tutti gli altri semi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラブをリードしましょう。A♣を追い出せば、ダミーのクラブが3トリックになり、他のスートはすべて自分が押さえたままです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "클럽을 리드하세요. A♣를 쫓아내면 더미의 클럽이 세 트릭이 되고, 다른 수트는 모두 여전히 내가 쥐고 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill kløver. Når A♣ er jaget ut, blir blindemanns kløver til tre stikk mens du fortsatt kontrollerer alle andre farger."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel klaveren uit. Als de A♣ eruit is gejaagd, leveren de klaveren van de dummy drie slagen op terwijl jij alle andere kleuren nog vasthoudt."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сходите в трефы. Когда A♣ выбит, трефы болвана дают три взятки, а все остальные масти по-прежнему у вас."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela klöver. När A♣ är utdrivet ger träkarlens klöver tre stick medan du fortfarande håller alla andra färger."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลีดดอกจิก เมื่อไล่ A♣ ออกไปแล้ว ดอกจิกของดัมมี่จะกลายเป็นสามทริก ขณะที่คุณยังคุมชุดอื่นทั้งหมด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinek oynayın. A♣'yı attırdığınızda yerin sinekleri üç löve eder ve diğer renklerin hepsi hâlâ sizde kalır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "領出梅花。把 A♣ 逼出來後，夢家的梅花就變成三墩，而其他花色仍在你手上。"
+          }
+        }
+      }
+    },
+    "Lead a heart from dummy toward your A-Q. If East holds the K♥, the Q♥ wins.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil et hjerte fra bordet mod dit A-Q. Hvis Øst har K♥, vinder Q♥."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel ein Coeur vom Dummy in Richtung deines A-Q. Hat Ost das K♥, gewinnt die Q♥."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε κούπα από τον μορ προς το A-Q σας. Αν η Ανατολή έχει το K♥, το Q♥ κερδίζει."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sal con un corazón desde el muerto hacia tu A-Q. Si Este tiene el K♥, la Q♥ gana."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez un cœur du mort vers votre A-Q. Si Est détient le K♥, la Q♥ gagne."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca una cuori dal morto verso il tuo A-Q. Se Est ha il K♥, la Q♥ vince."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダミーからあなたのA-Qに向けてハートをリードしましょう。イーストがK♥を持っていればQ♥が勝ちます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더미에서 내 A-Q를 향해 하트를 리드하세요. 동이 K♥를 갖고 있으면 Q♥가 이겨요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill hjerter fra blindemann mot din A-Q. Hvis Øst har K♥, vinner Q♥."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel een hartenkaart vanuit de dummy richting je A-Q. Heeft Oost de K♥, dan wint de Q♥."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сходите в червы с руки болвана в сторону вашей пары A-Q. Если K♥ у Востока, Q♥ выигрывает."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela ett hjärter från träkarlen mot ditt A-Q. Om Öst har K♥ vinner Q♥."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลีดโพแดงจากดัมมี่ไปทาง A-Q ของคุณ ถ้าตะวันออกถือ K♥ แล้ว Q♥ จะชนะ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yerden kupa oynayın, A-Q'nuza doğru. Doğu'da K♥ varsa Q♥ kazanır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "從夢家領出紅心，朝你的 A-Q 打去。如果東家有 K♥，Q♥ 就會贏。"
+          }
+        }
+      }
+    },
+    "Lead from the top. The A♠, K and Q draw trumps without letting a defender's 10♠ or 9 win a trick.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil oppefra. A♠, K og Q trækker trumferne uden at lade en forsvarers 10♠ eller 9 vinde et stik."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel von oben. A♠, K und Q ziehen die Trümpfe, ohne dass die 10♠ oder 9 eines Verteidigers einen Stich gewinnt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε από την κορυφή. Το A♠, K και Q τραβούν τα ατού χωρίς να αφήσουν το 10♠ ή 9 ενός αμυνομένου να κερδίσει λεβέ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sal desde arriba. El A♠, K y Q sacan los triunfos sin dejar que el 10♠ o el 9 de un defensor gane una baza."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez par le haut. Le A♠, K et Q tirent les atouts sans laisser le 10♠ ou le 9 d'un défenseur faire une levée."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca dall'alto. Il A♠, K e Q tolgono gli atout senza lasciare che il 10♠ o il 9 di un difensore faccia una presa."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上から出しましょう。A♠、K、Qで切り札を引けば、ディフェンダーの10♠や9がトリックを取ることはありません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "높은 카드부터 내세요. A♠, K, Q로 트럼프를 빼면 수비측의 10♠이나 9가 트릭을 따지 못해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill ovenfra. A♠, K og Q trekker trumfen uten at en forsvarers 10♠ eller 9 vinner et stikk."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel van boven. De A♠, K en Q halen de troeven eruit zonder dat de 10♠ of 9 van een verdediger een slag wint."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ходите сверху. A♠, K и Q вытягивают козыри, и 10♠ или 9 у защитника не возьмёт взятку."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela uppifrån. A♠, K och Q drar trumf utan att en försvarares 10♠ eller 9 vinner ett stick."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลีดจากใบสูงสุด A♠, K และ Q ดึงทรัมป์โดยไม่ให้ 10♠ หรือ 9 ของฝ่ายรับชนะทริก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Üstten oynayın. A♠, K ve Q kozları çeker ve savunmacının 10♠ ya da 9'unun löve almasına izin vermez."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "從最大的牌開始領。A♠、K、Q 拔王牌，防守方的 10♠ 或 9 就贏不了墩。"
+          }
+        }
+      }
+    },
+    "Lead hearts from dummy, toward your A-Q, so East has to play before you.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil hjerter fra bordet mod dit A-Q, så Øst må spille før dig."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel Coeur vom Dummy in Richtung deines A-Q, damit Ost vor dir spielen muss."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε κούπες από τον μορ, προς το A-Q σας, ώστε η Ανατολή να παίξει πριν από εσάς."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sal con corazones desde el muerto, hacia tu A-Q, para que Este tenga que jugar antes que tú."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez cœur du mort, vers votre A-Q, pour qu'Est doive jouer avant vous."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca cuori dal morto, verso il tuo A-Q, così Est deve giocare prima di te."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダミーからあなたのA-Qに向けてハートをリードし、イーストに先にプレイさせましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더미에서 내 A-Q를 향해 하트를 리드해서 동이 먼저 내게 하세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill hjerter fra blindemann mot din A-Q, så Øst må spille før deg."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel harten vanuit de dummy richting je A-Q, zodat Oost vóór jou moet spelen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ходите в червы с руки болвана в сторону вашей пары A-Q, чтобы Восток играл раньше вас."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela hjärter från träkarlen mot ditt A-Q, så att Öst måste spela före dig."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลีดโพแดงจากดัมมี่ไปทาง A-Q ของคุณ เพื่อให้ตะวันออกต้องเล่นก่อนคุณ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yerden kupa oynayın, A-Q'nuza doğru, böylece Doğu sizden önce oynamak zorunda kalır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "從夢家領出紅心，朝你的 A-Q 打去，讓東家得在你之前出牌。"
+          }
+        }
+      }
+    },
+    "Lead the K♠. A low spade can lose to a defender's 10 or 8 for nothing.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil K♠. En lav spar kan tabe til en forsvarers 10 eller 8 for ingenting."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel das K♠. Ein kleines Pik kann umsonst gegen die 10 oder 8 eines Verteidigers verlieren."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε το K♠. Μια μικρή πίκα μπορεί να χάσει χωρίς λόγο από το 10 ή το 8 ενός αμυνομένου."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sal con el K♠. Una pica baja puede perder ante el 10 o el 8 de un defensor sin necesidad."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez le K♠. Un petit pique peut perdre pour rien face au 10 ou au 8 d'un défenseur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca il K♠. Una picche bassa può perdere inutilmente contro il 10 o l'8 di un difensore."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K♠をリードしましょう。低いスペードだと、ディフェンダーの10や8に無駄に負けることがあります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K♠를 리드하세요. 낮은 스페이드를 내면 수비측의 10이나 8에 괜히 질 수 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill K♠. En liten spar kan tape til en forsvarers 10 eller 8 for ingenting."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel de K♠. Een lage schoppen kan voor niets verliezen van de 10 of 8 van een verdediger."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сходите K♠. Маленькая пика может зря проиграть десятке или восьмёрке защитника."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela K♠. En låg spader kan förlora i onödan mot en försvarares 10 eller 8."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลีด K♠ โพดำใบต่ำอาจแพ้ 10 หรือ 8 ของฝ่ายรับไปฟรีๆ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K♠ oynayın. Küçük bir maça, savunmacının 10 ya da 8'ine boşuna yenilebilir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "領出 K♠。小黑桃可能白白輸給防守方的 10 或 8。"
+          }
+        }
+      }
+    },
+    "Lead the K♠. Your K-Q-J knock out the ace and draw the defenders' trumps.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil K♠. Dit K-Q-J driver esset ud og trækker forsvarernes trumfer."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel das K♠. Dein K-Q-J vertreibt das Ass und zieht die Trümpfe der Verteidiger."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε το K♠. Το K-Q-J σας διώχνει τον άσο και τραβά τα ατού των αμυνομένων."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sal con el K♠. Tu K-Q-J expulsa al as y saca los triunfos de los defensores."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez le K♠. Votre K-Q-J chasse l'as et tire les atouts des défenseurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca il K♠. Il tuo K-Q-J scaccia l'asso e toglie gli atout ai difensori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K♠をリードしましょう。K-Q-Jでエースを追い出し、ディフェンダーの切り札を引けます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K♠를 리드하세요. K-Q-J로 에이스를 쫓아내고 수비측의 트럼프를 뺄 수 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill K♠. Din K-Q-J jager ut esset og trekker forsvarernes trumf."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel de K♠. Je K-Q-J jaagt de aas eruit en haalt de troeven van de verdedigers weg."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сходите K♠. Ваши K-Q-J выбьют туза и вытянут козыри защитников."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela K♠. Ditt K-Q-J driver ut esset och drar försvararnas trumf."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลีด K♠ K-Q-J ของคุณไล่เอซออกไปและดึงทรัมป์ของฝ่ายรับ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K♠ oynayın. K-Q-J'niz asu attırır ve savunmanın kozlarını çeker."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "領出 K♠。你的 K-Q-J 會逼出 A，並拔掉防守方的王牌。"
+          }
+        }
+      }
+    },
+    "Lead the Q♠. A low spade lets West's 10♠ win a trick it never had to.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil Q♠. En lav spar lader Vests 10♠ vinde et stik, den ikke behøvede at vinde."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel die Q♠. Mit einem kleinen Pik gewinnt die 10♠ von West einen Stich, den sie sonst nie bekäme."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε το Q♠. Μια μικρή πίκα αφήνει το 10♠ της Δύσης να κερδίσει μια λεβέ που δεν θα έπαιρνε."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sal con la Q♠. Una pica baja deja que el 10♠ de Oeste gane una baza que no tenía por qué ganar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez la Q♠. Un petit pique laisse le 10♠ d'Ouest faire une levée qu'il n'avait aucune raison de faire."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca la Q♠. Una picche bassa lascia che il 10♠ di Ovest faccia una presa che non avrebbe dovuto fare."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♠をリードしましょう。低いスペードだと、ウエストの10♠が本来取れないトリックを取ってしまいます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♠를 리드하세요. 낮은 스페이드를 내면 서의 10♠이 따지 않아도 될 트릭을 따게 돼요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill Q♠. En liten spar lar Vests 10♠ vinne et stikk den aldri burde fått."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel de Q♠. Met een lage schoppen wint de 10♠ van West een slag die hij nooit had hoeven krijgen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сходите Q♠. Маленькая пика позволит 10♠ Запада взять взятку, которой у него не должно быть."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela Q♠. En låg spader låter Västs 10♠ vinna ett stick den aldrig borde ha fått."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลีด Q♠ โพดำใบต่ำทำให้ 10♠ ของตะวันตกชนะทริกที่ไม่ควรได้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♠ oynayın. Küçük bir maça, Batı'nın 10♠'unun hiç hak etmediği bir löveyi almasına yol açar."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "領出 Q♠。小黑桃會讓西家的 10♠ 贏下本來贏不到的一墩。"
+          }
+        }
+      }
+    },
+    "Lead your last spade and ruff it in dummy. That ruff is the tenth trick.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil din sidste spar og trumf den i bordet. Den trumfning er det tiende stik."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel dein letztes Pik und schnapp es im Dummy. Dieser Schnapper ist der zehnte Stich."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε την τελευταία σας πίκα και κόψτε την στον μορ. Αυτό το κόψιμο είναι η δέκατη λεβέ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juega tu última pica y fállala en el muerto. Ese fallo es la décima baza."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez votre dernier pique et coupez-le au mort. Cette coupe est la dixième levée."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca la tua ultima picche e tagliala al morto. Quel taglio è la decima presa."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最後のスペードをリードして、ダミーでラフしましょう。そのラフが10トリック目です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마지막 스페이드를 리드하고 더미에서 자르세요. 그렇게 자른 것이 열 번째 트릭이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill din siste spar og stjel den i blindemann. Den stjelingen er det tiende stikket."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel je laatste schoppenkaart en introef die in de dummy. Dat introeven levert de tiende slag op."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сходите вашей последней пикой и убейте её козырем у болвана. Эта убитка и есть десятая взятка."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela din sista spader och stjäl den i träkarlen. Den stölden är det tionde sticket."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลีดโพดำใบสุดท้ายแล้วตัดที่ดัมมี่ การตัดนั้นคือทริกที่สิบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son maçanızı oynayın ve yerde çakın. O çakma onuncu löve olur."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "領出你最後一張黑桃，在夢家王吃。這次王吃就是第十墩。"
+          }
+        }
+      }
+    },
+    "Play the A♠ and then another spade. You have one spade too many, and dummy's trumps are what will ruff it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil A♠ og derefter en spar mere. Du har én spar for meget, og bordets trumf trumfer den."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel das A♠ und dann noch ein Pik. Du hast ein Pik zu viel, und die Trümpfe des Dummys schnappen es."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε το A♠ και μετά άλλη μια πίκα. Έχετε μία πίκα παραπάνω και τα ατού του μορ θα την κόψουν."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juega el A♠ y luego otra pica. Tienes una pica de más, y los triunfos del muerto la fallarán."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez le A♠ puis un autre pique. Vous avez un pique de trop, et les atouts du mort le couperont."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca il A♠ e poi un'altra picche. Hai una picche di troppo e gli atout del morto la taglieranno."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♠をプレイして、もう1枚スペードを出しましょう。スペードが1枚多く、ダミーの切り札でそれをラフします。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♠를 내고 스페이드를 한 장 더 내세요. 스페이드가 한 장 많은데, 그걸 더미의 트럼프로 자를 거예요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill A♠ og så en spar til. Du har én spar for mye, og blindemanns trumf stjeler den."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel de A♠ en daarna nog een schoppenkaart. Je hebt een schoppenkaart te veel, en de troeven van de dummy introeven die."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сыграйте A♠, затем ещё одну пику. У вас одна пика лишняя, и козыри болвана убьют её."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela A♠ och sedan en spader till. Du har en spader för mycket, och träkarlens trumf stjäl den."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่น A♠ แล้วตามด้วยโพดำอีกใบ คุณมีโพดำเกินหนึ่งใบ และทรัมป์ของดัมมี่จะตัดมัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♠ oynayın, ardından bir maça daha. Bir maçanız fazla ve yerin kozları onu çakacak."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打出 A♠，再打一張黑桃。你多一張黑桃，夢家的王牌會把它王吃。"
+          }
+        }
+      }
+    },
+    "Play the Q♥. East played before you, so the queen wins whenever East holds the king.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil Q♥. Øst spillede før dig, så damen vinder, når Øst har kongen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiel die Q♥. Ost hat vor dir gespielt, also gewinnt die Dame, wann immer Ost den König hält."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε το Q♥. Η Ανατολή έπαιξε πριν από εσάς, άρα η ντάμα κερδίζει όποτε η Ανατολή έχει τον ρήγα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juega la Q♥. Este jugó antes que tú, así que la dama gana siempre que Este tenga el rey."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez la Q♥. Est a joué avant vous, donc la dame gagne chaque fois qu'Est détient le roi."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca la Q♥. Est ha giocato prima di te, quindi la donna vince ogni volta che Est ha il re."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♥をプレイしましょう。イーストが先にプレイしたので、イーストがキングを持っていればクイーンが勝ちます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♥를 내세요. 동이 먼저 냈으니 동이 킹을 갖고 있으면 퀸이 이겨요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill Q♥. Øst spilte før deg, så damen vinner når Øst har kongen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel de Q♥. Oost speelde voor jou, dus de vrouw wint als Oost de heer heeft."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сыграйте Q♥. Восток сыграл раньше вас, поэтому дама выигрывает, когда король у Востока."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela Q♥. Öst spelade före dig, så damen vinner när Öst har kungen."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่น Q♥ ตะวันออกเล่นก่อนคุณ ควีนจึงชนะเมื่อตะวันออกถือคิง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♥ oynayın. Doğu sizden önce oynadı, yani Doğu'da papaz varsa kız kazanır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打出 Q♥。東家比你先出牌，所以只要東家有 K，Q 就會贏。"
+          }
+        }
+      }
+    },
+    "Ruff Before Trumps": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trumf før trumftræk"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schnappen vor dem Trumpfziehen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κόψτε πριν τραβήξετε ατού"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falla antes de sacar triunfos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couper avant de tirer les atouts"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taglia prima di togliere gli atout"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切り札を引く前にラフ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "트럼프를 빼기 전에 자르세요"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stjel før du trekker trumf"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introeven voor het troeftrekken"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Убитка раньше козырей"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stjäl före trumfdragning"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตัดก่อนดึงทรัมป์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kozları çekmeden önce çakın"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先王吃再拔王牌"
+          }
+        }
+      }
+    },
+    "Ruff the spade while dummy still has the Q♥. That ruff is the tenth trick.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trumf spar, mens bordet stadig har Q♥. Den trumfning er det tiende stik."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schnapp das Pik, solange der Dummy noch die Q♥ hat. Dieser Schnapper ist der zehnte Stich."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κόψτε την πίκα όσο ο μορ έχει ακόμα το Q♥. Αυτό το κόψιμο είναι η δέκατη λεβέ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falla la pica mientras el muerto aún tiene la Q♥. Ese fallo es la décima baza."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupez le pique tant que le mort a encore la Q♥. Cette coupe est la dixième levée."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taglia la picche finché il morto ha ancora la Q♥. Quel taglio è la decima presa."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダミーにQ♥が残っているうちにスペードをラフしましょう。そのラフが10トリック目です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더미에 아직 Q♥가 있을 때 스페이드를 자르세요. 그렇게 자른 것이 열 번째 트릭이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stjel sparen mens blindemann fortsatt har Q♥. Den stjelingen er det tiende stikket."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introef de schoppen zolang de dummy nog de Q♥ heeft. Dat introeven levert de tiende slag op."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Убейте пику козырем, пока у болвана ещё есть Q♥. Эта убитка и есть десятая взятка."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stjäl spadern medan träkarlen fortfarande har Q♥. Den stölden är det tionde sticket."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตัดโพดำขณะที่ดัมมี่ยังมี Q♥ การตัดนั้นคือทริกที่สิบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yerde Q♥ hâlâ varken maçayı çakın. O çakma onuncu löve olur."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "趁夢家還有 Q♥ 時王吃黑桃。這次王吃就是第十墩。"
+          }
+        }
+      }
+    },
+    "Ruff with the Q♥. That ruff is the trick the whole plan was built for.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trumf med Q♥. Den trumfning er det stik, hele planen var bygget til."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schnapp mit der Q♥. Dieser Schnapper ist der Stich, auf den der ganze Plan ausgerichtet war."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κόψτε με το Q♥. Αυτό το κόψιμο είναι η λεβέ για την οποία χτίστηκε όλο το σχέδιο."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falla con la Q♥. Ese fallo es la baza para la que se montó todo el plan."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupez avec la Q♥. Cette coupe est la levée pour laquelle tout le plan a été bâti."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taglia con la Q♥. Quel taglio è la presa per cui è stato costruito tutto il piano."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♥でラフしましょう。そのラフこそ、この作戦全体が狙っていたトリックです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♥로 자르세요. 그렇게 자른 것이 이 계획 전체가 노린 트릭이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stjel med Q♥. Den stjelingen er stikket hele planen ble bygget for."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introef met de Q♥. Dat introeven is de slag waarvoor het hele plan is opgebouwd."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Убейте козырем Q♥. Эта убитка и есть взятка, ради которой строился весь план."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stjäl med Q♥. Den stölden är sticket som hela planen byggdes för."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตัดด้วย Q♥ การตัดนั้นคือทริกที่แผนทั้งหมดสร้างขึ้นมาเพื่อมัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Q♥ ile çakın. O çakma, planın tamamının kurulduğu löveydi."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用 Q♥ 王吃。這次王吃正是整個計畫要拿的那一墩。"
+          }
+        }
+      }
+    },
+    "Take the Finesse": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tag finessen"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den Schnitt nehmen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κάντε το εμπάς"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haz el impase"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faire l'impasse"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fai l'impasse"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フィネスを仕掛ける"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "피네스를 하세요"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta finessen"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De snit nemen"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сделайте импас"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta masken"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทำฟิเนส"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empas yapın"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "飛牌"
+          }
+        }
+      }
+    },
+    "The defenders still hold trumps, and one of them can ruff a heart. Draw trumps first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forsvarerne har stadig trumf, og en af dem kan trumfe et hjerte. Træk trumferne først."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Verteidiger haben noch Trümpfe, und einer von ihnen kann ein Coeur schnappen. Zieh zuerst die Trümpfe."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι αμυνόμενοι έχουν ακόμα ατού και ένας τους μπορεί να κόψει μια κούπα. Τραβήξτε πρώτα τα ατού."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los defensores aún tienen triunfos, y uno de ellos puede fallar un corazón. Saca primero los triunfos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les défenseurs ont encore des atouts, et l'un d'eux peut couper un cœur. Tirez d'abord les atouts."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I difensori hanno ancora atout e uno di loro può tagliare una cuori. Togli prima gli atout."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディフェンダーにはまだ切り札があり、どちらかがハートをラフできます。先に切り札を引きましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수비측에 아직 트럼프가 있어서 한 명이 하트를 자를 수 있어요. 트럼프를 먼저 빼세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forsvarerne har fortsatt trumf, og en av dem kan stjele et hjerte. Trekk trumfen først."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De verdedigers hebben nog troeven, en een van hen kan een hartenkaart introeven. Haal eerst de troeven eruit."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У защитников ещё есть козыри, и один из них может убить червы. Сначала вытяните козыри."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Försvararna har fortfarande trumf, och en av dem kan stjäla ett hjärter. Dra trumf först."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ฝ่ายรับยังมีทรัมป์ และคนหนึ่งตัดโพแดงได้ ดึงทรัมป์ก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Savunmada hâlâ koz var ve biri bir kupayı çakabilir. Önce kozları çekin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "防守方還有王牌，其中一人可以王吃紅心。先拔王牌。"
+          }
+        }
+      }
+    },
+    "The A♥ wins now, but East's K♥ then beats your Q♥ later. The queen wins two heart tricks whenever East holds the king.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥ vinder nu, men Østs K♥ slår så din Q♥ senere. Damen vinder to hjertestik, når Øst har kongen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das A♥ gewinnt jetzt, aber das K♥ von Ost schlägt später deine Q♥. Die Dame bringt zwei Coeur-Stiche, wann immer Ost den König hält."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το A♥ κερδίζει τώρα, αλλά το K♥ της Ανατολής νικά αργότερα το Q♥ σας. Η ντάμα κερδίζει δύο λεβέ στις κούπες όποτε η Ανατολή έχει τον ρήγα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El A♥ gana ahora, pero el K♥ de Este vence después a tu Q♥. La dama gana dos bazas de corazones siempre que Este tenga el rey."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le A♥ gagne maintenant, mais le K♥ d'Est bat ensuite votre Q♥. La dame fait deux levées de cœur chaque fois qu'Est détient le roi."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il A♥ vince adesso, ma poi il K♥ di Est batte la tua Q♥. La donna vince due prese di cuori ogni volta che Est ha il re."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥は今勝ちますが、その後イーストのK♥があなたのQ♥に勝ちます。イーストがキングを持っていれば、クイーンでハートを2トリック取れます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥는 지금 이기지만 나중에 동의 K♥가 내 Q♥를 이겨요. 동이 킹을 갖고 있으면 퀸으로 하트 트릭을 두 번 딸 수 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥ vinner nå, men Østs K♥ slår deretter din Q♥. Damen vinner to hjertestikk når Øst har kongen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De A♥ wint nu, maar de K♥ van Oost slaat daarna je Q♥. De vrouw wint twee hartenslagen als Oost de heer heeft."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥ сейчас выигрывает, но потом K♥ Востока бьёт вашу Q♥. Дама берёт две взятки в червах, когда король у Востока."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥ vinner nu, men Östs K♥ slår sedan din Q♥. Damen vinner två hjärterstick när Öst har kungen."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥ ชนะตอนนี้ แต่ K♥ ของตะวันออกจะชนะ Q♥ ของคุณทีหลัง ควีนชนะโพแดงสองทริกเมื่อตะวันออกถือคิง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥ şimdi kazanır ama sonra Doğu'nun K♥'sı Q♥'nuzu yener. Doğu'da papaz varsa kız iki kupa löveyi kazanır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♥ 現在會贏，但之後東家的 K♥ 會壓過你的 Q♥。只要東家有 K，Q 就能贏兩墩紅心。"
+          }
+        }
+      }
+    },
+    "The 3♦ gives the defenders a diamond trick and the lead, and they will lead trumps. Start the spades.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ giver forsvarerne et ruderstik og udspillet, og de vil spille trumf. Start med spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das 3♦ gibt den Verteidigern einen Karo-Stich und das Ausspiel, und sie werden Trumpf spielen. Fang mit den Pik an."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 3♦ δίνει στους αμυνομένους μια λεβέ στα καρά και την έξοδο, και θα παίξουν ατού. Ξεκινήστε τις πίκες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El 3♦ da a los defensores una baza de diamantes y la salida, y saldrán de triunfo. Empieza por las picas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le 3♦ donne aux défenseurs une levée de carreau et la main, et ils joueront atout. Commencez par les piques."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il 3♦ dà ai difensori una presa a quadri e la mano, e giocheranno atout. Inizia dalle picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦だとディフェンダーにダイヤのトリックとリードを渡し、彼らは切り札をリードしてきます。スペードから始めましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦은 수비측에 다이아몬드 트릭과 리드를 내주고, 수비측은 트럼프를 리드할 거예요. 스페이드부터 시작하세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ gir forsvarerne et rutestikk og utspillet, og de vil spille trumf. Start med spar."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De 3♦ geeft de verdedigers een ruitenslag en de uitkomst, en zij spelen troef uit. Begin met de schoppen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ отдаёт защитникам взятку в бубнах и ход, и они пойдут козырем. Начните с пик."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ ger försvararna ett ruterstick och utspelet, och de kommer att spela trumf. Börja med spadern."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ ทำให้ฝ่ายรับได้ทริกข้าวหลามตัดและได้ลีด และพวกเขาจะลีดทรัมป์ เริ่มที่โพดำ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦, savunmaya bir karo löve ve açılış hakkı verir, onlar da koz açar. Maçalara başlayın."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ 會讓防守方贏下一墩方塊並拿到領牌權，他們會領出王牌。先打黑桃。"
+          }
+        }
+      }
+    },
+    "The 3♦ gives up a diamond trick you do not have to lose. Give up the spade instead.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ afgiver et ruderstik, du ikke behøver at tabe. Afgiv i stedet spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das 3♦ gibt einen Karo-Stich ab, den du nicht verlieren musst. Gib stattdessen das Pik ab."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 3♦ παραδίδει μια λεβέ στα καρά που δεν χρειάζεται να χάσετε. Δώστε αντί γι' αυτό την πίκα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El 3♦ cede una baza de diamantes que no tienes que perder. Cede la pica en su lugar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le 3♦ abandonne une levée de carreau que vous n'avez pas à perdre. Abandonnez plutôt le pique."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il 3♦ cede una presa a quadri che non sei obbligato a perdere. Cedi invece la picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦だと、負けなくてよいダイヤのトリックを手放します。代わりにスペードを譲りましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦은 잃지 않아도 될 다이아몬드 트릭을 내주는 거예요. 대신 스페이드를 내주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ gir bort et rutestikk du ikke trenger å tape. Gi heller bort sparen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De 3♦ geeft een ruitenslag weg die je niet hoeft te verliezen. Geef in plaats daarvan de schoppen af."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ отдаёт бубновую взятку, которую терять не нужно. Лучше отдайте пику."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ ger bort ett ruterstick som du inte behöver förlora. Ge bort spadern i stället."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ ปล่อยทริกข้าวหลามตัดที่คุณไม่จำเป็นต้องเสีย ปล่อยโพดำแทน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦, vermek zorunda olmadığınız bir karo löveyi verir. Onun yerine maçayı verin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3♦ 會讓出一墩你本來不必輸的方塊。改為讓出黑桃。"
+          }
+        }
+      }
+    },
+    "The A♦ is dummy's last way in. Use this lead for the heart finesse.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦ er bordets sidste indgang. Brug dette udspil til hjerterfinessen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das A♦ ist der letzte Eingang des Dummys. Nutze dieses Ausspiel für den Coeur-Schnitt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το A♦ είναι η τελευταία είσοδος του μορ. Χρησιμοποιήστε αυτή την έξοδο για το εμπάς στις κούπες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El A♦ es la última entrada del muerto. Usa esta salida para el impase de corazones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le A♦ est la dernière entrée du mort. Utilisez cette main pour l'impasse à cœur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il A♦ è l'ultimo ingresso del morto. Usa questa mano per l'impasse a cuori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦はダミーに残った最後のエントリーです。このリードでハートのフィネスを仕掛けましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦는 더미의 마지막 엔트리예요. 이 리드로 하트 피네스를 하세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦ er blindemanns siste inngang. Bruk dette utspillet til hjertefinessen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De A♦ is de laatste entree van de dummy. Gebruik deze uitkomst voor de snit in harten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦ это последний вход в руку болвана. Используйте этот ход для импаса в червах."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦ är träkarlens sista ingång. Använd det här utspelet till hjärtermasken."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦ คือทางเข้าสุดท้ายของดัมมี่ ใช้การลีดนี้ทำฟิเนสโพแดง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦, yerin son girişi. Bu hamleyi kupa empası için kullanın."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦ 是夢家最後的進手張。用這次領牌做紅心飛牌。"
+          }
+        }
+      }
+    },
+    "West still holds the 10♠. Draw it before you run the hearts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vest har stadig 10♠. Træk den, før du løber hjerterne."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "West hat noch die 10♠. Zieh sie, bevor du die Coeur abläufst."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Δύση έχει ακόμα το 10♠. Τραβήξτε το πριν παίξετε τις κούπες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oeste aún tiene el 10♠. Sácalo antes de correr los corazones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouest détient encore le 10♠. Tirez-le avant de dérouler les cœurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ovest ha ancora il 10♠. Toglilo prima di incassare le cuori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ウエストにはまだ10♠があります。ハートを流す前にそれを引きましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서에게 아직 10♠이 있어요. 하트를 풀기 전에 그것을 빼세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vest har fortsatt 10♠. Trekk den før du løper hjertene."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "West heeft nog de 10♠. Haal die eruit voordat je de harten afloopt."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У Запада ещё есть 10♠. Вытяните её, прежде чем разыгрывать червы."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Väst har fortfarande 10♠. Dra ut den innan du kör hjärter."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตะวันตกยังมี 10♠ ดึงมันออกก่อนเล่นโพแดงรวด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batı'da hâlâ 10♠ var. Kupaları çekmeden önce onu çekin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "西家還有 10♠。先把它拔掉，再連打紅心。"
+          }
+        }
+      }
+    },
+    "West's last trump would ruff dummy's long hearts. Draw it first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vests sidste trumf ville trumfe bordets lange hjerter. Træk den først."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wests letzter Trumpf würde die langen Coeur des Dummys schnappen. Zieh ihn zuerst."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το τελευταίο ατού της Δύσης θα έκοβε τις μακριές κούπες του μορ. Τραβήξτε το πρώτα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El último triunfo de Oeste fallaría los corazones largos del muerto. Sácalo primero."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le dernier atout d'Ouest couperait les longs cœurs du mort. Tirez-le d'abord."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'ultimo atout di Ovest taglierebbe le cuori lunghe del morto. Toglilo prima."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ウエストの最後の切り札が、ダミーの長いハートをラフしてしまいます。先にそれを引きましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서의 마지막 트럼프가 더미의 긴 하트를 자를 수 있어요. 그것을 먼저 빼세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vests siste trumf ville stjele blindemanns lange hjerter. Trekk den først."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De laatste troef van West zou de lange harten van de dummy introeven. Haal die eerst eruit."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Последний козырь Запада убил бы длинные червы болвана. Сначала вытяните его."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Västs sista trumf skulle stjäla träkarlens långa hjärter. Dra ut den först."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทรัมป์ใบสุดท้ายของตะวันตกจะตัดโพแดงยาวของดัมมี่ ดึงมันก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batı'nın son kozu yerin uzun kupalarını çakardı. Önce onu çekin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "西家最後一張王牌會王吃夢家的長紅心。先把它拔掉。"
+          }
+        }
+      }
+    },
+    "Win now and East may still hold a spade to lead back after taking the A♣.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinder du nu, kan Øst stadig have en spar at spille tilbage efter at have taget A♣."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewinnst du jetzt, kann Ost nach dem A♣ immer noch ein Pik zurückspielen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν κερδίσετε τώρα, η Ανατολή μπορεί να έχει ακόμα μια πίκα να επιστρέψει αφού πάρει το A♣."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si ganas ahora, Este aún puede tener una pica para devolver tras ganar con el A♣."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si vous gagnez maintenant, Est peut encore avoir un pique à rejouer après avoir pris le A♣."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se vinci ora, Est può ancora avere una picche da rigiocare dopo aver preso il A♣."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今勝つと、イーストはA♣を取った後もスペードを持っていて返してくるかもしれません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 이기면 동이 A♣를 딴 뒤에도 되돌릴 스페이드가 남아 있을 수 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinner du nå, kan Øst fortsatt ha en spar å spille tilbake etter å ha tatt A♣."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als je nu wint, kan Oost na het nemen van de A♣ nog steeds een schoppenkaart terugspelen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если взять сейчас, у Востока после A♣ всё ещё может остаться пика для возврата."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinner du nu kan Öst fortfarande ha en spader att spela tillbaka efter att ha tagit A♣."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ถ้าชนะตอนนี้ ตะวันออกอาจยังมีโพดำไว้เล่นกลับหลังจากเอา A♣"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi kazanırsanız, Doğu A♣'yı aldıktan sonra yine geri oynayacak bir maça tutabilir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在贏的話，東家拿走 A♣ 後可能還有黑桃可以回攻。"
+          }
+        }
+      }
+    },
+    "Win now and a defender who gets in with the A♣ may still have a spade to lead to partner's winners.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinder du nu, kan en forsvarer, der kommer ind på A♣, stadig have en spar at spille til makkers vindere."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewinnst du jetzt, hat ein Verteidiger, der mit dem A♣ ans Spiel kommt, womöglich noch ein Pik, um zu den Gewinnern seines Partners auszuspielen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν κερδίσετε τώρα, ένας αμυνόμενος που μπαίνει με το A♣ μπορεί να έχει ακόμα μια πίκα για να παίξει προς τις νικήτριες του συμπαίκτη του."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si ganas ahora, un defensor que entre con el A♣ aún puede tener una pica para jugar hacia las ganadoras de su pareja."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si vous gagnez maintenant, un défenseur qui prend la main avec le A♣ peut encore avoir un pique à jouer vers les levées maîtresses de son partenaire."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se vinci ora, un difensore che prende la mano con il A♣ può ancora avere una picche da giocare verso le vincenti del compagno."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今勝つと、A♣で入ったディフェンダーがまだスペードを持っていて、パートナーの勝ち札に向けてリードできるかもしれません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 이기면 A♣로 리드를 잡은 수비측이 파트너의 위너 쪽으로 낼 스페이드를 아직 갖고 있을 수 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinner du nå, kan en forsvarer som kommer inn på A♣ fortsatt ha en spar å spille mot makkers vinnere."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als je nu wint, kan een verdediger die met de A♣ aan slag komt nog steeds een schoppenkaart hebben om naar de winnaars van partner te spelen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если взять сейчас, защитник, получивший ход с A♣, может ещё иметь пику, чтобы пойти к выигрышным картам партнёра."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinner du nu kan en försvarare som kommer in på A♣ fortfarande ha en spader att spela mot partnerns vinnare."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ถ้าชนะตอนนี้ ฝ่ายรับที่ได้เข้าด้วย A♣ อาจยังมีโพดำไว้ลีดไปหาไพ่ชนะของคู่"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi kazanırsanız, A♣ ile ele geçiren bir savunmacının ortağının kazananlarına oynayacağı bir maça hâlâ olabilir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在贏的話，用 A♣ 上手的防守方可能還有黑桃，可以領向同伴的贏墩。"
+          }
+        }
+      }
+    },
+    "Win the A♦. Your diamond losers can go away later on dummy's long hearts, so ducking only gives the defenders a trick.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vind med A♦. Dine ruderfortabere kan forsvinde senere på bordets lange hjerter, så at dukke giver kun forsvarerne et stik."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewinne mit dem A♦. Deine Karo-Verlierer können später auf die langen Coeur des Dummys verschwinden, also schenkt Ducken den Verteidigern nur einen Stich."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κερδίστε με το A♦. Οι χαμένες σας στα καρά μπορούν να φύγουν αργότερα στις μακριές κούπες του μορ, άρα αν δώσετε τη λεβέ δίνετε απλώς μια λεβέ στους αμυνομένους."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gana con el A♦. Tus perdedoras de diamantes podrán irse después sobre los corazones largos del muerto, así que dejar pasar solo regala una baza a los defensores."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prenez avec le A♦. Vos perdantes à carreau pourront disparaître plus tard sur les longs cœurs du mort, donc laisser passer ne fait que donner une levée aux défenseurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinci con il A♦. Le tue perdenti a quadri potranno sparire più avanti sulle cuori lunghe del morto, quindi lisciare regala solo una presa ai difensori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦で勝ちましょう。ダイヤの負け札は後でダミーの長いハートに捨てられるので、ダックしてもディフェンダーにトリックを与えるだけです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦로 이기세요. 다이아몬드 패자는 나중에 더미의 긴 하트에 버릴 수 있으니, 낮게 내면 수비측에 트릭만 내줄 뿐이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinn med A♦. Rutertaperne dine kan forsvinne senere på blindemanns lange hjerter, så å vente gir bare forsvarerne et stikk."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Win met de A♦. Je ruitenverliezers kunnen later verdwijnen op de lange harten van de dummy, dus duiken geeft de verdedigers alleen maar een slag."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Возьмите A♦. Ваши проигрышные бубны можно будет позже сбросить на длинные червы болвана, поэтому пропуск лишь отдаёт защитникам взятку."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinn med A♦. Dina ruterförlorare kan försvinna senare på träkarlens långa hjärter, så att släppa sticket ger bara försvararna ett stick."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ชนะด้วย A♦ ไพ่แพ้ข้าวหลามตัดของคุณทิ้งไปได้ทีหลังบนโพแดงยาวของดัมมี่ ดังนั้นการปล่อยผ่านก็แค่ให้ฝ่ายรับได้ทริก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A♦ ile kazanın. Karo kaybedenleriniz sonra yerin uzun kupalarına atılabilir, bu yüzden löveyi bırakmak savunmaya yalnızca bir löve vermek olur."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用 A♦ 贏。你的方塊輸墩之後可以墊在夢家的長紅心上，所以忍讓只是白送防守方一墩。"
+          }
+        }
+      }
+    },
+    "Your diamond and club losers can wait for dummy's hearts. Draw trumps first so the hearts are safe.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dine ruder- og kløfortabere kan vente på bordets hjerter. Træk trumferne først, så hjerterne er sikre."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Karo- und Treff-Verlierer können auf die Coeur des Dummys warten. Zieh zuerst die Trümpfe, damit die Coeur sicher sind."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι χαμένες σας στα καρά και στα σπαθιά μπορούν να περιμένουν τις κούπες του μορ. Τραβήξτε πρώτα τα ατού ώστε οι κούπες να είναι ασφαλείς."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus perdedoras de diamantes y tréboles pueden esperar a los corazones del muerto. Saca primero los triunfos para que los corazones estén a salvo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vos perdantes à carreau et à trèfle peuvent attendre les cœurs du mort. Tirez d'abord les atouts pour que les cœurs soient à l'abri."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le tue perdenti a quadri e a fiori possono aspettare le cuori del morto. Togli prima gli atout così le cuori sono al sicuro."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダイヤとクラブの負け札は、ダミーのハートまで待てます。ハートを守るため、先に切り札を引きましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다이아몬드와 클럽의 패자는 더미의 하트가 설 때까지 기다려도 돼요. 하트가 안전하도록 트럼프를 먼저 빼세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rute- og kløvertaperne dine kan vente på blindemanns hjerter. Trekk trumfen først, så hjertene er trygge."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je ruiten- en klaverenverliezers kunnen wachten op de harten van de dummy. Haal eerst de troeven eruit, zodat de harten veilig zijn."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проигрышные бубны и трефы могут подождать червы болвана. Сначала вытяните козыри, чтобы червы были в безопасности."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dina ruter- och klöverförlorare kan vänta på träkarlens hjärter. Dra trumf först så att hjärtern är säkra."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไพ่แพ้ข้าวหลามตัดและดอกจิกของคุณรอโพแดงของดัมมี่ได้ ดึงทรัมป์ก่อนเพื่อให้โพแดงปลอดภัย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karo ve sinek kaybedenleriniz yerin kupalarını bekleyebilir. Kupaların güvende olması için önce kozları çekin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的方塊和梅花輸墩可以等夢家的紅心。先拔王牌，讓紅心安全。"
+          }
+        }
+      }
+    },
+    "Right call": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rigtig melding"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richtiges Gebot"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σωστή δήλωση"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voz correcta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonne annonce"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dichiarazione giusta"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正しいビッド"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "올바른 비드"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riktig melding"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juiste bieding"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Верная заявка"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rätt bud"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ประมูลถูกต้อง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doğru deklarasyon"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正確叫品"
+          }
+        }
+      }
+    },
+    "Coach's call: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trænerens melding: %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gebot des Coachs: %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η δήλωση του προπονητή: %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voz modelo: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'annonce du coach : %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La dichiarazione del coach: %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コーチのビッド：%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "코치가 고른 비드: %@"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trenerens melding: %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bieding van de coach: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявка тренера: %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tränarens bud: %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การประมูลของโค้ช: %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koçun deklarasyonu: %@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "教練的叫品：%@"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

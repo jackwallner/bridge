@@ -28,6 +28,9 @@ final class LocalizationTests: XCTestCase {
             }
         }
         copy += HowToPlayContent.pages.flatMap { [$0.title, $0.body] + [$0.tip].compactMap { $0 } }
+        copy += HandPlayContent.deals.flatMap { deal in
+            [deal.title] + deal.decisions.flatMap { [$0.reason] + Array($0.cardNotes.values) + Array($0.suitNotes.values) }
+        }
         copy += WhatsNew.releases.flatMap { [$0.headline] + $0.items.flatMap { [$0.title, $0.body] } }
         // Numbers and card symbols ("13", "K♠") read the same everywhere.
         return copy.filter { $0.contains(where: \.isLetter) }

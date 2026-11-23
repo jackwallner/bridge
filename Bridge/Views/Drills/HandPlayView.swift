@@ -35,26 +35,55 @@ struct HandPlayView: View {
 
     // MARK: - Table
 
+    /// One scroll view, so the coach's note at accessibility sizes never
+    /// clips; a new note scrolls its Continue button into view.
     private func table(_ engine: HandPlayEngine) -> some View {
-        VStack(spacing: 12) {
-            statusBar(engine)
-            if engine.phase == .auction {
-                auctionView(engine)
-            } else {
-                handView(engine.remaining(.north), seat: .north, engine: engine)
-                    .opacity(engine.state.cardsPlayed > 0 ? 1 : 0)
-                trickView(engine)
+        ScrollViewReader { proxy in
+            CenteringScrollView {
+                VStack(spacing: 12) {
+                    statusBar(engine)
+                    if engine.phase == .auction {
+                        auctionView(engine)
+                    } else {
+                        handView(engine.remaining(.north), seat: .north, engine: engine)
+                            .opacity(engine.state.cardsPlayed > 0 ? 1 : 0)
+                        trickView(engine)
+                    }
+                    if engine.phase != .finished {
+                        handView(engine.remaining(.south), seat: .south, engine: engine)
+                    }
+                    bottom(engine)
+                    actionButton(engine)
+                        .id(bottomID)
+                }
+                .padding(.horizontal)
+                .padding(.vertical, 8)
+                .frame(maxWidth: Theme.readableContentWidth)
             }
-            Spacer(minLength: 0)
-            if engine.phase != .finished {
-                handView(engine.remaining(.south), seat: .south, engine: engine)
+            .onChange(of: engine.state.pending) { _, note in
+                guard note != nil || engine.phase == .finished else { return }
+                withAnimation(reduceMotion ? nil : .easeOut(duration: 0.3)) {
+                    proxy.scrollTo(bottomID, anchor: .bottom)
+                }
             }
-            bottom(engine)
         }
-        .padding(.horizontal)
-        .padding(.bottom, 8)
-        .frame(maxWidth: Theme.readableContentWidth)
-        .frame(maxWidth: .infinity)
+    }
+
+    private let bottomID = "hand-play-bottom"
+
+    @ViewBuilder
+    private func actionButton(_ engine: HandPlayEngine) -> some View {
+        Group {
+            if engine.state.pending != nil {
+                Button { continueAfterNote() } label: { Text("Continue").primaryCTA() }
+            } else if engine.phase == .finished {
+                if subscriptions.isPro {
+                    Button { nextHand() } label: { Text("Next Hand").primaryCTA() }
+                } else {
+                    Button { dismiss() } label: { Text("Done").primaryCTA() }
+                }
+            }
+        }
     }
 
     private func statusBar(_ engine: HandPlayEngine) -> some View {
@@ -80,7 +109,7 @@ struct HandPlayView: View {
         // Blank cells before the dealer so each column stays one seat.
         let lead = order.firstIndex(of: engine.deal.dealer) ?? 0
         let cells: [String?] = Array(repeating: nil, count: lead) + calls.map { Optional($0) }
-        let rows = stride(from: 0, to: max(cells.count, 1), by: 4).map { Array(cells[$0..<min($0 + 4, cells.count)]) }
+        let rows = stride(from: 0, to: cells.count + 1, by: 4).map { Array(cells[$0..<min($0 + 4, cells.count)]) }
         return VStack(spacing: 8) {
             HStack {
                 ForEach(order, id: \.self) { seat in
@@ -93,11 +122,19 @@ struct HandPlayView: View {
             ForEach(rows.indices, id: \.self) { row in
                 HStack {
                     ForEach(0..<4, id: \.self) { column in
+                        let index = row * 4 + column
                         let cell = column < rows[row].count ? rows[row][column] : nil
-                        Text(cell.map(AuctionCallLabel.label) ?? " ")
-                            .font(.headline)
-                            .foregroundStyle(Theme.ink)
-                            .frame(maxWidth: .infinity)
+                        Group {
+                            if let cell {
+                                CallText(call: cell)
+                            } else if index == cells.count, engine.pendingCoachedCall != nil {
+                                Text(verbatim: "?").foregroundStyle(Theme.jade)
+                            } else {
+                                Text(verbatim: " ")
+                            }
+                        }
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
                     }
                 }
             }
@@ -113,13 +150,13 @@ struct HandPlayView: View {
                 Button {
                     submitCall(choice)
                 } label: {
-                    Text(AuctionCallLabel.label(choice))
+                    CallText(call: choice)
                         .font(.headline)
-                        .foregroundStyle(Theme.ink)
                         .frame(maxWidth: .infinity, minHeight: 48)
                         .themedCard(corner: 12)
                 }
                 .buttonStyle(PressableCardStyle())
+                .accessibilityIdentifier("hand-call-\(choice)")
             }
         }
     }
@@ -184,17 +221,10 @@ struct HandPlayView: View {
     private func bottom(_ engine: HandPlayEngine) -> some View {
         if let note = engine.state.pending {
             coachCard(note)
-            Button {
-                continueAfterNote()
-            } label: {
-                Text("Continue").primaryCTA()
-            }
         } else if let call = engine.pendingCoachedCall {
             callButtons(call)
         } else if engine.phase == .finished {
             resultCard(engine)
-        } else {
-            Color.clear.frame(height: 56)
         }
     }
 
@@ -219,16 +249,15 @@ struct HandPlayView: View {
 
     private func heading(_ note: CoachNote) -> String {
         switch note.verdict {
-        case .right: return String(localized: "Right play")
+        case .right: return note.isCall ? String(localized: "Right call") : String(localized: "Right play")
         case .alsoFine: return String(localized: "Also good. Coach's play: \(note.coachLabel)")
-        case .miss: return String(localized: "Coach's play: \(note.coachLabel)")
+        case .miss: return note.isCall ? String(localized: "Coach's call: \(note.coachLabel)") : String(localized: "Coach's play: \(note.coachLabel)")
         }
     }
 
     private func resultCard(_ engine: HandPlayEngine) -> some View {
         let made = engine.declarerTricks >= engine.deal.tricksNeeded
-        return VStack(spacing: 14) {
-            VStack(spacing: 6) {
+        return VStack(spacing: 6) {
                 Text(made ? String(localized: "Made \(engine.deal.contractLabel)") : String(localized: "Down in \(engine.deal.contractLabel)"))
                     .font(Theme.display(28))
                     .foregroundStyle(Theme.ink)
@@ -239,15 +268,10 @@ struct HandPlayView: View {
                     .font(.subheadline)
                     .foregroundStyle(Theme.inkSecondary)
             }
-            .frame(maxWidth: .infinity)
-            .padding(18)
-            .themedCard(corner: 16)
-            if subscriptions.isPro {
-                Button { nextHand() } label: { Text("Next Hand").primaryCTA() }
-            } else {
-                Button { dismiss() } label: { Text("Done").primaryCTA() }
-            }
-        }
+        .multilineTextAlignment(.center)
+        .frame(maxWidth: .infinity)
+        .padding(18)
+        .themedCard(corner: 16)
     }
 
     private var lockedState: some View {
@@ -344,6 +368,23 @@ struct HandPlayView: View {
     }
 }
 
+/// A call with its suit symbol in the card colors.
+private struct CallText: View {
+    let call: String
+
+    var body: some View {
+        let label = AuctionCallLabel.label(call)
+        let red = label.contains("♥") || label.contains("♦")
+        return label.reduce(Text(verbatim: "")) { text, character in
+            let isSuit = "♠♥♦♣".contains(character)
+            let piece = Text(verbatim: String(character))
+                .foregroundStyle(isSuit ? (red ? Theme.cardRed : Theme.ink) : Theme.ink)
+            return text + piece
+        }
+        .accessibilityLabel(label)
+    }
+}
+
 /// A hand fanned in one row, overlapping to fit the width. Unplayable cards
 /// dim only while the player is choosing.
 private struct FannedHand: View {
@@ -362,10 +403,18 @@ private struct FannedHand: View {
                 ForEach(Array(cards.enumerated()), id: \.element) { index, card in
                     let enabled = onTap != nil && playable.contains(card)
                     BridgeCardView(card: card, width: cardWidth)
-                        .opacity(onTap != nil && !enabled ? 0.45 : 1)
+                        .overlay {
+                            // A wash, not opacity: a see-through card shows
+                            // the one beneath it.
+                            if onTap != nil && !enabled {
+                                RoundedRectangle(cornerRadius: cardWidth * 0.13, style: .continuous)
+                                    .fill(Theme.background.opacity(0.6))
+                            }
+                        }
                         .offset(x: CGFloat(index) * step, y: enabled ? -6 : 0)
                         .onTapGesture { if enabled { onTap?(card) } }
                         .accessibilityAddTraits(enabled ? .isButton : [])
+                        .accessibilityIdentifier(enabled ? "hand-card-\(card.shortLabel)" : "")
                 }
             }
             .frame(width: total, alignment: .leading)

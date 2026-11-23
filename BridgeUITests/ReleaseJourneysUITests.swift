@@ -143,6 +143,38 @@ final class ReleaseJourneysUITests: XCTestCase {
         home("paywall-dismissed", in: app)
     }
 
+    /// A free player's daily hand: the coached opening call, the table playing
+    /// on, and a "Why not" note on a missed card.
+    func testPlayAHandFreeHand() {
+        let app = launchApp(seeded: true, arguments: ["-handplay.reset", "YES"])
+        home("home-play-hand", in: app)
+
+        let tile = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", L("Play a"))).firstMatch
+        tap(tile, name: "Play a Hand")
+        let opening = app.buttons["hand-call-1NT"]
+        XCTAssertTrue(opening.waitForExistence(timeout: 15))
+        QA.checkpoint(app, "hand-auction")
+        opening.tap()
+
+        let next = app.buttons[L("Continue")]
+        XCTAssertTrue(next.waitForExistence(timeout: 10))
+        QA.checkpoint(app, "hand-call-graded")
+        next.tap()
+
+        // The table finishes the auction and West leads; South decides trick one.
+        let ace = app.descendants(matching: .any)["hand-card-A♠"]
+        XCTAssertTrue(ace.waitForExistence(timeout: 30))
+        QA.checkpoint(app, "hand-decision")
+        // Cards overlap: tap the uncovered left edge.
+        ace.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.5)).tap()
+        XCTAssertTrue(next.waitForExistence(timeout: 10))
+        QA.checkpoint(app, "hand-coached")
+        next.tap()
+
+        tap(backButton(in: app), name: "back")
+        home("home-after-hand", in: app)
+    }
+
     func testReturnVisitAndInterruption() {
         let app = launchApp(seeded: true)
         home("home-return", in: app)
@@ -238,6 +270,7 @@ final class ReleaseJourneysUITests: XCTestCase {
         "Settings": "Einstellungen", "Endless": "Endlos", "Restore": "Wiederherstellen",
         "Today's session is done": "Die heutige Runde ist erledigt",
         "Where are you starting from?": "Wo stehst du gerade?", "Your Progress": "Dein Fortschritt",
+        "Play a": "Eine Hand",
     ]
 
     private func L(_ english: String) -> String {

@@ -149,6 +149,8 @@ struct CoachNote: Codable, Equatable, Sendable {
     /// "Why not X?": what the player's pick needs or risks, when known.
     var whyNot: String?
     var reason: String
+    /// A graded call rather than a card.
+    var isCall = false
 }
 
 /// The state of one hand, Codable so a hand survives the app closing.
@@ -232,7 +234,8 @@ struct HandPlayEngine: Sendable {
                 pickedLabel: AuctionCallLabel.label(call),
                 coachLabel: answerCategory.displayName,
                 whyNot: picked.flatMap { HandGenerator.missNote(picked: $0, answer: answerCategory) },
-                reason: HandGenerator.explain(south, answer: answerCategory)
+                reason: HandGenerator.explain(south, answer: answerCategory),
+                isCall: true
             )
         case .rebid(let situation):
             guard let answerCall = BiddingCall(auctionCall: answer) else { return nil }
@@ -242,7 +245,8 @@ struct HandPlayEngine: Sendable {
                 pickedLabel: AuctionCallLabel.label(call),
                 coachLabel: answerCall.displayName,
                 whyNot: picked.flatMap { BiddingEngine.missNote(picked: $0, answer: answerCall, in: situation) },
-                reason: BiddingEngine.explain(south, in: situation, answer: answerCall)
+                reason: BiddingEngine.explain(south, in: situation, answer: answerCall),
+                isCall: true
             )
         }
         grade(note)

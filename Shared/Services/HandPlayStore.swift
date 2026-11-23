@@ -28,6 +28,14 @@ final class HandPlayStore: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
+        #if DEBUG
+        // `-handplay.reset YES` starts the gate's journeys from a fresh first hand.
+        if defaults.bool(forKey: "handplay.reset") {
+            for key in [Keys.handsPlayed, Keys.lastFreeDay, Keys.nextDeal, Keys.inProgress] {
+                defaults.removeObject(forKey: key)
+            }
+        }
+        #endif
         handsPlayed = defaults.integer(forKey: Keys.handsPlayed)
         lastFreeDay = defaults.string(forKey: Keys.lastFreeDay) ?? ""
         nextDeal = defaults.integer(forKey: Keys.nextDeal)
