@@ -4,6 +4,7 @@ import SwiftUI
 /// The table makes every other call and plays every routine card; the player
 /// decides at the coached points and the coach answers each one.
 struct HandPlayView: View {
+    @ScaledMetric(relativeTo: .headline) private var callMinimum: CGFloat = 72
     @EnvironmentObject private var subscriptions: SubscriptionService
     @StateObject private var store = HandPlayStore.shared
     @Environment(\.dismiss) private var dismiss
@@ -147,7 +148,7 @@ struct HandPlayView: View {
 
     private func callButtons(_ call: CoachedCall) -> some View {
         let choices = HandPlayEngine.choices(for: call)
-        return LazyVGrid(columns: [GridItem(.adaptive(minimum: 72), spacing: 8)], spacing: 8) {
+        return LazyVGrid(columns: [GridItem(.adaptive(minimum: callMinimum), spacing: 8)], spacing: 8) {
             ForEach(choices, id: \.self) { choice in
                 Button {
                     submitCall(choice)
@@ -397,33 +398,27 @@ private struct FannedHand: View {
     private let cardWidth: CGFloat = 44
 
     var body: some View {
-        GeometryReader { proxy in
-            let count = max(cards.count, 1)
-            let step = count > 1 ? min(cardWidth + 4, (proxy.size.width - cardWidth) / CGFloat(count - 1)) : 0
-            let total = step * CGFloat(count - 1) + cardWidth
-            ZStack(alignment: .leading) {
-                ForEach(Array(cards.enumerated()), id: \.element) { index, card in
-                    let enabled = onTap != nil && playable.contains(card)
-                    BridgeCardView(card: card, width: cardWidth)
-                        .overlay {
-                            // A wash, not opacity: a see-through card shows
-                            // the one beneath it.
-                            if onTap != nil && !enabled {
-                                RoundedRectangle(cornerRadius: cardWidth * 0.13, style: .continuous)
-                                    .fill(Theme.background.opacity(0.6))
-                            }
+        // Wrapped rows, never overlapped: overlapping cards shared one hit
+        // area and read as two controls drawn over each other.
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: cardWidth), spacing: 4)], spacing: 6) {
+            ForEach(cards, id: \.self) { card in
+                let enabled = onTap != nil && playable.contains(card)
+                BridgeCardView(card: card, width: cardWidth)
+                    .overlay {
+                        // A wash, not opacity.
+                        if onTap != nil && !enabled {
+                            RoundedRectangle(cornerRadius: cardWidth * 0.13, style: .continuous)
+                                .fill(Theme.background.opacity(0.6))
                         }
-                        .offset(x: CGFloat(index) * step, y: enabled ? -6 : 0)
-                        .onTapGesture { if enabled { onTap?(card) } }
-                        .accessibilityElement(children: .ignore)
-                        .accessibilityLabel(card.spokenName)
-                        .accessibilityAddTraits(enabled ? .isButton : [])
-                        .accessibilityIdentifier(enabled ? "hand-card-\(card.shortLabel)" : "")
-                }
+                    }
+                    .offset(y: enabled ? -6 : 0)
+                    .onTapGesture { if enabled { onTap?(card) } }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel(card.spokenName)
+                    .accessibilityAddTraits(enabled ? .isButton : [])
+                    .accessibilityIdentifier(enabled ? "hand-card-\(card.shortLabel)" : "")
             }
-            .frame(width: total, alignment: .leading)
-            .frame(maxWidth: .infinity)
         }
-        .frame(height: cardWidth * 1.38 + 8)
+        .padding(.top, 6)
     }
 }

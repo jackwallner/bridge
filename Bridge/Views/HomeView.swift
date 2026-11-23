@@ -541,7 +541,7 @@ struct HomeView: View {
                 Text("TRAINING")
                     .font(.caption.weight(.heavy))
                     .kerning(1.4)
-                    .foregroundStyle(Theme.inkSecondary)
+                    .foregroundStyle(Theme.ink)
                 Spacer()
                 // A phone fits two and a bit of these tiles and the scroll
                 // indicators are off, so without a cue the visible cards read
