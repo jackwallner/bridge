@@ -21,11 +21,11 @@ final report at the end).
 | Mastery rings on Home rooms | Has (`MasteryRing`, 2026-10-20) | Part: mastery shown on Your Progress, Home still counts drills opened | Part: ledger only; Home counts drills opened | |
 | Weekly gain ledger ("+N" chip, "Up N this week") | Has | Has | Has | All three have the scope-aware baseline. |
 | "Work on" card opens the room (audit item) | Has (link into the room) | Part: text line, no tap | Part: accuracy card, no tap | |
-| Coached miss notes ("Why not X?") | Lacks | Part: generated questions carry `choiceNotes`; no `MissNoteCard` UI | Lacks | Bridge can derive notes from the opening rules for free, like Mahj derives them from `HandCategory.requires`. |
+| Coached miss notes ("Why not X?") | Has: opening, responding and rebid questions | Has: dealt hands in the Minute and the quick session | Has: Name the Pattern, legal play, Count the Hand | Bridge can derive notes from the opening rules for free, like Mahj derives them from `HandCategory.requires`. |
 | Daily round (Minute) | Part: Bridge Minute, Bridge+ only | Part: Skat Minute, Skat+ only | Part: Cribbage Minute, Cribbage+ only | In Mahj the Minute went free as the challenge's daily round. Here the Minute is a paid trial-page benefit row, so making it free changes the frozen trial page (decision for Jack). |
 | Free monthly challenge + App Store in-app events | Lacks | Lacks | Lacks | Only the `challenge` remote switch exists. Needs: the Minute to go free (frozen trial page), authored defensible closers per month, a standing RPC, monthly event art and nomination. Decision for Jack. |
 | Coached play-a-hand mode | Lacks | Lacks | Lacks | Fits all three, large: Bridge needs a full declarer hand with a play engine, Skat a 10-trick game against two defenders, Cribbage a discard-peg-count hand. Mahj avoids bots; card games cannot (tricks need opponents' cards). Not started; proposal below. |
-| Reference glossary (searchable, toolbar book icon) | Lacks | Lacks | Lacks | Fits all three. Content is per game and must be checked against its rules; Bridge also needs 15 translations. |
+| Reference glossary (searchable, toolbar book icon) | Lacks | Has (Glossar, 28 terms) | Has (29 terms) | Fits all three. Content is per game and must be checked against its rules; Bridge also needs 15 translations. |
 | Saved and resumable runs (`OrdinaryRunStore`, one per drill) | Lacks | Lacks | Lacks | Fits all three, medium code; Mahj spent four review rounds on edge cases. |
 | What's New sheet | Has | Has | Has | |
 | Rating ask with no gate (5.6.1) | Has | Has | Has | Shared code. |
@@ -57,7 +57,7 @@ final report at the end).
 
 ## Status
 
-Shipped to TestFlight on 2026-11-22:
+Shipped to TestFlight on 2026-11-22 and 2026-11-23:
 
 | App | Build | What it carries |
 |---|---|---|
@@ -68,10 +68,9 @@ Shipped to TestFlight on 2026-11-22:
 | Bridge | 1.3.0 (51) | Adds "Why not X?" notes on every missed opening question, derived from the opening rules (9 strings in 16 languages). |
 | Skat | 1.3.4 (51) | Adds the Glossar (28 terms, ISkO 2022) from Home and Settings, plus Reduce Motion fixes in the primer, the tour, the shine sweep and Home. |
 | Bridge | 1.3.0 (52) | Adds "Why not X?" notes on every wrong call in responding and rebid questions (Endless, Timed, both authored quizzes, the quick session), each checked against a predicate over dealt hands; 21 strings in 16 languages. Submitted for review 2026-11-22 (manual release). |
-| Bridge | 1.3.0, 53 gating | Another session's narrow-screen fix: hands shrink to fit 320pt screens. TestFlight only, not attached to 1.3.0. |
-| Skat | 1.3.4, gate running | Warum-nicht notes in the Skat-Minute's dealt hands and the quick session. |
-
-Built, waiting to merge: branch `feat/miss-notes` in Cribbage carries the glossary (29 terms, every quoted point value checked against `HandScoring`) and "Why not X?" notes (an absent pattern in Name the Pattern, go and the reset in legal play, and the gap in Count the Hand, stated as what it matches, never as what the player missed). 246 tests pass. It merges once another session's gate on Cribbage main finishes, then gates and ships with the narrow-screen card fix.
+| Bridge | 1.3.0 (53) | Another session's narrow-screen fix: hands shrink to fit 320pt screens; the correct answer's pop stays inside the side headroom on the Duo. TestFlight only, not attached to 1.3.0 (build 52 is in review without the narrow-screen fix). |
+| Skat | 1.3.4 (52) | Warum-nicht notes in the Skat-Minute's dealt hands and the quick session; Reduce Motion in the quick session and onboarding; the card back's text scrolls at the largest text sizes so Weiter stays on the card. |
+| Cribbage | 1.3.3 (49) | The glossary (29 terms, every quoted point value checked against `HandScoring`); "Why not X?" notes in Name the Pattern, legal play and Count the Hand; another session's narrow-screen card fix and long-answer wrapping. 248 tests pass. |
 
 The audit fixes are: confetti under real gravity that waits for the graded row and stops on Next; `gradeCorrect`/`gradeWrong` marks readable in dark mode; the swipe stamp rides the outgoing card, and the flashcard stays upright under Reduce Motion; a Time's up screen when a timed run ends with nothing answered, and late answers are refused.
 
