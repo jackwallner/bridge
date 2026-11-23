@@ -93,9 +93,11 @@ struct HandPlayView: View {
                     .font(Theme.display(20))
                     .foregroundStyle(Theme.ink)
                 Spacer()
-                Text("Tricks \(engine.declarerTricks)/\(engine.deal.tricksNeeded)")
-                    .font(.subheadline.weight(.semibold).monospacedDigit())
-                    .foregroundStyle(Theme.inkSecondary)
+                if engine.phase == .play {
+                    Text("Tricks \(engine.declarerTricks)/\(engine.deal.tricksNeeded)")
+                        .font(.subheadline.weight(.semibold).monospacedDigit())
+                        .foregroundStyle(Theme.inkSecondary)
+                }
             }
         }
         .frame(height: 28)
