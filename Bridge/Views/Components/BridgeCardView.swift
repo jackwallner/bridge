@@ -36,22 +36,38 @@ struct BridgeHandView: View {
     var onTap: ((Int) -> Void)?
 
     private let columns = 7
+    private let minimumCardWidth: CGFloat = 30
+
+    /// The requested width first, then narrower steps. Seven 44pt cards are
+    /// 344pt, and with Display Zoom a 6.1" iPhone is 320pt wide (Slide Over
+    /// too): a fixed row ran past the screen and lost cards off both edges.
+    private var candidateWidths: [CGFloat] {
+        Array(stride(from: cardWidth, through: min(cardWidth, minimumCardWidth), by: -2))
+    }
 
     var body: some View {
+        ViewThatFits(in: .horizontal) {
+            ForEach(candidateWidths, id: \.self) { width in
+                rows(cardWidth: width)
+            }
+        }
+    }
+
+    private func rows(cardWidth: CGFloat) -> some View {
         let rows = cards.enumerated().map { (index: $0.offset, card: $0.element) }
             .chunked(into: columns)
-        VStack(spacing: 10) {
+        return VStack(spacing: 10) {
             ForEach(0..<rows.count, id: \.self) { rowIndex in
                 HStack(spacing: 6) {
                     ForEach(rows[rowIndex], id: \.index) { item in
-                        cardCell(item.index, item.card)
+                        cardCell(item.index, item.card, cardWidth: cardWidth)
                     }
                 }
             }
         }
     }
 
-    private func cardCell(_ index: Int, _ card: BridgeCard) -> some View {
+    private func cardCell(_ index: Int, _ card: BridgeCard, cardWidth: CGFloat) -> some View {
         let selected = highlightedIndices.contains(index)
         return BridgeCardView(card: card, width: cardWidth)
             .overlay {
