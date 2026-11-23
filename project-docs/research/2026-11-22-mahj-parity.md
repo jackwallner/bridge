@@ -64,10 +64,15 @@ Shipped to TestFlight on 2026-11-22:
 | Bridge | 1.3.0 (49) | Respond to Partner (9 questions) and Your Second Bid (10), both free; `BiddingEngine` grading Endless Practice skills for responses and rebids (Bridge+), mixed into the Timed Challenge; 58 new strings in all 16 languages; What's New 1.3.0; the audit fixes. 1.2.10 is still in review, so this is a new version. |
 | Skat | 1.3.4 (50) | Audit fixes, including the wall-clock timer; mastery rings on Home; a tappable "Übe als Nächstes" card. |
 | Cribbage | 1.3.3 (48) | Audit fixes; mastery rings on Home; a tappable work-on card. |
+| Bridge | 1.3.0 (50) | Build 49 plus another session's icon change (Icon A). This build passes the release gate. |
+| Bridge | 1.3.0 (51) | Adds "Why not X?" notes on every missed opening question, derived from the opening rules (9 strings in 16 languages). |
+| Skat | 1.3.4, gate running | Adds the Glossar (28 terms, ISkO 2022) from Home and Settings, plus Reduce Motion fixes in the primer, the tour, the shine sweep and Home. |
+
+Built, waiting to merge: the Cribbage glossary (29 terms, every quoted point value checked against `HandScoring`) is on branch `feat/glossary`. It merges once another session's gate on Cribbage main finishes.
 
 The audit fixes are: confetti under real gravity that waits for the graded row and stops on Next; `gradeCorrect`/`gradeWrong` marks readable in dark mode; the swipe stamp rides the outgoing card, and the flashcard stays upright under Reduce Motion; a Time's up screen when a timed run ends with nothing answered, and late answers are refused.
 
 Not done in this pass:
-- Coached miss notes in Bridge: next batch. The engine already knows each rule, so this needs no new content.
-- Reference glossary, saved runs and the iPhone Duo Home: next batches, one app at a time.
+- Miss notes on Bridge's responding and rebid questions: next. Skat already shows its generated notes in Practice runs (the matrix row above understated it).
+- The Bridge glossary needs 15 translations of about 30 entries, so it is a batch of its own. Saved runs and the iPhone Duo Home come after it.
 - Daily round going free, the monthly challenge, PostHog, the trial offer sheet, localizing Cribbage and a play-a-hand mode: each one needs Jack's decision (see the matrix notes).
