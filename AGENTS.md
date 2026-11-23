@@ -53,4 +53,5 @@ These files load automatically when you read a file matching their `paths:`. Age
 | `.claude/rules/meta-ads.md` | No Meta SDK (removed), remote switches and `TrialCTA` | `RemoteConfig`, adding Meta or tracking |
 | `.claude/rules/membership-and-trial.md` | Trial flow, 3.1.2(c) price line, membership state, fit at every size, What's New mechanics | `SubscriptionService`, onboarding, paywall, primer, tour |
 | `.claude/rules/localization.md` | UI localization: the string catalog, content lookup by English text, plural and fragment rules, how to add copy, screenshot launch args | Any user-facing copy, `Localizable.xcstrings`, `Shared/Content`, `LocalizationTests` |
+| `.claude/rules/hand-play.md` | Play a Hand (1.3.1): authored deals, coached calls through the engines, card grading, one free hand a day | `HandPlay*` |
 | `.claude/rules/android.md` | Android port: package, Play products and prices, RevenueCat IDs, content export and parity, signing, Pro emulator, store assets, Play state | Anything in `android/`, `docs/android-*.html`, the Play scripts |
