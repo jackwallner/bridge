@@ -120,7 +120,8 @@ enum EndlessPractice {
                 answerIndex: question.choices.firstIndex(of: question.answer) ?? 0,
                 explanation: question.explanation,
                 sourceLabel: String(localized: "Endless Practice"),
-                roomID: skill.roomID
+                roomID: skill.roomID,
+                choiceNotes: BiddingEngine.missNotes(choices: question.choices, answer: question.answer, in: question.situation)
             )
         }
     }

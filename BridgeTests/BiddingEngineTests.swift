@@ -178,4 +178,101 @@ final class BiddingEngineTests: XCTestCase {
             }
         }
     }
+
+    // MARK: - Miss notes
+
+    /// Whether the hand meets what a call's miss note says that call needs.
+    /// Written from the note's words, apart from the engine, so a note that
+    /// stops matching the rules shows up here.
+    private func meetsNote(_ call: BiddingCall, _ cards: [BridgeCard], _ situation: BiddingSituation) -> Bool {
+        let shape = HandGenerator.Shape(cards)
+        let hcp = shape.highCardPoints
+        let spades = shape.length(.spades)
+        let hearts = shape.length(.hearts)
+        switch situation {
+        case .response(let major):
+            let support = shape.length(major)
+            let dummy = BiddingEngine.dummyPoints(shape, trumps: major)
+            switch call {
+            case .pass: return support >= 3 ? dummy < 6 : hcp < 6
+            case _ where call == .two(major): return support >= 3 && (6...9).contains(dummy)
+            case _ where call == .three(major): return support >= 4 && dummy >= 11
+            case _ where call == .four(major): return support >= 5 && hcp < 10
+            case .oneSpade: return spades >= 4 && hcp >= 6 && hearts < 4
+            case .oneNotrump:
+                return (6...9).contains(hcp) && support < 3 && (major == .spades || spades < 4)
+            default:
+                let suit: Suit = call == .twoClubs ? .clubs : call == .twoDiamonds ? .diamonds : .hearts
+                let rivals = Suit.allCases.filter { $0 != major && $0 != suit }.map(shape.length)
+                let longest = shape.length(suit) >= 4 && rivals.allSatisfy { $0 <= shape.length(suit) }
+                let fiveHearts = suit != .hearts || hearts >= 5
+                return hcp >= 11 && support < 3 && (major == .spades || spades < 4) && longest && fiveHearts
+            }
+        case .rebidAfterRaise(let major):
+            let points = BiddingEngine.lengthPoints(shape)
+            switch call {
+            case .pass: return points <= 15
+            case _ where call == .three(major): return (16...18).contains(points)
+            default: return points >= 19
+            }
+        case .rebidAfterOneSpade:
+            switch call {
+            case .pass: return false
+            case .twoSpades: return spades >= 4
+            case .twoHearts: return spades < 4 && hearts >= 6
+            case .oneNotrump: return shape.isBalanced && spades < 4 && hearts < 6
+            default:
+                let minor: Suit = call == .twoClubs ? .clubs : .diamonds
+                return shape.length(minor) >= 4 && !shape.isBalanced && spades < 4 && hearts < 6
+            }
+        case .rebidAfterOneNotrump:
+            switch call {
+            case .pass: return shape.isBalanced && spades < 6
+            case .twoSpades: return spades >= 6
+            default:
+                let suit: Suit = call == .twoClubs ? .clubs : call == .twoDiamonds ? .diamonds : .hearts
+                return shape.length(suit) >= 4 && !shape.isBalanced && spades < 6
+            }
+        }
+    }
+
+    func testEveryWrongCallHasANoteTheHandFails() {
+        var generator = StableSeededGenerator(seed: "bidding-notes")
+        for situation in BiddingSituation.all {
+            for answer in BiddingEngine.reachableAnswers(situation) {
+                for _ in 0..<12 {
+                    guard let question = BiddingEngine.question(situation, answer: answer, using: &generator) else {
+                        XCTFail("\(situation) never deals \(answer)")
+                        continue
+                    }
+                    XCTAssertNil(BiddingEngine.missNote(picked: answer, answer: answer, in: situation))
+                    for picked in situation.candidates where picked != answer {
+                        let note = BiddingEngine.missNote(picked: picked, answer: answer, in: situation)
+                        XCTAssertNotNil(note, "\(situation): no note for \(picked)")
+                        XCTAssertFalse(note?.contains("—") ?? false)
+                        XCTAssertFalse(meetsNote(picked, question.cards, situation),
+                                       "\(situation) answer \(answer): hand meets the note for \(picked)")
+                    }
+                }
+            }
+        }
+    }
+
+    func testAuthoredAndEndlessBiddingCarryNotes() {
+        for question in BiddingContent.responses + BiddingContent.rebids {
+            let quiz = question.quiz
+            XCTAssertNil(quiz.note(forPick: quiz.answerIndex), question.id)
+            for index in quiz.choices.indices where index != quiz.answerIndex {
+                XCTAssertNotNil(quiz.note(forPick: index), "\(question.id) choice \(index)")
+                XCTAssertFalse(meetsNote(question.choices[index], question.cards, question.situation), question.id)
+            }
+        }
+        for skill in [PracticeSkill.responses, .rebids] {
+            for item in EndlessPractice.items(for: skill, count: 12) {
+                for index in item.choices.indices where index != item.answerIndex {
+                    XCTAssertNotNil(item.note(forPick: index), item.id)
+                }
+            }
+        }
+    }
 }

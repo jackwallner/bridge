@@ -443,4 +443,73 @@ enum BiddingEngine {
             question(situation, answer: call, using: &generator)
         }
     }
+
+    // MARK: - Miss notes
+
+    /// Why a wrong pick is wrong: what that call needs here, stated with the
+    /// earlier priorities folded in ("Without four spades, ..."), so the hand
+    /// in front of the player always fails it. `BiddingEngineTests` checks
+    /// that against every generated question.
+    static func missNote(picked: BiddingCall, answer: BiddingCall, in situation: BiddingSituation) -> String? {
+        guard picked != answer else { return nil }
+        switch situation {
+        case .response(let major):
+            return responseNote(picked, major: major)
+        case .rebidAfterRaise(let major):
+            switch picked {
+            case .pass: return String(localized: "Pass shows a minimum opening, about 12 to 15 points.")
+            case _ where picked == .three(major): return String(localized: "Inviting with \(picked.displayName) shows a medium opening, about 16 to 18 points.")
+            case _ where picked == .four(major): return String(localized: "Bidding \(picked.displayName) needs about 19 or more points opposite a simple raise.")
+            default: return nil
+            }
+        case .rebidAfterOneSpade:
+            switch picked {
+            case .pass: return String(localized: "Partner's new suit is forcing, so you must bid again.")
+            case .twoSpades: return String(localized: "Raising to 2♠ needs four spades, because partner may hold only four.")
+            case .twoHearts: return String(localized: "Without four spades, rebidding 2♥ promises six or more hearts.")
+            case .oneNotrump: return String(localized: "1NT shows a balanced hand without four spades or six hearts.")
+            case .twoClubs: return String(localized: "2♣ shows four or more clubs in an unbalanced hand without four spades or six hearts.")
+            case .twoDiamonds: return String(localized: "2♦ shows four or more diamonds in an unbalanced hand without four spades or six hearts.")
+            default: return nil
+            }
+        case .rebidAfterOneNotrump:
+            switch picked {
+            case .pass: return String(localized: "Pass shows a balanced minimum without six spades.")
+            case .twoSpades: return String(localized: "Rebidding 2♠ promises six or more spades.")
+            case .twoClubs, .twoDiamonds, .twoHearts:
+                return String(localized: "\(picked.displayName) shows four or more cards in its suit, an unbalanced hand, and fewer than six spades.")
+            default: return nil
+            }
+        }
+    }
+
+    private static func responseNote(_ picked: BiddingCall, major: Suit) -> String? {
+        switch picked {
+        case .pass:
+            return String(localized: "Pass is for fewer than 6 points, counting dummy points when you hold three or more cards in partner's suit.")
+        case _ where picked == .two(major):
+            return String(localized: "A raise to \(picked.displayName) needs three or more cards in partner's suit and 6 to 9 points, counting dummy points.")
+        case _ where picked == .three(major):
+            return String(localized: "A jump to \(picked.displayName) needs four or more cards in partner's suit and about 11 dummy points.")
+        case _ where picked == .four(major):
+            return String(localized: "Jumping straight to \(picked.displayName) is a weak raise: five or more cards in partner's suit and fewer than 10 high-card points.")
+        case .oneSpade:
+            return String(localized: "1♠ needs four or more spades and 6 or more points. With four or more hearts, raise partner first.")
+        case .oneNotrump:
+            return major == .hearts
+                ? String(localized: "1NT shows 6 to 9 points, fewer than three hearts, and fewer than four spades.")
+                : String(localized: "1NT shows 6 to 9 points and fewer than three spades.")
+        case .twoClubs, .twoDiamonds, .twoHearts:
+            return major == .hearts
+                ? String(localized: "Over 1♥, a new suit at the two level needs 11 or more points, fewer than three hearts, fewer than four spades, and your longest suit.")
+                : String(localized: "Over 1♠, a new suit at the two level needs 11 or more points, fewer than three spades, and your longest suit. 2♥ also needs five hearts.")
+        default:
+            return nil
+        }
+    }
+
+    /// Parallel to `choices`: the note for each wrong call, nil for the answer.
+    static func missNotes(choices: [BiddingCall], answer: BiddingCall, in situation: BiddingSituation) -> [String?] {
+        choices.map { missNote(picked: $0, answer: answer, in: situation) }
+    }
 }
