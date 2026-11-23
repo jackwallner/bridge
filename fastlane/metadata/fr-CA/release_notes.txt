@@ -1,1 +1,4 @@
-Corrections de bugs et améliorations.
+Bidding past the opening.
+- Respond to Partner and Your Second Bid: two new free drills in the Auction Room. Answer partner's opening, then choose your second bid.
+- Endless bidding practice: freshly dealt hands for responses and rebids (Bridge+).
+- Why not? Miss a call and the app now explains what your pick would have needed.
