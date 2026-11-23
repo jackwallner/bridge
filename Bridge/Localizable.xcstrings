@@ -85689,6 +85689,2001 @@
           }
         }
       }
+    },
+    "Pass shows a minimum opening, about 12 to 15 points.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas viser en minimumsåbning på cirka 12 til 15 point."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass zeigt eine Mindesteröffnung mit etwa 12 bis 15 Punkten."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το πάσο δείχνει ελάχιστο άνοιγμα, περίπου 12 έως 15 πόντους."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paso muestra una apertura mínima, de unos 12 a 15 puntos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passe montre une ouverture minimale, d'environ 12 à 15 points."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passo mostra un'apertura minima, da 12 a 15 punti circa."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスは、約12〜15点のミニマムのオープンを示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "패스는 약 12~15점의 최소 오프닝을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass viser en minimumsåpning på omtrent 12 til 15 poeng."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas toont een minimale opening, ongeveer 12 tot 15 punten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пас показывает минимальное открытие, примерно от 12 до 15 очков."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass visar en minimiöppning, ungefär 12 till 15 poäng."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "พาสแสดงการเปิดขั้นต่ำ ราว 12 ถึง 15 แต้ม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas, yaklaşık 12 ile 15 puanlık minimum bir açışı gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "派司表示最低限度的開叫，約 12 到 15 點。"
+          }
+        }
+      }
+    },
+    "Inviting with %@ shows a medium opening, about 16 to 18 points.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At invitere med %@ viser en mellemstærk åbning på cirka 16 til 18 point."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Einladung mit %@ zeigt eine mittlere Eröffnung mit etwa 16 bis 18 Punkten."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η πρόσκληση με %@ δείχνει μέτριο άνοιγμα, περίπου 16 έως 18 πόντους."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitar con %@ muestra una apertura media, de unos 16 a 18 puntos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviter avec %@ montre une ouverture moyenne, d'environ 16 à 18 points."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitare con %@ mostra un'apertura media, da 16 a 18 punti circa."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@にレイズして招待すると、約16〜18点のミディアムのオープンを示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@로 초대하면 약 16~18점의 중간 오프닝을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Å invitere med %@ viser en middels åpning på omtrent 16 til 18 poeng."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uitnodigen met %@ toont een middelmatige opening, ongeveer 16 tot 18 punten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приглашение заявкой %@ показывает среднее открытие, примерно от 16 до 18 очков."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En inbjudan med %@ visar en medelstark öppning, ungefär 16 till 18 poäng."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การเชิญด้วย %@ แสดงการเปิดระดับกลาง ราว 16 ถึง 18 แต้ม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ile davet etmek, yaklaşık 16 ile 18 puanlık orta bir açışı gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用 %@ 邀叫，表示中等開叫，約 16 到 18 點。"
+          }
+        }
+      }
+    },
+    "Bidding %@ needs about 19 or more points opposite a simple raise.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldingen %@ kræver cirka 19 point eller flere over for en simpel hævning."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ zu bieten braucht etwa 19 oder mehr Punkte gegenüber einer einfachen Erhöhung."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η δήλωση %@ θέλει περίπου 19 πόντους ή περισσότερους απέναντι σε απλή ανύψωση."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cantar %@ necesita unos 19 puntos o más frente a un apoyo simple."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annoncer %@ demande environ 19 points ou plus face à un soutien simple."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dichiarare %@ richiede circa 19 punti o più di fronte a un appoggio semplice."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@とビッドするには、シンプルレイズを受けた場合、約19点以上が必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@를 비드하려면 단순 레이즈를 받았을 때 약 19점 이상이 필요해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Å melde %@ krever omtrent 19 poeng eller mer mot en enkel heving."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bieden vraagt ongeveer 19 of meer punten tegenover eenvoudige steun."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявка %@ требует примерно 19 очков и больше при простой поддержке партнёра."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Att buda %@ kräver ungefär 19 poäng eller mer mot en enkel höjning."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การบิด %@ ต้องมีราว 19 แต้มขึ้นไป เมื่อคู่เรสธรรมดา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ konuşmak, basit bir yükseltmeye karşı yaklaşık 19 veya daha fazla puan gerektirir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "叫 %@ 需要約 19 點或以上，才夠面對簡單加叫。"
+          }
+        }
+      }
+    },
+    "Partner's new suit is forcing, so you must bid again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makkers nye farve er rundekrav, så du skal melde igen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die neue Farbe deines Partners ist forcierend, also musst du noch einmal bieten."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το νέο χρώμα του συμπαίκτη είναι αναγκαστικό, οπότε πρέπει να δηλώσετε ξανά."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El palo nuevo de tu pareja es forzante, así que debes volver a cantar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La nouvelle couleur de votre partenaire est forcing, donc vous devez réenchérir."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il nuovo seme del compagno è forzante, quindi devi dichiarare ancora."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パートナーの新しいスートはフォーシングなので、もう一度ビッドしなければなりません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "파트너의 새 수트는 강제라서 다시 비드해야 해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makkers nye farge er rundekrav, så du må melde igjen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De nieuwe kleur van partner is forcing, dus je moet nog een keer bieden."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новая масть партнёра форсирует, поэтому вы должны заявить ещё раз."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partnerns nya färg är krav, så du måste buda igen."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ชุดใหม่ของคู่เป็นการบังคับ คุณจึงต้องบิดอีกครั้ง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ortağınızın yeni rengi forsingdir, bu yüzden yeniden konuşmanız gerekir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同伴的新花色是逼叫，所以你必須再叫一次。"
+          }
+        }
+      }
+    },
+    "Raising to 2♠ needs four spades, because partner may hold only four.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En hævning til 2♠ kræver fire spar, for makker har måske kun fire."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Erhöhung auf 2♠ braucht vier Pik, denn dein Partner hat vielleicht nur vier."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η ανύψωση σε 2♠ θέλει τέσσερις πίκες, γιατί ο συμπαίκτης μπορεί να έχει μόνο τέσσερις."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apoyar a 2♠ necesita cuatro picas, porque tu pareja puede tener solo cuatro."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soutenir à 2♠ demande quatre piques, car votre partenaire n'en a peut-être que quatre."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appoggiare a 2♠ richiede quattro picche, perché il compagno potrebbe averne solo quattro."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♠へのレイズにはスペードが4枚必要です。パートナーは4枚しか持っていないかもしれないからです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♠로 레이즈하려면 스페이드 4장이 필요해요. 파트너가 4장만 가졌을 수도 있기 때문이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En heving til 2♠ krever fire spar, for makker kan ha bare fire."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steunen naar 2♠ vraagt vier schoppen, want partner heeft misschien maar vier."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поддержка до 2♠ требует четырёх пик, ведь у партнёра может быть всего четыре."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En höjning till 2♠ kräver fyra spader, eftersom partnern kan ha bara fyra."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การเรสเป็น 2♠ ต้องมีโพดำสี่ใบ เพราะคู่อาจมีแค่สี่ใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♠ yükseltmesi dört maça gerektirir, çünkü ortağınızda yalnızca dört olabilir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加叫到 2♠ 需要四張黑桃，因為同伴可能只有四張。"
+          }
+        }
+      }
+    },
+    "Without four spades, rebidding 2♥ promises six or more hearts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uden fire spar lover en gentagelse af 2♥ seks eller flere hjerter."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohne vier Pik verspricht das erneute Bieten von 2♥ sechs oder mehr Coeur."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χωρίς τέσσερις πίκες, η νέα δήλωση 2♥ υπόσχεται έξι ή περισσότερες κούπες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin cuatro picas, repetir 2♥ promete seis o más corazones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans quatre piques, redemander 2♥ promet six cœurs ou plus."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senza quattro picche, ridichiarare 2♥ promette sei o più cuori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スペードが4枚ない場合、2♥のリビッドはハートが6枚以上あることを約束します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스페이드가 4장 없을 때 2♥로 리비드하면 하트 6장 이상을 약속해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uten fire spar lover en ny melding av 2♥ seks eller flere hjerter."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zonder vier schoppen belooft opnieuw 2♥ bieden zes of meer harten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Без четырёх пик повторная заявка 2♥ обещает шесть и больше червей."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utan fyra spader lovar ett nytt bud på 2♥ sex eller fler hjärter."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ถ้าไม่มีโพดำสี่ใบ การรีบิด 2♥ สัญญาว่ามีโพแดงหกใบขึ้นไป"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dört maçanız yoksa 2♥ ile yeniden konuşmak altı veya daha fazla kupa vaat eder."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沒有四張黑桃時，再叫 2♥ 表示有六張或以上的紅心。"
+          }
+        }
+      }
+    },
+    "1NT shows a balanced hand without four spades or six hearts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT viser en jævn hånd uden fire spar eller seks hjerter."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT zeigt eine ausgeglichene Hand ohne vier Pik und ohne sechs Coeur."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1NT δείχνει ισοκατανεμημένο χέρι χωρίς τέσσερις πίκες ή έξι κούπες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT muestra una mano equilibrada sin cuatro picas ni seis corazones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT montre une main régulière sans quatre piques ni six cœurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT mostra una mano bilanciata senza quattro picche né sei cuori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NTは、スペードが4枚未満、ハートが6枚未満のバランス型の手を示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT는 스페이드 4장도 하트 6장도 없는 균형형 손을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT viser en balansert hånd uten fire spar eller seks hjerter."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT toont een evenwichtige hand zonder vier schoppen of zes harten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT показывает сбалансированную руку без четырёх пик и без шести червей."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT visar en balanserad hand utan fyra spader eller sex hjärter."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT แสดงมือสมดุลที่ไม่มีโพดำสี่ใบและไม่มีโพแดงหกใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT, dört maçası ve altı kupası olmayan dengeli bir eli gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT 表示平均牌型，沒有四張黑桃，也沒有六張紅心。"
+          }
+        }
+      }
+    },
+    "2♣ shows four or more clubs in an unbalanced hand without four spades or six hearts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ viser fire eller flere klør i en ujævn hånd uden fire spar eller seks hjerter."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ zeigt vier oder mehr Treff in einer unausgeglichenen Hand ohne vier Pik und ohne sechs Coeur."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 2♣ δείχνει τέσσερα ή περισσότερα σπαθιά σε μη ισοκατανεμημένο χέρι χωρίς τέσσερις πίκες ή έξι κούπες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ muestra cuatro o más tréboles en una mano no equilibrada, sin cuatro picas ni seis corazones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ montre quatre trèfles ou plus dans une main irrégulière, sans quatre piques ni six cœurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ mostra quattro o più fiori in una mano non bilanciata, senza quattro picche né sei cuori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣は、スペードが4枚未満、ハートが6枚未満で、クラブが4枚以上あるアンバランスな手を示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣는 스페이드 4장도 하트 6장도 없는 불균형 손에서 클럽 4장 이상을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ viser fire eller flere kløver i en ubalansert hånd uten fire spar eller seks hjerter."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ toont vier of meer klaveren in een onevenwichtige hand zonder vier schoppen of zes harten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ показывает четыре и больше треф в несбалансированной руке без четырёх пик и без шести червей."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ visar fyra eller fler klöver i en obalanserad hand utan fyra spader eller sex hjärter."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ แสดงดอกจิกสี่ใบขึ้นไปในมือไม่สมดุลที่ไม่มีโพดำสี่ใบและไม่มีโพแดงหกใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣, dört maçası ve altı kupası olmayan dengesiz bir elde dört veya daha fazla sinek gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♣ 表示非平均牌型，有四張或以上的梅花，沒有四張黑桃，也沒有六張紅心。"
+          }
+        }
+      }
+    },
+    "2♦ shows four or more diamonds in an unbalanced hand without four spades or six hearts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ viser fire eller flere ruder i en ujævn hånd uden fire spar eller seks hjerter."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ zeigt vier oder mehr Karo in einer unausgeglichenen Hand ohne vier Pik und ohne sechs Coeur."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 2♦ δείχνει τέσσερα ή περισσότερα καρά σε μη ισοκατανεμημένο χέρι χωρίς τέσσερις πίκες ή έξι κούπες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ muestra cuatro o más diamantes en una mano no equilibrada, sin cuatro picas ni seis corazones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ montre quatre carreaux ou plus dans une main irrégulière, sans quatre piques ni six cœurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ mostra quattro o più quadri in una mano non bilanciata, senza quattro picche né sei cuori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦は、スペードが4枚未満、ハートが6枚未満で、ダイヤが4枚以上あるアンバランスな手を示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦는 스페이드 4장도 하트 6장도 없는 불균형 손에서 다이아몬드 4장 이상을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ viser fire eller flere ruter i en ubalansert hånd uten fire spar eller seks hjerter."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ toont vier of meer ruiten in een onevenwichtige hand zonder vier schoppen of zes harten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ показывает четыре и больше бубен в несбалансированной руке без четырёх пик и без шести червей."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ visar fyra eller fler ruter i en obalanserad hand utan fyra spader eller sex hjärter."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ แสดงข้าวหลามตัดสี่ใบขึ้นไปในมือไม่สมดุลที่ไม่มีโพดำสี่ใบและไม่มีโพแดงหกใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦, dört maçası ve altı kupası olmayan dengesiz bir elde dört veya daha fazla karo gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♦ 表示非平均牌型，有四張或以上的方塊，沒有四張黑桃，也沒有六張紅心。"
+          }
+        }
+      }
+    },
+    "Pass shows a balanced minimum without six spades.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas viser en jævn minimumshånd uden seks spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass zeigt ein ausgeglichenes Minimum ohne sechs Pik."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το πάσο δείχνει ισοκατανεμημένο ελάχιστο χέρι χωρίς έξι πίκες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paso muestra un mínimo equilibrado sin seis picas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passe montre un minimum régulier sans six piques."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passo mostra un minimo bilanciato senza sei picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスは、スペードが6枚未満のバランス型のミニマムを示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "패스는 스페이드 6장이 없는 균형형 최소 손을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass viser et balansert minimum uten seks spar."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas toont een evenwichtig minimum zonder zes schoppen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пас показывает сбалансированный минимум без шести пик."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass visar ett balanserat minimum utan sex spader."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "พาสแสดงมือสมดุลขั้นต่ำที่ไม่มีโพดำหกใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas, altı maçası olmayan dengeli bir minimumu gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "派司表示平均牌型的最低限度，沒有六張黑桃。"
+          }
+        }
+      }
+    },
+    "Rebidding 2♠ promises six or more spades.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At melde 2♠ igen lover seks eller flere spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erneutes Bieten von 2♠ verspricht sechs oder mehr Pik."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η νέα δήλωση 2♠ υπόσχεται έξι ή περισσότερες πίκες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repetir 2♠ promete seis o más picas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redemander 2♠ promet six piques ou plus."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ridichiarare 2♠ promette sei o più picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♠のリビッドは、スペードが6枚以上あることを約束します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♠로 리비드하면 스페이드 6장 이상을 약속해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Å melde 2♠ på nytt lover seks eller flere spar."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opnieuw 2♠ bieden belooft zes of meer schoppen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Повторная заявка 2♠ обещает шесть и больше пик."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Att buda 2♠ igen lovar sex eller fler spader."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การรีบิด 2♠ สัญญาว่ามีโพดำหกใบขึ้นไป"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2♠ ile yeniden konuşmak altı veya daha fazla maça vaat eder."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再叫 2♠ 表示有六張或以上的黑桃。"
+          }
+        }
+      }
+    },
+    "%@ shows four or more cards in its suit, an unbalanced hand, and fewer than six spades.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ viser fire eller flere kort i sin farve, en ujævn hånd og færre end seks spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ zeigt vier oder mehr Karten in dieser Farbe, eine unausgeglichene Hand und weniger als sechs Pik."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το %@ δείχνει τέσσερα ή περισσότερα φύλλα στο χρώμα του, μη ισοκατανεμημένο χέρι και λιγότερες από έξι πίκες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ muestra cuatro o más cartas en su palo, una mano no equilibrada y menos de seis picas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ montre quatre cartes ou plus dans sa couleur, une main irrégulière et moins de six piques."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ mostra quattro o più carte nel suo seme, una mano non bilanciata e meno di sei picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@は、そのスートが4枚以上で、アンバランスな手、スペードが6枚未満であることを示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@는 그 수트 4장 이상, 불균형 손, 스페이드 6장 미만을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ viser fire eller flere kort i fargen sin, en ubalansert hånd og færre enn seks spar."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ toont vier of meer kaarten in die kleur, een onevenwichtige hand en minder dan zes schoppen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ показывает четыре и больше карт в своей масти, несбалансированную руку и меньше шести пик."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ visar fyra eller fler kort i sin färg, en obalanserad hand och färre än sex spader."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ แสดงไพ่ในชุดนั้นสี่ใบขึ้นไป มือไม่สมดุล และมีโพดำน้อยกว่าหกใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, kendi renginde dört veya daha fazla kart, dengesiz bir el ve altıdan az maça gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 表示該花色有四張或以上，牌型非平均，且黑桃少於六張。"
+          }
+        }
+      }
+    },
+    "Pass is for fewer than 6 points, counting dummy points when you hold three or more cards in partner's suit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas er for under 6 point, hvor støttepoint tæller med, når du har tre eller flere kort i makkers farve."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass ist für weniger als 6 Punkte, wobei Dummypunkte zählen, wenn du drei oder mehr Karten in der Farbe deines Partners hältst."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το πάσο είναι για λιγότερους από 6 πόντους, μετρώντας τους πόντους μορ όταν έχετε τρία ή περισσότερα φύλλα στο χρώμα του συμπαίκτη."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paso es para menos de 6 puntos, contando los puntos de muerto cuando tienes tres o más cartas en el palo de tu pareja."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passe convient à moins de 6 points, en comptant les points de mort quand vous avez trois cartes ou plus dans la couleur de votre partenaire."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passo è per meno di 6 punti, contando i punti del morto quando hai tre o più carte nel seme del compagno."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスは6点未満の手です。パートナーのスートが3枚以上あるときは、ダミーポイントで数えます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "패스는 6점 미만일 때예요. 파트너의 수트가 3장 이상이면 더미 포인트로 세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass er for færre enn 6 poeng, der blindemannspoeng regnes med når du har tre eller flere kort i makkers farge."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas is voor minder dan 6 punten, waarbij dummypunten meetellen als je drie of meer kaarten in de kleur van partner hebt."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пас подходит при менее чем 6 очках, причём очки болвана учитываются, если у вас три и больше карт в масти партнёра."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass är för färre än 6 poäng, där träkarlspoäng räknas när du har tre eller fler kort i partnerns färg."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "พาสใช้เมื่อมีน้อยกว่า 6 แต้ม โดยนับแต้มดัมมี่เมื่อคุณมีไพ่ในชุดของคู่สามใบขึ้นไป"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas 6 puandan azı içindir; ortağınızın renginde üç veya daha fazla kartınız varsa yer puanları da sayılır."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "少於 6 點時派司；如果同伴的花色有三張或以上，要把夢家點算進去。"
+          }
+        }
+      }
+    },
+    "A raise to %@ needs three or more cards in partner's suit and 6 to 9 points, counting dummy points.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En hævning til %@ kræver tre eller flere kort i makkers farve og 6 til 9 point, hvor støttepoint tæller med."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Erhöhung auf %@ braucht drei oder mehr Karten in der Farbe deines Partners und 6 bis 9 Punkte, wobei Dummypunkte zählen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η ανύψωση σε %@ θέλει τρία ή περισσότερα φύλλα στο χρώμα του συμπαίκτη και 6 έως 9 πόντους, μετρώντας τους πόντους μορ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un apoyo a %@ necesita tres o más cartas en el palo de tu pareja y de 6 a 9 puntos, contando los puntos de muerto."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un soutien à %@ demande trois cartes ou plus dans la couleur de votre partenaire et 6 à 9 points, en comptant les points de mort."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un appoggio a %@ richiede tre o più carte nel seme del compagno e da 6 a 9 punti, contando i punti del morto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@へのレイズには、パートナーのスートが3枚以上あり、ダミーポイントで数えて6〜9点が必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@로 레이즈하려면 파트너의 수트가 3장 이상이고, 더미 포인트로 세어 6~9점이 필요해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En heving til %@ krever tre eller flere kort i makkers farge og 6 til 9 poeng, der blindemannspoeng regnes med."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steun naar %@ vraagt drie of meer kaarten in de kleur van partner en 6 tot 9 punten, waarbij dummypunten meetellen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поддержка до %@ требует трёх и больше карт в масти партнёра и от 6 до 9 очков, считая очки болвана."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En höjning till %@ kräver tre eller fler kort i partnerns färg och 6 till 9 poäng, där träkarlspoäng räknas."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การเรสเป็น %@ ต้องมีไพ่ในชุดของคู่สามใบขึ้นไปและ 6 ถึง 9 แต้ม โดยนับแต้มดัมมี่"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ yükseltmesi, ortağınızın renginde üç veya daha fazla kart ve yer puanları sayılarak 6 ile 9 puan gerektirir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加叫到 %@ 需要同伴的花色有三張或以上，並有 6 到 9 點（含夢家點）。"
+          }
+        }
+      }
+    },
+    "A jump to %@ needs four or more cards in partner's suit and about 11 dummy points.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et spring til %@ kræver fire eller flere kort i makkers farve og cirka 11 støttepoint."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Sprung auf %@ braucht vier oder mehr Karten in der Farbe deines Partners und etwa 11 Dummypunkte."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το άλμα σε %@ θέλει τέσσερα ή περισσότερα φύλλα στο χρώμα του συμπαίκτη και περίπου 11 πόντους μορ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un salto a %@ necesita cuatro o más cartas en el palo de tu pareja y unos 11 puntos de muerto."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un saut à %@ demande quatre cartes ou plus dans la couleur de votre partenaire et environ 11 points de mort."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un salto a %@ richiede quattro o più carte nel seme del compagno e circa 11 punti del morto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@へのジャンプには、パートナーのスートが4枚以上あり、ダミーポイントで約11点が必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@로 점프하려면 파트너의 수트가 4장 이상이고 더미 포인트가 약 11점이어야 해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et hopp til %@ krever fire eller flere kort i makkers farge og omtrent 11 blindemannspoeng."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een sprong naar %@ vraagt vier of meer kaarten in de kleur van partner en ongeveer 11 dummypunten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прыжок до %@ требует четырёх и больше карт в масти партнёра и примерно 11 очков болвана."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ett hopp till %@ kräver fyra eller fler kort i partnerns färg och ungefär 11 träkarlspoäng."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การกระโดดไป %@ ต้องมีไพ่ในชุดของคู่สี่ใบขึ้นไปและราว 11 แต้มดัมมี่"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sıçraması, ortağınızın renginde dört veya daha fazla kart ve yaklaşık 11 yer puanı gerektirir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳叫到 %@ 需要同伴的花色有四張或以上，並有約 11 個夢家點。"
+          }
+        }
+      }
+    },
+    "1♠ needs four or more spades and 6 or more points. With four or more hearts, raise partner first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ kræver fire eller flere spar og 6 eller flere point. Har du fire eller flere hjerter, så hæv først makkers farve."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ braucht vier oder mehr Pik und 6 oder mehr Punkte. Mit vier oder mehr Coeur erhöhe zuerst die Farbe deines Partners."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1♠ θέλει τέσσερις ή περισσότερες πίκες και 6 ή περισσότερους πόντους. Με τέσσερις ή περισσότερες κούπες, ανυψώστε πρώτα το χρώμα του συμπαίκτη."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ necesita cuatro o más picas y 6 o más puntos. Con cuatro o más corazones, apoya primero a tu pareja."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ demande quatre piques ou plus et 6 points ou plus. Avec quatre cœurs ou plus, soutenez d'abord votre partenaire."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ richiede quattro o più picche e 6 o più punti. Con quattro o più cuori, appoggia prima il compagno."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠にはスペードが4枚以上と、6点以上が必要です。ハートが4枚以上あるなら、先にパートナーをレイズします。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠에는 스페이드 4장 이상과 6점 이상이 필요해요. 하트가 4장 이상이면 먼저 파트너를 레이즈하세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ krever fire eller flere spar og 6 eller flere poeng. Med fire eller flere hjerter hever du makkers farge først."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ vraagt vier of meer schoppen en 6 of meer punten. Met vier of meer harten steun je eerst partner."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ требует четырёх и больше пик и 6 и больше очков. При четырёх и больше червях сначала поддержите партнёра."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ kräver fyra eller fler spader och 6 eller fler poäng. Med fyra eller fler hjärter höjer du partnerns färg först."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ ต้องมีโพดำสี่ใบขึ้นไปและ 6 แต้มขึ้นไป ถ้ามีโพแดงสี่ใบขึ้นไป ให้เรสคู่ก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ dört veya daha fazla maça ve 6 veya daha fazla puan gerektirir. Dört veya daha fazla kupanız varsa önce ortağınızı yükseltin."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ 需要四張或以上的黑桃，以及 6 點或以上。如果有四張或以上的紅心，先加叫同伴。"
+          }
+        }
+      }
+    },
+    "1NT shows 6 to 9 points, fewer than three hearts, and fewer than four spades.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT viser 6 til 9 point, færre end tre hjerter og færre end fire spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT zeigt 6 bis 9 Punkte, weniger als drei Coeur und weniger als vier Pik."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1NT δείχνει 6 έως 9 πόντους, λιγότερες από τρεις κούπες και λιγότερες από τέσσερις πίκες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT muestra de 6 a 9 puntos, menos de tres corazones y menos de cuatro picas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT montre 6 à 9 points, moins de trois cœurs et moins de quatre piques."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT mostra da 6 a 9 punti, meno di tre cuori e meno di quattro picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NTは、6〜9点で、ハートが3枚未満、スペードが4枚未満であることを示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT는 6~9점에 하트 3장 미만, 스페이드 4장 미만을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT viser 6 til 9 poeng, færre enn tre hjerter og færre enn fire spar."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT toont 6 tot 9 punten, minder dan drie harten en minder dan vier schoppen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT показывает от 6 до 9 очков, меньше трёх червей и меньше четырёх пик."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT visar 6 till 9 poäng, färre än tre hjärter och färre än fyra spader."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT แสดง 6 ถึง 9 แต้ม โพแดงน้อยกว่าสามใบ และโพดำน้อยกว่าสี่ใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT, 6 ile 9 puan, üçten az kupa ve dörtten az maça gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT 表示 6 到 9 點，紅心少於三張，黑桃少於四張。"
+          }
+        }
+      }
+    },
+    "1NT shows 6 to 9 points and fewer than three spades.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT viser 6 til 9 point og færre end tre spar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT zeigt 6 bis 9 Punkte und weniger als drei Pik."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το 1NT δείχνει 6 έως 9 πόντους και λιγότερες από τρεις πίκες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT muestra de 6 a 9 puntos y menos de tres picas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT montre 6 à 9 points et moins de trois piques."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT mostra da 6 a 9 punti e meno di tre picche."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NTは、6〜9点で、スペードが3枚未満であることを示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT는 6~9점에 스페이드 3장 미만을 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT viser 6 til 9 poeng og færre enn tre spar."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT toont 6 tot 9 punten en minder dan drie schoppen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT показывает от 6 до 9 очков и меньше трёх пик."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT visar 6 till 9 poäng och färre än tre spader."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT แสดง 6 ถึง 9 แต้ม และโพดำน้อยกว่าสามใบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT, 6 ile 9 puan ve üçten az maça gösterir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1NT 表示 6 到 9 點，黑桃少於三張。"
+          }
+        }
+      }
+    },
+    "Over 1♥, a new suit at the two level needs 11 or more points, fewer than three hearts, fewer than four spades, and your longest suit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 1♥ kræver en ny farve på to-trinnet 11 point eller flere, færre end tre hjerter, færre end fire spar og din længste farve."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über 1♥ braucht eine neue Farbe auf der Zweierstufe 11 oder mehr Punkte, weniger als drei Coeur, weniger als vier Pik und deine längste Farbe."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μετά το 1♥, ένα νέο χρώμα στο επίπεδο των δύο θέλει 11 ή περισσότερους πόντους, λιγότερες από τρεις κούπες, λιγότερες από τέσσερις πίκες και το μακρύτερο χρώμα σας."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre 1♥, un palo nuevo al nivel de dos necesita 11 o más puntos, menos de tres corazones, menos de cuatro picas y tu palo más largo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sur 1♥, une nouvelle couleur au palier de deux demande 11 points ou plus, moins de trois cœurs, moins de quatre piques et votre plus longue couleur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopo 1♥, un nuovo seme al livello di due richiede 11 o più punti, meno di tre cuori, meno di quattro picche e il tuo seme più lungo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥に対する2レベルの新しいスートには、11点以上、ハート3枚未満、スペード4枚未満、そして自分の最も長いスートが必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ 뒤에 2레벨 새 수트를 비드하려면 11점 이상, 하트 3장 미만, 스페이드 4장 미만이고 가장 긴 수트여야 해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 1♥ krever en ny farge på to-nivået 11 poeng eller mer, færre enn tre hjerter, færre enn fire spar og din lengste farge."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na 1♥ vraagt een nieuwe kleur op het tweeniveau 11 of meer punten, minder dan drie harten, minder dan vier schoppen en je langste kleur."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "После 1♥ новая масть на втором уровне требует 11 и больше очков, меньше трёх червей, меньше четырёх пик и вашей самой длинной масти."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Över 1♥ kräver en ny färg på tvånivån 11 poäng eller mer, färre än tre hjärter, färre än fyra spader och din längsta färg."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "หลัง 1♥ ชุดใหม่ที่ระดับสองต้องมี 11 แต้มขึ้นไป โพแดงน้อยกว่าสามใบ โพดำน้อยกว่าสี่ใบ และเป็นชุดที่ยาวที่สุดของคุณ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♥ üzerine iki seviyesinde yeni bir renk, 11 veya daha fazla puan, üçten az kupa, dörtten az maça ve en uzun renginizi gerektirir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同伴開 1♥ 後，二階的新花色需要 11 點或以上、紅心少於三張、黑桃少於四張，並且是你最長的花色。"
+          }
+        }
+      }
+    },
+    "Over 1♠, a new suit at the two level needs 11 or more points, fewer than three spades, and your longest suit. 2♥ also needs five hearts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 1♠ kræver en ny farve på to-trinnet 11 point eller flere, færre end tre spar og din længste farve. 2♥ kræver også fem hjerter."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über 1♠ braucht eine neue Farbe auf der Zweierstufe 11 oder mehr Punkte, weniger als drei Pik und deine längste Farbe. 2♥ braucht außerdem fünf Coeur."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μετά το 1♠, ένα νέο χρώμα στο επίπεδο των δύο θέλει 11 ή περισσότερους πόντους, λιγότερες από τρεις πίκες και το μακρύτερο χρώμα σας. Το 2♥ θέλει επίσης πέντε κούπες."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre 1♠, un palo nuevo al nivel de dos necesita 11 o más puntos, menos de tres picas y tu palo más largo. 2♥ también necesita cinco corazones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sur 1♠, une nouvelle couleur au palier de deux demande 11 points ou plus, moins de trois piques et votre plus longue couleur. 2♥ demande aussi cinq cœurs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopo 1♠, un nuovo seme al livello di due richiede 11 o più punti, meno di tre picche e il tuo seme più lungo. 2♥ richiede anche cinque cuori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠に対する2レベルの新しいスートには、11点以上、スペード3枚未満、そして自分の最も長いスートが必要です。2♥にはハート5枚も必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ 뒤에 2레벨 새 수트를 비드하려면 11점 이상, 스페이드 3장 미만이고 가장 긴 수트여야 해요. 2♥는 하트 5장도 필요해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 1♠ krever en ny farge på to-nivået 11 poeng eller mer, færre enn tre spar og din lengste farge. 2♥ krever også fem hjerter."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na 1♠ vraagt een nieuwe kleur op het tweeniveau 11 of meer punten, minder dan drie schoppen en je langste kleur. 2♥ vraagt ook vijf harten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "После 1♠ новая масть на втором уровне требует 11 и больше очков, меньше трёх пик и вашей самой длинной масти. Для 2♥ также нужно пять червей."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Över 1♠ kräver en ny färg på tvånivån 11 poäng eller mer, färre än tre spader och din längsta färg. 2♥ kräver också fem hjärter."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "หลัง 1♠ ชุดใหม่ที่ระดับสองต้องมี 11 แต้มขึ้นไป โพดำน้อยกว่าสามใบ และเป็นชุดที่ยาวที่สุดของคุณ 2♥ ต้องมีโพแดงห้าใบด้วย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1♠ üzerine iki seviyesinde yeni bir renk, 11 veya daha fazla puan, üçten az maça ve en uzun renginizi gerektirir. 2♥ için ayrıca beş kupa gerekir."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同伴開 1♠ 後，二階的新花色需要 11 點或以上、黑桃少於三張，並且是你最長的花色。2♥ 還需要五張紅心。"
+          }
+        }
+      }
+    },
+    "Jumping straight to %@ is a weak raise: five or more cards in partner's suit and fewer than 10 high-card points.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et spring direkte til %@ er en svag støtte: fem eller flere kort i makkers farve og færre end 10 honnørpoint."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der direkte Sprung auf %@ ist eine schwache Hebung: fünf oder mehr Karten in der Farbe deines Partners und weniger als 10 Figurenpunkte."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το απευθείας άλμα σε %@ είναι αδύναμη υποστήριξη: πέντε ή περισσότερα φύλλα στο χρώμα του συμπαίκτη και λιγότεροι από 10 πόντοι τιμής."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saltar directamente a %@ es un apoyo débil: cinco o más cartas en el palo de tu pareja y menos de 10 puntos de honor."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sauter directement à %@ est un soutien faible : cinq cartes ou plus dans la couleur de votre partenaire et moins de 10 points H."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saltare direttamente a %@ è un appoggio debole: cinque o più carte nel seme del compagno e meno di 10 punti onori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "いきなり%@へジャンプするのは弱いレイズです。パートナーのスートが5枚以上で、ハイカードポイントは10点未満です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "바로 %@로 점프하는 것은 약한 레이즈예요. 파트너의 수트가 5장 이상이고 HCP가 10점 미만이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et hopp rett til %@ er en svak støtte: fem eller flere kort i makkers farge og færre enn 10 honnørpoeng."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Direct naar %@ springen is een zwakke steun: vijf of meer kaarten in de kleur van partner en minder dan 10 honneurpunten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прыжок сразу до %@ это слабая поддержка: пять и больше карт в масти партнёра и меньше 10 очков за старшие карты."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Att hoppa direkt till %@ är ett svagt stöd: fem eller fler kort i partnerns färg och färre än 10 honnörspoäng."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การกระโดดไป %@ ทันทีคือการเรสแบบอ่อน: มีไพ่ในชุดของคู่ห้าใบขึ้นไปและแต้มไพ่สูงน้อยกว่า 10 แต้ม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doğrudan %@ sıçraması zayıf bir destektir: ortağınızın renginde beş veya daha fazla kart ve 10'dan az onör puanı."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直接跳到 %@ 是弱的加叫：同伴的花色有五張或以上，且大牌點少於 10 點。"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

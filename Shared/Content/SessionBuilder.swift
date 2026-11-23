@@ -200,7 +200,8 @@ enum SessionBuilder {
                             answerIndex: question.answerIndex,
                             explanation: question.explanation,
                             sourceLabel: room.name,
-                            roomID: room.id
+                            roomID: room.id,
+                            choiceNotes: question.choiceNotes
                         )
                     }
                 case .handMatch(let questions):

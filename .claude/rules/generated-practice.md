@@ -101,4 +101,14 @@ Name Your Opening, Endless and Timed openings, the Quick Session and the Bridge
 Minute. `QuickItem.choiceNotes` carries the notes and `SessionBuilder.prepared`
 shuffles them with the labels. `MissNoteTests` checks every suit note against
 the cards directly: a note that states a rule the hand actually meets would teach
-the wrong thing. Responding and rebid questions have no notes yet.
+the wrong thing.
+
+Responding and rebid questions carry notes too: `BiddingEngine.missNote(picked:answer:in:)`
+states what the picked call needs, with the engine's earlier priorities folded in
+("Without four spades, rebidding 2♥ promises six or more hearts"), so any hand
+the engine grades fails the note for every other candidate. Endless and Timed
+responses and rebids, the two authored bidding quizzes (`QuizQuestion.choiceNotes`,
+mapped through the quiz shuffle in `QuizDrillView`) and the Quick Session pool
+use them. `BiddingEngineTests.testEveryWrongCallHasANoteTheHandFails` checks each
+note against a predicate written from its words, over dealt hands for every
+situation and answer. Change a note's wording and its predicate together.

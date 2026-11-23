@@ -18,7 +18,8 @@ struct BiddingQuestion: Sendable {
             cards: cards.racked,
             choices: choices.map(\.authoredLabel),
             answerIndex: choices.firstIndex(of: answer) ?? 0,
-            explanation: explanation
+            explanation: explanation,
+            choiceNotes: BiddingEngine.missNotes(choices: choices, answer: answer, in: situation)
         )
     }
 }

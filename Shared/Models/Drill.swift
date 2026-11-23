@@ -49,15 +49,25 @@ struct QuizQuestion: Identifiable, Sendable {
     let choices: [String]
     let answerIndex: Int
     let explanation: String
+    /// Parallel to `choices`: why each wrong pick is wrong, nil where there is
+    /// no note. Already localized; only engine-backed questions carry them.
+    let choiceNotes: [String?]
 
     init(id: String, prompt: String, cards: [BridgeCard] = [], choices: [String], answerIndex: Int,
-         explanation: String) {
+         explanation: String, choiceNotes: [String?] = []) {
         self.id = id
         self.prompt = prompt.localizedContent
         self.cards = cards
         self.choices = choices.map(\.localizedContent)
         self.answerIndex = answerIndex
         self.explanation = explanation.localizedContent
+        self.choiceNotes = choiceNotes
+    }
+
+    func note(forPick pick: Int) -> String? {
+        guard pick != answerIndex, choiceNotes.indices.contains(pick) else { return nil }
+        guard let note = choiceNotes[pick], !note.isEmpty else { return nil }
+        return note
     }
 }
 

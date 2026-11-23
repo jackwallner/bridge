@@ -31,6 +31,14 @@ struct QuizDrillView: View {
         ChoiceShuffle.shuffledChoices(labels: question.choices, answerIndex: question.answerIndex, seed: question.id)
     }
 
+    /// Only engine-backed bidding questions carry notes; the rest show none.
+    private var missNote: MissNote? {
+        guard let selection, selection != shuffled.answerIndex else { return nil }
+        let perm = ChoiceShuffle.permutation(count: question.choices.count, seed: question.id)
+        guard perm.indices.contains(selection), let reason = question.note(forPick: perm[selection]) else { return nil }
+        return MissNote(pickedLabel: shuffled.labels[selection], reason: reason)
+    }
+
     private var drillBody: some View {
         VStack(spacing: 16) {
             ProgressView(value: Double(index), total: Double(questions.count))
@@ -40,7 +48,8 @@ struct QuizDrillView: View {
                     prompt: question.prompt,
                     cards: question.cards,
                     explanation: question.explanation,
-                    answered: answered
+                    answered: answered,
+                    missNote: missNote
                 ) {
                     ChoiceList(labels: shuffled.labels, selection: selection, answerIndex: shuffled.answerIndex) { pick in
                         select(pick)
