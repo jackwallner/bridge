@@ -16,6 +16,10 @@ Developer notes and historical audits for this repository. The published site re
 - [2026-11-20-bug-ux.html](audits/2026-11-20-bug-ux.html): Bug and UX catalog, 2026-11-20: 9 bugs (1 medium, 8 low; 6 confirmed), 15 UX items, October audit items rechecked. Catalog only, nothing fixed.
 - [2026-11-20-low-bug-fixes.md](audits/2026-11-20-low-bug-fixes.md): Fixes for the low bugs B2 to B9: 7 fixed, 1 disproven (B7), final suite 200 passed
 
+## Design
+
+- [2026-11-23-play-a-hand.md](design/2026-11-23-play-a-hand.md): Play a Hand first slice: South declares four authored deals, coached calls and card decisions, one free hand a day
+
 ## Research
 
 - [2026-11-22-mahj-parity.md](research/2026-11-22-mahj-parity.md): Mahj feature parity matrix for Bridge, Skat and Cribbage, with the build order
