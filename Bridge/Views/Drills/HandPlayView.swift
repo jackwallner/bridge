@@ -415,6 +415,8 @@ private struct FannedHand: View {
                         }
                         .offset(x: CGFloat(index) * step, y: enabled ? -6 : 0)
                         .onTapGesture { if enabled { onTap?(card) } }
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel(card.spokenName)
                         .accessibilityAddTraits(enabled ? .isButton : [])
                         .accessibilityIdentifier(enabled ? "hand-card-\(card.shortLabel)" : "")
                 }

@@ -162,7 +162,7 @@ final class ReleaseJourneysUITests: XCTestCase {
         next.tap()
 
         // The table finishes the auction and West leads; South decides trick one.
-        let ace = app.descendants(matching: .any)["hand-card-A♠"]
+        let ace = app.descendants(matching: .any).matching(identifier: "hand-card-A♠").firstMatch
         XCTAssertTrue(ace.waitForExistence(timeout: 30))
         QA.checkpoint(app, "hand-decision")
         // Cards overlap: tap the uncovered left edge.
