@@ -47,6 +47,31 @@ enum WhatsNew {
 
     static let releases: [WhatsNewRelease] = [
         WhatsNewRelease(
+            version: "1.3.1",
+            headline: "Play a whole hand",
+            items: [
+                WhatsNewItem(
+                    id: "play-a-hand",
+                    icon: "suit.spade.fill",
+                    title: "Play a Hand",
+                    body: "Bid and play a full deal as declarer, with a coach on every key call and card. One free hand a day."
+                ),
+                WhatsNewItem(
+                    id: "unlimited-hands",
+                    icon: "infinity",
+                    title: "Unlimited hands",
+                    body: "Play as many coached hands as you like.",
+                    isPlus: true
+                ),
+                WhatsNewItem(
+                    id: "glossary",
+                    icon: "book.closed.fill",
+                    title: "Glossary",
+                    body: "Every bridge term in the app, explained in plain words."
+                ),
+            ]
+        ),
+        WhatsNewRelease(
             version: "1.3.0",
             headline: "Bidding past the opening",
             items: [

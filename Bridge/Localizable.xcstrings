@@ -18495,6 +18495,101 @@
         }
       }
     },
+    "Bid and play a full deal as declarer, with a coach on every key call and card. One free hand a day.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meld og spil et helt spil som spilfører, med en træner ved hver vigtig melding og hvert vigtigt kort. Én gratis hånd om dagen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reize und spiele ein ganzes Blatt als Alleinspieler, mit einem Coach bei jedem wichtigen Gebot und jeder wichtigen Karte. Eine kostenlose Hand pro Tag."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δηλώστε και παίξτε μια ολόκληρη μοιρασιά ως εκτελεστής, με προπονητή σε κάθε κρίσιμη δήλωση και φύλλο. Ένα δωρεάν χέρι την ημέρα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subasta y juega una mano completa como declarante, con un entrenador en cada canto y carta clave. Una mano gratis al día."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enchérissez et jouez une donne complète comme déclarant, avec un coach à chaque enchère et carte clé. Une donne gratuite par jour."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licita e gioca una smazzata completa come dichiarante, con un coach su ogni licita e carta chiave. Una mano gratis al giorno."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディクレアラーとして1ディールをビッドからプレイまで。大事なコールとカードごとにコーチが付きます。無料で1日1ハンド。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디클레어러로 한 딜을 비딩부터 플레이까지 해 보세요. 중요한 콜과 카드마다 코치가 함께해요. 하루 한 판 무료."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meld og spill et helt spill som spillefører, med en trener ved hver viktig melding og hvert viktig kort. Én gratis hånd om dagen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bied en speel een heel spel als leider, met een coach bij elk belangrijk bod en elke belangrijke kaart. Eén gratis hand per dag."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Торгуйтесь и разыгрывайте всю сдачу как разыгрывающий, с тренером на каждой важной заявке и карте. Одна бесплатная раздача в день."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bjud och spela en hel giv som spelförare, med en coach vid varje viktigt bud och kort. En gratis giv om dagen."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ประมูลและเล่นครบทั้งกระดานในฐานะผู้เล่นหลัก พร้อมโค้ชในทุกการประมูลและไพ่ที่สำคัญ เล่นฟรีวันละหนึ่งมือ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deklaran olarak bir eli baştan sona konuşun ve oynayın; her önemli konuşmada ve kartta bir koç yanınızda. Günde bir el ücretsiz."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以莊家身分完整叫牌並打完一副牌，每個關鍵叫品和出牌都有教練指導。每天可免費打一手。"
+          }
+        }
+      }
+    },
     "BY SKILL": {
       "extractionState": "manual",
       "localizations": {
@@ -30495,6 +30590,101 @@
           "stringUnit": {
             "state": "translated",
             "value": "所有入門房間永久免費"
+          }
+        }
+      }
+    },
+    "Every bridge term in the app, explained in plain words.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle bridgeudtryk i appen, forklaret i et enkelt sprog."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeder Bridge-Begriff der App, in einfachen Worten erklärt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κάθε όρος του μπριτζ στην εφαρμογή, εξηγημένος με απλά λόγια."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada término de bridge de la app, explicado con palabras sencillas."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque terme de bridge de l'app, expliqué simplement."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni termine del bridge nell'app, spiegato con parole semplici."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリに出てくるブリッジ用語を、やさしい言葉で解説。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱에 나오는 모든 브리지 용어를 쉬운 말로 풀어 드려요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle bridgeuttrykk i appen, forklart med enkle ord."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elke bridgeterm in de app, uitgelegd in gewone woorden."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все термины бриджа из приложения простыми словами."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alla bridgetermer i appen, förklarade med enkla ord."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ศัพท์บริดจ์ทุกคำในแอป อธิบายด้วยภาษาง่าย ๆ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulamadaki her briç terimi, sade bir dille açıklandı."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App 中的每個橋牌術語，都用淺白的話解釋。"
           }
         }
       }
@@ -53222,6 +53412,196 @@
         }
       }
     },
+    "Play a whole hand": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil en hel hånd"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine ganze Hand spielen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε ένα ολόκληρο χέρι"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juega una mano completa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez une donne entière"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca una mano intera"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1ハンドを最後までプレイ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 판을 끝까지 플레이"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill en hel hånd"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel een hele hand"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сыграйте раздачу целиком"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela en hel giv"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่นครบหนึ่งมือ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir eli baştan sona oynayın"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完整打一手牌"
+          }
+        }
+      }
+    },
+    "Play as many coached hands as you like.": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spil så mange hænder med træner, som du vil."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiele so viele Hände mit Coach, wie du willst."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παίξτε όσα χέρια θέλετε με προπονητή."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juega tantas manos guiadas como quieras."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jouez autant de donnes guidées que vous voulez."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gioca tutte le mani guidate che vuoi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コーチ付きのハンドを好きなだけ。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "코치와 함께 원하는 만큼 플레이하세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spill så mange hender med trener du vil."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel zoveel begeleide handen als je wilt."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Играйте сколько угодно раздач с тренером."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spela så många givar med coach du vill."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่นมือที่มีโค้ชได้มากเท่าที่ต้องการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İstediğiniz kadar koçlu el oynayın."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "想打幾手有教練指導的牌都可以。"
+          }
+        }
+      }
+    },
     "Play K♣": {
       "extractionState": "manual",
       "localizations": {
@@ -72883,6 +73263,101 @@
           "stringUnit": {
             "state": "translated",
             "value": "復原上一個答案"
+          }
+        }
+      }
+    },
+    "Unlimited hands": {
+      "extractionState": "manual",
+      "localizations": {
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ubegrænset antal hænder"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unbegrenzt viele Hände"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Απεριόριστα χέρια"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manos ilimitadas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donnes illimitées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mani illimitate"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハンド無制限"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "무제한 플레이"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ubegrenset antall hender"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Onbeperkt handen"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Без ограничений"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obegränsat med givar"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เล่นได้ไม่จำกัด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sınırsız el"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無限手牌"
           }
         }
       }
