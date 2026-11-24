@@ -22,7 +22,7 @@ Kartenrang, Figurenpunkte, Stiche, Trumpf, Kontrakte und wer am Tisch was tut.
 
 ### Die Eröffnung wählen
 
-Lesen Sie ein 13-Karten-Blatt und entscheiden Sie zwischen Passen, einer Farberöffnung und 1NT, im Rahmen von Standard American für Einsteiger.
+Lesen Sie ein 13-Karten-Blatt und entscheiden Sie zwischen Passen, einer Farberöffnung und 1NT, im Rahmen von Standard American für Einsteiger. Beantworten Sie dann die Eröffnung des Partners und wählen Sie Ihr zweites Gebot.
 
 ### Das Spiel planen
 
@@ -79,6 +79,8 @@ Die vier Einsteigerräume bleiben kostenlos. Bridge+ ist für Spieler, die mehr 
 **Zusätzliche Übungssets.** Ein zweites Set aus Blättern und Fragen in jedem Einsteigerraum, mit denselben Übungen, die Sie schon kennen.
 
 **Die Master Tables.** Konventionen, fortgeschrittenes Alleinspiel und Abwehr sowie Duplicate-Strategie, über das Jahr erweitert.
+
+**Übungsmodi.** Endlos-Training teilt jedes Mal ein neues Blatt aus, Fehler beheben holt Ihre Fehler in wachsenden Abständen zurück, und Zeit-Challenge, Bridge Minute und Spielabend-Vorbereitung halten die Gewohnheit zwischen den Spielen aufrecht.
 
 ### Technische Daten
 

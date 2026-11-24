@@ -22,7 +22,7 @@ Kart değeri, honör puanları, eller, koz, kontratlar ve masada kimin ne yaptı
 
 ### Açılış ihalesini seçin
 
-13 kartlık bir eli okuyun ve başlangıç düzeyinde Standard American çerçevesinde pas, bir renk açılışı ve 1NT arasında karar verin.
+13 kartlık bir eli okuyun ve başlangıç düzeyinde Standard American çerçevesinde pas, bir renk açılışı ve 1NT arasında karar verin. Ardından ortağınızın açılışına cevap verin ve ikinci konuşmanızı seçin.
 
 ### Oyunu planlayın
 
@@ -79,6 +79,8 @@ Dört başlangıç odası ücretsiz kalır. Bridge+, daha fazla tekrar ve daha f
 **Ek alıştırma setleri.** Her başlangıç odasında zaten bildiğiniz alıştırmalarla ikinci bir el ve soru seti.
 
 **Usta Masaları.** Konvansiyonlar, ileri deklaratör oyunu ve savunma ile duplicate stratejisi, yıl boyunca eklenerek büyür.
+
+**Alıştırma modları.** Sonsuz alıştırma her seferinde yeni bir el dağıtır, Hatalarımı düzelt yanlışlarınızı aralıklı bir düzenle geri getirir, Zamana karşı, Bridge Minute ve Briç gecesi hazırlığı ise oyunlar arasında alışkanlığı sürdürür.
 
 ### Teknik bilgiler
 

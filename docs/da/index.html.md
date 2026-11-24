@@ -22,7 +22,7 @@ Kortrang, højkortpoint, stik, trumf, kontrakter, og hvem der gør hvad ved bord
 
 ### Vælg åbningsmeldingen
 
-Læs en hånd på 13 kort og vælg mellem pas, en farveåbning og 1NT i en Standard American-ramme for begyndere.
+Læs en hånd på 13 kort og vælg mellem pas, en farveåbning og 1NT i en Standard American-ramme for begyndere. Svar derefter på makkers åbning og vælg din anden melding.
 
 ### Planlæg spillet
 
@@ -79,6 +79,8 @@ De fire begynderrum forbliver gratis. Bridge+ er til spillere, der vil have fler
 **Ekstra øvelsessæt.** Et andet sæt hænder og spørgsmål i hvert begynderrum med de samme øvelser, du allerede kender.
 
 **Master Tables.** Konventioner, avanceret spilførelse og forsvar og strategi i dupliceret bridge, udvidet i løbet af året.
+
+**Øvelsestilstande.** Endeløs træning deler en ny hånd hver gang, Ret mine fejl bringer dine fejl tilbage med mellemrum, og På tid, Bridge Minute og Klar til bridgeaften holder vanen i gang mellem spillene.
 
 ### Specifikationer
 

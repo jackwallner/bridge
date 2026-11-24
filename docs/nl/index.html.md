@@ -22,7 +22,7 @@ Kaartrang, honneurpunten, slagen, troef, contracten en wie wat doet aan tafel.
 
 ### Kies het openingsbod
 
-Lees een hand van 13 kaarten en kies tussen passen, een kleuropening en 1NT in een Standard American-kader voor beginners.
+Lees een hand van 13 kaarten en kies tussen passen, een kleuropening en 1NT in een Standard American-kader voor beginners. Antwoord daarna op de opening van je partner en kies je tweede bod.
 
 ### Plan het spel
 
@@ -79,6 +79,8 @@ De vier beginnersruimtes blijven gratis. Bridge+ is voor spelers die meer herhal
 **Extra oefensets.** Een tweede set handen en vragen in elke beginnersruimte, met dezelfde oefeningen die je al kent.
 
 **De Mastertafels.** Conventies, gevorderd spel als leider en verdediging, en strategie voor parenwedstrijden, het hele jaar door aangevuld.
+
+**Oefenstanden.** Eindeloos oefenen deelt elke keer een nieuwe hand, Mijn fouten herstellen brengt je fouten met tussenpozen terug, en Tijdrace, Bridge Minute en Speelavondvoorbereiding houden de gewoonte vol tussen de partijen door.
 
 ### Specificaties
 

@@ -22,7 +22,7 @@ Card rank, high-card points, tricks, trump, contracts, and who does what at the 
 
 ### Choose the opening bid
 
-Read a 13-card hand and decide between pass, a suit opening, and 1NT in a beginner Standard American framework.
+Read a 13-card hand and decide between pass, a suit opening, and 1NT in a beginner Standard American framework. Then answer partner's opening and choose your second bid.
 
 ### Plan the play
 
@@ -79,6 +79,8 @@ The four beginner rooms stay free. Bridge+ is for players who want more reps and
 **Extra practice sets.** A second set of hands and questions in every beginner room, using the same drills you already know.
 
 **The Master Tables.** Conventions, advanced declarer play and defense, and duplicate strategy, added to through the year.
+
+**Practice modes.** Endless Practice deals a new hand every time, Fix My Mistakes brings your misses back on a spaced schedule, and Timed Challenge, Bridge Minute and Game Night Prep keep the habit going between games.
 
 ### Specs
 

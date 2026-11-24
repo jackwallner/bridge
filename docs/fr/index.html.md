@@ -22,7 +22,7 @@ Valeur des cartes, points d'honneurs, levées, atout, contrats, et le rôle de c
 
 ### Choisir l'ouverture
 
-Lisez une main de 13 cartes et choisissez entre passer, ouvrir d'une couleur et ouvrir de 1SA, dans un cadre Standard American pour débutants.
+Lisez une main de 13 cartes et choisissez entre passer, ouvrir d'une couleur et ouvrir de 1SA, dans un cadre Standard American pour débutants. Répondez ensuite à l'ouverture du partenaire et choisissez votre redemande.
 
 ### Planifier le jeu
 
@@ -79,6 +79,8 @@ Les quatre salles pour débutants restent gratuites. Bridge+ s'adresse aux joueu
 **Séries d'entraînement supplémentaires.** Une deuxième série de mains et de questions dans chaque salle pour débutants, avec les mêmes exercices que vous connaissez déjà.
 
 **Les Master Tables.** Conventions, jeu en déclarant et défense avancés, et stratégie du duplicate, enrichis tout au long de l'année.
+
+**Modes d'entraînement.** Entraînement infini distribue une nouvelle main à chaque fois, Corriger mes erreurs ramène vos erreurs à intervalles espacés, et Défi chrono, Bridge Minute et Prépa soirée bridge entretiennent l'habitude entre les parties.
 
 ### Caractéristiques
 

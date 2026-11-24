@@ -22,7 +22,7 @@ Valore delle carte, punti onore, prese, atout, contratti e chi fa cosa al tavolo
 
 ### Scegli la dichiarazione d'apertura
 
-Leggi una mano di 13 carte e scegli tra passo, apertura a colore e 1NT, in un quadro Standard American per principianti.
+Leggi una mano di 13 carte e scegli tra passo, apertura a colore e 1NT, in un quadro Standard American per principianti. Poi rispondi all'apertura del compagno e scegli la tua seconda dichiarazione.
 
 ### Pianifica il gioco
 
@@ -79,6 +79,8 @@ Le quattro sale per principianti restano gratuite. Bridge+ è per chi vuole più
 **Set di esercizi extra.** Un secondo set di mani e domande in ogni sala per principianti, con gli stessi esercizi che già conosci.
 
 **I Master Tables.** Convenzioni, gioco avanzato come giocante e in difesa e strategia del duplicato, ampliati nel corso dell'anno.
+
+**Modalità di allenamento.** Allenamento infinito distribuisce una mano nuova ogni volta, Correggi gli errori riporta i tuoi errori a intervalli distanziati, e Sfida a tempo, Bridge Minute e Prepara la serata mantengono l'abitudine tra una partita e l'altra.
 
 ### Specifiche
 
