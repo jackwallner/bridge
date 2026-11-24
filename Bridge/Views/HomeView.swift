@@ -555,7 +555,6 @@ struct HomeView: View {
                             .font(.caption2.weight(.bold))
                     }
                     .foregroundStyle(Theme.inkTertiary)
-                    .accessibilityHidden(true)
                 }
             }
             .padding(.horizontal, 4)
@@ -874,7 +873,6 @@ struct MasteryRing: View {
                 .fixedSize()
         }
         .frame(minWidth: 46)
-        .accessibilityHidden(true)
     }
 }
 
