@@ -58,7 +58,7 @@ grading the player can check, ties never marked wrong, one free hand a day.
 
 ## Later slices
 
-Eight more deals (1.3.2, 2026-11-24), one lesson each: lead toward the king
+Eight more deals (added 2026-11-24, also in 1.3.1), one lesson each: lead toward the king
 in 2♥, unblock in 3NT, discard before trumps in 4♥, duck a round in 1NT, play
 for the drop in 4♠, finesse twice in 3NT, ruff high in 4♠, and take your nine
 tricks in 3NT. Their auctions add the 1♥-1♠ rebids (1NT and 2♥), the invite

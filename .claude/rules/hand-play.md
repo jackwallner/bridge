@@ -31,7 +31,7 @@ Design: `project-docs/design/2026-11-23-play-a-hand.md`.
 
 ## Adding a deal
 
-Twelve deals as of 1.3.2. `HandPlayStore` rotates by index, so append new
+Twelve deals, all in 1.3.1. `HandPlayStore` rotates by index, so append new
 deals to the end of `HandPlayContent.deals`; reordering moves players to a
 different deal.
 
