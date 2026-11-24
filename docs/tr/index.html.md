@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/tr/
 
 Bridge Trainer, iPhone ve iPad için bir briç ihale alıştırma uygulaması. İhale, deklaratör oyunu ve savunma hızlı alıştırmalar olarak, her cevabın arkasındaki mantıkla birlikte.
 
-iPhone · Dört alıştırma odası · Çevrimdışı çalışır
+iPhone · Android · Dört alıştırma odası · Çevrimdışı çalışır
 
 [Ücretsiz indir](https://apps.apple.com/tr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-tr&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer başlangıç düzeyinde bir Standard American çerçevesi öğret
 
 ## Masaya hazır oturun
 
-App Store'da ücretsiz. Dört alıştırma odası, hesap yok. Bridge+ isteğe bağlı.
+App Store ve Google Play'de ücretsiz. Dört alıştırma odası, hesap yok. Bridge+ isteğe bağlı.
 
 [Ücretsiz indir](https://apps.apple.com/tr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-tr&mt=8)

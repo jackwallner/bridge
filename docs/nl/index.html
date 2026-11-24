@@ -51,11 +51,11 @@
             "name": "Bridge Trainer: Learn & Bid",
             "description": "Bridge Trainer is een gratis app om bridge bieden te oefenen op iPhone en iPad. Hij helpt beginners contractbridge te leren met oefeningen van vijf minuten in vier ruimtes: kaartbasis, bieden in een Standard American-kader voor beginners, spel als leider en verdediging. Elk antwoord legt de redenering uit, en de app heeft geen account nodig en werkt offline.",
             "applicationCategory": "EducationalApplication",
-            "operatingSystem": "iOS 17+",
+            "operatingSystem": "iOS 17+, Android 8.0+",
             "url": "https://jackwallner.com/ios/bridge/nl/",
-            "downloadUrl": "https://apps.apple.com/nl/app/id6791026407",
-            "installUrl": "https://apps.apple.com/nl/app/id6791026407",
-            "sameAs": "https://apps.apple.com/nl/app/id6791026407",
+            "downloadUrl": ["https://apps.apple.com/nl/app/id6791026407", "https://play.google.com/store/apps/details?id=com.jackwallner.bridge"],
+            "installUrl": ["https://apps.apple.com/nl/app/id6791026407", "https://play.google.com/store/apps/details?id=com.jackwallner.bridge"],
+            "sameAs": ["https://apps.apple.com/nl/app/id6791026407", "https://play.google.com/store/apps/details?id=com.jackwallner.bridge"],
             "screenshot": [
                 "https://jackwallner.github.io/bridge/appstore-screenshot-01.png",
                 "https://jackwallner.github.io/bridge/appstore-screenshot-02.png",
@@ -590,6 +590,14 @@
             color: #087866;
         }
             #faq .more-info-section h2.faq-q { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; color: #6e6e73; margin-bottom: 12px; }
+.store-badges { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; }
+.store-badges.start { justify-content: flex-start; }
+.play-badge { display: inline-flex; transition: opacity 0.15s; }
+.play-badge:hover { opacity: 0.85; }
+.play-badge img { display: block; height: 46px; width: auto; }
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.nav-actions .play-badge img { height: 36px; }
+@media (max-width: 480px) { .nav-actions .play-badge { display: none; } }
 </style>
 </head>
 <body>
@@ -599,14 +607,16 @@
 <img src="../icon_64.webp" alt="" width="32" height="32">
 <span>Bridge Trainer</span>
 </a>
-<a class="nav-link" href="https://apps.apple.com/nl/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-nl&amp;mt=8">Download</a>
+<div class="nav-actions"><a class="nav-link" href="https://apps.apple.com/nl/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-nl&amp;mt=8">Download</a>
+<a class="play-badge" href="https://play.google.com/store/apps/details?id=com.jackwallner.bridge" rel="noopener"><img src="../google-play-badge.webp" alt="Ontdek het op Google Play" width="121" height="36"></a></div>
 </div>
 </nav>
 <section class="hero">
 <h1>Bridge, in <span>vijf minuten per dag</span></h1>
 <p class="tagline">Bridge Trainer is een app om bridge bieden te oefenen op iPhone en iPad. Bieden, spel als leider en verdediging als snelle oefeningen, met de redenering achter elk antwoord.</p>
-<p class="platforms">iPhone · Vier oefenruimtes · Werkt offline</p>
-<a class="download-btn" href="https://apps.apple.com/nl/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-nl&amp;mt=8">Gratis downloaden</a>
+<p class="platforms">iPhone · Android · Vier oefenruimtes · Werkt offline</p>
+<div class="store-badges"><a class="download-btn" href="https://apps.apple.com/nl/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-nl&amp;mt=8">Gratis downloaden</a>
+<a class="play-badge" href="https://play.google.com/store/apps/details?id=com.jackwallner.bridge" rel="noopener"><img src="../google-play-badge.webp" alt="Ontdek het op Google Play" width="155" height="46"></a></div>
 </section>
 <section class="showcase">
 <div class="showcase-scroll">
@@ -766,8 +776,9 @@
 </section>
 <section class="cta">
 <h2>Ga voorbereid aan tafel</h2>
-<p>Gratis in de App Store. Vier oefenruimtes, geen account. Bridge+ optioneel.</p>
-<a class="download-btn" href="https://apps.apple.com/nl/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-nl&amp;mt=8">Gratis downloaden</a>
+<p>Gratis in de App Store en Google Play. Vier oefenruimtes, geen account. Bridge+ optioneel.</p>
+<div class="store-badges"><a class="download-btn" href="https://apps.apple.com/nl/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-nl&amp;mt=8">Gratis downloaden</a>
+<a class="play-badge" href="https://play.google.com/store/apps/details?id=com.jackwallner.bridge" rel="noopener"><img src="../google-play-badge.webp" alt="Ontdek het op Google Play" width="155" height="46"></a></div>
 </section>
 <footer>
 <div class="divider">© 2026 Jack Wallner · Laatst bijgewerkt <time datetime="2026-11-24" data-updated>24-11-2026</time></div>

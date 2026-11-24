@@ -51,11 +51,11 @@
             "name": "Bridge Trainer: Learn & Bid",
             "description": "Bridge Trainer est une appli gratuite d'entraînement aux enchères du bridge pour iPhone et iPad. Elle aide les débutants à apprendre le bridge contrat en exercices de cinq minutes répartis en quatre salles : bases des cartes, enchères dans un cadre Standard American pour débutants, jeu en déclarant et défense. Chaque réponse explique le raisonnement, et elle ne demande aucun compte et fonctionne hors ligne.",
             "applicationCategory": "EducationalApplication",
-            "operatingSystem": "iOS 17+",
+            "operatingSystem": "iOS 17+, Android 8.0+",
             "url": "https://jackwallner.com/ios/bridge/fr/",
-            "downloadUrl": "https://apps.apple.com/fr/app/id6791026407",
-            "installUrl": "https://apps.apple.com/fr/app/id6791026407",
-            "sameAs": "https://apps.apple.com/fr/app/id6791026407",
+            "downloadUrl": ["https://apps.apple.com/fr/app/id6791026407", "https://play.google.com/store/apps/details?id=com.jackwallner.bridge"],
+            "installUrl": ["https://apps.apple.com/fr/app/id6791026407", "https://play.google.com/store/apps/details?id=com.jackwallner.bridge"],
+            "sameAs": ["https://apps.apple.com/fr/app/id6791026407", "https://play.google.com/store/apps/details?id=com.jackwallner.bridge"],
             "screenshot": [
                 "https://jackwallner.github.io/bridge/appstore-screenshot-01.png",
                 "https://jackwallner.github.io/bridge/appstore-screenshot-02.png",
@@ -590,6 +590,14 @@
             color: #087866;
         }
             #faq .more-info-section h2.faq-q { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; color: #6e6e73; margin-bottom: 12px; }
+.store-badges { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; }
+.store-badges.start { justify-content: flex-start; }
+.play-badge { display: inline-flex; transition: opacity 0.15s; }
+.play-badge:hover { opacity: 0.85; }
+.play-badge img { display: block; height: 46px; width: auto; }
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.nav-actions .play-badge img { height: 36px; }
+@media (max-width: 480px) { .nav-actions .play-badge { display: none; } }
 </style>
 </head>
 <body>
@@ -599,14 +607,16 @@
 <img src="../icon_64.webp" alt="" width="32" height="32">
 <span>Bridge Trainer</span>
 </a>
-<a class="nav-link" href="https://apps.apple.com/fr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-fr&amp;mt=8">Télécharger</a>
+<div class="nav-actions"><a class="nav-link" href="https://apps.apple.com/fr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-fr&amp;mt=8">Télécharger</a>
+<a class="play-badge" href="https://play.google.com/store/apps/details?id=com.jackwallner.bridge" rel="noopener"><img src="../google-play-badge.webp" alt="Disponible sur Google Play" width="121" height="36"></a></div>
 </div>
 </nav>
 <section class="hero">
 <h1>Le bridge, en <span>cinq minutes par jour</span></h1>
 <p class="tagline">Bridge Trainer est une appli d'entraînement aux enchères du bridge pour iPhone et iPad. Enchères, jeu en déclarant et défense en exercices rapides, avec le raisonnement derrière chaque réponse.</p>
-<p class="platforms">iPhone · Quatre salles d'entraînement · Fonctionne hors ligne</p>
-<a class="download-btn" href="https://apps.apple.com/fr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-fr&amp;mt=8">Télécharger gratuitement</a>
+<p class="platforms">iPhone · Android · Quatre salles d'entraînement · Fonctionne hors ligne</p>
+<div class="store-badges"><a class="download-btn" href="https://apps.apple.com/fr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-fr&amp;mt=8">Télécharger gratuitement</a>
+<a class="play-badge" href="https://play.google.com/store/apps/details?id=com.jackwallner.bridge" rel="noopener"><img src="../google-play-badge.webp" alt="Disponible sur Google Play" width="155" height="46"></a></div>
 </section>
 <section class="showcase">
 <div class="showcase-scroll">
@@ -766,8 +776,9 @@
 </section>
 <section class="cta">
 <h2>Installez-vous prêt</h2>
-<p>Gratuit sur l'App Store. Quatre salles d'entraînement, sans compte. Bridge+ en option.</p>
-<a class="download-btn" href="https://apps.apple.com/fr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-fr&amp;mt=8">Télécharger gratuitement</a>
+<p>Gratuit sur l'App Store et Google Play. Quatre salles d'entraînement, sans compte. Bridge+ en option.</p>
+<div class="store-badges"><a class="download-btn" href="https://apps.apple.com/fr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&amp;ct=jw-bridge-home-fr&amp;mt=8">Télécharger gratuitement</a>
+<a class="play-badge" href="https://play.google.com/store/apps/details?id=com.jackwallner.bridge" rel="noopener"><img src="../google-play-badge.webp" alt="Disponible sur Google Play" width="155" height="46"></a></div>
 </section>
 <footer>
 <div class="divider">© 2026 Jack Wallner · Dernière mise à jour <time datetime="2026-11-24" data-updated>24/11/2026</time></div>

@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/it/
 
 Bridge Trainer è un'app per allenare la licita a bridge su iPhone e iPad. Licita, gioco come giocante e difesa in esercizi rapidi, con il ragionamento dietro ogni risposta.
 
-iPhone · Quattro sale di allenamento · Funziona offline
+iPhone · Android · Quattro sale di allenamento · Funziona offline
 
 [Scarica gratis](https://apps.apple.com/it/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-it&mt=8)
 
@@ -136,8 +136,8 @@ Bridge Trainer insegna un quadro Standard American per principianti. Gli accordi
 
 ## Siediti preparato
 
-Gratis su App Store. Quattro sale di allenamento, senza account. Bridge+ facoltativo.
+Gratis su App Store e Google Play. Quattro sale di allenamento, senza account. Bridge+ facoltativo.
 
 [Scarica gratis](https://apps.apple.com/it/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-it&mt=8)
 
-© 2026 Jack Wallner · Ultimo aggiornamento 28/10/2026
+© 2026 Jack Wallner · Ultimo aggiornamento 24/11/2026

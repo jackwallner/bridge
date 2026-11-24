@@ -6,7 +6,7 @@ Web page: https://jackwallner.com/ios/bridge/ja/best-bridge-app-for-beginners.ht
 
 ## 初心者向けブリッジアプリ最新比較
 
-Jack Wallner 著 · 最終更新 2026年11月12日
+Jack Wallner 著 · 最終更新 2026年11月24日
 
 **ゼロから無料のコースで学ぶなら：**Tricky Bridge: Learn & Play。ストーリー仕立ての全57レッスン。**教科書形式のコースで学ぶなら：**LearnBridge。2,000問以上の練習問題があり、Standard American と Two-Over-One から選べます。**すべてのビッドを解説付きでコンピューターと対戦するなら：**Bridge Mentor。**ランキング付きのオンラインデュプリケートなら：**Fun Bridge。**ポイント計算、オープニングビッド、カードプレイの短いドリルなら：**私が作っているアプリ、Bridge Trainer。
 

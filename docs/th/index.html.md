@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/th/
 
 Bridge Trainer เป็นแอปฝึกประมูลบริดจ์สำหรับ iPhone และ iPad ประมูล เล่นเป็นดีคลาเรอร์ และป้องกัน เป็นแบบฝึกหัดสั้น ๆ พร้อมเหตุผลเบื้องหลังทุกคำตอบ
 
-iPhone · ห้องฝึกสี่ห้อง · ใช้งานออฟไลน์ได้
+iPhone · Android · ห้องฝึกสี่ห้อง · ใช้งานออฟไลน์ได้
 
 [ดาวน์โหลดฟรี](https://apps.apple.com/th/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-th&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer สอนกรอบ Standard American สำหรับผู�
 
 ## นั่งลงอย่างพร้อม
 
-ฟรีบน App Store ห้องฝึกสี่ห้อง ไม่ต้องมีบัญชี Bridge+ เป็นทางเลือก
+ฟรีบน App Store และ Google Play ห้องฝึกสี่ห้อง ไม่ต้องมีบัญชี Bridge+ เป็นทางเลือก
 
 [ดาวน์โหลดฟรี](https://apps.apple.com/th/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-th&mt=8)

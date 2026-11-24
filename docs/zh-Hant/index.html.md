@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/zh-Hant/
 
 Bridge Trainer 是適用於 iPhone 和 iPad 的橋牌叫牌練習 App。叫牌、莊家打牌與防守都是簡短練習，每個答案都附上背後的推理。
 
-iPhone · 四個練習室 · 可離線使用
+iPhone · Android · 四個練習室 · 可離線使用
 
 [免費下載](https://apps.apple.com/tw/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-zh-hant&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer 教的是適合初學者的 Standard American 體系。搭檔之�
 
 ## 準備好再入座
 
-在 App Store 免費下載。四個練習室，免註冊帳號。Bridge+ 為選用。
+在 App Store 和 Google Play 免費下載。四個練習室，免註冊帳號。Bridge+ 為選用。
 
 [免費下載](https://apps.apple.com/tw/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-zh-hant&mt=8)

@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/
 
 Bridge Trainer is a bridge bidding practice app for iPhone and iPad. Bidding, declarer play, and defense as quick drills, with the reasoning behind every answer.
 
-iPhone · Four practice rooms · Works offline
+iPhone · Android · Four practice rooms · Works offline
 
 [Download for free](https://apps.apple.com/us/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer teaches a beginner Standard American framework. Partnership agree
 
 ## Sit down ready
 
-Free on the App Store. Four practice rooms, no account. Bridge+ optional.
+Free on the App Store and Google Play. Four practice rooms, no account. Bridge+ optional.
 
 [Download for free](https://apps.apple.com/us/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home&mt=8)

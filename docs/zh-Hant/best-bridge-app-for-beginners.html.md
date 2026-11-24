@@ -6,7 +6,7 @@ Web page: https://jackwallner.com/ios/bridge/zh-Hant/best-bridge-app-for-beginne
 
 ## 初學者最佳橋牌 App
 
-作者 Jack Wallner · 最後更新 2026年11月12日
+作者 Jack Wallner · 最後更新 2026年11月24日
 
 **最適合從零開始的免費課程：**Tricky Bridge: Learn & Play，以故事帶領的 57 堂課。**最適合像教科書一樣的課程：**LearnBridge，有超過 2,000 道練習題，可選 Standard American 或 Two-Over-One。**最適合與電腦對打、並說明每個叫品：**Bridge Mentor。**最適合有排名的線上雙人複式：**Fun Bridge。**最適合短時間練習數點力、開叫與打牌：**Bridge Trainer，也就是我自己做的 App。
 

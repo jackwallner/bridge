@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/ja/
 
 Bridge Trainer は iPhone と iPad 向けのブリッジのビッド練習アプリです。ビッド、ディクレアラープレイ、ディフェンスを短いドリルで練習でき、どの答えにも理由が付いています。
 
-iPhone · 4つの練習ルーム · オフライン対応
+iPhone · Android · 4つの練習ルーム · オフライン対応
 
 [無料でダウンロード](https://apps.apple.com/jp/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-ja&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer が教えるのは、初心者向けの Standard American の枠�
 
 ## 準備を整えて席に着こう
 
-App Store で無料。4つの練習ルーム、アカウント不要。Bridge+ は任意です。
+App Store と Google Play で無料。4つの練習ルーム、アカウント不要。Bridge+ は任意です。
 
 [無料でダウンロード](https://apps.apple.com/jp/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-ja&mt=8)

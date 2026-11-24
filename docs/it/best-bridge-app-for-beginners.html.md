@@ -6,7 +6,7 @@ Web page: https://jackwallner.com/ios/bridge/it/best-bridge-app-for-beginners.ht
 
 ## Migliore app di bridge per principianti
 
-Di Jack Wallner · Ultimo aggiornamento 12/11/2026
+Di Jack Wallner · Ultimo aggiornamento 24/11/2026
 
 **Migliore per un corso gratuito da zero:** Tricky Bridge: Learn & Play, una serie di 57 lezioni raccontate come una storia. **Migliore per imparare con un corso in stile libro:** LearnBridge, con oltre 2.000 domande di pratica e la scelta tra Standard American e Two-Over-One. **Migliore per giocare mani contro il computer con ogni dichiarazione spiegata:** Bridge Mentor. **Migliore per il duplicato online con classifiche:** Fun Bridge. **Migliore per brevi esercizi su conteggio dei punti, aperture e gioco della carta:** Bridge Trainer, l'app che faccio io.
 

@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/el/
 
 Το Bridge Trainer είναι εφαρμογή εξάσκησης δηλώσεων μπριτζ για iPhone και iPad. Δηλώσεις, παιχνίδι ως ντίκλαρερ και άμυνα σε γρήγορες ασκήσεις, με το σκεπτικό πίσω από κάθε απάντηση.
 
-iPhone · Τέσσερις αίθουσες εξάσκησης · Λειτουργεί χωρίς σύνδεση
+iPhone · Android · Τέσσερις αίθουσες εξάσκησης · Λειτουργεί χωρίς σύνδεση
 
 [Λήψη δωρεάν](https://apps.apple.com/gr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-el&mt=8)
 
@@ -136,6 +136,6 @@ iPhone · Τέσσερις αίθουσες εξάσκησης · Λειτουρ
 
 ## Κάθισε έτοιμος
 
-Δωρεάν στο App Store. Τέσσερις αίθουσες εξάσκησης, χωρίς λογαριασμό. Το Bridge+ είναι προαιρετικό.
+Δωρεάν στο App Store και στο Google Play. Τέσσερις αίθουσες εξάσκησης, χωρίς λογαριασμό. Το Bridge+ είναι προαιρετικό.
 
 [Λήψη δωρεάν](https://apps.apple.com/gr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-el&mt=8)

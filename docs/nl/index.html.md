@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/nl/
 
 Bridge Trainer is een app om bridge bieden te oefenen op iPhone en iPad. Bieden, spel als leider en verdediging als snelle oefeningen, met de redenering achter elk antwoord.
 
-iPhone · Vier oefenruimtes · Werkt offline
+iPhone · Android · Vier oefenruimtes · Werkt offline
 
 [Gratis downloaden](https://apps.apple.com/nl/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-nl&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer leert een Standard American-kader voor beginners. Afspraken met j
 
 ## Ga voorbereid aan tafel
 
-Gratis in de App Store. Vier oefenruimtes, geen account. Bridge+ optioneel.
+Gratis in de App Store en Google Play. Vier oefenruimtes, geen account. Bridge+ optioneel.
 
 [Gratis downloaden](https://apps.apple.com/nl/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-nl&mt=8)

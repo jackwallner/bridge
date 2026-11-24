@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/da/
 
 Bridge Trainer er en app til at øve bridge-meldinger på iPhone og iPad. Melding, spilførelse og forsvar som hurtige øvelser, med begrundelsen bag hvert svar.
 
-iPhone · Fire øvelsesrum · Virker offline
+iPhone · Android · Fire øvelsesrum · Virker offline
 
 [Hent gratis](https://apps.apple.com/dk/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-da&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer underviser i en Standard American-ramme for begyndere. Makkerafta
 
 ## Sæt dig til bordet klar
 
-Gratis i App Store. Fire øvelsesrum, ingen konto. Bridge+ er valgfrit.
+Gratis i App Store og Google Play. Fire øvelsesrum, ingen konto. Bridge+ er valgfrit.
 
 [Hent gratis](https://apps.apple.com/dk/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-da&mt=8)

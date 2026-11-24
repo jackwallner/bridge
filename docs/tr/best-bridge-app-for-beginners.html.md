@@ -6,7 +6,7 @@ Web page: https://jackwallner.com/ios/bridge/tr/best-bridge-app-for-beginners.ht
 
 ## Yeni başlayanlar için en iyi briç uygulaması
 
-Yazan: Jack Wallner · Son güncelleme 12.11.2026
+Yazan: Jack Wallner · Son güncelleme 24.11.2026
 
 **Sıfırdan ücretsiz bir kurs için en iyisi:** Tricky Bridge: Learn & Play, hikâye odaklı 57 derslik bir seri. **Kitap tarzı bir kursla öğrenmek için en iyisi:** LearnBridge, 2.000'den fazla alıştırma sorusu ve Standard American ya da Two-Over-One seçeneğiyle. **Bilgisayara karşı el oynamak ve her ihalenin açıklamasını görmek için en iyisi:** Bridge Mentor. **Sıralamalı çevrimiçi duplicate için en iyisi:** Fun Bridge. **Puan sayma, açılış ihaleleri ve kart oyunu üzerine kısa alıştırmalar için en iyisi:** Bridge Trainer, benim yaptığım uygulama.
 

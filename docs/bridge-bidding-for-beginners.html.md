@@ -6,7 +6,7 @@ Web page: https://jackwallner.com/ios/bridge/bridge-bidding-for-beginners.html
 
 ## Bridge Bidding for Beginners: Opening Bids and Responses
 
-By Jack Wallner · Last updated October 25, 2026
+By Jack Wallner · Last updated November 24, 2026
 
 Count your high-card points (ace 4, king 3, queen 2, jack 1) and open the bidding with 13 or more, or with a 12 that passes the Rule of 20. Open 1NT with a balanced 15 to 17, otherwise open your longest suit: a five-card major unless you hold a longer minor, and your longer minor when you have no five-card major. As responder you need 6 points to bid: raise partner's major with three-card support, bid a new suit at the one level with 6 or more (the two level takes 10), and add your points to partner's to decide on game at about 25.
 

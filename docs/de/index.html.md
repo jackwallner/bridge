@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/de/
 
 Bridge Trainer ist eine App zum Üben des Reizens für iPhone und iPad. Reizen, Alleinspiel und Abwehr als kurze Übungen, mit der Begründung hinter jeder Antwort.
 
-iPhone · Vier Übungsräume · Funktioniert offline
+iPhone · Android · Vier Übungsräume · Funktioniert offline
 
 [Kostenlos laden](https://apps.apple.com/de/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-de&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer vermittelt einen Standard-American-Rahmen für Einsteiger. Partne
 
 ## Setzen Sie sich vorbereitet hin
 
-Kostenlos im App Store. Vier Übungsräume, ohne Konto. Bridge+ optional.
+Kostenlos im App Store und bei Google Play. Vier Übungsräume, ohne Konto. Bridge+ optional.
 
 [Kostenlos laden](https://apps.apple.com/de/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-de&mt=8)

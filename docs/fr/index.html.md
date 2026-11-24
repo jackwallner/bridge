@@ -8,7 +8,7 @@ Web page: https://jackwallner.com/ios/bridge/fr/
 
 Bridge Trainer est une appli d'entraînement aux enchères du bridge pour iPhone et iPad. Enchères, jeu en déclarant et défense en exercices rapides, avec le raisonnement derrière chaque réponse.
 
-iPhone · Quatre salles d'entraînement · Fonctionne hors ligne
+iPhone · Android · Quatre salles d'entraînement · Fonctionne hors ligne
 
 [Télécharger gratuitement](https://apps.apple.com/fr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-fr&mt=8)
 
@@ -136,6 +136,6 @@ Bridge Trainer enseigne un cadre Standard American pour débutants. Les accords 
 
 ## Installez-vous prêt
 
-Gratuit sur l'App Store. Quatre salles d'entraînement, sans compte. Bridge+ en option.
+Gratuit sur l'App Store et Google Play. Quatre salles d'entraînement, sans compte. Bridge+ en option.
 
 [Télécharger gratuitement](https://apps.apple.com/fr/app/bridge-trainer-learn-bid/id6791026407?pt=128748779&ct=jw-bridge-home-fr&mt=8)
