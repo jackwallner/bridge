@@ -31,6 +31,10 @@ Design: `project-docs/design/2026-11-23-play-a-hand.md`.
 
 ## Adding a deal
 
+Twelve deals as of 1.3.2. `HandPlayStore` rotates by index, so append new
+deals to the end of `HandPlayContent.deals`; reordering moves players to a
+different deal.
+
 1. Hands and tricks are suit-first strings ("♠AKT64", "♠K"; T is ten, "-" a
    void). Prose in reasons and notes is rank-first ("A♣"), matching the cards.
 2. Run `HandPlayEngineTests`: every card used once, the line legal and making,

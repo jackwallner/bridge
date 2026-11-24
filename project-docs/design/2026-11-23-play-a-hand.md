@@ -58,6 +58,12 @@ grading the player can check, ties never marked wrong, one free hand a day.
 
 ## Later slices
 
-More deals (target 20), defense from West, generated deals once a small
+Eight more deals (1.3.2, 2026-11-24), one lesson each: lead toward the king
+in 2♥, unblock in 3NT, discard before trumps in 4♥, duck a round in 1NT, play
+for the drop in 4♠, finesse twice in 3NT, ruff high in 4♠, and take your nine
+tricks in 3NT. Their auctions add the 1♥-1♠ rebids (1NT and 2♥), the invite
+to game after a raise (3♥, 3♠), and minor openings.
+
+Still to come: more deals (target 20), defense from West, generated deals once a small
 double-dummy check exists, Fix My Mistakes for missed decisions, and a What's
 New item for the version that ships it.
