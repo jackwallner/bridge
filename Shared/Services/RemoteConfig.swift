@@ -49,6 +49,9 @@ enum RemoteSwitch: String, CaseIterable, Sendable {
     /// The daily and monthly challenge. Nothing reads it yet: the challenge
     /// lands in phase 2 and must gate its Home card and deep link on this.
     case challenge = "challenge"
+    /// The one-tap trial sheet rising on its own after a good result.
+    /// Tapped Bridge+ cards still open it when this is off.
+    case trialOffer = "trial_offer"
 }
 
 enum RemoteConfig {

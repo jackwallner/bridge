@@ -15,10 +15,53 @@ struct DrillCompleteView: View {
     @State private var recorded = false
     @State private var celebrate = false
     @State private var confettiTrigger = 0
+    @State private var showPaywall = false
 
     var body: some View {
+        VStack(spacing: 16) {
+            // Scrolls when it has to: the Bridge+ card under the summary does
+            // not fit a small phone at large text sizes otherwise.
+            CenteringScrollView {
+                VStack(spacing: 22) {
+                    summary
+                    BridgePlusPitchCard { showPaywall = true }
+                        .frame(maxWidth: 520)
+                }
+            }
+            Button {
+                if let onDone { onDone() } else { dismiss() }
+            } label: {
+                Text("Done").primaryCTA()
+            }
+        }
+        .padding()
+        .frame(maxWidth: Theme.readableContentWidth)
+        .frame(maxWidth: .infinity)
+        .background(Theme.background)
+        .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.3), particleCount: 44) }
+        .navigationBarBackButtonHidden(true)
+        .onAppear {
+            celebrate = true
+            confettiTrigger += 1
+            guard !recorded, total > 0 else { return }
+            recorded = true
+            Haptics.success()
+            SoundPlayer.play(.complete)
+            progress.recordSession(drillID: drill.id)
+            // The ask is for a good moment: half right or better (a deck has
+            // no score and always counts).
+            if score.map({ Double($0) / Double(max(total, 1)) >= 0.5 }) ?? true {
+                reviewMoment += 1
+            }
+        }
+        // One ask per moment: the trial sheet, when it is due, goes first and
+        // the rating prompt stands down for that result.
+        .trialOffer(.drillResult, isPresented: $showPaywall, autoMoment: reviewMoment)
+        .requestsReview(after: reviewMoment, isClear: { !showPaywall && !TrialOfferPacer.autoShownRecently() })
+    }
+
+    private var summary: some View {
         VStack(spacing: 22) {
-            Spacer()
             ZStack {
                 Circle()
                     .fill(Theme.jade.opacity(0.12))
@@ -60,34 +103,7 @@ struct DrillCompleteView: View {
             .padding(.horizontal, 18)
             .padding(.vertical, 10)
             .themedCard(corner: 22)
-            Spacer()
-            Button {
-                if let onDone { onDone() } else { dismiss() }
-            } label: {
-                Text("Done").primaryCTA()
-            }
         }
-        .padding()
-        .frame(maxWidth: Theme.readableContentWidth)
-        .frame(maxWidth: .infinity)
-        .background(Theme.background)
-        .overlay { ConfettiBurst(trigger: confettiTrigger, origin: .init(x: 0.5, y: 0.3), particleCount: 44) }
-        .navigationBarBackButtonHidden(true)
-        .onAppear {
-            celebrate = true
-            confettiTrigger += 1
-            guard !recorded, total > 0 else { return }
-            recorded = true
-            Haptics.success()
-            SoundPlayer.play(.complete)
-            progress.recordSession(drillID: drill.id)
-            // The ask is for a good moment: half right or better (a deck has
-            // no score and always counts).
-            if score.map({ Double($0) / Double(max(total, 1)) >= 0.5 }) ?? true {
-                reviewMoment += 1
-            }
-        }
-        .requestsReview(after: reviewMoment)
     }
 
     private var headline: String {

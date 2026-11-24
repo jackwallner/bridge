@@ -15,8 +15,8 @@ paths:
   webhook (Mahj's `project-docs/marketing/meta-ads.md`) and tracking labels,
   all in one submission, and only with Jack's go-ahead.
 - `RemoteConfig` reads the current RevenueCat offering's metadata: `trial_cta`
-  (`seven_day` control, `my`, `your`) and the switches `rating_prompt`
-  and `challenge` (on unless exactly `off`; set the same on every
+  (`seven_day` control, `my`, `your`) and the switches `rating_prompt`,
+  `challenge` and `trial_offer` (on unless exactly `off`; set the same on every
   offering). The `challenge` switch is declared but nothing reads it yet: phase 2
   gates the challenge card and deep link on it. DEBUG builds pin any key with
   `-bridge.rc.<key> <value>`.

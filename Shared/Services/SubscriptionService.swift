@@ -394,6 +394,10 @@ final class SubscriptionService: NSObject, ObservableObject {
     }
 
     func isEligibleForIntroOffer(_ plan: PaywallPlan) -> Bool {
+        #if DEBUG
+        // Captures only: the Test Store products carry no free week.
+        if Self.previewTrialEligible, plan != .lifetime { return true }
+        #endif
         guard let product = package(for: plan)?.storeProduct,
               product.introductoryDiscount?.paymentMode == .freeTrial else { return false }
         return introEligibility[product.productIdentifier] == .eligible
@@ -415,6 +419,7 @@ final class SubscriptionService: NSObject, ObservableObject {
         #if DEBUG
         // Captures only: shows a lapsed account's billed-today screens.
         if ProcessInfo.processInfo.arguments.contains("-bridge.previewTrialIneligible") { return false }
+        if Self.previewTrialEligible { return plan != .lifetime }
         #endif
         guard let product = package(for: plan)?.storeProduct,
               product.introductoryDiscount?.paymentMode == .freeTrial else { return false }
@@ -422,6 +427,14 @@ final class SubscriptionService: NSObject, ObservableObject {
         introEligibility.merge(result) { _, new in new }
         return isEligibleForIntroOffer(plan)
     }
+
+    #if DEBUG
+    /// `-bridge.previewTrialEligible` shows a first-time account's free-week
+    /// screens over products that have none (the RevenueCat Test Store).
+    static var previewTrialEligible: Bool {
+        ProcessInfo.processInfo.arguments.contains("-bridge.previewTrialEligible")
+    }
+    #endif
 
     nonisolated static func isTrialEligible(_ product: Product?) async -> Bool {
         guard let product else { return false }

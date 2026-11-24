@@ -26,6 +26,9 @@ struct HomeView: View {
     @State private var showWhatsNew = false
     #if DEBUG
     @State var duoRoute: DuoScreenshotMode.Route?
+    /// `-bridge.previewTrialOffer` opens the result-screen trial sheet over
+    /// Home, for captures.
+    @State private var previewTrialOffer = ProcessInfo.processInfo.arguments.contains("-bridge.previewTrialOffer")
     #endif
     /// Non-nil while the one churn question is up.
     @State private var churnPrompt: ChurnMoment?
@@ -120,6 +123,7 @@ struct HomeView: View {
             .navigationDestination(item: $duoRoute) {
                 DuoScreenshotMode.destination($0, progress: progress, subscriptions: subscriptions)
             }
+            .sheet(isPresented: $previewTrialOffer) { TrialOfferSheet(context: .drillResult, auto: false) }
             #endif
             .sheet(isPresented: $showPaywall, onDismiss: finishUpgrade) { PaywallView(source: "bridge_home_sheet") }
             .sheet(isPresented: $showSettings) { SettingsView() }

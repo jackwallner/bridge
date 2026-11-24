@@ -9,6 +9,10 @@ paths:
   - "BridgeTests/TrialCopyTests.swift"
   - "BridgeTests/TrialEligibilityTests.swift"
   - "BridgeTests/PaywallFunnelTests.swift"
+  - "Bridge/Views/Components/TrialOfferSheet.swift"
+  - "Bridge/Views/Components/BridgePlusPitchCard.swift"
+  - "Shared/Services/TrialOfferPacer.swift"
+  - "BridgeTests/TrialOfferPacerTests.swift"
 ---
 
 # Bridge: membership, the trial flow and fit
@@ -82,3 +86,17 @@ system background. Dark mode uses `Theme.onFill` on filled buttons and
 below the running version, so a build with no entry of its own still carries the
 last notes once to a player who skipped a version. `shownThisLaunch` delays ATT.
 1.3.0's entry names the responding and rebid drills (2026-11-22).
+
+**Trial asks after onboarding (2026-11-24, ported from Mahj, Jack's go-ahead).**
+`TrialOfferSheet` is a one-plan (monthly, the onboarding plan) one-tap sheet;
+`BridgePlusPitchCard` sits under `DrillCompleteView` and the finished free hand
+for onboarded, resolved non-members and opens it on tap. `.trialOffer(context,
+isPresented:autoMoment:)` also raises it on its own after a good result when
+`TrialOfferEligibility` and `TrialOfferPacer` allow and StoreKit says the free
+week is still there (Mahj's rules plus `membershipResolved`). Pacing: 2 practices
+since onboarding, then once per visit (max 3 a day) on install day and the next,
+then 3, 7, 14 days apart. `trial_offer: off` stops the automatic asks only. The
+rating prompt stands down while one is pending or for 2 minutes after. Bridge
+Minute has no card: it is members-only. Captures: `-bridge.previewTrialOffer`,
+and `-rcfunnelprobe -bridge.previewTrialEligible` for Test Store prices with the
+free-week copy. Read and decision rule: `project-docs/audits/2026-11-24-trial-funnel-port.md`.

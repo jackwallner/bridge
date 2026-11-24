@@ -26,9 +26,11 @@ struct BridgeApp: App {
                 .environmentObject(router)
                 .preferredColorScheme(settings.appearance.colorScheme)
                 .onChange(of: scenePhase) { _, phase in
+                    if phase == .background { TrialOfferPacer.noteBackground() }
                     // iOS rarely cold-launches an app, so a report queued
                     // offline also retries every time the app comes back.
                     guard phase == .active else { return }
+                    TrialOfferPacer.noteForeground()
                     Task { await FeedbackService.shared.flushPending() }
                     settings.reconcileReminders()
                 }
@@ -45,6 +47,7 @@ struct BridgeApp: App {
                     subscriptions.start()
                     settings.reconcileReminders()
                     ConversionDiagnostics.recordAppOpen()
+                    TrialOfferPacer.noteForeground()
                     Task { await FeedbackService.shared.flushPending() }
                     #if DEBUG
                     if RevenueCatProbe.isEnabled {

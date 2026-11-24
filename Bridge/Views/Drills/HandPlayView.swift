@@ -13,6 +13,9 @@ struct HandPlayView: View {
     @State private var engine: HandPlayEngine?
     @State private var showPaywall = false
     @State private var reviewMoment = 0
+    /// Bumped when a free player finishes the day's free hand: the trial
+    /// sheet's cue to rise on its own, when it is due.
+    @State private var freeHandSpent = 0
     @State private var runner: Task<Void, Never>?
     @State private var finishedRecorded = false
 
@@ -29,8 +32,8 @@ struct HandPlayView: View {
         .background(Theme.background.ignoresSafeArea())
         .navigationTitle(engine?.deal.title ?? String(localized: "Play a Hand"))
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showPaywall) { PaywallView(source: "bridge_hand_play") }
-        .requestsReview(after: reviewMoment)
+        .trialOffer(.handSpent, isPresented: $showPaywall, autoMoment: freeHandSpent)
+        .requestsReview(after: reviewMoment, isClear: { !showPaywall && !TrialOfferPacer.autoShownRecently() })
         .onDisappear { runner?.cancel() }
     }
 
@@ -228,6 +231,12 @@ struct HandPlayView: View {
             callButtons(call)
         } else if engine.phase == .finished {
             resultCard(engine)
+            if !store.canPlay(isMember: subscriptions.isPro) {
+                BridgePlusPitchCard(
+                    headline: String(localized: "That was today's free hand"),
+                    detail: String(localized: "\(Membership.name) deals a new hand whenever you want one, coached on every call and card.")
+                ) { showPaywall = true }
+            }
         }
     }
 
@@ -362,6 +371,7 @@ struct HandPlayView: View {
         store.finish()
         SoundPlayer.play(.complete)
         if engine.state.right * 2 >= engine.state.decided { reviewMoment += 1 }
+        if !store.canPlay(isMember: subscriptions.isPro) { freeHandSpent += 1 }
     }
 
     private func nextHand() {
