@@ -22,7 +22,11 @@ RevenueCat (`PaywallPricing`); never hardcode one anywhere.
 
 **Trial flow, structurally Mahj 1.3.2.** Onboarding trial page: soft "Get
 Started" exit above the primary, primary CTA in the exact Continue slot, one tap
-buys the MONTHLY trial, Apple confirms. The billed amount is the most prominent
+buys the YEARLY trial, Apple confirms. `onboarding_plan` offering metadata
+(`OnboardingPlanArm`, `yearly` when missing) switches the button to monthly
+without a release; the arm rides to RevenueCat as the `onboarding_plan`
+attribute. Monthly lost $0.64 per new customer at 3 months (Aug 11 to Nov,
+2026-11-24 change-impact read). The billed amount is the most prominent
 price (22pt, 3.1.2(c)) with the small disclosure under it; the paywall footer
 keeps the same 22pt line. `trialDisclosure` must always name the plan the CTA
 buys. Backing out of Apple's sheet is `PurchaseOutcome.cancelled`, never an
@@ -88,7 +92,9 @@ last notes once to a player who skipped a version. `shownThisLaunch` delays ATT.
 1.3.0's entry names the responding and rebid drills (2026-11-22).
 
 **Trial asks after onboarding (2026-11-24, ported from Mahj, Jack's go-ahead).**
-`TrialOfferSheet` is a one-plan (monthly, the onboarding plan) one-tap sheet;
+The sheet keeps the monthly plan on purpose, independent of `onboarding_plan`
+(Mahj parity; it is measured apart from the onboarding trial page).
+`TrialOfferSheet` is a one-plan (monthly) one-tap sheet;
 `BridgePlusPitchCard` sits under `DrillCompleteView` and the finished free hand
 for onboarded, resolved non-members and opens it on tap. `.trialOffer(context,
 isPresented:autoMoment:)` also raises it on its own after a good result when

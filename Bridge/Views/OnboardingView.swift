@@ -413,9 +413,9 @@ struct OnboardingView: View {
         return trialEligible ? String(localized: "Try \(Membership.name) free") : String(localized: "Get \(Membership.name) today")
     }
 
-    /// The plan this tap buys: monthly. The price line and disclosure below
-    /// always name it.
-    private var onboardingPlan: PaywallPlan { .monthly }
+    /// The plan this tap buys: yearly unless the offering's `onboarding_plan`
+    /// says monthly. The price line and disclosure below always name it.
+    private var onboardingPlan: PaywallPlan { subscriptions.onboardingPlan }
 
     /// The billed amount, shown larger than anything else about price on the
     /// trial page (App Review 3.1.2(c)). Same plan as the CTA buys; empty for
@@ -617,13 +617,8 @@ struct OnboardingView: View {
                 purchaseError = String(localized: "Still checking what this Apple Account owns. Try again in a moment, or tap Restore.")
                 return
             }
-            // Monthly by default, and this is deliberate. Two different people
-            // reach the two purchase surfaces: whoever taps through onboarding
-            // has not used the app yet and is reacting to the number on Apple's
-            // sheet, while whoever hits the paywall later has already decided the
-            // app is worth something. The paywall still leads with yearly. Here
-            // the smaller recurring figure is what gets the trial started, and
-            // `trialDisclosure` above always names the plan bought here.
+            // Yearly by default (`onboarding_plan` can switch it to monthly
+            // remotely); `trialDisclosure` above always names the plan bought here.
             guard let package = subscriptions.package(for: onboardingPlan) else {
                 showPaywallFallback = true
                 return

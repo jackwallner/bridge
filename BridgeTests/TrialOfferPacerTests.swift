@@ -198,7 +198,7 @@ final class TrialOfferPacerTests: XCTestCase {
                        "7 days free, then $8.99/month. Auto-renews until canceled.")
     }
 
-    func testTheSheetBuysTheOnboardingPlan() {
+    func testTheSheetKeepsTheMonthlyPlan() {
         XCTAssertEqual(TrialOfferSheet.plan, .monthly)
     }
 

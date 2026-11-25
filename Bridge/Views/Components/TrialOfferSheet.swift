@@ -48,7 +48,8 @@ struct TrialOfferSheet: View {
     /// The tap's preflight and purchase; cancelled if the sheet goes away.
     @State private var purchaseTask: Task<Void, Never>?
 
-    /// The same plan as the onboarding trial page.
+    /// Monthly on purpose, independent of `onboarding_plan`: Mahj parity, and
+    /// this sheet is measured apart from the onboarding trial page.
     static let plan: PaywallPlan = .monthly
 
     static let benefits = [

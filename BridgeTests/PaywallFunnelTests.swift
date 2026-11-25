@@ -434,13 +434,13 @@ final class PurchaseEntitlementTests: XCTestCase {
         mock.eligibility = ["com.jackwallner.bridge.monthly": .ineligible]
         let service = SubscriptionService(client: mock, defaults: UserDefaults(suiteName: UUID().uuidString)!)
         await service.loadOfferings()
-        XCTAssertFalse(service.trialCTA(.onboarding).localizedCaseInsensitiveContains("free"))
+        XCTAssertFalse(service.trialCTA(.onboarding, plan: .monthly).localizedCaseInsensitiveContains("free"))
         XCTAssertFalse(PaywallPricing.terms(service, .monthly).localizedCaseInsensitiveContains("free"))
         XCTAssertFalse(PaywallPricing.planDetail(service, .monthly).localizedCaseInsensitiveContains("free"))
         XCTAssertEqual(PaywallPlan.monthly.ctaTitle(trialEligible: service.isEligibleForIntroOffer(.monthly)), "Join \(Membership.name)")
         mock.eligibility = ["com.jackwallner.bridge.monthly": .eligible]
         await service.loadOfferings()
-        XCTAssertTrue(service.trialCTA(.onboarding).localizedCaseInsensitiveContains("free"))
+        XCTAssertTrue(service.trialCTA(.onboarding, plan: .monthly).localizedCaseInsensitiveContains("free"))
         XCTAssertTrue(PaywallPricing.terms(service, .monthly).contains("7 days free"))
     }
 
