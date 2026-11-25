@@ -99,8 +99,10 @@ final class ReleaseJourneysUITests: XCTestCase {
         // The free way in sits above the trial button; it is not on any other page.
         let freeExit = app.buttons[L("Get Started")]
         XCTAssertTrue(freeExit.waitForExistence(timeout: 20))
-        // RevenueCat is off in simulator builds, so no price loads here; the
-        // plan the button buys is covered by TrialCopyTests and PaywallFunnelTests.
+        // The trial button buys yearly unless `onboarding_plan` says monthly.
+        let yearly = NSPredicate(format: "label CONTAINS[c] %@ OR label CONTAINS[c] %@", "year", "Jahr")
+        XCTAssertTrue(app.staticTexts.matching(yearly).firstMatch.waitForExistence(timeout: 20),
+                      "the trial page does not bill the yearly plan")
         QA.checkpoint(app, "onboarding-trial", paywall: true)
         freeExit.tap()
 
